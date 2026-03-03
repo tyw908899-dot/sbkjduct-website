@@ -57,30 +57,47 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Animated stat counters
+  const runCounter = (el) => {
+    if (el.dataset.counted) return;
+    el.dataset.counted = "1";
+    const target = parseInt(el.dataset.count, 10);
+    const suffix = el.dataset.suffix || "";
+    const duration = 1600;
+    const start = performance.now();
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+
   const counters = document.querySelectorAll("[data-count]");
   if (counters.length && "IntersectionObserver" in window) {
     const countObs = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
-          const el = entry.target;
-          const target = parseInt(el.dataset.count, 10);
-          const suffix = el.dataset.suffix || "";
-          const duration = 1600;
-          const start = performance.now();
-          const step = (now) => {
-            const progress = Math.min((now - start) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            el.textContent = Math.round(target * eased) + suffix;
-            if (progress < 1) requestAnimationFrame(step);
-          };
-          requestAnimationFrame(step);
-          countObs.unobserve(el);
+          runCounter(entry.target);
+          countObs.unobserve(entry.target);
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
     counters.forEach((el) => countObs.observe(el));
+
+    // Re-check counters after reveal animations complete
+    document.addEventListener("animationend", () => {
+      counters.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          runCounter(el);
+        }
+      });
+    }, { once: true });
+  } else {
+    counters.forEach((el) => runCounter(el));
   }
 
   // Mobile menu toggle
