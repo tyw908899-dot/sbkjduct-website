@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="800" height="450" fill="#0f172a"/>
+  <rect x="1" y="1" width="798" height="448" fill="none" stroke="rgba(148,163,184,0.3)" stroke-width="1" rx="4"/>
+  <g fill="rgba(148,163,184,0.5)" font-family="Inter,Arial,sans-serif" font-size="14">
+    <text x="400" y="220" text-anchor="middle">Product image</text>
+    <text x="400" y="242" text-anchor="middle">See PDF catalog for photos</text>
+  </g>
+  <rect x="350" y="260" width="100" height="36" rx="18" fill="rgba(56,189,248,0.2)" stroke="rgba(56,189,248,0.5)" stroke-width="1"/>
+  <text x="400" y="283" text-anchor="middle" fill="#7dd3fc" font-size="12">Download PDF</text>
+</svg>
