@@ -1,0 +1,45 @@
+# Product image naming guide
+# Add product photos to this folder. Name files as below; product pages will use them automatically.
+# Supported: .jpg .jpeg .png .webp
+# Source: PDF catalog or ductworkmachinery.com / spiraltubeformer.com
+
+# Already have images:
+# sbal-v.jpg, sbal-iii.jpg, sbtf-1602.jpg, sbtf-1500.jpg, sbem-1250.jpg
+# sbhf-i.jpg, lockformer.jpg, "Transverse Duct Flange Forming Machine.jpg"
+
+# Machines needing images (suggested filename):
+sbtf-2020.jpg
+sbtf-1500c.jpg
+ovalizer-sbht-3100.jpg
+sblr-600.jpg
+sblf-500.jpg
+aluminum-flexible-duct.jpg
+automatic-flexible-duct-ulock.jpg
+sbsf-1525.jpg
+spiral-duct-flanging.jpg
+sbwt-1000.jpg
+sbwt-1500.jpg
+fitting-shaper.jpg
+rectangular-duct-line-ii.jpg
+rectangular-duct-line-iii.jpg
+rectangular-duct-line-iv.jpg
+rectangular-duct-line-v.jpg
+automatic-drive-cleat.jpg
+transverse-duct-connector-flange.jpg
+grooving-beading.jpg
+pneumatic-corner-mounting.jpg
+metal-bending-tdf.jpg
+plasma-cutter.jpg
+sheet-metal-shearing.jpg
+stitch-welder.jpg
+spot-welder.jpg
+seam-welder.jpg
+butt-welding.jpg
+longitudinal-seam-welder.jpg
+power-slip-rolls.jpg
+roll-bending.jpg
+hydraulic-double-roll-rounding.jpg
+hydraulic-plate-bending.jpg
+pipe-clamps-bending.jpg
+sbck-50a.jpg
+variable-hydraulic-angle-cutting.jpg
