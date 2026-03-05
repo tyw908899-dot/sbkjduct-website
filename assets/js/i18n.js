@@ -372,6 +372,31 @@
         mode: "stay_en_notice",
         fallback: "/machines.html",
         reason: "This SEO campaign page is currently published in English only."
+      },
+      "/hvac-duct-machinery/index.html": {
+        mode: "stay_en_notice",
+        fallback: "/machines.html",
+        reason: "This pillar page is currently published in English only."
+      },
+      "/spiral-duct-machine/index.html": {
+        mode: "stay_en_notice",
+        fallback: "/machines.html",
+        reason: "This pillar page is currently published in English only."
+      },
+      "/auto-duct-line/index.html": {
+        mode: "stay_en_notice",
+        fallback: "/machines.html",
+        reason: "This pillar page is currently published in English only."
+      },
+      "/duct-forming-machines/index.html": {
+        mode: "stay_en_notice",
+        fallback: "/machines.html",
+        reason: "This pillar page is currently published in English only."
+      },
+      "/elbow-fittings-machines/index.html": {
+        mode: "stay_en_notice",
+        fallback: "/machines.html",
+        reason: "This pillar page is currently published in English only."
       }
     },
     patterns: [
