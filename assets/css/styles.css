@@ -5,9 +5,9 @@
   --bg: #030408;
   --bg-elevated: #080c14;
   --bg-card: rgba(8, 14, 24, 0.85);
-  --accent: #00e5ff;
-  --accent-dim: rgba(0, 229, 255, 0.15);
-  --accent-glow: rgba(0, 229, 255, 0.4);
+  --accent: #5eead4;
+  --accent-dim: rgba(94, 234, 212, 0.12);
+  --accent-glow: rgba(94, 234, 212, 0.22);
   --accent-warm: #f59e0b;
   --text: #f1f5f9;
   --text-muted: #94a3b8;
@@ -16,10 +16,10 @@
   --border-focus: rgba(0, 229, 255, 0.5);
   --font-head: "Syne", system-ui, sans-serif;
   --font-body: "Outfit", system-ui, sans-serif;
-  --radius: 12px;
-  --radius-lg: 20px;
+  --radius: 14px;
+  --radius-lg: 18px;
   --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.2s ease;
 }
 
 *,
@@ -46,7 +46,7 @@ body {
   color: var(--text);
   background-color: var(--bg);
   min-height: 100vh;
-  animation: page-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+
 }
 
 @keyframes page-in {
@@ -79,7 +79,7 @@ body::before {
   inset: 0;
   z-index: 999;
   pointer-events: none;
-  opacity: 0.035;
+  opacity: 0.012;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 200px 200px;
@@ -94,7 +94,7 @@ body::before {
   background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.08;
+  opacity: 0.04;
   transform: translate(-50%, -50%);
   transition: left 0.3s ease-out, top 0.3s ease-out;
   will-change: left, top;
@@ -213,7 +213,7 @@ img {
 }
 
 .fab-whatsapp:hover {
-  transform: scale(1.1) translateY(-2px);
+  transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(37, 211, 102, 0.55);
 }
 
@@ -4222,4 +4222,23 @@ img {
   .footer-grid {
     gap: 2.8rem;
   }
+}
+
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.25);
+  border-radius: 6px;
+}
+
+.section {
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+p {
+  line-height: 1.7;
 }

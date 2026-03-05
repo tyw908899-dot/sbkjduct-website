@@ -6,16 +6,7 @@
   "use strict";
 
   const LANGS = {
-    en: { label: "English",    flag: "🇬🇧" },
-    zh: { label: "中文",        flag: "🇨🇳" },
-    es: { label: "Español",    flag: "🇪🇸" },
-    ru: { label: "Русский",    flag: "🇷🇺" },
-    ar: { label: "العربية",    flag: "🇸🇦" },
-    tr: { label: "Türkçe",     flag: "🇹🇷" },
-    fr: { label: "Français",   flag: "🇫🇷" },
-    pt: { label: "Português",  flag: "🇧🇷" },
-    hi: { label: "हिन्दी",      flag: "🇮🇳" },
-    id: { label: "Bahasa",     flag: "🇮🇩" },
+    en:{label:"English",flag:"🇬🇧"}
   };
 
   const T = {
@@ -353,7 +344,7 @@
     "sbhf-i":{s:{zh:"风管合缝机",es:"Máquina cerradora de costuras",ru:"Машина для закрытия швов",ar:"آلة إغلاق اللحامات",tr:"Dikiş kapatma makinesi",fr:"Machine de fermeture de joints",pt:"Máquina de fechamento de costuras",hi:"डक्ट ज़िपर सीम क्लोज़िंग मशीन",id:"Mesin penutup jahitan saluran"},d:{zh:"矩形风管纵向合缝机，快速封合匹兹堡锁缝。最大送料速度15m/min，最小风管尺寸100×100mm。",es:"Máquina cerradora de costuras longitudinales para ductos rectangulares, velocidad hasta 15m/min.",ru:"Машина для закрытия продольных швов прямоугольных воздуховодов, скорость до 15м/мин.",ar:"آلة إغلاق اللحامات الطولية للقنوات المستطيلة بسرعة حتى 15م/دقيقة.",tr:"Dikdörtgen kanallar için boyuna dikiş kapatma makinesi, hız 15m/dk'ya kadar.",fr:"Machine de fermeture de joints longitudinaux pour conduits rectangulaires, vitesse jusqu'à 15m/min.",pt:"Máquina de fechamento de costuras longitudinais para dutos retangulares, velocidade até 15m/min.",hi:"रेक्टैंगुलर डक्ट के लिए लॉन्गिट्यूडिनल सीम क्लोज़िंग मशीन, 15m/min तक की गति।",id:"Mesin penutup jahitan longitudinal untuk saluran persegi panjang, kecepatan hingga 15m/mnt."}}
   };
 
-  let currentLang = localStorage.getItem("sbkj-lang") || "en";
+  let currentLang = "en";
 
   function t(key) {
     const entry = T[key];
@@ -431,11 +422,11 @@
   function setLang(lang) {
     if (!LANGS[lang]) return;
     currentLang = lang;
-    localStorage.setItem("sbkj-lang", lang);
     applyTranslations();
   }
 
   function createSwitcher() {
+    if (Object.keys(LANGS).length < 2) return;
     const nav = document.querySelector(".site-nav");
     if (!nav) return;
     const wrap = document.createElement("div");
