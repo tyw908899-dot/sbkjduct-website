@@ -918,6 +918,14 @@ img {
   color: var(--text-muted);
 }
 
+.machines-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
 .machines-section-title {
   font-family: var(--font-head);
   font-size: 1.6rem;
@@ -934,6 +942,47 @@ img {
 
 .machines-featured {
   padding-block: 3rem 4rem;
+}
+
+.machines-groups {
+  padding-block: 3.2rem 4.5rem;
+}
+
+.machines-groups-intro {
+  margin-bottom: 2rem;
+}
+
+.machines-group {
+  padding: 1.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(9, 16, 27, 0.78), rgba(9, 16, 27, 0.46));
+}
+
+.machines-group + .machines-group {
+  margin-top: 1.4rem;
+}
+
+.machines-group-head {
+  margin-bottom: 1rem;
+}
+
+.machines-group-head h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.machines-group-head p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+}
+
+.machines-group-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
 }
 
 .machines-featured-grid {
@@ -1002,6 +1051,37 @@ img {
   margin: 0 1.15rem 1.15rem;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.machines-card-detailed {
+  display: flex;
+  flex-direction: column;
+}
+
+.machines-card-detailed h4 {
+  margin: 0.2rem 1.15rem 0.3rem;
+  font-family: var(--font-head);
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.machines-card-kicker {
+  margin: 0.95rem 1.15rem 0;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.machines-card-link {
+  margin: auto 1.15rem 1.15rem;
+  font-size: 0.83rem;
+  color: #d5f7ff;
+  letter-spacing: 0.01em;
+}
+
+.machines-cta-actions {
+  margin-top: 1.2rem;
 }
 
 .machines-catalog-grid {
@@ -1076,6 +1156,7 @@ img {
 }
 
 @media (max-width: 960px) {
+  .machines-group-grid,
   .machines-featured-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1090,6 +1171,11 @@ img {
     padding-block: 3rem 2.5rem;
   }
 
+  .machines-group {
+    padding: 1.1rem;
+  }
+
+  .machines-group-grid,
   .machines-featured-grid {
     grid-template-columns: 1fr;
   }
