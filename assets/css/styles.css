@@ -3432,3 +3432,24 @@ img {
   .cta-split-divider { padding: 0; }
   .cta-split-path { padding-inline: 0; }
 }
+
+
+.hero-note,
+.page-highlight {
+  margin: 1rem auto 0;
+  max-width: 48rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 229, 255, 0.35);
+  background: rgba(0, 229, 255, 0.1);
+  color: var(--text);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.hero-note strong {
+  color: var(--accent);
+}
