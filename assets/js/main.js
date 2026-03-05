@@ -61,6 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (el.dataset.counted) return;
     el.dataset.counted = "1";
     const target = parseInt(el.dataset.count, 10);
+    if (Number.isNaN(target) || target <= 0) {
+      const fallback = parseInt((el.textContent || "").replace(/[^\d-]/g, ""), 10);
+      if (!Number.isNaN(fallback) && fallback > 0) return;
+      el.textContent = "1" + (el.dataset.suffix || "");
+      return;
+    }
     const suffix = el.dataset.suffix || "";
     const current = parseInt((el.textContent || "").replace(/[^\d-]/g, ""), 10);
     const startValue = Number.isNaN(current) ? 0 : current;
