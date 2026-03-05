@@ -1209,6 +1209,16 @@ img {
   color: var(--text-muted);
 }
 
+.card-link-hint {
+  display: inline-flex;
+  margin: 0 1.25rem 1.15rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 .card-list {
   margin: 0 0 0.6rem;
   padding-left: 1.1rem;
