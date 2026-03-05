@@ -3432,3 +3432,62 @@ img {
   .cta-split-divider { padding: 0; }
   .cta-split-path { padding-inline: 0; }
 }
+
+/* SEO category pages */
+.category-link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.category-link-card {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.1rem;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.category-link-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.category-link-card h3 {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-head);
+}
+
+.category-link-card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.comparison-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.comparison-table th {
+  color: var(--text);
+  background: rgba(0, 229, 255, 0.08);
+}
+
+.trust-list li {
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
