@@ -2262,6 +2262,22 @@ img {
   font-weight: 700;
 }
 
+.quote-path-actions {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.quote-path-actions .btn {
+  flex: 1 1 220px;
+  justify-content: center;
+}
+
+.quote-path-actions-bottom {
+  margin-top: 0.15rem;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: minmax(0, 2.1fr) minmax(0, 2.2fr);
@@ -2380,6 +2396,14 @@ img {
   gap: 0.35rem;
 }
 
+.contact-checklist ol {
+  margin: 0.7rem 0 0;
+  padding-left: 1.05rem;
+  display: grid;
+  gap: 0.4rem;
+  color: var(--text-muted);
+}
+
 .contact-form {
   border-radius: var(--radius-lg);
   padding: 2.25rem 2rem;
@@ -2411,6 +2435,11 @@ img {
   font-size: 0.9rem;
 }
 
+.field-help {
+  color: var(--text-dim);
+  font-size: 0.76rem;
+}
+
 .form-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2437,8 +2466,8 @@ img {
   border: 1px solid var(--border);
   background: var(--bg-elevated);
   color: var(--text);
-  padding: 0.6rem 0.75rem;
-  font-size: 0.88rem;
+  padding: 0.72rem 0.8rem;
+  font-size: 0.95rem;
   outline: none;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
@@ -2446,6 +2475,57 @@ img {
 .form-field textarea {
   resize: vertical;
   min-height: 100px;
+}
+
+
+.smart-builder {
+  margin: 0.3rem 0 1rem;
+  border: 1px solid var(--border);
+  background: rgba(18, 25, 37, 0.48);
+  border-radius: var(--radius);
+  padding: 0.95rem;
+}
+
+.smart-builder-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.smart-builder-copy {
+  margin: 0.35rem 0 0.7rem;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.builder-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 0.55rem 0.7rem;
+  align-items: center;
+}
+
+.builder-grid label {
+  color: var(--text);
+  font-size: 0.84rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.builder-grid input,
+.builder-grid select {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  padding: 0.58rem 0.7rem;
+  font-size: 0.84rem;
+}
+
+.builder-grid input:disabled,
+.builder-grid select:disabled {
+  opacity: 0.45;
 }
 
 .form-field input:focus,
@@ -2475,6 +2555,19 @@ img {
   margin-top: 0.3rem;
 }
 
+.contact-trust ul {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.45rem;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+}
+
+.contact-trust a {
+  color: var(--accent);
+}
+
 .contact-form-alt {
   margin: 0.85rem 0 0;
   font-size: 0.85rem;
@@ -2494,6 +2587,10 @@ img {
 
 .contact-form-status.is-error {
   color: #f38ba8;
+}
+
+.copy-inquiry-btn {
+  margin-top: 0.65rem;
 }
 
 .site-footer {
@@ -2723,6 +2820,10 @@ img {
   }
 
   .form-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .builder-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
