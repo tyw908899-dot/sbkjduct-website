@@ -353,7 +353,41 @@
     "sbhf-i":{s:{zh:"风管合缝机",es:"Máquina cerradora de costuras",ru:"Машина для закрытия швов",ar:"آلة إغلاق اللحامات",tr:"Dikiş kapatma makinesi",fr:"Machine de fermeture de joints",pt:"Máquina de fechamento de costuras",hi:"डक्ट ज़िपर सीम क्लोज़िंग मशीन",id:"Mesin penutup jahitan saluran"},d:{zh:"矩形风管纵向合缝机，快速封合匹兹堡锁缝。最大送料速度15m/min，最小风管尺寸100×100mm。",es:"Máquina cerradora de costuras longitudinales para ductos rectangulares, velocidad hasta 15m/min.",ru:"Машина для закрытия продольных швов прямоугольных воздуховодов, скорость до 15м/мин.",ar:"آلة إغلاق اللحامات الطولية للقنوات المستطيلة بسرعة حتى 15م/دقيقة.",tr:"Dikdörtgen kanallar için boyuna dikiş kapatma makinesi, hız 15m/dk'ya kadar.",fr:"Machine de fermeture de joints longitudinaux pour conduits rectangulaires, vitesse jusqu'à 15m/min.",pt:"Máquina de fechamento de costuras longitudinais para dutos retangulares, velocidade até 15m/min.",hi:"रेक्टैंगुलर डक्ट के लिए लॉन्गिट्यूडिनल सीम क्लोज़िंग मशीन, 15m/min तक की गति।",id:"Mesin penutup jahitan longitudinal untuk saluran persegi panjang, kecepatan hingga 15m/mnt."}}
   };
 
-  let currentLang = localStorage.getItem("sbkj-lang") || "en";
+  const pagePath = (window.location.pathname || "/index.html").replace(/\/$/, "/index.html");
+  const NON_ENGLISH_BLOCKED_PATHS = {
+    "/duct-making-machine-australia.html": {
+      fallback: "/machines.html",
+      reason: "This campaign page is currently published in English only."
+    }
+  };
+
+  const preferredLang = localStorage.getItem("sbkj-lang") || "en";
+  let currentLang = preferredLang;
+
+  function getLanguageConstraint(path) {
+    return NON_ENGLISH_BLOCKED_PATHS[path] || null;
+  }
+
+  function canApplyLangOnPage(lang, path = pagePath) {
+    if (lang === "en") return true;
+    return !getLanguageConstraint(path);
+  }
+
+  function renderLanguageNotice(message, fallbackPath) {
+    if (!message) return;
+    const host = document.querySelector("main") || document.querySelector(".page-hero") || document.body;
+    if (!host || document.getElementById("sbLangNotice")) return;
+
+    const notice = document.createElement("div");
+    notice.id = "sbLangNotice";
+    notice.className = "lang-notice";
+    const safePath = typeof fallbackPath === "string" && fallbackPath ? fallbackPath : "";
+    notice.innerHTML = safePath
+      ? `${message} <a href="${safePath}">View the closest translated page</a>.`
+      : message;
+
+    host.insertBefore(notice, host.firstChild);
+  }
 
   function t(key) {
     const entry = T[key];
@@ -430,8 +464,19 @@
 
   function setLang(lang) {
     if (!LANGS[lang]) return;
-    currentLang = lang;
     localStorage.setItem("sbkj-lang", lang);
+    if (!canApplyLangOnPage(lang)) {
+      currentLang = "en";
+      applyTranslations();
+      const blocked = getLanguageConstraint(pagePath);
+      if (blocked && blocked.fallback && blocked.fallback !== pagePath) {
+        window.location.href = blocked.fallback;
+        return;
+      }
+      renderLanguageNotice(blocked?.reason || "This page remains in English to avoid mixed-language content.");
+      return;
+    }
+    currentLang = lang;
     applyTranslations();
   }
 
@@ -476,8 +521,16 @@
   }
 
   function init() {
+    if (!canApplyLangOnPage(currentLang)) {
+      currentLang = "en";
+    }
     createSwitcher();
     applyTranslations();
+
+    const blocked = getLanguageConstraint(pagePath);
+    if (blocked && preferredLang !== "en") {
+      renderLanguageNotice(`${blocked.reason} Your language preference is saved and will be used on translated pages.`, blocked.fallback);
+    }
   }
 
   if (document.readyState === "loading") {
