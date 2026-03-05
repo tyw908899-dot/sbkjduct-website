@@ -3432,3 +3432,36 @@ img {
   .cta-split-divider { padding: 0; }
   .cta-split-path { padding-inline: 0; }
 }
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 2000;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #000;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
