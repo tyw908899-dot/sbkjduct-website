@@ -51,6 +51,11 @@
         <p class="eyebrow">B2B HVAC Duct Machinery Inquiry</p>
         <h1 class="page-title">Request a Quote for HVAC Duct Machinery</h1>
         <p class="page-lead">Send your project basics in one short form. We will prepare a tailored quotation based on your machine interest, country, and production needs.</p>
+        <div class="quote-path-actions" aria-label="Choose your path">
+          <a href="#quote-form" class="btn btn-primary">Request a Quote</a>
+          <a href="#quote-form" class="btn btn-ghost" data-quote-path="recommend">Not sure what you need? Get a recommendation</a>
+          <a href="videos.html" class="btn btn-outline">Watch machines running</a>
+        </div>
       </div>
     </section>
 
@@ -63,29 +68,33 @@
           <div class="form-row">
             <div class="form-field">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name" />
             </div>
             <div class="form-field">
               <label for="company">Company</label>
-              <input id="company" name="company" type="text" autocomplete="organization" required />
+              <input id="company" name="company" type="text" autocomplete="organization" required placeholder="Company or factory name" />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-field">
               <label for="country">Country</label>
-              <input id="country" name="country" type="text" autocomplete="country-name" required />
+              <input id="country" name="country" type="text" autocomplete="country-name" list="country-list" required placeholder="Search or select country" />
+              <datalist id="country-list">
+                <option value="Australia"></option><option value="Canada"></option><option value="China"></option><option value="Egypt"></option><option value="France"></option><option value="Germany"></option><option value="India"></option><option value="Indonesia"></option><option value="Malaysia"></option><option value="Mexico"></option><option value="Philippines"></option><option value="Saudi Arabia"></option><option value="South Africa"></option><option value="Thailand"></option><option value="Turkey"></option><option value="United Arab Emirates"></option><option value="United Kingdom"></option><option value="United States"></option><option value="Vietnam"></option>
+              </datalist>
+              <small class="field-help">Start typing to quickly find your country.</small>
             </div>
             <div class="form-field">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required />
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="name@company.com" />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-field">
               <label for="whatsapp">WhatsApp <span aria-hidden="true">(optional)</span></label>
-              <input id="whatsapp" name="whatsapp" type="text" autocomplete="tel" />
+              <input id="whatsapp" name="whatsapp" type="text" autocomplete="tel" placeholder="Country code + number" />
             </div>
             <div class="form-field">
               <label for="machine_interest">Machine interest</label>
@@ -99,41 +108,76 @@
                 <option value="Round Duct Lock Seamer SBLR-600">Round Duct Lock Seamer SBLR-600</option>
                 <option value="Hydraulic Folder SBHF-I">Hydraulic Folder SBHF-I</option>
                 <option value="TDF Flange Forming Machine SBCK-50A">TDF Flange Forming Machine SBCK-50A</option>
-                <option value="Not sure / need recommendation">Not sure / need recommendation</option>
+                <option value="Not sure — recommend">Not sure — recommend</option>
               </select>
             </div>
           </div>
 
+          <div class="smart-builder" aria-label="Smart inquiry builder">
+            <p class="smart-builder-title">Smart inquiry builder</p>
+            <p class="smart-builder-copy">Tick what you know to auto-build a clean project summary in your message.</p>
+            <div class="builder-grid">
+              <label><input type="checkbox" id="duct_type_toggle" /> Duct type</label>
+              <select id="duct_type" disabled>
+                <option value="">Select</option>
+                <option value="Spiral">Spiral</option>
+                <option value="Rectangular">Rectangular</option>
+                <option value="Both">Both</option>
+              </select>
+
+              <label><input type="checkbox" id="target_output_toggle" /> Target output</label>
+              <input id="target_output" type="text" disabled placeholder="e.g. 1,200 m²/day" />
+
+              <label><input type="checkbox" id="material_thickness_toggle" /> Material thickness</label>
+              <input id="material_thickness" type="text" disabled placeholder="e.g. 0.5–1.2 mm GI" />
+
+              <label><input type="checkbox" id="voltage_toggle" /> Voltage</label>
+              <input id="voltage" type="text" disabled placeholder="e.g. 380V / 50Hz / 3P" />
+
+              <label><input type="checkbox" id="destination_toggle" /> Destination</label>
+              <input id="destination" type="text" disabled placeholder="Country / port" />
+            </div>
+          </div>
+
           <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Share your project details, target capacity, and any technical requirements."></textarea>
+            <label for="message">Message <span aria-hidden="true">(optional)</span></label>
+            <textarea id="message" name="message" rows="6" placeholder="Share project goals, timelines, and any special requirements. The smart builder above can fill this for you."></textarea>
+            <small class="field-help">Optional but encouraged — better detail helps us recommend the right machine configuration.</small>
           </div>
 
           <button type="submit" class="btn btn-primary">Send Quote Request</button>
+          <button type="button" id="copyInquiryBtn" class="btn btn-outline copy-inquiry-btn">Copy inquiry text</button>
           <p id="quoteFormStatus" class="contact-form-status" role="status" aria-live="polite"></p>
         </form>
 
         <div class="contact-primary">
-          <div class="contact-checklist" aria-label="What to include checklist">
-            <h3>What to include</h3>
-            <ul>
-              <li>duct type (spiral / rectangular)</li>
-              <li>target output or capacity</li>
-              <li>material thickness</li>
-              <li>voltage (if known)</li>
-              <li>destination country / port</li>
-            </ul>
+          <div class="contact-checklist" aria-label="What happens next">
+            <h3>What happens next</h3>
+            <ol>
+              <li>We confirm requirements</li>
+              <li>We recommend configuration</li>
+              <li>We prepare quotation</li>
+            </ol>
           </div>
 
           <div class="contact-trust">
-            <p>We use your details only to prepare your quotation.</p>
-            <p>Share as much project detail as you can—photos/specs help.</p>
+            <ul>
+              <li>We use your details only to prepare your quotation.</li>
+              <li>Share photos/specs if available — it helps us recommend the right configuration.</li>
+              <li>You can also email us directly: <a href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a></li>
+            </ul>
           </div>
 
           <div class="contact-callout">
             <p class="contact-callout-title">Need direct contact?</p>
             <a class="contact-email" href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a>
             <p class="contact-callout-copy">If your mail app does not open, copy the address above and send your requirements directly.</p>
+          </div>
+
+          <div class="quote-path-actions quote-path-actions-bottom" aria-label="Choose your path">
+            <a href="#quote-form" class="btn btn-primary">Request a Quote</a>
+            <a href="#quote-form" class="btn btn-ghost" data-quote-path="recommend">Not sure what you need? Get a recommendation</a>
+            <a href="videos.html" class="btn btn-outline">Watch machines running</a>
           </div>
         </div>
       </div>
@@ -194,8 +238,111 @@
     (function () {
       const form = document.getElementById('quote-form');
       const status = document.getElementById('quoteFormStatus');
+      const messageField = document.getElementById('message');
+      const machineSelect = document.getElementById('machine_interest');
+      const copyBtn = document.getElementById('copyInquiryBtn');
 
-      if (!form || !status) return;
+      if (!form || !status || !messageField || !machineSelect || !copyBtn) return;
+
+      const smartFields = [
+        { toggle: 'duct_type_toggle', input: 'duct_type', label: 'Duct type' },
+        { toggle: 'target_output_toggle', input: 'target_output', label: 'Target output' },
+        { toggle: 'material_thickness_toggle', input: 'material_thickness', label: 'Material thickness' },
+        { toggle: 'voltage_toggle', input: 'voltage', label: 'Voltage' },
+        { toggle: 'destination_toggle', input: 'destination', label: 'Destination' }
+      ];
+
+      function setRecommendation() {
+        machineSelect.value = 'Not sure — recommend';
+        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        machineSelect.focus();
+      }
+
+      document.querySelectorAll('[data-quote-path="recommend"]').forEach(function (cta) {
+        cta.addEventListener('click', function (event) {
+          event.preventDefault();
+          setRecommendation();
+        });
+      });
+
+      smartFields.forEach(function (field) {
+        const toggle = document.getElementById(field.toggle);
+        const input = document.getElementById(field.input);
+        if (!toggle || !input) return;
+        toggle.addEventListener('change', function () {
+          input.disabled = !toggle.checked;
+          if (!toggle.checked) input.value = '';
+        });
+      });
+
+      function smartSummaryLines() {
+        return smartFields
+          .map(function (field) {
+            const toggle = document.getElementById(field.toggle);
+            const input = document.getElementById(field.input);
+            if (!toggle || !input || !toggle.checked || !input.value.trim()) return '';
+            return `${field.label}: ${input.value.trim()}`;
+          })
+          .filter(Boolean);
+      }
+
+      function buildMessageWithSummary() {
+        const currentMessage = messageField.value.trim();
+        const summaryLines = smartSummaryLines();
+        if (!summaryLines.length) return currentMessage;
+
+        const summaryBlock = ['Project summary:', ...summaryLines].join('\n');
+        if (!currentMessage) return summaryBlock;
+        if (currentMessage.includes('Project summary:')) return currentMessage;
+        return `${currentMessage}\n\n${summaryBlock}`;
+      }
+
+      function buildMailtoPayload() {
+        const data = new FormData(form);
+        const machineInterest = data.get('machine_interest') || 'General Inquiry';
+        const country = data.get('country') || 'Unknown Country';
+        const summary = smartSummaryLines();
+        const finalMessage = buildMessageWithSummary();
+        const pageUrl = window.location.href;
+        const timestamp = new Date().toISOString();
+
+        const subject = `Quote Request — ${machineInterest} — ${country}`;
+        const bodyLines = [
+          `Name: ${data.get('name') || ''}`,
+          `Company: ${data.get('company') || ''}`,
+          `Country: ${country}`,
+          `Email: ${data.get('email') || ''}`,
+          `WhatsApp: ${data.get('whatsapp') || 'Not provided'}`,
+          `Machine interest: ${machineInterest}`,
+          '',
+          'Generated project summary:',
+          ...(summary.length ? summary : ['Not provided']),
+          '',
+          'Message:',
+          `${finalMessage || 'Not provided'}`,
+          '',
+          `Page URL: ${pageUrl}`,
+          `Timestamp: ${timestamp}`
+        ];
+
+        return {
+          subject,
+          body: bodyLines.join('\n')
+        };
+      }
+
+      copyBtn.addEventListener('click', async function () {
+        const payload = buildMailtoPayload();
+        const copyText = `Send to: sales@sbkjduct.com\nSubject: ${payload.subject}\n\n${payload.body}`;
+        try {
+          await navigator.clipboard.writeText(copyText);
+          status.textContent = 'Inquiry text copied. Paste it into an email to sales@sbkjduct.com.';
+          status.classList.remove('is-error');
+        } catch (error) {
+          status.textContent = 'Copy failed on this browser. Please email sales@sbkjduct.com directly.';
+          status.classList.add('is-error');
+        }
+      });
 
       form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -207,28 +354,12 @@
         }
 
         status.classList.remove('is-error');
-
-        const data = new FormData(form);
-        const machineInterest = data.get('machine_interest') || 'General Inquiry';
-        const country = data.get('country') || 'Unknown Country';
-
-        const subject = `Quote Request – ${machineInterest} – ${country}`;
-        const bodyLines = [
-          `Name: ${data.get('name') || ''}`,
-          `Company: ${data.get('company') || ''}`,
-          `Country: ${country}`,
-          `Email: ${data.get('email') || ''}`,
-          `WhatsApp: ${data.get('whatsapp') || 'Not provided'}`,
-          `Machine interest: ${machineInterest}`,
-          '',
-          'Message:',
-          `${data.get('message') || ''}`
-        ];
-
-        const mailto = `mailto:sales@sbkjduct.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+        messageField.value = buildMessageWithSummary();
+        const payload = buildMailtoPayload();
+        const mailto = `mailto:sales@sbkjduct.com?subject=${encodeURIComponent(payload.subject)}&body=${encodeURIComponent(payload.body)}`;
         window.location.href = mailto;
 
-        status.textContent = 'Your email app should open with a pre-filled quote request. If it does not, email sales@sbkjduct.com directly.';
+        status.textContent = 'Your email app should open with a pre-filled quote request. If it does not, use “Copy inquiry text” and send to sales@sbkjduct.com.';
       });
     })();
   </script>
