@@ -4165,3 +4165,61 @@ img {
     padding-block: 4.2rem;
   }
 }
+
+/* Final premium refinement pass */
+.section {
+  padding-block: 7.6rem;
+}
+
+.section-header {
+  margin-bottom: 3.6rem;
+}
+
+.site-footer {
+  padding-block: 6.4rem 3.2rem;
+}
+
+.footer-grid {
+  gap: 4.2rem;
+}
+
+.footer-grid h3 {
+  margin-bottom: 1.1rem;
+  letter-spacing: 0.14em;
+}
+
+.site-footer li + li {
+  margin-top: 0.72rem;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.45rem;
+}
+
+.cta-final .text-center > p,
+.section-cta p,
+.factory-cta p,
+.quality-cta p,
+.videos-page .videos-cta p {
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.hero-actions {
+  gap: 0.9rem;
+}
+
+@media (max-width: 960px) {
+  .section {
+    padding-block: 5rem;
+  }
+
+  .site-footer {
+    padding-block: 5.2rem 2.8rem;
+  }
+
+  .footer-grid {
+    gap: 2.8rem;
+  }
+}
