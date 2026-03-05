@@ -282,7 +282,7 @@
       const base = getBasePath();
       html += `<div class="sb-chat-contact">
         <a href="https://wa.me/61435074994" target="_blank" rel="noopener">WhatsApp: +61 435 074 994</a>
-        <a href="mailto:tyw908899@gmail.com">Email: tyw908899@gmail.com</a>
+        <a href="mailto:sales@sbkjduct.com">Email: sales@sbkjduct.com</a>
         <a href="${base}contact.html">Visit Contact Page</a>
       </div>`;
     }
