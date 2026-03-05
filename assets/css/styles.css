@@ -4334,3 +4334,108 @@ img {
 .pillar-faq details:last-child { border-bottom: 1px solid var(--border); }
 .pillar-faq summary { cursor: pointer; font-weight: 600; color: var(--text); }
 .pillar-faq p { margin-top: 0.65rem; color: var(--text-muted); }
+
+
+.section-core-entry .section-header {
+  margin-bottom: 2rem;
+}
+
+.core-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.core-entry-card {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.15rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  text-decoration: none;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.core-entry-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.55rem;
+}
+
+.core-entry-card p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.core-entry-card:hover {
+  border-color: var(--border-focus);
+  transform: translateY(-2px);
+}
+
+.section-start-here {
+  padding-top: 0;
+}
+
+.start-here-box {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.4rem;
+  background: rgba(255,255,255,0.02);
+}
+
+.start-here-box h2 {
+  margin: 0.45rem 0 0.65rem;
+}
+
+.start-here-box > p {
+  max-width: 52rem;
+}
+
+.start-here-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.start-here-links a,
+.pillar-related-links a {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.start-here-links a:hover,
+.pillar-related-links a:hover {
+  border-color: var(--border-focus);
+  color: var(--accent-2);
+}
+
+.footer-pillars-list li + li {
+  margin-top: 0.5rem;
+}
+
+.pillar-related-intro {
+  margin-bottom: 1rem;
+}
+
+.pillar-related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+@media (max-width: 1080px) {
+  .core-entry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .core-entry-grid {
+    grid-template-columns: 1fr;
+  }
+}
