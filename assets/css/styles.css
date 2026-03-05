@@ -168,39 +168,28 @@ img {
   transform: translateY(0);
 }
 
-/* Horizontal marquee */
-.marquee-wrap {
-  overflow: hidden;
+/* Premium static proof strip */
+.proof-strip {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding-block: 1rem;
-  background: var(--bg-elevated);
+  background: linear-gradient(180deg, rgba(10, 18, 30, 0.9), rgba(10, 18, 30, 0.45));
 }
 
-.marquee-track {
-  display: flex;
-  gap: 3rem;
-  width: max-content;
-  animation: marquee 30s linear infinite;
+.proof-strip-inner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
-.marquee-track span {
+.proof-strip-inner span {
   font-family: var(--font-head);
-  font-size: 0.82rem;
+  font-size: 0.74rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-dim);
-  white-space: nowrap;
-}
-
-.marquee-track .marquee-dot {
-  color: var(--accent);
-}
-
-@keyframes marquee {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  text-align: center;
 }
 
 /* Floating WhatsApp button */
@@ -656,7 +645,7 @@ img {
 }
 
 .why-item {
-  padding: 2rem 1.5rem;
+  padding: 2.25rem 1.6rem;
   border-radius: var(--radius-lg);
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -1111,7 +1100,7 @@ img {
 }
 
 .section {
-  padding-block: 5rem 5rem;
+  padding-block: 6rem 6rem;
   color: var(--text);
 }
 
@@ -1121,9 +1110,9 @@ img {
 
 .section-header {
   text-align: center;
-  max-width: 40rem;
+  max-width: 42rem;
   margin-inline: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .section-header.align-left {
@@ -1132,7 +1121,7 @@ img {
 }
 
 .section-header h2 {
-  margin: 0.5rem 0 1rem;
+  margin: 0.35rem 0 1rem;
   font-family: var(--font-head);
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   font-weight: 800;
@@ -1150,7 +1139,7 @@ img {
 
 .cards-grid {
   display: grid;
-  gap: 2rem;
+  gap: 2.2rem;
 }
 
 .cards-3 {
@@ -1196,7 +1185,7 @@ img {
 }
 
 .card h3 {
-  margin: 1.1rem 1.25rem 0.35rem;
+  margin: 1.3rem 1.4rem 0.45rem;
   font-family: var(--font-head);
   font-size: 1.05rem;
   font-weight: 700;
@@ -1204,14 +1193,15 @@ img {
 }
 
 .card p {
-  margin: 0 1.25rem 1.25rem;
+  margin: 0 1.4rem 1.4rem;
   font-size: 0.88rem;
   color: var(--text-muted);
+  line-height: 1.55;
 }
 
 .card-link-hint {
   display: inline-flex;
-  margin: 0 1.25rem 1.15rem;
+  margin: 0 1.4rem 1.3rem;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -1263,7 +1253,7 @@ img {
 
 .section-cta {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 2.8rem;
 }
 
 .text-center {
@@ -2109,7 +2099,7 @@ img {
   border-top: 1px solid var(--border);
   background: var(--bg-elevated);
   color: var(--text-muted);
-  padding-block: 4rem 2.5rem;
+  padding-block: 4.5rem 2.7rem;
   position: relative;
 }
 
@@ -2127,7 +2117,7 @@ img {
 .footer-grid {
   display: grid;
   grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr) minmax(0, 1.5fr);
-  gap: 2.5rem;
+  gap: 2.8rem;
   align-items: start;
   font-size: 0.88rem;
 }
@@ -2168,6 +2158,14 @@ img {
   color: var(--text-muted);
 }
 
+.footer-meta {
+  margin: 0.9rem 0 0;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
 .site-footer h3 {
   margin-top: 0;
   margin-bottom: 0.55rem;
@@ -2180,13 +2178,13 @@ img {
 }
 
 .site-footer li + li {
-  margin-top: 0.15rem;
+  margin-top: 0.35rem;
 }
 
 .footer-bottom {
   border-top: 1px solid var(--border);
-  margin-top: 1.5rem;
-  padding-top: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.1rem;
   font-size: 0.82rem;
   color: var(--text-dim);
   text-align: center;
@@ -2298,8 +2296,19 @@ img {
     padding-block: 3.3rem 3rem;
   }
 
+  .proof-strip-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+    padding: 0.9rem 0;
+  }
+
+  .proof-strip-inner span {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+  }
+
   .section {
-    padding-block: 3rem;
+    padding-block: 3.6rem;
   }
 
   .hero-actions {
@@ -3157,7 +3166,7 @@ img {
   gap: 2rem;
 }
 .diff-item {
-  padding: 2.25rem 2rem;
+  padding: 2.5rem 2.1rem;
   border-radius: var(--radius-lg);
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -3193,7 +3202,7 @@ img {
   color: var(--text-muted);
   font-size: 0.92rem;
   line-height: 1.65;
-  margin: 0 0 1rem;
+  margin: 0 0 0.9rem;
 }
 .diff-checklist {
   list-style: none;
@@ -3223,9 +3232,9 @@ img {
 .roi-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1.8rem;
   max-width: 58rem;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 3rem;
 }
 .roi-col {
   border-radius: var(--radius-lg);
@@ -3322,7 +3331,7 @@ img {
 .eng-copy p {
   color: var(--text-muted);
   line-height: 1.7;
-  margin: 0 0 1rem;
+  margin: 0 0 0.9rem;
   font-size: 0.95rem;
 }
 .eng-pillars {
@@ -3331,7 +3340,7 @@ img {
   gap: 1.5rem;
 }
 .eng-pillar {
-  padding: 1.75rem 1.5rem;
+  padding: 2rem 1.6rem;
   border-radius: var(--radius);
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -3362,11 +3371,11 @@ img {
 .mfg-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  gap: 1.7rem;
+  margin-bottom: 3.25rem;
 }
 .mfg-stat {
-  padding: 2rem 1.5rem;
+  padding: 2.2rem 1.6rem;
   border-radius: var(--radius-lg);
   background: var(--bg-card);
   border: 1px solid var(--border);
