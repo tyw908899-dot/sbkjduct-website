@@ -531,12 +531,47 @@ img {
   font-weight: 400;
 }
 
+.hero-proof {
+  list-style: none;
+  margin: 1.5rem auto 0;
+  padding: 0;
+  max-width: 36rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.hero-proof li {
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+.hero-proof li::before {
+  content: "\2713";
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
   justify-content: center;
+}
+
+.hero-email {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.hero-email a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero-email a:hover {
+  text-decoration: underline;
 }
 
 .btn {
