@@ -62,12 +62,21 @@ document.addEventListener("DOMContentLoaded", () => {
     el.dataset.counted = "1";
     const target = parseInt(el.dataset.count, 10);
     const suffix = el.dataset.suffix || "";
+    const current = parseInt((el.textContent || "").replace(/[^\d-]/g, ""), 10);
+    const startValue = Number.isNaN(current) ? 0 : current;
+
+    if (startValue >= target) {
+      el.textContent = target + suffix;
+      return;
+    }
+
     const duration = 1600;
     const start = performance.now();
     const step = (now) => {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(target * eased) + suffix;
+      const value = Math.round(startValue + (target - startValue) * eased);
+      el.textContent = value + suffix;
       if (progress < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
@@ -118,4 +127,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
