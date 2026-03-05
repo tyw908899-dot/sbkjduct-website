@@ -3943,3 +3943,139 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Factory page */
+.factory-page .section {
+  padding-block: 5.2rem;
+}
+
+.factory-page .page-lead {
+  max-width: 50rem;
+}
+
+.factory-flow {
+  display: grid;
+  gap: 2.2rem;
+}
+
+.factory-stage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.factory-stage {
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+}
+
+.factory-stage h3 {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: 1.08rem;
+}
+
+.factory-stage p {
+  margin: 0.65rem 0 0;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-size: 0.94rem;
+}
+
+.factory-media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.factory-media-card {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-card);
+}
+
+.factory-media-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.factory-media-card figcaption {
+  margin: 0;
+  padding: 0.8rem 0.9rem 0.95rem;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.factory-credibility {
+  max-width: 52rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  background: var(--bg-card);
+}
+
+.factory-credibility h2 {
+  margin: 0;
+  font-family: var(--font-head);
+}
+
+.factory-credibility p {
+  margin: 0.7rem 0 0;
+  color: var(--text-muted);
+}
+
+.factory-credibility ul {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text);
+}
+
+.factory-credibility li + li {
+  margin-top: 0.35rem;
+}
+
+.factory-cta {
+  border: 1px solid var(--border-focus);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  background: linear-gradient(165deg, rgba(0, 229, 255, 0.06), rgba(8, 14, 24, 0.92));
+  text-align: center;
+}
+
+.factory-cta h2 {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: clamp(1.8rem, 3.4vw, 2.3rem);
+}
+
+.factory-cta p {
+  margin: 0.8rem auto 0;
+  max-width: 42rem;
+  color: var(--text-muted);
+}
+
+.factory-cta-actions {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 960px) {
+  .factory-stage-grid,
+  .factory-media-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .factory-page .section {
+    padding-block: 4.2rem;
+  }
+}
