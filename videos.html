@@ -11,45 +11,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    .videos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .video-card {
-      background: var(--surface, #1a1a1a);
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-    .video-card .video-frame {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-    }
-    .video-card .video-frame iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: none;
-    }
-    .video-card-info {
-      padding: 1rem 1.25rem;
-    }
-    .video-card-info h3 {
-      font-size: 1rem;
-      font-weight: 600;
-      margin: 0;
-    }
-  </style>
   <meta property="og:title" content="Videos | SBKJ Group – HVAC Ductwork Machinery in Action" />
   <meta property="og:description" content="Explore SBKJ machine demo videos: auto duct lines, spiral tubeformers, fitting and support equipment running in real production environments." />
   <meta property="og:type" content="website" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"SBKJ Group","url":"https://sbkjduct.com/","logo":"https://sbkjduct.com/assets/images/logo.png","email":"sales@sbkjduct.com","sameAs":["https://www.youtube.com/@sbkjtubeformer"]}</script>
 </head>
-<body class="site-body">
+<body class="site-body videos-page">
   <div class="cursor-glow" id="cursorGlow"></div>
   <header class="site-header">
     <div class="shell">
@@ -78,102 +45,121 @@
   </header>
 
   <main>
-    <section class="section page-hero">
+    <section class="section page-hero videos-hero">
       <div class="shell">
-        <p class="eyebrow">Video Demo Center</p>
-        <h1 class="page-title">See SBKJ Machines Running on Real Jobs</h1>
-        <p class="page-lead">Review line speed, forming quality and finished duct output before you request a quotation.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell">
-        <p class="machines-section-lead">Grouped demonstrations: auto duct lines, spiral duct production, and fitting/welding operations.</p>
-        <div class="videos-grid reveal reveal-stagger">
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/H1vSetFwvIY" title="Rectangular Duct Lines V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>Rectangular Duct Lines V</h3></div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/FvHsKXJHk_U" title="Duct Line III" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>Duct Line III</h3></div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/ObLmuqKd1IE" title="Oval Duct Forming Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>Oval Duct Forming Machine</h3></div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/sodJ6Qzc5J8" title="Roll Bending Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>Roll Bending Machine</h3></div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/dajF7iZejn8" title="Plasma Cutter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>Plasma Cutter</h3></div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/MKUFTRDhDQY" title="Machines Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>Machines Overview</h3></div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/8hrtuZh11wo" title="Corner Inserting Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>Corner Inserting Machine</h3></div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/3cvrEV67aTI" title="Angle Flange Drilling Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>Angle Flange Drilling Machine</h3></div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/-9NcLIIt7Sc" title="Aluminum Flexible Duct Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>Aluminum Flexible Duct Machine</h3></div>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/CoCLVEH1SjY" title="About Us | SBKJ Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="video-card-info"><h3>About Us – SBKJ Group</h3></div>
-          </div>
-
+        <p class="eyebrow">Industrial Video Center</p>
+        <h1 class="page-title">Machine Demonstrations for HVAC Duct Production Buyers</h1>
+        <p class="page-lead">Evaluate forming consistency, automation flow, and finished duct quality across real SBKJ equipment runs before selecting your line configuration.</p>
+        <div class="videos-hero-points" aria-label="What you can review in this center">
+          <span>Production workflow visibility</span>
+          <span>Machine process clarity</span>
+          <span>Practical purchasing reference</span>
         </div>
       </div>
     </section>
 
-    <section class="section cta-final">
+    <section class="section videos-content">
+      <div class="shell">
+        <p class="machines-section-lead videos-intro">Browse demonstrations by production stage to compare machine performance and identify the right solution for your factory plan.</p>
+
+        <div class="videos-group reveal">
+          <div class="videos-group-head">
+            <p class="videos-group-kicker">Group 01</p>
+            <h2>Auto Duct Lines</h2>
+          </div>
+          <div class="videos-grid reveal-stagger">
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/H1vSetFwvIY" title="Rectangular Duct Lines V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>Rectangular Duct Lines V</h3></div>
+            </div>
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/FvHsKXJHk_U" title="Duct Line III" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>Duct Line III</h3></div>
+            </div>
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/dajF7iZejn8" title="Plasma Cutter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>Plasma Cutter</h3></div>
+            </div>
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/8hrtuZh11wo" title="Corner Inserting Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>Corner Inserting Machine</h3></div>
+            </div>
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/3cvrEV67aTI" title="Angle Flange Drilling Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>Angle Flange Drilling Machine</h3></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="videos-group reveal">
+          <div class="videos-group-head">
+            <p class="videos-group-kicker">Group 02</p>
+            <h2>Spiral Duct Machines</h2>
+          </div>
+          <div class="videos-grid reveal-stagger">
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/ObLmuqKd1IE" title="Oval Duct Forming Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>Oval Duct Forming Machine</h3></div>
+            </div>
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/sodJ6Qzc5J8" title="Roll Bending Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>Roll Bending Machine</h3></div>
+            </div>
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/-9NcLIIt7Sc" title="Aluminum Flexible Duct Machine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>Aluminum Flexible Duct Machine</h3></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="videos-group reveal">
+          <div class="videos-group-head">
+            <p class="videos-group-kicker">Group 03</p>
+            <h2>Factory / Production</h2>
+          </div>
+          <div class="videos-grid reveal-stagger">
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/MKUFTRDhDQY" title="Machines Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>Machines Overview</h3></div>
+            </div>
+            <div class="video-card">
+              <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/CoCLVEH1SjY" title="About Us | SBKJ Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="video-card-info"><h3>About Us – SBKJ Group</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-final videos-cta">
       <div class="grid-bg"></div>
-      <div class="shell text-center reveal" style="position:relative;z-index:1">
-        <p class="eyebrow">Let's build together</p>
-        <h2>Ready to discuss your project?</h2>
-        <p>Share your production requirements and we will propose a suitable machine configuration and investment budget.</p>
-        <div class="hero-actions" style="justify-content: center; margin-top: 1.75rem;">
-          <a href="contact.html" class="btn btn-primary">Request a quotation</a>
-          <a href="https://wa.me/61435074994" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp +61 435 074 994</a>
+      <div class="shell text-center reveal videos-cta-inner">
+        <p class="eyebrow">Project Planning Support</p>
+        <h2>Request a Quote for Your Duct Production Line</h2>
+        <p>Send your target duct type, capacity, and material range. Our team will recommend matching machines and provide a practical quotation path.</p>
+        <div class="hero-actions videos-cta-actions">
+          <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          <a href="mailto:sales@sbkjduct.com" class="btn btn-ghost">sales@sbkjduct.com</a>
         </div>
       </div>
     </section>
