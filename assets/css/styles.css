@@ -1699,6 +1699,83 @@ img {
   border-bottom: 1px solid var(--border);
 }
 
+
+.product-upgrade-section {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.product-upgrade-section h3,
+.product-cta-block h3 {
+  margin: 0 0 0.7rem;
+  font-size: 0.98rem;
+  color: var(--text);
+}
+
+.product-upgrade-section ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.product-upgrade-section li {
+  margin-bottom: 0.45rem;
+}
+
+.product-faq-compact details {
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.9rem;
+  background: rgba(15, 23, 42, 0.2);
+  margin-bottom: 0.65rem;
+}
+
+.product-faq-compact summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.product-faq-compact p {
+  margin: 0.55rem 0 0;
+}
+
+.product-cta-block {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  background: rgba(0, 229, 255, 0.05);
+}
+
+.product-cta-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.product-cta-support-links {
+  margin: 0.8rem 0 0;
+  font-size: 0.88rem;
+}
+
+.product-cta-support-links a {
+  color: var(--text);
+}
+
+.product-sidebar-email {
+  margin: 0.7rem 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.product-sidebar-email a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 .product-sidebar .spec-table {
   font-size: 0.88rem;
   table-layout: fixed;
