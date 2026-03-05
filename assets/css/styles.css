@@ -3600,3 +3600,129 @@ img {
   .cta-split-divider { padding: 0; }
   .cta-split-path { padding-inline: 0; }
 }
+
+/* Videos page premium upgrade (scoped) */
+.videos-page .videos-hero {
+  padding-bottom: 2.5rem;
+}
+
+.videos-page .videos-hero .page-title {
+  max-width: 18ch;
+}
+
+.videos-hero-points {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.videos-hero-points span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.8);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.videos-page .videos-content {
+  padding-top: 1rem;
+}
+
+.videos-page .videos-intro {
+  max-width: 70ch;
+  margin-bottom: 2.2rem;
+}
+
+.videos-page .videos-group {
+  margin-top: 2.8rem;
+}
+
+.videos-page .videos-group:first-of-type {
+  margin-top: 0;
+}
+
+.videos-page .videos-group-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.3rem;
+}
+
+.videos-page .videos-group-kicker {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.videos-page .videos-group h2 {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+}
+
+.videos-page .videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.4rem;
+}
+
+.videos-page .video-card {
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.94), rgba(7, 12, 24, 0.96));
+}
+
+.videos-page .video-card .video-frame {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.videos-page .video-card-info {
+  padding: 1rem 1.1rem 1.15rem;
+}
+
+.videos-page .video-card-info h3 {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.videos-page .videos-cta {
+  margin-top: 1rem;
+}
+
+.videos-page .videos-cta-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.videos-page .videos-cta-actions {
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+@media (max-width: 900px) {
+  .videos-page .videos-group-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .videos-page .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
