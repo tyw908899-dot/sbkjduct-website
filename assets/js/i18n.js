@@ -354,23 +354,75 @@
   };
 
   const pagePath = (window.location.pathname || "/index.html").replace(/\/$/, "/index.html");
-  const NON_ENGLISH_BLOCKED_PATHS = {
-    "/duct-making-machine-australia.html": {
-      fallback: "/machines.html",
-      reason: "This campaign page is currently published in English only."
-    }
+  const MAJOR_TRANSLATED_PAGES = new Set([
+    "/index.html",
+    "/machines.html",
+    "/videos.html",
+    "/about.html",
+    "/contact.html",
+    "/why-choose-sbkj.html",
+    "/factory.html",
+    "/quality.html",
+    "/request-quote.html"
+  ]);
+
+  const LANGUAGE_POLICY = {
+    exact: {
+      "/duct-making-machine-australia.html": {
+        mode: "stay_en_notice",
+        fallback: "/machines.html",
+        reason: "This SEO campaign page is currently published in English only."
+      }
+    },
+    patterns: [
+      {
+        test: (path) => path.startsWith("/product/") && !PROD[getProductSlugFromPath(path)],
+        mode: "redirect_fallback",
+        fallback: "/machines.html",
+        reason: "This product detail page is currently available in English only."
+      }
+    ]
   };
 
   const preferredLang = localStorage.getItem("sbkj-lang") || "en";
   let currentLang = preferredLang;
 
-  function getLanguageConstraint(path) {
-    return NON_ENGLISH_BLOCKED_PATHS[path] || null;
+  function getProductSlugFromPath(path) {
+    const m = path.match(/\/product\/([^\/]+)\.html/);
+    return m ? m[1] : null;
+  }
+
+  function getLanguagePolicy(path) {
+    if (LANGUAGE_POLICY.exact[path]) return LANGUAGE_POLICY.exact[path];
+
+    for (const pattern of LANGUAGE_POLICY.patterns) {
+      if (pattern.test(path)) {
+        return {
+          mode: pattern.mode,
+          fallback: pattern.fallback || "/machines.html",
+          reason: pattern.reason
+        };
+      }
+    }
+
+    if (!MAJOR_TRANSLATED_PAGES.has(path)) {
+      return {
+        mode: "redirect_fallback",
+        fallback: "/index.html",
+        reason: "This page does not have a full multilingual version yet."
+      };
+    }
+
+    return {
+      mode: "translated",
+      fallback: path,
+      reason: ""
+    };
   }
 
   function canApplyLangOnPage(lang, path = pagePath) {
     if (lang === "en") return true;
-    return !getLanguageConstraint(path);
+    return getLanguagePolicy(path).mode === "translated";
   }
 
   function renderLanguageNotice(message, fallbackPath) {
@@ -402,9 +454,7 @@
   }
 
   function getProductSlug() {
-    const path = window.location.pathname;
-    const m = path.match(/\/product\/([^\/]+)\.html/);
-    return m ? m[1] : null;
+    return getProductSlugFromPath(window.location.pathname);
   }
 
   function applyTranslations() {
@@ -468,12 +518,12 @@
     if (!canApplyLangOnPage(lang)) {
       currentLang = "en";
       applyTranslations();
-      const blocked = getLanguageConstraint(pagePath);
-      if (blocked && blocked.fallback && blocked.fallback !== pagePath) {
-        window.location.href = blocked.fallback;
+      const policy = getLanguagePolicy(pagePath);
+      if (policy.mode === "redirect_fallback" && policy.fallback && policy.fallback !== pagePath) {
+        window.location.href = policy.fallback;
         return;
       }
-      renderLanguageNotice(blocked?.reason || "This page remains in English to avoid mixed-language content.");
+      renderLanguageNotice(policy.reason || "This page remains in English to avoid mixed-language content.", policy.fallback);
       return;
     }
     currentLang = lang;
@@ -527,9 +577,9 @@
     createSwitcher();
     applyTranslations();
 
-    const blocked = getLanguageConstraint(pagePath);
-    if (blocked && preferredLang !== "en") {
-      renderLanguageNotice(`${blocked.reason} Your language preference is saved and will be used on translated pages.`, blocked.fallback);
+    const policy = getLanguagePolicy(pagePath);
+    if (policy.mode !== "translated" && preferredLang !== "en") {
+      renderLanguageNotice(`${policy.reason} Your language preference is saved and will be used on translated pages.`, policy.fallback);
     }
   }
 
