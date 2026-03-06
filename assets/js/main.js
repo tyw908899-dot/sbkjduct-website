@@ -126,4 +126,26 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  const stickyCta = document.querySelector("[data-mobile-sticky-cta]");
+  if (stickyCta) {
+    const isMobile = window.matchMedia("(max-width: 640px)");
+    const avoidSections = Array.from(document.querySelectorAll(".site-footer, .quote-form, form"));
+
+    const updateStickyState = () => {
+      if (!isMobile.matches) {
+        stickyCta.classList.add("is-hidden");
+        return;
+      }
+      const shouldHide = avoidSections.some((el) => {
+        const rect = el.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      });
+      stickyCta.classList.toggle("is-hidden", shouldHide);
+    };
+
+    updateStickyState();
+    window.addEventListener("scroll", updateStickyState, { passive: true });
+    window.addEventListener("resize", updateStickyState);
+  }
 });
