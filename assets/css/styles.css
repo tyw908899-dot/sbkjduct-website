@@ -4798,3 +4798,277 @@ img {
     align-items: center;
   }
 }
+
+/* Final front-end experience polish – global refinement */
+:root {
+  --radius: 14px;
+  --radius-lg: 22px;
+  --shadow-soft: 0 18px 45px -26px rgba(0, 0, 0, 0.72);
+  --shadow-elevated: 0 30px 70px -38px rgba(0, 0, 0, 0.8);
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  overflow: clip;
+}
+
+p {
+  line-height: 1.72;
+}
+
+.section {
+  padding-block: clamp(4.35rem, 8vw, 7.8rem);
+}
+
+.section-header {
+  margin-bottom: clamp(2.2rem, 5vw, 3.9rem);
+}
+
+.section-header p,
+.page-lead,
+.machines-hero-lead,
+.hero-lead,
+.quality-stage-card p,
+.quality-evidence-card p,
+.factory-cta p,
+.videos-page .videos-cta p {
+  max-width: 64ch;
+  margin-inline: auto;
+}
+
+.section-header.align-left p,
+.pillar-section-lead,
+.start-here-box > p,
+.wayfinding-panel p,
+.contact-copy p,
+.about-intro p {
+  margin-inline: 0;
+}
+
+.section-cta {
+  margin-top: clamp(2.4rem, 4.5vw, 3.8rem);
+}
+
+.section-divider {
+  opacity: 0.2;
+}
+
+.site-header {
+  background: rgba(3, 4, 8, 0.7);
+  border-bottom-color: rgba(148, 163, 184, 0.14);
+  box-shadow: 0 16px 45px -35px rgba(0, 0, 0, 0.8);
+}
+
+.site-header-inner {
+  padding-block: 0.9rem;
+}
+
+.site-nav {
+  gap: 1.35rem;
+}
+
+.site-nav a,
+.nav-dropdown summary {
+  border-radius: 0.6rem;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.site-nav a:hover,
+.nav-dropdown summary:hover {
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.btn,
+.nav-cta,
+.start-here-links a,
+.pillar-related-links a,
+.wayfinding-links a {
+  min-height: 46px;
+}
+
+.btn {
+  padding-inline: 1.45rem;
+  padding-block: 0.82rem;
+  letter-spacing: 0.01em;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.btn-primary {
+  box-shadow: 0 18px 35px -20px rgba(0, 229, 255, 0.65);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 45px -20px rgba(0, 229, 255, 0.5);
+}
+
+.btn-ghost:hover {
+  transform: translateY(-2px);
+}
+
+.card,
+.why-item,
+.machines-card,
+.machines-category,
+.pillar-card-list li,
+.core-entry-card,
+.spec-block,
+.product-intro,
+.product-video,
+.start-here-box,
+.wayfinding-panel {
+  box-shadow: var(--shadow-soft);
+}
+
+.card-link:hover,
+.machines-card:hover,
+.core-entry-card:hover,
+.why-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elevated);
+}
+
+.card h3,
+.machines-card h3,
+.core-entry-card h3,
+.pillar-content h2,
+.quality-stage-card h3,
+.quality-evidence-card h3 {
+  letter-spacing: -0.015em;
+}
+
+.card p,
+.machines-card p,
+.core-entry-card p,
+.pillar-content li,
+.product-intro p,
+.product-video p,
+.contact-form-card p {
+  line-height: 1.7;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.btn:focus-visible,
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(0, 229, 255, 0.16);
+  border-radius: 0.65rem;
+}
+
+.site-footer {
+  border-top-color: rgba(148, 163, 184, 0.14);
+  background: linear-gradient(180deg, rgba(13, 20, 30, 0.96) 0%, rgba(8, 13, 21, 1) 100%);
+  padding-block: clamp(4.4rem, 8vw, 6.6rem) clamp(2.2rem, 4vw, 3.35rem);
+}
+
+.footer-grid {
+  gap: clamp(2.2rem, 4vw, 4.1rem);
+}
+
+.footer-bottom {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.pillar-page .section,
+.application-page .section,
+.region-page .section {
+  padding-block: clamp(3.7rem, 6vw, 5.2rem);
+}
+
+.pillar-hero,
+.machines-hero,
+.page-hero,
+.hero {
+  scroll-margin-top: 6rem;
+}
+
+@media (max-width: 960px) {
+  .site-nav {
+    padding: 5.5rem 1.4rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .site-nav a,
+  .nav-dropdown summary {
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.65rem;
+  }
+
+  .site-nav a:hover,
+  .nav-dropdown summary:hover {
+    background: rgba(148, 163, 184, 0.12);
+  }
+
+  .nav-dropdown-menu a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-header p,
+  .page-lead,
+  .machines-hero-lead,
+  .hero-lead {
+    max-width: 56ch;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero,
+  .page-hero,
+  .machines-hero,
+  .pillar-hero {
+    padding-block: 3.6rem 3rem;
+  }
+
+  .hero-copy h1,
+  .machines-hero-title,
+  .page-title {
+    margin-bottom: 1.1rem;
+  }
+
+  .hero-actions,
+  .machines-hero-actions,
+  .quality-cta-actions {
+    gap: 0.7rem;
+  }
+
+  .btn,
+  .nav-cta,
+  .start-here-links a,
+  .pillar-related-links a,
+  .wayfinding-links a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card h3,
+  .machines-card h3 {
+    margin: 1rem 1rem 0.4rem;
+  }
+
+  .card p,
+  .machines-card p,
+  .card-link-hint,
+  .machines-card-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .site-footer {
+    padding-block: 4.2rem 2.5rem;
+  }
+}
