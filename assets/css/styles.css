@@ -6577,3 +6577,207 @@ textarea:focus-visible,
   position: sticky;
   top: 90px;
 }
+
+/* ================================================================
+   MOBILE LAYOUT QA — Full-site spacing audit fix
+   Branch: claude/mobile-layout-qa-hLZnM
+   ----------------------------------------------------------------
+   ROOT CAUSE:
+     .section { padding-block: clamp(4.35rem, 8vw, 7.8rem) }
+     At 375–640px: 8vw < 4.35rem, so clamp always returns 4.35rem
+     (69.6px per side = 139px dead space per section on phone).
+     The previous @media 640px override at line 2896 sets 4rem but
+     is placed BEFORE line 4862, so it gets overridden.
+   
+   FIX: New overrides appended here, after all prior rules.
+   All !important ensures they beat both specificity and cascade.
+   ----------------------------------------------------------------
+   Coverage:
+     homepage, machines, product pages, case studies hub+detail,
+     knowledge center hub+guides, videos, contact-ryan, request-quote,
+     about, factory, quality, why-choose-sbkj,
+     pillar + region + application + category pages (all .pillar-page)
+   ================================================================ */
+
+/* ── ≤ 640px ─────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+
+  /* 1 — Core section rhythm (the root-cause fix) */
+  .section {
+    padding-block: 2.5rem !important;
+  }
+
+  .section-header {
+    margin-bottom: 1.75rem !important;
+  }
+
+  /* section-cta spacing (appears below content inside sections) */
+  .section-cta {
+    margin-top: 1.75rem !important;
+  }
+
+  /* 2 — Hero types that still have excessive padding at 640px
+         .hero / .page-hero / .machines-hero are already covered by
+         the existing rule at line 5103 (3.6rem 3rem) which is fine.
+         .pillar-hero at line 4809 still uses 7.7rem top — fix it. */
+  .pillar-hero {
+    padding-top: 3.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  /* 3 — Page-type scoped overrides
+         Higher specificity (0-2-0) means these rules need !important
+         to beat the earlier page-type declarations only on mobile.  */
+  .pillar-page .section {
+    padding-block: 2.5rem !important;
+  }
+
+  .machines-page .section {
+    padding-block: 2.5rem !important;
+  }
+
+  .product-page .section {
+    padding-block: 2rem 2.5rem !important;
+  }
+
+  .factory-page .section {
+    padding-block: 2.5rem !important;
+  }
+
+  .quality-page .section {
+    padding-block: 2.5rem !important;
+  }
+
+  .about-page .section {
+    padding-block: 2.5rem !important;
+  }
+
+  /* application + region pages all use .pillar-page (confirmed from HTML)
+     so .pillar-page .section above already covers them. */
+
+  /* 4 — Standalone section classes with their own padding declarations */
+
+  /* .machine-selector-section has padding-block: 5rem, no mobile override */
+  .machine-selector-section {
+    padding-block: 2.5rem !important;
+  }
+
+  /* .ryan-trust-inner has padding-block: 5rem (inner content wrapper);
+     reduced to 3.5rem at 900px only */
+  .ryan-trust-inner {
+    padding-block: 2.5rem !important;
+    gap: 2rem !important;
+  }
+
+  /* 5 — CTA blocks */
+
+  /* .cta-final has padding-block: 8rem, no 640px override */
+  .cta-final {
+    padding-block: 3rem !important;
+  }
+
+  /* .prod-cta has padding-block: 7rem, no 640px override */
+  .prod-cta {
+    padding-block: 3rem !important;
+  }
+
+  /* 6 — Footer
+         Existing 640px override at line 5140 sets 4.2rem 2.5rem.
+         This rule comes after it, so wins. */
+  .site-footer {
+    padding-block: 2.5rem 1.75rem !important;
+  }
+
+  /* 7 — Stats band — 3.5rem is acceptable but tighten slightly */
+  .stats-band {
+    padding-block: 2rem !important;
+  }
+
+  /* 8 — Diff grid: 2-column, no mobile collapse defined */
+  .diff-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* 9 — Videos page categories bottom margin */
+  .videos-category {
+    margin-bottom: 2rem !important;
+  }
+
+  /* 10 — Who-strip: reduce vertical breathing */
+  .who-strip {
+    padding-block: 1.25rem !important;
+  }
+
+  /* 11 — Footer bottom gap */
+  .footer-bottom {
+    margin-top: 1.75rem !important;
+  }
+
+  /* 12 — prod-cta top decoration line (::before) shrinks with it */
+  .prod-cta::before {
+    height: 50px !important;
+  }
+
+}
+
+/* ── ≤ 480px (small phones — iPhone SE, Galaxy A-series) ──────── */
+@media (max-width: 480px) {
+
+  .section {
+    padding-block: 2rem !important;
+  }
+
+  .section-header {
+    margin-bottom: 1.4rem !important;
+  }
+
+  .section-cta {
+    margin-top: 1.4rem !important;
+  }
+
+  .pillar-hero {
+    padding-top: 3rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .pillar-page .section,
+  .machines-page .section,
+  .factory-page .section,
+  .quality-page .section,
+  .about-page .section,
+  .machine-selector-section {
+    padding-block: 2rem !important;
+  }
+
+  .product-page .section {
+    padding-block: 1.75rem 2rem !important;
+  }
+
+  .ryan-trust-inner {
+    padding-block: 2rem !important;
+    gap: 1.5rem !important;
+  }
+
+  .cta-final,
+  .prod-cta {
+    padding-block: 2.5rem !important;
+  }
+
+  .site-footer {
+    padding-block: 2rem 1.5rem !important;
+  }
+
+  .stats-band {
+    padding-block: 1.75rem !important;
+  }
+
+  .footer-bottom {
+    margin-top: 1.4rem !important;
+  }
+
+  .who-strip {
+    padding-block: 1rem !important;
+  }
+
+}
