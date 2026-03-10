@@ -7541,3 +7541,337 @@ textarea:focus-visible,
     grid-template-columns: 1fr;
   }
 }
+
+/* ================================================================
+   V3 — Precision visual refinements
+   Target: hero hierarchy, animation noise, section rhythm,
+   product page upgrade, Ryan differentiation
+   ================================================================ */
+
+/* ── 1. Hero h1: plain white, no shimmer. Industrial ≠ SaaS ─────── */
+.hero-v2 h1 {
+  background: none !important;
+  -webkit-text-fill-color: var(--text) !important;
+  color: var(--text) !important;
+  animation: none !important;
+  font-size: clamp(3.2rem, 5.5vw, 5.6rem);
+  line-height: 1.0;
+  letter-spacing: -0.05em;
+}
+
+/* ── 2. Hero ambient glow behind copy panel ─────────────────────── */
+.hero-v2 {
+  background:
+    radial-gradient(ellipse 55% 65% at 20% 55%, rgba(0, 229, 255, 0.07), transparent 55%),
+    var(--bg);
+}
+
+/* ── 3. Hero eyebrow: no pulse. Reduce animation noise ──────────── */
+.hero-v2-copy .eyebrow {
+  border-color: rgba(0, 229, 255, 0.2);
+  background: rgba(0, 229, 255, 0.04);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+}
+
+.hero-v2-copy .eyebrow::before {
+  animation: none;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+/* ── 4. Hero stats: open, no box — just large numbers ───────────── */
+.hero-v2-stats {
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 1.75rem 0 2.25rem;
+  gap: 2.5rem;
+  width: auto;
+}
+
+.hero-v2-stat span {
+  font-size: 2.5rem;
+  letter-spacing: -0.05em;
+}
+
+.hero-v2-stat {
+  position: relative;
+}
+
+.hero-v2-stat + .hero-v2-stat::before {
+  content: '';
+  position: absolute;
+  left: -1.25rem;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background: var(--border);
+}
+
+/* ── 5. Hero image overlay: stronger fade for copy legibility ────── */
+.hero-v2-visual::before {
+  background: linear-gradient(90deg, var(--bg) 0%, rgba(3, 4, 8, 0.55) 35%, transparent 58%);
+}
+
+/* ── 6. Remove e-commerce "FLAGSHIP" chip ───────────────────────── */
+.flagship-card-primary::before {
+  display: none !important;
+}
+
+/* ── 7. Flagship section header: left-aligned, tighter ──────────── */
+.section-flagships .section-header {
+  text-align: left;
+  max-width: none;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 1rem;
+}
+
+.section-flagships .section-header p:not(.eyebrow) {
+  display: none; /* headline alone is enough here */
+}
+
+.section-flagships .section-header .browse-all {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--accent);
+  white-space: nowrap;
+  padding-bottom: 0.25rem;
+}
+
+/* ── 8. Gallery: full-bleed treatment ───────────────────────────── */
+.section-gallery {
+  padding-block: 0 4rem;
+}
+
+.gallery-full-bleed {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-strip {
+  border-radius: 0;
+}
+
+.gallery-strip-item:first-child {
+  border-radius: 0;
+}
+
+.gallery-strip-item:last-child {
+  border-radius: 0;
+}
+
+/* ── 9. Section dividers: barely there ──────────────────────────── */
+.section-divider {
+  opacity: 0.07 !important;
+  background: linear-gradient(90deg, transparent 0%, var(--text-dim) 50%, transparent 100%) !important;
+}
+
+/* ── 10. Ryan section: darker, more premium background ──────────── */
+.ryan-trust-v2 {
+  background:
+    radial-gradient(ellipse 65% 80% at 75% 50%, rgba(0, 229, 255, 0.06) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(8, 14, 24, 0.6) 0%, rgba(3, 4, 8, 0.8) 100%),
+    var(--bg-elevated);
+}
+
+/* ── 11. Ryan avatar: intentional mono treatment ─────────────────── */
+.ryan-avatar {
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.12), rgba(0, 229, 255, 0.04));
+  border: 1.5px solid rgba(0, 229, 255, 0.28);
+  letter-spacing: 0.03em;
+  font-size: 1rem;
+}
+
+/* ── 12. Final CTA: single path, not two competing actions ──────── */
+.cta-final-v3 {
+  padding-block: 9rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0, 229, 255, 0.1), transparent 60%),
+    radial-gradient(ellipse 40% 30% at 20% 80%, rgba(139, 92, 246, 0.05), transparent 50%),
+    var(--bg);
+}
+
+.cta-final-v3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(180deg, transparent, var(--accent));
+}
+
+.cta-final-v3 h2 {
+  font-family: var(--font-head);
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0.4rem 0 0.8rem;
+}
+
+.cta-final-v3 .cta-lead {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 34rem;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+.cta-actions-v3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.cta-ryan-line {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.cta-ryan-line a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.cta-ryan-line a:hover {
+  color: var(--accent);
+}
+
+/* ── 13. Product hero flagship: stronger left fade ───────────────── */
+.product-hero-flagship-visual::before {
+  background: linear-gradient(90deg, var(--bg) 0%, rgba(3, 4, 8, 0.5) 38%, transparent 62%);
+}
+
+/* ── 14. Product hero h1: bigger, cleaner ────────────────────────── */
+.product-hero-flagship h1 {
+  font-size: clamp(2.8rem, 4.5vw, 4.6rem);
+  letter-spacing: -0.05em;
+  line-height: 1.0;
+}
+
+/* ── 15. KPI tiles: tighter, sharper border ─────────────────────── */
+.product-hero-kpis {
+  border-color: rgba(0, 229, 255, 0.2);
+  background: rgba(0, 229, 255, 0.025);
+  width: fit-content;
+  max-width: 100%;
+  margin: 1.75rem 0;
+}
+
+/* ── 16. Configurations table: new component ─────────────────────── */
+.config-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.config-card {
+  padding: 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.config-card-primary {
+  border-color: rgba(0, 229, 255, 0.22);
+  background: rgba(0, 229, 255, 0.03);
+}
+
+.config-model {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.config-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.config-specs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.config-specs li {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding-left: 0.9rem;
+  position: relative;
+}
+
+.config-specs li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--text-dim);
+  font-size: 0.7rem;
+}
+
+.config-note {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+  line-height: 1.5;
+}
+
+/* ── 17. Section titles: unified size uplift ─────────────────────── */
+.product-main h2 {
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
+}
+
+/* ── 18. Responsive for V3 additions ─────────────────────────────── */
+@media (max-width: 900px) {
+  .hero-v2 h1 {
+    font-size: clamp(2.6rem, 7vw, 3.6rem);
+  }
+
+  .section-flagships .section-header {
+    grid-template-columns: 1fr;
+  }
+
+  .config-compare {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-v2-stat + .hero-v2-stat::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-v2-stats {
+    gap: 1.5rem;
+  }
+
+  .cta-actions-v3 {
+    flex-direction: column;
+  }
+}
