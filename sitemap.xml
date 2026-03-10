@@ -1,28 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core Pages -->
   <url>
     <loc>https://sbkjduct.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
-  <url><loc>https://sbkjduct.com/machines.html</loc></url>
-  <url><loc>https://sbkjduct.com/videos.html</loc></url>
-  <url><loc>https://sbkjduct.com/about.html</loc></url>
-  <url><loc>https://sbkjduct.com/contact.html</loc></url>
-  <url><loc>https://sbkjduct.com/request-quote.html</loc></url>
-  <url><loc>https://sbkjduct.com/why-choose-sbkj.html</loc></url>
-  <url><loc>https://sbkjduct.com/factory.html</loc></url>
-  <url><loc>https://sbkjduct.com/quality.html</loc></url>
-  <url><loc>https://sbkjduct.com/duct-making-machine-australia.html</loc></url>
-  <url><loc>https://sbkjduct.com/duct-machinery-australia/</loc></url>
-  <url><loc>https://sbkjduct.com/duct-machinery-middle-east/</loc></url>
-  <url><loc>https://sbkjduct.com/duct-machinery-europe/</loc></url>
-  <url><loc>https://sbkjduct.com/hvac-duct-machinery/</loc></url>
-  <url><loc>https://sbkjduct.com/spiral-duct-machine/</loc></url>
-  <url><loc>https://sbkjduct.com/auto-duct-line/</loc></url>
-  <url><loc>https://sbkjduct.com/duct-forming-machines/</loc></url>
-  <url><loc>https://sbkjduct.com/elbow-fittings-machines/</loc></url>
-  <url><loc>https://sbkjduct.com/commercial-hvac-duct-production/</loc></url>
-  <url><loc>https://sbkjduct.com/industrial-ventilation-duct-production/</loc></url>
-  <url><loc>https://sbkjduct.com/airport-metro-duct-production/</loc></url>
-  <url><loc>https://sbkjduct.com/cold-chain-duct-production/</loc></url>
-  <url><loc>https://sbkjduct.com/fabrication-shop-automation-upgrade/</loc></url>
+  <url><loc>https://sbkjduct.com/machines.html</loc><priority>0.9</priority></url>
+  <url><loc>https://sbkjduct.com/request-quote.html</loc><priority>0.9</priority></url>
+  <url><loc>https://sbkjduct.com/contact-ryan.html</loc><priority>0.85</priority></url>
+  <url><loc>https://sbkjduct.com/videos.html</loc><priority>0.8</priority></url>
+  <url><loc>https://sbkjduct.com/about.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sbkjduct.com/contact.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sbkjduct.com/why-choose-sbkj.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sbkjduct.com/factory.html</loc><priority>0.65</priority></url>
+  <url><loc>https://sbkjduct.com/quality.html</loc><priority>0.65</priority></url>
+  <url><loc>https://sbkjduct.com/duct-making-machine-australia.html</loc><priority>0.6</priority></url>
+
+  <!-- Category Pages -->
+  <url><loc>https://sbkjduct.com/hvac-duct-machinery/</loc><priority>0.85</priority></url>
+  <url><loc>https://sbkjduct.com/spiral-duct-machine/</loc><priority>0.85</priority></url>
+  <url><loc>https://sbkjduct.com/auto-duct-line/</loc><priority>0.85</priority></url>
+  <url><loc>https://sbkjduct.com/duct-forming-machines/</loc><priority>0.85</priority></url>
+  <url><loc>https://sbkjduct.com/elbow-fittings-machines/</loc><priority>0.85</priority></url>
+
+  <!-- Regional Pages -->
+  <url><loc>https://sbkjduct.com/duct-machinery-australia/</loc><priority>0.7</priority></url>
+  <url><loc>https://sbkjduct.com/duct-machinery-middle-east/</loc><priority>0.7</priority></url>
+  <url><loc>https://sbkjduct.com/duct-machinery-europe/</loc><priority>0.7</priority></url>
+
+  <!-- Application Pages -->
+  <url><loc>https://sbkjduct.com/commercial-hvac-duct-production/</loc><priority>0.65</priority></url>
+  <url><loc>https://sbkjduct.com/industrial-ventilation-duct-production/</loc><priority>0.65</priority></url>
+  <url><loc>https://sbkjduct.com/airport-metro-duct-production/</loc><priority>0.6</priority></url>
+  <url><loc>https://sbkjduct.com/cold-chain-duct-production/</loc><priority>0.6</priority></url>
+  <url><loc>https://sbkjduct.com/fabrication-shop-automation-upgrade/</loc><priority>0.65</priority></url>
+
+  <!-- Priority Product Pages -->
+  <url><loc>https://sbkjduct.com/product/sbal-v.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://sbkjduct.com/product/sbal-iii.html</loc><priority>0.85</priority></url>
+  <url><loc>https://sbkjduct.com/product/sbtf-1602.html</loc><priority>0.85</priority></url>
+  <url><loc>https://sbkjduct.com/product/sbtf-1500.html</loc><priority>0.8</priority></url>
+  <url><loc>https://sbkjduct.com/product/sbem-1250.html</loc><priority>0.75</priority></url>
+  <url><loc>https://sbkjduct.com/product/tdf-flange.html</loc><priority>0.75</priority></url>
+  <url><loc>https://sbkjduct.com/product/lockformer.html</loc><priority>0.75</priority></url>
+  <url><loc>https://sbkjduct.com/product/sbhf-i.html</loc><priority>0.75</priority></url>
+
+  <!-- Knowledge Center -->
+  <url><loc>https://sbkjduct.com/knowledge-center/</loc><priority>0.8</priority></url>
+  <url><loc>https://sbkjduct.com/knowledge-center/how-to-choose-auto-duct-line.html</loc><priority>0.8</priority></url>
+  <url><loc>https://sbkjduct.com/knowledge-center/complete-rectangular-duct-factory.html</loc><priority>0.8</priority></url>
+  <url><loc>https://sbkjduct.com/knowledge-center/how-many-workers-auto-duct-line-saves.html</loc><priority>0.75</priority></url>
+  <url><loc>https://sbkjduct.com/knowledge-center/tdf-vs-tdc-vs-pittsburgh.html</loc><priority>0.75</priority></url>
+  <url><loc>https://sbkjduct.com/knowledge-center/common-mistakes-buying-spiral-tubeformer.html</loc><priority>0.75</priority></url>
+  <url><loc>https://sbkjduct.com/knowledge-center/spiral-duct-machine-complete-set.html</loc><priority>0.75</priority></url>
+
+  <!-- Case Studies -->
+  <url><loc>https://sbkjduct.com/case-studies/</loc><priority>0.75</priority></url>
+  <url><loc>https://sbkjduct.com/case-studies/southeast-asia-auto-duct-line.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sbkjduct.com/case-studies/middle-east-spiral-duct-production.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sbkjduct.com/case-studies/australia-duct-factory-setup.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sbkjduct.com/case-studies/europe-spiral-duct-production.html</loc><priority>0.65</priority></url>
+  <url><loc>https://sbkjduct.com/case-studies/complete-factory-southeast-asia.html</loc><priority>0.65</priority></url>
+
 </urlset>
