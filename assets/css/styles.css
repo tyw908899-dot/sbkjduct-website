@@ -7711,3 +7711,125 @@ textarea:focus-visible,
 @media (max-width: 560px) {
   .buyer-fit-v4 { grid-template-columns: 1fr; }
 }
+
+/* ================================================================
+   MOBILE SPACING SYSTEM — V5 site-wide audit fix
+   Target: ≤ 640px (and ≤ 480px for smallest screens)
+   Covers: homepage, machines, product, cases, knowledge,
+           factory, quality, pillar/region, contact, footer
+   These rules intentionally come last so they override all
+   previous cascade layers including clamp() declarations.
+   ================================================================ */
+
+@media (max-width: 640px) {
+
+  /* ── Core section rhythm ── */
+  .section {
+    padding-block: 2.75rem !important; /* was clamp(4.35rem,8vw,7.8rem) */
+  }
+  .section-header {
+    margin-bottom: 1.75rem; /* was clamp(2.2rem,5vw,3.9rem) */
+  }
+
+  /* ── V4 Homepage hero ── */
+  .hero-v4 {
+    min-height: 0 !important;
+    padding: 3.5rem 0 3rem !important;
+  }
+
+  /* ── V4 Homepage sections ── */
+  .section-flagship  { padding: 2.75rem 0 !important; }
+  .ryan-v4           { padding: 2.75rem 0 !important; }
+  .section-cases     { padding: 2.75rem 0 !important; }
+  .section-knowledge { padding: 2.5rem  0 !important; }
+  .cta-final-v4      { padding: 3.5rem  0 !important; }
+
+  /* ── Legacy CTA blocks ── */
+  .cta-final         { padding-block: 3.5rem !important; }
+  .prod-cta          { padding-block: 3.5rem !important; }
+
+  /* ── Product pages ── */
+  .product-hero      { padding-block: 2.5rem 2rem !important; }
+  .product-hero-v4   { padding: 2rem 0 1.75rem !important; }
+  .product-page .section { padding-block: 1.5rem 2.5rem !important; }
+
+  /* ── Machines page ── */
+  .machines-page .section { padding-block: 2.5rem 3rem !important; }
+
+  /* ── Factory & quality pages ── */
+  .factory-page .section { padding-block: 2.5rem !important; }
+  .quality-page .section { padding-block: 2.5rem !important; }
+
+  /* ── Pillar / category pages ── */
+  .pillar-page .section      { padding-block: 2.5rem !important; }
+  .auto-duct-page .section   { padding-block: 2.5rem !important; }
+  .spiral-page .section      { padding-block: 2.5rem !important; }
+  .region-page .section      { padding-block: 2.5rem !important; }
+
+  /* ── Why section (homepage sub-block) ── */
+  .why-section { padding-block: 2.75rem !important; }
+
+  /* ── Site footer ── */
+  .site-footer { padding-block: 3rem 1.75rem !important; }
+
+  /* ── Gallery strip — remove excessive vertical breathing ── */
+  .gallery-strip-section { padding-block: 0 !important; }
+
+  /* ── V4 product page sections ── */
+  .section-flagship,
+  .buyer-fit-v4,
+  .config-compare,
+  .workflow-steps-v4,
+  .after-sales-grid-v4,
+  .ryan-inline-v4,
+  .product-cta-block-v4 {
+    padding-block: 2.5rem !important;
+  }
+
+  /* ── Hero stat chips: stack to 2×2 on narrow ── */
+  .hero-stats-v4 {
+    gap: 0.6rem;
+  }
+  .hero-stat-chip {
+    padding: 0.55rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  /* ── Section headings: tighten size on very narrow ── */
+  .section-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* ── Smallest screens: ≤ 480px ── */
+@media (max-width: 480px) {
+
+  .section {
+    padding-block: 2.25rem !important;
+  }
+
+  .hero-v4 {
+    padding: 3rem 0 2.5rem !important;
+  }
+
+  .section-flagship,
+  .ryan-v4,
+  .section-cases,
+  .section-knowledge {
+    padding: 2.25rem 0 !important;
+  }
+
+  .cta-final-v4 { padding: 2.75rem 0 !important; }
+  .cta-final    { padding-block: 2.75rem !important; }
+  .prod-cta     { padding-block: 2.75rem !important; }
+
+  .product-hero    { padding-block: 2rem 1.75rem !important; }
+  .product-hero-v4 { padding: 1.75rem 0 1.5rem !important; }
+
+  .site-footer { padding-block: 2.5rem 1.5rem !important; }
+
+  /* Slightly reduce section heading gap */
+  .section-header { margin-bottom: 1.4rem; }
+}
