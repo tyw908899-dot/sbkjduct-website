@@ -22,21 +22,43 @@
     /* ---- Navigation ---- */
     "nav.home":         { en:"Home", zh:"首页", es:"Inicio", ru:"Главная", ar:"الرئيسية", tr:"Ana Sayfa", fr:"Accueil", pt:"Início", hi:"होम", id:"Beranda" },
     "nav.machines":     { en:"Machines", zh:"产品中心", es:"Máquinas", ru:"Оборудование", ar:"الآلات", tr:"Makineler", fr:"Machines", pt:"Máquinas", hi:"मशीनें", id:"Mesin" },
+    "nav.guides":       { en:"Buying Guides", zh:"采购指南", es:"Guías de compra", ru:"Гайды покупателя", ar:"أدلة الشراء", tr:"Satın Alma Rehberleri", fr:"Guides d'achat", pt:"Guias de compra", hi:"खरीद गाइड", id:"Panduan Pembelian" },
+    "nav.cases":        { en:"Case Studies", zh:"案例研究", es:"Casos de estudio", ru:"Кейс-стади", ar:"دراسات الحالة", tr:"Vaka Çalışmaları", fr:"Études de cas", pt:"Estudos de caso", hi:"केस स्टडी", id:"Studi Kasus" },
+    "nav.talk":         { en:"Talk to Ryan", zh:"联系Ryan", es:"Hablar con Ryan", ru:"Связаться с Райаном", ar:"تحدث مع رايان", tr:"Ryan ile Görüş", fr:"Parler à Ryan", pt:"Falar com Ryan", hi:"Ryan से बात करें", id:"Bicara dengan Ryan" },
+    "nav.quote":        { en:"Request Quote", zh:"获取报价", es:"Solicitar Cotización", ru:"Запросить цену", ar:"طلب عرض سعر", tr:"Teklif İste", fr:"Demander un devis", pt:"Solicitar cotação", hi:"कोटेशन मांगें", id:"Minta Penawaran" },
     "nav.about":        { en:"About", zh:"关于我们", es:"Nosotros", ru:"О нас", ar:"من نحن", tr:"Hakkımızda", fr:"À propos", pt:"Sobre", hi:"हमारे बारे में", id:"Tentang" },
     "nav.contact":      { en:"Contact", zh:"联系我们", es:"Contacto", ru:"Контакты", ar:"اتصل بنا", tr:"İletişim", fr:"Contact", pt:"Contato", hi:"संपर्क", id:"Kontak" },
 
     /* ---- Homepage Hero ---- */
-    "hero.eyebrow":     { en:"HVAC & Industrial Duct Production", zh:"暖通空调与工业风管生产", es:"Producción de Conductos HVAC e Industriales", ru:"Производство воздуховодов HVAC", ar:"إنتاج مجاري الهواء HVAC والصناعية", tr:"HVAC & Endüstriyel Kanal Üretimi", fr:"Production de conduits HVAC & industriels", pt:"Produção de Dutos HVAC e Industriais", hi:"HVAC और औद्योगिक डक्ट उत्पादन", id:"Produksi Saluran HVAC & Industri" },
-    "hero.title":       { en:"World‑Class Ductwork Machinery<br/>Engineered for 24/7 Production", zh:"世界一流的风管制造设备<br/>为全天候生产而生", es:"Maquinaria de Conductos de Clase Mundial<br/>Diseñada para Producción 24/7", ru:"Оборудование мирового класса<br/>для круглосуточного производства", ar:"آلات مجاري هواء عالمية المستوى<br/>مصممة للإنتاج على مدار الساعة", tr:"Dünya Standartlarında Kanal Makineleri<br/>7/24 Üretime Hazır", fr:"Machines de canalisation de classe mondiale<br/>Conçues pour la production 24/7", pt:"Máquinas de Dutos de Classe Mundial<br/>Projetadas para Produção 24/7", hi:"विश्व स्तरीय डक्टवर्क मशीनरी<br/>24/7 उत्पादन के लिए इंजीनियर्ड", id:"Mesin Saluran Kelas Dunia<br/>Dirancang untuk Produksi 24/7" },
-    "hero.lead":        { en:"National high‑tech enterprise specializing in spiral duct forming machines, round duct machines and auto duct production lines for the climate and ventilation industry.", zh:"国家高新技术企业，专业生产螺旋风管成型机、圆管机和全自动风管生产线，服务于暖通空调行业。", es:"Empresa nacional de alta tecnología especializada en máquinas formadoras de conductos espirales, máquinas de conductos redondos y líneas de producción automáticas.", ru:"Высокотехнологичное предприятие, специализирующееся на спиральных воздуховодах, круглых воздуховодах и автоматических линиях производства.", ar:"مؤسسة وطنية عالية التقنية متخصصة في آلات تشكيل القنوات الحلزونية وآلات القنوات المستديرة وخطوط الإنتاج الأوتوماتيكية.", tr:"Spiral kanal şekillendirme makineleri, yuvarlak kanal makineleri ve otomatik kanal üretim hatlarında uzmanlaşmış ulusal yüksek teknoloji kuruluşu.", fr:"Entreprise nationale de haute technologie spécialisée dans les machines de formage de conduits spiralés, les machines de conduits ronds et les lignes de production automatiques.", pt:"Empresa nacional de alta tecnologia especializada em máquinas formadoras de dutos espirais, máquinas de dutos redondos e linhas de produção automáticas.", hi:"स्पाइरल डक्ट फॉर्मिंग मशीन, राउंड डक्ट मशीन और ऑटो डक्ट उत्पादन लाइनों में विशेषज्ञ राष्ट्रीय हाई-टेक उद्यम।", id:"Perusahaan teknologi tinggi nasional yang mengkhususkan diri dalam mesin pembentuk saluran spiral, mesin saluran bulat, dan jalur produksi saluran otomatis." },
+    "hero.eyebrow":          { en:"HVAC & Industrial Duct Production", zh:"暖通空调与工业风管生产", es:"Producción de Conductos HVAC e Industriales", ru:"Производство воздуховодов HVAC", ar:"إنتاج مجاري الهواء HVAC والصناعية", tr:"HVAC & Endüstriyel Kanal Üretimi", fr:"Production de conduits HVAC & industriels", pt:"Produção de Dutos HVAC e Industriais", hi:"HVAC और औद्योगिक डक्ट उत्पादन", id:"Produksi Saluran HVAC & Industri" },
+    "hero.eyebrow.credentials": { en:"Since 1995 · ISO 9001 · CE Certified · 80+ Countries", zh:"1995年创立 · ISO 9001 · CE认证 · 80+国家", es:"Desde 1995 · ISO 9001 · Certificado CE · 80+ países", ru:"С 1995 г. · ISO 9001 · CE · 80+ стран", ar:"منذ 1995 · ISO 9001 · شهادة CE · 80+ دولة", tr:"1995'ten beri · ISO 9001 · CE Sertifikalı · 80+ Ülke", fr:"Depuis 1995 · ISO 9001 · Certifié CE · 80+ pays", pt:"Desde 1995 · ISO 9001 · Certificado CE · 80+ países", hi:"1995 से · ISO 9001 · CE प्रमाणित · 80+ देश", id:"Sejak 1995 · ISO 9001 · Tersertifikasi CE · 80+ Negara" },
+    "hero.title":       { en:"HVAC Duct Machinery.<br/>Built to Run Production.", zh:"暖通风管机械。<br/>为持续生产而生。", es:"Maquinaria para conductos HVAC.<br/>Fabricada para producción continua.", ru:"Оборудование для воздуховодов HVAC.<br/>Создано для производства.", ar:"آلات مجاري هواء HVAC.<br/>مصممة لتشغيل الإنتاج.", tr:"HVAC Kanal Makineleri.<br/>Sürekli Üretime Hazır.", fr:"Machines de conduits HVAC.<br/>Conçues pour la production.", pt:"Máquinas de dutos HVAC.<br/>Feitas para produção contínua.", hi:"HVAC डक्ट मशीनरी।<br/>उत्पादन के लिए बनाई गई।", id:"Mesin Saluran HVAC.<br/>Dirancang untuk Produksi." },
+    "hero.lead":        { en:"Complete spiral and rectangular duct production lines — auto duct lines, spiral tubeformers, and full factory planning for operations that need consistent output, not just a machine catalogue.", zh:"完整的螺旋和矩形风管生产线——全自动风管线、螺旋成型机及完整工厂规划，满足持续稳定产能需求，而不只是一份设备清单。", es:"Líneas completas de producción de conductos espirales y rectangulares — líneas automáticas, tubeformers espirales y planificación completa de fábrica para operaciones que necesitan producción consistente.", ru:"Полные линии производства спиральных и прямоугольных воздуховодов — автоматические линии, спиральные трубоформеры и комплексное планирование завода.", ar:"خطوط إنتاج كاملة للقنوات الحلزونية والمستطيلة — خطوط تلقائية وآلات تشكيل حلزونية وتخطيط مصنع متكامل.", tr:"Spiral ve dikdörtgen kanal üretim hatları — otomatik kanal hatları, spiral şekillendiriciler ve tam fabrika planlaması.", fr:"Lignes de production complètes pour conduits spiralés et rectangulaires — lignes automatiques, tubeformers spiralés et planification d'usine complète.", pt:"Linhas completas de produção de dutos espirais e retangulares — linhas automáticas, tubeformers espirais e planejamento completo de fábrica.", hi:"पूर्ण स्पाइरल और रेक्टैंगुलर डक्ट उत्पादन लाइनें — ऑटो डक्ट लाइनें, स्पाइरल ट्यूबफॉर्मर और पूर्ण फैक्टरी योजना।", id:"Lini produksi saluran spiral dan persegi panjang lengkap — jalur saluran otomatis, tubeformer spiral, dan perencanaan pabrik lengkap." },
+    "hero.cta.quote":   { en:"Request a Quote", zh:"获取报价", es:"Solicitar cotización", ru:"Запросить цену", ar:"طلب عرض سعر", tr:"Teklif İste", fr:"Demander un devis", pt:"Solicitar cotação", hi:"कोटेशन मांगें", id:"Minta Penawaran" },
+    "hero.cta.watch":   { en:"Watch Machines Running", zh:"观看设备运行", es:"Ver máquinas en acción", ru:"Смотреть оборудование", ar:"شاهد الآلات تعمل", tr:"Makineleri Çalışırken İzle", fr:"Voir les machines en marche", pt:"Ver máquinas funcionando", hi:"मशीनें चलते देखें", id:"Lihat Mesin Berjalan" },
     "hero.cta1":        { en:"Request a quotation", zh:"获取报价", es:"Solicitar cotización", ru:"Запросить цену", ar:"طلب عرض أسعار", tr:"Teklif İste", fr:"Demander un devis", pt:"Solicitar cotação", hi:"कोटेशन का अनुरोध करें", id:"Minta Penawaran" },
     "hero.cta2":        { en:"Watch machines in action", zh:"观看设备运行", es:"Ver máquinas en acción", ru:"Смотреть в действии", ar:"شاهد الآلات أثناء العمل", tr:"Makineleri İzle", fr:"Voir les machines en action", pt:"Ver máquinas em ação", hi:"मशीनें कार्य में देखें", id:"Lihat Mesin Beraksi" },
+    "hero.proof.1":     { en:"5,000+ machines installed in 80+ countries", zh:"5000+台设备安装于80+个国家", es:"5,000+ máquinas instaladas en 80+ países", ru:"5 000+ машин в 80+ странах", ar:"5,000+ آلة مثبتة في 80+ دولة", tr:"80+ ülkede 5.000+ makine kurulumu", fr:"5 000+ machines installées dans 80+ pays", pt:"5.000+ máquinas instaladas em 80+ países", hi:"80+ देशों में 5,000+ मशीनें स्थापित", id:"5.000+ mesin terpasang di 80+ negara" },
+    "hero.proof.2":     { en:"Turn-key factory design: layout, flow, commissioning", zh:"交钥匙工厂设计：布局、流程、调试", es:"Diseño de fábrica llave en mano: distribución, flujo, puesta en marcha", ru:"Проектирование завода под ключ: планировка, поток, пуск", ar:"تصميم مصنع متكامل: تخطيط، تدفق، تشغيل", tr:"Anahtar teslim fabrika tasarımı: yerleşim, akış, devreye alma", fr:"Conception d'usine clé en main: agencement, flux, mise en service", pt:"Projeto de fábrica chave na mão: layout, fluxo, comissionamento", hi:"टर्न-की फैक्टरी डिज़ाइन: लेआउट, फ्लो, कमीशनिंग", id:"Desain pabrik turn-key: tata letak, aliran, komisioning" },
+    "hero.proof.3":     { en:"60+ active patents across forming and CNC control", zh:"60+项有效专利涵盖成型及CNC控制", es:"60+ patentes activas en conformado y control CNC", ru:"60+ активных патентов в области формовки и ЧПУ", ar:"60+ براءة اختراع نشطة في التشكيل والتحكم CNC", tr:"Şekillendirme ve CNC kontrolünde 60+ aktif patent", fr:"60+ brevets actifs dans le formage et la commande CNC", pt:"60+ patentes ativas em conformação e controle CNC", hi:"फॉर्मिंग और CNC कंट्रोल में 60+ सक्रिय पेटेंट", id:"60+ paten aktif dalam pembentukan dan kontrol CNC" },
+    "hero.ryan.name":   { en:"Ryan Tao — Melbourne, AU", zh:"Ryan Tao — 澳大利亚墨尔本", es:"Ryan Tao — Melbourne, AU", ru:"Райан Тао — Мельбурн, AU", ar:"رايان تاو — ملبورن، AU", tr:"Ryan Tao — Melbourne, AU", fr:"Ryan Tao — Melbourne, AU", pt:"Ryan Tao — Melbourne, AU", hi:"Ryan Tao — Melbourne, AU", id:"Ryan Tao — Melbourne, AU" },
+    "hero.ryan.note":   { en:" · Direct inquiries, your timezone", zh:" · 直接对接，匹配您的时区", es:" · Consultas directas, su zona horaria", ru:" · Прямые запросы, ваш часовой пояс", ar:" · استفسارات مباشرة في منطقتك الزمنية", tr:" · Doğrudan sorgular, saat diliminiz", fr:" · Demandes directes, votre fuseau horaire", pt:" · Consultas diretas, seu fuso horário", hi:" · सीधी पूछताछ, आपका टाइमज़ोन", id:" · Pertanyaan langsung, zona waktu Anda" },
+
+    /* ---- Who strip ---- */
+    "who.label":        { en:"Built for", zh:"适用于", es:"Diseñado para", ru:"Создано для", ar:"مصمم لـ", tr:"Şunlar için", fr:"Conçu pour", pt:"Desenvolvido para", hi:"के लिए बनाया गया", id:"Dibuat untuk" },
+    "who.1":            { en:"HVAC duct fabrication factories", zh:"暖通风管加工厂", es:"Fábricas de fabricación de conductos HVAC", ru:"Заводы по изготовлению воздуховодов", ar:"مصانع تصنيع مجاري الهواء", tr:"HVAC kanal imalat fabrikaları", fr:"Usines de fabrication de conduits HVAC", pt:"Fábricas de fabricação de dutos HVAC", hi:"HVAC डक्ट निर्माण कारखाने", id:"Pabrik fabrikasi saluran HVAC" },
+    "who.2":            { en:"Contractors scaling in-house production", zh:"提升自有产能的承包商", es:"Contratistas que amplían producción propia", ru:"Подрядчики, расширяющие производство", ar:"المقاولون الذين يوسعون الإنتاج الداخلي", tr:"Dahili üretimi artıran müteahhitler", fr:"Entrepreneurs développant la production interne", pt:"Empreiteiros expandindo produção interna", hi:"इन-हाउस उत्पादन बढ़ाते ठेकेदार", id:"Kontraktor yang meningkatkan produksi internal" },
+    "who.3":            { en:"OEM duct equipment manufacturers", zh:"OEM风管设备制造商", es:"Fabricantes OEM de equipos para conductos", ru:"OEM-производители оборудования для воздуховодов", ar:"مصنعو معدات مجاري الهواء OEM", tr:"OEM kanal ekipmanı üreticileri", fr:"Fabricants OEM d'équipements de conduits", pt:"Fabricantes OEM de equipamentos para dutos", hi:"OEM डक्ट उपकरण निर्माता", id:"Produsen peralatan saluran OEM" },
+    "who.4":            { en:"Industrial ventilation workshops", zh:"工业通风车间", es:"Talleres de ventilación industrial", ru:"Мастерские промышленной вентиляции", ar:"ورش تهوية صناعية", tr:"Endüstriyel havalandırma atölyeleri", fr:"Ateliers de ventilation industrielle", pt:"Oficinas de ventilação industrial", hi:"औद्योगिक वेंटिलेशन वर्कशॉप", id:"Bengkel ventilasi industri" },
+    "who.5":            { en:"Sheet metal workshop upgraders", zh:"钣金车间升级方", es:"Modernizadores de talleres de chapa metálica", ru:"Обновляющие листообрабатывающие цеха", ar:"مطوّرو ورش الصفائح المعدنية", tr:"Sac metal atölyesi güncelleyiciler", fr:"Modernisateurs d'ateliers de tôlerie", pt:"Modernizadores de oficinas de chapa metálica", hi:"शीट मेटल वर्कशॉप अपग्रेडर्स", id:"Peningkat bengkel lembaran logam" },
 
     /* ---- Stats ---- */
-    "stats.years":      { en:"Years of expertise", zh:"年行业经验", es:"Años de experiencia", ru:"Лет опыта", ar:"سنوات من الخبرة", tr:"Yıllık Deneyim", fr:"Années d'expertise", pt:"Anos de experiência", hi:"वर्षों का अनुभव", id:"Tahun Pengalaman" },
-    "stats.countries":  { en:"Countries served", zh:"服务国家", es:"Países atendidos", ru:"Стран обслужено", ar:"دولة تم خدمتها", tr:"Ülkeye Hizmet", fr:"Pays desservis", pt:"Países atendidos", hi:"देशों में सेवा", id:"Negara Dilayani" },
-    "stats.machines":   { en:"Machines installed", zh:"设备安装量", es:"Máquinas instaladas", ru:"Установлено машин", ar:"آلة مثبتة", tr:"Makine Kurulumu", fr:"Machines installées", pt:"Máquinas instaladas", hi:"मशीनें स्थापित", id:"Mesin Terpasang" },
-    "stats.support":    { en:"Customer support", zh:"客户服务", es:"Soporte al cliente", ru:"Поддержка клиентов", ar:"دعم العملاء", tr:"Müşteri Desteği", fr:"Support client", pt:"Suporte ao cliente", hi:"ग्राहक सहायता", id:"Dukungan Pelanggan" },
+    "stats.years":      { en:"Years Manufacturing", zh:"年制造经验", es:"Años de fabricación", ru:"Лет производства", ar:"سنوات التصنيع", tr:"Yıllık Üretim", fr:"Années de fabrication", pt:"Anos de fabricação", hi:"वर्षों का निर्माण", id:"Tahun Manufaktur" },
+    "stats.countries":  { en:"Countries Served", zh:"服务国家", es:"Países atendidos", ru:"Стран обслужено", ar:"دولة تم خدمتها", tr:"Ülkeye Hizmet", fr:"Pays desservis", pt:"Países atendidos", hi:"देशों में सेवा", id:"Negara Dilayani" },
+    "stats.machines":   { en:"Machines Installed", zh:"设备安装量", es:"Máquinas instaladas", ru:"Установлено машин", ar:"آلة مثبتة", tr:"Makine Kurulumu", fr:"Machines installées", pt:"Máquinas instaladas", hi:"मशीनें स्थापित", id:"Mesin Terpasang" },
+    "stats.patents":    { en:"Active Patents", zh:"有效专利", es:"Patentes activas", ru:"Активных патентов", ar:"براءات اختراع نشطة", tr:"Aktif Patent", fr:"Brevets actifs", pt:"Patentes ativas", hi:"सक्रिय पेटेंट", id:"Paten Aktif" },
+    "stats.support":    { en:"Technical Support", zh:"技术支持", es:"Soporte técnico", ru:"Техническая поддержка", ar:"الدعم الفني", tr:"Teknik Destek", fr:"Support technique", pt:"Suporte técnico", hi:"तकनीकी सहायता", id:"Dukungan Teknis" },
+    "stats.warranty":   { en:"Standard Warranty", zh:"标准质保期", es:"Garantía estándar", ru:"Стандартная гарантия", ar:"الضمان القياسي", tr:"Standart Garanti", fr:"Garantie standard", pt:"Garantia padrão", hi:"मानक वारंटी", id:"Garansi Standar" },
 
     /* ---- Why Section ---- */
     "why.eyebrow":      { en:"Why SBKJ", zh:"为什么选择SBKJ", es:"Por qué SBKJ", ru:"Почему SBKJ", ar:"لماذا SBKJ", tr:"Neden SBKJ", fr:"Pourquoi SBKJ", pt:"Por que SBKJ", hi:"SBKJ क्यों", id:"Mengapa SBKJ" },
@@ -47,11 +69,60 @@
     "feat.title":       { en:"Flagship Products", zh:"旗舰产品", es:"Productos Insignia", ru:"Флагманские продукты", ar:"المنتجات الرائدة", tr:"Amiral Gemisi Ürünleri", fr:"Produits phares", pt:"Produtos carro-chefe", hi:"प्रमुख उत्पाद", id:"Produk Andalan" },
     "feat.viewall":     { en:"Browse complete catalogue →", zh:"查看完整产品目录 →", es:"Ver catálogo completo →", ru:"Смотреть полный каталог →", ar:"تصفح الكتالوج الكامل ←", tr:"Tüm Kataloğu İncele →", fr:"Parcourir le catalogue →", pt:"Ver catálogo completo →", hi:"पूरा कैटलॉग देखें →", id:"Jelajahi Katalog Lengkap →" },
 
+    /* ---- Machine Selector ---- */
+    "selector.eyebrow":       { en:"Find the Right Machine", zh:"找到合适的设备", es:"Encuentra la máquina correcta", ru:"Найдите нужное оборудование", ar:"ابحث عن الآلة المناسبة", tr:"Doğru Makineyi Bulun", fr:"Trouvez la bonne machine", pt:"Encontre a máquina certa", hi:"सही मशीन खोजें", id:"Temukan Mesin yang Tepat" },
+    "selector.title":         { en:"What Are You Trying to Produce?", zh:"您想生产什么？", es:"¿Qué quiere producir?", ru:"Что вы хотите производить?", ar:"ماذا تريد أن تنتج؟", tr:"Ne Üretmek İstiyorsunuz?", fr:"Qu'est-ce que vous cherchez à produire ?", pt:"O que você quer produzir?", hi:"आप क्या उत्पादन करना चाहते हैं?", id:"Apa yang Ingin Anda Produksi?" },
+    "selector.lead":          { en:"Start with your production goal. We'll direct you to the right machine category, model options, and configuration advice.", zh:"从您的生产目标开始，我们将为您推荐合适的设备类别、型号和配置建议。", es:"Comience con su objetivo de producción. Le dirigiremos a la categoría correcta, opciones de modelo y asesoramiento.", ru:"Начните с цели производства. Мы направим вас к нужной категории, моделям и конфигурации.", ar:"ابدأ بهدف الإنتاج. سنوجهك إلى فئة الآلة المناسبة والخيارات والمشورة.", tr:"Üretim hedefinizle başlayın. Doğru kategori, model seçenekleri ve yapılandırma tavsiyesine yönlendireceğiz.", fr:"Commencez par votre objectif de production. Nous vous orienterons vers la bonne catégorie, les options de modèle et les conseils.", pt:"Comece com seu objetivo de produção. Direcionaremos você para a categoria certa, opções de modelo e conselhos.", hi:"अपने उत्पादन लक्ष्य से शुरू करें। हम आपको सही मशीन श्रेणी, मॉडल और कॉन्फ़िगरेशन सलाह तक पहुंचाएंगे।", id:"Mulai dengan tujuan produksi Anda. Kami akan mengarahkan Anda ke kategori mesin, pilihan model, dan saran konfigurasi yang tepat." },
+    "selector.rect.title":    { en:"I want to make rectangular ducts", zh:"我要生产矩形风管", es:"Quiero fabricar conductos rectangulares", ru:"Хочу производить прямоугольные воздуховоды", ar:"أريد تصنيع قنوات مستطيلة", tr:"Dikdörtgen kanal üretmek istiyorum", fr:"Je veux fabriquer des conduits rectangulaires", pt:"Quero fabricar dutos retangulares", hi:"मैं रेक्टैंगुलर डक्ट बनाना चाहता हूं", id:"Saya ingin membuat saluran persegi panjang" },
+    "selector.rect.desc":     { en:"Auto duct lines with coil feeding, notching, shearing, lock forming, and folding — from 0.5 to 1.5 mm galvanized, stainless, or aluminum.", zh:"全自动风管生产线，含开卷、剪切、咬口成型和折边——覆盖0.5-1.5mm镀锌、不锈钢或铝板。", es:"Líneas automáticas con alimentación de bobina, muescado, cizallado, formado de cierre y doblado — de 0.5 a 1.5 mm.", ru:"Автоматические линии с размоткой рулона, просечкой, резкой, формовкой замка и гибкой — 0,5–1,5 мм.", ar:"خطوط أوتوماتيكية بتغذية اللفائف والتخريم والقص وتشكيل القفل والطي — من 0.5 إلى 1.5 ملم.", tr:"Rulo beslemeli, çentikleme, kesme, kilit şekillendirme ve katlama ile otomatik kanal hatları — 0.5-1.5 mm.", fr:"Lignes automatiques avec alimentation bobine, encochage, cisaillage, formage de verrou et pliage — 0,5 à 1,5 mm.", pt:"Linhas automáticas com alimentação de bobina, entalhe, cisalhamento, formação de trava e dobramento — 0,5 a 1,5 mm.", hi:"कॉइल फीडिंग, नॉचिंग, शीयरिंग, लॉक फॉर्मिंग और फोल्डिंग के साथ ऑटो डक्ट लाइनें — 0.5 से 1.5 mm।", id:"Jalur saluran otomatis dengan pengumpan gulungan, penakikan, gunting, pembentukan kunci, dan lipatan — 0,5 hingga 1,5 mm." },
+    "selector.rect.cta":      { en:"See auto duct lines →", zh:"查看全自动风管线 →", es:"Ver líneas automáticas →", ru:"Смотреть автоматические линии →", ar:"انظر خطوط القناة التلقائية ←", tr:"Otomatik kanal hatlarına bak →", fr:"Voir les lignes automatiques →", pt:"Ver linhas automáticas →", hi:"ऑटो डक्ट लाइनें देखें →", id:"Lihat jalur saluran otomatis →" },
+    "selector.spiral.title":  { en:"I want to make spiral round ducts", zh:"我要生产螺旋圆管", es:"Quiero fabricar conductos redondos espirales", ru:"Хочу производить спиральные круглые воздуховоды", ar:"أريد تصنيع قنوات مستديرة حلزونية", tr:"Spiral yuvarlak kanal üretmek istiyorum", fr:"Je veux fabriquer des conduits ronds spiralés", pt:"Quero fabricar dutos redondos espirais", hi:"मैं स्पाइरल राउंड डक्ट बनाना चाहता हूं", id:"Saya ingin membuat saluran bulat spiral" },
+    "selector.spiral.desc":   { en:"Spiral tubeformers producing Ø80–Ø1600 mm round duct from strip coil — continuous output with patented flying shear or saw-blade cut.", zh:"螺旋成型机生产Ø80–Ø1600mm圆管，从料带连续出料——专利飞剪或锯片切割。", es:"Tubeformers espirales produciendo conductos redondos Ø80–Ø1600 mm — salida continua con cizalla volante o corte circular.", ru:"Спиральные трубоформеры Ø80–Ø1600 мм — непрерывный выпуск с летучим ножом или пилой.", ar:"آلات تشكيل حلزونية تنتج قنوات Ø80–Ø1600 ملم — إنتاج متواصل بمقص طائر أو قطع بالمنشار.", tr:"Ø80–Ø1600 mm yuvarlak kanal üreten spiral şekillendiriciler — sürekli çıktı, uçan makas veya testere.", fr:"Tubeformers spiralés produisant des conduits ronds Ø80–Ø1600 mm — sortie continue avec cisaille volante.", pt:"Tubeformers espirais produzindo dutos redondos Ø80–Ø1600 mm — saída contínua com tesoura voadora.", hi:"Ø80–Ø1600 mm राउंड डक्ट बनाने वाले स्पाइरल ट्यूबफॉर्मर — फ्लाइंग शियर से निरंतर आउटपुट।", id:"Tubeformer spiral menghasilkan saluran bulat Ø80–Ø1600 mm — output berkelanjutan dengan gunting terbang." },
+    "selector.spiral.cta":    { en:"See spiral machines →", zh:"查看螺旋风管机 →", es:"Ver máquinas espirales →", ru:"Смотреть спиральные машины →", ar:"انظر آلات الحلزون ←", tr:"Spiral makinelere bak →", fr:"Voir les machines spiralées →", pt:"Ver máquinas espirais →", hi:"स्पाइरल मशीनें देखें →", id:"Lihat mesin spiral →" },
+    "selector.elbow.title":   { en:"I need fittings and elbows", zh:"我需要弯头及管件", es:"Necesito accesorios y codos", ru:"Нужны фитинги и отводы", ar:"أحتاج إلى تجهيزات وأكواع", tr:"Dirsek ve bağlantı parçaları istiyorum", fr:"J'ai besoin de raccords et coudes", pt:"Preciso de conexões e cotovelos", hi:"मुझे फिटिंग और एल्बो चाहिए", id:"Saya butuh fitting dan siku" },
+    "selector.elbow.desc":    { en:"Dedicated gore-lock elbow machines, plasma cutters, and fitting shapers for compliant transitions, elbows, and custom duct fittings.", zh:"专用弯头机、等离子切割机和管件成型机，用于生产弯头、变径和定制风管配件。", es:"Máquinas de codos gore-lock, cortadoras de plasma y conformadoras de accesorios para transiciones y codos.", ru:"Специальные машины для отводов, плазменные резаки и формователи фитингов.", ar:"آلات مرفق Gore-lock وقواطع بلازما ومشكّلات تجهيزات للانتقالات والأكواع.", tr:"Gore-lock dirsek makineleri, plazma kesiciler ve uyumlu geçişler için bağlantı şekillendiriciler.", fr:"Machines gore-lock, découpeurs plasma et formeurs de raccords pour transitions et coudes.", pt:"Máquinas gore-lock, cortadores plasma e formadores de conexões para cotovelos e transições.", hi:"गोर-लॉक एल्बो मशीनें, प्लाज्मा कटर और फिटिंग शेपर्स।", id:"Mesin siku gore-lock, pemotong plasma, dan pembentuk fitting untuk transisi dan siku." },
+    "selector.elbow.cta":     { en:"See fittings machines →", zh:"查看管件机 →", es:"Ver máquinas de accesorios →", ru:"Смотреть машины для фитингов →", ar:"انظر آلات التجهيزات ←", tr:"Bağlantı makinelerine bak →", fr:"Voir les machines de raccords →", pt:"Ver máquinas de conexões →", hi:"फिटिंग मशीनें देखें →", id:"Lihat mesin fitting →" },
+    "selector.factory.title": { en:"I need a complete duct factory layout", zh:"我需要完整的风管工厂规划", es:"Necesito planificación completa de fábrica de conductos", ru:"Нужна полная планировка завода воздуховодов", ar:"أحتاج إلى تخطيط مصنع قنوات كامل", tr:"Tam kanal fabrikası planlamasına ihtiyacım var", fr:"J'ai besoin d'une planification complète d'usine de conduits", pt:"Preciso de planejamento completo de fábrica de dutos", hi:"मुझे पूर्ण डक्ट फैक्टरी लेआउट चाहिए", id:"Saya butuh tata letak pabrik saluran lengkap" },
+    "selector.factory.desc":  { en:"Full factory planning — machine selection, floor layout, material flow, utilities, staffing, and commissioning. We design lines from coil to finished duct.", zh:"完整工厂规划——设备选型、车间布局、物料流程、公用工程、人员配置和调试，从料带到成品风管一站式设计。", es:"Planificación completa de fábrica — selección de máquinas, distribución, flujo de materiales y puesta en marcha.", ru:"Полное планирование завода — выбор оборудования, планировка, поток материалов и пуско-наладка.", ar:"تخطيط مصنع كامل — اختيار الآلات وتخطيط الأرضية وتدفق المواد والتشغيل.", tr:"Tam fabrika planlaması — makine seçimi, zemin planı, malzeme akışı ve devreye alma.", fr:"Planification complète d'usine — sélection machines, plan de sol, flux matières et mise en service.", pt:"Planejamento completo de fábrica — seleção de máquinas, layout, fluxo de materiais e comissionamento.", hi:"पूर्ण फैक्टरी योजना — मशीन चयन, फ्लोर लेआउट, सामग्री प्रवाह और कमीशनिंग।", id:"Perencanaan pabrik lengkap — pemilihan mesin, tata letak lantai, aliran material, dan komisioning." },
+    "selector.factory.cta":   { en:"Plan your factory →", zh:"规划您的工厂 →", es:"Planifique su fábrica →", ru:"Запланировать завод →", ar:"خطط مصنعك ←", tr:"Fabrikanızı planlayın →", fr:"Planifier votre usine →", pt:"Planeje sua fábrica →", hi:"अपनी फैक्टरी प्लान करें →", id:"Rencanakan pabrik Anda →" },
+
+    /* ---- Homepage CTA section ---- */
+    "cta.lead":         { en:"Share your material type, target output, duct size range, and floor space. Ryan will prepare a practical machine configuration and layout direction — typically within one business day.", zh:"告知材料类型、目标产量、风管尺寸范围及厂房面积，Ryan将在一个工作日内为您提供实用的设备配置和布局建议。", es:"Comparta su tipo de material, producción objetivo, rango de tamaño de conducto y espacio. Ryan preparará una configuración práctica en un día hábil.", ru:"Укажите материал, целевой объём, диапазон размеров и площадь. Райан подготовит конфигурацию оборудования обычно в течение одного рабочего дня.", ar:"شارك نوع المادة والإنتاج المستهدف ونطاق الحجم والمساحة. سيعد رايان تكويناً عملياً عادةً في يوم عمل واحد.", tr:"Malzeme türünü, hedef çıktıyı, kanal boyut aralığını ve alanı paylaşın. Ryan genellikle bir iş günü içinde yapılandırma hazırlayacak.", fr:"Partagez le type de matériau, la production cible, la plage de taille et l'espace. Ryan préparera une configuration pratique en un jour ouvrable.", pt:"Compartilhe tipo de material, produção alvo, faixa de tamanho de duto e espaço. Ryan preparará uma configuração prática em um dia útil.", hi:"सामग्री प्रकार, लक्ष्य आउटपुट, डक्ट साइज़ रेंज और फ्लोर स्पेस साझा करें। Ryan आमतौर पर एक कार्य दिवस के भीतर व्यावहारिक कॉन्फ़िगरेशन तैयार करेंगे।", id:"Bagikan jenis material, target output, rentang ukuran saluran, dan luas lantai. Ryan akan menyiapkan konfigurasi mesin dalam satu hari kerja." },
+    "cta.quote.btn":    { en:"Request a Formal Quote →", zh:"申请正式报价 →", es:"Solicitar cotización formal →", ru:"Запросить официальное КП →", ar:"طلب عرض سعر رسمي ←", tr:"Resmi Teklif İste →", fr:"Demander un devis formel →", pt:"Solicitar orçamento formal →", hi:"औपचारिक कोटेशन मांगें →", id:"Minta Penawaran Resmi →" },
+    "cta.quote.note":   { en:"Include machine interest, material, thickness, target output, country & timeline for a detailed proposal from sales@sbkjduct.com.", zh:"包含设备兴趣、材料、厚度、目标产量、国家和时间节点，可获来自sales@sbkjduct.com的详细方案。", es:"Incluya interés en máquinas, material, espesor, producción objetivo, país y cronograma para una propuesta detallada.", ru:"Укажите интерес к оборудованию, материал, толщину, объём, страну и сроки для детального КП.", ar:"أدرج اهتمامك بالآلات والمادة والسماكة والإنتاج والدولة والجدول الزمني للحصول على اقتراح مفصل.", tr:"Makine ilgisi, malzeme, kalınlık, hedef çıktı, ülke ve zaman çizelgesi ekleyin.", fr:"Incluez l'intérêt machine, matériau, épaisseur, production cible, pays et calendrier pour une proposition détaillée.", pt:"Inclua interesse em máquina, material, espessura, produção alvo, país e prazo para uma proposta detalhada.", hi:"विस्तृत प्रस्ताव के लिए मशीन रुचि, सामग्री, मोटाई, लक्ष्य आउटपुट, देश और समयरेखा शामिल करें।", id:"Sertakan minat mesin, material, ketebalan, target output, negara & timeline untuk proposal terperinci." },
+    "cta.whatsapp.btn": { en:"WhatsApp Ryan Directly", zh:"直接WhatsApp联系Ryan", es:"WhatsApp a Ryan directamente", ru:"Написать Райану в WhatsApp", ar:"تواصل مع رايان عبر واتساب", tr:"Ryan'a Doğrudan WhatsApp", fr:"WhatsApp Ryan directement", pt:"WhatsApp Ryan diretamente", hi:"Ryan को सीधे WhatsApp करें", id:"WhatsApp Ryan Langsung" },
+    "cta.whatsapp.note":{ en:"For technical questions, feasibility review, capacity planning, or factory layout advice before committing to a formal quote.", zh:"适用于提交正式报价前的技术问题、可行性分析、产能规划或工厂布局咨询。", es:"Para preguntas técnicas, revisión de factibilidad, planificación de capacidad o asesoramiento de diseño antes de una cotización.", ru:"Для технических вопросов, оценки, планирования мощностей или планировки цеха до официального запроса.", ar:"للأسئلة التقنية ومراجعة الجدوى وتخطيط الطاقة أو تخطيط المصنع قبل تقديم عرض رسمي.", tr:"Resmi teklife bağlanmadan önce teknik sorular, fizibilite, kapasite planlaması veya fabrika yerleşimi tavsiyesi için.", fr:"Pour questions techniques, faisabilité, planification de capacité ou conseils d'agencement avant un devis formel.", pt:"Para perguntas técnicas, revisão de viabilidade, planejamento de capacidade ou conselho de layout antes de um orçamento formal.", hi:"औपचारिक कोटेशन से पहले तकनीकी प्रश्नों, फीज़िबिलिटी रिव्यू, क्षमता योजना या फैक्टरी लेआउट सलाह के लिए।", id:"Untuk pertanyaan teknis, tinjauan kelayakan, perencanaan kapasitas, atau saran tata letak pabrik sebelum penawaran resmi." },
+    "cta.or":           { en:"or", zh:"或者", es:"o", ru:"или", ar:"أو", tr:"veya", fr:"ou", pt:"ou", hi:"या", id:"atau" },
+
     /* ---- Footer ---- */
-    "footer.desc":      { en:"High‑tech HVAC ductwork machinery manufacturer for spiral, round and rectangular ducts.", zh:"高新技术暖通风管设备制造商，专注螺旋风管、圆管和矩形风管。", es:"Fabricante de maquinaria HVAC de alta tecnología para conductos espirales, redondos y rectangulares.", ru:"Высокотехнологичный производитель оборудования для спиральных, круглых и прямоугольных воздуховодов.", ar:"شركة تصنيع آلات مجاري الهواء عالية التقنية للقنوات الحلزونية والمستديرة والمستطيلة.", tr:"Spiral, yuvarlak ve dikdörtgen kanallar için yüksek teknoloji HVAC kanal makineleri üreticisi.", fr:"Fabricant de machines de canalisation HVAC haute technologie pour conduits spiralés, ronds et rectangulaires.", pt:"Fabricante de máquinas HVAC de alta tecnologia para dutos espirais, redondos e retangulares.", hi:"स्पाइरल, राउंड और रेक्टैंगुलर डक्ट के लिए हाई-टेक HVAC मशीनरी निर्माता।", id:"Produsen mesin saluran HVAC berteknologi tinggi untuk saluran spiral, bulat, dan persegi panjang." },
+    "footer.desc":      { en:"HVAC ductwork machinery manufacturer since 1995. Spiral, rectangular, round and flexible duct production lines for 80+ countries.", zh:"1995年以来的暖通风管设备制造商。80+国家螺旋、矩形、圆形和柔性风管生产线。", es:"Fabricante de maquinaria HVAC desde 1995. Líneas de producción para 80+ países.", ru:"Производитель оборудования для воздуховодов с 1995 г. Линии для 80+ стран.", ar:"مصنع آلات مجاري الهواء HVAC منذ 1995. خطوط إنتاج لأكثر من 80 دولة.", tr:"1995'ten beri HVAC kanal makinesi üreticisi. 80+ ülke için üretim hatları.", fr:"Fabricant de machines HVAC depuis 1995. Lignes de production pour 80+ pays.", pt:"Fabricante de máquinas HVAC desde 1995. Linhas de produção para 80+ países.", hi:"1995 से HVAC मशीनरी निर्माता। 80+ देशों के लिए उत्पादन लाइनें।", id:"Produsen mesin saluran HVAC sejak 1995. Lini produksi untuk 80+ negara." },
+    "footer.meta":      { en:"Since 1995 · 80+ countries served · 5,000+ machines installed", zh:"1995年创立 · 服务80+国家 · 安装5000+台设备", es:"Desde 1995 · 80+ países · 5.000+ máquinas", ru:"С 1995 г. · 80+ стран · 5000+ машин", ar:"منذ 1995 · 80+ دولة · 5000+ آلة", tr:"1995'ten beri · 80+ ülke · 5.000+ makine", fr:"Depuis 1995 · 80+ pays · 5 000+ machines", pt:"Desde 1995 · 80+ países · 5.000+ máquinas", hi:"1995 से · 80+ देश · 5,000+ मशीनें", id:"Sejak 1995 · 80+ negara · 5.000+ mesin" },
+    "footer.copy":      { en:"SBKJ Group. All rights reserved.", zh:"SBKJ集团 版权所有。", es:"SBKJ Group. Todos los derechos reservados.", ru:"SBKJ Group. Все права защищены.", ar:"مجموعة SBKJ. جميع الحقوق محفوظة.", tr:"SBKJ Group. Tüm hakları saklıdır.", fr:"SBKJ Group. Tous droits réservés.", pt:"SBKJ Group. Todos os direitos reservados.", hi:"SBKJ Group. सर्वाधिकार सुरक्षित।", id:"SBKJ Group. Hak cipta dilindungi." },
     "footer.navigate":  { en:"Navigate", zh:"导航", es:"Navegación", ru:"Навигация", ar:"التنقل", tr:"Gezinti", fr:"Navigation", pt:"Navegação", hi:"नेविगेट", id:"Navigasi" },
     "footer.touch":     { en:"Get in touch", zh:"联系方式", es:"Contáctenos", ru:"Свяжитесь с нами", ar:"تواصل معنا", tr:"İletişime Geçin", fr:"Contactez-nous", pt:"Entre em contato", hi:"संपर्क करें", id:"Hubungi Kami" },
     "footer.rights":    { en:"SBKJ Group. All rights reserved.", zh:"SBKJ集团 版权所有。", es:"SBKJ Group. Todos los derechos reservados.", ru:"SBKJ Group. Все права защищены.", ar:"مجموعة SBKJ. جميع الحقوق محفوظة.", tr:"SBKJ Group. Tüm hakları saklıdır.", fr:"SBKJ Group. Tous droits réservés.", pt:"SBKJ Group. Todos os direitos reservados.", hi:"SBKJ Group. सर्वाधिकार सुरक्षित।", id:"SBKJ Group. Hak cipta dilindungi." },
+    "footer.col.company":  { en:"Company", zh:"公司", es:"Empresa", ru:"Компания", ar:"الشركة", tr:"Şirket", fr:"Entreprise", pt:"Empresa", hi:"कंपनी", id:"Perusahaan" },
+    "footer.col.machinery":{ en:"Machinery Categories", zh:"设备分类", es:"Categorías de maquinaria", ru:"Категории оборудования", ar:"فئات الآلات", tr:"Makine Kategorileri", fr:"Catégories de machines", pt:"Categorias de máquinas", hi:"मशीनरी श्रेणियां", id:"Kategori Mesin" },
+    "footer.col.resources":{ en:"Resources", zh:"资源", es:"Recursos", ru:"Ресурсы", ar:"الموارد", tr:"Kaynaklar", fr:"Ressources", pt:"Recursos", hi:"संसाधन", id:"Sumber Daya" },
+    "footer.col.contact":  { en:"Contact", zh:"联系我们", es:"Contacto", ru:"Контакты", ar:"اتصل بنا", tr:"İletişim", fr:"Contact", pt:"Contato", hi:"संपर्क", id:"Kontak" },
+    "footer.link.about":   { en:"About SBKJ", zh:"关于SBKJ", es:"Sobre SBKJ", ru:"О компании SBKJ", ar:"عن SBKJ", tr:"SBKJ Hakkında", fr:"À propos de SBKJ", pt:"Sobre a SBKJ", hi:"SBKJ के बारे में", id:"Tentang SBKJ" },
+    "footer.link.why":     { en:"Why Choose SBKJ", zh:"为什么选择SBKJ", es:"Por qué elegir SBKJ", ru:"Почему SBKJ", ar:"لماذا تختار SBKJ", tr:"Neden SBKJ", fr:"Pourquoi choisir SBKJ", pt:"Por que escolher SBKJ", hi:"SBKJ क्यों चुनें", id:"Mengapa Memilih SBKJ" },
+    "footer.link.factory": { en:"Factory & Manufacturing", zh:"工厂与制造", es:"Fábrica y manufactura", ru:"Завод и производство", ar:"المصنع والتصنيع", tr:"Fabrika ve Üretim", fr:"Usine et fabrication", pt:"Fábrica e manufatura", hi:"फैक्टरी और निर्माण", id:"Pabrik & Manufaktur" },
+    "footer.link.quality": { en:"Quality & Certifications", zh:"质量与认证", es:"Calidad y certificaciones", ru:"Качество и сертификаты", ar:"الجودة والشهادات", tr:"Kalite ve Sertifikalar", fr:"Qualité et certifications", pt:"Qualidade e certificações", hi:"गुणवत्ता और प्रमाणन", id:"Kualitas & Sertifikasi" },
+    "footer.link.ryan":    { en:"Talk to Ryan", zh:"联系Ryan", es:"Hablar con Ryan", ru:"Поговорить с Райаном", ar:"تحدث مع رايان", tr:"Ryan ile Görüş", fr:"Parler à Ryan", pt:"Falar com Ryan", hi:"Ryan से बात करें", id:"Bicara dengan Ryan" },
+    "footer.link.hvac":    { en:"HVAC Duct Machinery", zh:"暖通风管设备", es:"Maquinaria HVAC", ru:"HVAC оборудование", ar:"آلات مجاري الهواء", tr:"HVAC Kanal Makineleri", fr:"Machines HVAC", pt:"Máquinas HVAC", hi:"HVAC डक्ट मशीनरी", id:"Mesin Saluran HVAC" },
+    "footer.link.spiral":  { en:"Spiral Duct Machines", zh:"螺旋风管机", es:"Máquinas espirales", ru:"Спиральные машины", ar:"آلات القناة الحلزونية", tr:"Spiral Kanal Makineleri", fr:"Machines à conduits spiralés", pt:"Máquinas espirais", hi:"स्पाइरल डक्ट मशीनें", id:"Mesin Saluran Spiral" },
+    "footer.link.auto":    { en:"Auto Duct Lines", zh:"全自动风管线", es:"Líneas automáticas", ru:"Авто-линии", ar:"خطوط القناة التلقائية", tr:"Otomatik Kanal Hatları", fr:"Lignes automatiques", pt:"Linhas automáticas", hi:"ऑटो डक्ट लाइनें", id:"Jalur Saluran Otomatis" },
+    "footer.link.forming": { en:"Duct Forming Machines", zh:"风管成型机", es:"Máquinas de conformado", ru:"Машины для формовки", ar:"آلات تشكيل القنوات", tr:"Kanal Şekillendirme Makineleri", fr:"Machines de formage", pt:"Máquinas de conformação", hi:"डक्ट फॉर्मिंग मशीनें", id:"Mesin Pembentuk Saluran" },
+    "footer.link.elbow":   { en:"Elbow & Fittings Machines", zh:"弯头及管件机", es:"Máquinas de codos y accesorios", ru:"Машины для отводов и фитингов", ar:"آلات المرفقين والتوصيلات", tr:"Dirsek ve Bağlantı Makineleri", fr:"Machines coudes et raccords", pt:"Máquinas de cotovelos e conexões", hi:"एल्बो और फिटिंग मशीनें", id:"Mesin Siku & Fitting" },
+    "footer.link.machines":{ en:"Machine Center", zh:"产品中心", es:"Centro de máquinas", ru:"Центр оборудования", ar:"مركز الآلات", tr:"Makine Merkezi", fr:"Centre machines", pt:"Centro de máquinas", hi:"मशीन सेंटर", id:"Pusat Mesin" },
+    "footer.link.guides":  { en:"Buying Guides", zh:"采购指南", es:"Guías de compra", ru:"Гайды покупателя", ar:"أدلة الشراء", tr:"Satın Alma Rehberleri", fr:"Guides d'achat", pt:"Guias de compra", hi:"खरीद गाइड", id:"Panduan Pembelian" },
+    "footer.link.cases":   { en:"Case Studies", zh:"案例研究", es:"Casos de estudio", ru:"Кейс-стади", ar:"دراسات الحالة", tr:"Vaka Çalışmaları", fr:"Études de cas", pt:"Estudos de caso", hi:"केस स्टडी", id:"Studi Kasus" },
+    "footer.link.videos":  { en:"Machine Videos", zh:"设备视频", es:"Videos de máquinas", ru:"Видео оборудования", ar:"فيديوهات الآلات", tr:"Makine Videoları", fr:"Vidéos machines", pt:"Vídeos de máquinas", hi:"मशीन वीडियो", id:"Video Mesin" },
+    "footer.link.quote":   { en:"Request Quote", zh:"获取报价", es:"Solicitar cotización", ru:"Запросить цену", ar:"طلب عرض سعر", tr:"Teklif İste", fr:"Demander un devis", pt:"Solicitar cotação", hi:"कोटेशन मांगें", id:"Minta Penawaran" },
+    "footer.whatsapp":     { en:"WhatsApp: +61 435 074 994", zh:"WhatsApp: +61 435 074 994", es:"WhatsApp: +61 435 074 994", ru:"WhatsApp: +61 435 074 994", ar:"واتساب: +61 435 074 994", tr:"WhatsApp: +61 435 074 994", fr:"WhatsApp: +61 435 074 994", pt:"WhatsApp: +61 435 074 994", hi:"WhatsApp: +61 435 074 994", id:"WhatsApp: +61 435 074 994" },
+    "footer.ryan.location":{ en:"Ryan Tao — Melbourne, VIC, AU", zh:"Ryan Tao — 澳大利亚维多利亚州墨尔本", es:"Ryan Tao — Melbourne, VIC, AU", ru:"Райан Тао — Мельбурн, VIC, AU", ar:"رايان تاو — ملبورن، VIC، AU", tr:"Ryan Tao — Melbourne, VIC, AU", fr:"Ryan Tao — Melbourne, VIC, AU", pt:"Ryan Tao — Melbourne, VIC, AU", hi:"Ryan Tao — Melbourne, VIC, AU", id:"Ryan Tao — Melbourne, VIC, AU" },
+    "footer.factory.location": { en:"Factory: Jiangyin, Jiangsu, China", zh:"工厂：中国江苏省江阴市", es:"Fábrica: Jiangyin, Jiangsu, China", ru:"Завод: Цзянъинь, Цзянсу, Китай", ar:"المصنع: جيانغيين، جيانغسو، الصين", tr:"Fabrika: Jiangyin, Jiangsu, Çin", fr:"Usine: Jiangyin, Jiangsu, Chine", pt:"Fábrica: Jiangyin, Jiangsu, China", hi:"फैक्टरी: जियांगयिन, जियांगसू, चीन", id:"Pabrik: Jiangyin, Jiangsu, Tiongkok" },
 
     /* ---- Machines Page ---- */
     "machines.eyebrow": { en:"Product Catalogue", zh:"产品目录", es:"Catálogo de Productos", ru:"Каталог продукции", ar:"كتالوج المنتجات", tr:"Ürün Kataloğu", fr:"Catalogue produits", pt:"Catálogo de Produtos", hi:"उत्पाद सूची", id:"Katalog Produk" },
@@ -466,10 +537,25 @@
     host.insertBefore(notice, host.firstChild);
   }
 
+  /* QA mode: add ?i18n-qa=1 to URL to visually flag missing translations */
+  const QA_MODE = typeof window !== "undefined" &&
+    new URLSearchParams(window.location.search).get("i18n-qa") === "1";
+
   function t(key) {
     const entry = T[key];
-    if (!entry) return null;
-    return entry[currentLang] || entry.en;
+    if (!entry) {
+      if (QA_MODE || (typeof console !== "undefined")) {
+        console.warn("[SBKJ i18n] MISSING KEY:", key, "— page:", window.location.pathname);
+      }
+      /* In QA mode return a clearly broken string so testers see it */
+      return QA_MODE ? `⚠️[${key}]` : null;
+    }
+    const val = entry[currentLang];
+    if (!val && currentLang !== "en") {
+      console.warn("[SBKJ i18n] MISSING TRANSLATION for key:", key, "lang:", currentLang, "— falling back to EN");
+      return entry.en || null;
+    }
+    return val || entry.en;
   }
 
   function translateSpecLabel(text) {
@@ -483,20 +569,46 @@
   }
 
   function applyTranslations() {
+    /* textContent translations (most elements) */
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
       const val = t(key);
-      if (val) el.textContent = val;
+      if (val !== null) {
+        el.textContent = val;
+        if (QA_MODE) el.removeAttribute("data-i18n-missing");
+      } else if (QA_MODE) {
+        el.setAttribute("data-i18n-missing", key);
+        el.style.outline = "2px solid red";
+        el.title = `[i18n QA] Missing key: ${key}`;
+      }
     });
+    /* innerHTML translations (keys that contain HTML like <br/>) */
     document.querySelectorAll("[data-i18n-html]").forEach(el => {
       const key = el.getAttribute("data-i18n-html");
       const val = t(key);
-      if (val) el.innerHTML = val;
+      if (val !== null) el.innerHTML = val;
+      else if (QA_MODE) {
+        el.setAttribute("data-i18n-missing", key);
+        el.style.outline = "2px solid red";
+      }
     });
+    /* placeholder translations */
     document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
       const key = el.getAttribute("data-i18n-placeholder");
       const val = t(key);
-      if (val) el.placeholder = val;
+      if (val !== null) el.placeholder = val;
+    });
+    /* aria-label translations */
+    document.querySelectorAll("[data-i18n-aria]").forEach(el => {
+      const key = el.getAttribute("data-i18n-aria");
+      const val = t(key);
+      if (val !== null) el.setAttribute("aria-label", val);
+    });
+    /* title attribute translations */
+    document.querySelectorAll("[data-i18n-title]").forEach(el => {
+      const key = el.getAttribute("data-i18n-title");
+      const val = t(key);
+      if (val !== null) el.setAttribute("title", val);
     });
     document.documentElement.lang = currentLang;
     document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
@@ -614,5 +726,80 @@
     init();
   }
 
-  window.SBKJ_i18n = { t, setLang, currentLang: () => currentLang };
+  /**
+   * validateKeys() — QA utility
+   * Run in browser console: SBKJ_i18n.validateKeys()
+   * Returns a report of every data-i18n key on the page that is:
+   *   - missing from the T table entirely
+   *   - missing a translation for a specific language
+   */
+  function validateKeys() {
+    const allLangs = Object.keys(LANGS);
+    const pageKeys = new Set();
+    document.querySelectorAll("[data-i18n],[data-i18n-html],[data-i18n-placeholder],[data-i18n-aria],[data-i18n-title]").forEach(el => {
+      ["data-i18n","data-i18n-html","data-i18n-placeholder","data-i18n-aria","data-i18n-title"].forEach(attr => {
+        const k = el.getAttribute(attr);
+        if (k) pageKeys.add(k);
+      });
+    });
+    const report = { missingKeys: [], missingTranslations: {} };
+    pageKeys.forEach(key => {
+      if (!T[key]) {
+        report.missingKeys.push(key);
+      } else {
+        allLangs.forEach(lang => {
+          if (!T[key][lang]) {
+            if (!report.missingTranslations[lang]) report.missingTranslations[lang] = [];
+            report.missingTranslations[lang].push(key);
+          }
+        });
+      }
+    });
+    const totalKeys = pageKeys.size;
+    const missingCount = report.missingKeys.length;
+    const transCount = Object.values(report.missingTranslations).reduce((s,a) => s+a.length, 0);
+    console.group("[SBKJ i18n] Validation Report — " + window.location.pathname);
+    console.log("Total data-i18n keys on page:", totalKeys);
+    if (missingCount === 0) {
+      console.log("✅ All keys exist in translation table");
+    } else {
+      console.error("❌ Keys missing from T table (" + missingCount + "):", report.missingKeys);
+    }
+    if (transCount === 0) {
+      console.log("✅ All translations present for all " + allLangs.length + " languages");
+    } else {
+      console.warn("⚠️  Missing translations (" + transCount + " total):");
+      Object.entries(report.missingTranslations).forEach(([lang, keys]) => {
+        if (keys.length) console.warn("  " + lang + ":", keys);
+      });
+    }
+    console.groupEnd();
+    return report;
+  }
+
+  /**
+   * scanUntranslatedElements() — scans visible text nodes for elements
+   * that have no data-i18n attribute and may be hardcoded English strings.
+   * Run in browser console: SBKJ_i18n.scanUntranslated()
+   */
+  function scanUntranslated() {
+    const candidates = [];
+    const skip = new Set(["SCRIPT","STYLE","NOSCRIPT","META","LINK","SVG","PATH","CIRCLE"]);
+    document.querySelectorAll("h1,h2,h3,h4,p,li,dt,dd,label,button,a,span,th,td").forEach(el => {
+      if (skip.has(el.tagName)) return;
+      if (el.closest("[data-i18n],[data-i18n-html]")) return;
+      if (el.getAttribute("data-i18n") || el.getAttribute("data-i18n-html")) return;
+      const text = (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3)
+        ? el.textContent.trim() : "";
+      if (text.length > 3 && /[a-zA-Z]/.test(text)) {
+        candidates.push({ tag: el.tagName, text: text.slice(0, 80), el });
+      }
+    });
+    console.group("[SBKJ i18n] Potentially Untranslated Elements (" + candidates.length + ")");
+    candidates.forEach(c => console.log(c.tag + ':', '"' + c.text + '"', c.el));
+    console.groupEnd();
+    return candidates;
+  }
+
+  window.SBKJ_i18n = { t, setLang, currentLang: () => currentLang, validateKeys, scanUntranslated };
 })();
