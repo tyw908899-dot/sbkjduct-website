@@ -6781,3 +6781,576 @@ textarea:focus-visible,
   }
 
 }
+
+/* ========================================
+   Premium Visual Refinement
+   ======================================== */
+
+/* --- Hero: Industrial Left-Aligned Variant --- */
+.hero-industrial {
+  text-align: left;
+}
+
+.hero-industrial .hero-grid {
+  max-width: none;
+  margin-inline: 0;
+}
+
+.hero-industrial .hero-copy {
+  max-width: 58rem;
+}
+
+.hero-industrial .hero-copy h1 {
+  font-size: clamp(3.2rem, 6.5vw, 5.2rem);
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+  margin-bottom: 1.75rem;
+}
+
+.hero-industrial .hero-lead {
+  margin-inline: 0;
+  text-align: left;
+  font-size: 1.05rem;
+  max-width: 42rem;
+}
+
+.hero-industrial .hero-proof {
+  text-align: left;
+  margin-inline: 0;
+}
+
+.hero-industrial .hero-actions {
+  justify-content: flex-start;
+}
+
+.hero-industrial .hero-email {
+  text-align: left;
+}
+
+/* Ryan trust inline strip in hero */
+.hero-ryan-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 0.5rem 1rem 0.5rem 0.75rem;
+  border: 1px solid rgba(37, 211, 102, 0.2);
+  border-radius: 999px;
+  background: rgba(37, 211, 102, 0.05);
+}
+
+.hero-ryan-strip .ryan-online-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 0 8px rgba(37, 211, 102, 0.7);
+  flex-shrink: 0;
+  animation: pulse-dot 2.5s ease-in-out infinite;
+}
+
+.hero-ryan-strip a {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.hero-ryan-strip a:hover {
+  text-decoration: underline;
+}
+
+/* --- Stats band: tighter, more premium --- */
+.stats-band-6 {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding-block: 1.25rem;
+}
+
+/* --- SBAL-V: Flagship hero KPI row --- */
+.product-hero-flagship {
+  position: relative;
+  background: radial-gradient(ellipse 70% 100% at 0% 50%, rgba(0, 229, 255, 0.06), transparent 60%);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2rem;
+}
+
+.product-hero-kpi-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.product-hero-kpi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-inline: 2rem;
+  border-right: 1px solid var(--border);
+}
+
+.product-hero-kpi:first-child {
+  padding-left: 0;
+}
+
+.product-hero-kpi:last-child {
+  border-right: none;
+}
+
+.product-hero-kpi-val {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.product-hero-kpi-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .product-hero-kpi-row {
+    gap: 1rem;
+  }
+  .product-hero-kpi {
+    padding-inline: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.75rem;
+  }
+  .product-hero-kpi:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+/* --- SBAL-V: Models & Configurations section --- */
+.product-config-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+@media (max-width: 640px) {
+  .product-config-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-config-card {
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  position: relative;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.product-config-card:hover {
+  border-color: rgba(0, 229, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.product-config-card.config-flagship {
+  border-color: rgba(0, 229, 255, 0.28);
+  background: linear-gradient(145deg, rgba(0, 229, 255, 0.06), var(--bg-elevated));
+}
+
+.config-badge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #030408;
+  background: var(--accent);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  margin-bottom: 0.9rem;
+}
+
+.config-model {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 0.2rem;
+  letter-spacing: -0.02em;
+}
+
+.config-width {
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 1.1rem;
+}
+
+.config-specs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.config-specs li {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.07);
+}
+
+.config-specs li:last-child {
+  border-bottom: none;
+}
+
+.config-specs li strong {
+  color: var(--text);
+  font-weight: 600;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.config-ideal {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.1);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* --- SBAL-V: Installed proof strip --- */
+.product-proof-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  padding: 1.1rem 1.4rem;
+  background: rgba(0, 229, 255, 0.04);
+  border: 1px solid rgba(0, 229, 255, 0.12);
+  border-radius: var(--radius);
+  margin: 1.5rem 0;
+}
+
+.product-proof-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-dim);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.product-proof-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.product-proof-links a {
+  font-size: 0.83rem;
+  color: var(--accent);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.product-proof-links a:hover {
+  text-decoration: underline;
+}
+
+.product-proof-links a::before {
+  content: "→ ";
+  font-size: 0.8em;
+}
+
+/* --- SBAL-V: Sidebar CTA block --- */
+.sidebar-cta-block {
+  padding: 1.5rem;
+  background: linear-gradient(145deg, rgba(0, 229, 255, 0.09), rgba(0, 180, 200, 0.03));
+  border: 1px solid rgba(0, 229, 255, 0.22);
+  border-radius: var(--radius);
+  margin-top: 1.25rem;
+}
+
+.sidebar-cta-block h4 {
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 0.45rem;
+  color: var(--text);
+  letter-spacing: -0.015em;
+}
+
+.sidebar-cta-block p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0 0 1.1rem;
+  line-height: 1.6;
+}
+
+/* --- Case preview cards: premium accent bar on hover --- */
+.case-preview-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.case-preview-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.case-preview-card:hover::before {
+  opacity: 1;
+}
+
+/* --- Knowledge cards: accent underline on hover --- */
+.knowledge-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.knowledge-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent 70%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.knowledge-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* --- Ryan page: premium avatar --- */
+.ryan-avatar-premium {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(0, 229, 255, 0.12), rgba(0, 180, 200, 0.04));
+  border: 2px solid rgba(0, 229, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.12), inset 0 0 20px rgba(0, 229, 255, 0.04);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ryan-avatar-premium::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 229, 255, 0.1);
+  pointer-events: none;
+}
+
+/* --- Ryan page: credential strip --- */
+.ryan-credential-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 1.5rem;
+  border: 1px solid rgba(0, 229, 255, 0.12);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.ryan-credential-item {
+  padding: 1rem 0.75rem;
+  text-align: center;
+  background: rgba(0, 229, 255, 0.03);
+  border-right: 1px solid rgba(0, 229, 255, 0.08);
+}
+
+.ryan-credential-item:last-child {
+  border-right: none;
+}
+
+.ryan-credential-num {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.ryan-credential-label {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.3rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+@media (max-width: 640px) {
+  .ryan-credential-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- Ryan page: advisor philosophy block --- */
+.ryan-philosophy-block {
+  padding: 1.5rem;
+  background: rgba(0, 229, 255, 0.04);
+  border-left: 3px solid rgba(0, 229, 255, 0.4);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 1.75rem 0;
+}
+
+.ryan-philosophy-block p {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.7;
+  margin: 0;
+  font-style: italic;
+}
+
+.ryan-philosophy-block cite {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* --- Wayfinding panel: premium version --- */
+.wayfinding-panel {
+  position: relative;
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.07) 0%, rgba(139, 92, 246, 0.04) 100%);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wayfinding-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(180deg, var(--accent), transparent);
+}
+
+.wayfinding-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 50% 40% at 50% 0%, rgba(0, 229, 255, 0.05), transparent 70%);
+  pointer-events: none;
+}
+
+.wayfinding-panel h2 {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0.5rem 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.wayfinding-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* After-sales grid: premium icons */
+.after-sales-item {
+  position: relative;
+  padding-left: 1rem;
+  border-left: 2px solid rgba(0, 229, 255, 0.15);
+  transition: border-color var(--transition);
+}
+
+.after-sales-item:hover {
+  border-left-color: var(--accent);
+}
+
+/* Hero industrial — responsive */
+@media (max-width: 960px) {
+  .hero-industrial .hero-copy h1 {
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-industrial .hero-copy h1 {
+    font-size: clamp(2.4rem, 9vw, 3.2rem);
+    letter-spacing: -0.04em;
+  }
+
+  .hero-ryan-strip {
+    font-size: 0.8rem;
+  }
+
+  .product-config-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-hero-kpi-row {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1.25rem;
+  }
+
+  .product-hero-kpi {
+    padding-inline: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.85rem;
+  }
+
+  .product-hero-kpi:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
