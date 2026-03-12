@@ -60,113 +60,113 @@
     <section id="contact" class="section contact-section">
       <div class="shell contact-grid">
         <div class="contact-primary">
-          <p class="contact-kicker">Request a Quote</p>
-          <h2>Speak with SBKJ Sales</h2>
-          <p class="contact-intro">
+          <p class="contact-kicker" data-i18n="contact.kicker">Request a Quote</p>
+          <h2 data-i18n="contact.h2">Speak with SBKJ Sales</h2>
+          <p class="contact-intro" data-i18n="contact.intro">
             Tell us your production goals and our team will recommend a practical machine setup for your duct factory.
           </p>
 
           <div class="contact-callout">
-            <p class="contact-callout-title">Email sales directly</p>
+            <p class="contact-callout-title" data-i18n="contact.callout.title">Email sales directly</p>
             <a class="contact-email" href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a>
-            <p class="contact-callout-copy">For the fastest response, include your project details in your first message.</p>
+            <p class="contact-callout-copy" data-i18n="contact.callout.copy">For the fastest response, include your project details in your first message.</p>
           </div>
 
           <div class="contact-cta-row">
-            <a class="btn btn-primary" href="request-quote.html">Request a Quote</a>
+            <a class="btn btn-primary" href="request-quote.html" data-i18n="contact.cta.quote">Request a Quote</a>
             <a class="btn btn-ghost" href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a>
-            <a class="btn btn-outline" href="videos.html">Watch Machines Running</a>
+            <a class="btn btn-outline" href="videos.html" data-i18n="contact.cta.videos">Watch Machines Running</a>
           </div>
 
-          <div class="contact-checklist" aria-label="What to include in your inquiry">
-            <h3>What to include in your inquiry</h3>
+          <div class="contact-checklist" aria-label="What to include in your inquiry" data-i18n-aria="contact.checklist.aria">
+            <h3 data-i18n="contact.checklist.h3">What to include in your inquiry</h3>
             <ul>
-              <li>Duct type (spiral or rectangular)</li>
-              <li>Target output capacity</li>
-              <li>Material thickness</li>
-              <li>Power requirement (if known)</li>
-              <li>Country or delivery port</li>
+              <li data-i18n="contact.checklist.li1">Duct type (spiral or rectangular)</li>
+              <li data-i18n="contact.checklist.li2">Target output capacity</li>
+              <li data-i18n="contact.checklist.li3">Material thickness</li>
+              <li data-i18n="contact.checklist.li4">Power requirement (if known)</li>
+              <li data-i18n="contact.checklist.li5">Country or delivery port</li>
             </ul>
           </div>
 
           <ul class="contact-details">
-            <li><strong>Company:</strong> SBKJ Group</li>
-            <li><strong>Email:</strong> <a href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a></li>
-            <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/61435074994" target="_blank" rel="noopener">+61 435 074 994</a></li>
-            <li><strong>Factory:</strong> No.78 Huanxi Road, Zhutang Town, Jiangyin City, Jiangsu, P.R. China</li>
-            <li><strong>Office:</strong> 5 Twyford Street, Box Hill North, VIC 3129, Australia</li>
+            <li><strong data-i18n="contact.details.company.label">Company:</strong> SBKJ Group</li>
+            <li><strong data-i18n="contact.details.email.label">Email:</strong> <a href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a></li>
+            <li><strong data-i18n="contact.details.phone.label">Phone / WhatsApp:</strong> <a href="https://wa.me/61435074994" target="_blank" rel="noopener">+61 435 074 994</a></li>
+            <li><strong data-i18n="contact.details.factory.label">Factory:</strong> No.78 Huanxi Road, Zhutang Town, Jiangyin City, Jiangsu, P.R. China</li>
+            <li><strong data-i18n="contact.details.office.label">Office:</strong> 5 Twyford Street, Box Hill North, VIC 3129, Australia</li>
           </ul>
         </div>
 
         <form id="quote-form" class="contact-form" action="mailto:sales@sbkjduct.com" method="post" enctype="text/plain" novalidate>
-          <h3 class="contact-form-title">Request a Quote</h3>
-          <p class="contact-form-intro">Complete the form to open your email app with a pre-filled inquiry to sales@sbkjduct.com.</p>
+          <h3 class="contact-form-title" data-i18n="contact.form.h3">Request a Quote</h3>
+          <p class="contact-form-intro" data-i18n="contact.form.intro">Complete the form to open your email app with a pre-filled inquiry to sales@sbkjduct.com.</p>
 
           <div class="form-row">
             <div class="form-field">
-              <label for="name">Full name *</label>
+              <label for="name" data-i18n="contact.form.label.name">Full name *</label>
               <input id="name" name="name" type="text" autocomplete="name" required />
             </div>
             <div class="form-field">
-              <label for="company">Company name *</label>
+              <label for="company" data-i18n="contact.form.label.company">Company name *</label>
               <input id="company" name="company" type="text" autocomplete="organization" required />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-field">
-              <label for="email">Work email *</label>
+              <label for="email" data-i18n="contact.form.label.email">Work email *</label>
               <input id="email" name="email" type="email" autocomplete="email" required />
             </div>
             <div class="form-field">
-              <label for="phone">Phone / WhatsApp</label>
+              <label for="phone" data-i18n="contact.form.label.phone">Phone / WhatsApp</label>
               <input id="phone" name="phone" type="tel" autocomplete="tel" />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-field">
-              <label for="duct-type">Duct type *</label>
+              <label for="duct-type" data-i18n="contact.form.label.ducttype">Duct type *</label>
               <select id="duct-type" name="duct_type" required>
-                <option value="">Select one</option>
+                <option value="" data-i18n="contact.form.select.placeholder">Select one</option>
                 <option value="Spiral">Spiral</option>
                 <option value="Rectangular">Rectangular</option>
               </select>
             </div>
             <div class="form-field">
-              <label for="capacity">Target output capacity</label>
+              <label for="capacity" data-i18n="contact.form.label.capacity">Target output capacity</label>
               <input id="capacity" name="capacity" type="text" placeholder="Example: 1500 m²/day" />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-field">
-              <label for="thickness">Material thickness</label>
+              <label for="thickness" data-i18n="contact.form.label.thickness">Material thickness</label>
               <input id="thickness" name="material_thickness" type="text" placeholder="Example: 0.5–1.2 mm" />
             </div>
             <div class="form-field">
-              <label for="power">Power requirement (if known)</label>
+              <label for="power" data-i18n="contact.form.label.power">Power requirement (if known)</label>
               <input id="power" name="power_requirement" type="text" placeholder="Example: 380V / 50Hz / 3P" />
             </div>
           </div>
 
           <div class="form-field">
-            <label for="location">Country / delivery port *</label>
+            <label for="location" data-i18n="contact.form.label.location">Country / delivery port *</label>
             <input id="location" name="country_delivery_port" type="text" placeholder="Example: UAE, Jebel Ali Port" required />
           </div>
 
           <div class="form-field">
-            <label for="message">Project details *</label>
+            <label for="message" data-i18n="contact.form.label.message">Project details *</label>
             <textarea id="message" name="project_details" rows="5" placeholder="Share your product mix, preferred machine models, and any special requirements." required></textarea>
           </div>
 
           <div class="contact-trust">
-            <p>We reply within 1 business day.</p>
-            <p>Your details are used only to prepare your quotation.</p>
+            <p data-i18n="contact.form.trust.reply">We reply within 1 business day.</p>
+            <p data-i18n="contact.form.trust.privacy">Your details are used only to prepare your quotation.</p>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-full-width">Request a Quote</button>
-          <p class="contact-form-alt">Prefer direct email? <a href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a></p>
+          <button type="submit" class="btn btn-primary btn-full-width" data-i18n="contact.form.submit">Request a Quote</button>
+          <p class="contact-form-alt" data-i18n-html="contact.form.alt">Prefer direct email? <a href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a></p>
           <p class="contact-form-status" id="contactFormStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -176,14 +176,14 @@
     <section class="section section-wayfinding">
       <div class="shell">
         <div class="wayfinding-panel">
-          <p class="eyebrow">Next best step</p>
-          <h2>Keep Your Planning Flow Moving</h2>
-          <p>Use the most relevant next page to compare categories, validate machine operation, or submit your production requirements.</p>
+          <p class="eyebrow" data-i18n="wayfinding.eyebrow">Next best step</p>
+          <h2 data-i18n="wayfinding.h2">Keep Your Planning Flow Moving</h2>
+          <p data-i18n="wayfinding.p">Use the most relevant next page to compare categories, validate machine operation, or submit your production requirements.</p>
           <div class="wayfinding-links">
-            <a href="machines.html">Browse Machines</a>
-            <a href="videos.html">Watch Videos</a>
-            <a href="hvac-duct-machinery/">Explore Categories</a>
-            <a href="request-quote.html">Request Quote</a>
+            <a href="machines.html" data-i18n="wayfinding.link.machines">Browse Machines</a>
+            <a href="videos.html" data-i18n="wayfinding.link.videos">Watch Videos</a>
+            <a href="hvac-duct-machinery/" data-i18n="wayfinding.link.categories">Explore Categories</a>
+            <a href="request-quote.html" data-i18n="wayfinding.link.quote">Request Quote</a>
           </div>
         </div>
       </div>

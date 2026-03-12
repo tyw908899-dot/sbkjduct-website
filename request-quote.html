@@ -50,13 +50,13 @@
   <main>
     <section class="section page-hero">
       <div class="shell">
-        <p class="eyebrow">B2B HVAC Duct Machinery Inquiry</p>
-        <h1 class="page-title">Request a Quote for HVAC Duct Machinery</h1>
-        <p class="page-lead">Send your project basics in one short form. We will prepare a tailored quotation based on your machine interest, country, and production needs.</p>
-        <div class="quote-path-actions" aria-label="Choose your path">
-          <a href="#quote-form" class="btn btn-primary">Request a Quote</a>
-          <a href="#quote-form" class="btn btn-ghost" data-quote-path="recommend">Not sure what you need? Get a recommendation</a>
-          <a href="videos.html" class="btn btn-outline">Watch machines running</a>
+        <p class="eyebrow" data-i18n="quote.hero.eyebrow">B2B HVAC Duct Machinery Inquiry</p>
+        <h1 class="page-title" data-i18n="quote.hero.h1">Request a Quote for HVAC Duct Machinery</h1>
+        <p class="page-lead" data-i18n="quote.hero.lead">Send your project basics in one short form. We will prepare a tailored quotation based on your machine interest, country, and production needs.</p>
+        <div class="quote-path-actions" aria-label="Choose your path" data-i18n-aria="quote.hero.actions.aria">
+          <a href="#quote-form" class="btn btn-primary" data-i18n="quote.hero.cta.quote">Request a Quote</a>
+          <a href="#quote-form" class="btn btn-ghost" data-quote-path="recommend" data-i18n="quote.hero.cta.recommend">Not sure what you need? Get a recommendation</a>
+          <a href="videos.html" class="btn btn-outline" data-i18n="quote.hero.cta.videos">Watch machines running</a>
         </div>
       </div>
     </section>
@@ -64,44 +64,44 @@
     <section class="section contact-section">
       <div class="shell contact-grid">
         <form id="quote-form" class="contact-form" novalidate>
-          <h2 class="contact-form-title">Quick Quote Form</h2>
-          <p class="contact-form-intro">Complete the fields below to open a pre-filled quote email to <strong>sales@sbkjduct.com</strong>.</p>
+          <h2 class="contact-form-title" data-i18n="quote.form.h2">Quick Quote Form</h2>
+          <p class="contact-form-intro" data-i18n="quote.form.intro">Complete the fields below to open a pre-filled quote email to <strong>sales@sbkjduct.com</strong>.</p>
 
           <div class="form-row">
             <div class="form-field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name" />
+              <label for="name" data-i18n="quote.form.label.name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name" data-i18n-placeholder="quote.form.placeholder.name" />
             </div>
             <div class="form-field">
-              <label for="company">Company</label>
-              <input id="company" name="company" type="text" autocomplete="organization" required placeholder="Company or factory name" />
+              <label for="company" data-i18n="quote.form.label.company">Company</label>
+              <input id="company" name="company" type="text" autocomplete="organization" required placeholder="Company or factory name" data-i18n-placeholder="quote.form.placeholder.company" />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-field">
-              <label for="country">Country</label>
-              <input id="country" name="country" type="text" autocomplete="country-name" list="country-list" required placeholder="Search or select country" />
+              <label for="country" data-i18n="quote.form.label.country">Country</label>
+              <input id="country" name="country" type="text" autocomplete="country-name" list="country-list" required placeholder="Search or select country" data-i18n-placeholder="quote.form.placeholder.country" />
               <datalist id="country-list">
                 <option value="Australia"></option><option value="Canada"></option><option value="China"></option><option value="Egypt"></option><option value="France"></option><option value="Germany"></option><option value="India"></option><option value="Indonesia"></option><option value="Malaysia"></option><option value="Mexico"></option><option value="Philippines"></option><option value="Saudi Arabia"></option><option value="South Africa"></option><option value="Thailand"></option><option value="Turkey"></option><option value="United Arab Emirates"></option><option value="United Kingdom"></option><option value="United States"></option><option value="Vietnam"></option>
               </datalist>
-              <small class="field-help">Start typing to quickly find your country.</small>
+              <small class="field-help" data-i18n="quote.form.help.country">Start typing to quickly find your country.</small>
             </div>
             <div class="form-field">
-              <label for="email">Email</label>
+              <label for="email" data-i18n="quote.form.label.email">Email</label>
               <input id="email" name="email" type="email" autocomplete="email" required placeholder="name@company.com" />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-field">
-              <label for="whatsapp">WhatsApp <span aria-hidden="true">(optional)</span></label>
-              <input id="whatsapp" name="whatsapp" type="text" autocomplete="tel" placeholder="Country code + number" />
+              <label for="whatsapp" data-i18n="quote.form.label.whatsapp">WhatsApp <span aria-hidden="true">(optional)</span></label>
+              <input id="whatsapp" name="whatsapp" type="text" autocomplete="tel" placeholder="Country code + number" data-i18n-placeholder="quote.form.placeholder.whatsapp" />
             </div>
             <div class="form-field">
-              <label for="machine_interest">Machine interest</label>
+              <label for="machine_interest" data-i18n="quote.form.label.machine">Machine interest</label>
               <select id="machine_interest" name="machine_interest" required>
-                <option value="" selected disabled>Select machine</option>
+                <option value="" selected disabled data-i18n="quote.form.select.machine">Select machine</option>
                 <option value="Spiral Tubeformer SBTF-1602">Spiral Tubeformer SBTF-1602</option>
                 <option value="Auto Duct Line SBAL-V">Auto Duct Line SBAL-V</option>
                 <option value="Electric Lockformer SBEM-1250">Electric Lockformer SBEM-1250</option>
@@ -115,71 +115,71 @@
             </div>
           </div>
 
-          <div class="smart-builder" aria-label="Smart inquiry builder">
-            <p class="smart-builder-title">Smart inquiry builder</p>
-            <p class="smart-builder-copy">Tick what you know to auto-build a clean project summary in your message.</p>
+          <div class="smart-builder" aria-label="Smart inquiry builder" data-i18n-aria="quote.builder.aria">
+            <p class="smart-builder-title" data-i18n="quote.builder.title">Smart inquiry builder</p>
+            <p class="smart-builder-copy" data-i18n="quote.builder.copy">Tick what you know to auto-build a clean project summary in your message.</p>
             <div class="builder-grid">
-              <label><input type="checkbox" id="duct_type_toggle" /> Duct type</label>
+              <label><input type="checkbox" id="duct_type_toggle" /> <span data-i18n="quote.builder.label.ducttype">Duct type</span></label>
               <select id="duct_type" disabled>
-                <option value="">Select</option>
-                <option value="Spiral">Spiral</option>
-                <option value="Rectangular">Rectangular</option>
-                <option value="Both">Both</option>
+                <option value="" data-i18n="quote.builder.select.placeholder">Select</option>
+                <option value="Spiral" data-i18n="quote.builder.ducttype.spiral">Spiral</option>
+                <option value="Rectangular" data-i18n="quote.builder.ducttype.rect">Rectangular</option>
+                <option value="Both" data-i18n="quote.builder.ducttype.both">Both</option>
               </select>
 
-              <label><input type="checkbox" id="target_output_toggle" /> Target output</label>
+              <label><input type="checkbox" id="target_output_toggle" /> <span data-i18n="quote.builder.label.output">Target output</span></label>
               <input id="target_output" type="text" disabled placeholder="e.g. 1,200 m²/day" />
 
-              <label><input type="checkbox" id="material_thickness_toggle" /> Material thickness</label>
+              <label><input type="checkbox" id="material_thickness_toggle" /> <span data-i18n="quote.builder.label.thickness">Material thickness</span></label>
               <input id="material_thickness" type="text" disabled placeholder="e.g. 0.5–1.2 mm GI" />
 
-              <label><input type="checkbox" id="voltage_toggle" /> Voltage</label>
+              <label><input type="checkbox" id="voltage_toggle" /> <span data-i18n="quote.builder.label.voltage">Voltage</span></label>
               <input id="voltage" type="text" disabled placeholder="e.g. 380V / 50Hz / 3P" />
 
-              <label><input type="checkbox" id="destination_toggle" /> Destination</label>
+              <label><input type="checkbox" id="destination_toggle" /> <span data-i18n="quote.builder.label.destination">Destination</span></label>
               <input id="destination" type="text" disabled placeholder="Country / port" />
             </div>
           </div>
 
           <div class="form-field">
-            <label for="message">Message <span aria-hidden="true">(optional)</span></label>
-            <textarea id="message" name="message" rows="6" placeholder="Share project goals, timelines, and any special requirements. The smart builder above can fill this for you."></textarea>
-            <small class="field-help">Optional but encouraged — better detail helps us recommend the right machine configuration.</small>
+            <label for="message" data-i18n="quote.form.label.message">Message <span aria-hidden="true">(optional)</span></label>
+            <textarea id="message" name="message" rows="6" placeholder="Share project goals, timelines, and any special requirements. The smart builder above can fill this for you." data-i18n-placeholder="quote.form.placeholder.message"></textarea>
+            <small class="field-help" data-i18n="quote.form.help.message">Optional but encouraged — better detail helps us recommend the right machine configuration.</small>
           </div>
 
-          <button type="submit" class="btn btn-primary">Send Quote Request</button>
-          <button type="button" id="copyInquiryBtn" class="btn btn-outline copy-inquiry-btn">Copy inquiry text</button>
+          <button type="submit" class="btn btn-primary" data-i18n="quote.form.submit">Send Quote Request</button>
+          <button type="button" id="copyInquiryBtn" class="btn btn-outline copy-inquiry-btn" data-i18n="quote.form.copy">Copy inquiry text</button>
           <p id="quoteFormStatus" class="contact-form-status" role="status" aria-live="polite"></p>
         </form>
 
         <div class="contact-primary">
-          <div class="contact-checklist" aria-label="What happens next">
-            <h3>What happens next</h3>
+          <div class="contact-checklist" aria-label="What happens next" data-i18n-aria="quote.next.aria">
+            <h3 data-i18n="quote.next.h3">What happens next</h3>
             <ol>
-              <li>We confirm requirements</li>
-              <li>We recommend configuration</li>
-              <li>We prepare quotation</li>
+              <li data-i18n="quote.next.li1">We confirm requirements</li>
+              <li data-i18n="quote.next.li2">We recommend configuration</li>
+              <li data-i18n="quote.next.li3">We prepare quotation</li>
             </ol>
           </div>
 
           <div class="contact-trust">
             <ul>
-              <li>We use your details only to prepare your quotation.</li>
-              <li>Share photos/specs if available — it helps us recommend the right configuration.</li>
-              <li>You can also email us directly: <a href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a></li>
+              <li data-i18n="quote.trust.li1">We use your details only to prepare your quotation.</li>
+              <li data-i18n="quote.trust.li2">Share photos/specs if available — it helps us recommend the right configuration.</li>
+              <li data-i18n-html="quote.trust.li3">You can also email us directly: <a href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a></li>
             </ul>
           </div>
 
           <div class="contact-callout">
-            <p class="contact-callout-title">Need direct contact?</p>
+            <p class="contact-callout-title" data-i18n="quote.callout.title">Need direct contact?</p>
             <a class="contact-email" href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a>
-            <p class="contact-callout-copy">If your mail app does not open, copy the address above and send your requirements directly.</p>
+            <p class="contact-callout-copy" data-i18n="quote.callout.copy">If your mail app does not open, copy the address above and send your requirements directly.</p>
           </div>
 
-          <div class="quote-path-actions quote-path-actions-bottom" aria-label="Choose your path">
-            <a href="#quote-form" class="btn btn-primary">Request a Quote</a>
-            <a href="#quote-form" class="btn btn-ghost" data-quote-path="recommend">Not sure what you need? Get a recommendation</a>
-            <a href="videos.html" class="btn btn-outline">Watch machines running</a>
+          <div class="quote-path-actions quote-path-actions-bottom" aria-label="Choose your path" data-i18n-aria="quote.hero.actions.aria">
+            <a href="#quote-form" class="btn btn-primary" data-i18n="quote.hero.cta.quote">Request a Quote</a>
+            <a href="#quote-form" class="btn btn-ghost" data-quote-path="recommend" data-i18n="quote.hero.cta.recommend">Not sure what you need? Get a recommendation</a>
+            <a href="videos.html" class="btn btn-outline" data-i18n="quote.hero.cta.videos">Watch machines running</a>
           </div>
         </div>
       </div>
@@ -187,12 +187,12 @@
 
     <section class="section machines-cta">
       <div class="shell text-center">
-        <h2>Ready to move your project forward?</h2>
-        <p>Compare machinery, review running videos, and contact our team when ready.</p>
+        <h2 data-i18n="quote.cta.h2">Ready to move your project forward?</h2>
+        <p data-i18n="quote.cta.p">Compare machinery, review running videos, and contact our team when ready.</p>
         <div class="machines-hero-actions machines-cta-actions">
           <a href="mailto:sales@sbkjduct.com" class="btn btn-primary">sales@sbkjduct.com</a>
-          <a href="machines.html" class="btn btn-ghost">View Machines</a>
-          <a href="videos.html" class="btn btn-outline">Watch Videos</a>
+          <a href="machines.html" class="btn btn-ghost" data-i18n="quote.cta.machines">View Machines</a>
+          <a href="videos.html" class="btn btn-outline" data-i18n="quote.cta.videos">Watch Videos</a>
         </div>
       </div>
     </section>
@@ -201,14 +201,14 @@
     <section class="section section-wayfinding">
       <div class="shell">
         <div class="wayfinding-panel">
-          <p class="eyebrow">Next best step</p>
-          <h2>Keep Your Planning Flow Moving</h2>
-          <p>Use the most relevant next page to compare categories, validate machine operation, or submit your production requirements.</p>
+          <p class="eyebrow" data-i18n="wayfinding.eyebrow">Next best step</p>
+          <h2 data-i18n="wayfinding.h2">Keep Your Planning Flow Moving</h2>
+          <p data-i18n="wayfinding.p">Use the most relevant next page to compare categories, validate machine operation, or submit your production requirements.</p>
           <div class="wayfinding-links">
-            <a href="machines.html">Browse Machines</a>
-            <a href="videos.html">Watch Videos</a>
-            <a href="hvac-duct-machinery/">Explore Categories</a>
-            <a href="request-quote.html">Request Quote</a>
+            <a href="machines.html" data-i18n="wayfinding.link.machines">Browse Machines</a>
+            <a href="videos.html" data-i18n="wayfinding.link.videos">Watch Videos</a>
+            <a href="hvac-duct-machinery/" data-i18n="wayfinding.link.categories">Explore Categories</a>
+            <a href="request-quote.html" data-i18n="wayfinding.link.quote">Request Quote</a>
           </div>
         </div>
       </div>
@@ -410,8 +410,8 @@
 
 
   <div class="mobile-sticky-cta" data-mobile-sticky-cta>
-    <a href="request-quote.html" class="btn btn-primary">Request a Quote</a>
-    <a href="mailto:sales@sbkjduct.com" class="btn btn-ghost">Email Sales</a>
+    <a href="request-quote.html" class="btn btn-primary" data-i18n="quote.hero.cta.quote">Request a Quote</a>
+    <a href="mailto:sales@sbkjduct.com" class="btn btn-ghost" data-i18n="quote.sticky.email">Email Sales</a>
   </div>
 
 </body>

@@ -1,0 +1,524 @@
+# i18n QA Report
+
+- HTML files scanned: 104
+- Translation keys defined in i18n.js: 207
+- Translation keys used in HTML: 493
+- Missing keys (FAIL): 398
+- Incomplete translations (WARN): 0
+- Major translated pages: 9
+- Pages with hardcoded text (FAIL): 5
+
+## Failures (must fix)
+
+- MISSING KEY  'contact.callout.copy'  — used in: /contact.html
+- MISSING KEY  'contact.callout.title'  — used in: /contact.html
+- MISSING KEY  'contact.checklist.aria'  — used in: /contact.html
+- MISSING KEY  'contact.checklist.h3'  — used in: /contact.html
+- MISSING KEY  'contact.checklist.li1'  — used in: /contact.html
+- MISSING KEY  'contact.checklist.li2'  — used in: /contact.html
+- MISSING KEY  'contact.checklist.li3'  — used in: /contact.html
+- MISSING KEY  'contact.checklist.li4'  — used in: /contact.html
+- MISSING KEY  'contact.checklist.li5'  — used in: /contact.html
+- MISSING KEY  'contact.cta.quote'  — used in: /contact.html
+- MISSING KEY  'contact.cta.videos'  — used in: /contact.html
+- MISSING KEY  'contact.details.company.label'  — used in: /contact.html
+- MISSING KEY  'contact.details.email.label'  — used in: /contact.html
+- MISSING KEY  'contact.details.factory.label'  — used in: /contact.html
+- MISSING KEY  'contact.details.office.label'  — used in: /contact.html
+- MISSING KEY  'contact.details.phone.label'  — used in: /contact.html
+- MISSING KEY  'contact.form.alt'  — used in: /contact.html
+- MISSING KEY  'contact.form.h3'  — used in: /contact.html
+- MISSING KEY  'contact.form.intro'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.capacity'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.company'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.ducttype'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.email'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.location'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.message'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.name'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.phone'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.power'  — used in: /contact.html
+- MISSING KEY  'contact.form.label.thickness'  — used in: /contact.html
+- MISSING KEY  'contact.form.select.placeholder'  — used in: /contact.html
+- MISSING KEY  'contact.form.submit'  — used in: /contact.html
+- MISSING KEY  'contact.form.trust.privacy'  — used in: /contact.html
+- MISSING KEY  'contact.form.trust.reply'  — used in: /contact.html
+- MISSING KEY  'contact.h2'  — used in: /contact.html
+- MISSING KEY  'contact.intro'  — used in: /contact.html
+- MISSING KEY  'contact.kicker'  — used in: /contact.html
+- MISSING KEY  'quote.builder.aria'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.copy'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.ducttype.both'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.ducttype.rect'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.ducttype.spiral'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.label.destination'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.label.ducttype'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.label.output'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.label.thickness'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.label.voltage'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.select.placeholder'  — used in: /request-quote.html
+- MISSING KEY  'quote.builder.title'  — used in: /request-quote.html
+- MISSING KEY  'quote.callout.copy'  — used in: /request-quote.html
+- MISSING KEY  'quote.callout.title'  — used in: /request-quote.html
+- MISSING KEY  'quote.cta.h2'  — used in: /request-quote.html
+- MISSING KEY  'quote.cta.machines'  — used in: /request-quote.html
+- MISSING KEY  'quote.cta.p'  — used in: /request-quote.html
+- MISSING KEY  'quote.cta.videos'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.copy'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.h2'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.help.country'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.help.message'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.intro'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.label.company'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.label.country'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.label.email'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.label.machine'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.label.message'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.label.name'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.label.whatsapp'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.placeholder.company'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.placeholder.country'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.placeholder.message'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.placeholder.name'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.placeholder.whatsapp'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.select.machine'  — used in: /request-quote.html
+- MISSING KEY  'quote.form.submit'  — used in: /request-quote.html
+- MISSING KEY  'quote.hero.actions.aria'  — used in: /request-quote.html
+- MISSING KEY  'quote.hero.cta.quote'  — used in: /request-quote.html
+- MISSING KEY  'quote.hero.cta.recommend'  — used in: /request-quote.html
+- MISSING KEY  'quote.hero.cta.videos'  — used in: /request-quote.html
+- MISSING KEY  'quote.hero.eyebrow'  — used in: /request-quote.html
+- MISSING KEY  'quote.hero.h1'  — used in: /request-quote.html
+- MISSING KEY  'quote.hero.lead'  — used in: /request-quote.html
+- MISSING KEY  'quote.next.aria'  — used in: /request-quote.html
+- MISSING KEY  'quote.next.h3'  — used in: /request-quote.html
+- MISSING KEY  'quote.next.li1'  — used in: /request-quote.html
+- MISSING KEY  'quote.next.li2'  — used in: /request-quote.html
+- MISSING KEY  'quote.next.li3'  — used in: /request-quote.html
+- MISSING KEY  'quote.sticky.email'  — used in: /request-quote.html
+- MISSING KEY  'quote.trust.li1'  — used in: /request-quote.html
+- MISSING KEY  'quote.trust.li2'  — used in: /request-quote.html
+- MISSING KEY  'quote.trust.li3'  — used in: /request-quote.html
+- MISSING KEY  'ryan.about.cite'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.about.h2'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.about.p'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.about.quote'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.card.coverage'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.card.cta'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.card.location'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.card.name'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.card.response'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.card.title'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.cred.countries'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.cred.region'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.cred.years'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.eyebrow'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.fact.import'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.fact.layout'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.fact.machine'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.fact.quotations'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.fact.support'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.a1'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.a2'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.a3'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.a4'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.a5'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.a6'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.eyebrow'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.h2'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.q1'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.q2'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.q3'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.q4'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.q5'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.faq.q6'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.handles.h3'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.hero.badge'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.hero.name'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.hero.role'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.inquiries.label'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.inquiries.li1'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.inquiries.li2'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.inquiries.li3'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.inquiries.li4'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.inquiries.li5'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard1.h3'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard1.label'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard1.p'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard1.read'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard2.h3'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard2.label'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard2.p'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard2.read'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard3.h3'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard3.label'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard3.p'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.kcard3.read'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.lead'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.prep.h3'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.prep.intro'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.prep.li1'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.prep.li2'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.prep.li3'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.prep.li4'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.prep.li5'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.prep.li6'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.research.eyebrow'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.research.h2'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.research.p'  — used in: /contact-ryan.html
+- MISSING KEY  'ryan.title'  — used in: /contact-ryan.html
+- MISSING KEY  'vid.breadcrumb.current'  — used in: /videos.html
+- MISSING KEY  'vid.breadcrumb.home'  — used in: /videos.html
+- MISSING KEY  'vid.card.company.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.company.p'  — used in: /videos.html
+- MISSING KEY  'vid.card.corner.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.corner.p'  — used in: /videos.html
+- MISSING KEY  'vid.card.drill.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.drill.p'  — used in: /videos.html
+- MISSING KEY  'vid.card.factory.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.factory.p'  — used in: /videos.html
+- MISSING KEY  'vid.card.flexduct.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.flexduct.p'  — used in: /videos.html
+- MISSING KEY  'vid.card.oval.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.plasma.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.plasma.p'  — used in: /videos.html
+- MISSING KEY  'vid.card.rollbend.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.rollbend.p'  — used in: /videos.html
+- MISSING KEY  'vid.card.sbaliii.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.sbaliii.link'  — used in: /videos.html
+- MISSING KEY  'vid.card.sbaliii.p'  — used in: /videos.html
+- MISSING KEY  'vid.card.sbalv.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.sbalv.link'  — used in: /videos.html
+- MISSING KEY  'vid.card.sbalv.p'  — used in: /videos.html
+- MISSING KEY  'vid.card.sbtf.h3'  — used in: /videos.html
+- MISSING KEY  'vid.card.sbtf.link'  — used in: /videos.html
+- MISSING KEY  'vid.card.sbtf.p'  — used in: /videos.html
+- MISSING KEY  'vid.cat1.desc'  — used in: /videos.html
+- MISSING KEY  'vid.cat1.h2'  — used in: /videos.html
+- MISSING KEY  'vid.cat1.kicker'  — used in: /videos.html
+- MISSING KEY  'vid.cat2.desc'  — used in: /videos.html
+- MISSING KEY  'vid.cat2.h2'  — used in: /videos.html
+- MISSING KEY  'vid.cat2.kicker'  — used in: /videos.html
+- MISSING KEY  'vid.cat3.desc'  — used in: /videos.html
+- MISSING KEY  'vid.cat3.h2'  — used in: /videos.html
+- MISSING KEY  'vid.cat3.kicker'  — used in: /videos.html
+- MISSING KEY  'vid.cta.btn.quote'  — used in: /videos.html
+- MISSING KEY  'vid.cta.eyebrow'  — used in: /videos.html
+- MISSING KEY  'vid.cta.h2'  — used in: /videos.html
+- MISSING KEY  'vid.cta.p'  — used in: /videos.html
+- MISSING KEY  'vid.faq.h2'  — used in: /videos.html
+- MISSING KEY  'vid.faq.kicker'  — used in: /videos.html
+- MISSING KEY  'vid.faq.q1.h3'  — used in: /videos.html
+- MISSING KEY  'vid.faq.q1.p'  — used in: /videos.html
+- MISSING KEY  'vid.faq.q2.h3'  — used in: /videos.html
+- MISSING KEY  'vid.faq.q2.p'  — used in: /videos.html
+- MISSING KEY  'vid.faq.q3.h3'  — used in: /videos.html
+- MISSING KEY  'vid.faq.q3.p'  — used in: /videos.html
+- MISSING KEY  'vid.faq.q4.h3'  — used in: /videos.html
+- MISSING KEY  'vid.faq.q4.p'  — used in: /videos.html
+- MISSING KEY  'vid.hero.eyebrow'  — used in: /videos.html
+- MISSING KEY  'vid.hero.h1'  — used in: /videos.html
+- MISSING KEY  'vid.hero.lead'  — used in: /videos.html
+- MISSING KEY  'vid.intro'  — used in: /videos.html
+- MISSING KEY  'vid.secondary.h2'  — used in: /videos.html
+- MISSING KEY  'vid.secondary.kicker'  — used in: /videos.html
+- MISSING KEY  'vid.wayfinding.eyebrow'  — used in: /videos.html
+- MISSING KEY  'vid.wayfinding.h2'  — used in: /videos.html
+- MISSING KEY  'vid.wayfinding.link.categories'  — used in: /videos.html
+- MISSING KEY  'vid.wayfinding.link.machines'  — used in: /videos.html
+- MISSING KEY  'vid.wayfinding.link.quote'  — used in: /videos.html
+- MISSING KEY  'vid.wayfinding.link.videos'  — used in: /videos.html
+- MISSING KEY  'vid.wayfinding.p'  — used in: /videos.html
+- MISSING KEY  'wayfinding.eyebrow'  — used in: /contact.html, /request-quote.html
+- MISSING KEY  'wayfinding.h2'  — used in: /contact.html, /request-quote.html
+- MISSING KEY  'wayfinding.link.categories'  — used in: /contact.html, /request-quote.html
+- MISSING KEY  'wayfinding.link.machines'  — used in: /contact.html, /request-quote.html
+- MISSING KEY  'wayfinding.link.quote'  — used in: /contact.html, /request-quote.html
+- MISSING KEY  'wayfinding.link.videos'  — used in: /contact.html, /request-quote.html
+- MISSING KEY  'wayfinding.p'  — used in: /contact.html, /request-quote.html
+- MISSING KEY  'why.aftersales.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.h2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.item1.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.item1.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.item2.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.item2.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.item3.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.item3.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.item4.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.item4.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.aftersales.lead'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.h2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.lead'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.stat1.label'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.stat1.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.stat2.label'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.stat2.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.stat3.label'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.stat3.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.stat4.label'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.auto.stat4.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.h2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.lead'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.note'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row1.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row1.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row1.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row1.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row10.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row10.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row10.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row10.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row11.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row11.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row11.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row11.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row2.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row2.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row2.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row2.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row3.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row3.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row3.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row3.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row4.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row4.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row4.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row4.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row5.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row5.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row5.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row5.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row6.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row6.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row6.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row6.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row7.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row7.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row7.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row7.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row8.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row8.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row8.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row8.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row9.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row9.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row9.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.row9.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.th.european'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.th.factor'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.th.lowcost'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.compare.th.sbkj'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.cta.btn.quote'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.cta.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.cta.h2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.cta.lead'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.cta.note.email'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.cta.note.quote'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.cta.or'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.h2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item1.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item1.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item2.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item2.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item3.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item3.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item4.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item4.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item5.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item5.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item6.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.item6.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.decision.lead'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.h2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item1.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item1.li1'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item1.li2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item1.li3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item1.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item2.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item2.li1'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item2.li2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item2.li3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item2.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item3.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item3.li1'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item3.li2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item3.li3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item3.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item4.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item4.li1'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item4.li2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item4.li3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.item4.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.eng.lead'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app1'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app10'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app4'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app5'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app6'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app7'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app8'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.app9'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.apps.label'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.h2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.lead'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.stat1.label'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.stat1.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.stat2.label'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.stat2.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.stat3.label'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.stat3.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.stat4.label'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.global.stat4.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.hero.btn.decision'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.hero.btn.quote'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.hero.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.hero.h1'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.hero.lead'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.h2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.p1'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.p2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.p3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.pillar1.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.pillar1.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.pillar2.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.pillar2.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.pillar3.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.pillar3.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.pillar4.h3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.mfg.pillar4.p'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.stats.certified'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.stats.countries'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.stats.founded'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.stats.machines'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.stats.patents'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.stats.years'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.wayfinding.eyebrow'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.wayfinding.h2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.wayfinding.lead'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.wayfinding.link1'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.wayfinding.link2'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.wayfinding.link3'  — used in: /why-choose-sbkj.html
+- MISSING KEY  'why.wayfinding.link4'  — used in: /why-choose-sbkj.html
+- HARDCODED    /about.html  <p>  "About SBKJ"
+- HARDCODED    /about.html  <h1>  "Manufacturer of HVAC Duct Machinery for Industrial Production"
+- HARDCODED    /about.html  <p>  "SBKJ Group is an HVAC duct machinery manufacturer based in the Yangtze River Delta near Shanghai, China. Since 1995, we "
+- HARDCODED    /about.html  <p>  "For industrial HVAC buyers, this means one coordinated team for machine selection, integration, and long-term support."
+- HARDCODED    /about.html  <h2>  "Company Overview"
+- HARDCODED    /about.html  <p>  "SBKJ has served HVAC duct producers for over three decades with equipment designed for stable output and practical works"
+- HARDCODED    /about.html  <p>  "Our export and engineering teams support international delivery, installation planning, and commissioning coordination f"
+- HARDCODED    /about.html  <p>  "Since 1995 · HVAC duct machinery specialization · ISO9001 & CE · global project delivery"
+- HARDCODED    /about.html  <h3>  "Company Overview Video"
+- HARDCODED    /about.html  <p>  "Machinery Categories"
+- HARDCODED    /about.html  ... and 30 more untranslated elements
+- HARDCODED    /factory.html  <p>  "Factory Capability"
+- HARDCODED    /factory.html  <h1>  "A Manufacturing Partner for HVAC Duct Equipment"
+- HARDCODED    /factory.html  <p>  "SBKJ has manufactured HVAC duct machinery since 1995. This page gives a direct overview of how our team builds, assemble"
+- HARDCODED    /factory.html  <p>  "Production Workflow"
+- HARDCODED    /factory.html  <h2>  "How Factory Work Is Organized"
+- HARDCODED    /factory.html  <p>  "Built from real SBKJ factory references, this flow shows how workshop fabrication, assembly, testing, and export prep co"
+- HARDCODED    /factory.html  <h3>  "Manufacturing Workshop"
+- HARDCODED    /factory.html  <p>  "Core machine structures and modules are produced under controlled workshop conditions for repeatable quality."
+- HARDCODED    /factory.html  <h3>  "Machine Assembly"
+- HARDCODED    /factory.html  <p>  "After fabrication, each machine is assembled against the confirmed configuration so controls, forming units, and structu"
+- HARDCODED    /factory.html  ... and 19 more untranslated elements
+- HARDCODED    /index.html  <p>  "Engineering Authority"
+- HARDCODED    /index.html  <h2>  "30+ Years Building Complete Duct Factories"
+- HARDCODED    /index.html  <p>  "Since 1995, SBKJ has focused exclusively on HVAC duct machinery and complete production line planning for factories acro"
+- HARDCODED    /index.html  <h3>  "Complete Production Range"
+- HARDCODED    /index.html  <p>  "Core machines for spiral and rectangular duct production from one manufacturing source, with coordinated specifications "
+- HARDCODED    /index.html  <li>  "9 machine categories, 50+ models in production"
+- HARDCODED    /index.html  <li>  "One technical team across the full line"
+- HARDCODED    /index.html  <li>  "Aligned specifications across connected machines"
+- HARDCODED    /index.html  <h3>  "Turn-Key Factory Design"
+- HARDCODED    /index.html  <p>  "Layout, material flow and utilities are planned before shipment, with commissioning and training support at startup."
+- HARDCODED    /index.html  ... and 82 more untranslated elements
+- HARDCODED    /machines.html  <p>  "SBKJ supplies complete duct machinery solutions, from entry-level workshop configurations to high-throughput production "
+- HARDCODED    /machines.html  <p>  "Start here"
+- HARDCODED    /machines.html  <h2>  "Explore by Category Before Comparing Models"
+- HARDCODED    /machines.html  <p>  "If you are still evaluating options, begin with these category guides to align workflow, output targets, and equipment s"
+- HARDCODED    /machines.html  <h2>  "Explore by Production Group"
+- HARDCODED    /machines.html  <p>  "Each group below is organized for faster machine selection and line planning."
+- HARDCODED    /machines.html  <h3>  "Auto Duct Lines"
+- HARDCODED    /machines.html  <p>  "Integrated systems for rectangular duct panel processing and assembly workflows."
+- HARDCODED    /machines.html  <h4>  "Auto Duct Line SBAL‑V"
+- HARDCODED    /machines.html  <p>  "U-shape automatic line designed for continuous fabrication shifts."
+- HARDCODED    /machines.html  ... and 33 more untranslated elements
+- HARDCODED    /quality.html  <p>  "Quality Control"
+- HARDCODED    /quality.html  <h1>  "Quality Control for Stable Machine Performance"
+- HARDCODED    /quality.html  <p>  "SBKJ has manufactured HVAC duct machinery since 1995. Our quality work is organized from procurement through shipment so"
+- HARDCODED    /quality.html  <p>  "Inspection Stages"
+- HARDCODED    /quality.html  <h2>  "How Quality Is Controlled Through the Build Cycle"
+- HARDCODED    /quality.html  <p>  "Each stage is presented in the current premium format using factual SBKJ process checkpoints from company-owned material"
+- HARDCODED    /quality.html  <h3>  "Incoming Material & Component Inspection"
+- HARDCODED    /quality.html  <p>  "Procurement and in-house production are managed under an ISO 9001 framework. Core materials, critical components, and ke"
+- HARDCODED    /quality.html  <h3>  "Production Process Inspection"
+- HARDCODED    /quality.html  <p>  "Machining, fabrication, and assembly follow defined process steps. In-house tooling and dedicated production lines help "
+- HARDCODED    /quality.html  ... and 30 more untranslated elements
+
+## Warnings (should fix)
+
+- PROD MISSING  /product/auto-corner-making.html  — uses data-i18n but 'auto-corner-making' has no entry in PROD dict
+- PROD MISSING  /product/auto-hoop-machine.html  — uses data-i18n but 'auto-hoop-machine' has no entry in PROD dict
+- PROD MISSING  /product/automatic-drive-cleat.html  — uses data-i18n but 'automatic-drive-cleat' has no entry in PROD dict
+- PROD MISSING  /product/canvas-flexible-duct.html  — uses data-i18n but 'canvas-flexible-duct' has no entry in PROD dict
+- PROD MISSING  /product/composite-board-cutting.html  — uses data-i18n but 'composite-board-cutting' has no entry in PROD dict
+- PROD MISSING  /product/duct-zipper-tdf.html  — uses data-i18n but 'duct-zipper-tdf' has no entry in PROD dict
+- PROD MISSING  /product/elbow-welder.html  — uses data-i18n but 'elbow-welder' has no entry in PROD dict
+- PROD MISSING  /product/f1275-pro.html  — uses data-i18n but 'f1275-pro' has no entry in PROD dict
+- PROD MISSING  /product/f350.html  — uses data-i18n but 'f350' has no entry in PROD dict
+- PROD MISSING  /product/fitting-shaper.html  — uses data-i18n but 'fitting-shaper' has no entry in PROD dict
+- PROD MISSING  /product/flexible-duct-connector.html  — uses data-i18n but 'flexible-duct-connector' has no entry in PROD dict
+- PROD MISSING  /product/flexible-duct-insulation.html  — uses data-i18n but 'flexible-duct-insulation' has no entry in PROD dict
+- PROD MISSING  /product/flexible-duct-shrinking.html  — uses data-i18n but 'flexible-duct-shrinking' has no entry in PROD dict
+- PROD MISSING  /product/grooving-beading.html  — uses data-i18n but 'grooving-beading' has no entry in PROD dict
+- PROD MISSING  /product/handheld-laser-welding.html  — uses data-i18n but 'handheld-laser-welding' has no entry in PROD dict
+- PROD MISSING  /product/hydraulic-folding.html  — uses data-i18n but 'hydraulic-folding' has no entry in PROD dict
+- PROD MISSING  /product/hydraulic-riveting.html  — uses data-i18n but 'hydraulic-riveting' has no entry in PROD dict
+- PROD MISSING  /product/laser-cutting.html  — uses data-i18n but 'laser-cutting' has no entry in PROD dict
+- PROD MISSING  /product/medium-frequency-welding.html  — uses data-i18n but 'medium-frequency-welding' has no entry in PROD dict
+- PROD MISSING  /product/metal-bending-tdf.html  — uses data-i18n but 'metal-bending-tdf' has no entry in PROD dict
+- PROD MISSING  /product/metal-corrugated-spiral-pipe.html  — uses data-i18n but 'metal-corrugated-spiral-pipe' has no entry in PROD dict
+- PROD MISSING  /product/motor-rotary-machine.html  — uses data-i18n but 'motor-rotary-machine' has no entry in PROD dict
+- PROD MISSING  /product/oval-roller.html  — uses data-i18n but 'oval-roller' has no entry in PROD dict
+- PROD MISSING  /product/ovalizer-sbht-3100.html  — uses data-i18n but 'ovalizer-sbht-3100' has no entry in PROD dict
+- PROD MISSING  /product/plasma-cutter.html  — uses data-i18n but 'plasma-cutter' has no entry in PROD dict
+- PROD MISSING  /product/pneumatic-corner-mounting.html  — uses data-i18n but 'pneumatic-corner-mounting' has no entry in PROD dict
+- PROD MISSING  /product/pneumatic-folding.html  — uses data-i18n but 'pneumatic-folding' has no entry in PROD dict
+- PROD MISSING  /product/rectangular-duct-line-ii.html  — uses data-i18n but 'rectangular-duct-line-ii' has no entry in PROD dict
+- PROD MISSING  /product/roll-bending.html  — uses data-i18n but 'roll-bending' has no entry in PROD dict
+- PROD MISSING  /product/run-out-table.html  — uses data-i18n but 'run-out-table' has no entry in PROD dict
+- PROD MISSING  /product/sb-fs1535l.html  — uses data-i18n but 'sb-fs1535l' has no entry in PROD dict
+- PROD MISSING  /product/sb-zf1500.html  — uses data-i18n but 'sb-zf1500' has no entry in PROD dict
+- PROD MISSING  /product/sbck-50a.html  — uses data-i18n but 'sbck-50a' has no entry in PROD dict
+- PROD MISSING  /product/sbjy-1500b.html  — uses data-i18n but 'sbjy-1500b' has no entry in PROD dict
+- PROD MISSING  /product/sbkt-12.html  — uses data-i18n but 'sbkt-12' has no entry in PROD dict
+- PROD MISSING  /product/sblf-500.html  — uses data-i18n but 'sblf-500' has no entry in PROD dict
+- PROD MISSING  /product/sblq-15.html  — uses data-i18n but 'sblq-15' has no entry in PROD dict
+- PROD MISSING  /product/sblr-600.html  — uses data-i18n but 'sblr-600' has no entry in PROD dict
+- PROD MISSING  /product/sblr-600a.html  — uses data-i18n but 'sblr-600a' has no entry in PROD dict
+- PROD MISSING  /product/sbsf-1525.html  — uses data-i18n but 'sbsf-1525' has no entry in PROD dict
+- PROD MISSING  /product/sbwkhfj-45.html  — uses data-i18n but 'sbwkhfj-45' has no entry in PROD dict
+- PROD MISSING  /product/sbwt-1000.html  — uses data-i18n but 'sbwt-1000' has no entry in PROD dict
+- PROD MISSING  /product/sbwt-1500.html  — uses data-i18n but 'sbwt-1500' has no entry in PROD dict
+- PROD MISSING  /product/sbyfl-50-1.html  — uses data-i18n but 'sbyfl-50-1' has no entry in PROD dict
+- PROD MISSING  /product/sbyfl-50.html  — uses data-i18n but 'sbyfl-50' has no entry in PROD dict
+- PROD MISSING  /product/sbyflhj-50.html  — uses data-i18n but 'sbyflhj-50' has no entry in PROD dict
+- PROD MISSING  /product/seam-welder.html  — uses data-i18n but 'seam-welder' has no entry in PROD dict
+- PROD MISSING  /product/sheet-metal-shearing.html  — uses data-i18n but 'sheet-metal-shearing' has no entry in PROD dict
+- PROD MISSING  /product/shrink-tube-machine.html  — uses data-i18n but 'shrink-tube-machine' has no entry in PROD dict
+- PROD MISSING  /product/slitting-machine.html  — uses data-i18n but 'slitting-machine' has no entry in PROD dict
+- PROD MISSING  /product/spiral-duct-flanging.html  — uses data-i18n but 'spiral-duct-flanging' has no entry in PROD dict
+- PROD MISSING  /product/spot-welder.html  — uses data-i18n but 'spot-welder' has no entry in PROD dict
+- PROD MISSING  /product/stainless-duct-forming.html  — uses data-i18n but 'stainless-duct-forming' has no entry in PROD dict
+- PROD MISSING  /product/stitch-welder.html  — uses data-i18n but 'stitch-welder' has no entry in PROD dict
+- PROD MISSING  /product/tdf-cleat-cutting.html  — uses data-i18n but 'tdf-cleat-cutting' has no entry in PROD dict
+- PROD MISSING  /product/transverse-duct-connector-flange.html  — uses data-i18n but 'transverse-duct-connector-flange' has no entry in PROD dict
