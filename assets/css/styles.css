@@ -5476,6 +5476,18 @@ textarea:focus-visible,
   transform: translateX(2px);
 }
 
+.ryan-contact-btn-outline {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.ryan-contact-btn-outline:hover {
+  background: var(--bg-card);
+  color: var(--text);
+  transform: translateX(2px);
+}
+
 .ryan-response-time {
   display: flex;
   align-items: center;
@@ -7299,10 +7311,9 @@ textarea:focus-visible,
 /* --- Hero machine visual (right column) --- */
 .hero-machine-visual {
   position: relative;
-  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid rgba(148, 163, 184, 0.1);
-  border-left: none;
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.5);
   flex-shrink: 0;
@@ -7330,7 +7341,7 @@ textarea:focus-visible,
   inset: 0;
   background:
     linear-gradient(180deg, rgba(10, 14, 23, 0.15) 0%, transparent 35%, rgba(10, 14, 23, 0.55) 100%),
-    linear-gradient(90deg, rgba(10, 14, 23, 0.65) 0%, rgba(10, 14, 23, 0.15) 45%, transparent 70%);
+    linear-gradient(90deg, rgba(10, 14, 23, 0.28) 0%, rgba(10, 14, 23, 0.08) 40%, transparent 65%);
   pointer-events: none;
 }
 
