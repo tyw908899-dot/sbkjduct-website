@@ -1,0 +1,26 @@
+# Cloudflare Pages/Workers — HTTP response headers
+# Required for HTML5 video range requests and PDF serving
+
+/assets/videos/*
+  Content-Type: video/mp4
+  Accept-Ranges: bytes
+  Cache-Control: public, max-age=31536000
+
+/assets/catalog/*.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=86400
+
+/assets/images/*
+  Cache-Control: public, max-age=31536000
+
+/assets/css/*
+  Cache-Control: public, max-age=31536000
+
+/assets/js/*
+  Cache-Control: public, max-age=86400
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
