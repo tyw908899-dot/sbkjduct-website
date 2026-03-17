@@ -3638,6 +3638,9 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+.diff-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
 .diff-item {
   padding: 2.5rem 2.1rem;
   border-radius: var(--radius-lg);
@@ -3697,8 +3700,12 @@ img {
   color: var(--accent);
   font-size: 0.8rem;
 }
+@media (max-width: 1024px) {
+  .diff-grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 768px) {
   .diff-grid { grid-template-columns: 1fr; }
+  .diff-grid-3 { grid-template-columns: 1fr; }
 }
 
 /* ROI Section */
