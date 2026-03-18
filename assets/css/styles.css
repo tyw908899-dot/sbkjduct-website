@@ -3512,6 +3512,7 @@ img {
 /* Versus comparison */
 .prod-versus-table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -3543,6 +3544,20 @@ img {
 .prod-versus-table td.col-feature { color: var(--text-muted); font-weight: 500; }
 .prod-versus-table td.col-sbkj { color: var(--accent); font-weight: 600; }
 .prod-versus-table td.col-standard { color: var(--text-dim); }
+.prod-versus-table th.col-standard { color: var(--text-dim); }
+
+/* Scroll wrapper for wide tables */
+.table-scroll { overflow-x: auto; }
+
+/* Disclaimer text beneath comparison tables */
+.table-note {
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  text-align: center;
+  margin-top: 1.25rem;
+  max-width: 44rem;
+  margin-inline: auto;
+}
 
 /* FAQ accordion */
 .prod-faq-list {
@@ -3849,6 +3864,7 @@ img {
   margin: 0 0 0.9rem;
   font-size: 0.95rem;
 }
+.eng-copy .btn { margin-top: 1.25rem; }
 .eng-pillars {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4113,6 +4129,27 @@ img {
   margin: 0;
   font-size: 1rem;
   letter-spacing: 0.01em;
+}
+
+.videos-page .video-card-info p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0.3rem 0 0;
+}
+
+.videos-page .video-card-info a {
+  font-size: 0.82rem;
+  color: var(--accent);
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.videos-page .videos-group-head p:not(.videos-group-kicker) {
+  flex-basis: 100%;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0.4rem 0 0;
+  line-height: 1.6;
 }
 
 .videos-page .videos-cta {
@@ -4936,6 +4973,7 @@ textarea:focus-visible,
 .page-breadcrumbs {
   border-bottom: 1px solid var(--border);
   background: var(--bg-elevated);
+  margin-bottom: 1.25rem;
 }
 
 .page-breadcrumbs ol {
