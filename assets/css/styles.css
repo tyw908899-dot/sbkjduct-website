@@ -5790,6 +5790,42 @@ textarea:focus-visible,
   gap: 0.3rem;
 }
 
+.knowledge-card-cover {
+  margin: -1.75rem -1.75rem 0.25rem;
+  height: 155px;
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  flex-shrink: 0;
+}
+
+.knowledge-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.knowledge-card:hover .knowledge-card-cover img {
+  transform: scale(1.05);
+}
+
+.guide-sidebar-cover {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  line-height: 0;
+}
+
+.guide-sidebar-cover img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 /* ========================================
    PRODUCT PAGE: ENHANCED TEMPLATE STYLES
    ======================================== */
