@@ -1859,6 +1859,17 @@ img {
   background: var(--bg-card);
   border: 1px solid var(--border);
   transition: border-color var(--transition), box-shadow var(--transition);
+  overflow: hidden;
+}
+
+.solution-block-img {
+  display: block;
+  width: calc(100% + 3rem);
+  margin: -1.6rem -1.5rem 1.25rem;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid var(--border);
 }
 
 .solution-block:hover,
@@ -4204,6 +4215,18 @@ img {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--bg-card);
+  position: relative;
+}
+
+.factory-stage-num {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
 }
 
 .factory-stage h3 {
@@ -5838,6 +5861,29 @@ textarea:focus-visible,
 
 .product-workflow {
   margin: 1.75rem 0;
+}
+
+.product-workflow-image {
+  margin: 1.25rem 0 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.product-workflow-image img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-workflow-image figcaption {
+  padding: 0.6rem 0.9rem;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
 }
 
 .product-workflow h3 {
