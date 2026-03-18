@@ -7924,3 +7924,172 @@ textarea:focus-visible,
     border-radius: var(--radius);
   }
 }
+
+/* ========================================
+   CASE STUDY CARD — IMAGE COVER
+   ======================================== */
+.case-preview-cover {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: var(--bg-elevated);
+  flex-shrink: 0;
+}
+
+.case-preview-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.case-preview-card:hover .case-preview-cover img {
+  transform: scale(1.04);
+}
+
+.case-preview-flag-badge {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 1.35rem;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.52);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================
+   FACTORY PAGE — HERO SPLIT VISUAL
+   ======================================== */
+.factory-hero {
+  padding-bottom: 0;
+}
+
+.factory-hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  padding: 3rem 0 3.5rem;
+}
+
+.factory-hero-copy {
+  max-width: none;
+}
+
+.factory-hero-visual {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  position: relative;
+}
+
+.factory-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.factory-hero-visual-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.9rem 1.1rem;
+  background: linear-gradient(transparent, rgba(0,0,0,0.58));
+  color: rgba(255,255,255,0.88);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 860px) {
+  .factory-hero-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .factory-hero-visual {
+    max-height: 280px;
+  }
+}
+
+/* ========================================
+   ABOUT PAGE — HERO SPLIT VISUAL
+   ======================================== */
+.about-hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  padding: 3rem 0 3.5rem;
+}
+
+.about-hero-copy {
+  max-width: none;
+}
+
+.about-hero-visual {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+
+.about-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .about-hero-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ========================================
+   WHY CHOOSE — HERO MACHINE VISUAL
+   ======================================== */
+.why-hero-visual {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.why-hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========================================
+   FACTORY MEDIA GRID — 6-COLUMN VARIANT
+   ======================================== */
+.factory-media-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 860px) {
+  .factory-media-grid-6 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
+  .factory-media-grid-6 {
+    grid-template-columns: 1fr;
+  }
+}
