@@ -1,0 +1,8 @@
+# Exclude version control and deployment config from Cloudflare asset upload
+# The .git directory contains a 33+ MiB pack file that exceeds Cloudflare's 25 MiB limit
+
+.git
+.wrangler
+wrangler.jsonc
+.gitignore
+.gitigonre
