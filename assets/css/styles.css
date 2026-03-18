@@ -5488,6 +5488,24 @@ textarea:focus-visible,
   transform: translateX(2px);
 }
 
+.ryan-contact-btn-linkedin {
+  background: rgba(0, 119, 181, 0.08);
+  border: 1px solid rgba(0, 119, 181, 0.2);
+  color: #0077b5;
+}
+.ryan-contact-btn-linkedin:hover {
+  background: rgba(0, 119, 181, 0.15);
+  transform: translateX(2px);
+}
+
+.ryan-response-time--flush {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.ryan-contact-card .btn { margin-top: 0.5rem; }
+
 .ryan-response-time {
   display: flex;
   align-items: center;
@@ -7205,6 +7223,103 @@ textarea:focus-visible,
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+/* --- Contact page utility classes --- */
+.page-hero--no-bottom { padding-bottom: 0; }
+
+.content-subhead {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 1.75rem 0 0.75rem;
+}
+
+.info-callout {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(91, 154, 196, 0.04);
+  border: 1px solid rgba(91, 154, 196, 0.12);
+  border-radius: var(--radius-lg);
+}
+.info-callout-head {
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.65rem;
+}
+.info-callout-intro {
+  font-size: 0.87rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0 0 0.75rem;
+}
+.info-callout-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.info-callout-list li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.info-callout-list li > span:first-child {
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.ryan-coverage-block {
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin: 0.5rem 0;
+}
+.ryan-coverage-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0 0 0.5rem;
+  line-height: 1.55;
+}
+
+.ryan-inquiry-section {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+.ryan-inquiry-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin: 0 0 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.ryan-inquiry-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.ryan-inquiry-list li {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+}
+.ryan-inquiry-list li:last-child { border-bottom: none; }
+
+.contact-ryan .product-faq-compact {
+  max-width: 70ch;
+  margin: 0 auto;
 }
 
 /* --- Wayfinding panel: premium version --- */
