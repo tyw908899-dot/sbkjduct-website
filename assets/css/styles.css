@@ -4915,8 +4915,8 @@ p {
 }
 
 .site-header {
-  background: rgba(5, 8, 16, 0.48);
-  border-bottom-color: rgba(148, 163, 184, 0.08);
+  background: rgba(5, 8, 16, 0.08);
+  border-bottom-color: transparent;
   box-shadow: none;
 }
 
@@ -6932,16 +6932,19 @@ textarea:focus-visible,
 
 .hero-industrial .hero-copy h1 {
   font-size: clamp(1.95rem, 2.7vw, 2.75rem);
-  letter-spacing: -0.04em;
-  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
   margin-bottom: 1.1rem;
 }
 
 .hero-industrial .hero-lead {
   margin-inline: 0;
   text-align: left;
-  font-size: 1.05rem;
-  max-width: 42rem;
+  font-size: 1rem;
+  max-width: 38rem;
+  font-weight: 300;
+  opacity: 0.78;
 }
 
 .hero-industrial .hero-proof {
@@ -7609,12 +7612,12 @@ textarea:focus-visible,
 /* --- Hero machine visual (right column) --- */
 .hero-machine-visual {
   position: relative;
-  border-radius: var(--radius-lg);
+  border-radius: 14px;
   overflow: hidden;
-  border: 1px solid rgba(148, 163, 184, 0.05);
+  border: none;
   box-shadow:
-    0 24px 56px rgba(0, 0, 0, 0.38),
-    0 4px 16px rgba(0, 0, 0, 0.22);
+    0 48px 96px rgba(0, 0, 0, 0.62),
+    0 12px 32px rgba(0, 0, 0, 0.32);
   flex-shrink: 0;
   align-self: stretch;
 }
@@ -7949,7 +7952,7 @@ textarea:focus-visible,
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 460px;
+  min-height: 520px;
   object-fit: cover;
   object-position: center center;
   opacity: 1;
@@ -8371,4 +8374,80 @@ textarea:focus-visible,
 
 .product-output-table .spec-table {
   width: 100%;
+}
+
+/* ========================================
+   HERO FIRST-SCREEN PREMIUM POLISH
+   Focused refinements: header, video frame,
+   headline, lead, CTA button, Ryan strip
+   ======================================== */
+
+/* --- Header: light text on transparent dark header --- */
+.site-header:not(.header-scrolled) .logo-title {
+  color: #dcd6cf;
+}
+
+.site-header:not(.header-scrolled) .logo-subtitle {
+  color: rgba(210, 200, 192, 0.45);
+}
+
+.site-header:not(.header-scrolled) .logo-icon {
+  color: #5b9ac4;
+}
+
+.site-header:not(.header-scrolled) .site-nav a:not(.nav-cta) {
+  color: rgba(210, 200, 192, 0.70);
+}
+
+.site-header:not(.header-scrolled) .site-nav a:not(.nav-cta):hover {
+  color: rgba(226, 220, 213, 0.95);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.site-header:not(.header-scrolled) .nav-cta {
+  border-color: rgba(91, 154, 196, 0.45);
+  color: rgba(91, 154, 196, 0.90) !important;
+  background: transparent;
+}
+
+.site-header:not(.header-scrolled) .nav-cta:hover {
+  background: rgba(91, 154, 196, 0.12);
+  color: #5b9ac4 !important;
+}
+
+/* --- Hero CTA button — premium white on dark background --- */
+.btn-hero-quote {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(255, 255, 255, 0.96);
+  color: #0d1829;
+  letter-spacing: 0.015em;
+}
+
+.btn-hero-quote:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0a1220;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.30);
+  transform: translateY(-2px);
+}
+
+/* --- Ryan trust strip: avatar + refined separator --- */
+.hero-ryan-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.88;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Suppress the decorative rule when avatar is present */
+.hero-ryan-strip:has(.hero-ryan-avatar)::before {
+  display: none;
+}
+
+/* Tighten the strip gap for compact avatar+text layout */
+.hero-ryan-strip:has(.hero-ryan-avatar) {
+  gap: 0.55rem;
 }
