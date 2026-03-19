@@ -142,6 +142,12 @@
       color: #fff;
     }
     .btn-primary:hover { background: #1e4f78; }
+    .btn-secondary {
+      background: rgba(44,106,160,0.18);
+      color: #5b9ac4;
+      border: 1px solid rgba(44,106,160,0.35);
+    }
+    .btn-secondary:hover { background: rgba(44,106,160,0.28); }
     .btn-outline {
       background: transparent;
       color: #e2dcd5;
@@ -209,17 +215,51 @@
 
   <!-- Actions -->
   <div class="actions">
-    <a class="btn btn-primary" href="assets/images/linkedin-cover.svg" download="sbkj-linkedin-cover.svg">
-      ↓ Download SVG
-    </a>
+    <button class="btn btn-primary" id="downloadPng">↓ Download PNG (1584 × 396)</button>
+    <a class="btn btn-secondary" href="assets/images/linkedin-cover.svg" download="sbkj-linkedin-cover.svg">↓ Download SVG</a>
     <a class="btn btn-outline" href="index.html">← Back to Website</a>
   </div>
 
-  <p class="specs">
-    <strong>Format:</strong> SVG (scalable, no quality loss) &nbsp;·&nbsp;
-    <strong>Size:</strong> 1584 × 396 px &nbsp;·&nbsp;
-    <strong>For LinkedIn:</strong> upload as-is or convert to PNG
+  <p class="specs" id="dlStatus">
+    <strong>PNG:</strong> recommended for LinkedIn upload &nbsp;·&nbsp;
+    <strong>SVG:</strong> scalable, no quality loss
   </p>
+
+  <canvas id="cvs" style="display:none"></canvas>
+
+  <script>
+    document.getElementById('downloadPng').addEventListener('click', function () {
+      const btn = this;
+      btn.textContent = 'Converting…';
+      btn.disabled = true;
+
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = function () {
+        const W = 1584, H = 396;
+        const cvs = document.getElementById('cvs');
+        cvs.width = W;
+        cvs.height = H;
+        const ctx = cvs.getContext('2d');
+        ctx.drawImage(img, 0, 0, W, H);
+        const link = document.createElement('a');
+        link.download = 'sbkj-linkedin-cover.png';
+        link.href = cvs.toDataURL('image/png');
+        link.click();
+        btn.textContent = '✓ Downloaded!';
+        setTimeout(() => { btn.textContent = '↓ Download PNG (1584 × 396)'; btn.disabled = false; }, 2500);
+      };
+      img.onerror = function () {
+        // Fallback: open SVG in new tab for manual save
+        window.open('assets/images/linkedin-cover.svg', '_blank');
+        btn.textContent = '↓ Download PNG (1584 × 396)';
+        btn.disabled = false;
+        document.getElementById('dlStatus').innerHTML = '<strong style="color:#c49a5e">Tip:</strong> Right-click the opened image → Save As PNG, or use the SVG download below.';
+      };
+      // Force re-fetch with cache-busting to avoid tainted canvas
+      img.src = 'assets/images/linkedin-cover.svg?' + Date.now();
+    });
+  </script>
 
   <!-- Upload instructions -->
   <div class="instructions">
