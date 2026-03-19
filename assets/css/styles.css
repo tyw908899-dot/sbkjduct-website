@@ -6914,6 +6914,7 @@ textarea:focus-visible,
 /* --- Hero: Industrial Left-Aligned Variant --- */
 .hero-industrial {
   text-align: left;
+  padding-block: 4.5rem 3.5rem;
 }
 
 .hero-industrial .hero-grid {
@@ -7953,15 +7954,15 @@ textarea:focus-visible,
   transition: opacity 0.4s ease;
 }
 
-/* Subtle dark overlay — bottom-heavy for readability, top lighter */
+/* Industrial overlay — heavier, darker for premium factory look */
 .hero-video-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     160deg,
-    rgba(8, 12, 22, 0.18) 0%,
-    rgba(8, 12, 22, 0.08) 40%,
-    rgba(8, 12, 22, 0.32) 100%
+    rgba(8, 12, 22, 0.30) 0%,
+    rgba(8, 12, 22, 0.14) 40%,
+    rgba(8, 12, 22, 0.48) 100%
   );
   pointer-events: none;
   border-radius: inherit;
