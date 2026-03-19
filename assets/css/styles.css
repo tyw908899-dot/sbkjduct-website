@@ -7921,9 +7921,21 @@ textarea:focus-visible,
 }
 
 /* ========================================
-   HERO VIDEO LOOP — replaces static img
+   HERO VIDEO LOOP — premium media frame
    inside .hero-machine-visual
    ======================================== */
+
+/* Wrapper frame for video + overlay */
+.hero-video-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  /* Elegant inset shadow instead of glow */
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.07), 0 24px 64px rgba(0,0,0,0.55);
+}
+
 .hero-video-loop {
   display: block;
   width: 100%;
@@ -7931,12 +7943,30 @@ textarea:focus-visible,
   min-height: 380px;
   object-fit: cover;
   object-position: center center;
-  opacity: 0.92;
+  opacity: 1;
   transition: opacity 0.4s ease;
 }
 
-.hero-machine-visual:hover .hero-video-loop {
-  opacity: 1;
+/* Subtle dark overlay — bottom-heavy for readability, top lighter */
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(8, 12, 22, 0.18) 0%,
+    rgba(8, 12, 22, 0.08) 40%,
+    rgba(8, 12, 22, 0.32) 100%
+  );
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Mobile: hide video, show poster via the img fallback */
+@media (max-width: 900px) {
+  .hero-video-frame {
+    display: none;
+  }
+  /* On mobile the hero-machine-visual is already hidden by hero-industrial breakpoint */
 }
 
 /* ========================================
@@ -8148,4 +8178,182 @@ textarea:focus-visible,
   .factory-media-grid-6 {
     grid-template-columns: 1fr;
   }
+}
+
+/* ========================================
+   FACTORY STAGE V2 — Icon + compact text
+   ======================================== */
+.factory-stage-grid-visual {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
+.factory-stage-v2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1.5rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.factory-stage-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgba(var(--accent-rgb, 91, 154, 196), 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-bottom: 0.25rem;
+}
+
+.factory-stage-v2 .factory-stage-num {
+  font-family: var(--font-head);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.factory-stage-v2 h3 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.factory-stage-v2 p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 1024px) {
+  .factory-stage-grid-visual {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .factory-stage-grid-visual {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   QUALITY STAGE V2 — Icon + visual cards
+   ======================================== */
+.quality-stage-grid-v2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.quality-stage-card-v2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  border-top: 3px solid var(--accent);
+}
+
+.quality-stage-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.quality-stage-card-v2 h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.quality-stage-card-v2 p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 1024px) {
+  .quality-stage-grid-v2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .quality-stage-grid-v2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   PRODUCT SECONDARY IMAGES — 2-col strip
+   ======================================== */
+.product-secondary-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.product-secondary-img {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.product-secondary-img img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-secondary-img figcaption {
+  padding: 0.65rem 0.9rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  line-height: 1.45;
+  background: var(--bg-card);
+}
+
+@media (max-width: 600px) {
+  .product-secondary-images {
+    grid-template-columns: 1fr;
+  }
+  .product-secondary-img img {
+    height: 180px;
+  }
+}
+
+/* ========================================
+   PRODUCT OUTPUT TABLE — scannable specs
+   ======================================== */
+.product-output-table {
+  margin: 1rem 0;
+}
+
+.product-output-table .spec-table {
+  width: 100%;
 }
