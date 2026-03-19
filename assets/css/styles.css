@@ -7927,6 +7927,107 @@ textarea:focus-visible,
 }
 
 /* ========================================
+   HERO — Cinematic full-bleed video hero
+   ======================================== */
+
+.hero-cinematic {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  padding-block: 0;
+  text-align: left;
+  overflow: hidden;
+  background: #070c1a; /* Deep fallback while video loads */
+}
+
+.hero-cinematic-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-cinematic-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.hero-cinematic-overlay {
+  position: absolute;
+  inset: 0;
+  /* Left: readable dark panel for text / Right: subtle wash */
+  background:
+    linear-gradient(to right, rgba(7, 12, 26, 0.92) 0%, rgba(7, 12, 26, 0.72) 42%, rgba(7, 12, 26, 0.28) 100%),
+    linear-gradient(to bottom, rgba(7, 12, 26, 0.28) 0%, transparent 28%, rgba(7, 12, 26, 0.55) 100%);
+}
+
+.hero-cinematic-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-block: clamp(6rem, 13vw, 10rem);
+}
+
+.hero-cinematic .hero-copy {
+  max-width: 44rem;
+}
+
+.hero-cinematic .hero-copy h1 {
+  font-family: var(--font-head);
+  font-size: clamp(2.4rem, 4.2vw, 3.75rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
+  margin: 0.6rem 0 1.25rem;
+  color: var(--text);
+}
+
+.hero-cinematic .hero-lead {
+  margin-inline: 0;
+  max-width: 36rem;
+  font-size: 1.06rem;
+  line-height: 1.72;
+  color: rgba(226, 220, 213, 0.82);
+}
+
+.hero-cinematic .hero-actions {
+  justify-content: flex-start;
+  margin-top: 2.25rem;
+}
+
+.hero-cinematic .hero-ryan-strip {
+  margin-top: 2rem;
+}
+
+/* Mobile: let video play silently (muted+playsinline+autoplay works),
+   poster shows if blocked */
+@media (max-width: 768px) {
+  .hero-cinematic {
+    min-height: 80vh;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+  }
+  .hero-cinematic-video {
+    object-position: 65% center;
+  }
+  .hero-cinematic-overlay {
+    background:
+      linear-gradient(to bottom, rgba(7, 12, 26, 0.38) 0%, rgba(7, 12, 26, 0.85) 60%, rgba(7, 12, 26, 0.97) 100%);
+  }
+  .hero-cinematic .hero-copy h1 {
+    font-size: clamp(2rem, 7.5vw, 2.7rem);
+  }
+  .hero-cinematic-content {
+    padding-block: 3rem 0;
+  }
+}
+
+/* ========================================
    HERO VIDEO LOOP — premium media frame
    inside .hero-machine-visual
    ======================================== */
