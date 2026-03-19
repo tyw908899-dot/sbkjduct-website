@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396" font-family="'Syne', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <!-- Warm cream background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f3ef;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ede9e1;stop-opacity:1" />
+    </linearGradient>
+    <!-- Subtle radial for depth -->
+    <radialGradient id="glow" cx="38%" cy="50%" r="45%">
+      <stop offset="0%" style="stop-color:#2c6aa0;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#2c6aa0;stop-opacity:0" />
+    </radialGradient>
+    <!-- Spiral helix path clip -->
+    <clipPath id="leftClip">
+      <rect x="0" y="0" width="560" height="396"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1584" height="396" fill="url(#bgGrad)" />
+  <rect width="1584" height="396" fill="url(#glow)" />
+
+  <!-- Left navy accent panel -->
+  <rect x="0" y="0" width="72" height="396" fill="#0d1829" />
+  <!-- Accent blue vertical stripe -->
+  <rect x="72" y="0" width="5" height="396" fill="#2c6aa0" />
+
+  <!-- Subtle horizontal rule lines (industrial feel) -->
+  <line x1="97" y1="128" x2="1540" y2="128" stroke="#1a1f2c" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="97" y1="268" x2="1540" y2="268" stroke="#1a1f2c" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Decorative spiral / helix mark (representing spiral tubeformer) -->
+  <!-- Outer ring -->
+  <circle cx="780" cy="198" r="148" fill="none" stroke="#2c6aa0" stroke-opacity="0.08" stroke-width="1.5"/>
+  <circle cx="780" cy="198" r="118" fill="none" stroke="#2c6aa0" stroke-opacity="0.06" stroke-width="1"/>
+  <circle cx="780" cy="198" r="88" fill="none" stroke="#2c6aa0" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Spiral helix icon (stylised, offset left) -->
+  <g transform="translate(194, 198)">
+    <!-- Outer spiral arc segments suggesting a spiral tubeformer -->
+    <path d="M 0,-64 A 64,64 0 1,1 -45.25,45.25" fill="none" stroke="#2c6aa0" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+    <path d="M -45.25,45.25 A 45,45 0 1,0 31.82,-31.82" fill="none" stroke="#2c6aa0" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <path d="M 31.82,-31.82 A 28,28 0 1,1 -19.8,19.8" fill="none" stroke="#2c6aa0" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <!-- Centre dot -->
+    <circle cx="0" cy="0" r="7" fill="#2c6aa0" opacity="0.9"/>
+    <!-- Arrow tip on outer arc -->
+    <polygon points="0,-64 -8,-50 8,-50" fill="#2c6aa0" opacity="0.9"/>
+  </g>
+
+  <!-- SBKJ GROUP wordmark -->
+  <text x="310" y="182" font-family="'Syne', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="88" letter-spacing="-2" fill="#1a1f2c">SBKJ</text>
+  <text x="310" y="267" font-family="'Syne', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="44" letter-spacing="18" fill="#2c6aa0">GROUP</text>
+
+  <!-- Divider dot -->
+  <circle cx="724" cy="198" r="5" fill="#8a6640" opacity="0.7"/>
+
+  <!-- Right side tagline -->
+  <text x="752" y="174" font-family="'Syne', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="38" letter-spacing="0.5" fill="#1a1f2c">HVAC Duct Machinery</text>
+  <text x="752" y="220" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-weight="300" font-size="22" letter-spacing="1" fill="#4a5568">Manufacturer &amp; Exporter · Est. 1995</text>
+
+  <!-- Stats bar -->
+  <g transform="translate(752, 268)">
+    <!-- 30 Years -->
+    <text x="0" y="0" font-family="'Syne', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="28" fill="#2c6aa0">30+</text>
+    <text x="0" y="22" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="14" fill="#4a5568" letter-spacing="1">YEARS</text>
+    <!-- separator -->
+    <line x1="72" y1="-8" x2="72" y2="28" stroke="#1a1f2c" stroke-opacity="0.15" stroke-width="1"/>
+    <!-- 5000+ Machines -->
+    <text x="90" y="0" font-family="'Syne', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="28" fill="#2c6aa0">5,000+</text>
+    <text x="90" y="22" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="14" fill="#4a5568" letter-spacing="1">MACHINES</text>
+    <!-- separator -->
+    <line x1="222" y1="-8" x2="222" y2="28" stroke="#1a1f2c" stroke-opacity="0.15" stroke-width="1"/>
+    <!-- 80 Countries -->
+    <text x="240" y="0" font-family="'Syne', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="28" fill="#2c6aa0">80+</text>
+    <text x="240" y="22" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="14" fill="#4a5568" letter-spacing="1">COUNTRIES</text>
+    <!-- separator -->
+    <line x1="318" y1="-8" x2="318" y2="28" stroke="#1a1f2c" stroke-opacity="0.15" stroke-width="1"/>
+    <!-- ISO CE -->
+    <text x="336" y="0" font-family="'Syne', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="28" fill="#2c6aa0">ISO</text>
+    <text x="336" y="22" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="14" fill="#4a5568" letter-spacing="1">9001 · CE</text>
+  </g>
+
+  <!-- Website URL bottom right -->
+  <text x="1540" y="372" font-family="'Outfit', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="16" fill="#4a5568" letter-spacing="1" text-anchor="end">sbkjduct.com</text>
+
+  <!-- Left panel text (rotated) -->
+  <text x="36" y="210" font-family="'Syne', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="11" fill="#5b9ac4" letter-spacing="4" text-anchor="middle" transform="rotate(-90, 36, 210)">SBKJ · SINCE 1995</text>
+</svg>

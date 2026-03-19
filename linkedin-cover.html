@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SBKJ LinkedIn Cover — Download</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #0d1829;
+      font-family: 'Outfit', system-ui, sans-serif;
+      color: #e2dcd5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      gap: 32px;
+    }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin: 0;
+      letter-spacing: -0.5px;
+      color: #e2dcd5;
+    }
+    .subtitle {
+      font-size: 0.95rem;
+      color: #7a8a9a;
+      margin: 6px 0 0;
+      text-align: center;
+    }
+
+    .cover-wrapper {
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .cover-wrapper img,
+    .cover-wrapper object {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* LinkedIn mockup frame */
+    .linkedin-mock {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+      max-width: 900px;
+      width: 100%;
+    }
+    .cover-area {
+      width: 100%;
+      position: relative;
+    }
+    .cover-area svg,
+    .cover-area img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .profile-strip {
+      background: #fff;
+      padding: 0 24px 16px;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      align-items: flex-end;
+      gap: 16px;
+      margin-top: -40px;
+    }
+    .avatar-mock {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #0d1829;
+      border: 4px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .avatar-mock img {
+      width: 70%;
+      height: auto;
+      margin-bottom: -4px;
+    }
+    .profile-info {
+      padding-bottom: 8px;
+    }
+    .profile-info .name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #1a1f2c;
+      margin: 0;
+    }
+    .profile-info .title {
+      font-size: 0.85rem;
+      color: #4a5568;
+      margin: 2px 0 0;
+    }
+
+    /* Download section */
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: none;
+    }
+    .btn-primary {
+      background: #2c6aa0;
+      color: #fff;
+    }
+    .btn-primary:hover { background: #1e4f78; }
+    .btn-outline {
+      background: transparent;
+      color: #e2dcd5;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-outline:hover { border-color: rgba(255,255,255,0.4); }
+
+    .specs {
+      font-size: 0.8rem;
+      color: #4a5568;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .specs strong { color: #7a8a9a; }
+
+    /* Instructions card */
+    .instructions {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 20px 28px;
+      max-width: 600px;
+      width: 100%;
+    }
+    .instructions h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #5b9ac4;
+      margin: 0 0 12px;
+    }
+    .instructions ol {
+      margin: 0;
+      padding-left: 20px;
+      color: #7a8a9a;
+      font-size: 0.88rem;
+      line-height: 2;
+    }
+    .instructions ol li strong { color: #e2dcd5; }
+  </style>
+</head>
+<body>
+
+  <div style="text-align:center">
+    <h1>SBKJ LinkedIn Cover Page</h1>
+    <p class="subtitle">1584 × 396 px — LinkedIn recommended banner size</p>
+  </div>
+
+  <!-- LinkedIn profile mockup -->
+  <div class="linkedin-mock">
+    <div class="cover-area">
+      <img src="assets/images/linkedin-cover.svg" alt="SBKJ LinkedIn Cover" />
+    </div>
+    <div class="profile-strip">
+      <div class="avatar-mock">
+        <img src="assets/images/logo.png" alt="SBKJ Logo" />
+      </div>
+      <div class="profile-info">
+        <p class="name">SBKJ Group</p>
+        <p class="title">HVAC Duct Machinery Manufacturer · Jiangyin, China</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Actions -->
+  <div class="actions">
+    <a class="btn btn-primary" href="assets/images/linkedin-cover.svg" download="sbkj-linkedin-cover.svg">
+      ↓ Download SVG
+    </a>
+    <a class="btn btn-outline" href="index.html">← Back to Website</a>
+  </div>
+
+  <p class="specs">
+    <strong>Format:</strong> SVG (scalable, no quality loss) &nbsp;·&nbsp;
+    <strong>Size:</strong> 1584 × 396 px &nbsp;·&nbsp;
+    <strong>For LinkedIn:</strong> upload as-is or convert to PNG
+  </p>
+
+  <!-- Upload instructions -->
+  <div class="instructions">
+    <h2>How to Upload to LinkedIn</h2>
+    <ol>
+      <li>Go to your <strong>LinkedIn Company Page</strong></li>
+      <li>Click the <strong>pencil / Edit</strong> icon on the cover area</li>
+      <li>Select <strong>"Change cover photo"</strong></li>
+      <li>Upload the downloaded <strong>SVG or PNG</strong> file</li>
+      <li>Drag to reposition if needed, then <strong>Save</strong></li>
+    </ol>
+  </div>
+
+</body>
+</html>
