@@ -8551,7 +8551,21 @@ textarea:focus-visible,
    Premium cert grid with lightbox support
    ============================================================ */
 
-/* Homepage: compact trust evidence bar */
+/* Homepage: combined trust + buyer band (cert row + who-strip row, shared border) */
+.trust-buyer-band {
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding-block: 1.1rem;
+}
+
+.trust-buyer-divider {
+  height: 1px;
+  background: var(--border);
+  margin-block: 0.85rem;
+}
+
+/* Homepage: compact trust evidence bar (kept for standalone use elsewhere) */
 .cert-trust-bar {
   background: var(--bg-elevated);
   border-top: 1px solid var(--border);
