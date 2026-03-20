@@ -5426,6 +5426,15 @@ textarea:focus-visible,
   opacity: 1;
 }
 
+.selector-intent {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.2rem;
+}
+
 /* ========================================
    WHY OVER CHEAP — Differentiation section
    ======================================== */
