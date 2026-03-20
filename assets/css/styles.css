@@ -8451,3 +8451,209 @@ textarea:focus-visible,
 .hero-ryan-strip:has(.hero-ryan-avatar) {
   gap: 0.55rem;
 }
+
+/* ========================================
+   HOMEPAGE HEADER — Transparent over dark cinema hero
+   Transitions to dark semi-transparent on scroll.
+   ======================================== */
+[data-page-id="home"] .site-header {
+  background: transparent;
+  border-bottom-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+}
+
+[data-page-id="home"] .site-header .logo-title {
+  color: rgba(232, 226, 218, 0.95);
+}
+
+[data-page-id="home"] .site-header .logo-subtitle {
+  color: rgba(232, 226, 218, 0.48);
+}
+
+[data-page-id="home"] .site-header .logo-icon {
+  color: #5b9ac4;
+}
+
+[data-page-id="home"] .site-header .site-nav {
+  color: rgba(232, 226, 218, 0.70);
+}
+
+[data-page-id="home"] .site-header .site-nav a:hover {
+  color: rgba(232, 226, 218, 0.95);
+}
+
+[data-page-id="home"] .site-header .nav-current {
+  color: rgba(232, 226, 218, 0.95) !important;
+}
+
+[data-page-id="home"] .site-header .nav-cta {
+  border-color: rgba(91, 154, 196, 0.52);
+  color: rgba(232, 226, 218, 0.88) !important;
+}
+
+[data-page-id="home"] .site-header .nav-cta:hover {
+  background: rgba(91, 154, 196, 0.80);
+  border-color: rgba(91, 154, 196, 0.80);
+  color: #fff !important;
+}
+
+[data-page-id="home"] .site-header.header-scrolled {
+  background: rgba(10, 14, 23, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: none;
+}
+
+/* ========================================
+   HERO CINEMA — Full-bleed atmospheric video backdrop
+   Video fills the entire hero; copy is overlaid left-bottom.
+   ======================================== */
+.hero-cinema {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: flex-end;
+  padding-block: 0;
+  text-align: left;
+  background: #0d1829;
+  overflow: hidden;
+}
+
+/* Full-bleed video container */
+.hero-cinema-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-cinema-bg video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Dual-axis gradient: text protection left + bottom; video breathes right + top */
+.hero-cinema-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(8, 12, 22, 0.90) 0%, rgba(8, 12, 22, 0.55) 42%, rgba(8, 12, 22, 0.18) 100%),
+    linear-gradient(to top, rgba(8, 12, 22, 0.82) 0%, rgba(8, 12, 22, 0.30) 38%, rgba(8, 12, 22, 0.04) 72%);
+}
+
+/* Shell + content, anchored to bottom */
+.hero-cinema-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-block: 6rem 4.5rem;
+}
+
+.hero-cinema .hero-copy {
+  max-width: 36rem;
+}
+
+/* Eyebrow: accent-tinted, restrained */
+.hero-cinema .eyebrow {
+  color: rgba(91, 154, 196, 0.80);
+}
+
+/* Headline: lighter weight = more elegant; larger for impact */
+.hero-cinema .hero-copy h1 {
+  font-family: var(--font-head);
+  font-size: clamp(2.6rem, 4.2vw, 3.8rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+  color: #ece6de;
+}
+
+/* Lead: short, airy, muted */
+.hero-cinema .hero-lead {
+  margin-inline: 0;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: rgba(220, 213, 204, 0.65);
+  max-width: 30rem;
+  opacity: 1;
+}
+
+/* Actions: left-aligned */
+.hero-cinema .hero-actions {
+  justify-content: flex-start;
+  margin-top: 2.25rem;
+}
+
+/* Ghost button: slightly more visible border against video */
+.hero-cinema .btn-ghost {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+/* Ryan strip: deeply subordinate — just a whisper of trust */
+.hero-cinema .hero-ryan-strip {
+  margin-top: 2.25rem;
+  font-size: 0.73rem;
+  color: rgba(220, 213, 204, 0.35);
+  gap: 0.5rem;
+}
+
+.hero-cinema .hero-ryan-avatar {
+  width: 20px;
+  height: 20px;
+  opacity: 0.50;
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+.hero-cinema .hero-ryan-strip a {
+  color: rgba(220, 213, 204, 0.40);
+  font-weight: 400;
+}
+
+.hero-cinema .hero-ryan-strip a:hover {
+  color: rgba(220, 213, 204, 0.72);
+  text-decoration: none;
+}
+
+/* Suppress separator rule — avatar provides visual anchor */
+.hero-cinema .hero-ryan-strip::before {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero-cinema {
+    min-height: 88vh;
+  }
+
+  .hero-cinema-inner {
+    padding-block: 5rem 3.5rem;
+  }
+
+  .hero-cinema .hero-copy h1 {
+    font-size: clamp(2.1rem, 7vw, 2.75rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-cinema {
+    min-height: 85vh;
+  }
+
+  .hero-cinema-inner {
+    padding-block: 4.5rem 2.75rem;
+  }
+
+  .hero-cinema .hero-copy h1 {
+    font-size: clamp(1.9rem, 8.5vw, 2.4rem);
+    letter-spacing: -0.035em;
+  }
+}
