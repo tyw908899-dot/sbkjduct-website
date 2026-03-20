@@ -8458,3 +8458,162 @@ textarea:focus-visible,
 .hero-ryan-strip:has(.hero-ryan-avatar) {
   gap: 0.55rem;
 }
+
+/* ========================================
+   HERO ART DIRECTION — Premium First Screen
+   Brand-first, decisive, no visual clutter.
+   ======================================== */
+
+/* --- Header: fully clear over dark hero — no fog, no blur --- */
+.site-header:not(.header-scrolled) {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom-color: transparent;
+}
+
+/* Crisper, more readable nav on dark */
+.site-header:not(.header-scrolled) .site-nav a:not(.nav-cta) {
+  color: rgba(224, 218, 210, 0.90);
+}
+
+.site-header:not(.header-scrolled) .site-nav a:not(.nav-cta):hover {
+  color: rgba(242, 238, 232, 1);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.site-header:not(.header-scrolled) .nav-cta {
+  border-color: rgba(91, 154, 196, 0.55);
+  color: rgba(91, 154, 196, 1) !important;
+}
+
+/* --- Hero section: taller, more commanding --- */
+.hero-industrial {
+  min-height: min(94vh, 860px);
+  padding-block: 5.5rem 4.5rem;
+}
+
+/* --- Hero headline: larger, more presence --- */
+.hero-industrial .hero-copy h1 {
+  font-size: clamp(2.2rem, 3.1vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.06;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Hero lead: one clean line, understated --- */
+.hero-industrial .hero-lead {
+  font-size: 1.02rem;
+  opacity: 0.78;
+  line-height: 1.55;
+  max-width: 44ch;
+}
+
+/* --- Hero actions: primary dominates, secondary recedes --- */
+.hero-industrial .hero-actions {
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* --- Secondary hero CTA: text-link style, no button chrome --- */
+.hero-link-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgba(210, 200, 192, 0.60);
+  font-size: 0.87rem;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color var(--transition);
+  padding: 0;
+  border: none;
+  background: none;
+  line-height: 1;
+}
+
+.hero-link-secondary:hover {
+  color: rgba(226, 220, 213, 0.92);
+}
+
+.hero-link-secondary::after {
+  content: "→";
+  font-size: 0.9em;
+  transition: transform var(--transition);
+  display: inline-block;
+}
+
+.hero-link-secondary:hover::after {
+  transform: translateX(3px);
+}
+
+/* --- Ryan strip: reduced to a quiet footnote --- */
+.hero-ryan-strip {
+  margin-top: 2.2rem;
+  font-size: 0.76rem;
+  opacity: 0.52;
+  letter-spacing: 0.01em;
+}
+
+.hero-ryan-strip a {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* --- Hero machine visual: no card framing — pure media panel --- */
+.hero-machine-visual {
+  border-radius: 0;
+}
+
+/* Left-edge fade: video merges into dark background */
+.hero-machine-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 200px;
+  background: linear-gradient(to right, #0d1829 0%, transparent 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Remove card frame from video container */
+.hero-video-frame {
+  border-radius: 0;
+}
+
+/* Deeper, more cinematic overlay — dark edges, clear centre */
+.hero-video-overlay {
+  background: linear-gradient(
+    160deg,
+    rgba(8, 12, 22, 0.40) 0%,
+    rgba(8, 12, 22, 0.00) 40%,
+    rgba(8, 12, 22, 0.60) 100%
+  );
+}
+
+/* Machine badge: quieter, supports rather than competes */
+.hero-machine-badge {
+  opacity: 0.65;
+}
+
+/* Responsive headline scaling */
+@media (max-width: 960px) {
+  .hero-industrial .hero-copy h1 {
+    font-size: clamp(1.9rem, 4.8vw, 2.6rem);
+  }
+  .hero-industrial {
+    padding-block: 4.5rem 3.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-industrial .hero-copy h1 {
+    font-size: clamp(1.75rem, 6.5vw, 2.1rem);
+  }
+  .hero-industrial .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
