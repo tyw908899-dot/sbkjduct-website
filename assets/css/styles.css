@@ -9062,3 +9062,255 @@ textarea:focus-visible,
     gap: 1rem;
   }
 }
+
+/* ========================================
+   P1 — HERO FULLSCREEN VIDEO (redesign)
+   Clean, premium, industrial. Video fills
+   the entire first screen. Copy sits over
+   a restrained dark gradient.
+   ======================================== */
+
+.hero-fullscreen {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding-block: 0;
+}
+
+.hero-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+}
+
+/* Clean gradient: readable top (header), transparent mid, soft dark base */
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 11, 22, 0.52) 0%,
+    rgba(6, 11, 22, 0.08) 32%,
+    rgba(6, 11, 22, 0.08) 55%,
+    rgba(6, 11, 22, 0.72) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-fullscreen .hero-content {
+  position: relative;
+  z-index: 2;
+  padding-block: 6.5rem 3.5rem;
+  max-width: 580px;
+}
+
+.hero-fullscreen .eyebrow {
+  color: rgba(210, 205, 198, 0.68);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-fullscreen h1 {
+  font-family: var(--font-head);
+  font-size: clamp(2.35rem, 4.2vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero-fullscreen .hero-lead {
+  font-size: 0.97rem;
+  line-height: 1.65;
+  color: rgba(210, 205, 198, 0.8);
+  margin-bottom: 2rem;
+  margin-inline: 0;
+  max-width: 440px;
+  text-align: left;
+}
+
+.hero-fullscreen .hero-actions {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+/* Ryan line — smaller, dimmer, no avatar */
+.hero-fullscreen .hero-ryan-strip {
+  margin-top: 1.25rem;
+  font-size: 0.72rem;
+  color: rgba(210, 205, 198, 0.5);
+  letter-spacing: 0.02em;
+}
+
+.hero-fullscreen .hero-ryan-strip a {
+  color: rgba(210, 205, 198, 0.6);
+}
+
+.hero-fullscreen .hero-ryan-strip a:hover {
+  color: rgba(210, 205, 198, 0.85);
+}
+
+.hero-fullscreen .hero-ryan-strip .ryan-online-dot {
+  background: rgba(37, 211, 102, 0.65);
+}
+
+/* Responsive: ensure copy is readable on mobile */
+@media (max-width: 640px) {
+  .hero-fullscreen {
+    align-items: flex-end;
+    min-height: 100svh;
+  }
+
+  .hero-fullscreen .hero-content {
+    padding-block: 5.5rem 2.75rem;
+    max-width: 100%;
+  }
+
+  .hero-fullscreen h1 {
+    font-size: clamp(2rem, 7vw, 2.8rem);
+  }
+
+  .hero-fullscreen .hero-lead {
+    max-width: 100%;
+  }
+}
+
+/* ========================================
+   P4 — FLOATING BUTTONS SCROLL REVEAL
+   Hidden on load, revealed after scroll.
+   ======================================== */
+
+.fab-whatsapp {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px);
+  /* transition already set above; extend to include opacity */
+  transition: opacity 0.35s ease, transform 0.35s ease,
+              box-shadow var(--transition);
+}
+
+.fab-whatsapp.fab-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Chatbot FAB scroll-reveal (targets .sb-chat-fab) */
+.sb-chat-fab {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.sb-chat-fab.fab-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* When chat is open, always show (override hidden state) */
+.sb-chat-open .sb-chat-fab {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* ========================================
+   P2 — CERTIFICATE IMAGE THUMBNAILS
+   Cert cards with thumbnail images + modal
+   ======================================== */
+
+/* Thumbnail inside cert card */
+.cert-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.5rem;
+}
+
+/* Fallback badge shown when image fails or is absent */
+.cert-thumb-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--accent);
+  opacity: 0.5;
+}
+
+/* Quality page: smaller cert thumbnails in strip */
+.cert-strip-thumb {
+  width: 52px;
+  height: 40px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cert-strip-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+/* Modal image display */
+.cert-modal-img {
+  width: 100%;
+  max-width: 480px;
+  max-height: 340px;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.cert-modal-img-wrap {
+  text-align: center;
+  margin: 0.75rem 0 1.25rem;
+}
+
+/* Location card address detail */
+.location-card-address {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.6rem;
+  background: var(--surface);
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
