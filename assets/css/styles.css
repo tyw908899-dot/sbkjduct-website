@@ -4042,6 +4042,37 @@ img {
   .mfg-grid { grid-template-columns: 1fr; }
 }
 
+/* Combined contact+CTA closing section */
+.cta-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.cta-contact-ryan {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.cta-contact-bio {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+.cta-contact-actions h2 {
+  font-family: var(--font-head);
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 860px) {
+  .cta-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
 /* Dual-path CTA */
 .cta-split {
   display: flex;
