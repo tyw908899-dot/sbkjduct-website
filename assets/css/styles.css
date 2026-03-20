@@ -5404,6 +5404,28 @@ textarea:focus-visible,
   gap: 0.35rem;
 }
 
+.machine-selector-stat {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(91, 154, 196, 0.08);
+  border: 1px solid rgba(91, 154, 196, 0.18);
+  border-radius: 4px;
+  padding: 0.2em 0.55em;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.1rem;
+}
+
+.machine-selector-card--featured {
+  border-color: rgba(91, 154, 196, 0.3);
+}
+
+.machine-selector-card--featured::before {
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(91, 154, 196, 0.1), transparent);
+  opacity: 1;
+}
+
 /* ========================================
    WHY OVER CHEAP — Differentiation section
    ======================================== */
