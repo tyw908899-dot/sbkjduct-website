@@ -263,6 +263,61 @@ img {
   box-shadow: 0 1px 16px rgba(0, 0, 0, 0.07);
 }
 
+/* ----------------------------------------
+   Transparent header — homepage only
+   Header floats over dark hero; becomes
+   opaque once the user scrolls past 60px.
+   ---------------------------------------- */
+.site-header--hero-dark {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.site-header--hero-dark:not(.header-scrolled) {
+  background: transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.site-header--hero-dark:not(.header-scrolled) .logo-icon,
+.site-header--hero-dark:not(.header-scrolled) .logo-title {
+  color: #e2dcd5;
+}
+
+.site-header--hero-dark:not(.header-scrolled) .logo-subtitle {
+  color: rgba(226, 220, 213, 0.45);
+}
+
+.site-header--hero-dark:not(.header-scrolled) .site-nav {
+  color: rgba(226, 220, 213, 0.75);
+}
+
+.site-header--hero-dark:not(.header-scrolled) .site-nav a {
+  color: rgba(226, 220, 213, 0.75);
+}
+
+.site-header--hero-dark:not(.header-scrolled) .site-nav a:hover {
+  color: #e2dcd5;
+}
+
+.site-header--hero-dark:not(.header-scrolled) .nav-cta {
+  border-color: rgba(226, 220, 213, 0.30);
+  color: rgba(226, 220, 213, 0.85) !important;
+}
+
+.site-header--hero-dark:not(.header-scrolled) .nav-cta:hover {
+  background: rgba(226, 220, 213, 0.10);
+  border-color: rgba(226, 220, 213, 0.45);
+  color: #e2dcd5 !important;
+}
+
+.site-header--hero-dark:not(.header-scrolled) .nav-toggle span {
+  background: #e2dcd5;
+}
+
 .site-header-inner {
   display: flex;
   align-items: center;
@@ -6914,7 +6969,7 @@ textarea:focus-visible,
 /* --- Hero: Industrial Left-Aligned Variant --- */
 .hero-industrial {
   text-align: left;
-  padding-block: 4.5rem 3.5rem;
+  padding-block: 8.5rem 3.5rem; /* top accounts for fixed transparent header (~4rem) */
   min-height: min(86vh, 740px);
   display: flex;
   flex-direction: column;
@@ -7616,12 +7671,12 @@ textarea:focus-visible,
 /* --- Hero machine visual (right column) --- */
 .hero-machine-visual {
   position: relative;
-  border-radius: 14px;
+  border-radius: 6px;
   overflow: hidden;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow:
-    0 48px 96px rgba(0, 0, 0, 0.62),
-    0 12px 32px rgba(0, 0, 0, 0.32);
+    0 24px 56px rgba(0, 0, 0, 0.40),
+    0 6px 18px rgba(0, 0, 0, 0.20);
   flex-shrink: 0;
   align-self: stretch;
 }
@@ -7646,8 +7701,8 @@ textarea:focus-visible,
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(10, 14, 23, 0.15) 0%, transparent 35%, rgba(10, 14, 23, 0.55) 100%),
-    linear-gradient(90deg, rgba(10, 14, 23, 0.28) 0%, rgba(10, 14, 23, 0.08) 40%, transparent 65%);
+    linear-gradient(180deg, transparent 50%, rgba(10, 14, 23, 0.35) 100%),
+    linear-gradient(90deg, rgba(10, 14, 23, 0.12) 0%, transparent 40%);
   pointer-events: none;
 }
 
@@ -7691,6 +7746,7 @@ textarea:focus-visible,
   }
   .hero-industrial {
     min-height: unset;
+    padding-block-start: 6rem; /* smaller top offset on mobile — header still fixed */
   }
 }
 
@@ -7950,7 +8006,7 @@ textarea:focus-visible,
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: var(--radius-lg);
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: none;
 }
@@ -7966,15 +8022,15 @@ textarea:focus-visible,
   transition: opacity 0.4s ease;
 }
 
-/* Industrial overlay — heavier, darker for premium factory look */
+/* Industrial overlay — restrained, just enough depth without cinematic drama */
 .hero-video-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     160deg,
-    rgba(8, 12, 22, 0.30) 0%,
-    rgba(8, 12, 22, 0.14) 40%,
-    rgba(8, 12, 22, 0.48) 100%
+    rgba(8, 12, 22, 0.18) 0%,
+    rgba(8, 12, 22, 0.06) 40%,
+    rgba(8, 12, 22, 0.28) 100%
   );
   pointer-events: none;
   border-radius: inherit;
