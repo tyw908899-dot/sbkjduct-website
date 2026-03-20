@@ -8545,3 +8545,506 @@ textarea:focus-visible,
 .hero-ryan-strip:has(.hero-ryan-avatar) {
   gap: 0.55rem;
 }
+
+/* ============================================================
+   CERTIFICATES & COMPLIANCE SECTION
+   Premium cert grid with lightbox support
+   ============================================================ */
+
+/* Homepage: compact trust evidence bar */
+.cert-trust-bar {
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding-block: 1.5rem;
+}
+
+.cert-trust-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cert-trust-bar-label {
+  font-family: var(--font-head);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cert-trust-bar-items {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cert-trust-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.cert-trust-bar-item svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.cert-trust-bar-item a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color var(--transition);
+}
+
+.cert-trust-bar-item a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* About page: full certificate grid */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+  position: relative;
+  text-align: left;
+}
+
+.cert-card:hover {
+  border-color: rgba(44, 106, 160, 0.3);
+  box-shadow: 0 6px 24px rgba(44, 106, 160, 0.10);
+  transform: translateY(-2px);
+}
+
+.cert-card-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--accent-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.cert-card-type {
+  font-family: var(--font-head);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.cert-card h3 {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.cert-card p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.cert-card-action {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: gap var(--transition);
+}
+
+.cert-card-action:hover {
+  gap: 0.5rem;
+}
+
+.cert-card-expand {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  color: var(--text-dim);
+  opacity: 0.6;
+}
+
+/* Quality page: lighter cert strip */
+.cert-strip {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.cert-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1.1rem;
+  flex: 1 1 auto;
+  min-width: 180px;
+  transition: border-color var(--transition);
+}
+
+.cert-strip-item:hover {
+  border-color: rgba(44, 106, 160, 0.3);
+}
+
+.cert-strip-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--accent-dim);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.cert-strip-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.cert-strip-name {
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cert-strip-note {
+  font-size: 0.73rem;
+  color: var(--text-dim);
+}
+
+/* Lightbox / cert modal */
+.cert-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(10, 18, 32, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.cert-modal-overlay.cert-modal-open {
+  display: flex;
+}
+
+.cert-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  max-width: 540px;
+  width: 100%;
+  padding: 2.25rem;
+  position: relative;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+  animation: modal-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.cert-modal-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: background var(--transition), color var(--transition);
+}
+
+.cert-modal-close:hover {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.cert-modal-badge {
+  width: 56px;
+  height: 56px;
+  background: var(--accent-dim);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.cert-modal-type {
+  font-family: var(--font-head);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.cert-modal h3 {
+  font-family: var(--font-head);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+  padding-right: 2rem;
+}
+
+.cert-modal-body {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.cert-modal-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.cert-modal-meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.cert-modal-meta-row span:first-child {
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.cert-modal-meta-row span:last-child {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.cert-modal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color var(--transition), gap var(--transition);
+  letter-spacing: 0.01em;
+}
+
+.cert-modal-link:hover {
+  text-decoration-color: currentColor;
+  gap: 0.65rem;
+}
+
+/* ============================================================
+   LOCATIONS SECTION — Melbourne + Jiangyin
+   Premium location cards, no oversized maps
+   ============================================================ */
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 680px) {
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.location-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.location-card--au::before {
+  background: linear-gradient(90deg, #2c6aa0, #5b9ac4);
+}
+
+.location-card--cn::before {
+  background: linear-gradient(90deg, #8a6640, #c49a5e);
+}
+
+.location-card-tag {
+  font-family: var(--font-head);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  display: inline-flex;
+  width: fit-content;
+}
+
+.location-card--au .location-card-tag {
+  background: rgba(44, 106, 160, 0.1);
+  color: var(--accent);
+}
+
+.location-card--cn .location-card-tag {
+  background: rgba(138, 102, 64, 0.1);
+  color: var(--accent-warm);
+}
+
+.location-card h3 {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.location-card-city {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.location-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.location-card-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.location-card-detail svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--text-dim);
+}
+
+.location-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.location-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 0.5rem 0.9rem;
+  border: 1px solid rgba(44, 106, 160, 0.25);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition);
+  width: fit-content;
+}
+
+.location-card-btn:hover {
+  background: var(--accent-dim);
+  border-color: rgba(44, 106, 160, 0.4);
+}
+
+.location-card--cn .location-card-btn {
+  color: var(--accent-warm);
+  border-color: rgba(138, 102, 64, 0.25);
+}
+
+.location-card--cn .location-card-btn:hover {
+  background: rgba(138, 102, 64, 0.08);
+  border-color: rgba(138, 102, 64, 0.4);
+}
+
+@media (max-width: 680px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+  .cert-trust-bar-items {
+    gap: 1rem;
+  }
+}
