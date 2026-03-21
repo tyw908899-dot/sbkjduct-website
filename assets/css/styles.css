@@ -9064,125 +9064,51 @@ textarea:focus-visible,
 }
 
 /* ========================================
-   P1 — HERO FULLSCREEN VIDEO (redesign)
-   Clean, premium, industrial. Video fills
-   the entire first screen. Copy sits over
-   a restrained dark gradient.
+   P1 — HERO TWO-COLUMN PREMIUM REVISION
+   Structured industrial layout preserved.
+   Fixes: fog removed, card chrome removed,
+   headline bolder, video is pure media.
    ======================================== */
 
-.hero-fullscreen {
-  position: relative;
-  min-height: 100vh;
-  min-height: 100svh;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  padding-block: 0;
-}
-
-.hero-bg-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  z-index: 0;
-}
-
-/* Clean gradient: readable top (header), transparent mid, soft dark base */
-.hero-bg-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(6, 11, 22, 0.52) 0%,
-    rgba(6, 11, 22, 0.08) 32%,
-    rgba(6, 11, 22, 0.08) 55%,
-    rgba(6, 11, 22, 0.72) 100%
-  );
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero-fullscreen .hero-content {
-  position: relative;
-  z-index: 2;
-  padding-block: 6.5rem 3.5rem;
-  max-width: 580px;
-}
-
-.hero-fullscreen .eyebrow {
-  color: rgba(210, 205, 198, 0.68);
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  margin-bottom: 1.25rem;
-}
-
-.hero-fullscreen h1 {
-  font-family: var(--font-head);
-  font-size: clamp(2.35rem, 4.2vw, 3.5rem);
+/* Stronger, more refined headline */
+.hero-industrial .hero-copy h1 {
+  font-size: clamp(2.1rem, 3vw, 3rem);
   font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.05;
-  color: #fff;
+  letter-spacing: -0.042em;
+  line-height: 1.06;
   margin-bottom: 1rem;
 }
 
-.hero-fullscreen .hero-lead {
-  font-size: 0.97rem;
-  line-height: 1.65;
-  color: rgba(210, 205, 198, 0.8);
-  margin-bottom: 2rem;
-  margin-inline: 0;
-  max-width: 440px;
-  text-align: left;
+/* Single-line lead — tighten opacity slightly */
+.hero-industrial .hero-lead {
+  opacity: 0.82;
+  max-width: 34rem;
 }
 
-.hero-fullscreen .hero-actions {
-  justify-content: flex-start;
-  margin-bottom: 0;
+/* Video column: flush premium media, not a card.
+   No border-radius, no border, no heavy drop shadow. */
+.hero-machine-visual--video {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
 
-/* Ryan line — smaller, dimmer, no avatar */
-.hero-fullscreen .hero-ryan-strip {
-  margin-top: 1.25rem;
-  font-size: 0.72rem;
-  color: rgba(210, 205, 198, 0.5);
-  letter-spacing: 0.02em;
+/* Remove the pseudo-element gradient that created fog */
+.hero-machine-visual--video::after {
+  display: none;
 }
 
-.hero-fullscreen .hero-ryan-strip a {
-  color: rgba(210, 205, 198, 0.6);
+/* Video fills the column cleanly */
+.hero-machine-visual--video .hero-video-frame {
+  height: 100%;
+  border-radius: 0;
 }
 
-.hero-fullscreen .hero-ryan-strip a:hover {
-  color: rgba(210, 205, 198, 0.85);
-}
-
-.hero-fullscreen .hero-ryan-strip .ryan-online-dot {
-  background: rgba(37, 211, 102, 0.65);
-}
-
-/* Responsive: ensure copy is readable on mobile */
-@media (max-width: 640px) {
-  .hero-fullscreen {
-    align-items: flex-end;
-    min-height: 100svh;
-  }
-
-  .hero-fullscreen .hero-content {
-    padding-block: 5.5rem 2.75rem;
-    max-width: 100%;
-  }
-
-  .hero-fullscreen h1 {
-    font-size: clamp(2rem, 7vw, 2.8rem);
-  }
-
-  .hero-fullscreen .hero-lead {
-    max-width: 100%;
-  }
+.hero-machine-visual--video .hero-video-loop {
+  min-height: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 /* ========================================

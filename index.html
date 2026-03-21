@@ -83,26 +83,33 @@
   <main>
 
     <!-- ============================================================
-         HERO — Fullscreen video, premium industrial direction
+         HERO — Two-column industrial layout, premium revision
+         Copy left · Banner video right · Clear separation
          ============================================================ -->
-    <section class="hero hero-fullscreen section-dark" aria-labelledby="hero-heading">
-      <video class="hero-bg-video" autoplay muted loop playsinline poster="assets/images/sbal-v.jpg">
-        <source src="assets/videos/banner.mp4" type="video/mp4" />
-      </video>
-      <div class="hero-bg-overlay" aria-hidden="true"></div>
-      <div class="shell hero-content">
-        <p class="eyebrow" data-i18n="hero.eyebrow.credentials">Since 1995 &middot; ISO 9001 &middot; CE Certified &middot; 80+ Countries</p>
-        <h1 id="hero-heading" data-i18n-html="hero.title.v2">HVAC Duct Machinery.<br/>Built for Production.</h1>
-        <p class="hero-lead" data-i18n="hero.lead.v2">Auto duct lines, spiral tubeformers, complete factory solutions — 30 years, 80+ countries.</p>
-        <div class="hero-actions">
-          <a href="request-quote.html" class="btn btn-primary btn-hero-quote" data-i18n="hero.cta.quote">Request a Quote</a>
-          <a href="machines.html" class="btn btn-ghost" data-i18n="hero.cta.browse">Browse Machines</a>
+    <section class="hero hero-industrial section-dark" aria-labelledby="hero-heading">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow.credentials">Since 1995 &middot; ISO 9001 &middot; CE Certified &middot; 80+ Countries</p>
+          <h1 id="hero-heading" data-i18n-html="hero.title.v2">HVAC Duct Machinery.<br/>Built for Production.</h1>
+          <p class="hero-lead" data-i18n="hero.lead.v2">Auto duct lines, spiral tubeformers, complete factory solutions — 30 years, 80+ countries.</p>
+          <div class="hero-actions">
+            <a href="request-quote.html" class="btn btn-primary btn-hero-quote" data-i18n="hero.cta.quote">Request a Quote</a>
+            <a href="machines.html" class="btn btn-ghost" data-i18n="hero.cta.browse">Browse Machines</a>
+          </div>
+          <p class="hero-ryan-strip">
+            <span class="ryan-online-dot" aria-hidden="true"></span>
+            <a href="contact-ryan.html" data-i18n="hero.ryan.name">Ryan Tao — Melbourne</a>
+            <span data-i18n="hero.ryan.note">&nbsp;· Direct inquiries, your timezone</span>
+          </p>
         </div>
-        <p class="hero-ryan-strip">
-          <span class="ryan-online-dot" aria-hidden="true"></span>
-          <a href="contact-ryan.html" data-i18n="hero.ryan.name">Ryan Tao — Melbourne</a>
-          <span data-i18n="hero.ryan.note">&nbsp;· Direct inquiries, your timezone</span>
-        </p>
+        <div class="hero-machine-visual hero-machine-visual--video" aria-hidden="true">
+          <div class="hero-video-frame">
+            <video class="hero-video-loop" autoplay muted loop playsinline poster="assets/images/sbal-v.jpg">
+              <source src="assets/videos/banner.mp4" type="video/mp4" />
+              <img src="assets/images/sbal-v.jpg" alt="SBKJ SBAL-V Auto Duct Line in production" />
+            </video>
+          </div>
+        </div>
       </div>
     </section>
 
