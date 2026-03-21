@@ -9240,3 +9240,249 @@ textarea:focus-visible,
   border: 1px solid var(--border);
   font-variant-numeric: tabular-nums;
 }
+
+/* =========================================
+   HERO CINEMATIC — Full-bleed first screen
+   Video fills viewport · text bottom-anchored
+   Calm · strong · globally credible
+   ========================================= */
+
+.hero-cinematic {
+  position: relative;
+  min-height: 100svh;
+  min-height: 100vh; /* fallback for older browsers */
+  display: flex;
+  align-items: flex-end;
+  padding-block: 0 8.5rem;
+  overflow: hidden;
+  text-align: left;
+  /* Override the generic .hero padding */
+  padding-inline: 0;
+}
+
+/* Full-bleed video background */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay: left-heavy for text legibility, bottom-weighted for drama */
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(6, 11, 22, 0.88) 0%, rgba(6, 11, 22, 0.60) 48%, rgba(6, 11, 22, 0.15) 100%),
+    linear-gradient(to top, rgba(6, 11, 22, 0.82) 0%, rgba(6, 11, 22, 0.20) 50%, transparent 75%);
+}
+
+/* Shell sits above video */
+.hero-cinematic .shell {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Text column — constrained to left */
+.hero-cinematic .hero-copy {
+  max-width: 46rem;
+}
+
+/* Large, calm, authoritative headline */
+.hero-cinematic .hero-copy h1 {
+  font-family: var(--font-head);
+  font-size: clamp(3.2rem, 5.8vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.048em;
+  line-height: 1.03;
+  color: #f0ece6;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+}
+
+/* Single supporting line — restrained */
+.hero-cinematic .hero-lead {
+  font-size: clamp(0.95rem, 1.5vw, 1.08rem);
+  color: rgba(226, 220, 213, 0.65);
+  font-weight: 300;
+  letter-spacing: 0.015em;
+  max-width: 30rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+  margin-inline: 0;
+  opacity: 1;
+}
+
+/* CTA row: left-flush */
+.hero-cinematic .hero-actions {
+  justify-content: flex-start;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero-cinematic {
+    padding-block: 0 6rem;
+  }
+  .hero-cinematic .hero-copy h1 {
+    font-size: clamp(2.8rem, 8vw, 3.8rem);
+  }
+  .hero-bg-overlay {
+    background:
+      rgba(6, 11, 22, 0.60),
+      linear-gradient(to top, rgba(6, 11, 22, 0.88) 0%, transparent 60%);
+  }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .hero-cinematic {
+    padding-block: 0 4.5rem;
+  }
+  .hero-cinematic .hero-copy h1 {
+    font-size: clamp(2.2rem, 10.5vw, 2.9rem);
+    letter-spacing: -0.035em;
+  }
+  .hero-cinematic .hero-lead {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* =========================================
+   PROOF STRIP — Slim editorial credentials
+   Replaces oversized stats-band
+   ========================================= */
+
+.proof-strip {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  padding-block: 0.95rem 1rem;
+}
+
+.proof-strip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.proof-strip-item {
+  padding-inline: 2rem;
+  border-right: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.proof-strip-item:first-child {
+  padding-left: 0;
+}
+
+.proof-strip-item:last-child {
+  border-right: none;
+}
+
+.proof-strip-item strong {
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--text);
+  font-size: 0.86rem;
+  letter-spacing: -0.025em;
+  margin-right: 0.2em;
+}
+
+@media (max-width: 720px) {
+  .proof-strip-item {
+    padding-inline: 1.25rem;
+    font-size: 0.76rem;
+    padding-block: 0.25rem;
+  }
+  .proof-strip-item:first-child {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .proof-strip-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+  }
+  .proof-strip-item {
+    border-right: none;
+    padding-inline: 0;
+    white-space: normal;
+  }
+}
+
+/* =========================================
+   HEADER PREMIUM REFINEMENTS
+   Stronger logo · cleaner nav · premium CTA
+   ========================================= */
+
+/* More breathing room */
+.site-header-inner {
+  padding-block: 0.95rem;
+}
+
+/* Slightly larger logo mark for stronger presence */
+.logo-icon {
+  width: 44px;
+  height: 44px;
+}
+
+/* Stronger wordmark */
+.logo-title {
+  font-size: 1.22rem;
+  letter-spacing: -0.04em;
+}
+
+/* Nav CTA — solid filled, not just a border */
+.nav-cta {
+  padding-inline: 1.3rem;
+  padding-block: 0.52rem;
+  border-radius: 5px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff !important;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-cta:hover {
+  background: #245b8a;
+  border-color: #245b8a;
+  box-shadow: 0 4px 16px rgba(44, 106, 160, 0.28);
+  transform: none;
+}
+
+/* Dark hero override — frosted glass treatment over video */
+.site-header--hero-dark:not(.header-scrolled) .nav-cta {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: rgba(240, 236, 230, 0.92) !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.site-header--hero-dark:not(.header-scrolled) .nav-cta:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.42);
+  color: #f0ece6 !important;
+  box-shadow: none;
+}
