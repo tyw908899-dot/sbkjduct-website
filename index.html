@@ -83,22 +83,24 @@
   <main>
 
     <!-- ============================================================
-         HERO — Full-bleed cinematic first screen
-         Video fills viewport · Text bottom-anchored · Single focus
+         HERO — Two-column industrial, focused revision
+         Structured copy left · Premium media right · Single focus
          ============================================================ -->
-    <section class="hero hero-cinematic section-dark" aria-labelledby="hero-heading">
-      <div class="hero-bg" aria-hidden="true">
-        <video class="hero-bg-video" autoplay muted loop playsinline poster="assets/images/sbal-v.jpg">
-          <source src="assets/videos/banner.mp4" type="video/mp4" />
-        </video>
-        <div class="hero-bg-overlay"></div>
-      </div>
-      <div class="shell">
+    <section class="hero hero-industrial section-dark" aria-labelledby="hero-heading">
+      <div class="shell hero-grid">
         <div class="hero-copy">
           <h1 id="hero-heading" data-i18n-html="hero.title.v3">Industrial Duct Machinery.<br/>Built to Last.</h1>
           <p class="hero-lead" data-i18n="hero.lead.v3">Complete production lines. Trusted in 80+ countries since 1995.</p>
           <div class="hero-actions">
             <a href="request-quote.html" class="btn btn-primary btn-hero-quote" data-i18n="hero.cta.quote">Request a Quote</a>
+          </div>
+        </div>
+        <div class="hero-machine-visual hero-machine-visual--video" aria-hidden="true">
+          <div class="hero-video-frame">
+            <video class="hero-video-loop" autoplay muted loop playsinline poster="assets/images/sbal-v.jpg">
+              <source src="assets/videos/banner.mp4" type="video/mp4" />
+              <img src="assets/images/sbal-v.jpg" alt="SBKJ SBAL-V Auto Duct Line in production" />
+            </video>
           </div>
         </div>
       </div>

@@ -9242,116 +9242,38 @@ textarea:focus-visible,
 }
 
 /* =========================================
-   HERO CINEMATIC — Full-bleed first screen
-   Video fills viewport · text bottom-anchored
-   Calm · strong · globally credible
+   HERO TWO-COLUMN — FOCUSED REVISION
+   No eyebrow · no Ryan strip · single CTA
+   Stronger headline · i18n-safe controlled type
    ========================================= */
 
-.hero-cinematic {
-  position: relative;
-  min-height: 100svh;
-  min-height: 100vh; /* fallback for older browsers */
-  display: flex;
-  align-items: flex-end;
-  padding-block: 0 8.5rem;
-  overflow: hidden;
-  text-align: left;
-  /* Override the generic .hero padding */
-  padding-inline: 0;
-}
-
-/* Full-bleed video background */
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.hero-bg-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Overlay: left-heavy for text legibility, bottom-weighted for drama */
-.hero-bg-overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(to right, rgba(6, 11, 22, 0.88) 0%, rgba(6, 11, 22, 0.60) 48%, rgba(6, 11, 22, 0.15) 100%),
-    linear-gradient(to top, rgba(6, 11, 22, 0.82) 0%, rgba(6, 11, 22, 0.20) 50%, transparent 75%);
-}
-
-/* Shell sits above video */
-.hero-cinematic .shell {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-
-/* Text column — constrained to left */
-.hero-cinematic .hero-copy {
-  max-width: 46rem;
-}
-
-/* Large, calm, authoritative headline */
-.hero-cinematic .hero-copy h1 {
-  font-family: var(--font-head);
-  font-size: clamp(3.2rem, 5.8vw, 5rem);
+/* Stronger headline — bounded for translated languages */
+.hero-industrial .hero-copy h1 {
+  font-size: clamp(2.2rem, 3.2vw, 3.4rem);
   font-weight: 700;
-  letter-spacing: -0.048em;
-  line-height: 1.03;
-  color: #f0ece6;
-  margin-top: 0;
-  margin-bottom: 1.3rem;
+  letter-spacing: -0.044em;
+  line-height: 1.05;
+  margin-bottom: 1.1rem;
 }
 
-/* Single supporting line — restrained */
-.hero-cinematic .hero-lead {
-  font-size: clamp(0.95rem, 1.5vw, 1.08rem);
-  color: rgba(226, 220, 213, 0.65);
-  font-weight: 300;
-  letter-spacing: 0.015em;
-  max-width: 30rem;
-  margin-bottom: 2.5rem;
-  text-align: left;
-  margin-inline: 0;
-  opacity: 1;
+/* Lead: clean, slightly muted, comfortable reading */
+.hero-industrial .hero-lead {
+  font-size: 1rem;
+  opacity: 0.80;
+  max-width: 32rem;
+  line-height: 1.6;
 }
 
-/* CTA row: left-flush */
-.hero-cinematic .hero-actions {
-  justify-content: flex-start;
-}
-
-/* Tablet */
 @media (max-width: 900px) {
-  .hero-cinematic {
-    padding-block: 0 6rem;
-  }
-  .hero-cinematic .hero-copy h1 {
-    font-size: clamp(2.8rem, 8vw, 3.8rem);
-  }
-  .hero-bg-overlay {
-    background:
-      rgba(6, 11, 22, 0.60),
-      linear-gradient(to top, rgba(6, 11, 22, 0.88) 0%, transparent 60%);
+  .hero-industrial .hero-copy h1 {
+    font-size: clamp(2rem, 6vw, 2.8rem);
   }
 }
 
-/* Mobile */
 @media (max-width: 560px) {
-  .hero-cinematic {
-    padding-block: 0 4.5rem;
-  }
-  .hero-cinematic .hero-copy h1 {
-    font-size: clamp(2.2rem, 10.5vw, 2.9rem);
+  .hero-industrial .hero-copy h1 {
+    font-size: clamp(1.85rem, 8vw, 2.4rem);
     letter-spacing: -0.035em;
-  }
-  .hero-cinematic .hero-lead {
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
   }
 }
 
