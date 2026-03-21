@@ -9062,3 +9062,181 @@ textarea:focus-visible,
     gap: 1rem;
   }
 }
+
+/* ========================================
+   P1 — HERO TWO-COLUMN PREMIUM REVISION
+   Structured industrial layout preserved.
+   Fixes: fog removed, card chrome removed,
+   headline bolder, video is pure media.
+   ======================================== */
+
+/* Stronger, more refined headline */
+.hero-industrial .hero-copy h1 {
+  font-size: clamp(2.1rem, 3vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.042em;
+  line-height: 1.06;
+  margin-bottom: 1rem;
+}
+
+/* Single-line lead — tighten opacity slightly */
+.hero-industrial .hero-lead {
+  opacity: 0.82;
+  max-width: 34rem;
+}
+
+/* Video column: flush premium media, not a card.
+   No border-radius, no border, no heavy drop shadow. */
+.hero-machine-visual--video {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* Remove the pseudo-element gradient that created fog */
+.hero-machine-visual--video::after {
+  display: none;
+}
+
+/* Video fills the column cleanly */
+.hero-machine-visual--video .hero-video-frame {
+  height: 100%;
+  border-radius: 0;
+}
+
+.hero-machine-visual--video .hero-video-loop {
+  min-height: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* ========================================
+   P4 — FLOATING BUTTONS SCROLL REVEAL
+   Hidden on load, revealed after scroll.
+   ======================================== */
+
+.fab-whatsapp {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px);
+  /* transition already set above; extend to include opacity */
+  transition: opacity 0.35s ease, transform 0.35s ease,
+              box-shadow var(--transition);
+}
+
+.fab-whatsapp.fab-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Chatbot FAB scroll-reveal (targets .sb-chat-fab) */
+.sb-chat-fab {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.sb-chat-fab.fab-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* When chat is open, always show (override hidden state) */
+.sb-chat-open .sb-chat-fab {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* ========================================
+   P2 — CERTIFICATE IMAGE THUMBNAILS
+   Cert cards with thumbnail images + modal
+   ======================================== */
+
+/* Thumbnail inside cert card */
+.cert-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.5rem;
+}
+
+/* Fallback badge shown when image fails or is absent */
+.cert-thumb-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--accent);
+  opacity: 0.5;
+}
+
+/* Quality page: smaller cert thumbnails in strip */
+.cert-strip-thumb {
+  width: 52px;
+  height: 40px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cert-strip-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+/* Modal image display */
+.cert-modal-img {
+  width: 100%;
+  max-width: 480px;
+  max-height: 340px;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.cert-modal-img-wrap {
+  text-align: center;
+  margin: 0.75rem 0 1.25rem;
+}
+
+/* Location card address detail */
+.location-card-address {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.6rem;
+  background: var(--surface);
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}

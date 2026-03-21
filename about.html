@@ -157,7 +157,7 @@
     </section>
 
     <!-- ============================================================
-         CERTIFICATES & COMPLIANCE — Full premium grid with lightbox
+         CERTIFICATES & COMPLIANCE — Full grid with thumbnails + lightbox
          ============================================================ -->
     <section class="section" id="certifications" aria-labelledby="cert-heading">
       <div class="shell">
@@ -174,15 +174,19 @@
             <span class="cert-card-expand" aria-hidden="true">
               <svg viewBox="0 0 18 18" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3h5v5M13 10v5H3V5h5"/></svg>
             </span>
-            <div class="cert-card-badge" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <!-- Certificate thumbnail image -->
+            <div class="cert-thumb">
+              <img src="https://www.spiraltubeformer.com/Public/uploads/ueditor/20220908/1662601476560765.jpg"
+                   alt="SBKJ ISO 9001:2015 Certificate"
+                   data-i18n-attr-alt="cert.iso.img.alt"
+                   onerror="this.parentElement.innerHTML='<div class=\'cert-thumb-fallback\'><svg viewBox=\'0 0 24 24\' width=\'36\' height=\'36\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><path d=\'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z\'/></svg></div>'" />
             </div>
             <span class="cert-card-type" data-i18n="cert.iso.type">Quality Management</span>
             <h3 data-i18n="cert.iso.title">ISO 9001:2015 Certified</h3>
             <p data-i18n="cert.iso.desc">Quality management system certification covering design, manufacturing, inspection, and delivery of HVAC duct machinery. Issued by a third-party accredited body.</p>
             <span class="cert-card-action">
               <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8h12M8 3l7 5-7 5"/></svg>
-              <span data-i18n="cert.iso.view">View certificate →</span>
+              <span data-i18n="cert.modal.enlarge">Enlarge certificate →</span>
             </span>
           </button>
 
@@ -191,15 +195,18 @@
             <span class="cert-card-expand" aria-hidden="true">
               <svg viewBox="0 0 18 18" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3h5v5M13 10v5H3V5h5"/></svg>
             </span>
-            <div class="cert-card-badge" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9.354a4 4 0 100 5.292"/></svg>
+            <div class="cert-thumb">
+              <img src="https://www.spiraltubeformer.com/Public/uploads/ueditor/20220908/1662601476847099.jpg"
+                   alt="SBKJ CE Certificate"
+                   data-i18n-attr-alt="cert.ce.img.alt"
+                   onerror="this.parentElement.innerHTML='<div class=\'cert-thumb-fallback\'><svg viewBox=\'0 0 24 24\' width=\'36\' height=\'36\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><path d=\'M15 9.354a4 4 0 100 5.292\'/></svg></div>'" />
             </div>
             <span class="cert-card-type" data-i18n="cert.ce.type">European Conformity</span>
             <h3 data-i18n="cert.ce.title">CE Marked Machinery</h3>
             <p data-i18n="cert.ce.desc">CE marking confirms that SBKJ machinery meets EU Machinery Directive safety and technical requirements. Relevant for European installations and accepted as a safety baseline in many export markets.</p>
             <span class="cert-card-action">
               <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8h12M8 3l7 5-7 5"/></svg>
-              <span data-i18n="cert.ce.view">View CE documentation →</span>
+              <span data-i18n="cert.modal.enlarge">Enlarge certificate →</span>
             </span>
           </button>
 
@@ -208,8 +215,11 @@
             <span class="cert-card-expand" aria-hidden="true">
               <svg viewBox="0 0 18 18" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3h5v5M13 10v5H3V5h5"/></svg>
             </span>
-            <div class="cert-card-badge" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="cert-thumb">
+              <img src="https://www.sbkj.com/Public/uploads/ueditor/20220908/patent-thumb.jpg"
+                   alt="SBKJ Patents"
+                   data-i18n-attr-alt="cert.patent.img.alt"
+                   onerror="this.parentElement.innerHTML='<div class=\'cert-thumb-fallback\'><svg viewBox=\'0 0 24 24\' width=\'36\' height=\'36\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\'><path d=\'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\'/></svg></div>'" />
             </div>
             <span class="cert-card-type" data-i18n="cert.patent.type">Intellectual Property</span>
             <h3 data-i18n="cert.patent.title">60+ Active Patents</h3>
@@ -224,21 +234,18 @@
       </div>
     </section>
 
-    <!-- Certificate Lightbox Modal -->
+    <!-- Certificate Lightbox Modal — with image display -->
     <div class="cert-modal-overlay" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
       <div class="cert-modal">
         <button class="cert-modal-close" id="certModalClose" aria-label="Close">
           <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 2l12 12M14 2L2 14"/></svg>
         </button>
-        <div class="cert-modal-badge" id="certModalBadge" aria-hidden="true"></div>
         <p class="cert-modal-type" id="certModalType"></p>
         <h3 id="certModalTitle"></h3>
+        <!-- Certificate image enlarged -->
+        <div class="cert-modal-img-wrap" id="certModalImgWrap"></div>
         <p class="cert-modal-body" id="certModalBody"></p>
         <div class="cert-modal-meta" id="certModalMeta"></div>
-        <a href="#" target="_blank" rel="noopener" class="cert-modal-link" id="certModalLink">
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3H3v10h10V9M9 3h4v4M9 7l4-4"/></svg>
-          <span data-i18n="cert.modal.official">View official certificate</span>
-        </a>
       </div>
     </div>
 
@@ -291,20 +298,22 @@
             <div class="location-card-details">
               <div class="location-card-detail">
                 <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M2 6h12"/><path d="M6 3V2M10 3V2"/></svg>
-                <span>Founded 1995 · ISO 9001 · CE</span>
+                <span data-i18n="locations.cn.founded">Founded 1995 · ISO 9001 · CE</span>
               </div>
               <div class="location-card-detail">
                 <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 14V6l6-4 6 4v8M6 14v-4h4v4"/></svg>
-                <span>Full engineering &amp; manufacturing plant</span>
+                <span data-i18n="locations.cn.plant">Full engineering &amp; manufacturing plant</span>
               </div>
             </div>
-            <p data-i18n="locations.cn.role" style="font-size:0.84rem;color:var(--text-muted);line-height:1.55;">Primary manufacturing, CNC machining, assembly, quality control, and export packing. Engineering team handles commissioning support and after-sales technical assistance.</p>
+            <address class="location-card-address" data-i18n="locations.cn.address">
+              No.78 Huanxi Road, Zhutang Town,<br/>Jiangyin City, Jiangsu, P.R. China
+            </address>
             <div class="location-card-actions">
               <a href="factory.html" class="location-card-btn">
                 <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 14V6l6-4 6 4v8M6 14v-4h4v4"/></svg>
                 <span data-i18n="locations.cn.visit">View factory page →</span>
               </a>
-              <a href="https://maps.google.com/?q=Jiangyin,Jiangsu,China" target="_blank" rel="noopener" class="location-card-btn">
+              <a href="https://maps.google.com/?q=No.78+Huanxi+Road,+Zhutang+Town,+Jiangyin+City,+Jiangsu,+China" target="_blank" rel="noopener" class="location-card-btn">
                 <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2H7v2H5v4h2l1 6 1-6h2V4H9V2z"/></svg>
                 <span data-i18n="locations.cn.map">Open in Maps →</span>
               </a>
@@ -419,50 +428,64 @@
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/chatbot.js"></script>
   <script>
-  /* Certificate lightbox */
+  /* Certificate lightbox — with image thumbnails */
   (function() {
     var CERT_DATA = {
       iso: {
-        badge: '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>',
         typeKey: 'cert.iso.type',
         titleKey: 'cert.iso.title',
         bodyKey: 'cert.iso.desc',
-        meta: [['Standard', 'ISO 9001:2015'], ['Scope', 'Design · Manufacturing · Inspection · Delivery'], ['Market', 'Global']],
-        link: 'https://www.spiraltubeformer.com/certificates'
+        imgSrc: 'https://www.spiraltubeformer.com/Public/uploads/ueditor/20220908/1662601476560765.jpg',
+        imgAltKey: 'cert.iso.img.alt',
+        meta: [['cert.modal.meta.standard', 'ISO 9001:2015'], ['cert.modal.meta.scope', 'Design · Manufacturing · Inspection · Delivery'], ['cert.modal.meta.market', 'Global']]
       },
       ce: {
-        badge: '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M15 9.354a4 4 0 100 5.292"/></svg>',
         typeKey: 'cert.ce.type',
         titleKey: 'cert.ce.title',
         bodyKey: 'cert.ce.desc',
-        meta: [['Directive', 'EU Machinery Directive 2006/42/EC'], ['Scope', 'HVAC Duct Forming Machinery'], ['Market', 'EU / Export']],
-        link: 'https://www.spiraltubeformer.com/certificates'
+        imgSrc: 'https://www.spiraltubeformer.com/Public/uploads/ueditor/20220908/1662601476847099.jpg',
+        imgAltKey: 'cert.ce.img.alt',
+        meta: [['cert.modal.meta.directive', 'EU Machinery Directive 2006/42/EC'], ['cert.modal.meta.scope', 'HVAC Duct Forming Machinery'], ['cert.modal.meta.market', 'EU / Export']]
       },
       patent: {
-        badge: '<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
         typeKey: 'cert.patent.type',
         titleKey: 'cert.patent.title',
         bodyKey: 'cert.patent.desc',
-        meta: [['Active Patents', '60+'], ['Registered', 'China National IP Authority'], ['Categories', 'Forming · CNC · Automation']],
-        link: 'https://www.sbkj.com/About/3.html'
+        imgSrc: 'https://www.sbkj.com/Public/uploads/ueditor/20220908/patent-thumb.jpg',
+        imgAltKey: 'cert.patent.img.alt',
+        meta: [['cert.modal.meta.count', '60+'], ['cert.modal.meta.registered', 'China National IP Authority'], ['cert.modal.meta.categories', 'Forming · CNC · Automation']]
       }
     };
 
     var overlay = document.getElementById('certModal');
     var closeBtn = document.getElementById('certModalClose');
 
+    function t(key) { return (window.SBKJ_i18n && window.SBKJ_i18n.t(key)) || ''; }
+
     function openModal(certKey) {
       var data = CERT_DATA[certKey];
       if (!data) return;
-      document.getElementById('certModalBadge').innerHTML = data.badge;
-      document.getElementById('certModalType').textContent = (window.SBKJ_i18n && window.SBKJ_i18n.t(data.typeKey)) || '';
-      document.getElementById('certModalTitle').textContent = (window.SBKJ_i18n && window.SBKJ_i18n.t(data.titleKey)) || '';
-      document.getElementById('certModalBody').textContent = (window.SBKJ_i18n && window.SBKJ_i18n.t(data.bodyKey)) || '';
+
+      document.getElementById('certModalType').textContent = t(data.typeKey);
+      document.getElementById('certModalTitle').textContent = t(data.titleKey);
+      document.getElementById('certModalBody').textContent = t(data.bodyKey);
+
+      // Image
+      var imgWrap = document.getElementById('certModalImgWrap');
+      var imgEl = document.createElement('img');
+      imgEl.className = 'cert-modal-img';
+      imgEl.src = data.imgSrc;
+      imgEl.alt = t(data.imgAltKey);
+      imgEl.onerror = function() { imgWrap.innerHTML = ''; };
+      imgWrap.innerHTML = '';
+      imgWrap.appendChild(imgEl);
+
+      // Meta
       var metaHtml = data.meta.map(function(row) {
-        return '<div class="cert-modal-meta-row"><span>' + row[0] + '</span><span>' + row[1] + '</span></div>';
+        return '<div class="cert-modal-meta-row"><span>' + t(row[0]) + '</span><span>' + row[1] + '</span></div>';
       }).join('');
       document.getElementById('certModalMeta').innerHTML = metaHtml;
-      document.getElementById('certModalLink').href = data.link;
+
       overlay.classList.add('cert-modal-open');
       overlay.setAttribute('aria-hidden', 'false');
       closeBtn.focus();

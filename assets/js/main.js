@@ -127,6 +127,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Scroll-reveal floating buttons (WhatsApp FAB + chatbot FAB)
+  (function () {
+    const SCROLL_THRESHOLD = 300;
+    const fabs = document.querySelectorAll(".fab-whatsapp, .sb-chat-fab");
+    if (!fabs.length) return;
+
+    let visible = false;
+    function updateFabVisibility() {
+      const shouldShow = window.scrollY > SCROLL_THRESHOLD;
+      if (shouldShow === visible) return;
+      visible = shouldShow;
+      fabs.forEach(function (el) {
+        el.classList.toggle("fab-visible", shouldShow);
+      });
+    }
+
+    window.addEventListener("scroll", updateFabVisibility, { passive: true });
+    updateFabVisibility(); // set initial state
+  })();
+
   const stickyCta = document.querySelector("[data-mobile-sticky-cta]");
   if (stickyCta) {
     const isMobile = window.matchMedia("(max-width: 640px)");
