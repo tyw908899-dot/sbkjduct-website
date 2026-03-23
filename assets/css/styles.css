@@ -9408,3 +9408,351 @@ textarea:focus-visible,
   color: #f0ece6 !important;
   box-shadow: none;
 }
+
+/* =========================================
+   HERO CINEMATIC — Full-screen video hero
+   Premium, calm, one headline + one line
+   ========================================= */
+
+.hero-cinematic {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-block: 0;
+}
+
+.hero-cinematic-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-cinematic-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-cinematic-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(8, 15, 28, 0.80) 0%,
+    rgba(8, 15, 28, 0.62) 55%,
+    rgba(8, 15, 28, 0.45) 100%
+  );
+}
+
+.hero-cinematic-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-block: 9rem 6rem;
+  width: 100%;
+}
+
+.hero-cinematic-content h1 {
+  font-family: var(--font-head);
+  font-size: clamp(2.8rem, 4.8vw, 5rem);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+  max-width: 22ch;
+  margin-inline: auto;
+  margin-bottom: 1.1rem;
+}
+
+.hero-cinematic-content .hero-lead {
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+  color: rgba(240, 236, 228, 0.72);
+  max-width: 42ch;
+  margin-inline: auto;
+  margin-bottom: 2.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.hero-cinematic-content .hero-actions {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .hero-cinematic {
+    min-height: 80vh;
+  }
+  .hero-cinematic-content {
+    text-align: left;
+    padding-block: 6.5rem 4rem;
+  }
+  .hero-cinematic-content h1 {
+    font-size: clamp(2.1rem, 8.5vw, 3rem);
+    margin-inline: 0;
+    max-width: none;
+  }
+  .hero-cinematic-content .hero-lead {
+    margin-inline: 0;
+    text-align: left;
+  }
+  .hero-cinematic-content .hero-actions {
+    justify-content: flex-start;
+  }
+}
+
+/* =========================================
+   CERT CARDS PREMIUM — Stronger visual presence
+   Larger thumbnail, darker border, more weight
+   ========================================= */
+
+.cert-grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.cert-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: box-shadow var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.cert-card:hover {
+  box-shadow: 0 10px 40px rgba(44, 106, 160, 0.14);
+  border-color: rgba(44, 106, 160, 0.4);
+  transform: translateY(-2px);
+}
+
+.cert-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--bg-subtle, #eee);
+  border-bottom: 1px solid var(--border);
+}
+
+.cert-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+  background: #f9f8f6;
+}
+
+.cert-card-type,
+.cert-card h3,
+.cert-card p,
+.cert-card-action {
+  padding-inline: 1.5rem;
+}
+
+.cert-card-type {
+  padding-top: 1.25rem;
+}
+
+.cert-card h3 {
+  font-size: 1.08rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card-action {
+  padding-bottom: 1.25rem;
+}
+
+.cert-card-expand {
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Quality cert strip → premium mini-cards */
+.cert-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.cert-strip-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  overflow: hidden;
+  background: var(--bg-card);
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.cert-strip-item:hover {
+  border-color: rgba(44, 106, 160, 0.35);
+  box-shadow: 0 6px 24px rgba(44, 106, 160, 0.10);
+}
+
+.cert-strip-thumb {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: #f9f8f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-strip-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.75rem;
+}
+
+.cert-strip-info {
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.cert-strip-name {
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.015em;
+}
+
+.cert-strip-note {
+  font-size: 0.77rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 680px) {
+  .cert-strip {
+    grid-template-columns: 1fr;
+  }
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Premium proof strip: slightly taller, cleaner separator */
+.proof-strip {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  padding-block: 1.1rem;
+}
+
+.proof-strip-item {
+  padding-inline: 2.5rem;
+  font-size: 0.79rem;
+  letter-spacing: 0.015em;
+}
+
+.proof-strip-item strong {
+  font-size: 0.9rem;
+  letter-spacing: -0.03em;
+}
+
+/* Location cards — premium */
+.location-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  background: var(--bg-card);
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.location-card:hover {
+  border-color: rgba(44, 106, 160, 0.3);
+  box-shadow: 0 8px 32px rgba(44, 106, 160, 0.08);
+}
+
+.location-card-tag {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.location-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.15rem;
+}
+
+
+/* Header positioned over cinematic full-screen hero */
+.site-header--over-cinematic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent;
+  border-bottom: none;
+}
+
+.site-header--over-cinematic.header-scrolled {
+  position: fixed;
+  background: rgba(13, 24, 41, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* 4-column machine cards grid */
+.cards-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 960px) {
+  .cards-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Override sticky for over-cinematic header: use fixed positioning */
+.site-header--over-cinematic {
+  position: fixed !important;
+  background: transparent;
+  border-bottom-color: transparent;
+}
+
+.site-header--over-cinematic.header-scrolled {
+  position: fixed !important;
+  background: rgba(13, 24, 41, 0.96) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.09) !important;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
