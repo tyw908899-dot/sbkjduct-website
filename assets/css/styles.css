@@ -8353,6 +8353,21 @@ textarea:focus-visible,
 }
 
 /* ========================================
+   FACTORY MEDIA GRID — 4-IMAGE 2×2 VARIANT
+   ======================================== */
+.factory-media-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .factory-media-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
    FACTORY STAGE V2 — Icon + compact text
    ======================================== */
 .factory-stage-grid-visual {
@@ -8706,7 +8721,7 @@ textarea:focus-visible,
 /* About page: full certificate grid */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -9246,16 +9261,17 @@ textarea:focus-visible,
 /* Thumbnail inside cert card */
 .cert-thumb {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  min-height: 160px;
+  aspect-ratio: 3 / 4;
+  min-height: 200px;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 8px;
   background: var(--surface);
   border: 1px solid var(--border);
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
 .cert-thumb img {
@@ -9263,7 +9279,7 @@ textarea:focus-visible,
   height: 100%;
   object-fit: contain;
   object-position: center;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 /* Fallback badge shown when image fails or is absent */
@@ -9316,13 +9332,14 @@ textarea:focus-visible,
 /* Modal image display */
 .cert-modal-img {
   width: 100%;
-  max-width: 480px;
-  max-height: 340px;
+  max-width: 560px;
+  max-height: 420px;
   object-fit: contain;
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: 6px;
   margin: 1rem auto;
   display: block;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .cert-modal-img-wrap {
