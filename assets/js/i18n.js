@@ -465,12 +465,22 @@
     /* ---- P4 Location card detail labels (i18n QA fix) ---- */
     "locations.au.person":  { en:"Ryan Tao, Machinery Advisor", zh:"Ryan Tao，机械顾问", es:"Ryan Tao, Asesor de Maquinaria", ru:"Райан Тао, консультант по оборудованию", ar:"رايان تاو، مستشار الآلات", tr:"Ryan Tao, Makine Danışmanı", fr:"Ryan Tao, Conseiller en Machines", pt:"Ryan Tao, Consultor de Máquinas", hi:"Ryan Tao, मशीनरी सलाहकार", id:"Ryan Tao, Konsultan Mesin" },
     "locations.au.hours":   { en:"Mon–Fri, AEDT timezone", zh:"周一至周五，AEDT时区", es:"Lun–Vie, zona horaria AEDT", ru:"Пн–Пт, часовой пояс AEDT", ar:"الاثنين–الجمعة، توقيت AEDT", tr:"Pzt–Cum, AEDT saat dilimi", fr:"Lun–Ven, fuseau horaire AEDT", pt:"Seg–Sex, fuso horário AEDT", hi:"सोम–शुक्र, AEDT टाइमज़ोन", id:"Sen–Jum, zona waktu AEDT" },
+    "locations.au.address": { en:"5 Twyford Street, Box Hill North,\nVIC 3129, Australia", zh:"5 Twyford Street, Box Hill North,\nVIC 3129，澳大利亚维多利亚州", es:"5 Twyford Street, Box Hill North,\nVIC 3129, Australia", ru:"5 Twyford Street, Box Hill North,\nVIC 3129, Австралия", ar:"5 Twyford Street, Box Hill North،\nVIC 3129، أستراليا", tr:"5 Twyford Street, Box Hill North,\nVIC 3129, Avustralya", fr:"5 Twyford Street, Box Hill North,\nVIC 3129, Australie", pt:"5 Twyford Street, Box Hill North,\nVIC 3129, Austrália", hi:"5 Twyford Street, Box Hill North,\nVIC 3129, ऑस्ट्रेलिया", id:"5 Twyford Street, Box Hill North,\nVIC 3129, Australia" },
 
     /* ---- P4 contact-ryan.html location card detail labels ---- */
     "ryan.loc.person":      { en:"Ryan Tao, Machinery Advisor · SBKJ Group", zh:"Ryan Tao，机械顾问 · SBKJ集团", es:"Ryan Tao, Asesor · SBKJ Group", ru:"Райан Тао, консультант · SBKJ Group", ar:"رايان تاو، مستشار · SBKJ Group", tr:"Ryan Tao, Danışman · SBKJ Group", fr:"Ryan Tao, Conseiller · SBKJ Group", pt:"Ryan Tao, Consultor · SBKJ Group", hi:"Ryan Tao, सलाहकार · SBKJ Group", id:"Ryan Tao, Konsultan · SBKJ Group" },
     "ryan.loc.hours":       { en:"Mon–Fri, AEDT — responds within 1 business day", zh:"周一至周五 AEDT — 1个工作日内回复", es:"Lun–Vie, AEDT — responde en 1 día hábil", ru:"Пн–Пт, AEDT — ответ в течение 1 рабочего дня", ar:"الاثنين–الجمعة، AEDT — يرد خلال يوم عمل واحد", tr:"Pzt–Cum, AEDT — 1 iş günü içinde yanıt", fr:"Lun–Ven, AEDT — répond en 1 jour ouvrable", pt:"Seg–Sex, AEDT — responde em 1 dia útil", hi:"सोम–शुक्र, AEDT — 1 कार्यदिवस में जवाब देता है", id:"Sen–Jum, AEDT — merespons dalam 1 hari kerja" },
     "ryan.loc.contact":     { en:"WhatsApp Ryan", zh:"WhatsApp联系Ryan", es:"WhatsApp a Ryan", ru:"WhatsApp Райану", ar:"واتساب رايان", tr:"Ryan'a WhatsApp", fr:"WhatsApp Ryan", pt:"WhatsApp Ryan", hi:"Ryan को WhatsApp करें", id:"WhatsApp Ryan" },
     "ryan.loc.maplink":     { en:"Open in Maps →", zh:"在地图中打开 →", es:"Abrir en Mapas →", ru:"Открыть на карте →", ar:"فتح في الخرائط ←", tr:"Haritada Aç →", fr:"Ouvrir dans Maps →", pt:"Abrir no Maps →", hi:"मैप में खोलें →", id:"Buka di Maps →" },
+
+    /* ---- About page stats strip ---- */
+    "about.stats.years":          { en:"30+", zh:"30+", es:"30+", ru:"30+", ar:"+30", tr:"30+", fr:"30+", pt:"30+", hi:"30+", id:"30+" },
+    "about.stats.years.label":    { en:"Years in HVAC machinery", zh:"年行业经验", es:"Años en maquinaria HVAC", ru:"Лет в отрасли", ar:"عامًا في مجال الآلات", tr:"Yıllık HVAC deneyimi", fr:"Ans dans les machines HVAC", pt:"Anos em máquinas HVAC", hi:"वर्ष HVAC मशीनरी में", id:"Tahun di mesin HVAC" },
+    "about.stats.countries":      { en:"80+", zh:"80+", es:"80+", ru:"80+", ar:"+80", tr:"80+", fr:"80+", pt:"80+", hi:"80+", id:"80+" },
+    "about.stats.countries.label":{ en:"Countries served", zh:"出口国家与地区", es:"Países atendidos", ru:"Стран охвата", ar:"دولة تم تزويدها", tr:"Hizmet verilen ülke", fr:"Pays desservis", pt:"Países atendidos", hi:"देशों में सेवा", id:"Negara yang dilayani" },
+    "about.stats.patents":        { en:"60+", zh:"60+", es:"60+", ru:"60+", ar:"+60", tr:"60+", fr:"60+", pt:"60+", hi:"60+", id:"60+" },
+    "about.stats.patents.label":  { en:"Active patents", zh:"项有效专利", es:"Patentes activas", ru:"Активных патентов", ar:"براءة اختراع نشطة", tr:"Aktif patent", fr:"Brevets actifs", pt:"Patentes ativas", hi:"सक्रिय पेटेंट", id:"Paten aktif" },
+    "about.stats.cert.label":     { en:"Quality certified", zh:"国际质量认证", es:"Certificación de calidad", ru:"Международная сертификация", ar:"معتمد دوليًا للجودة", tr:"Kalite sertifikası", fr:"Certifié qualité", pt:"Certificação de qualidade", hi:"गुणवत्ता प्रमाणित", id:"Bersertifikat kualitas" },
   };
 
   const SPEC = {
