@@ -1,15 +1,49 @@
 # i18n QA Report
 
 - HTML files scanned: 104
-- Translation keys defined in i18n.js: 207
-- Translation keys used in HTML: 493
-- Missing keys (FAIL): 398
+- Translation keys defined in i18n.js: 436
+- Translation keys used in HTML: 722
+- Missing keys (FAIL): 477
 - Incomplete translations (WARN): 0
-- Major translated pages: 9
-- Pages with hardcoded text (FAIL): 5
+- Major translated pages: 10
+- Pages with hardcoded text (FAIL): 1
 
 ## Failures (must fix)
 
+- MISSING KEY  'about.categories.auto.h3'  — used in: /about.html
+- MISSING KEY  'about.categories.auto.p'  — used in: /about.html
+- MISSING KEY  'about.categories.eyebrow'  — used in: /about.html
+- MISSING KEY  'about.categories.h2'  — used in: /about.html
+- MISSING KEY  'about.categories.round.h3'  — used in: /about.html
+- MISSING KEY  'about.categories.round.p'  — used in: /about.html
+- MISSING KEY  'about.categories.spiral.h3'  — used in: /about.html
+- MISSING KEY  'about.categories.spiral.p'  — used in: /about.html
+- MISSING KEY  'about.cta.btn.quote'  — used in: /about.html
+- MISSING KEY  'about.cta.h3'  — used in: /about.html
+- MISSING KEY  'about.cta.p'  — used in: /about.html
+- MISSING KEY  'about.hero.eyebrow'  — used in: /about.html
+- MISSING KEY  'about.hero.h1'  — used in: /about.html
+- MISSING KEY  'about.hero.lead'  — used in: /about.html
+- MISSING KEY  'about.hero.secondary'  — used in: /about.html
+- MISSING KEY  'about.overview.h2'  — used in: /about.html
+- MISSING KEY  'about.overview.note'  — used in: /about.html
+- MISSING KEY  'about.overview.p1'  — used in: /about.html
+- MISSING KEY  'about.overview.p2'  — used in: /about.html
+- MISSING KEY  'about.overview.video.h3'  — used in: /about.html
+- MISSING KEY  'about.visuals.eyebrow'  — used in: /about.html
+- MISSING KEY  'about.visuals.fig1'  — used in: /about.html
+- MISSING KEY  'about.visuals.fig2'  — used in: /about.html
+- MISSING KEY  'about.visuals.fig3'  — used in: /about.html
+- MISSING KEY  'about.visuals.h2'  — used in: /about.html
+- MISSING KEY  'about.visuals.lead'  — used in: /about.html
+- MISSING KEY  'about.wayfinding.eyebrow'  — used in: /about.html
+- MISSING KEY  'about.wayfinding.h2'  — used in: /about.html
+- MISSING KEY  'about.wayfinding.link.categories'  — used in: /about.html
+- MISSING KEY  'about.wayfinding.link.machines'  — used in: /about.html
+- MISSING KEY  'about.wayfinding.link.quote'  — used in: /about.html
+- MISSING KEY  'about.wayfinding.link.videos'  — used in: /about.html
+- MISSING KEY  'about.wayfinding.p'  — used in: /about.html
+- MISSING KEY  'cert.quality.lead'  — used in: /quality.html
 - MISSING KEY  'contact.callout.copy'  — used in: /contact.html
 - MISSING KEY  'contact.callout.title'  — used in: /contact.html
 - MISSING KEY  'contact.checklist.aria'  — used in: /contact.html
@@ -46,6 +80,139 @@
 - MISSING KEY  'contact.h2'  — used in: /contact.html
 - MISSING KEY  'contact.intro'  — used in: /contact.html
 - MISSING KEY  'contact.kicker'  — used in: /contact.html
+- MISSING KEY  'factory.cta.btn.quote'  — used in: /factory.html
+- MISSING KEY  'factory.cta.h2'  — used in: /factory.html
+- MISSING KEY  'factory.cta.p'  — used in: /factory.html
+- MISSING KEY  'factory.hero.eyebrow'  — used in: /factory.html
+- MISSING KEY  'factory.hero.h1'  — used in: /factory.html
+- MISSING KEY  'factory.hero.lead'  — used in: /factory.html
+- MISSING KEY  'factory.media.cap1'  — used in: /factory.html
+- MISSING KEY  'factory.media.cap2'  — used in: /factory.html
+- MISSING KEY  'factory.media.cap3'  — used in: /factory.html
+- MISSING KEY  'factory.media.cap4'  — used in: /factory.html
+- MISSING KEY  'factory.media.cap5'  — used in: /factory.html
+- MISSING KEY  'factory.media.cap6'  — used in: /factory.html
+- MISSING KEY  'factory.media.eyebrow'  — used in: /factory.html
+- MISSING KEY  'factory.media.h2'  — used in: /factory.html
+- MISSING KEY  'factory.wayfinding.eyebrow'  — used in: /factory.html
+- MISSING KEY  'factory.wayfinding.h2'  — used in: /factory.html
+- MISSING KEY  'factory.wayfinding.lead'  — used in: /factory.html
+- MISSING KEY  'factory.wayfinding.link1'  — used in: /factory.html
+- MISSING KEY  'factory.wayfinding.link2'  — used in: /factory.html
+- MISSING KEY  'factory.wayfinding.link3'  — used in: /factory.html
+- MISSING KEY  'factory.wayfinding.link4'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.eyebrow'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.h2'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage1.h3'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage1.p'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage2.h3'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage2.p'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage3.h3'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage3.p'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage4.h3'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage4.p'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage5.h3'  — used in: /factory.html
+- MISSING KEY  'factory.workflow.stage5.p'  — used in: /factory.html
+- MISSING KEY  'mach.card.cleat.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.cleat.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.cleat.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.link'  — used in: /machines.html
+- MISSING KEY  'mach.card.lockformer.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.lockformer.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.lockformer.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbalii.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbalii.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbalii.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbaliii.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbaliii.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbaliii.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbalv.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbalv.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbalv.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbem.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbem.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbem.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbfb.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbfb.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbfb.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbhf.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbhf.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbhf.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbtf1500.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbtf1500.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbtf1500.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbtf1602.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbtf1602.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbtf1602.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbtf2020.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbtf2020.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.sbtf2020.p'  — used in: /machines.html
+- MISSING KEY  'mach.card.tdf.h4'  — used in: /machines.html
+- MISSING KEY  'mach.card.tdf.kicker'  — used in: /machines.html
+- MISSING KEY  'mach.card.tdf.p'  — used in: /machines.html
+- MISSING KEY  'mach.cta.btn.quote'  — used in: /machines.html
+- MISSING KEY  'mach.cta.h2'  — used in: /machines.html
+- MISSING KEY  'mach.cta.p'  — used in: /machines.html
+- MISSING KEY  'mach.group.auto.h3'  — used in: /machines.html
+- MISSING KEY  'mach.group.auto.p'  — used in: /machines.html
+- MISSING KEY  'mach.group.elbow.h3'  — used in: /machines.html
+- MISSING KEY  'mach.group.elbow.p'  — used in: /machines.html
+- MISSING KEY  'mach.group.forming.h3'  — used in: /machines.html
+- MISSING KEY  'mach.group.forming.p'  — used in: /machines.html
+- MISSING KEY  'mach.group.spiral.h3'  — used in: /machines.html
+- MISSING KEY  'mach.group.spiral.p'  — used in: /machines.html
+- MISSING KEY  'mach.groups.h2'  — used in: /machines.html
+- MISSING KEY  'mach.groups.lead'  — used in: /machines.html
+- MISSING KEY  'mach.starthere.eyebrow'  — used in: /machines.html
+- MISSING KEY  'mach.starthere.h2'  — used in: /machines.html
+- MISSING KEY  'mach.starthere.link.auto'  — used in: /machines.html
+- MISSING KEY  'mach.starthere.link.elbow'  — used in: /machines.html
+- MISSING KEY  'mach.starthere.link.forming'  — used in: /machines.html
+- MISSING KEY  'mach.starthere.link.hvac'  — used in: /machines.html
+- MISSING KEY  'mach.starthere.link.spiral'  — used in: /machines.html
+- MISSING KEY  'mach.starthere.p'  — used in: /machines.html
+- MISSING KEY  'mach.wayfinding.eyebrow'  — used in: /machines.html
+- MISSING KEY  'mach.wayfinding.h2'  — used in: /machines.html
+- MISSING KEY  'mach.wayfinding.link.categories'  — used in: /machines.html
+- MISSING KEY  'mach.wayfinding.link.machines'  — used in: /machines.html
+- MISSING KEY  'mach.wayfinding.link.quote'  — used in: /machines.html
+- MISSING KEY  'mach.wayfinding.link.videos'  — used in: /machines.html
+- MISSING KEY  'mach.wayfinding.p'  — used in: /machines.html
+- MISSING KEY  'quality.cta.btn.quote'  — used in: /quality.html
+- MISSING KEY  'quality.cta.h2'  — used in: /quality.html
+- MISSING KEY  'quality.cta.p'  — used in: /quality.html
+- MISSING KEY  'quality.hero.eyebrow'  — used in: /quality.html
+- MISSING KEY  'quality.hero.h1'  — used in: /quality.html
+- MISSING KEY  'quality.hero.lead'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card1.h3'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card1.p'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card2.h3'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card2.p'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card3.h3'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card3.p'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card4.h3'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card4.p'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card5.h3'  — used in: /quality.html
+- MISSING KEY  'quality.stages.card5.p'  — used in: /quality.html
+- MISSING KEY  'quality.stages.eyebrow'  — used in: /quality.html
+- MISSING KEY  'quality.stages.h2'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.card1.h3'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.card1.p'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.card2.h3'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.card2.p'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.card3.h3'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.card3.p'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.card4.h3'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.card4.p'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.eyebrow'  — used in: /quality.html
+- MISSING KEY  'quality.visuals.h2'  — used in: /quality.html
+- MISSING KEY  'quality.wayfinding.eyebrow'  — used in: /quality.html
+- MISSING KEY  'quality.wayfinding.h2'  — used in: /quality.html
+- MISSING KEY  'quality.wayfinding.lead'  — used in: /quality.html
+- MISSING KEY  'quality.wayfinding.link1'  — used in: /quality.html
+- MISSING KEY  'quality.wayfinding.link2'  — used in: /quality.html
+- MISSING KEY  'quality.wayfinding.link3'  — used in: /quality.html
+- MISSING KEY  'quality.wayfinding.link4'  — used in: /quality.html
 - MISSING KEY  'quote.builder.aria'  — used in: /request-quote.html
 - MISSING KEY  'quote.builder.copy'  — used in: /request-quote.html
 - MISSING KEY  'quote.builder.ducttype.both'  — used in: /request-quote.html
@@ -99,74 +266,6 @@
 - MISSING KEY  'quote.trust.li1'  — used in: /request-quote.html
 - MISSING KEY  'quote.trust.li2'  — used in: /request-quote.html
 - MISSING KEY  'quote.trust.li3'  — used in: /request-quote.html
-- MISSING KEY  'ryan.about.cite'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.about.h2'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.about.p'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.about.quote'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.card.coverage'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.card.cta'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.card.location'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.card.name'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.card.response'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.card.title'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.cred.countries'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.cred.region'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.cred.years'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.eyebrow'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.fact.import'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.fact.layout'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.fact.machine'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.fact.quotations'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.fact.support'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.a1'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.a2'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.a3'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.a4'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.a5'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.a6'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.eyebrow'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.h2'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.q1'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.q2'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.q3'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.q4'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.q5'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.faq.q6'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.handles.h3'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.hero.badge'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.hero.name'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.hero.role'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.inquiries.label'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.inquiries.li1'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.inquiries.li2'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.inquiries.li3'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.inquiries.li4'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.inquiries.li5'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard1.h3'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard1.label'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard1.p'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard1.read'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard2.h3'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard2.label'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard2.p'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard2.read'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard3.h3'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard3.label'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard3.p'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.kcard3.read'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.lead'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.prep.h3'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.prep.intro'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.prep.li1'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.prep.li2'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.prep.li3'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.prep.li4'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.prep.li5'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.prep.li6'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.research.eyebrow'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.research.h2'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.research.p'  — used in: /contact-ryan.html
-- MISSING KEY  'ryan.title'  — used in: /contact-ryan.html
 - MISSING KEY  'vid.breadcrumb.current'  — used in: /videos.html
 - MISSING KEY  'vid.breadcrumb.home'  — used in: /videos.html
 - MISSING KEY  'vid.card.company.h3'  — used in: /videos.html
@@ -236,20 +335,8 @@
 - MISSING KEY  'wayfinding.link.quote'  — used in: /contact.html, /request-quote.html
 - MISSING KEY  'wayfinding.link.videos'  — used in: /contact.html, /request-quote.html
 - MISSING KEY  'wayfinding.p'  — used in: /contact.html, /request-quote.html
-- MISSING KEY  'why.aftersales.eyebrow'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.h2'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.item1.h3'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.item1.p'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.item2.h3'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.item2.p'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.item3.h3'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.item3.p'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.item4.h3'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.item4.p'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.aftersales.lead'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.auto.eyebrow'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.auto.h2'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.auto.lead'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.auto.stat1.label'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.auto.stat1.p'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.auto.stat2.label'  — used in: /why-choose-sbkj.html
@@ -331,30 +418,24 @@
 - MISSING KEY  'why.decision.item5.p'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.decision.item6.h3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.decision.item6.p'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.decision.lead'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.eyebrow'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.h2'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item1.h3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item1.li1'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.eng.item1.li2'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item1.li3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item1.p'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item2.h3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item2.li1'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.eng.item2.li2'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item2.li3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item2.p'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item3.h3'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.eng.item3.li1'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item3.li2'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item3.li3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item3.p'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item4.h3'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.eng.item4.li1'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item4.li2'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item4.li3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.eng.item4.p'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.eng.lead'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.global.app1'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.global.app10'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.global.app2'  — used in: /why-choose-sbkj.html
@@ -385,7 +466,6 @@
 - MISSING KEY  'why.mfg.eyebrow'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.mfg.h2'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.mfg.p1'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.mfg.p2'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.mfg.p3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.mfg.pillar1.h3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.mfg.pillar1.p'  — used in: /why-choose-sbkj.html
@@ -403,66 +483,11 @@
 - MISSING KEY  'why.stats.years'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.wayfinding.eyebrow'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.wayfinding.h2'  — used in: /why-choose-sbkj.html
-- MISSING KEY  'why.wayfinding.lead'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.wayfinding.link1'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.wayfinding.link2'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.wayfinding.link3'  — used in: /why-choose-sbkj.html
 - MISSING KEY  'why.wayfinding.link4'  — used in: /why-choose-sbkj.html
-- HARDCODED    /about.html  <p>  "About SBKJ"
-- HARDCODED    /about.html  <h1>  "Manufacturer of HVAC Duct Machinery for Industrial Production"
-- HARDCODED    /about.html  <p>  "SBKJ Group is an HVAC duct machinery manufacturer based in the Yangtze River Delta near Shanghai, China. Since 1995, we "
-- HARDCODED    /about.html  <p>  "For industrial HVAC buyers, this means one coordinated team for machine selection, integration, and long-term support."
-- HARDCODED    /about.html  <h2>  "Company Overview"
-- HARDCODED    /about.html  <p>  "SBKJ has served HVAC duct producers for over three decades with equipment designed for stable output and practical works"
-- HARDCODED    /about.html  <p>  "Our export and engineering teams support international delivery, installation planning, and commissioning coordination f"
-- HARDCODED    /about.html  <p>  "Since 1995 · HVAC duct machinery specialization · ISO9001 & CE · global project delivery"
-- HARDCODED    /about.html  <h3>  "Company Overview Video"
-- HARDCODED    /about.html  <p>  "Machinery Categories"
-- HARDCODED    /about.html  ... and 30 more untranslated elements
-- HARDCODED    /factory.html  <p>  "Factory Capability"
-- HARDCODED    /factory.html  <h1>  "A Manufacturing Partner for HVAC Duct Equipment"
-- HARDCODED    /factory.html  <p>  "SBKJ has manufactured HVAC duct machinery since 1995. This page gives a direct overview of how our team builds, assemble"
-- HARDCODED    /factory.html  <p>  "Production Workflow"
-- HARDCODED    /factory.html  <h2>  "How Factory Work Is Organized"
-- HARDCODED    /factory.html  <p>  "Built from real SBKJ factory references, this flow shows how workshop fabrication, assembly, testing, and export prep co"
-- HARDCODED    /factory.html  <h3>  "Manufacturing Workshop"
-- HARDCODED    /factory.html  <p>  "Core machine structures and modules are produced under controlled workshop conditions for repeatable quality."
-- HARDCODED    /factory.html  <h3>  "Machine Assembly"
-- HARDCODED    /factory.html  <p>  "After fabrication, each machine is assembled against the confirmed configuration so controls, forming units, and structu"
-- HARDCODED    /factory.html  ... and 19 more untranslated elements
-- HARDCODED    /index.html  <p>  "Engineering Authority"
-- HARDCODED    /index.html  <h2>  "30+ Years Building Complete Duct Factories"
-- HARDCODED    /index.html  <p>  "Since 1995, SBKJ has focused exclusively on HVAC duct machinery and complete production line planning for factories acro"
-- HARDCODED    /index.html  <h3>  "Complete Production Range"
-- HARDCODED    /index.html  <p>  "Core machines for spiral and rectangular duct production from one manufacturing source, with coordinated specifications "
-- HARDCODED    /index.html  <li>  "9 machine categories, 50+ models in production"
-- HARDCODED    /index.html  <li>  "One technical team across the full line"
-- HARDCODED    /index.html  <li>  "Aligned specifications across connected machines"
-- HARDCODED    /index.html  <h3>  "Turn-Key Factory Design"
-- HARDCODED    /index.html  <p>  "Layout, material flow and utilities are planned before shipment, with commissioning and training support at startup."
-- HARDCODED    /index.html  ... and 82 more untranslated elements
-- HARDCODED    /machines.html  <p>  "SBKJ supplies complete duct machinery solutions, from entry-level workshop configurations to high-throughput production "
-- HARDCODED    /machines.html  <p>  "Start here"
-- HARDCODED    /machines.html  <h2>  "Explore by Category Before Comparing Models"
-- HARDCODED    /machines.html  <p>  "If you are still evaluating options, begin with these category guides to align workflow, output targets, and equipment s"
-- HARDCODED    /machines.html  <h2>  "Explore by Production Group"
-- HARDCODED    /machines.html  <p>  "Each group below is organized for faster machine selection and line planning."
-- HARDCODED    /machines.html  <h3>  "Auto Duct Lines"
-- HARDCODED    /machines.html  <p>  "Integrated systems for rectangular duct panel processing and assembly workflows."
-- HARDCODED    /machines.html  <h4>  "Auto Duct Line SBAL‑V"
-- HARDCODED    /machines.html  <p>  "U-shape automatic line designed for continuous fabrication shifts."
-- HARDCODED    /machines.html  ... and 33 more untranslated elements
-- HARDCODED    /quality.html  <p>  "Quality Control"
-- HARDCODED    /quality.html  <h1>  "Quality Control for Stable Machine Performance"
-- HARDCODED    /quality.html  <p>  "SBKJ has manufactured HVAC duct machinery since 1995. Our quality work is organized from procurement through shipment so"
-- HARDCODED    /quality.html  <p>  "Inspection Stages"
-- HARDCODED    /quality.html  <h2>  "How Quality Is Controlled Through the Build Cycle"
-- HARDCODED    /quality.html  <p>  "Each stage is presented in the current premium format using factual SBKJ process checkpoints from company-owned material"
-- HARDCODED    /quality.html  <h3>  "Incoming Material & Component Inspection"
-- HARDCODED    /quality.html  <p>  "Procurement and in-house production are managed under an ISO 9001 framework. Core materials, critical components, and ke"
-- HARDCODED    /quality.html  <h3>  "Production Process Inspection"
-- HARDCODED    /quality.html  <p>  "Machining, fabrication, and assembly follow defined process steps. In-house tooling and dedicated production lines help "
-- HARDCODED    /quality.html  ... and 30 more untranslated elements
+- HARDCODED    /factory.html  <p>  "Rectangular duct production line — fully configured SBKJ line in operation."
 
 ## Warnings (should fix)
 
