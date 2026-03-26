@@ -1,0 +1,20 @@
+{
+  "plugins": {
+    "superpowers": {
+      "root": ".claude/plugins/superpowers"
+    }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/plugins/superpowers/hooks/session-start",
+            "async": false
+          }
+        ]
+      }
+    ]
+  }
+}
