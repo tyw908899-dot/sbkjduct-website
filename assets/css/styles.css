@@ -4102,7 +4102,23 @@ img {
   .mfg-grid { grid-template-columns: 1fr; }
 }
 
-/* Dual-path CTA */
+/* Simplified CTA actions */
+.cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-note {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+/* Dual-path CTA (legacy) */
 .cta-split {
   display: flex;
   align-items: flex-start;
@@ -5484,6 +5500,37 @@ textarea:focus-visible,
 .machine-selector-card--featured::before {
   background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(91, 154, 196, 0.1), transparent);
   opacity: 1;
+}
+
+/* Image-led selector card variant */
+.machine-selector-card--img {
+  padding-top: 0;
+  gap: 0.6rem;
+}
+
+.machine-selector-img {
+  width: calc(100% + 2 * 1.75rem);
+  margin: -1.75rem -1.75rem 0.75rem;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  flex-shrink: 0;
+}
+
+.machine-selector-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.machine-selector-card--img:hover .machine-selector-img img {
+  transform: scale(1.04);
+}
+
+.machine-selector-card--img .machine-selector-icon {
+  display: none;
 }
 
 .selector-intent {
