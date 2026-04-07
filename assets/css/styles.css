@@ -2752,21 +2752,21 @@ img {
    Wins by source order. All values are original; nothing copied.
    ======================================================================== */
 :root {
-  /* Color tokens — light/mebsa-style */
-  --bg: #ffffff;
-  --bg-elevated: #f5f5f5;
-  --bg-card: #ffffff;
-  --bg-dark: #0a0a0a;
-  --text: #111111;
-  --text-muted: #6a6a6a;
-  --text-dim: #999999;
+  /* Color tokens — mebsa-style pure black */
+  --bg: #000000;
+  --bg-elevated: #1a1a1a;
+  --bg-card: #0a0a0a;
+  --bg-dark: #000000;
+  --text: #ffffff;
+  --text-muted: rgba(255,255,255,0.72);
+  --text-dim: rgba(255,255,255,0.5);
   --text-on-dark: #ffffff;
   --accent: #00ACD6;
-  --accent-hover: #008fb3;
+  --accent-hover: #00c4f0;
   --accent-dim: rgba(0, 172, 214, 0.08);
   --accent-glow: rgba(0, 172, 214, 0.25);
-  --border: rgba(0, 0, 0, 0.12);
-  --border-strong: rgba(0, 0, 0, 0.25);
+  --border: rgba(255, 255, 255, 0.14);
+  --border-strong: rgba(255, 255, 255, 0.32);
   --border-on-dark: rgba(255, 255, 255, 0.18);
 
   /* Type */
@@ -2945,9 +2945,9 @@ body { animation: none !important; }
 .hero-copy h1 {
   font-family: var(--font-head) !important;
   font-weight: 500 !important;
-  font-size: clamp(2.5rem, 5.8vw, 4.75rem) !important;
-  line-height: 1.04 !important;
-  letter-spacing: -0.01em !important;
+  font-size: clamp(2.75rem, 8vw, 7rem) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.015em !important;
   color: #fff !important;
   background: none !important;
   -webkit-text-fill-color: #fff !important;
