@@ -3599,6 +3599,25 @@ a:hover { opacity: 0.85; }
   .shell { padding-inline: 15px !important; }
   .hero { padding-bottom: 4rem !important; }
 }
+/* ---------- v3 countries grid ---------- */
+.countries-section { background: var(--bg) !important; border-top: 1px solid var(--border-on-dark); }
+.countries-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; max-width: 1000px; margin: 0 auto; }
+.country-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid var(--border-on-dark);
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: transparent;
+  transition: border-color .25s ease, color .25s ease, background .25s ease;
+}
+.country-chip:hover { border-color: var(--accent); color: var(--accent); }
+
 /* ---------- v3 insights / news ---------- */
 .insights-section { background: var(--bg) !important; border-top: 1px solid var(--border-on-dark); }
 .insights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
