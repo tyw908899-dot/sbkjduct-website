@@ -1488,52 +1488,53 @@ img {
   margin-bottom: 0;
   padding: 0;
   border-radius: var(--radius-lg);
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.18);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: none;
   overflow: hidden;
+  border-radius: 0;
 }
 
 .product-sidebar .spec-block-compact h3 {
-  font-family: var(--font-head);
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
   margin: 0;
-  padding: 1.15rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  background: linear-gradient(135deg, rgba(0, 229, 255, 0.06), rgba(0, 229, 255, 0.02));
-  border-bottom: 1px solid var(--border);
+  letter-spacing: 0.22em;
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .product-sidebar .spec-table {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   table-layout: fixed;
   width: 100%;
 }
 
 .product-sidebar .spec-table td {
-  padding: 0.72rem 1.25rem;
+  padding: 0.85rem 1.5rem;
   vertical-align: top;
   word-break: break-word;
   overflow-wrap: anywhere;
   hyphens: auto;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .product-sidebar .spec-table td:first-child {
-  width: 40%;
-  color: #94a3b8;
-  font-weight: 500;
+  width: 42%;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
   font-size: 0.82rem;
   letter-spacing: 0.01em;
 }
 
 .product-sidebar .spec-table td:last-child {
-  color: #e2e8f0;
-  font-weight: 600;
-  font-size: 0.88rem;
+  color: #000;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .product-sidebar .spec-table tbody tr:last-child td {
@@ -1541,15 +1542,15 @@ img {
 }
 
 .product-sidebar .spec-table tbody tr:hover td {
-  background: rgba(0, 229, 255, 0.04);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .product-sidebar .spec-table tbody tr:nth-child(even) td {
-  background: rgba(148, 163, 184, 0.025);
+  background: transparent;
 }
 
 .product-sidebar .spec-table tbody tr:nth-child(even):hover td {
-  background: rgba(0, 229, 255, 0.05);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .product-sidebar .btn-primary {
@@ -1558,19 +1559,20 @@ img {
   align-self: start;
   display: block;
   width: 100%;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 700;
-  border-radius: var(--radius);
-  box-shadow: 0 0 35px var(--accent-glow);
-  transition: transform var(--transition), box-shadow var(--transition);
+  padding: 1.1rem 1.5rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  border-radius: 999px !important;
+  box-shadow: none;
+  transition: background .25s ease, color .25s ease;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
 }
 
 .product-sidebar .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 50px var(--accent-glow);
+  transform: none;
+  box-shadow: none;
 }
 
 @media (max-width: 1060px) {
