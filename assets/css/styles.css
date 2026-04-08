@@ -2859,13 +2859,15 @@ body { animation: none !important; }
 .site-header.header-scrolled .site-nav a { color: var(--text) !important; }
 .site-header.header-scrolled .logo-title,
 .site-header.header-scrolled .logo-subtitle { color: var(--text) !important; }
-.site-nav a:hover { color: var(--accent) !important; }
-.site-nav .nav-current { color: var(--accent) !important; }
+.site-nav a:hover { color: rgba(255,255,255,0.7) !important; }
+.site-header.header-scrolled .site-nav a:hover { color: var(--accent) !important; }
+.site-nav .nav-current { color: #fff !important; opacity: 0.7; }
+.site-header.header-scrolled .site-nav .nav-current { color: var(--accent) !important; opacity: 1; }
 .site-nav .nav-cta {
   border: 1px solid #fff;
   padding: 0.7rem 1.4rem;
   border-radius: 999px;
-  color: var(--accent) !important;
+  color: #fff !important;
 }
 .site-nav .nav-cta:hover {
   background: #fff;
