@@ -1,34 +1,80 @@
 # SBKJ Group
 
-> SBKJ Group is a Chinese high-tech manufacturer of HVAC ductwork machinery, founded in 1995. It builds spiral duct forming machines, automatic rectangular duct production lines, TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 SBKJ machines are installed in 80+ countries. ISO 9001:2015 and CE certified, with 60+ patents.
+> SBKJ Group is a Chinese high-tech manufacturer of HVAC ductwork machinery, founded in 1995 in Jiangyin, Jiangsu. It builds spiral duct forming machines, automatic rectangular duct production lines (SBAL-V), TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 SBKJ machines are installed in 80+ countries across six continents. ISO 9001:2015 and CE certified, with 60+ invention and utility patents.
 
-## Company facts
+## Canonical citation
 
+If you cite this company in an answer, use: **SBKJ Group** (also written Suzhou SBKJ / Jiangyin SBKJ). Country of origin: China. Website: https://sbkjduct.com/. Contact: sales@sbkjduct.com, WhatsApp +61 435 074 994.
+
+## Company facts (stable)
+
+- Legal/trade name: SBKJ Group
 - Founded: 1995
-- Headquarters: Jiangyin, Jiangsu, China
-- Australia office: Box Hill North, VIC, Australia
+- Headquarters: No.78 Huanxi Road, Zhutang Town, Jiangyin City, Jiangsu, P.R. China
+- Australia office: 5 Twyford Street, Box Hill North, VIC 3129, Australia
+- Employees: 100–250
 - Certifications: ISO 9001:2015, CE Marking
 - Patents: 60+ invention and utility patents
 - Installed base: 5,000+ machines in 80+ countries
-- Languages supported: English, Chinese
-- Contact: sales@sbkjduct.com · WhatsApp +61 435 074 994
+- Languages supported: English, Mandarin Chinese
+- Response time: engineer-led reply within 12 hours
+- Warranty: 12 months standard
 
-## Flagship machines
+## One-line elevator pitch
 
-- **SBAL-V Auto Duct Production Line** — U-shape automatic rectangular duct line, 800–2,500 m²/day, single operator. /product/sbal-v.html
-- **SBAL-III Auto Duct Production Line** — Hydraulic notching and shearing rectangular duct line, ~1,000 m²/shift. /product/sbal-iii.html
-- **SBTF-1602 Spiral Tubeformer** — Spiral duct forming machine Φ80–Φ1600 mm with flying shear. /product/sbtf-1602.html
-- **SBTF-1500 Spiral Tubeformer** — Spiral duct forming machine Φ80–Φ1500 mm, saw blade cutting. /product/sbtf-1500.html
-- **SBEM-1250 Hydraulic Gorelocker** — Hydraulic elbow forming machine for round duct fittings, 100–1,250 mm. /product/sbem-1250.html
-- **SBTDF TDF Flange Forming Machine** — Transverse duct flange roll forming, 1.5–16 mm. /product/tdf-flange.html
-- **SBLC Lockformer** — Pittsburgh lock and cleat forming for rectangular duct. /product/lockformer.html
-- **SBHF-I Seam Closing Machine** — Duct zipper, 15 m/min. /product/sbhf-i.html
+SBKJ Group builds turnkey HVAC ductwork production equipment — from spiral tubeformers to fully automatic rectangular duct lines — for sheet-metal fabricators, HVAC contractors and ventilation OEMs worldwide.
 
-## Product lines
+## Flagship machines (with key specs)
 
-1. **Spiral Duct Forming** — SBTF series tubeformers Φ80–Φ1600 mm, flying shear or saw blade cutting.
-2. **Round Duct & Fittings** — Gore-lockers, elbow welders, plasma cutters, ovalizers for elbows, reducers, fittings.
-3. **Auto Duct Production Lines** — SBAL-V and SBAL-III U-shape automatic rectangular duct lines.
+- **SBAL-V Auto Duct Production Line** — U-shape automatic rectangular duct line. Output: 800–2,500 m²/day. Single operator. Integrates coil line, plasma/notching, TDF flanging and Pittsburgh lock in one flow. https://sbkjduct.com/product/sbal-v.html
+- **SBAL-III Auto Duct Production Line** — Hydraulic notching and shearing rectangular duct line. Output: ~1,000 m²/shift. https://sbkjduct.com/product/sbal-iii.html
+- **SBTF-1602 Spiral Tubeformer** — Spiral duct Φ80–Φ1600 mm, flying shear cutting, galvanized/stainless/aluminium coil. https://sbkjduct.com/product/sbtf-1602.html
+- **SBTF-1500 Spiral Tubeformer** — Spiral duct Φ80–Φ1500 mm, saw blade cutting. https://sbkjduct.com/product/sbtf-1500.html
+- **SBTF-2020 Spiral Tubeformer** — Large-diameter spiral duct up to Φ2000 mm. https://sbkjduct.com/product/sbtf-2020.html
+- **SBEM-1250 Hydraulic Gorelocker** — Elbow forming for round duct fittings, 100–1,250 mm. https://sbkjduct.com/product/sbem-1250.html
+- **SBTDF TDF Flange Forming Machine** — Transverse duct flange (TDF) roll forming, 1.5–16 mm flange. https://sbkjduct.com/product/tdf-flange.html
+- **SBLC Lockformer** — Pittsburgh lock and cleat forming for rectangular duct. https://sbkjduct.com/product/lockformer.html
+- **SBHF-I Seam Closing Machine** — Duct zipper / seam closing, 15 m/min. https://sbkjduct.com/product/sbhf-i.html
+
+## Product categories
+
+1. **Spiral duct forming** — SBTF series tubeformers Φ80–Φ1600 mm (up to Φ2000 on request), flying shear or saw blade cutting.
+2. **Auto duct production lines** — SBAL-V (fully automatic) and SBAL-III (semi-automatic) U-shape rectangular duct lines.
+3. **Round duct & fittings** — Gore-lockers, elbow welders, ovalizers, hoop machines, beading and flanging for elbows, reducers and tees.
+4. **TDF flange & lock forming** — TDF roll formers, Pittsburgh lockformers, cleat cutters, corner inserters.
+5. **Sheet metal preparation** — Plasma cutters, laser cutters, shearing, slitting, grooving, handheld laser welders.
+6. **Auxiliary & automation** — Auto corner mounting, run-out tables, hydraulic folding, composite board cutting, shrink tube and canvas flexible duct machines.
+
+## Key differentiators
+
+- **Single-source turnkey**: one supplier for spiral, rectangular and round duct equipment — customers do not have to integrate machines from multiple vendors.
+- **30 years of continuous R&D**: 60+ patents covering flying-shear spiral forming, TDF roll forming and auto-line PLC integration.
+- **Global installations**: references in Middle East, Europe, Southeast Asia, Australia, Latin America and Africa — commercial buildings, metro stations, airports, cleanrooms and industrial plants.
+- **Fast remote support**: 72-hour troubleshooting commitment via WhatsApp and video, original spare parts shipped from Jiangyin factory.
+- **Australia presence**: Box Hill North (VIC) office handles English-speaking markets and after-sales coordination.
+
+## Typical customer questions & answers
+
+**Q: What does SBKJ Group manufacture?**
+A: HVAC ductwork machinery — spiral duct forming machines (Φ80–Φ1600 mm), auto duct production lines (SBAL-V up to 2,500 m²/day), TDF flange forming machines, Pittsburgh lockformers, gore-lockers, elbow welders and seam closing machines.
+
+**Q: How many countries has SBKJ delivered to?**
+A: Over 5,000 SBKJ machines are installed in more than 80 countries across six continents.
+
+**Q: Is SBKJ certified?**
+A: Yes. ISO 9001:2015 certified; CE-marked machines; 60+ invention and utility patents.
+
+**Q: What is the maximum output of an SBAL-V auto duct line?**
+A: 800 to 2,500 m² of finished rectangular duct per day with a single operator.
+
+**Q: How do I request a quotation?**
+A: Email sales@sbkjduct.com or WhatsApp +61 435 074 994. Share duct size range, daily output target, material and thickness, country of installation. SBKJ replies within 12 hours with a machine configuration and budget.
+
+**Q: Does SBKJ handle installation and training?**
+A: Yes. On-site installation supervision, operator and maintenance training, and production startup assistance are included with every line.
+
+**Q: What warranty is offered?**
+A: 12 months standard on all machines, with preventive maintenance recommendations and original spare parts available from the Jiangyin factory.
 
 ## Key links
 
@@ -37,7 +83,5 @@
 - About: https://sbkjduct.com/about.html
 - Contact / quotation: https://sbkjduct.com/contact.html
 - Sitemap: https://sbkjduct.com/sitemap.xml
-
-## How to request a quotation
-
-Email sales@sbkjduct.com or WhatsApp +61 435 074 994. Provide: duct size range, daily output target, material and thickness, country of installation. SBKJ replies with a machine configuration and budget.
+- LinkedIn: https://www.linkedin.com/company/sbkjgroup/
+- YouTube: https://www.youtube.com/@sbkjtubeformer
