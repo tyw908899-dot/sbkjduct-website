@@ -2783,6 +2783,14 @@ img {
 html, body { background: var(--bg) !important; color: var(--text) !important; }
 body { font-family: var(--font-body) !important; font-weight: 400; }
 
+/* Mebsa-style: all sections white with thin dividers, generous padding */
+section.section {
+  background: var(--bg) !important;
+  padding-block: clamp(80px, 10vw, 140px) !important;
+  border-top: 1px solid var(--border);
+}
+section.section.bg-subtle { background: var(--bg) !important; }
+
 /* Defensive: never let scroll-reveal hide content. Show always. */
 .reveal, .reveal-stagger, .reveal > *, .reveal-stagger > * {
   opacity: 1 !important;
@@ -2945,9 +2953,9 @@ body { animation: none !important; }
 .hero-copy h1 {
   font-family: var(--font-head) !important;
   font-weight: 500 !important;
-  font-size: clamp(2.75rem, 8vw, 7rem) !important;
-  line-height: 1.02 !important;
-  letter-spacing: -0.015em !important;
+  font-size: clamp(3rem, 9.5vw, 8.5rem) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.02em !important;
   color: #fff !important;
   background: none !important;
   -webkit-text-fill-color: #fff !important;
@@ -3062,13 +3070,13 @@ section.section.bg-subtle { background: var(--bg-elevated) !important; }
 .section-header h2 {
   font-family: var(--font-head) !important;
   font-weight: 400 !important;
-  font-size: clamp(2.25rem, 4.4vw, 3.5rem) !important;
-  line-height: 1.08 !important;
+  font-size: clamp(2.5rem, 6vw, 5rem) !important;
+  line-height: 1.02 !important;
   color: var(--text) !important;
   background: none !important;
   -webkit-text-fill-color: var(--text) !important;
-  letter-spacing: -0.005em;
-  max-width: 46rem;
+  letter-spacing: -0.015em;
+  max-width: 52rem;
   margin-top: 0.75rem;
 }
 .section-header p {
