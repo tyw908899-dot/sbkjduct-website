@@ -3822,6 +3822,31 @@ p a:hover { border-bottom-color: var(--accent); }
 }
 .form-field textarea { min-height: 120px !important; resize: vertical; }
 
+/* about: flatten solution/service blocks mebsa-style */
+.solution-block, .service-block {
+  background: transparent !important;
+  border: none !important;
+  border-top: 1px solid var(--border) !important;
+  border-radius: 0 !important;
+  padding: 1.75rem 0 0 !important;
+}
+.solution-block:hover, .solution-highlight:hover { border-color: var(--border) !important; }
+.solution-block h3, .solution-highlight h3, .service-block h3 {
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.9rem !important;
+}
+.solution-block p, .solution-highlight p {
+  font-size: 1rem !important;
+  line-height: 1.65 !important;
+}
+.solution-block ul, .service-block ul {
+  font-size: 0.95rem !important;
+  line-height: 1.7;
+  color: var(--text-muted) !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-video { display: none; }
   .hero { background: #000 url('../images/sbal-v.jpg') center/cover no-repeat !important; }
