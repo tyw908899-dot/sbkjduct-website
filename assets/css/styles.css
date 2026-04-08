@@ -2846,27 +2846,37 @@ body { animation: none !important; }
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
 }
 .site-header-inner { height: 100%; }
-/* Default nav (over dark hero) = white text */
+/* Nav defaults to dark text (for white-top pages) */
 .site-nav a {
-  color: #fff !important;
+  color: var(--text) !important;
   font-size: 0.92rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   transition: color .25s ease;
 }
-/* Scrolled nav (over white page) = dark text */
-.site-header.header-scrolled .site-nav a { color: var(--text) !important; }
-.site-header.header-scrolled .logo-title,
-.site-header.header-scrolled .logo-subtitle { color: var(--text) !important; }
-.site-nav a:hover { color: rgba(255,255,255,0.7) !important; }
-.site-header.header-scrolled .site-nav a:hover { color: var(--accent) !important; }
-.site-nav .nav-current { color: #fff !important; opacity: 0.7; }
-.site-header.header-scrolled .site-nav .nav-current { color: var(--accent) !important; opacity: 1; }
+/* On pages with dark hero, nav is white until scrolled */
+body.has-hero-dark .site-header:not(.header-scrolled) .site-nav a { color: #fff !important; }
+body.has-hero-dark .site-header:not(.header-scrolled) .site-nav .nav-current { color: #fff !important; opacity: 0.7; }
+/* Default logo = dark (for white-top pages) */
+.site-header .logo-title { color: var(--text) !important; }
+.site-header .logo-subtitle { color: var(--text-muted) !important; }
+.site-header .logo-icon { color: var(--accent) !important; }
+/* On pages with dark hero, logo is white until scrolled */
+body.has-hero-dark .site-header:not(.header-scrolled) .logo-title { color: #fff !important; }
+body.has-hero-dark .site-header:not(.header-scrolled) .logo-subtitle { color: rgba(255,255,255,0.65) !important; }
+body.has-hero-dark .site-header:not(.header-scrolled) .logo-icon { color: #fff !important; }
+.site-nav a:hover { color: var(--accent) !important; }
+body.has-hero-dark .site-header:not(.header-scrolled) .site-nav a:hover { color: rgba(255,255,255,0.7) !important; }
+.site-nav .nav-current { color: var(--accent) !important; }
 .site-nav .nav-cta {
-  border: 1px solid #fff;
+  border: 1px solid var(--text);
   padding: 0.7rem 1.4rem;
   border-radius: 999px;
+  color: var(--text) !important;
+}
+body.has-hero-dark .site-header:not(.header-scrolled) .site-nav .nav-cta {
+  border-color: #fff;
   color: #fff !important;
 }
 .site-nav .nav-cta:hover {
