@@ -3264,7 +3264,7 @@ section.section.bg-subtle { background: var(--bg) !important; }
   max-width: 22ch;
   margin-inline: auto;
 }
-.cta-final p { color: var(--text-muted); font-size: 1.05rem; max-width: 38rem; margin-inline: auto; }
+.cta-final p { color: rgba(255,255,255,0.72); font-size: 1.125rem; line-height: 1.65; max-width: 42rem; margin-inline: auto; }
 .cta-final .eyebrow { justify-content: center; }
 
 /* ---------- FOOTER ---------- */
@@ -3282,16 +3282,17 @@ section.section.bg-subtle { background: var(--bg) !important; }
   color: #fff !important;
   margin-bottom: 1.25rem;
 }
+.site-footer p, .site-footer .footer-text { color: rgba(255,255,255,0.72) !important; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
-.site-footer ul li { padding: 0.4rem 0; color: var(--text-muted); }
-.site-footer a { color: var(--text-muted) !important; transition: color .25s ease; }
-.site-footer a:hover { color: var(--accent) !important; }
+.site-footer ul li { padding: 0.4rem 0; color: rgba(255,255,255,0.72); }
+.site-footer a { color: rgba(255,255,255,0.72) !important; transition: color .25s ease; }
+.site-footer a:hover { color: #fff !important; opacity: 1; }
 .footer-bottom {
   margin-top: 60px;
   padding-block: 30px;
   border-top: 1px solid var(--border-on-dark);
   font-size: 0.82rem;
-  color: var(--text-dim);
+  color: rgba(255,255,255,0.5);
 }
 
 /* ---------- LINKS ---------- */
