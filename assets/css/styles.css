@@ -1887,13 +1887,16 @@ img {
 
 .about-grid h2 {
   font-family: var(--font-head);
-  font-weight: 700;
+  font-weight: 500;
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
 }
 
 .about-grid p {
-  font-size: 0.96rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .about-grid p + p {
