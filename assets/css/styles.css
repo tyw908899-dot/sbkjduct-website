@@ -3088,8 +3088,18 @@ section.section.bg-subtle { background: var(--bg-elevated) !important; }
 .stats-band-inner {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 0;
   text-align: center;
+}
+.stats-band-item {
+  padding: 1rem 1.5rem;
+  border-right: 1px solid var(--border);
+}
+.stats-band-item:last-child { border-right: none; }
+@media (max-width: 991px) {
+  .stats-band-item:nth-child(2) { border-right: none; }
+  .stats-band-item:nth-child(1), .stats-band-item:nth-child(2) { border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
+  .stats-band-item:nth-child(3), .stats-band-item:nth-child(4) { padding-top: 2rem; }
 }
 .stats-band-item dt span {
   font-family: var(--font-head) !important;
