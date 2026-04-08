@@ -3212,18 +3212,22 @@ section.section.bg-subtle { background: var(--bg) !important; }
 }
 .cards-grid .card:hover .card-visual img { transform: scale(1.07); }
 .cards-grid .card h3 {
-  font-family: var(--font-body) !important;
-  font-size: 1rem !important;
-  font-weight: 600 !important;
+  font-family: var(--font-head) !important;
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.15 !important;
   color: var(--text) !important;
-  margin: 0 0 .35rem !important;
+  margin: 0 0 .4rem !important;
   text-align: center;
+  letter-spacing: -0.005em;
 }
 .cards-grid .card p {
   margin: 0 !important;
-  color: var(--accent) !important;
+  color: var(--text-muted) !important;
   font-size: 0.82rem !important;
   text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 .cards-grid .card:hover h3 { color: var(--accent) !important; }
 
