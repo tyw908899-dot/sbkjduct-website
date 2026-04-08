@@ -3002,6 +3002,9 @@ body { animation: none !important; }
   box-shadow: none !important;
   animation: none !important;
 }
+/* Eyebrow on dark backgrounds (hero, cta-final) */
+.hero .eyebrow, .cta-final .eyebrow { color: rgba(255,255,255,0.75) !important; }
+.hero .eyebrow::before, .cta-final .eyebrow::before { background: rgba(255,255,255,0.75); }
 
 /* ---------- BUTTONS ---------- */
 .btn {
@@ -3155,11 +3158,13 @@ section.section.bg-subtle { background: var(--bg) !important; }
   margin-bottom: 1.5rem;
 }
 .why-item h3 {
-  font-family: var(--font-body) !important;
-  font-size: 1.05rem !important;
-  font-weight: 600 !important;
+  font-family: var(--font-head) !important;
+  font-size: clamp(1.15rem, 1.6vw, 1.4rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.01em;
   color: var(--text) !important;
-  margin: 0 0 .75rem !important;
+  margin: 0 0 .9rem !important;
 }
 .why-item p {
   color: var(--text-muted) !important;
@@ -3645,10 +3650,11 @@ a:hover { opacity: 0.85; }
 .process-step h3 {
   font-family: var(--font-head);
   font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.15;
+  font-size: clamp(1.5rem, 2.2vw, 1.95rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
   color: var(--text);
-  margin: 0 0 .75rem;
+  margin: 0 0 .9rem;
 }
 .process-step p {
   color: var(--text-muted);
