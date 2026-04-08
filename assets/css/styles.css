@@ -3427,10 +3427,11 @@ a:hover { opacity: 0.85; }
 .case-card h3 {
   font-family: var(--font-head);
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
   color: #fff;
   margin: 0 0 .35rem;
-  line-height: 1.15;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
 }
 .case-card p {
   margin: 0;
@@ -3467,9 +3468,9 @@ a:hover { opacity: 0.85; }
 .logo-cell strong {
   font-family: var(--font-head);
   font-weight: 500;
-  font-size: clamp(1.6rem, 2.4vw, 2.25rem);
+  font-size: clamp(2rem, 3.2vw, 3rem);
   color: var(--text);
-  letter-spacing: 0;
+  letter-spacing: -0.02em;
   line-height: 1;
 }
 .logo-cell span {
@@ -3496,11 +3497,13 @@ a:hover { opacity: 0.85; }
 .faq-item summary {
   list-style: none;
   cursor: pointer;
-  padding: 2rem 0;
-  display: flex; align-items: center; justify-content: space-between;
+  padding: 2.25rem 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 2rem;
   font-family: var(--font-head);
   font-weight: 500;
-  font-size: clamp(1.1rem, 1.6vw, 1.45rem);
+  font-size: clamp(1.25rem, 2vw, 1.85rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
   color: var(--text);
   transition: color .2s ease;
 }
@@ -3732,8 +3735,9 @@ a:hover { opacity: 0.85; }
 .insight-card h3 {
   font-family: var(--font-head);
   font-weight: 500;
-  font-size: 1.45rem;
-  line-height: 1.2;
+  font-size: clamp(1.4rem, 2.1vw, 1.85rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
   color: var(--text);
   margin: 0;
 }
