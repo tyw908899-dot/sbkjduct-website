@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@sbkjgroup" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../assets/css/styles.css?v=6" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=7" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -71,36 +71,36 @@
       </div>
     </article>
     <section class="section">
-      <div class="shell" style="max-width: 900px;">
+      <div class="shell"><div class="content-narrow">
         <h2>How to read this chart</h2>
         <p>Given an airflow requirement from the mechanical schedule, find the row with your CFM, then pick a column by your target velocity. The cell shows the duct diameter that delivers that velocity at that airflow. Typical design velocities for commercial HVAC are 1,000–1,500 FPM for trunks and 700–1,000 FPM for branches.</p>
 
         <h2>Diameter vs CFM vs Velocity — imperial</h2>
-        <table style="width:100%; border-collapse: collapse; margin: 1rem 0; font-size:0.95rem;">
+        <table class="data-table">
           <thead>
             <tr>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">Airflow (CFM)</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">700 FPM</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">1,000 FPM</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">1,500 FPM</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">2,000 FPM</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">2,500 FPM</th>
+              <th>Airflow (CFM)</th>
+              <th>700 FPM</th>
+              <th>1,000 FPM</th>
+              <th>1,500 FPM</th>
+              <th>2,000 FPM</th>
+              <th>2,500 FPM</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td style="padding:0.5rem;">100</td><td style="padding:0.5rem;">5" (125 mm)</td><td style="padding:0.5rem;">4" (100 mm)</td><td style="padding:0.5rem;">4" (100 mm)</td><td style="padding:0.5rem;">3" (80 mm)</td><td style="padding:0.5rem;">3" (80 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">200</td><td style="padding:0.5rem;">7" (180 mm)</td><td style="padding:0.5rem;">6" (150 mm)</td><td style="padding:0.5rem;">5" (125 mm)</td><td style="padding:0.5rem;">4" (100 mm)</td><td style="padding:0.5rem;">4" (100 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">400</td><td style="padding:0.5rem;">10" (250 mm)</td><td style="padding:0.5rem;">8" (200 mm)</td><td style="padding:0.5rem;">7" (180 mm)</td><td style="padding:0.5rem;">6" (150 mm)</td><td style="padding:0.5rem;">5" (125 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">600</td><td style="padding:0.5rem;">12" (300 mm)</td><td style="padding:0.5rem;">10" (250 mm)</td><td style="padding:0.5rem;">8" (200 mm)</td><td style="padding:0.5rem;">7" (180 mm)</td><td style="padding:0.5rem;">6" (150 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">800</td><td style="padding:0.5rem;">14" (355 mm)</td><td style="padding:0.5rem;">12" (300 mm)</td><td style="padding:0.5rem;">10" (250 mm)</td><td style="padding:0.5rem;">8" (200 mm)</td><td style="padding:0.5rem;">7" (180 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">1,000</td><td style="padding:0.5rem;">16" (400 mm)</td><td style="padding:0.5rem;">14" (355 mm)</td><td style="padding:0.5rem;">11" (280 mm)</td><td style="padding:0.5rem;">10" (250 mm)</td><td style="padding:0.5rem;">8" (200 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">1,500</td><td style="padding:0.5rem;">20" (500 mm)</td><td style="padding:0.5rem;">17" (430 mm)</td><td style="padding:0.5rem;">14" (355 mm)</td><td style="padding:0.5rem;">12" (300 mm)</td><td style="padding:0.5rem;">10" (250 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">2,000</td><td style="padding:0.5rem;">23" (585 mm)</td><td style="padding:0.5rem;">19" (480 mm)</td><td style="padding:0.5rem;">16" (400 mm)</td><td style="padding:0.5rem;">14" (355 mm)</td><td style="padding:0.5rem;">12" (300 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">3,000</td><td style="padding:0.5rem;">28" (710 mm)</td><td style="padding:0.5rem;">24" (600 mm)</td><td style="padding:0.5rem;">19" (480 mm)</td><td style="padding:0.5rem;">17" (430 mm)</td><td style="padding:0.5rem;">14" (355 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">5,000</td><td style="padding:0.5rem;">36" (915 mm)</td><td style="padding:0.5rem;">30" (760 mm)</td><td style="padding:0.5rem;">25" (635 mm)</td><td style="padding:0.5rem;">21" (535 mm)</td><td style="padding:0.5rem;">19" (480 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">8,000</td><td style="padding:0.5rem;">46" (1170 mm)</td><td style="padding:0.5rem;">38" (965 mm)</td><td style="padding:0.5rem;">31" (790 mm)</td><td style="padding:0.5rem;">27" (685 mm)</td><td style="padding:0.5rem;">24" (610 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">12,000</td><td style="padding:0.5rem;">56" (1420 mm)</td><td style="padding:0.5rem;">47" (1200 mm)</td><td style="padding:0.5rem;">38" (965 mm)</td><td style="padding:0.5rem;">33" (840 mm)</td><td style="padding:0.5rem;">30" (760 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">20,000</td><td style="padding:0.5rem;">72" (1830 mm)</td><td style="padding:0.5rem;">61" (1550 mm)</td><td style="padding:0.5rem;">50" (1270 mm)</td><td style="padding:0.5rem;">43" (1090 mm)</td><td style="padding:0.5rem;">38" (965 mm)</td></tr>
+            <tr><td>100</td><td>5" (125 mm)</td><td>4" (100 mm)</td><td>4" (100 mm)</td><td>3" (80 mm)</td><td>3" (80 mm)</td></tr>
+            <tr><td>200</td><td>7" (180 mm)</td><td>6" (150 mm)</td><td>5" (125 mm)</td><td>4" (100 mm)</td><td>4" (100 mm)</td></tr>
+            <tr><td>400</td><td>10" (250 mm)</td><td>8" (200 mm)</td><td>7" (180 mm)</td><td>6" (150 mm)</td><td>5" (125 mm)</td></tr>
+            <tr><td>600</td><td>12" (300 mm)</td><td>10" (250 mm)</td><td>8" (200 mm)</td><td>7" (180 mm)</td><td>6" (150 mm)</td></tr>
+            <tr><td>800</td><td>14" (355 mm)</td><td>12" (300 mm)</td><td>10" (250 mm)</td><td>8" (200 mm)</td><td>7" (180 mm)</td></tr>
+            <tr><td>1,000</td><td>16" (400 mm)</td><td>14" (355 mm)</td><td>11" (280 mm)</td><td>10" (250 mm)</td><td>8" (200 mm)</td></tr>
+            <tr><td>1,500</td><td>20" (500 mm)</td><td>17" (430 mm)</td><td>14" (355 mm)</td><td>12" (300 mm)</td><td>10" (250 mm)</td></tr>
+            <tr><td>2,000</td><td>23" (585 mm)</td><td>19" (480 mm)</td><td>16" (400 mm)</td><td>14" (355 mm)</td><td>12" (300 mm)</td></tr>
+            <tr><td>3,000</td><td>28" (710 mm)</td><td>24" (600 mm)</td><td>19" (480 mm)</td><td>17" (430 mm)</td><td>14" (355 mm)</td></tr>
+            <tr><td>5,000</td><td>36" (915 mm)</td><td>30" (760 mm)</td><td>25" (635 mm)</td><td>21" (535 mm)</td><td>19" (480 mm)</td></tr>
+            <tr><td>8,000</td><td>46" (1170 mm)</td><td>38" (965 mm)</td><td>31" (790 mm)</td><td>27" (685 mm)</td><td>24" (610 mm)</td></tr>
+            <tr><td>12,000</td><td>56" (1420 mm)</td><td>47" (1200 mm)</td><td>38" (965 mm)</td><td>33" (840 mm)</td><td>30" (760 mm)</td></tr>
+            <tr><td>20,000</td><td>72" (1830 mm)</td><td>61" (1550 mm)</td><td>50" (1270 mm)</td><td>43" (1090 mm)</td><td>38" (965 mm)</td></tr>
           </tbody>
         </table>
         <p><em>Round diameters to the next manufactured size above the calculated value. SBKJ SBTF-1602 produces standard round diameters Φ80 to Φ1600 mm; SBTF-2020 extends up to Φ2000 mm.</em></p>

@@ -4527,3 +4527,60 @@ body {
   margin-top: 3.5rem;
 }
 
+/* ---------- Batch 8: glossary definition list ---------- */
+.glossary {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.glossary dt {
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+.glossary dd {
+  color: var(--text-muted);
+  margin-left: 0;
+}
+
+/* ---------- Batch 9: product video wrapper ---------- */
+.product-video-wrap video {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ---------- Batch 9: data tables inside insight articles ---------- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0 2rem;
+  font-size: 0.95rem;
+}
+.data-table th,
+.data-table td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+.data-table thead th {
+  font-weight: 600;
+  border-bottom: 1px solid var(--border, rgba(0, 0, 0, 0.2));
+  background: rgba(0, 0, 0, 0.02);
+}
+.data-table tbody tr + tr td {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+.data-table tbody td {
+  color: var(--text-muted);
+}
+.data-table tbody td:first-child {
+  color: var(--text);
+  font-weight: 500;
+}
+@media (max-width: 720px) {
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
