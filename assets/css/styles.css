@@ -309,7 +309,7 @@ img {
   text-decoration: none;
 }
 
-/* SVG geometric mark */
+/* SVG geometric mark (legacy) */
 .logo-icon {
   width: 40px;
   height: 40px;
@@ -328,10 +328,31 @@ img {
   filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.6));
 }
 
+/* Real SBKJ brand mark (metal duct with embossed SBKJ) */
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  mix-blend-mode: multiply;
+  transition: filter var(--transition), transform var(--transition);
+}
+
+.logo:hover .logo-img {
+  transform: translateY(-1px);
+}
+
 /* Footer uses smaller mark */
 .footer-logo .logo-icon {
   width: 32px;
   height: 32px;
+}
+
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  mix-blend-mode: multiply;
 }
 
 .logo-text {
@@ -2855,6 +2876,15 @@ body.has-hero-dark .site-header:not(.header-scrolled) .site-nav .nav-current { c
 body.has-hero-dark .site-header:not(.header-scrolled) .logo-title { color: #fff !important; }
 body.has-hero-dark .site-header:not(.header-scrolled) .logo-subtitle { color: rgba(255,255,255,0.65) !important; }
 body.has-hero-dark .site-header:not(.header-scrolled) .logo-icon { color: #fff !important; }
+/* Real brand mark: on dark hero convert to pure-white silhouette */
+body.has-hero-dark .site-header:not(.header-scrolled) .logo-img {
+  mix-blend-mode: normal;
+  filter: brightness(0) invert(1);
+}
+.site-header.header-scrolled .logo-img {
+  mix-blend-mode: multiply;
+  filter: none;
+}
 .site-nav a:hover { color: var(--accent) !important; }
 body.has-hero-dark .site-header:not(.header-scrolled) .site-nav a:hover { color: rgba(255,255,255,0.7) !important; }
 .site-nav .nav-current { color: var(--accent) !important; }
