@@ -4631,3 +4631,39 @@ body {
   color: var(--text-muted);
   line-height: 1.65;
 }
+
+/* ---------- Batch 12: article byline (E-E-A-T) ---------- */
+.article-byline {
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.5rem;
+  align-items: baseline;
+}
+.article-byline a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  transition: border-color 150ms ease;
+}
+.article-byline a:hover {
+  border-bottom-color: var(--text);
+}
+.article-byline-author {
+  font-weight: 500;
+  color: var(--text);
+}
+.article-byline-sep {
+  opacity: 0.5;
+}
+.article-byline time {
+  color: inherit;
+}
+@media (max-width: 520px) {
+  .article-byline {
+    font-size: 0.825rem;
+  }
+}
