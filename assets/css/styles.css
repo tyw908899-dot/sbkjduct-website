@@ -4548,6 +4548,24 @@ body {
   display: block;
 }
 
+/* ---------- Batch 10: region deep-dive line under country chips ---------- */
+.region-deep-dive {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+.region-deep-dive a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 150ms ease;
+}
+.region-deep-dive a:hover {
+  border-bottom-color: var(--text);
+}
+
 /* ---------- Batch 9: data tables inside insight articles ---------- */
 .data-table {
   width: 100%;
