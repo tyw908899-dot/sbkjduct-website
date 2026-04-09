@@ -1361,6 +1361,56 @@ img {
   color: var(--accent);
 }
 
+/* Batch 17: visible breadcrumb navigation (matches BreadcrumbList JSON-LD) */
+.breadcrumbs-wrap {
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 0;
+  background: var(--bg);
+}
+.breadcrumbs {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
+}
+.breadcrumbs ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+}
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+}
+.breadcrumbs li + li::before {
+  content: "›";
+  margin: 0 0.55rem;
+  color: var(--text-muted);
+  opacity: 0.55;
+}
+.breadcrumbs a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus-visible {
+  color: var(--text);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+.breadcrumbs li[aria-current="page"] span {
+  color: var(--text);
+  font-weight: 500;
+}
+@media (max-width: 520px) {
+  .breadcrumbs { font-size: 0.78rem; }
+  .breadcrumbs li + li::before { margin: 0 0.4rem; }
+}
+
 .product-title {
   font-family: var(--font-head);
   font-size: clamp(2.4rem, 5.5vw, 4.5rem);
