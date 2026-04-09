@@ -4602,3 +4602,32 @@ body {
   }
 }
 
+/* ---------- Batch 11: visible product FAQ block ---------- */
+.product-faq .eyebrow {
+  margin-bottom: 0.5rem;
+}
+.product-faq h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.product-faq-item {
+  padding: 1.1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.product-faq-item:first-of-type {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.product-faq-item:last-of-type {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.product-faq-item h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+.product-faq-item p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
