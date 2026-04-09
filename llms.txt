@@ -89,6 +89,7 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - SBAL-V vs SBAL-III — head-to-head comparison of SBKJ's two flagship rectangular duct lines: https://sbkjduct.com/insights/sbal-v-vs-sbal-iii.html
 - Spiral Duct Sizing Chart — CFM, velocity and friction loss reference tables for Φ100–Φ1500 mm round duct: https://sbkjduct.com/insights/spiral-duct-sizing-chart.html
 - Pittsburgh Lock vs Button-Punch Snaplock — longitudinal seam comparison with gauge range, pressure class and SMACNA sealing guidance: https://sbkjduct.com/insights/pittsburgh-lock-vs-snaplock.html
+- Rectangular Duct Sizing Chart — equal-friction method walkthrough with CFM/velocity tables and round-to-rectangular aspect ratio conversions: https://sbkjduct.com/insights/rectangular-duct-sizing-chart.html
 
 ## Key links
 
