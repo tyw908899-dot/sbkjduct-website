@@ -4426,6 +4426,56 @@ section.section.product-trust {
   font-weight: 500;
 }
 
+/* Batch 18: visible E-E-A-T review badge — pairs with WebPage.lastReviewed in JSON-LD */
+.product-reviewed {
+  margin: 1.75rem 0 1.25rem;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  max-width: 60rem;
+  line-height: 1.55;
+}
+.product-reviewed-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 50%;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 0.65rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.product-reviewed a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.2s ease;
+}
+.product-reviewed a:hover,
+.product-reviewed a:focus-visible {
+  border-bottom-color: var(--text);
+}
+.product-reviewed-sep {
+  opacity: 0.5;
+}
+.product-reviewed time {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 520px) {
+  .product-reviewed { font-size: 0.78rem; padding: 0.7rem 0.9rem; }
+}
+
 /* ---------- Related machines section (contains related-grid on product pages) ---------- */
 .section.related-machines {
   background: var(--bg);
