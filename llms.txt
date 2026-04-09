@@ -94,6 +94,7 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - All machines: https://sbkjduct.com/machines.html
 - About: https://sbkjduct.com/about.html
 - Contact / quotation: https://sbkjduct.com/contact.html
+- FAQ (30 questions): https://sbkjduct.com/faq.html
 - Insights hub: https://sbkjduct.com/insights/
 - Regions hub: https://sbkjduct.com/regions/
 - Sitemap: https://sbkjduct.com/sitemap.xml
