@@ -4435,3 +4435,36 @@ section.section.product-trust {
 }
 .fourohfour-links a:hover { color: var(--accent, var(--text)); }
 
+/* ---------- Batch 5: fix bg-subtle alternating rhythm ----------
+   The v3 override layer (line ~2802 and ~3098) forced
+   section.section.bg-subtle { background: var(--bg) !important } which
+   made the whole page a flat wall of white. Restore the intended subtle
+   tint so key sections (case studies, catalog, stats) visually breathe. */
+section.section.bg-subtle,
+main section.section.bg-subtle {
+  background: var(--bg-elevated, #f6f6f4) !important;
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- Batch 5: readable mobile buttons ----------
+   The Mebsa-style uppercase button sits at 0.74rem (~11.8px) with 2.6rem
+   horizontal padding. That reads on a 1440px monitor but shrinks to
+   unreadable on a 375px phone with two stacked CTAs. Bump size, tighten
+   horizontal padding, and guarantee a single-line fit. */
+@media (max-width: 640px) {
+  .btn {
+    font-size: 0.82rem !important;
+    padding: 1.1rem 1.6rem !important;
+    letter-spacing: 0.16em;
+  }
+  .hero .btn,
+  .cta-final .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-cta,
+  .cta-final .cta-row {
+    gap: 0.9rem;
+  }
+}
+
