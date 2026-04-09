@@ -4257,6 +4257,67 @@ body.has-hero-dark .site-header:not(.header-scrolled) button:focus-visible {
 @media (max-width: 991px) { .trust-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .trust-grid { grid-template-columns: 1fr; } }
 
+/* ---------- Related guides aside (end of insight articles) ---------- */
+.related-guides {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding-top: 2.25rem;
+}
+.related-guides .eyebrow {
+  margin-bottom: 1rem;
+}
+.related-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.25rem 2rem;
+}
+@media (max-width: 640px) {
+  .related-links { grid-template-columns: 1fr; }
+}
+.related-links li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 0;
+}
+.related-links li:last-child,
+.related-links li:nth-last-child(2) {
+  border-bottom: none;
+}
+@media (max-width: 640px) {
+  .related-links li:nth-last-child(2) { border-bottom: 1px solid var(--border); }
+}
+.related-links a {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.45;
+  font-weight: 500;
+  transition: color .2s ease;
+  border-bottom: none !important;
+}
+.related-links a::after {
+  content: " →";
+  opacity: 0.4;
+  transition: transform .25s ease, opacity .25s ease;
+  display: inline-block;
+}
+.related-links a:hover {
+  color: var(--accent);
+}
+.related-links a:hover::after {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+/* ---------- Inline CTA paragraph (used at end of article body) ---------- */
+.cta-inline {
+  margin: 3rem 0 2rem;
+  text-align: left;
+}
+
 /* ---------- 12-hour promise callout (reusable) ---------- */
 .promise-callout {
   border: 1px solid var(--text);
@@ -4284,5 +4345,51 @@ body.has-hero-dark .site-header:not(.header-scrolled) button:focus-visible {
 .promise-callout .btn { margin: 0; }
 @media (max-width: 720px) {
   .promise-callout { grid-template-columns: 1fr; gap: 1rem; padding: 1.5rem; }
+}
+
+/* ---------- Section title used on product trust / related sections ---------- */
+.section-title {
+  font-family: var(--font-head, var(--font-body));
+  font-weight: 500;
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0.5rem 0 0;
+  color: var(--text);
+}
+
+/* ---------- Product-trust section (light background, above related) ---------- */
+/* Uses !important to beat the v3-override `section.section { background: var(--bg) !important }` rule. */
+section.section.product-trust {
+  background: var(--bg-elevated, #f6f6f4) !important;
+  border-top: 1px solid var(--border);
+}
+.product-trust-intro {
+  margin-top: 2.25rem;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 60rem;
+}
+.product-trust-intro strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ---------- Related machines section (contains related-grid on product pages) ---------- */
+.section.related-machines {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- Trust label span (used in .trust-grid li) ---------- */
+.trust-grid .trust-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: block;
+  margin-top: 0.25rem;
 }
 
