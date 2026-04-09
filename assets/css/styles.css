@@ -4439,11 +4439,26 @@ section.section.product-trust {
    The v3 override layer (line ~2802 and ~3098) forced
    section.section.bg-subtle { background: var(--bg) !important } which
    made the whole page a flat wall of white. Restore the intended subtle
-   tint so key sections (case studies, catalog, stats) visually breathe. */
+   tint so key sections (case studies, catalog, stats) visually breathe.
+   Also covers non-.section heroes that opt into the subtle tint. */
 section.section.bg-subtle,
-main section.section.bg-subtle {
+main section.section.bg-subtle,
+main section.bg-subtle,
+section.bg-subtle,
+main article.section.bg-subtle,
+article.section.bg-subtle {
   background: var(--bg-elevated, #f6f6f4) !important;
   border-top: 1px solid var(--border);
+}
+/* hero variants don't want a top border (nothing above them) */
+.hero.bg-subtle,
+.machines-hero.bg-subtle,
+.product-hero.bg-subtle,
+.about-hero.bg-subtle,
+.contact-hero.bg-subtle,
+.region-hero.bg-subtle,
+.insight-hero.bg-subtle {
+  border-top: none;
 }
 
 /* ---------- Batch 5: readable mobile buttons ----------
@@ -4465,6 +4480,23 @@ main section.section.bg-subtle {
   .hero-cta,
   .cta-final .cta-row {
     gap: 0.9rem;
+  }
+}
+
+/* ---------- Batch 7: kill horizontal scroll on mobile ----------
+   The off-canvas nav drawer and language dropdown sit at left:100%,
+   which extends the document width beyond the viewport on phones.
+   Clip horizontal overflow at the root so stray drawers can't cause
+   horizontal scroll while everything else still scrolls naturally. */
+html,
+body {
+  overflow-x: clip;
+}
+/* Safari < 16 fallback (no clip support) */
+@supports not (overflow-x: clip) {
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
 
