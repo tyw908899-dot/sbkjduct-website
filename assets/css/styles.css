@@ -4393,3 +4393,45 @@ section.section.product-trust {
   margin-top: 0.25rem;
 }
 
+/* ---------- Contact promises (row of checks under contact page hero) ---------- */
+.contact-promises {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ---------- Quote submission banner ---------- */
+.quote-sent-banner {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--accent, var(--text));
+  color: var(--accent, var(--text));
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- 404 fallback links ---------- */
+.fourohfour-links {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  font-size: 1.05rem;
+  line-height: 2;
+}
+.fourohfour-links li { border-bottom: 1px solid var(--border); padding: 0.5rem 0; }
+.fourohfour-links li:last-child { border-bottom: none; }
+.fourohfour-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+.fourohfour-links a:hover { color: var(--accent, var(--text)); }
+

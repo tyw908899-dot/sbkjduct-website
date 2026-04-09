@@ -74,18 +74,18 @@
         <p class="page-lead" data-i18n="contact.lead">
           Share your production requirements and we will propose a suitable machine configuration, line layout and investment budget.
         </p>
-        <ul class="contact-promises" style="list-style:none;padding:0;margin:1.5rem 0 0;display:flex;flex-wrap:wrap;gap:1rem 2rem;font-size:0.85rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted)">
-          <li>✓ Reply within 12 hours</li>
-          <li>✓ Engineer-led quotation</li>
-          <li>✓ Layout drawing included</li>
-          <li>✓ NDA on request</li>
+        <ul class="contact-promises">
+          <li>&#10003; Reply within 12 hours</li>
+          <li>&#10003; Engineer-led quotation</li>
+          <li>&#10003; Layout drawing included</li>
+          <li>&#10003; NDA on request</li>
         </ul>
-        <div id="quoteSent" style="display:none;margin-top:1.5rem;padding:1rem 1.25rem;border:1px solid var(--accent);color:var(--accent);font-family:var(--font-body);font-size:0.9rem;letter-spacing:0.05em">
-          ✓ Thank you. Your inquiry has been sent — an SBKJ engineer will reply within 12 hours.
+        <div id="quoteSent" class="quote-sent-banner" hidden>
+          &#10003; Thank you. Your inquiry has been sent &mdash; an SBKJ engineer will reply within 12 hours.
         </div>
         <script>
           if (location.search.indexOf('sent=1') !== -1) {
-            var b = document.getElementById('quoteSent'); if (b) b.style.display = 'block';
+            var b = document.getElementById('quoteSent'); if (b) b.hidden = false;
           }
         </script>
       </div>
