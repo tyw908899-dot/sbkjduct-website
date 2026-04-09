@@ -14,8 +14,6 @@
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:site" content="@sbkjgroup" />
   <meta name="twitter:creator" content="@sbkjgroup" />
-  <meta name="revisit-after" content="7 days" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -41,6 +39,7 @@
   </script>
 </head>
 <body class="site-body">
+  <a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
     <div class="shell">
       <div class="site-header-inner">
@@ -51,10 +50,10 @@
             <span class="logo-subtitle">Group</span>
           </span>
         </a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
           <span></span><span></span><span></span>
         </button>
-        <nav class="site-nav" aria-label="Primary">
+        <nav id="primaryNav" class="site-nav" aria-label="Primary">
           <a href="../index.html" data-i18n="nav.home">Home</a>
           <a href="../machines.html" data-i18n="nav.machines">Machines</a>
           <a href="../insights/" data-i18n="nav.insights">Insights</a>
@@ -65,7 +64,7 @@
     </div>
   </header>
 
-  <main class="product-page">
+  <main id="main" class="product-page">
     <section class="section product-hero">
       <div class="shell">
         <a href="../machines.html" class="back-link" data-i18n="product.back">← All machines</a>
@@ -113,7 +112,7 @@
               </tbody>
             </table>
           </div>
-          <a href="../contact.html" class="btn btn-primary btn-full-width" data-i18n="product.quote">Request a quote</a>
+          <a href="../contact.html" class="btn btn-primary btn-full-width" data-i18n="product.quote">Get a quotation in 12 hours</a>
         </aside>
       </div>
     </section>
