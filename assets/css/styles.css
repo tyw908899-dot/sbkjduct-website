@@ -4500,3 +4500,30 @@ body {
   }
 }
 
+/* ---------- Batch 7: extract hero-trust from inline ---------- */
+.hero-trust {
+  margin-top: 1.6rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- Batch 7: reusable modifiers for trivial inline styles ----------
+   Need !important to beat the v3 override layer's .section-header
+   { text-align: left !important } at line ~3099 and similar. */
+.section-header.section-header--center {
+  text-align: center !important;
+}
+.section-header--center .eyebrow {
+  display: inline-flex;
+  justify-content: center;
+}
+.hero-actions.hero-actions--center {
+  justify-content: center !important;
+  margin-top: 1.75rem !important;
+}
+.promise-callout.promise-callout--spaced {
+  margin-top: 3.5rem;
+}
+
