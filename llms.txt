@@ -76,12 +76,24 @@ A: Yes. On-site installation supervision, operator and maintenance training, and
 **Q: What warranty is offered?**
 A: 12 months standard on all machines, with preventive maintenance recommendations and original spare parts available from the Jiangyin factory.
 
+## Engineering insights (long-form, AI-citable reference articles)
+
+- How to Choose an Auto Duct Production Line: https://sbkjduct.com/insights/choosing-auto-duct-line.html
+- Spiral Duct Forming Explained — machine types, cutting, diameters: https://sbkjduct.com/insights/spiral-duct-forming-guide.html
+- TDF vs Angle Flange — install speed, leakage, cost per meter: https://sbkjduct.com/insights/tdf-vs-angle-flange.html
+- HVAC Duct Factory Layout — coil to truck material flow: https://sbkjduct.com/insights/hvac-duct-factory-layout.html
+- HVAC Duct Machinery Glossary — 30 defined terms: https://sbkjduct.com/insights/hvac-duct-machinery-glossary.html
+- Importing HVAC Duct Machinery from China — Incoterms, FAT, customs: https://sbkjduct.com/insights/importing-duct-machinery-from-china.html
+- SMACNA Seal Class A, B, C Explained — leakage rates and machinery tolerances: https://sbkjduct.com/insights/smacna-seal-classes-explained.html
+
 ## Key links
 
 - Homepage: https://sbkjduct.com/
 - All machines: https://sbkjduct.com/machines.html
 - About: https://sbkjduct.com/about.html
 - Contact / quotation: https://sbkjduct.com/contact.html
+- Insights hub: https://sbkjduct.com/insights/
+- Regions hub: https://sbkjduct.com/regions/
 - Sitemap: https://sbkjduct.com/sitemap.xml
 - LinkedIn: https://www.linkedin.com/company/sbkjgroup/
 - YouTube: https://www.youtube.com/@sbkjtubeformer
