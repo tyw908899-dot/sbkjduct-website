@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#000000" />
   <title>HVAC Duct Factory Layout — Floor Plan, Utilities & Material Flow | SBKJ Group</title>
-  <meta name="description" content="How to lay out an HVAC duct factory: coil storage, line zone, run-out tables, TDF and lockforming stations, utilities and material flow. A practical checklist from SBKJ Group engineers." />
+  <meta name="description" content="How to lay out an HVAC duct factory: bay sizing, coil store, line flow, crane reach and the upstream/downstream stations that matter most." />
   <link rel="canonical" href="https://sbkjduct.com/insights/hvac-duct-factory-layout.html" />
   <link rel="alternate" hreflang="en" href="https://sbkjduct.com/insights/hvac-duct-factory-layout.html" />
   <link rel="alternate" hreflang="x-default" href="https://sbkjduct.com/insights/hvac-duct-factory-layout.html" />
@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@sbkjgroup" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../assets/css/styles.css?v=13" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=15" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"Organization","@id":"https://sbkjduct.com/#author-engineering","name":"SBKJ Engineering Team","url":"https://sbkjduct.com/about.html","description":"SBKJ Group senior engineers with 30+ years of combined experience in HVAC ductwork machinery design, commissioning and field service across 80+ countries.","parentOrganization":{"@id":"https://sbkjduct.com/#org"},"knowsAbout":["HVAC duct machinery","Spiral tubeformer","TDF flange","Auto duct production line","SMACNA","AS/NZS 4254","EN 1505","EN 1506"]},
@@ -33,7 +33,14 @@
       {"@type":"ListItem","position":2,"name":"Insights","item":"https://sbkjduct.com/insights/"},
       {"@type":"ListItem","position":3,"name":"HVAC Duct Factory Layout","item":"https://sbkjduct.com/insights/hvac-duct-factory-layout.html"}
     ]},
-    {"@type":"TechArticle","headline":"HVAC Duct Factory Layout — Floor Plan, Utilities & Material Flow","author":{"@id":"https://sbkjduct.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"SBKJ Group QA & Engineering","url":"https://sbkjduct.com/about.html","description":"SBKJ Group quality assurance and engineering team — every published guide is reviewed by senior engineers before publication and re-validated on each update."},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-04-09","dateModified":"2026-04-09","image":"https://sbkjduct.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/hvac-duct-factory-layout.html","inLanguage":"en","about":[{"@type":"Thing","name":"HVAC factory layout"},{"@type":"Thing","name":"Workshop planning"},{"@type":"Thing","name":"Material flow"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}}
+    {"@type":"TechArticle","headline":"HVAC Duct Factory Layout — Floor Plan, Utilities & Material Flow","author":{"@id":"https://sbkjduct.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"SBKJ Group QA & Engineering","url":"https://sbkjduct.com/about.html","description":"SBKJ Group quality assurance and engineering team — every published guide is reviewed by senior engineers before publication and re-validated on each update."},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-04-09","dateModified":"2026-04-09","image":"https://sbkjduct.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/hvac-duct-factory-layout.html","inLanguage":"en","about":[{"@type":"Thing","name":"HVAC factory layout"},{"@type":"Thing","name":"Workshop planning"},{"@type":"Thing","name":"Material flow"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"How much floor area does an SBAL-V really need?","acceptedAnswer":{"@type":"Answer","text":"The SBAL-V machine itself is roughly 28 m long by 4 m wide. SBKJ recommends a 30 × 8 m clear envelope to allow 1.5 m maintenance access on both long sides plus a small operator station at the loading end. A 4.5 m clear ceiling is the minimum for safe coil loading via overhead crane."}},
+      {"@type":"Question","name":"Can I install an SBAL line in an existing workshop?","acceptedAnswer":{"@type":"Answer","text":"Yes — the majority of SBAL installations worldwide are retrofits into existing sheet-metal workshops. The key constraints are floor flatness (no more than 5 mm/m), a 4.5 m clear ceiling for coil handling, and access to a 380 V three-phase supply within 20 m of the PLC cabinet. SBKJ field engineers will visit and survey before commissioning."}},
+      {"@type":"Question","name":"How much electricity does an SBAL-V draw?","acceptedAnswer":{"@type":"Answer","text":"SBAL-V has roughly 40 kW of installed power but only draws about 25 kW during normal forming, depending on material thickness and seam type. Plan for an 80 kW main supply to comfortably cover the SBAL-V plus a spiral line, a plasma cutter and lighting on the same panel."}},
+      {"@type":"Question","name":"What is the right ratio of operators to machines?","acceptedAnswer":{"@type":"Answer","text":"SBKJ recommends two operators per SBAL or SBTF line — one at the loading end, one at the run-out — plus shared support staff for fittings, packing and quality. A 600 m²/day workshop typically runs with 6–7 people per shift across all stations."}},
+      {"@type":"Question","name":"How does layout affect long-term safety?","acceptedAnswer":{"@type":"Answer","text":"The single biggest safety driver is keeping forklifts out of the forming area. Plan a dedicated logistics aisle along one wall, mark it with floor lines, and use it for all coil and finished-duct movement. Combined with proper guarding on the forming heads and an emergency stop network across the line, this is enough to satisfy EN ISO 13849 category 3 expectations on most CE-marked SBKJ machines."}}
+    ]}
   ]}
   </script>
 </head>
@@ -45,17 +52,17 @@
         <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async"><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
         <nav id="primaryNav" class="site-nav" aria-label="Primary">
-          <a href="../index.html">Home</a>
-          <a href="../machines.html">Machines</a>
-          <a href="../insights/">Insights</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html" class="nav-cta">Contact</a>
+          <a href="../index.html" data-i18n="nav.home">Home</a>
+          <a href="../machines.html" data-i18n="nav.machines">Machines</a>
+          <a href="../insights/" data-i18n="nav.insights">Insights</a>
+          <a href="../about.html" data-i18n="nav.about">About</a>
+          <a href="../contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
         </nav>
       </div>
     </div>
   </header>
   <main id="main">
-    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>HVAC Duct Factory Layout</span></li></ol></nav></div></nav>
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html" data-i18n="nav.home">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>HVAC Duct Factory Layout</span></li></ol></nav></div></nav>
     <article class="section page-hero bg-subtle">
       <div class="shell">
         <p class="eyebrow">Insights · Factory planning</p>
@@ -110,6 +117,53 @@
           <li>Utilities (air, power) trenched after the line is installed instead of before</li>
         </ol>
 
+        <h2>Three reference layouts by daily output</h2>
+        <p>The right footprint scales with target throughput. The three reference layouts below are based on real SBKJ customer workshops in Asia, the Middle East and Australia. Use them as a starting point for your own scoping — actual dimensions depend on column grid, crane capacity and the duct mix you intend to fabricate.</p>
+
+        <h3>Small workshop — 200&nbsp;m²/day, single line</h3>
+        <p>Suitable for HVAC contractors moving from purely manual fabrication to a first auto duct line. Total footprint roughly <strong>600&nbsp;m²</strong> covered area. Layout sequence: coil rack at the north end, single SBAL‑III line running east‑west, run‑out table, hand‑finishing station, and a small fittings bay sharing utilities with the main line. One overhead crane covers coil and finished duct movement. Two operators run the line, one tends fittings.</p>
+
+        <h3>Mid‑sized factory — 600&nbsp;m²/day, dual platform</h3>
+        <p>Suitable for established sheet‑metal fabricators or HVAC OEMs serving regional projects. Total footprint roughly <strong>1,400&nbsp;m²</strong> covered area. Layout sequence: dedicated coil bay (8 weeks of stock) at one end with overhead crane, SBAL‑V rectangular line and SBTF‑1500 spiral line running parallel, shared run‑out and packing zone, fittings cell at the side. Independent electrical sub‑panels per line. Two operators per line plus a packing crew.</p>
+
+        <h3>Large factory — 1,200&nbsp;m²/day, multi‑line cell</h3>
+        <p>Suitable for major HVAC manufacturers, airport and metro contractors and turnkey duct suppliers. Total footprint <strong>2,500&nbsp;m²+</strong> covered area. Layout sequence: rail‑served coil yard, two SBAL‑V lines plus one RDL‑II for S‑cleat work and one SBTF‑1500 spiral line, dedicated fittings cell with two plasma cutters and two SBEM‑1250 gore‑lockers, internal logistics aisle running the full length of the building, packing and shipping zone with truck dock. Two overhead cranes.</p>
+
+        <h2>Worked example: a 600&nbsp;m²/day SBAL‑V workshop</h2>
+        <p>Here is a fully scoped example for a typical mid‑sized fabricator. We use this template when SBKJ engineers reply to enquiries with a layout sketch.</p>
+        <ul>
+          <li><strong>Building</strong> — 1,400&nbsp;m² covered area, 12 m bay width, 7 m clear ceiling, level concrete floor (6&nbsp;kN/m² loading)</li>
+          <li><strong>Coil bay</strong> — 200&nbsp;m² with 5‑tonne overhead crane, 8 weeks of stock at peak (~30 coils)</li>
+          <li><strong>Line zone</strong> — SBAL‑V line on a 30 × 8 m footprint, with 1.5 m maintenance clearance both sides; SBTF‑1500 spiral line in a parallel 12 × 4 m footprint</li>
+          <li><strong>Run‑out</strong> — 6 m run‑out table off SBAL‑V into a 30&nbsp;m² staging buffer</li>
+          <li><strong>Fittings cell</strong> — 80&nbsp;m² with one plasma cutter, one SBEM‑1250 gore‑locker, hand bench and rivet station</li>
+          <li><strong>Utilities</strong> — 380&nbsp;V 3‑phase 80&nbsp;kW main panel, 7.5&nbsp;kW screw compressor with 500 L receiver and inline dryer, 500 lux LED lighting at every forming head</li>
+          <li><strong>Crew</strong> — 2 operators on SBAL‑V, 2 operators on SBTF, 2 fittings hands, 1 packing &amp; loading lead</li>
+          <li><strong>Daily output target</strong> — 600&nbsp;m² rectangular + 200&nbsp;m round per single shift</li>
+        </ul>
+
+        <h2 data-i18n="common.faqheading">Frequently asked questions</h2>
+        <details class="faq-item">
+          <summary>How much floor area does an SBAL‑V really need?</summary>
+          <p>The SBAL‑V machine itself is roughly 28 m long by 4 m wide. SBKJ recommends a 30 × 8 m clear envelope to allow 1.5 m maintenance access on both long sides plus a small operator station at the loading end. A 4.5 m clear ceiling is the minimum for safe coil loading via overhead crane.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I install an SBAL line in an existing workshop?</summary>
+          <p>Yes — the majority of SBAL installations worldwide are retrofits into existing sheet‑metal workshops. The key constraints are floor flatness (no more than 5&nbsp;mm/m), a 4.5 m clear ceiling for coil handling, and access to a 380&nbsp;V three‑phase supply within 20 m of the PLC cabinet. SBKJ field engineers will visit and survey before commissioning.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How much electricity does an SBAL‑V draw?</summary>
+          <p>SBAL‑V has roughly 40&nbsp;kW of installed power but only draws about 25&nbsp;kW during normal forming, depending on material thickness and seam type. Plan for an 80&nbsp;kW main supply to comfortably cover the SBAL‑V plus a spiral line, a plasma cutter and lighting on the same panel.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What is the right ratio of operators to machines?</summary>
+          <p>SBKJ recommends two operators per SBAL or SBTF line — one at the loading end, one at the run‑out — plus shared support staff for fittings, packing and quality. A 600&nbsp;m²/day workshop typically runs with 6–7 people per shift across all stations.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How does layout affect long‑term safety?</summary>
+          <p>The single biggest safety driver is keeping forklifts out of the forming area. Plan a dedicated logistics aisle along one wall, mark it with floor lines, and use it for all coil and finished‑duct movement. Combined with proper guarding on the forming heads and an emergency stop network across the line, this is enough to satisfy EN ISO 13849 category 3 expectations on most CE‑marked SBKJ machines.</p>
+        </details>
+
         <p class="cta-inline"><a class="btn btn-primary" href="../contact.html">Ask SBKJ for a 3D layout drawing →</a></p>
 
         <aside class="related-guides">
@@ -139,7 +193,7 @@
   </main>
   <footer class="site-footer">
     <div class="shell">
-      <p>© SBKJ Group · <a href="../index.html">Home</a> · <a href="../machines.html">Machines</a> · <a href="../contact.html">Contact</a></p>
+      <p>© SBKJ Group · <a href="../index.html" data-i18n="nav.home">Home</a> · <a href="../machines.html" data-i18n="nav.machines">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-sbkj.html" data-i18n="nav.why">Why SBKJ</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../industries/" data-i18n="nav.industries">Industries</a> · <a href="../contact.html" data-i18n="nav.contact">Contact</a></p>
     </div>
   </footer>
   <script src="../assets/js/main.js?v=4"></script>
