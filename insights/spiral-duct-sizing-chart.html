@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#000000" />
   <title>Spiral Duct Sizing Chart — Diameter vs CFM vs Velocity | SBKJ Group</title>
-  <meta name="description" content="Complete spiral duct sizing reference: airflow (CFM) vs diameter vs velocity (FPM) with friction loss guidance. A practical chart for HVAC designers selecting round duct sizes from Φ100 mm to Φ1600 mm." />
+  <meta name="description" content="Spiral HVAC duct sizing chart: airflow vs velocity, pressure loss, gauge selection and recommended diameters for common duct applications." />
   <link rel="canonical" href="https://sbkjduct.com/insights/spiral-duct-sizing-chart.html" />
   <link rel="alternate" hreflang="en" href="https://sbkjduct.com/insights/spiral-duct-sizing-chart.html" />
   <link rel="alternate" hreflang="x-default" href="https://sbkjduct.com/insights/spiral-duct-sizing-chart.html" />
@@ -24,18 +24,16 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@sbkjgroup" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=16" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://sbkjduct.com/#author-engineering","name":"SBKJ Engineering Team","url":"https://sbkjduct.com/about.html","description":"SBKJ Group senior engineers with 30+ years of combined experience in HVAC ductwork machinery design, commissioning and field service across 80+ countries.","parentOrganization":{"@id":"https://sbkjduct.com/#org"},"knowsAbout":["HVAC duct machinery","Spiral tubeformer","TDF flange","Auto duct production line","SMACNA","AS/NZS 4254","EN 1505","EN 1506"]},
     {"@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://sbkjduct.com/"},
       {"@type":"ListItem","position":2,"name":"Insights","item":"https://sbkjduct.com/insights/"},
       {"@type":"ListItem","position":3,"name":"Spiral Duct Sizing Chart","item":"https://sbkjduct.com/insights/spiral-duct-sizing-chart.html"}
     ]},
-    {"@type":"TechArticle","headline":"Spiral Duct Sizing Chart — Diameter vs CFM vs Velocity","description":"Reference chart for sizing round spiral HVAC duct — diameter, airflow in CFM, velocity in FPM and friction loss guidance.","author":{"@id":"https://sbkjduct.com/#author-engineering"},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-04-09","dateModified":"2026-04-09","image":"https://sbkjduct.com/assets/images/sbtf-1602.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/spiral-duct-sizing-chart.html","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"HVAC Design","about":[{"@type":"Thing","name":"Duct sizing"},{"@type":"Thing","name":"Round spiral duct"},{"@type":"Thing","name":"HVAC airflow"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
+    {"@type":"TechArticle","headline":"Spiral Duct Sizing Chart — Diameter vs CFM vs Velocity","description":"Reference chart for sizing round spiral HVAC duct — diameter, airflow in CFM, velocity in FPM and friction loss guidance.","author":{"@id":"https://sbkjduct.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"SBKJ Group QA & Engineering","url":"https://sbkjduct.com/about.html","description":"SBKJ Group quality assurance and engineering team — every published guide is reviewed by senior engineers before publication and re-validated on each update."},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-04-09","dateModified":"2026-04-09","image":"https://sbkjduct.com/assets/images/sbtf-1602.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/spiral-duct-sizing-chart.html","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"HVAC Design","about":[{"@type":"Thing","name":"Duct sizing"},{"@type":"Thing","name":"Round spiral duct"},{"@type":"Thing","name":"HVAC airflow"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
     {"@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":"What is the recommended velocity for round HVAC duct?","acceptedAnswer":{"@type":"Answer","text":"For low-pressure commercial HVAC, 1,000 to 1,500 FPM (5 to 7.5 m/s) is standard for supply trunks. Branches run 700 to 1,000 FPM. For high-pressure variable air volume systems, trunk velocities up to 2,500 FPM (12.5 m/s) are acceptable. Above 2,500 FPM noise becomes a problem."}},
       {"@type":"Question","name":"How do I size a round duct for a given CFM?","acceptedAnswer":{"@type":"Answer","text":"Divide CFM by your target velocity in FPM to get the cross-section area in square feet. Convert to diameter with D = 2 * sqrt(Area / pi). Alternatively, use the sizing chart below: find the CFM row, pick a velocity column, read off the diameter."}},
@@ -50,57 +48,67 @@
   <header class="site-header">
     <div class="shell">
       <div class="site-header-inner">
-        <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" /><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async"><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
         <nav id="primaryNav" class="site-nav" aria-label="Primary">
-          <a href="../index.html">Home</a>
-          <a href="../machines.html">Machines</a>
-          <a href="../insights/">Insights</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html" class="nav-cta">Contact</a>
+          <a href="../index.html" data-i18n="nav.home">Home</a>
+          <a href="../machines.html" data-i18n="nav.machines">Machines</a>
+          <a href="../insights/" data-i18n="nav.insights">Insights</a>
+          <a href="../about.html" data-i18n="nav.about">About</a>
+          <a href="../contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
         </nav>
       </div>
     </div>
   </header>
   <main id="main">
-    <article class="section page-hero">
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html" data-i18n="nav.home">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>Spiral Duct Sizing Chart</span></li></ol></nav></div></nav>
+    <article class="section page-hero bg-subtle">
       <div class="shell">
         <p class="eyebrow">Insights · Design reference</p>
         <h1 class="page-title">Spiral Duct Sizing Chart</h1>
         <p class="article-lead">A practical sizing reference for round spiral HVAC duct — airflow (CFM and m³/h) mapped against diameter (mm and inches) and velocity (FPM and m/s). Plus the three rules of thumb that actually matter on a job.</p>
+        <p class="article-byline">
+          <span class="article-byline-author">By <a href="../about.html" rel="author">SBKJ Engineering Team</a></span>
+          <span class="article-byline-sep">·</span>
+          <span>Published <time datetime="2026-04-09">April 9, 2026</time></span>
+          <span class="article-byline-sep">·</span>
+          <span>4 min read</span>
+          <span class="article-byline-sep">·</span>
+          <span>Reviewed by SBKJ QA &amp; Engineering</span>
+        </p>
       </div>
     </article>
     <section class="section">
-      <div class="shell" style="max-width: 900px;">
+      <div class="shell"><div class="content-narrow">
         <h2>How to read this chart</h2>
         <p>Given an airflow requirement from the mechanical schedule, find the row with your CFM, then pick a column by your target velocity. The cell shows the duct diameter that delivers that velocity at that airflow. Typical design velocities for commercial HVAC are 1,000–1,500 FPM for trunks and 700–1,000 FPM for branches.</p>
 
         <h2>Diameter vs CFM vs Velocity — imperial</h2>
-        <table style="width:100%; border-collapse: collapse; margin: 1rem 0; font-size:0.95rem;">
+        <table class="data-table">
           <thead>
             <tr>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">Airflow (CFM)</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">700 FPM</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">1,000 FPM</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">1,500 FPM</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">2,000 FPM</th>
-              <th style="text-align:left; border-bottom:1px solid rgba(0,0,0,0.2); padding:0.5rem;">2,500 FPM</th>
+              <th>Airflow (CFM)</th>
+              <th>700 FPM</th>
+              <th>1,000 FPM</th>
+              <th>1,500 FPM</th>
+              <th>2,000 FPM</th>
+              <th>2,500 FPM</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td style="padding:0.5rem;">100</td><td style="padding:0.5rem;">5" (125 mm)</td><td style="padding:0.5rem;">4" (100 mm)</td><td style="padding:0.5rem;">4" (100 mm)</td><td style="padding:0.5rem;">3" (80 mm)</td><td style="padding:0.5rem;">3" (80 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">200</td><td style="padding:0.5rem;">7" (180 mm)</td><td style="padding:0.5rem;">6" (150 mm)</td><td style="padding:0.5rem;">5" (125 mm)</td><td style="padding:0.5rem;">4" (100 mm)</td><td style="padding:0.5rem;">4" (100 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">400</td><td style="padding:0.5rem;">10" (250 mm)</td><td style="padding:0.5rem;">8" (200 mm)</td><td style="padding:0.5rem;">7" (180 mm)</td><td style="padding:0.5rem;">6" (150 mm)</td><td style="padding:0.5rem;">5" (125 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">600</td><td style="padding:0.5rem;">12" (300 mm)</td><td style="padding:0.5rem;">10" (250 mm)</td><td style="padding:0.5rem;">8" (200 mm)</td><td style="padding:0.5rem;">7" (180 mm)</td><td style="padding:0.5rem;">6" (150 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">800</td><td style="padding:0.5rem;">14" (355 mm)</td><td style="padding:0.5rem;">12" (300 mm)</td><td style="padding:0.5rem;">10" (250 mm)</td><td style="padding:0.5rem;">8" (200 mm)</td><td style="padding:0.5rem;">7" (180 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">1,000</td><td style="padding:0.5rem;">16" (400 mm)</td><td style="padding:0.5rem;">14" (355 mm)</td><td style="padding:0.5rem;">11" (280 mm)</td><td style="padding:0.5rem;">10" (250 mm)</td><td style="padding:0.5rem;">8" (200 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">1,500</td><td style="padding:0.5rem;">20" (500 mm)</td><td style="padding:0.5rem;">17" (430 mm)</td><td style="padding:0.5rem;">14" (355 mm)</td><td style="padding:0.5rem;">12" (300 mm)</td><td style="padding:0.5rem;">10" (250 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">2,000</td><td style="padding:0.5rem;">23" (585 mm)</td><td style="padding:0.5rem;">19" (480 mm)</td><td style="padding:0.5rem;">16" (400 mm)</td><td style="padding:0.5rem;">14" (355 mm)</td><td style="padding:0.5rem;">12" (300 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">3,000</td><td style="padding:0.5rem;">28" (710 mm)</td><td style="padding:0.5rem;">24" (600 mm)</td><td style="padding:0.5rem;">19" (480 mm)</td><td style="padding:0.5rem;">17" (430 mm)</td><td style="padding:0.5rem;">14" (355 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">5,000</td><td style="padding:0.5rem;">36" (915 mm)</td><td style="padding:0.5rem;">30" (760 mm)</td><td style="padding:0.5rem;">25" (635 mm)</td><td style="padding:0.5rem;">21" (535 mm)</td><td style="padding:0.5rem;">19" (480 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">8,000</td><td style="padding:0.5rem;">46" (1170 mm)</td><td style="padding:0.5rem;">38" (965 mm)</td><td style="padding:0.5rem;">31" (790 mm)</td><td style="padding:0.5rem;">27" (685 mm)</td><td style="padding:0.5rem;">24" (610 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">12,000</td><td style="padding:0.5rem;">56" (1420 mm)</td><td style="padding:0.5rem;">47" (1200 mm)</td><td style="padding:0.5rem;">38" (965 mm)</td><td style="padding:0.5rem;">33" (840 mm)</td><td style="padding:0.5rem;">30" (760 mm)</td></tr>
-            <tr><td style="padding:0.5rem;">20,000</td><td style="padding:0.5rem;">72" (1830 mm)</td><td style="padding:0.5rem;">61" (1550 mm)</td><td style="padding:0.5rem;">50" (1270 mm)</td><td style="padding:0.5rem;">43" (1090 mm)</td><td style="padding:0.5rem;">38" (965 mm)</td></tr>
+            <tr><td>100</td><td>5" (125 mm)</td><td>4" (100 mm)</td><td>4" (100 mm)</td><td>3" (80 mm)</td><td>3" (80 mm)</td></tr>
+            <tr><td>200</td><td>7" (180 mm)</td><td>6" (150 mm)</td><td>5" (125 mm)</td><td>4" (100 mm)</td><td>4" (100 mm)</td></tr>
+            <tr><td>400</td><td>10" (250 mm)</td><td>8" (200 mm)</td><td>7" (180 mm)</td><td>6" (150 mm)</td><td>5" (125 mm)</td></tr>
+            <tr><td>600</td><td>12" (300 mm)</td><td>10" (250 mm)</td><td>8" (200 mm)</td><td>7" (180 mm)</td><td>6" (150 mm)</td></tr>
+            <tr><td>800</td><td>14" (355 mm)</td><td>12" (300 mm)</td><td>10" (250 mm)</td><td>8" (200 mm)</td><td>7" (180 mm)</td></tr>
+            <tr><td>1,000</td><td>16" (400 mm)</td><td>14" (355 mm)</td><td>11" (280 mm)</td><td>10" (250 mm)</td><td>8" (200 mm)</td></tr>
+            <tr><td>1,500</td><td>20" (500 mm)</td><td>17" (430 mm)</td><td>14" (355 mm)</td><td>12" (300 mm)</td><td>10" (250 mm)</td></tr>
+            <tr><td>2,000</td><td>23" (585 mm)</td><td>19" (480 mm)</td><td>16" (400 mm)</td><td>14" (355 mm)</td><td>12" (300 mm)</td></tr>
+            <tr><td>3,000</td><td>28" (710 mm)</td><td>24" (600 mm)</td><td>19" (480 mm)</td><td>17" (430 mm)</td><td>14" (355 mm)</td></tr>
+            <tr><td>5,000</td><td>36" (915 mm)</td><td>30" (760 mm)</td><td>25" (635 mm)</td><td>21" (535 mm)</td><td>19" (480 mm)</td></tr>
+            <tr><td>8,000</td><td>46" (1170 mm)</td><td>38" (965 mm)</td><td>31" (790 mm)</td><td>27" (685 mm)</td><td>24" (610 mm)</td></tr>
+            <tr><td>12,000</td><td>56" (1420 mm)</td><td>47" (1200 mm)</td><td>38" (965 mm)</td><td>33" (840 mm)</td><td>30" (760 mm)</td></tr>
+            <tr><td>20,000</td><td>72" (1830 mm)</td><td>61" (1550 mm)</td><td>50" (1270 mm)</td><td>43" (1090 mm)</td><td>38" (965 mm)</td></tr>
           </tbody>
         </table>
         <p><em>Round diameters to the next manufactured size above the calculated value. SBKJ SBTF-1602 produces standard round diameters Φ80 to Φ1600 mm; SBTF-2020 extends up to Φ2000 mm.</em></p>
@@ -155,7 +163,7 @@
         </ul>
         <p>See our <a href="spiral-duct-forming-guide.html">spiral forming guide</a> for how round duct is actually manufactured.</p>
 
-        <p style="margin-top: 2.5rem;"><a class="btn-primary" href="../contact.html">Ask SBKJ about an SBTF spiral tubeformer →</a></p>
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html">Ask SBKJ about an SBTF spiral tubeformer →</a></p>
 
         <h2>FAQ</h2>
         <details><summary>What is the recommended velocity for round HVAC duct?</summary><p>For low-pressure commercial HVAC, 1,000 to 1,500 FPM (5 to 7.5 m/s) is standard for supply trunks. Branches run 700 to 1,000 FPM. For high-pressure variable air volume systems, trunk velocities up to 2,500 FPM (12.5 m/s) are acceptable.</p></details>
@@ -163,21 +171,36 @@
         <details><summary>What is friction loss for round spiral duct?</summary><p>Friction loss for round galvanized spiral duct is approximately 0.08 to 0.15 in. w.g. per 100 feet at typical commercial velocities (1,000 to 1,500 FPM). Spiral has slightly higher friction than smooth rigid round, but lower than equivalent rectangular duct.</p></details>
         <details><summary>Why is round duct preferred over rectangular for the same airflow?</summary><p>Less metal per square meter of airflow, lower friction loss, lower leakage, stronger under pressure, and better acoustics. The downside is clearance height in drop ceilings, where rectangular still wins.</p></details>
 
-        <aside style="border-top:1px solid rgba(0,0,0,0.12);margin-top:3rem;padding-top:2rem;">
+        <aside class="related-guides">
           <p class="eyebrow">Related guides</p>
-          <ul style="list-style:none;padding:0;margin:1rem 0 0;font-size:1.05rem;line-height:1.9;">
+          <ul class="related-links">
             <li><a href="spiral-duct-forming-guide.html">Spiral Duct Forming Explained</a></li>
             <li><a href="galvanized-vs-stainless-steel-duct.html">Galvanized vs Stainless Steel HVAC Duct</a></li>
             <li><a href="hvac-duct-machinery-glossary.html">HVAC Duct Machinery Glossary</a></li>
           </ul>
         </aside>
+        </div>
       </div>
     </section>
+  
+    <section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+      <div class="shell">
+        <div class="content-narrow">
+          <div class="promise-callout">
+            <span class="promise-label">12-hour reply</span>
+            <p class="promise-text">Got a spec question on this guide? An SBKJ mechanical engineer replies within 12 hours &mdash; not a salesperson.</p>
+            <a href="../contact.html" class="btn btn-primary">Ask an engineer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer class="site-footer">
     <div class="shell">
-      <p>© SBKJ Group · <a href="../index.html">Home</a> · <a href="../machines.html">Machines</a> · <a href="../contact.html">Contact</a></p>
+      <p>© SBKJ Group · <a href="../index.html" data-i18n="nav.home">Home</a> · <a href="../machines.html" data-i18n="nav.machines">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-sbkj.html" data-i18n="nav.why">Why SBKJ</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../industries/" data-i18n="nav.industries">Industries</a> · <a href="../contact.html" data-i18n="nav.contact">Contact</a></p>
     </div>
   </footer>
+  <script src="../assets/js/main.js?v=4"></script>
 </body>
 </html>

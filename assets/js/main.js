@@ -2,6 +2,62 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear().toString();
 
+  // Video fallback: if a <video> fails to load (missing file, bad format),
+  // replace it with its poster image so users see the still frame instead
+  // of a broken player. Keeps product pages clean when the MP4 assets are
+  // not yet uploaded. Handles three patterns:
+  //   1. <video src="..." poster="..."> — error event fires on load
+  //   2. <video><source src="..."></video> — source child error bubbles
+  //   3. <video preload="none"><source></video> — no load until play;
+  //      we HEAD-probe the source URL to detect 404 early
+  const swapVideoToPoster = (video) => {
+    const poster = video.getAttribute("poster");
+    if (poster) {
+      const img = document.createElement("img");
+      img.src = poster;
+      img.alt = video.getAttribute("aria-label") || "Product video preview";
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.className = (video.className || "") + " video-poster-fallback";
+      img.style.width = "100%";
+      img.style.height = "auto";
+      img.style.display = "block";
+      video.replaceWith(img);
+      return;
+    }
+    // No poster: hide the entire video section (including the "Video"
+    // heading) so there's no orphan h2. Prefer the outermost container
+    // that groups the heading + the video.
+    const wrap = video.closest(".product-video, .video-section");
+    if (wrap) {
+      wrap.style.display = "none";
+      return;
+    }
+    const innerWrap = video.closest(".video-frame, .product-video-wrap");
+    if (innerWrap) innerWrap.style.display = "none";
+    else video.style.display = "none";
+  };
+  document.querySelectorAll("video").forEach((video) => {
+    video.addEventListener("error", () => swapVideoToPoster(video), { once: true });
+    video.querySelectorAll("source").forEach((s) => {
+      s.addEventListener("error", () => swapVideoToPoster(video), { once: true });
+    });
+    if (video.error) {
+      swapVideoToPoster(video);
+      return;
+    }
+    // preload="none" + <source> child: HEAD-probe to catch missing files
+    // before the user clicks play. Only probe same-origin URLs.
+    if (video.preload === "none") {
+      const firstSrc = video.querySelector("source")?.src || video.src;
+      if (firstSrc && new URL(firstSrc, location.href).origin === location.origin) {
+        fetch(firstSrc, { method: "HEAD" })
+          .then((r) => { if (!r.ok) swapVideoToPoster(video); })
+          .catch(() => swapVideoToPoster(video));
+      }
+    }
+  });
+
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (e) => {

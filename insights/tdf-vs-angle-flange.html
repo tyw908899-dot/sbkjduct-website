@@ -24,18 +24,16 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@sbkjgroup" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=16" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://sbkjduct.com/#author-engineering","name":"SBKJ Engineering Team","url":"https://sbkjduct.com/about.html","description":"SBKJ Group senior engineers with 30+ years of combined experience in HVAC ductwork machinery design, commissioning and field service across 80+ countries.","parentOrganization":{"@id":"https://sbkjduct.com/#org"},"knowsAbout":["HVAC duct machinery","Spiral tubeformer","TDF flange","Auto duct production line","SMACNA","AS/NZS 4254","EN 1505","EN 1506"]},
     {"@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://sbkjduct.com/"},
       {"@type":"ListItem","position":2,"name":"Insights","item":"https://sbkjduct.com/insights/"},
       {"@type":"ListItem","position":3,"name":"TDF vs Angle Flange","item":"https://sbkjduct.com/insights/tdf-vs-angle-flange.html"}
     ]},
-    {"@type":"TechArticle","headline":"TDF vs Angle Flange — Which Rectangular Duct Connection?","author":{"@id":"https://sbkjduct.com/#author-engineering"},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-04-09","dateModified":"2026-04-09","image":"https://sbkjduct.com/assets/images/tdf-flange.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/tdf-vs-angle-flange.html","inLanguage":"en","about":[{"@type":"Thing","name":"TDF flange"},{"@type":"Thing","name":"Angle flange"},{"@type":"Thing","name":"Rectangular duct connection"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}}
+    {"@type":"TechArticle","headline":"TDF vs Angle Flange — Which Rectangular Duct Connection?","author":{"@id":"https://sbkjduct.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"SBKJ Group QA & Engineering","url":"https://sbkjduct.com/about.html","description":"SBKJ Group quality assurance and engineering team — every published guide is reviewed by senior engineers before publication and re-validated on each update."},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-04-09","dateModified":"2026-04-09","image":"https://sbkjduct.com/assets/images/tdf-flange.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/tdf-vs-angle-flange.html","inLanguage":"en","about":[{"@type":"Thing","name":"TDF flange"},{"@type":"Thing","name":"Angle flange"},{"@type":"Thing","name":"Rectangular duct connection"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}}
   ]}
   </script>
 
@@ -48,28 +46,38 @@
   <header class="site-header">
     <div class="shell">
       <div class="site-header-inner">
-        <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" /><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async"><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
         <nav id="primaryNav" class="site-nav" aria-label="Primary">
-          <a href="../index.html">Home</a>
-          <a href="../machines.html">Machines</a>
-          <a href="../insights/">Insights</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html" class="nav-cta">Contact</a>
+          <a href="../index.html" data-i18n="nav.home">Home</a>
+          <a href="../machines.html" data-i18n="nav.machines">Machines</a>
+          <a href="../insights/" data-i18n="nav.insights">Insights</a>
+          <a href="../about.html" data-i18n="nav.about">About</a>
+          <a href="../contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
         </nav>
       </div>
     </div>
   </header>
   <main id="main">
-    <article class="section page-hero">
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html" data-i18n="nav.home">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>TDF vs Angle Flange</span></li></ol></nav></div></nav>
+    <article class="section page-hero bg-subtle">
       <div class="shell">
         <p class="eyebrow">Insights · Comparison</p>
         <h1 class="page-title">TDF vs Angle Flange</h1>
         <p class="article-lead">Two ways to connect rectangular HVAC duct. One is rolled directly into the duct on the line, the other is bolted on afterwards. Here is when each makes sense — with real install times, leak classes and tooling implications.</p>
+        <p class="article-byline">
+          <span class="article-byline-author">By <a href="../about.html" rel="author">SBKJ Engineering Team</a></span>
+          <span class="article-byline-sep">·</span>
+          <span>Published <time datetime="2026-04-09">April 9, 2026</time></span>
+          <span class="article-byline-sep">·</span>
+          <span>2 min read</span>
+          <span class="article-byline-sep">·</span>
+          <span>Reviewed by SBKJ QA &amp; Engineering</span>
+        </p>
       </div>
     </article>
     <section class="section">
-      <div class="shell" style="max-width: 820px;">
+      <div class="shell"><div class="content-narrow">
         <h2>What they are</h2>
         <p><strong>TDF (Transverse Duct Flange)</strong> is roll-formed directly on the duct end by the <a href="../product/tdf-flange.html">TDF machine</a> while the duct is still on the production line. No separate flange part, no welding, no bolting afterwards. You snap two duct sections together at site and secure with four corner bolts and TDF clips.</p>
         <p><strong>Angle flange</strong> is a separate L-shaped or slide-on angle bar that is welded, riveted or bolted to the duct end as a second operation. It has been the traditional method for decades and remains common on heavy-gauge industrial duct.</p>
@@ -93,28 +101,73 @@
         <h2>What it means for your line</h2>
         <p>If you are building a modern commercial HVAC workshop, specify TDF. The <a href="../product/sbal-v.html">SBAL-V</a> integrates TDF flanging inline — the flange is formed the moment the duct comes off the line, zero handling. Angle flange lines require separate welding or bolting stations.</p>
 
-        <p style="margin-top: 2.5rem;"><a class="btn-primary" href="../contact.html">Discuss your project with SBKJ →</a></p>
+        <h2>Side‑by‑side comparison</h2>
+        <p>Use this table as a quick reference when scoping a new commercial or industrial duct workshop. The numbers reflect typical SBKJ customer installations on commercial HVAC projects in the 0.6–1.2&nbsp;mm galvanised range.</p>
+        <div class="table-wrap">
+        <table class="spec-table">
+          <thead>
+            <tr><th>Criterion</th><th>TDF flange</th><th>Angle flange</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Forming method</td><td>Roll‑formed inline on duct end</td><td>Separate L‑bar welded or bolted</td></tr>
+            <tr><td>Site joint time</td><td>~60 seconds per joint</td><td>3–5 minutes per joint</td></tr>
+            <tr><td>Workshop labour per m²</td><td>Low — no second operation</td><td>Medium‑high — separate weld/bolt step</td></tr>
+            <tr><td>Material cost per m</td><td>Just the extended duct edge</td><td>Adds extruded angle bar</td></tr>
+            <tr><td>Sealing class achievable</td><td>SMACNA Seal Class A/B/C</td><td>SMACNA Seal Class A/B/C</td></tr>
+            <tr><td>Best material range</td><td>0.5–1.5&nbsp;mm GI/SS</td><td>1.0–3.0&nbsp;mm GI/SS</td></tr>
+            <tr><td>Pressure class</td><td>Up to 2,500&nbsp;Pa</td><td>Up to 5,000&nbsp;Pa</td></tr>
+            <tr><td>Corner connection</td><td>Plastic or zinc TDF corner + 4 bolts</td><td>Welded or bolted at every face</td></tr>
+            <tr><td>SMACNA chapter</td><td>5 (Standing Drive Slip variant)</td><td>4 (Companion Angle)</td></tr>
+            <tr><td>Capital equipment</td><td>SBKJ TDF flange machine</td><td>Angle bar shop + welding station</td></tr>
+          </tbody>
+        </table>
+        </div>
 
+        <h2>How TDF actually forms on the SBAL line</h2>
+        <p>It is worth understanding the mechanics, because it explains why TDF is so much cheaper per metre than angle flange once the line is paid for. On the SBAL‑V auto duct line, the duct sheet runs through a series of forming rolls that progressively turn the duct end up by 90&nbsp;degrees, then over by another 90&nbsp;degrees, creating a continuous flange profile that is mechanically part of the duct itself. There is no welding, no rivet, no bolt and no separate part — just sheet metal that has been bent into a flange. Once the duct is cut to length, the corner blocks are fitted, and the duct is ready for site. The same forming station produces every duct on the line, so the per‑metre cost of the flange is essentially zero on top of the duct material itself.</p>
+
+        <h2>Sealing and leak class — what really matters</h2>
+        <p>One of the most common questions SBKJ engineers hear is whether TDF can match angle flange on leak class. The honest answer is: yes, if installed correctly. Both methods can hit SMACNA Seal Class A (0.5&nbsp;CFM/100&nbsp;ft² at 1&nbsp;in. w.g.) when paired with the right gasket and sealant. The variable that matters more than the flange type is the quality of the gasket compression and the consistency of the corner block fit. We recommend a closed‑cell PVC or EPDM gasket strip on every TDF joint and a butyl sealant under the corner blocks for projects targeting Seal Class A or B. With this build, SBKJ‑machined TDF duct routinely passes Seal Class A leak tests on commercial and airport projects.</p>
+
+        <h2>When angle flange still wins (in detail)</h2>
+        <p>TDF is dominant for commercial HVAC, but angle flange still has a clear role in three scenarios. First, heavy industrial duct above 2&nbsp;mm wall thickness — at these gauges the TDF rolls would deform the duct corners, and angle flange welded to the duct end is more reliable. Second, high‑pressure process exhaust where reinforcement bars must bolt through the flange itself — angle bar gives a more robust attachment surface for cross‑bracing. Third, legacy retrofits where existing duct already uses angle flange and matching the connection geometry matters more than reducing labour. SBKJ supplies TDF and angle‑flange machinery for all three scenarios — the right answer depends on the project, not the brand.</p>
+
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html">Discuss your project with SBKJ →</a></p>
 
         <h2>FAQ</h2>
         <details><summary>Is TDF faster to install than angle flange?</summary><p>Yes. TDF installs roughly 2–3× faster because the flange is roll-formed directly on the duct end and there is no separate flange-to-duct assembly step. On site, joining two TDF sections takes about 60 seconds compared to 3–5 minutes for bolted angle flange.</p></details>
         <details><summary>Which flange method has a better leak class?</summary><p>Both can hit SMACNA Seal Class A with proper gaskets and sealant. TDF tends to give a more uniform seat because the flange is continuous with the duct; angle flange can develop micro-gaps at weld points over time.</p></details>
         <details><summary>When does angle flange still make sense?</summary><p>For heavy industrial duct above 2 mm wall thickness, high-pressure process exhaust where reinforcement bars bolt through the flange, or legacy projects that must remain compatible with existing angle-flanged duct.</p></details>
-        <aside style="border-top:1px solid rgba(0,0,0,0.12);margin-top:3rem;padding-top:2rem;">
+        <aside class="related-guides">
           <p class="eyebrow">Related guides</p>
-          <ul style="list-style:none;padding:0;margin:1rem 0 0;font-size:1.05rem;line-height:1.9;">
+          <ul class="related-links">
             <li><a href="choosing-auto-duct-line.html">How to Choose an Auto Duct Line</a></li>
             <li><a href="spiral-duct-forming-guide.html">Spiral Duct Forming Explained</a></li>
             <li><a href="smacna-seal-classes-explained.html">SMACNA Seal Class A, B, C Explained</a></li>
           </ul>
         </aside>
+        </div>
       </div>
     </section>
+  
+    <section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+      <div class="shell">
+        <div class="content-narrow">
+          <div class="promise-callout">
+            <span class="promise-label">12-hour reply</span>
+            <p class="promise-text">Got a spec question on this guide? An SBKJ mechanical engineer replies within 12 hours &mdash; not a salesperson.</p>
+            <a href="../contact.html" class="btn btn-primary">Ask an engineer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer class="site-footer">
     <div class="shell">
-      <p>© SBKJ Group · <a href="../index.html">Home</a> · <a href="../machines.html">Machines</a> · <a href="../contact.html">Contact</a></p>
+      <p>© SBKJ Group · <a href="../index.html" data-i18n="nav.home">Home</a> · <a href="../machines.html" data-i18n="nav.machines">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-sbkj.html" data-i18n="nav.why">Why SBKJ</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../industries/" data-i18n="nav.industries">Industries</a> · <a href="../contact.html" data-i18n="nav.contact">Contact</a></p>
     </div>
   </footer>
+  <script src="../assets/js/main.js?v=4"></script>
 </body>
 </html>

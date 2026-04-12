@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#000000" />
   <title>SBKJ Group — HVAC Ductwork Machinery Manufacturer | Spiral Duct, Auto Duct Line, TDF Flange</title>
-  <meta name="description" content="SBKJ Group manufactures spiral duct forming machines, auto duct production lines (SBAL-V up to 2,500 m²/day), TDF flange formers and lockformers. 30+ years, 5,000+ machines, 80+ countries. ISO 9001:2015 &amp; CE certified. Request a quotation." />
+  <meta name="description" content="SBKJ Group manufactures spiral duct formers, auto duct lines (SBAL-V up to 2,500 m²/day), TDF and lockformers. ISO 9001 &amp; CE. Request a quote." />
   <link rel="canonical" href="https://sbkjduct.com/" />
   <link rel="alternate" hreflang="en" href="https://sbkjduct.com/" />
   <link rel="alternate" hreflang="x-default" href="https://sbkjduct.com/" />
@@ -50,13 +50,12 @@
           {"@type": "PostalAddress", "addressLocality": "Jiangyin", "addressRegion": "Jiangsu", "addressCountry": "CN"},
           {"@type": "PostalAddress", "addressLocality": "Box Hill North", "addressRegion": "VIC", "addressCountry": "AU"}
         ],
-        "contactPoint": [{
-          "@type": "ContactPoint",
-          "telephone": "+61-435-074-994",
-          "contactType": "sales",
-          "email": "sales@sbkjduct.com",
-          "availableLanguage": ["en", "zh"]
-        }],
+        "contactPoint": [
+          {"@type": "ContactPoint", "telephone": "+61-435-074-994", "contactType": "sales", "email": "sales@sbkjduct.com", "availableLanguage": ["en", "zh"]},
+          {"@type": "ContactPoint", "contactType": "technical support", "email": "engineering@sbkjduct.com", "availableLanguage": ["en", "zh"]},
+          {"@type": "ContactPoint", "contactType": "customer service", "email": "service@sbkjduct.com", "availableLanguage": ["en", "zh"]},
+          {"@type": "ContactPoint", "contactType": "general inquiry", "email": "info@sbkjduct.com", "availableLanguage": ["en", "zh"]}
+        ],
         "sameAs": [
           "https://www.linkedin.com/company/sbkjgroup/",
           "https://www.youtube.com/@sbkjtubeformer",
@@ -98,7 +97,26 @@
         "url": "https://sbkjduct.com/",
         "name": "SBKJ Group",
         "publisher": {"@id": "https://sbkjduct.com/#org"},
-        "inLanguage": "en"
+        "inLanguage": "en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {"@type": "EntryPoint", "urlTemplate": "https://sbkjduct.com/?s={search_term_string}"},
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://sbkjduct.com/#webpage",
+        "url": "https://sbkjduct.com/",
+        "name": "SBKJ Group — HVAC Ductwork Machinery Manufacturer",
+        "isPartOf": {"@id": "https://sbkjduct.com/#website"},
+        "about": {"@id": "https://sbkjduct.com/#org"},
+        "datePublished": "2024-01-15",
+        "dateModified": "2026-04-09","lastReviewed":"2026-04-09","reviewedBy":{"@id":"https://sbkjduct.com/#author-engineering"},
+        "inLanguage": "en",
+        "primaryImageOfPage": {"@type": "ImageObject", "url": "https://sbkjduct.com/assets/images/sbal-v.jpg"},
+        "publisher": {"@id": "https://sbkjduct.com/#org"},
+        "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".hero-title", ".hero-subtitle", ".section-title"]}
       },
       {
         "@type": "ItemList",
@@ -139,25 +157,20 @@
   }
   </script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=16" />
   <meta property="og:site_name" content="SBKJ Group" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:site" content="@sbkjgroup" />
   <meta name="twitter:creator" content="@sbkjgroup" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="image" href="assets/images/sbal-v.jpg" fetchpriority="high" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
-</head>
+  </head>
 <body class="site-body has-hero-dark">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="shell">
       <div class="site-header-inner">
         <a href="index.html" class="logo">
-          <img src="assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" />
+          <img src="assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async">
           <span class="logo-text">
             <span class="logo-title">SBKJ</span>
             <span class="logo-subtitle">Group</span>
@@ -198,13 +211,13 @@
             <a href="contact.html" class="btn btn-primary" data-i18n="hero.cta1">Get a quotation in 12 hours</a>
             <a href="#videos" class="btn btn-ghost" data-i18n="hero.cta2">Watch machines in action</a>
           </div>
-          <p class="hero-trust" style="margin-top:1.6rem;font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.6)">
+          <p class="hero-trust" data-i18n="common.isocertified">
             ISO 9001:2015 · CE Certified · 5,000+ Machines · 80+ Countries
           </p>
         </div>
       </div>
       <a href="#featured" class="scroll-indicator" aria-label="Scroll down">
-        <span class="scroll-label">Scroll</span>
+        <span class="scroll-label" data-i18n="common.scroll">Scroll</span>
         <span class="scroll-circle">
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         </span>
@@ -234,7 +247,7 @@
       </div>
     </section>
 
-    <section class="section why-section">
+    <section class="section why-section bg-subtle">
       <div class="shell">
         <header class="section-header reveal">
           <p class="eyebrow" data-i18n="why.eyebrow">Why SBKJ</p>
@@ -243,33 +256,41 @@
         <div class="why-grid reveal reveal-stagger">
           <div class="why-item">
             <div class="why-icon">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v4H3zM3 10h18v4H3zM3 17h18v4H3z"/><path d="M7 3v18M12 3v18M17 3v18"/></svg>
             </div>
-            <h3 data-i18n="why.item1.title">End‑to‑End Solutions</h3>
-            <p data-i18n="why.item1.desc">Complete duct production lines from coil to finished duct. Single source for spiral, rectangular and round machines.</p>
+            <h3 data-i18n="why.item1.title">Coil to packed truck on one floor</h3>
+            <p data-i18n="why.item1.desc">Our SBAL‑V integrates uncoiling, beading, notching, shearing, TDF forming and folding in a U‑shape cell — 800–2,500 m²/day from a single operator, no intermediate handling.</p>
           </div>
           <div class="why-item">
             <div class="why-icon">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
             </div>
-            <h3 data-i18n="why.item2.title">30+ Years Engineering</h3>
-            <p data-i18n="why.item2.desc">Three decades of continuous R&D in HVAC ductwork machinery with proven reliability and precision.</p>
+            <h3 data-i18n="why.item2.title">60+ patents. ISO 9001:2015. CE.</h3>
+            <p data-i18n="why.item2.desc">Registered invention and utility patents on duct forming, flange systems and automation. Audited quality management since 2007 — every machine ships with serialized FAT records.</p>
           </div>
           <div class="why-item">
             <div class="why-icon">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
-            <h3 data-i18n="why.item3.title">Global Certifications</h3>
-            <p data-i18n="why.item3.desc">CE, ISO 9001 certified with installations across 80+ countries. Built for international standards.</p>
+            <h3 data-i18n="why.item3.title">5,000+ machines in 80+ countries</h3>
+            <p data-i18n="why.item3.desc">Installed bases across North America, EU, MENA, Southeast Asia and LATAM — including national HVAC contractors and ductwork fabricators on six continents.</p>
           </div>
           <div class="why-item">
             <div class="why-icon">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </div>
-            <h3 data-i18n="why.item4.title">Dedicated Support</h3>
-            <p data-i18n="why.item4.desc">24/7 multilingual technical support, remote diagnostics, and lifetime spare parts availability.</p>
+            <h3 data-i18n="why.item4.title">12‑hour engineer reply, not a salesperson</h3>
+            <p data-i18n="why.item4.desc">Every quotation goes through a mechanical engineer first — you get gauge ranges, throughput numbers, power draw and a layout sketch within 12 hours, not a brochure.</p>
           </div>
         </div>
+
+        <div class="promise-callout promise-callout--spaced reveal">
+          <span class="promise-label" data-i18n="home.promise.label">Signed FAT log</span>
+          <p class="promise-text" data-i18n="home.promise.text">Every auto duct line ships with a serialized Factory Acceptance Test log — gauge tolerances, run-out, cycle times and operator sign‑off. Archived for the life of the machine.</p>
+          <a href="contact.html" class="btn btn-primary" data-i18n="home.promise.cta">Request a sample FAT log</a>
+        </div>
+
+        <p class="why-footnote reveal" data-i18n-html="home.whyfootnote" style="text-align:center;margin-top:clamp(24px,3vw,40px);font-size:0.95rem;color:var(--color-text-muted);">Comparing SBKJ against other HVAC duct machinery vendors? The <a href="why-choose-sbkj.html"><strong>why choose SBKJ page</strong></a> breaks down the ten reasons buyers short-list SBKJ. Building a capital budget? The <a href="pricing-and-lead-time.html"><strong>pricing and lead time guide</strong></a> publishes 2026 budget ranges and lead times for every SBKJ machine family.</p>
       </div>
     </section>
 
@@ -278,36 +299,36 @@
     <section class="section lines-section">
       <div class="shell">
         <header class="section-header reveal">
-          <p class="eyebrow">Product Lines</p>
-          <h2>Three Complete Lines for Every HVAC Duct Need</h2>
-          <p>From single forming machines to turn-key factories — we engineer the full chain from coil to finished duct.</p>
+          <p class="eyebrow" data-i18n="home.productlines.eyebrow">Product Lines</p>
+          <h2 data-i18n="home.productlines.title">Three Complete Lines for Every HVAC Duct Need</h2>
+          <p data-i18n="home.productlines.lead">From single forming machines to turn-key factories — we engineer the full chain from coil to finished duct.</p>
         </header>
         <div class="lines-grid reveal">
-          <a class="line-card" href="machines.html#spiral">
-            <div class="line-visual"><img src="assets/images/sbtf-1602.jpg" alt="Spiral duct forming line" loading="lazy" /></div>
+          <a class="line-card" href="categories/spiral-duct-machinery.html">
+            <div class="line-visual"><img src="assets/images/sbtf-1602.jpg" alt="Spiral duct forming line" width="1600" height="1064" decoding="async" fetchpriority="high"></div>
             <div class="line-body">
               <span class="line-num">01</span>
-              <h3>Spiral Duct Forming</h3>
-              <p>SBTF series spiral tubeformers Φ80–Φ1600 mm with flying shear or saw blade cutting. The benchmark for round duct production.</p>
-              <span class="line-link">Explore the line →</span>
+              <h3 data-i18n="home.line.spiral">Spiral Duct Forming</h3>
+              <p data-i18n="home.line.spiral.desc">SBTF series spiral tubeformers Φ80–Φ2000 mm with flying shear or saw blade cutting. The benchmark for round duct production.</p>
+              <span class="line-link" data-i18n="common.explore">Explore the line →</span>
             </div>
           </a>
-          <a class="line-card" href="machines.html#round">
-            <div class="line-visual"><img src="assets/images/sbem-1250.jpg" alt="Round duct fittings line" loading="lazy" /></div>
+          <a class="line-card" href="categories/tdf-and-lockformer.html">
+            <div class="line-visual"><img src="assets/images/sbem-1250.jpg" alt="Round duct fittings line" loading="lazy" width="1600" height="1200" decoding="async"></div>
             <div class="line-body">
               <span class="line-num">02</span>
-              <h3>Round Duct &amp; Fittings</h3>
-              <p>Gore-lockers, elbow welders, plasma cutters and ovalizers — every machine needed for elbows, reducers and fittings.</p>
-              <span class="line-link">Explore the line →</span>
+              <h3 data-i18n="home.line.tdf">TDF, Lockformer &amp; Fittings</h3>
+              <p data-i18n="home.line.tdf.desc">TDF flange, Pittsburgh lockformer, duct zipper, round flange, grooving and cleat-cutting — the seam and connector machines.</p>
+              <span class="line-link" data-i18n="common.explore">Explore the line →</span>
             </div>
           </a>
-          <a class="line-card" href="machines.html#auto">
-            <div class="line-visual"><img src="assets/images/sbal-v.jpg" alt="Auto duct production line" loading="lazy" /></div>
+          <a class="line-card" href="categories/auto-duct-lines.html">
+            <div class="line-visual"><img src="assets/images/sbal-v.jpg" alt="Auto duct production line" loading="lazy" width="1600" height="1195" decoding="async"></div>
             <div class="line-body">
               <span class="line-num">03</span>
-              <h3>Auto Duct Production Lines</h3>
-              <p>SBAL-V and SBAL-III U-shape automatic rectangular duct lines — up to 2,500 m²/day from a single operator.</p>
-              <span class="line-link">Explore the line →</span>
+              <h3 data-i18n="home.line.auto">Auto Duct Production Lines</h3>
+              <p data-i18n="home.line.auto.desc">SBAL-V and SBAL-III U-shape automatic rectangular duct lines — up to 2,500 m²/day from a single operator.</p>
+              <span class="line-link" data-i18n="common.explore">Explore the line →</span>
             </div>
           </a>
         </div>
@@ -326,59 +347,59 @@
         <div class="cards-grid cards-3 reveal reveal-stagger">
           <a href="product/sbal-v.html" class="card card-link">
             <div class="card-visual">
-              <img src="assets/images/sbal-v.jpg" alt="Auto Duct Line SBAL‑V" loading="lazy" />
+              <img src="assets/images/sbal-v.jpg" alt="Auto Duct Line SBAL‑V" loading="lazy" width="1600" height="1195" decoding="async">
             </div>
-            <h3>Auto Duct Line SBAL‑V</h3>
-            <p>U‑shape automatic line · 800–2500 m²/day</p>
+            <h3 data-i18n="home.feat.sbalv.name">Auto Duct Line SBAL‑V</h3>
+            <p data-i18n="home.feat.sbalv.desc">U‑shape automatic line · 800–2500 m²/day</p>
           </a>
           <a href="product/sbal-iii.html" class="card card-link">
             <div class="card-visual">
-              <img src="assets/images/sbal-iii.jpg" alt="Auto Duct Line SBAL‑III" loading="lazy" />
+              <img src="assets/images/sbal-iii.jpg" alt="Auto Duct Line SBAL‑III" loading="lazy" width="1024" height="681" decoding="async">
             </div>
-            <h3>Auto Duct Line SBAL‑III</h3>
-            <p>Hydraulic notching &amp; shearing · ~1000 m²/shift</p>
+            <h3 data-i18n="home.feat.sbaliii.name">Auto Duct Line SBAL‑III</h3>
+            <p data-i18n="home.feat.sbaliii.desc">Hydraulic notching &amp; shearing · ~1000 m²/shift</p>
           </a>
           <a href="product/sbtf-1602.html" class="card card-link">
             <div class="card-visual">
-              <img src="assets/images/sbtf-1602.jpg" alt="Spiral Tubeformer SBTF‑1602" loading="lazy" />
+              <img src="assets/images/sbtf-1602.jpg" alt="Spiral Tubeformer SBTF‑1602" loading="lazy" width="1600" height="1064" decoding="async">
             </div>
-            <h3>Spiral Tubeformer SBTF‑1602</h3>
-            <p>Φ80–Φ1600 mm · Flying shear</p>
+            <h3 data-i18n="home.feat.sbtf1602.name">Spiral Tubeformer SBTF‑1602</h3>
+            <p data-i18n="home.feat.sbtf1602.desc">Φ80–Φ1600 mm · Flying shear</p>
           </a>
           <a href="product/sbtf-1500.html" class="card card-link">
             <div class="card-visual">
-              <img src="assets/images/sbtf-1500.jpg" alt="Spiral Tubeformer SBTF‑1500" loading="lazy" />
+              <img src="assets/images/sbtf-1500.jpg" alt="Spiral Tubeformer SBTF‑1500" loading="lazy" width="1320" height="1025" decoding="async">
             </div>
-            <h3>Spiral Tubeformer SBTF‑1500</h3>
-            <p>Φ80–Φ1500 mm · Saw blade cutting</p>
+            <h3 data-i18n="home.feat.sbtf1500.name">Spiral Tubeformer SBTF‑1500</h3>
+            <p data-i18n="home.feat.sbtf1500.desc">Φ80–Φ1500 mm · Saw blade cutting</p>
           </a>
           <a href="product/sbem-1250.html" class="card card-link">
             <div class="card-visual">
-              <img src="assets/images/sbem-1250.jpg" alt="Gorelocker SBEM‑1250" loading="lazy" />
+              <img src="assets/images/sbem-1250.jpg" alt="Gorelocker SBEM‑1250" loading="lazy" width="1600" height="1200" decoding="async">
             </div>
-            <h3>Gorelocker SBEM‑1250</h3>
-            <p>Hydraulic elbow machine · 100–1250 mm</p>
+            <h3 data-i18n="home.feat.sbem1250.name">Gorelocker SBEM‑1250</h3>
+            <p data-i18n="home.feat.sbem1250.desc">Hydraulic elbow machine · 100–1250 mm</p>
           </a>
           <a href="product/tdf-flange.html" class="card card-link">
             <div class="card-visual">
-              <img src="assets/images/tdf-flange.jpg" alt="Transverse Duct Flange Forming Machine" loading="lazy" />
+              <img src="assets/images/tdf-flange.jpg" alt="Transverse Duct Flange Forming Machine" loading="lazy" width="833" height="493" decoding="async">
             </div>
-            <h3>Transverse Duct Flange</h3>
-            <p>TDF flange forming · SBTDF‑12 / 1.5‑16</p>
+            <h3 data-i18n="home.feat.tdf.name">Transverse Duct Flange</h3>
+            <p data-i18n="home.feat.tdf.desc">TDF flange forming · SBTDF‑12 / 1.5‑16</p>
           </a>
           <a href="product/lockformer.html" class="card card-link">
             <div class="card-visual">
-              <img src="assets/images/lockformer.jpg" alt="Lockformer SBLC Series" loading="lazy" />
+              <img src="assets/images/lockformer.jpg" alt="Lockformer SBLC Series" loading="lazy" width="1024" height="768" decoding="async">
             </div>
-            <h3>Lockformer (SBLC Series)</h3>
-            <p>Pittsburgh lock &amp; cleat forming</p>
+            <h3 data-i18n="home.feat.lock.name">Lockformer (SBLC Series)</h3>
+            <p data-i18n="home.feat.lock.desc">Pittsburgh lock &amp; cleat forming</p>
           </a>
           <a href="product/sbhf-i.html" class="card card-link">
             <div class="card-visual">
-              <img src="assets/images/sbhf-i.jpg" alt="Seam Closing Machine SBHF‑I" loading="lazy" />
+              <img src="assets/images/sbhf-i.jpg" alt="Seam Closing Machine SBHF‑I" loading="lazy" width="1024" height="466" decoding="async">
             </div>
-            <h3>Seam Closing SBHF‑I</h3>
-            <p>Duct zipper · 15 m/min</p>
+            <h3 data-i18n="home.feat.sbhfi.name">Seam Closing SBHF‑I</h3>
+            <p data-i18n="home.feat.sbhfi.desc">Duct zipper · 15 m/min</p>
           </a>
         </div>
         <p class="section-cta">
@@ -392,26 +413,23 @@
     <section id="videos" class="section">
       <div class="shell">
         <header class="section-header reveal">
-          <p class="eyebrow" data-i18n="vid.eyebrow">Videos</p>
+          <p class="eyebrow" data-i18n="vid.eyebrow">Flagship machines</p>
           <h2 data-i18n="vid.title">See the Machines in Operation</h2>
-          <p data-i18n="vid.lead">Short clips of our core machines running in production environments.</p>
+          <p data-i18n="vid.lead">Three flagship machines covering spiral duct, rectangular auto-duct, and gore-locking. Tap any panel for full specifications and demo video on request.</p>
         </header>
         <div class="video-embed-grid reveal">
-          <div class="video-frame">
-            <video src="assets/video/sbtf-1602.mp4" poster="assets/images/sbtf-1602.jpg" controls preload="metadata">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="video-frame">
-            <video src="assets/video/sbal-v.mp4" poster="assets/images/sbal-v.jpg" controls preload="metadata">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="video-frame">
-            <video src="assets/video/sbem-1250.mp4" poster="assets/images/sbem-1250.jpg" controls preload="metadata">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+          <a class="video-frame" href="product/sbtf-1602.html" aria-label="View SBTF-1602 spiral tubeformer product page">
+            <img src="assets/images/sbtf-1602.jpg" alt="SBTF-1602 spiral tubeformer in operation" loading="lazy" decoding="async" width="1600" height="1064">
+            <span class="video-caption" data-i18n="home.vid.sbtf1602">SBTF-1602 spiral tubeformer &mdash; view product</span>
+          </a>
+          <a class="video-frame" href="product/sbal-v.html" aria-label="View SBAL-V auto duct line product page">
+            <img src="assets/images/sbal-v.jpg" alt="SBAL-V auto duct production line in operation" loading="lazy" decoding="async" width="1600" height="1195">
+            <span class="video-caption" data-i18n="home.vid.sbalv">SBAL-V auto duct line &mdash; view product</span>
+          </a>
+          <a class="video-frame" href="product/sbem-1250.html" aria-label="View SBEM-1250 gore-locker product page">
+            <img src="assets/images/sbem-1250.jpg" alt="SBEM-1250 gore-locker in operation" loading="lazy" decoding="async" width="1600" height="1200">
+            <span class="video-caption" data-i18n="home.vid.sbem1250">SBEM-1250 gore-locker &mdash; view product</span>
+          </a>
         </div>
       </div>
     </section>
@@ -421,33 +439,33 @@
     <section class="section cases-section bg-subtle">
       <div class="shell">
         <header class="section-header reveal">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Engineered Output, Not Marketing Numbers</h2>
-          <p>Verified specifications from machines running in HVAC factories worldwide — pick the configuration that matches your production target.</p>
+          <p class="eyebrow" data-i18n="home.capabilities.eyebrow">Capabilities</p>
+          <h2 data-i18n="home.capabilities.title">Engineered Output, Not Marketing Numbers</h2>
+          <p data-i18n="home.capabilities.lead">Verified specifications from machines running in HVAC factories worldwide — pick the configuration that matches your production target.</p>
         </header>
         <div class="cases-grid reveal">
           <a class="case-card" href="product/sbal-v.html">
-            <div class="case-visual"><img src="assets/images/sbal-v.jpg" alt="SBAL-V auto duct production line" loading="lazy" /></div>
+            <div class="case-visual"><img src="assets/images/sbal-v.jpg" alt="SBAL-V auto duct production line" loading="lazy" width="1600" height="1195" decoding="async"></div>
             <div class="case-meta">
-              <span class="case-tag">Auto Duct Line</span>
-              <h3>Up to 2,500 m²/day</h3>
-              <p>SBAL-V U-shape line · single operator · 0.5–1.5 mm GI</p>
+              <span class="case-tag" data-i18n="home.case.autoduct.tag">Auto Duct Line</span>
+              <h3 data-i18n="home.case.autoduct.title">Up to 2,500 m²/day</h3>
+              <p data-i18n="home.case.autoduct.desc">SBAL-V U-shape line · single operator · 0.5–1.5 mm GI</p>
             </div>
           </a>
           <a class="case-card" href="product/sbtf-1602.html">
-            <div class="case-visual"><img src="assets/images/sbtf-1602.jpg" alt="SBTF-1602 spiral tubeformer" loading="lazy" /></div>
+            <div class="case-visual"><img src="assets/images/sbtf-1602.jpg" alt="SBTF-1602 spiral tubeformer" loading="lazy" width="1600" height="1064" decoding="async"></div>
             <div class="case-meta">
-              <span class="case-tag">Spiral Range</span>
-              <h3>Φ80 – Φ1600 mm</h3>
-              <p>SBTF-1602 spiral tubeformer · flying shear · galvanized steel &amp; stainless</p>
+              <span class="case-tag" data-i18n="home.case.spiral.tag">Spiral Range</span>
+              <h3 data-i18n="home.case.spiral.title">Φ80 – Φ1600 mm</h3>
+              <p data-i18n="home.case.spiral.desc">SBTF-1602 spiral tubeformer · flying shear · galvanized steel &amp; stainless</p>
             </div>
           </a>
           <a class="case-card" href="machines.html">
-            <div class="case-visual"><img src="assets/images/sbem-1250.jpg" alt="Turn-key duct factory equipment" loading="lazy" /></div>
+            <div class="case-visual"><img src="assets/images/sbem-1250.jpg" alt="Turn-key duct factory equipment" loading="lazy" width="1600" height="1200" decoding="async"></div>
             <div class="case-meta">
-              <span class="case-tag">Turn-key Factory</span>
-              <h3>Coil → Finished Duct</h3>
-              <p>Spiral + rectangular + fittings · installation, training &amp; lifetime spares</p>
+              <span class="case-tag" data-i18n="home.case.turnkey.tag">Turn-key Factory</span>
+              <h3 data-i18n="home.case.turnkey.title">Coil → Finished Duct</h3>
+              <p data-i18n="home.case.turnkey.desc">Spiral + rectangular + fittings · installation, training &amp; lifetime spares</p>
             </div>
           </a>
         </div>
@@ -456,32 +474,33 @@
 
     <section class="section logos-section">
       <div class="shell">
-        <header class="section-header reveal" style="text-align:center">
-          <p class="eyebrow" style="justify-content:center;display:inline-flex">Trusted Globally</p>
-          <h2>5,000+ Machines · 80+ Countries</h2>
+        <header class="section-header section-header--center reveal">
+          <p class="eyebrow" data-i18n="home.global.eyebrow">Trusted Globally</p>
+          <h2 data-i18n="home.global.title">5,000+ Machines · 80+ Countries</h2>
         </header>
         <div class="logos-wall reveal">
-          <div class="logo-cell"><strong>30+</strong><span>Years building duct machines</span></div>
-          <div class="logo-cell"><strong>5,000+</strong><span>Machines installed</span></div>
-          <div class="logo-cell"><strong>80+</strong><span>Countries served</span></div>
-          <div class="logo-cell"><strong>60+</strong><span>Patents granted</span></div>
-          <div class="logo-cell"><strong>ISO 9001:2015</strong><span>Quality system certified</span></div>
-          <div class="logo-cell"><strong>CE</strong><span>European conformity</span></div>
+          <div class="logo-cell"><strong>30+</strong><span data-i18n="home.logos.years">Years building duct machines</span></div>
+          <div class="logo-cell"><strong>5,000+</strong><span data-i18n="home.logos.machines">Machines installed</span></div>
+          <div class="logo-cell"><strong>80+</strong><span data-i18n="home.logos.countries">Countries served</span></div>
+          <div class="logo-cell"><strong>60+</strong><span data-i18n="home.logos.patents">Patents granted</span></div>
+          <div class="logo-cell"><strong>ISO 9001:2015</strong><span data-i18n="home.logos.iso">Quality system certified</span></div>
+          <div class="logo-cell"><strong>CE</strong><span data-i18n="home.logos.ce">European conformity</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section about-seo" aria-labelledby="about-seo-h2">
+    <section class="section about-seo bg-subtle" aria-labelledby="about-seo-h2">
       <div class="shell">
         <div class="about-seo-grid">
           <div>
-            <p class="eyebrow">About SBKJ Group</p>
-            <h2 id="about-seo-h2">A 30-Year Chinese Manufacturer of HVAC Ductwork Machinery</h2>
+            <p class="eyebrow" data-i18n="home.aboutseo.eyebrow">About SBKJ Group</p>
+            <h2 id="about-seo-h2" data-i18n="home.aboutseo.title">A 30-Year Chinese Manufacturer of HVAC Ductwork Machinery</h2>
           </div>
           <div class="about-seo-body">
-            <p>Founded in 1995 in Jiangyin, Jiangsu, SBKJ Group is a national high-tech enterprise specializing in <strong>spiral duct forming machines</strong>, <strong>auto duct production lines</strong>, <strong>TDF flange forming machines</strong>, <strong>lockformers</strong>, <strong>gore-lockers</strong> and <strong>seam closing machines</strong> for the HVAC, climate and ventilation industry.</p>
-            <p>SBKJ holds <strong>ISO 9001:2015</strong> quality certification and <strong>CE Marking</strong>, with <strong>60+ invention and utility patents</strong>. Over <strong>5,000 SBKJ machines</strong> are operating in <strong>80+ countries</strong> across five continents — from single tubeformers to complete turn-key HVAC duct factories. Our SBAL-V automatic rectangular duct line produces up to <strong>2,500 m² of finished duct per day</strong> with a single operator; our SBTF-1602 spiral tubeformer covers Φ80 to Φ1600 mm with flying-shear cutting on galvanized steel and stainless.</p>
-            <p>Headquartered in Jiangyin with an Australia office in Box Hill North, Victoria, SBKJ Group provides engineer-led quotations, workshop layout drawings, on-site commissioning, operator training and lifetime spare parts support.</p>
+            <p data-i18n-html="home.aboutseo.p1">Founded in 1995 in Jiangyin, Jiangsu, SBKJ Group is a national high-tech enterprise specializing in <strong>spiral duct forming machines</strong>, <strong>auto duct production lines</strong>, <strong>TDF flange forming machines</strong>, <strong>lockformers</strong>, <strong>gore-lockers</strong> and <strong>seam closing machines</strong> for the HVAC, climate and ventilation industry.</p>
+            <p data-i18n-html="home.aboutseo.p2">SBKJ holds <strong>ISO 9001:2015</strong> quality certification and <strong>CE Marking</strong>, with <strong>60+ invention and utility patents</strong>. Over <strong>5,000 SBKJ machines</strong> are operating in <strong>80+ countries</strong> across five continents — from single tubeformers to complete turn-key HVAC duct factories. Our SBAL-V automatic rectangular duct line produces up to <strong>2,500 m² of finished duct per day</strong> with a single operator; our SBTF-1602 spiral tubeformer covers Φ80 to Φ1600 mm with flying-shear cutting on galvanized steel and stainless.</p>
+            <p data-i18n-html="home.aboutseo.p3">Headquartered in Jiangyin with an Australia office in Box Hill North, Victoria, SBKJ Group provides engineer-led quotations, workshop layout drawings, on-site commissioning, operator training and lifetime spare parts support.</p>
+            <p data-i18n-html="home.aboutseo.p4">Machine selection and seam-class targets change depending on the end project. For industry-specific guidance on duct spec, throughput and standards see our <a href="industries/">HVAC duct machinery by industry</a> guide, with dedicated pages for <a href="industries/data-center.html">data centers</a>, <a href="industries/cleanroom.html">pharma and semiconductor cleanrooms</a> and <a href="industries/hospital.html">hospitals</a>.</p>
           </div>
         </div>
       </div>
@@ -490,48 +509,62 @@
     <section class="section deliverables-section">
       <div class="shell">
         <header class="section-header reveal">
-          <p class="eyebrow">What you get with a quotation</p>
-          <h2>Engineering, Not Just a Price</h2>
+          <p class="eyebrow" data-i18n="home.quote.eyebrow">What you get with a quotation</p>
+          <h2 data-i18n="home.quote.title">Engineering, Not Just a Price</h2>
         </header>
         <ol class="deliverables-grid reveal">
-          <li><span class="del-num">01</span><h3>Machine Configuration</h3><p>Sized to your duct range, output target and material thickness.</p></li>
-          <li><span class="del-num">02</span><h3>Workshop Layout</h3><p>2D layout drawing for the line in your available floor space.</p></li>
-          <li><span class="del-num">03</span><h3>Investment Budget</h3><p>FOB / CIF pricing, payment terms, lead time and shipping volume.</p></li>
-          <li><span class="del-num">04</span><h3>Installation &amp; Training</h3><p>On-site commissioning, operator training and lifetime spare parts.</p></li>
+          <li><span class="del-num">01</span><h3 data-i18n="home.quote.config">Machine Configuration</h3><p data-i18n="home.quote.config.desc">Sized to your duct range, output target and material thickness.</p></li>
+          <li><span class="del-num">02</span><h3 data-i18n="home.quote.layout">Workshop Layout</h3><p data-i18n="home.quote.layout.desc">2D layout drawing for the line in your available floor space.</p></li>
+          <li><span class="del-num">03</span><h3 data-i18n="home.quote.budget">Investment Budget</h3><p data-i18n="home.quote.budget.desc">FOB / CIF pricing, payment terms, lead time and shipping volume.</p></li>
+          <li><span class="del-num">04</span><h3 data-i18n="home.quote.training">Installation &amp; Training</h3><p data-i18n="home.quote.training.desc">On-site commissioning, operator training and lifetime spare parts.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="section faq-section">
+    <section class="section content-section">
+      <div class="shell">
+        <div class="content-narrow">
+          <header class="section-header reveal">
+            <p class="eyebrow" data-i18n="home.workshop.eyebrow">Workshop economics</p>
+            <h2 data-i18n="home.workshop.title">Why the SBKJ specification changes the numbers in your shop</h2>
+          </header>
+          <p data-i18n-html="home.workshop.p1">Most HVAC duct workshops are not labour-cost limited &mdash; they are labour-time limited. A manual rectangular duct shop running 0.8&nbsp;mm galvanised through a shear, a hand brake, a Pittsburgh lockformer and a flanging station typically produces 250&ndash;400 m&sup2; of finished duct per shift with three to four operators. The same shop replanned around an SBAL-V auto duct line produces 1,800&ndash;2,500 m&sup2; per shift with one operator and one helper, on the same coil and the same wall thickness. The labour input drops by roughly two thirds and the daily output rises by a factor of five to seven. Those numbers come straight from the production logs of SBKJ customers in Saudi Arabia, Vietnam, Australia and Egypt.</p>
+          <p data-i18n-html="home.workshop.p2">Spiral duct shops show the same pattern at a different scale. An SBTF-1500 tubeformer paired with a 5-tonne uncoiler and a flying shear runs &Phi;100&ndash;1500&nbsp;mm round duct continuously at line speeds up to 60&nbsp;m/min, with one operator handling the cut-off table and the finished duct buffer. A workshop adding an SBTF-1602 alongside an existing SBTF-1500 doubles its diameter envelope from &Phi;1500 to &Phi;1600&nbsp;mm without doubling the operator count, because the second machine runs in flexible-shift parallel mode rather than dedicated continuous mode. SBKJ engineers will model this shift pattern explicitly in the project quotation, with a labour calendar that maps machine hours to shift hours over a typical month.</p>
+          <p data-i18n-html="home.workshop.p3">The third lever is downstream integration. A flanging station, a corner-mounting press and a sealing station that all share the same TDF profile remove handling time between operations and let a single operator move duct from forming to flanging to packing in one continuous flow. SBKJ supplies all three stations from the same catalogue with matched tooling, which is the reason a fully integrated SBAL-V shop runs at lower labour cost per square metre than a same-output competitor running mixed-brand stations. The full TCO model is part of every SBKJ engineering quotation &mdash; ask for it in your first email and we will return it inside 12 hours.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section bg-subtle">
       <div class="shell">
         <header class="section-header reveal">
-          <p class="eyebrow">FAQs</p>
-          <h2>Frequently Asked Questions</h2>
+          <p class="eyebrow" data-i18n="home.faqs.eyebrow">FAQs</p>
+          <h2 data-i18n="common.faqheading">Frequently Asked Questions</h2>
         </header>
         <div class="faq-list reveal">
           <details class="faq-item">
-            <summary>What does SBKJ Group manufacture?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-body"><p>SBKJ Group manufactures HVAC ductwork machinery: spiral duct forming machines (Φ80–Φ1600 mm), automatic rectangular duct production lines (SBAL-V up to 2,500 m²/day), TDF flange forming machines, lockformers, gore-lockers and seam closing machines.</p></div>
+            <summary><span data-i18n="home.faq.q1">What does SBKJ Group manufacture?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p data-i18n="home.faq.a1">SBKJ Group manufactures HVAC ductwork machinery: spiral duct forming machines (Φ80–Φ1600 mm), automatic rectangular duct production lines (SBAL-V up to 2,500 m²/day), TDF flange forming machines, lockformers, gore-lockers and seam closing machines.</p></div>
           </details>
           <details class="faq-item">
-            <summary>How many countries has SBKJ delivered to?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-body"><p>Over 5,000 SBKJ machines are installed in more than 80 countries across five continents — from single tubeformers to complete turn-key duct factories.</p></div>
+            <summary><span data-i18n="home.faq.q2">How many countries has SBKJ delivered to?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p data-i18n="home.faq.a2">Over 5,000 SBKJ machines are installed in more than 80 countries across five continents — from single tubeformers to complete turn-key duct factories.</p></div>
           </details>
           <details class="faq-item">
-            <summary>Is SBKJ certified?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-body"><p>Yes. SBKJ Group is ISO 9001:2015 certified and machines carry CE marking. The company also holds 60+ invention and utility patents.</p></div>
+            <summary><span data-i18n="home.faq.q3">Is SBKJ certified?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p data-i18n="home.faq.a3">Yes. SBKJ Group is ISO 9001:2015 certified and machines carry CE marking. The company also holds 60+ invention and utility patents.</p></div>
           </details>
           <details class="faq-item">
-            <summary>What is the maximum output of an SBAL-V auto duct line?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-body"><p>An SBAL-V automatic rectangular duct production line produces 800 to 2,500 m² of finished duct per day with a single operator.</p></div>
+            <summary><span data-i18n="home.faq.q4">What is the maximum output of an SBAL-V auto duct line?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p data-i18n="home.faq.a4">An SBAL-V automatic rectangular duct production line produces 800 to 2,500 m² of finished duct per day with a single operator.</p></div>
           </details>
           <details class="faq-item">
-            <summary>How can I request a quotation?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-body"><p>Email <a href="mailto:sales@sbkjduct.com">sales@sbkjduct.com</a> or message <a href="https://wa.me/61435074994">+61 435 074 994</a> on WhatsApp. Provide duct size range, daily output target, material thickness and country of installation — SBKJ replies within 12 hours with a machine configuration, workshop layout drawing and budget.</p></div>
+            <summary><span data-i18n="home.faq.q5">How can I request a quotation?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p data-i18n="home.faq.a5">Email sales@sbkjduct.com or message +61 435 074 994 on WhatsApp. Provide duct size range, daily output target, material thickness and country of installation — SBKJ replies within 12 hours with a machine configuration, workshop layout drawing and budget.</p></div>
           </details>
           <details class="faq-item">
-            <summary>Do you provide installation, training and spare parts?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-body"><p>Yes. SBKJ Group provides on-site installation and commissioning, operator training, and lifetime spare-parts support for every machine and turn-key HVAC duct factory delivered.</p></div>
+            <summary><span data-i18n="home.faq.q6">Do you provide installation, training and spare parts?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p data-i18n="home.faq.a6">Yes. SBKJ Group provides on-site installation and commissioning, operator training, and lifetime spare-parts support for every machine and turn-key HVAC duct factory delivered.</p></div>
           </details>
         </div>
       </div>
@@ -541,9 +574,9 @@
       <div class="shell">
         <div class="newsletter-card">
           <div>
-            <p class="eyebrow">Stay informed</p>
-            <h2>New machines, new specs, in your inbox.</h2>
-            <p class="newsletter-lead">Quarterly updates on SBKJ machine releases, factory tours and HVAC duct production know-how. No spam.</p>
+            <p class="eyebrow" data-i18n="home.stayinformed.eyebrow">Stay informed</p>
+            <h2 data-i18n="home.newsletter.title">New machines, new specs, in your inbox.</h2>
+            <p class="newsletter-lead" data-i18n="home.newsletter.lead">Quarterly updates on SBKJ machine releases, factory tours and HVAC duct production know-how. No spam.</p>
           </div>
           <form class="newsletter-form" action="https://formsubmit.co/sales@sbkjduct.com" method="POST">
             <input type="hidden" name="_subject" value="New SBKJ newsletter signup" />
@@ -551,38 +584,38 @@
             <input type="hidden" name="_next" value="https://sbkjduct.com/?subscribed=1" />
             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
             <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address" />
-            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <button type="submit" class="btn btn-primary" data-i18n="common.subscribe">Subscribe</button>
           </form>
         </div>
       </div>
     </section>
 
-    <section class="section process-section">
+    <section class="section process-section bg-subtle">
       <div class="shell">
-        <header class="section-header reveal" style="margin-bottom:3.5rem">
-          <p class="eyebrow">How we work</p>
-          <h2 style="font-family:var(--font-head);font-weight:500;font-size:clamp(2rem,4vw,3rem);line-height:1.1;color:#fff;margin:.75rem 0 0">From inquiry to running line in four steps</h2>
+        <header class="section-header reveal">
+          <p class="eyebrow" data-i18n="home.process.eyebrow">How we work</p>
+          <h2 data-i18n="home.process.title">From inquiry to running line in four steps</h2>
         </header>
         <ol class="process-grid reveal-stagger">
           <li class="process-step">
             <span class="process-num">01</span>
-            <h3>Inquiry</h3>
-            <p>Send your duct size range, daily output target and material thickness. We reply within 12 hours.</p>
+            <h3 data-i18n="home.step.inquiry">Inquiry</h3>
+            <p data-i18n="home.step.inquiry.desc">Send your duct size range, daily output target and material thickness. We reply within 12 hours.</p>
           </li>
           <li class="process-step">
             <span class="process-num">02</span>
-            <h3>Engineering</h3>
-            <p>We propose a machine configuration, full line layout drawing and itemised investment budget.</p>
+            <h3 data-i18n="home.step.engineering">Engineering</h3>
+            <p data-i18n="home.step.engineering.desc">We propose a machine configuration, full line layout drawing and itemised investment budget.</p>
           </li>
           <li class="process-step">
             <span class="process-num">03</span>
-            <h3>Production &amp; FAT</h3>
-            <p>Manufactured in our Jiangyin factory, factory-acceptance tested with your material before shipping.</p>
+            <h3 data-i18n="home.step.production">Production &amp; FAT</h3>
+            <p data-i18n="home.step.production.desc">Manufactured in our Jiangyin factory, factory-acceptance tested with your material before shipping.</p>
           </li>
           <li class="process-step">
             <span class="process-num">04</span>
-            <h3>Commission &amp; train</h3>
-            <p>Installed and commissioned on-site, with operator training and lifetime spare-parts support.</p>
+            <h3 data-i18n="home.step.commission">Commission &amp; train</h3>
+            <p data-i18n="home.step.commission.desc">Installed and commissioned on-site, with operator training and lifetime spare-parts support.</p>
           </li>
         </ol>
       </div>
@@ -591,72 +624,79 @@
     <section class="section countries-section">
       <div class="shell">
         <header class="section-header reveal">
-          <p class="eyebrow">Global Footprint</p>
-          <h2>Running in 80+ countries</h2>
-          <p>SBKJ duct lines are commissioned across six continents — from large HVAC contractors to ductwork OEMs serving government infrastructure, commercial towers and cleanroom projects.</p>
+          <p class="eyebrow" data-i18n="home.reach.eyebrow">Global Footprint</p>
+          <h2 data-i18n="home.reach.title">Running in 80+ countries</h2>
+          <p data-i18n="home.reach.lead">SBKJ duct lines are commissioned across six continents — from large HVAC contractors to ductwork OEMs serving government infrastructure, commercial towers and cleanroom projects.</p>
         </header>
         <div class="country-chips reveal-stagger" role="list" aria-label="Countries where SBKJ machines are installed">
-          <span class="country-chip" role="listitem">United States</span>
-          <span class="country-chip" role="listitem">Canada</span>
-          <span class="country-chip" role="listitem">Mexico</span>
-          <span class="country-chip" role="listitem">Brazil</span>
-          <span class="country-chip" role="listitem">Chile</span>
-          <span class="country-chip" role="listitem">United Kingdom</span>
-          <span class="country-chip" role="listitem">Germany</span>
-          <span class="country-chip" role="listitem">France</span>
-          <span class="country-chip" role="listitem">Spain</span>
-          <span class="country-chip" role="listitem">Italy</span>
-          <span class="country-chip" role="listitem">Poland</span>
-          <span class="country-chip" role="listitem">Türkiye</span>
-          <span class="country-chip" role="listitem">Saudi Arabia</span>
-          <span class="country-chip" role="listitem">UAE</span>
-          <span class="country-chip" role="listitem">Qatar</span>
-          <span class="country-chip" role="listitem">Kuwait</span>
-          <span class="country-chip" role="listitem">Egypt</span>
-          <span class="country-chip" role="listitem">Morocco</span>
-          <span class="country-chip" role="listitem">South Africa</span>
-          <span class="country-chip" role="listitem">Nigeria</span>
-          <span class="country-chip" role="listitem">Kenya</span>
-          <span class="country-chip" role="listitem">India</span>
-          <span class="country-chip" role="listitem">Indonesia</span>
-          <span class="country-chip" role="listitem">Malaysia</span>
-          <span class="country-chip" role="listitem">Singapore</span>
-          <span class="country-chip" role="listitem">Vietnam</span>
-          <span class="country-chip" role="listitem">Thailand</span>
-          <span class="country-chip" role="listitem">Philippines</span>
-          <span class="country-chip" role="listitem">Australia</span>
-          <span class="country-chip" role="listitem">New Zealand</span>
+          <span class="country-chip" role="listitem" data-i18n="country.us">United States</span>
+          <span class="country-chip" role="listitem" data-i18n="country.ca">Canada</span>
+          <span class="country-chip" role="listitem" data-i18n="country.mx">Mexico</span>
+          <span class="country-chip" role="listitem" data-i18n="country.br">Brazil</span>
+          <span class="country-chip" role="listitem" data-i18n="country.cl">Chile</span>
+          <span class="country-chip" role="listitem" data-i18n="country.gb">United Kingdom</span>
+          <span class="country-chip" role="listitem" data-i18n="country.de">Germany</span>
+          <span class="country-chip" role="listitem" data-i18n="country.fr">France</span>
+          <span class="country-chip" role="listitem" data-i18n="country.es">Spain</span>
+          <span class="country-chip" role="listitem" data-i18n="country.it">Italy</span>
+          <span class="country-chip" role="listitem" data-i18n="country.pl">Poland</span>
+          <span class="country-chip" role="listitem" data-i18n="country.tr">Türkiye</span>
+          <span class="country-chip" role="listitem" data-i18n="country.sa">Saudi Arabia</span>
+          <span class="country-chip" role="listitem" data-i18n="country.ae">UAE</span>
+          <span class="country-chip" role="listitem" data-i18n="country.qa">Qatar</span>
+          <span class="country-chip" role="listitem" data-i18n="country.kw">Kuwait</span>
+          <span class="country-chip" role="listitem" data-i18n="country.eg">Egypt</span>
+          <span class="country-chip" role="listitem" data-i18n="country.ma">Morocco</span>
+          <span class="country-chip" role="listitem" data-i18n="country.za">South Africa</span>
+          <span class="country-chip" role="listitem" data-i18n="country.ng">Nigeria</span>
+          <span class="country-chip" role="listitem" data-i18n="country.ke">Kenya</span>
+          <span class="country-chip" role="listitem" data-i18n="country.in">India</span>
+          <span class="country-chip" role="listitem" data-i18n="country.id">Indonesia</span>
+          <span class="country-chip" role="listitem" data-i18n="country.my">Malaysia</span>
+          <span class="country-chip" role="listitem" data-i18n="country.sg">Singapore</span>
+          <span class="country-chip" role="listitem" data-i18n="country.vn">Vietnam</span>
+          <span class="country-chip" role="listitem" data-i18n="country.th">Thailand</span>
+          <span class="country-chip" role="listitem" data-i18n="country.ph">Philippines</span>
+          <span class="country-chip" role="listitem" data-i18n="country.au">Australia</span>
+          <span class="country-chip" role="listitem" data-i18n="country.nz">New Zealand</span>
         </div>
+        <p class="region-deep-dive reveal" data-i18n-html="home.regiondive">
+          Deep-dive by region:
+          <a href="regions/australia.html">Australia</a> ·
+          <a href="regions/middle-east.html">Middle East</a> ·
+          <a href="regions/southeast-asia.html">Southeast Asia</a> ·
+          <a href="regions/">all regions &rarr;</a>
+        </p>
       </div>
     </section>
 
-    <section class="section insights-section">
+    <section class="section insights-section bg-subtle">
       <div class="shell">
-        <header class="section-header reveal" style="margin-bottom:3rem">
-          <p class="eyebrow">Knowledge & Insights</p>
-          <h2 style="font-family:var(--font-head);font-weight:500;font-size:clamp(2rem,4vw,3rem);line-height:1.1;color:#fff;margin:.75rem 0 0">From the SBKJ workshop</h2>
+        <header class="section-header reveal">
+          <p class="eyebrow" data-i18n="home.knowledge.eyebrow">Knowledge & Insights</p>
+          <h2 data-i18n="home.insights.title">From the SBKJ workshop</h2>
         </header>
         <div class="insights-grid reveal-stagger">
           <article class="insight-card">
-            <a href="insights/choosing-auto-duct-line.html" class="insight-img"><img src="assets/images/sbal-v.jpg" alt="Auto duct production line selection guide" loading="lazy"></a>
-            <span class="insight-meta">GUIDE · 2026</span>
-            <h3>How to choose an auto duct production line</h3>
-            <p>SBAL-V vs SBAL-III, coil specs, TDF integration, workshop layout and realistic ROI — a 10-minute engineer-led guide for HVAC factory planners.</p>
-            <a href="insights/choosing-auto-duct-line.html" class="line-link">Read the guide →</a>
+            <a href="insights/choosing-auto-duct-line.html" class="insight-img"><img src="assets/images/sbal-v.jpg" alt="Auto duct production line selection guide" loading="lazy" width="1600" height="1195" decoding="async"></a>
+            <span class="insight-meta" data-i18n="home.insight1.meta">GUIDE · 2026</span>
+            <h3 data-i18n="home.insight1.title">How to choose an auto duct production line</h3>
+            <p data-i18n="home.insight1.desc">SBAL-V vs SBAL-III, coil specs, TDF integration, workshop layout and realistic ROI — a 10-minute engineer-led guide for HVAC factory planners.</p>
+            <a href="insights/choosing-auto-duct-line.html" class="line-link" data-i18n="home.insight1.link">Read the guide →</a>
           </article>
           <article class="insight-card">
-            <a href="insights/spiral-duct-forming-guide.html" class="insight-img"><img src="assets/images/sbtf-1602.jpg" alt="Spiral tubeformer forming head" loading="lazy"></a>
-            <span class="insight-meta">EXPLAINER · 2026</span>
-            <h3>Spiral duct forming explained</h3>
-            <p>How a tubeformer turns a flat coil into round HVAC duct — forming head, flying shear vs saw blade, diameter range and the QA checks that matter.</p>
-            <a href="insights/spiral-duct-forming-guide.html" class="line-link">Read the explainer →</a>
+            <a href="insights/spiral-duct-forming-guide.html" class="insight-img"><img src="assets/images/sbtf-1602.jpg" alt="Spiral tubeformer forming head" loading="lazy" width="1600" height="1064" decoding="async"></a>
+            <span class="insight-meta" data-i18n="home.insight2.meta">EXPLAINER · 2026</span>
+            <h3 data-i18n="home.insight2.title">Spiral duct forming explained</h3>
+            <p data-i18n="home.insight2.desc">How a tubeformer turns a flat coil into round HVAC duct — forming head, flying shear vs saw blade, diameter range and the QA checks that matter.</p>
+            <a href="insights/spiral-duct-forming-guide.html" class="line-link" data-i18n="home.insight2.link">Read the explainer →</a>
           </article>
           <article class="insight-card">
-            <a href="insights/tdf-vs-angle-flange.html" class="insight-img"><img src="assets/images/tdf-flange.jpg" alt="TDF flange vs angle flange comparison" loading="lazy"></a>
-            <span class="insight-meta">COMPARISON · 2026</span>
-            <h3>TDF vs angle flange — which connection?</h3>
-            <p>Head-to-head on install speed, leak class, cost per meter and when angle flange still wins. Real numbers, not marketing claims.</p>
-            <a href="insights/tdf-vs-angle-flange.html" class="line-link">Read the comparison →</a>
+            <a href="insights/tdf-vs-angle-flange.html" class="insight-img"><img src="assets/images/tdf-flange.jpg" alt="TDF flange vs angle flange comparison" loading="lazy" width="833" height="493" decoding="async"></a>
+            <span class="insight-meta" data-i18n="home.insight3.meta">COMPARISON · 2026</span>
+            <h3 data-i18n="home.insight3.title">TDF vs angle flange — which connection?</h3>
+            <p data-i18n="home.insight3.desc">Head-to-head on install speed, leak class, cost per meter and when angle flange still wins. Real numbers, not marketing claims.</p>
+            <a href="insights/tdf-vs-angle-flange.html" class="line-link" data-i18n="home.insight3.link">Read the comparison →</a>
           </article>
         </div>
       </div>
@@ -667,22 +707,28 @@
         <p class="eyebrow" data-i18n="cta.eyebrow">Talk to an engineer</p>
         <h2 data-i18n="cta.title">Build your duct factory with SBKJ.</h2>
         <p data-i18n="cta.lead">Send your duct size range, daily output target and material thickness — we reply within 12 hours with a machine configuration, layout drawing and budget.</p>
-        <div class="hero-actions" style="justify-content: center; margin-top: 1.75rem;">
+        <div class="hero-actions hero-actions--center">
           <a href="contact.html" class="btn btn-primary" data-i18n="hero.cta1">Get a quotation in 12 hours</a>
-          <a href="https://wa.me/61435074994" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp +61 435 074 994</a>
+          <a href="https://wa.me/61435074994" class="btn btn-ghost" target="_blank" rel="noopener" data-i18n="home.whatsapp">WhatsApp +61 435 074 994</a>
         </div>
       </div>
     </section>
+    <section class="section page-review-section">
+      <div class="shell">
+        <p class="page-reviewed" data-i18n-html="home.pagereviewed"><span class="product-reviewed-mark" aria-hidden="true">&#10003;</span>Page reviewed by <a href="about.html" rel="author">SBKJ Engineering &amp; QA</a> <span class="product-reviewed-sep">&middot;</span> Last verified <time datetime="2026-04-09">April 9, 2026</time></p>
+      </div>
+    </section>
+  
   </main>
 
   <section class="cert-strip" aria-label="Certifications">
     <div class="shell cert-strip-inner">
-      <span class="cert-badge">ISO 9001:2015</span>
-      <span class="cert-badge">CE MARKING</span>
-      <span class="cert-badge">60+ PATENTS</span>
-      <span class="cert-badge">5,000+ INSTALLATIONS</span>
-      <span class="cert-badge">80+ COUNTRIES</span>
-      <span class="cert-badge">SINCE 1995</span>
+      <span class="cert-badge" data-i18n="home.cert.iso">ISO 9001:2015</span>
+      <span class="cert-badge" data-i18n="home.cert.ce">CE MARKING</span>
+      <span class="cert-badge" data-i18n="home.cert.patents">60+ PATENTS</span>
+      <span class="cert-badge" data-i18n="home.cert.installs">5,000+ INSTALLATIONS</span>
+      <span class="cert-badge" data-i18n="home.cert.countries">80+ COUNTRIES</span>
+      <span class="cert-badge" data-i18n="home.cert.since">SINCE 1995</span>
     </div>
   </section>
 
@@ -690,7 +736,7 @@
     <div class="shell footer-grid">
       <div>
         <div class="footer-logo">
-          <img src="assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" />
+          <img src="assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async" loading="lazy">
           <span class="logo-title">SBKJ Group</span>
         </div>
         <p class="footer-text" data-i18n="footer.desc">
@@ -709,27 +755,45 @@
         <ul>
           <li><a href="index.html" data-i18n="nav.home">Home</a></li>
           <li><a href="machines.html" data-i18n="nav.machines">Machines</a></li>
+          <li><a href="categories/">Categories</a></li>
           <li><a href="insights/" data-i18n="nav.insights">Insights</a></li>
-          <li><a href="regions/">Regions</a></li>
+          <li><a href="regions/" data-i18n="nav.regions">Regions</a></li>
           <li><a href="about.html" data-i18n="nav.about">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="why-choose-sbkj.html" data-i18n="nav.why">Why SBKJ</a></li>
+          <li><a href="pricing-and-lead-time.html" data-i18n="nav.pricing">Pricing &amp; lead time</a></li>
+          <li><a href="industries/" data-i18n="nav.industries">Industries</a></li>
+          <li><a href="factory.html" data-i18n="nav.factory">Factory</a></li>
+          <li><a href="quality.html" data-i18n="nav.quality">Quality</a></li>
+          <li><a href="videos.html" data-i18n="nav.videos">Videos</a></li>
+          <li><a href="case-studies/" data-i18n="nav.cases">Case studies</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h3>Engineering insights</h3>
+        <h3 data-i18n="footer.categories">Categories</h3>
         <ul>
-          <li><a href="insights/choosing-auto-duct-line.html">Choosing an auto duct line</a></li>
-          <li><a href="insights/spiral-duct-forming-guide.html">Spiral duct forming explained</a></li>
-          <li><a href="insights/tdf-vs-angle-flange.html">TDF vs angle flange</a></li>
-          <li><a href="insights/hvac-duct-factory-layout.html">Factory layout</a></li>
-          <li><a href="insights/hvac-duct-machinery-glossary.html">Glossary</a></li>
-          <li><a href="insights/importing-duct-machinery-from-china.html">Importing from China</a></li>
-          <li><a href="insights/smacna-seal-classes-explained.html">SMACNA seal classes</a></li>
-          <li><a href="insights/galvanized-vs-stainless-steel-duct.html">Galvanized vs stainless</a></li>
-          <li><a href="insights/sbal-v-vs-sbal-iii.html">SBAL-V vs SBAL-III</a></li>
-          <li><a href="insights/spiral-duct-sizing-chart.html">Spiral duct sizing chart</a></li>
-          <li><a href="insights/pittsburgh-lock-vs-snaplock.html">Pittsburgh lock vs snaplock</a></li>
+          <li><a href="categories/auto-duct-lines.html" data-i18n="footer.cat.autoduct">Auto Duct Lines</a></li>
+          <li><a href="categories/spiral-duct-machinery.html" data-i18n="footer.cat.spiral">Spiral Duct Machinery</a></li>
+          <li><a href="categories/tdf-and-lockformer.html" data-i18n="footer.cat.tdf">TDF &amp; Lockformer</a></li>
+          <li><a href="categories/cutting-and-forming.html" data-i18n="footer.cat.cutting">Cutting &amp; Forming</a></li>
+          <li><a href="categories/flexible-duct-machinery.html" data-i18n="footer.cat.flexible">Flexible Duct</a></li>
+          <li><a href="categories/duct-welding-machines.html" data-i18n="footer.cat.welding">Welding Machines</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="footer.insights">Engineering insights</h3>
+        <ul>
+          <li><a href="insights/choosing-auto-duct-line.html" data-i18n="footer.ins.choosing">Choosing an auto duct line</a></li>
+          <li><a href="insights/spiral-duct-forming-guide.html" data-i18n="footer.ins.spiral">Spiral duct forming explained</a></li>
+          <li><a href="insights/tdf-vs-angle-flange.html" data-i18n="footer.ins.tdf">TDF vs angle flange</a></li>
+          <li><a href="insights/hvac-duct-factory-layout.html" data-i18n="footer.ins.layout">Factory layout</a></li>
+          <li><a href="insights/hvac-duct-machinery-glossary.html" data-i18n="footer.ins.glossary">Glossary</a></li>
+          <li><a href="insights/importing-duct-machinery-from-china.html" data-i18n="footer.ins.importing">Importing from China</a></li>
+          <li><a href="insights/smacna-seal-classes-explained.html" data-i18n="footer.ins.smacna">SMACNA seal classes</a></li>
+          <li><a href="insights/galvanized-vs-stainless-steel-duct.html" data-i18n="footer.ins.galvanized">Galvanized vs stainless</a></li>
+          <li><a href="insights/sbal-v-vs-sbal-iii.html" data-i18n="footer.ins.sbalvsiii">SBAL-V vs SBAL-III</a></li>
+          <li><a href="insights/spiral-duct-sizing-chart.html" data-i18n="footer.ins.sizing">Spiral duct sizing chart</a></li>
+          <li><a href="insights/pittsburgh-lock-vs-snaplock.html" data-i18n="footer.ins.pittsburgh">Pittsburgh lock vs snaplock</a></li>
           <li><a href="insights/rectangular-duct-sizing-chart.html">Rectangular duct sizing chart</a></li>
           <li><a href="insights/smacna-gauge-chart.html">SMACNA gauge chart</a></li>
         </ul>
@@ -759,8 +823,8 @@
       el.textContent = el.dataset.count + (el.dataset.suffix || '');
     });
   </script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/i18n.js?v=2"></script>
   <script src="assets/js/chatbot.js"></script>
 </body>
 </html>
