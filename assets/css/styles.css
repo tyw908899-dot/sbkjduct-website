@@ -2725,7 +2725,7 @@ body.has-hero-dark .site-header:not(.header-scrolled) .site-nav .nav-cta {
 .hero-copy h1 {
   font-family: var(--font-head);
   font-weight: 500;
-  font-size: clamp(3rem, 9.5vw, 8.5rem);
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
   line-height: 0.98;
   letter-spacing: -0.02em;
   color: #fff;
@@ -3484,7 +3484,7 @@ a:hover { opacity: 0.85; }
   .video-embed-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 40px; }
   .site-header { height: 80px; }
-  .hero-copy h1 { font-size: clamp(2.5rem, 9vw, 4rem) !important; }
+  .hero-copy h1 { font-size: clamp(1.75rem, 6vw, 2.5rem) !important; }
 }
 @media (max-width: 600px) {
   .cards-grid { grid-template-columns: 1fr !important; }
