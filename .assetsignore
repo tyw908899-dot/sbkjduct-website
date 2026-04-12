@@ -1,0 +1,7 @@
+.git
+.claude
+node_modules
+*.js.bak
+fix_*.js
+extract_*.js
+wire_*.js
