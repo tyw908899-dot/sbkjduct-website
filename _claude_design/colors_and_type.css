@@ -1,0 +1,258 @@
+/* =========================================================================
+   SBKJ — colors_and_type.css
+   Extracted from assets/css/styles.css (sbkjduct-website repo).
+   Defines base tokens + semantic styles for both the live light theme
+   and the dark target direction (used on .section-dark, hero, CTA).
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   FONTS
+   Live site uses Syne (display/headings) + Outfit (body).
+   Loaded from Google Fonts.
+   NOTE: brief mentions Playfair + Inter as target — these are NOT in the
+   live site. Flagged in README.
+   ------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  /* =====================================================================
+     PRIMARY — AVANT-GARDE DARK (homepage, all brand surfaces)
+     Obsidian black · electric cyan · warm amber · Playfair + Inter
+     ===================================================================== */
+  --sbkj-bg:            #030408;  /* obsidian — page default */
+  --sbkj-bg-elevated:   #0a0c12;  /* banded sections, cards */
+  --sbkj-bg-card:       #0e1118;  /* raised cards, panels */
+  --sbkj-bg-line:       rgba(255,255,255,0.06); /* hairline rules */
+
+  --sbkj-text:          #f5f5f5;  /* primary text */
+  --sbkj-text-muted:    #a8afbd;  /* body copy, secondary */
+  --sbkj-text-dim:      #5b6272;  /* meta, eyebrows, captions */
+  --sbkj-text-faint:    #3a4050;  /* borders-as-type, disabled */
+
+  --sbkj-accent:        #00e5ff;  /* electric cyan — precision */
+  --sbkj-accent-dim:    rgba(0,229,255,0.08);
+  --sbkj-accent-glow:   rgba(0,229,255,0.22);
+  --sbkj-accent-warm:   #f59e0b;  /* amber — heat, urgency */
+  --sbkj-accent-warm-dim: rgba(245,158,11,0.10);
+
+  --sbkj-border:        rgba(255,255,255,0.08);
+  --sbkj-border-strong: rgba(255,255,255,0.16);
+  --sbkj-border-focus:  rgba(0,229,255,0.40);
+
+  /* =====================================================================
+     LEGACY LIGHT — secondary reference palette (kept for reference only)
+     Use only when explicitly brief'd to produce light artifacts.
+     ===================================================================== */
+  --sbkj-legacy-bg:           #f5f3ef;
+  --sbkj-legacy-bg-elevated:  #eceae5;
+  --sbkj-legacy-bg-card:      #ffffff;
+  --sbkj-legacy-text:         #1a1f2c;
+  --sbkj-legacy-text-muted:   #4a5568;
+  --sbkj-legacy-text-dim:     #8a96a8;
+  --sbkj-legacy-accent:       #2c6aa0;
+  --sbkj-legacy-accent-warm:  #8a6640;
+  --sbkj-legacy-border:       rgba(0,0,0,0.08);
+
+  /* Legacy dark-section (from original site's hero/CTA) — also reference */
+  --sbkj-legacy-dark-bg:      #0d1829;
+  --sbkj-legacy-dark-accent:  #5b9ac4;
+
+  /* ---------- SEMANTIC ---------- */
+  --sbkj-success: #1a7d54;
+  --sbkj-warning: #b48a2a;
+  --sbkj-danger:  #b8443b;
+
+  /* ---------- TYPOGRAPHY ---------- */
+  --sbkj-font-head: "Playfair Display", "Times New Roman", serif;
+  --sbkj-font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --sbkj-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* Legacy reference */
+  --sbkj-legacy-font-head: "Syne", system-ui, sans-serif;
+  --sbkj-legacy-font-body: "Outfit", system-ui, sans-serif;
+
+  /* ---------- SHAPE / ELEVATION ---------- */
+  --sbkj-radius-sm:  4px;
+  --sbkj-radius:     6px;   /* default — btns, pills */
+  --sbkj-radius-lg:  10px;  /* cards, panels */
+  --sbkj-radius-pill: 999px;
+
+  --sbkj-shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+  --sbkj-shadow-sm: 0 4px 20px rgba(0,0,0,0.07);
+  --sbkj-shadow-md: 0 12px 36px rgba(0,0,0,0.12);
+  --sbkj-shadow-lg: 0 8px 32px rgba(0,0,0,0.4);   /* dark section drop */
+  --sbkj-shadow-cta: 0 8px 24px rgba(91,154,196,0.22);
+
+  /* ---------- SPACING (rem-based) ---------- */
+  --sbkj-space-1: 0.25rem;
+  --sbkj-space-2: 0.5rem;
+  --sbkj-space-3: 0.75rem;
+  --sbkj-space-4: 1rem;
+  --sbkj-space-5: 1.5rem;
+  --sbkj-space-6: 2rem;
+  --sbkj-space-7: 3rem;
+  --sbkj-space-8: 5rem;
+  --sbkj-space-9: 7rem;
+
+  /* ---------- MOTION ---------- */
+  --sbkj-transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --sbkj-ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---------- LAYOUT ---------- */
+  --sbkj-shell-max: 1280px;
+  --sbkj-shell-pad: 1.5rem;
+}
+
+/* =========================================================================
+   SEMANTIC TYPE STYLES
+   Use these classes (or bare tags when this sheet is loaded) so components
+   render with correct hierarchy without repeating specimens.
+   ========================================================================= */
+
+.sbkj-display,
+.sbkj-h1 {
+  font-family: var(--sbkj-font-head);
+  font-size: clamp(2.8rem, 6.5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  color: var(--sbkj-text);
+  margin: 0;
+}
+
+.sbkj-h2 {
+  font-family: var(--sbkj-font-head);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--sbkj-text);
+  margin: 0 0 0.8rem;
+}
+
+.sbkj-h3 {
+  font-family: var(--sbkj-font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--sbkj-text);
+  margin: 0 0 0.4rem;
+}
+
+.sbkj-h4 {
+  font-family: var(--sbkj-font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--sbkj-text);
+  margin: 0 0 0.35rem;
+}
+
+.sbkj-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--sbkj-font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--sbkj-text-dim);
+}
+.sbkj-eyebrow::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--sbkj-accent);
+}
+
+.sbkj-lead {
+  font-family: var(--sbkj-font-body);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--sbkj-text-muted);
+  margin: 0;
+}
+
+.sbkj-body,
+.sbkj-p {
+  font-family: var(--sbkj-font-body);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--sbkj-text-muted);
+}
+
+.sbkj-small {
+  font-family: var(--sbkj-font-body);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--sbkj-text-dim);
+}
+
+.sbkj-meta {
+  font-family: var(--sbkj-font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sbkj-text-dim);
+}
+
+.sbkj-mono {
+  font-family: var(--sbkj-font-mono);
+  font-size: 0.85rem;
+  color: var(--sbkj-text);
+}
+
+/* Stat/metric number — used in stats band + capacity grids */
+.sbkj-stat-number {
+  font-family: var(--sbkj-font-head);
+  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  color: var(--sbkj-text);
+  letter-spacing: -0.02em;
+}
+.sbkj-stat-number em {
+  font-style: normal;
+  color: var(--sbkj-accent);
+}
+
+/* =========================================================================
+   FOREGROUND / BACKGROUND SHORTCUTS (design-system idiom)
+   ========================================================================= */
+.sbkj-fg1 { color: var(--sbkj-text); }
+.sbkj-fg2 { color: var(--sbkj-text-muted); }
+.sbkj-fg3 { color: var(--sbkj-text-dim); }
+.sbkj-accent-fg { color: var(--sbkj-accent); }
+.sbkj-accent-warm-fg { color: var(--sbkj-accent-warm); }
+
+.sbkj-bg1 { background: var(--sbkj-bg); }
+.sbkj-bg2 { background: var(--sbkj-bg-elevated); }
+.sbkj-bg-card { background: var(--sbkj-bg-card); }
+.sbkj-border { border: 1px solid var(--sbkj-border); }
+
+/* Dark-section scope — drop this class on a wrapper to flip palette */
+.sbkj-dark {
+  background: var(--sbkj-dark-bg);
+  color: var(--sbkj-dark-text);
+}
+.sbkj-dark .sbkj-fg1  { color: var(--sbkj-dark-text); }
+.sbkj-dark .sbkj-fg2  { color: var(--sbkj-dark-text-muted); }
+.sbkj-dark .sbkj-fg3  { color: var(--sbkj-dark-text-dim); }
+.sbkj-dark .sbkj-accent-fg { color: var(--sbkj-dark-accent); }
+.sbkj-dark .sbkj-eyebrow { color: var(--sbkj-dark-text-dim); }
+.sbkj-dark .sbkj-eyebrow::before { background: var(--sbkj-dark-accent); }
+/* ====== LEGACY COMPATIBILITY ALIASES ====== */
+:root {
+  /* Old code that used --sbkj-dark-* now resolves to the new primary dark */
+  --sbkj-dark-bg: var(--sbkj-bg);
+  --sbkj-dark-bg-elevated: var(--sbkj-bg-elevated);
+  --sbkj-dark-bg-card: var(--sbkj-bg-card);
+  --sbkj-dark-text: var(--sbkj-text);
+  --sbkj-dark-text-muted: var(--sbkj-text-muted);
+  --sbkj-dark-text-dim: var(--sbkj-text-dim);
+  --sbkj-dark-accent: var(--sbkj-accent);
+  --sbkj-dark-accent-warm: var(--sbkj-accent-warm);
+  --sbkj-dark-border: var(--sbkj-border);
+}
+
+body { background: var(--sbkj-bg); color: var(--sbkj-text); font-family: var(--sbkj-font-body); }
