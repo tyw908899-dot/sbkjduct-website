@@ -1,0 +1,37 @@
+{
+  "fat.eyebrow": "Signed FAT Log",
+  "fat.title": "Every Auto Duct Line Ships with a <span class=\"serif-italic\">Signed FAT Log.</span>",
+  "fat.body": "Factory Acceptance Test log — gauge tolerances, run-out, cycle times, and operator sign-off. Serialized to your machine and archived for the life of the line. Western inspectors can audit before it leaves the floor.",
+  "fat.cta": "Request a Sample FAT Log\n              <svg viewBox=\"0 0 16 16\" fill=\"none\" width=\"14\" height=\"14\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\"/></svg>",
+  "fat.cta2": "See full QA process →",
+
+  "videos.eyebrow": "See It Run",
+  "videos.title": "Machines in <span class=\"serif-italic\">Production.</span>",
+  "videos.lead": "Short clips of our core lines running in real factory environments. No stock footage — every clip is a real SBKJ machine on a real shift.",
+  "videos.viewall": "View all 20+ videos →",
+  "videos.card1.label": "Spiral Tubeformer",
+  "videos.card1.title": "SBTF-1602 <span class=\"serif-italic\">spiral duct line</span>",
+  "videos.card1.cta": "View product →",
+  "videos.card2.label": "Auto Duct Production Line",
+  "videos.card2.title": "SBAL-V <span class=\"serif-italic\">U-shape rectangular line</span>",
+  "videos.card2.cta": "View product →",
+  "videos.card3.label": "TDF Flange Roll-Former",
+  "videos.card3.title": "SBTDF-12 <span class=\"serif-italic\">flange forming</span>",
+  "videos.card3.cta": "View product →",
+
+  "why.eyebrow": "What Sets Us Apart",
+  "why.title": "30 Years. 80 Countries. <span class=\"serif-italic\">One Job</span> — Make Your Duct Line Run.",
+  "why.t1.title": "30-Year Factory Heritage",
+  "why.t1.desc": "Same Jiangyin workshop since 1995. No reseller chain, no rebranded OEM. Every machine cut, welded, and FAT-tested on one floor under continuous engineering control.",
+  "why.t2.title": "5,000+ Installations Worldwide",
+  "why.t2.desc": "Saudi commercial HVAC, Vietnam fabrication shops, Australian data-center contractors. Real installations, real run-time, real spare-part availability — not factory-show catalog photos.",
+  "why.t3.title": "10 Languages of Documentation",
+  "why.t3.desc": "Operator manuals, FAT logs, quote responses, after-sales tickets — all available in English, Arabic, Spanish, French, Russian, Turkish, Portuguese, Hindi, Indonesian, and Chinese.",
+  "why.t4.title": "12-Hour Quote Turnaround",
+  "why.t4.desc": "Send specs Monday morning, receive a fully-configured quote with USD pricing, lead time, and FAT plan by Tuesday. No \"let us check with the factory\" delays.",
+
+  "manifesto.eyebrow": "Engineering Doctrine",
+  "manifesto.role": "· Head of Global Sales · Melbourne",
+
+  "cta.catalog.btn": "Download 2026 Catalog\n          <svg viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M8 2v9M4 8l4 4 4-4M2 14h12\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\"/></svg>"
+}
