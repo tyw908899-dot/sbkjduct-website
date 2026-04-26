@@ -2238,3 +2238,45 @@ html.home-v4-doc, html.home-v4-doc body, body.site-body.home-v4 { background: #0
   .home-v4 .hero-cinematic .hero-meta-tr { display: none; }
   .home-v4 .hero-cinematic .hero-cinematic-inner { padding-bottom: 4rem; }
 }
+
+
+/* =====================================================================
+   v4.5 — NUCLEAR DARK BG OVERRIDE (fix white gaps between sections)
+   ===================================================================== */
+html.home-v4-doc, body.site-body.home-v4 { background: #03050a !important; color: #f5f5f5 !important; }
+.home-v4 main, .home-v4 section, .home-v4 .section { background: #03050a !important; color: #f5f5f5 !important; }
+.home-v4 .manifesto { background: #f5f3ef !important; color: #1a1f2c !important; }
+.home-v4 .hero-cinematic { background: #03050a !important; }
+.home-v4 .cert-band, .home-v4 .fat-log, .home-v4 .video-strip, .home-v4 .why-strip, .home-v4 .cta-final, .home-v4 #machines, .home-v4 #cases { background: #03050a !important; color: #f5f5f5 !important; }
+
+
+/* v4.5b — ULTRA aggressive: cover ALL legacy white-bg elements */
+.home-v4 .stats-band, .home-v4 .logos-section, .home-v4 .featured,
+.home-v4 .cards-grid, .home-v4 .machines-grid, .home-v4 .home-cta,
+.home-v4 .countries-band, .home-v4 .faq-section, .home-v4 .why-section,
+.home-v4 .hero-main, .home-v4 #cta, .home-v4 #faq,
+.home-v4 #stats, .home-v4 .page-review-section, .home-v4 .cert-strip {
+  background: #03050a !important;
+  color: #f5f5f5 !important;
+  border: none !important;
+}
+.home-v4 .cat-card, .home-v4 .why-tile, .home-v4 .video-card { background: #0a0c12 !important; }
+.home-v4 .cat-card .cat-img { background: #03050a !important; }
+.home-v4 .case-card { background: #0a0c12 !important; }
+
+
+/* v4.6 — darken product photos to remove white gaps */
+.home-v4 .cat-img { background: #03050a !important; }
+.home-v4 .cat-img img { filter: contrast(1.1) saturate(0.85) brightness(0.62) !important; }
+.home-v4 .cat-img::before {
+  content: "";
+  position: absolute; inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(135deg, rgba(0,229,255,0.12) 0%, transparent 35%),
+    linear-gradient(180deg, transparent 30%, rgba(3,4,8,0.65) 100%);
+  pointer-events: none;
+}
+.home-v4 .video-card-media video { filter: contrast(1.08) saturate(0.85) brightness(0.65) !important; }
+.home-v4 .case-card .case-card-img,
+.home-v4 .case-card img { filter: contrast(1.1) saturate(0.85) brightness(0.62) !important; }
