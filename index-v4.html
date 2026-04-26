@@ -158,7 +158,7 @@
   </script>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/styles.css?v=16" />
-  <link rel="stylesheet" href="assets/css/home-v4.css?v=4" />
+  <link rel="stylesheet" href="assets/css/home-v4.css?v=12" />
   <meta property="og:site_name" content="SBKJ Group" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:site" content="@sbkjgroup" />
@@ -170,15 +170,9 @@
 <header class="hdr" id="hdr">
   <div class="shell hdr-inner">
     <a href="index.html" class="logo" aria-label="SBKJ Group">
-      <svg viewBox="0 0 40 40" fill="none">
-        <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.5"/>
-        <circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="1" opacity="0.35"/>
-        <circle cx="20" cy="20" r="3" fill="currentColor"/>
-        <line x1="3" y1="20" x2="10" y2="20" stroke="currentColor" stroke-width="1" opacity="0.25"/>
-        <line x1="30" y1="20" x2="37" y2="20" stroke="currentColor" stroke-width="1" opacity="0.25"/>
-      </svg>
-      <span>
-        <span class="logo-word">SBKJ</span>
+      <img src="assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="48" height="48" decoding="async" />
+      <span class="logo-text">
+        <span class="logo-word">SBKJ Group</span>
         <span class="logo-sub">Est. 1995 · Jiangyin CN</span>
       </span>
     </a>
@@ -200,96 +194,71 @@
 <main>
 
   <!-- =====================  HERO  ===================== -->
-  <section class="hero" aria-labelledby="hero-heading">
-    <div class="hero-coords">
-      <span><em>31.9102° N · 120.2855° E</em> <span class="hide-sm">· Jiangyin Factory</span></span>
+  <!-- =====================  /001 HERO — FULL-BLEED VIDEO  ===================== -->
+  <section class="hero hero-fullbleed" aria-labelledby="hero-heading">
+    <!-- Full-bleed background video -->
+    <video class="hero-bg-video"
+           autoplay muted loop playsinline preload="auto"
+           poster="assets/images/sbal-v.jpg"
+           aria-hidden="true">
+      <source src="assets/video/banner.mp4" type="video/mp4" />
+    </video>
+    <!-- Cinematic overlay: dark vignette + scan grid -->
+    <div class="hero-bg-overlay" aria-hidden="true"></div>
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+
+    <!-- Top-bar live coords -->
+    <div class="hero-coords-min" aria-hidden="true">
       <span><span class="pulse"></span> <em>Line 03 · Running</em></span>
-      <span class="hide-sm">Ref · SBAL‑V / SBTF‑1602</span>
+      <span class="hide-sm"><em>31.9102° N · 120.2855° E · Jiangyin Factory</em></span>
+      <span class="hide-sm">Ref · SBAL-V / SBTF-1602</span>
     </div>
 
-    <div class="shell">
-      <div class="hero-copy">
-        <div class="eyebrow-num">
-          <span class="idx">001</span>
-          <span class="rule"></span>
-          <span>HVAC Machinery · Since 1995</span>
-        </div>
-        <h1 id="hero-heading" data-i18n-html="hero.title.v3">
-          Industrial Duct Machinery.<br/>
-          <span class="serif-italic">Built to Last.</span>
-        </h1>
-        <p class="hero-lead" data-i18n="hero.lead.v3">Complete production lines. Trusted in 80+ countries since 1995.</p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary btn-hero-quote" data-i18n-html="hero.cta.quote">
-            Request a Quote
-            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
-          </a>
-          <a href="#manifesto" class="btn btn-ghost">
-            Engineering Doctrine
-          </a>
-        </div>
-
-        <div class="hero-model-line">
-          <span>Flagship · <strong>SBAL‑V Auto Duct Line</strong></span>
-          <span>Throughput · <strong>2,500 m²/day</strong></span>
-        </div>
+    <!-- Centered hero copy -->
+    <div class="shell hero-shell-min">
+      <div class="eyebrow-num hero-eyebrow">
+        <span class="idx">001</span>
+        <span class="rule"></span>
+        <span>HVAC Duct Machinery · Since 1995</span>
       </div>
-
-      <!-- Visual -->
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hud-frame tl"></div>
-        <div class="hud-frame tr"></div>
-        <div class="hud-frame bl"></div>
-        <div class="hud-frame br"></div>
-
-        <div class="hud hud-tl"><span class="bar"></span><span class="label">Model</span> <span class="val">SBAL‑V</span></div>
-        <div class="hud hud-tr"><span class="label">Status</span> <span class="val">◉ LIVE</span></div>
-        <div class="hud hud-bl"><span class="label">Gauge</span> <span class="val">0.5–1.5 mm</span></div>
-        <div class="hud hud-br"><span class="label">Rev</span> <span class="val">v3 · 2026</span></div>
-
-        <div class="hero-visual-video-wrap">
-          <video class="hero-visual-video"
-                 autoplay muted loop playsinline
-                 poster="assets/images/sbal-v.jpg"
-                 src="assets/videos/banner.mp4">
-            <!-- Fallback source: raw-repo URL so the hero works before the mp4 is on-prem -->
-            <source src="assets/videos/banner.mp4" type="video/mp4" />
-            <source src="https://raw.githubusercontent.com/tyw908899-dot/sbkjduct-website/master/assets/videos/banner.mp4" type="video/mp4" />
-          </video>
-          <!-- Duotone + scanline overlay -->
-          <div class="hero-visual-duotone"></div>
-          <div class="hero-visual-scan"></div>
-          <div class="hero-visual-crosshair">
-            <svg viewBox="0 0 400 400" preserveAspectRatio="none" fill="none">
-              <line x1="200" y1="0" x2="200" y2="400" stroke="#00e5ff" stroke-opacity="0.25" stroke-dasharray="2 6"/>
-              <line x1="0" y1="200" x2="400" y2="200" stroke="#00e5ff" stroke-opacity="0.25" stroke-dasharray="2 6"/>
-            </svg>
-          </div>
-        </div>
+      <h1 id="hero-heading" class="hero-h1-min" data-i18n-html="hero.title.v3">
+        Industrial Duct Machinery.<br/>
+        <span class="serif-italic">Built to Last.</span>
+      </h1>
+      <p class="hero-lead-min" data-i18n="hero.lead.v3">Complete production lines. Trusted in 80+ countries since 1995.</p>
+      <div class="hero-actions-min">
+        <a href="contact.html" class="btn btn-primary btn-hero-quote" data-i18n-html="hero.cta.quote">
+          Request a Quote
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+        </a>
+        <a href="#machines" class="hero-scroll-link">
+          <span data-i18n="hero.scroll">Watch the line run</span>
+          <svg viewBox="0 0 14 14" fill="none" width="14" height="14"><path d="M7 1v12M3 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+        </a>
       </div>
+    </div>
 
-      <!-- Scale proof -->
-      <div class="hero-scale">
-        <div class="hero-scale-cell">
-          <span class="num" data-count="30">30<em>+</em></span>
-          <span class="lbl" data-i18n="proof.years">Years Manufacturing</span>
-          <span class="sub">Jiangyin factory, continuous since 1995</span>
-        </div>
-        <div class="hero-scale-cell">
-          <span class="num" data-count="80">80<em>+</em></span>
-          <span class="lbl" data-i18n="proof.countries">Countries Served</span>
-        </div>
-        <div class="hero-scale-cell">
-          <span class="num" data-count="5000">5,000<em>+</em></span>
-          <span class="lbl" data-i18n="proof.machines">Machines Installed</span>
-        </div>
-        <div class="hero-scale-cell">
-          <span class="num">10</span>
-          <span class="lbl">Languages Supported</span>
-        </div>
+    <!-- Floating stats overlay at bottom -->
+    <div class="hero-stats-bar">
+      <div class="hero-stats-cell">
+        <span class="num" data-count="30">30<em>+</em></span>
+        <span class="lbl" data-i18n="proof.years">Years Manufacturing</span>
+      </div>
+      <div class="hero-stats-cell">
+        <span class="num" data-count="80">80<em>+</em></span>
+        <span class="lbl" data-i18n="proof.countries">Countries Served</span>
+      </div>
+      <div class="hero-stats-cell">
+        <span class="num" data-count="5000">5,000<em>+</em></span>
+        <span class="lbl" data-i18n="proof.machines">Machines Installed</span>
+      </div>
+      <div class="hero-stats-cell">
+        <span class="num">10</span>
+        <span class="lbl" data-i18n="proof.languages">Languages Supported</span>
       </div>
     </div>
   </section>
+
 
   <!-- =====================  CERT BAND  ===================== -->
   <div class="cert-band">
@@ -324,7 +293,7 @@
             <span data-i18n="feat.eyebrow">Priority Machine Range</span>
           </div>
           <h2 data-i18n="feat.title">Every Machine Your <span class="serif-italic">Duct Factory</span> Needs.</h2>
-          <p>Six categories. 66 machines. Each one specified down to gauge, tolerance, and line speed — so your factory commits only to what the throughput plan actually requires.</p>
+          <p>Six categories. 66 machines. From coil to finished duct.</p>
         </div>
         <a href="machines.html" data-i18n="feat.viewall.btn">View all 50+ specifications →</a>
       </div>
@@ -336,7 +305,7 @@
             <span class="cat-num">/ 01</span>
             <span class="cat-intent" data-i18n="selector.rect.intent">Making rectangular duct?</span>
             <h3 class="cat-title" data-i18n-html="selector.rect.title">Rectangular <em>Duct Lines</em></h3>
-            <p class="cat-desc" data-i18n="selector.rect.desc">Coil-fed auto lines producing up to 2,500 m²/day. GI, stainless, or aluminum. 0.5–1.5 mm.</p>
+            <p class="cat-desc" data-i18n="selector.rect.desc">Coil-fed lines · 800-2,500 m²/day · GI / stainless / aluminum.</p>
             <div class="cat-specs">
               <div class="cat-spec-row"><span class="k">Throughput</span><span class="v">≤ 2,500 m²/d</span></div>
               <div class="cat-spec-row"><span class="k">Gauge</span><span class="v">0.5–1.5 mm</span></div>
@@ -355,7 +324,7 @@
             <span class="cat-num">/ 02</span>
             <span class="cat-intent" data-i18n="selector.spiral.intent">Making spiral round duct?</span>
             <h3 class="cat-title" data-i18n-html="selector.spiral.title">Spiral Round <em>Duct Machines</em></h3>
-            <p class="cat-desc" data-i18n="selector.spiral.desc">Φ80–Φ1600 mm continuous spiral duct. Patented flying shear — no line stop at cut.</p>
+            <p class="cat-desc" data-i18n="selector.spiral.desc">Φ80–Φ1600 mm spiral duct · patented flying shear.</p>
             <div class="cat-specs">
               <div class="cat-spec-row"><span class="k">Diameter</span><span class="v">Φ80–Φ1600</span></div>
               <div class="cat-spec-row"><span class="k">Cut</span><span class="v">Flying shear</span></div>
@@ -374,7 +343,7 @@
             <span class="cat-num">/ 03</span>
             <span class="cat-intent" data-i18n="selector.elbow.intent">Need fittings and elbows?</span>
             <h3 class="cat-title" data-i18n-html="selector.elbow.title">Fittings &amp; <em>Elbow Machines</em></h3>
-            <p class="cat-desc" data-i18n="selector.elbow.desc">Gore-lock elbow machines, plasma cutters, and fitting shapers for elbows and transitions.</p>
+            <p class="cat-desc" data-i18n="selector.elbow.desc">Gore-lock · plasma · fitting shapers.</p>
             <div class="cat-specs">
               <div class="cat-spec-row"><span class="k">Range</span><span class="v">100–1,250 mm</span></div>
               <div class="cat-spec-row"><span class="k">Tools</span><span class="v">Gore-lock · plasma</span></div>
@@ -392,7 +361,7 @@
             <span class="cat-num">/ 04</span>
             <span class="cat-intent" data-i18n="selector.forming.intent">Need lockforming or flanging?</span>
             <h3 class="cat-title" data-i18n-html="selector.forming.title">Duct <em>Forming Machines</em></h3>
-            <p class="cat-desc" data-i18n="selector.forming.desc">Lockformers, TDF flange rollers, Pittsburgh lock machines, and seam closers for rectangular duct workshops.</p>
+            <p class="cat-desc" data-i18n="selector.forming.desc">Lockformers · TDF rollers · Pittsburgh · seam closers.</p>
             <div class="cat-specs">
               <div class="cat-spec-row"><span class="k">Flange</span><span class="v">TDF · Pittsburgh</span></div>
               <div class="cat-spec-row"><span class="k">Speed</span><span class="v">12 m/min</span></div>
@@ -411,7 +380,7 @@
             <span class="cat-num">/ 05</span>
             <span class="cat-intent" data-i18n="selector.factory.intent">Planning a complete duct factory?</span>
             <h3 class="cat-title" data-i18n-html="selector.factory.title">Factory <em>Layout Planning</em></h3>
-            <p class="cat-desc" data-i18n="selector.factory.desc">Machine selection, floor layout, utilities, and commissioning — designed from coil to finished duct.</p>
+            <p class="cat-desc" data-i18n="selector.factory.desc">Floor plan · utilities · commissioning · turnkey.</p>
             <div class="cat-specs">
               <div class="cat-spec-row"><span class="k">Scope</span><span class="v">Coil → duct</span></div>
               <div class="cat-spec-row"><span class="k">Commission</span><span class="v">On-site</span></div>
@@ -430,7 +399,7 @@
             <span class="cat-num">/ 06</span>
             <span class="cat-intent">Making flexible &amp; insulated duct?</span>
             <h3 class="cat-title">Flexible <em>Duct Systems</em></h3>
-            <p class="cat-desc">Insulated flex duct production, non-insulated aluminum flex, and helix winder equipment for commercial HVAC supply.</p>
+            <p class="cat-desc">Insulated · aluminum · helix winder.</p>
             <div class="cat-specs">
               <div class="cat-spec-row"><span class="k">Diameter</span><span class="v">Φ100–1,250</span></div>
               <div class="cat-spec-row"><span class="k">Core</span><span class="v">Al · textile</span></div>
@@ -462,7 +431,7 @@
         </div>
         <div class="fat-log-body">
           <h2 data-i18n-html="fat.title">Every Auto Duct Line Ships with a <span class="serif-italic">Signed FAT Log.</span></h2>
-          <p data-i18n="fat.body">Factory Acceptance Test log — gauge tolerances, run-out, cycle times, and operator sign-off. Serialized to your machine and archived for the life of the line. Western inspectors can audit before it leaves the floor.</p>
+          <p data-i18n="fat.body">Gauge tolerances. Run-out. Cycle times. Operator sign-off. Serialized to your machine, archived for life. Auditable before it leaves the floor.</p>
           <div class="fat-log-actions">
             <a href="contact.html" class="btn btn-primary" data-i18n-html="fat.cta">Request a Sample FAT Log
               <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
@@ -490,7 +459,7 @@
         <a href="videos.html" data-i18n="videos.viewall">View all 20+ videos →</a>
       </div>
 
-      <div class="video-grid reveal reveal-d1">
+      <div class="video-grid video-grid-6 reveal reveal-d1">
         <a href="product/sbtf-1602.html" class="video-card">
           <div class="video-card-media">
             <video src="assets/video/seg-spiral.mp4" autoplay muted loop playsinline preload="auto" poster="assets/images/sbtf-1602.jpg" aria-hidden="true"></video>
@@ -499,7 +468,6 @@
           <div class="video-card-body">
             <span class="video-card-eyebrow" data-i18n="videos.card1.label">Spiral Tubeformer</span>
             <h3 data-i18n-html="videos.card1.title">SBTF-1602 <span class="serif-italic">spiral duct line</span></h3>
-            <span class="video-card-arrow" data-i18n="videos.card1.cta">View product →</span>
           </div>
         </a>
 
@@ -509,9 +477,8 @@
             <span class="video-card-code">SBAL-V</span>
           </div>
           <div class="video-card-body">
-            <span class="video-card-eyebrow" data-i18n="videos.card2.label">Auto Duct Production Line</span>
-            <h3 data-i18n-html="videos.card2.title">SBAL-V <span class="serif-italic">U-shape rectangular line</span></h3>
-            <span class="video-card-arrow" data-i18n="videos.card2.cta">View product →</span>
+            <span class="video-card-eyebrow" data-i18n="videos.card2.label">Auto Duct Line</span>
+            <h3 data-i18n-html="videos.card2.title">SBAL-V <span class="serif-italic">U-shape line</span></h3>
           </div>
         </a>
 
@@ -523,7 +490,39 @@
           <div class="video-card-body">
             <span class="video-card-eyebrow" data-i18n="videos.card3.label">TDF Flange Roll-Former</span>
             <h3 data-i18n-html="videos.card3.title">SBTDF-12 <span class="serif-italic">flange forming</span></h3>
-            <span class="video-card-arrow" data-i18n="videos.card3.cta">View product →</span>
+          </div>
+        </a>
+
+        <a href="product/lockformer.html" class="video-card">
+          <div class="video-card-media">
+            <video src="assets/video/seg-gorelocker.mp4" autoplay muted loop playsinline preload="auto" poster="assets/images/lockformer.jpg" aria-hidden="true"></video>
+            <span class="video-card-code">SBEM-1250</span>
+          </div>
+          <div class="video-card-body">
+            <span class="video-card-eyebrow">Gorelocker</span>
+            <h3>SBEM-1250 <span class="serif-italic">elbow former</span></h3>
+          </div>
+        </a>
+
+        <a href="product/laser-cutting.html" class="video-card">
+          <div class="video-card-media">
+            <video src="assets/video/seg-plasma.mp4" autoplay muted loop playsinline preload="auto" poster="assets/images/plasma-cutter.jpg" aria-hidden="true"></video>
+            <span class="video-card-code">SBLQ-15</span>
+          </div>
+          <div class="video-card-body">
+            <span class="video-card-eyebrow">CNC Plasma Cutting</span>
+            <h3>SBLQ-15 <span class="serif-italic">plasma table</span></h3>
+          </div>
+        </a>
+
+        <a href="product/seam-welder.html" class="video-card">
+          <div class="video-card-media">
+            <video src="assets/video/seg-welding.mp4" autoplay muted loop playsinline preload="auto" poster="assets/images/seam-welder.jpg" aria-hidden="true"></video>
+            <span class="video-card-code">SBWT-1500</span>
+          </div>
+          <div class="video-card-body">
+            <span class="video-card-eyebrow">Seam Welding</span>
+            <h3>SBWT-1500 <span class="serif-italic">seam welder</span></h3>
           </div>
         </a>
       </div>
@@ -546,22 +545,22 @@
         <div class="why-tile">
           <span class="why-tile-num">01</span>
           <h3 data-i18n="why.t1.title">30-Year Factory Heritage</h3>
-          <p data-i18n="why.t1.desc">Same Jiangyin workshop since 1995. No reseller chain, no rebranded OEM. Every machine cut, welded, and FAT-tested on one floor under continuous engineering control.</p>
+          <p data-i18n="why.t1.desc">Same Jiangyin floor since 1995. No reseller chain, no rebranded OEM.</p>
         </div>
         <div class="why-tile">
           <span class="why-tile-num">02</span>
           <h3 data-i18n="why.t2.title">5,000+ Installations Worldwide</h3>
-          <p data-i18n="why.t2.desc">Saudi commercial HVAC, Vietnam fabrication shops, Australian data-center contractors. Real installations, real run-time, real spare-part availability — not factory-show catalog photos.</p>
+          <p data-i18n="why.t2.desc">Saudi · Vietnam · Australia · 80+ countries. Real run-time, real spare parts.</p>
         </div>
         <div class="why-tile">
           <span class="why-tile-num">03</span>
           <h3 data-i18n="why.t3.title">10 Languages of Documentation</h3>
-          <p data-i18n="why.t3.desc">Operator manuals, FAT logs, quote responses, after-sales tickets — all available in English, Arabic, Spanish, French, Russian, Turkish, Portuguese, Hindi, Indonesian, and Chinese.</p>
+          <p data-i18n="why.t3.desc">Manuals · FAT logs · quotes · after-sales — all 10 languages.</p>
         </div>
         <div class="why-tile">
           <span class="why-tile-num">04</span>
           <h3 data-i18n="why.t4.title">12-Hour Quote Turnaround</h3>
-          <p data-i18n="why.t4.desc">Send specs Monday morning, receive a fully-configured quote with USD pricing, lead time, and FAT plan by Tuesday. No "let us check with the factory" delays.</p>
+          <p data-i18n="why.t4.desc">Specs Monday → USD quote + lead time + FAT plan by Tuesday.</p>
         </div>
       </div>
     </div>
