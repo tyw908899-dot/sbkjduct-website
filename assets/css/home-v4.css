@@ -2041,7 +2041,7 @@ html.home-v4-doc, html.home-v4-doc body, body.site-body.home-v4 { background: #0
   width: 100%; height: 100%;
   object-fit: cover;
   z-index: 0;
-  filter: contrast(1.06) saturate(0.82) brightness(0.36);
+  filter: contrast(1.08) saturate(0.95) brightness(0.72);
 }
 
 /* Cinematic overlay: heavy vignette + subtle bleed */
@@ -2049,10 +2049,9 @@ html.home-v4-doc, html.home-v4-doc body, body.site-body.home-v4 { background: #0
   position: absolute; inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse 800px 480px at center 45%, rgba(3,5,10,0.78) 0%, rgba(3,5,10,0.62) 35%, rgba(3,5,10,0.55) 70%, rgba(3,5,10,0.95) 100%),
-    radial-gradient(ellipse at center, transparent 0%, rgba(3,5,10,0.52) 70%, rgba(3,5,10,0.95) 100%),
-    radial-gradient(ellipse at 50% 100%, rgba(0,229,255,0.08) 0%, transparent 50%),
-    linear-gradient(180deg, rgba(3,5,10,0.55) 0%, transparent 30%, transparent 70%, rgba(3,5,10,0.92) 100%);
+    radial-gradient(ellipse 720px 380px at center 48%, rgba(3,5,10,0.55) 0%, rgba(3,5,10,0.30) 50%, transparent 80%),
+    radial-gradient(ellipse at 50% 100%, rgba(0,229,255,0.06) 0%, transparent 45%),
+    linear-gradient(180deg, rgba(3,5,10,0.42) 0%, transparent 22%, transparent 65%, rgba(3,5,10,0.88) 100%);
   pointer-events: none;
 }
 
@@ -2080,7 +2079,7 @@ html.home-v4-doc, html.home-v4-doc body, body.site-body.home-v4 { background: #0
   letter-spacing: -0.045em;
   color: #ffffff;
   margin: 0;
-  text-shadow: 0 4px 60px rgba(0,0,0,0.7);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.95), 0 4px 40px rgba(0,0,0,0.75);
   max-width: none !important;
 }
 .home-v4 .hero-cinematic h1.hero-h1-cinematic .serif-italic {
@@ -2089,7 +2088,7 @@ html.home-v4-doc, html.home-v4-doc body, body.site-body.home-v4 { background: #0
   font-weight: 400;
   background: none !important;
   -webkit-text-fill-color: var(--sbkj-accent) !important;
-  text-shadow: 0 0 50px rgba(0, 229, 255, 0.45), 0 4px 60px rgba(0,0,0,0.7);
+  text-shadow: 0 0 30px rgba(0, 229, 255, 0.55), 0 2px 12px rgba(0,0,0,0.95), 0 4px 40px rgba(0,0,0,0.75);
 }
 
 /* Lead text — single sentence */
@@ -2097,11 +2096,11 @@ html.home-v4-doc, html.home-v4-doc body, body.site-body.home-v4 { background: #0
   font-family: var(--sbkj-font-body);
   font-size: clamp(1.05rem, 1.4vw, 1.3rem);
   line-height: 1.5;
-  color: rgba(255,255,255,0.78);
+  color: rgba(255,255,255,0.88);
   font-weight: 300;
   max-width: 620px;
   margin: 0;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.7);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.95), 0 2px 18px rgba(0,0,0,0.6);
 }
 
 /* Single primary CTA — bold cyan */
