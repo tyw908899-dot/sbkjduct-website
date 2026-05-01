@@ -93,6 +93,7 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - SMACNA Gauge Chart — duct sheet metal thickness reference by pressure class and dimension with metric conversions and reinforcement guidance: https://sbkjduct.com/insights/smacna-gauge-chart.html
 - 7 Mistakes Buyers Make When Buying a Spiral Tubeformer — coil specification, model sizing, FAT and commissioning pitfalls: https://sbkjduct.com/insights/spiral-tubeformer-buying-mistakes.html
 - HVAC Duct Machine Buyer's Checklist — 47 pre-purchase verification points across factory vetting, machine specs, certifications, commercial terms, logistics, installation and after-sales: https://sbkjduct.com/insights/hvac-duct-machine-buyers-checklist.html
+- SMACNA vs EN 1505 vs AS/NZS 4254 vs DW/144 — International Duct Standards Compared — pressure class, sealing, reinforcement, gauge tables and acceptance testing for North America, Europe, Australia/NZ and the UK: https://sbkjduct.com/insights/international-duct-standards-compared.html
 
 ## Step-by-step procedural guides (HowTo schema marked)
 
