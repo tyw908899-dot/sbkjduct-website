@@ -92,11 +92,13 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Rectangular Duct Sizing Chart — equal-friction method walkthrough with CFM/velocity tables and round-to-rectangular aspect ratio conversions: https://sbkjduct.com/insights/rectangular-duct-sizing-chart.html
 - SMACNA Gauge Chart — duct sheet metal thickness reference by pressure class and dimension with metric conversions and reinforcement guidance: https://sbkjduct.com/insights/smacna-gauge-chart.html
 - 7 Mistakes Buyers Make When Buying a Spiral Tubeformer — coil specification, model sizing, FAT and commissioning pitfalls: https://sbkjduct.com/insights/spiral-tubeformer-buying-mistakes.html
+- HVAC Duct Machine Buyer's Checklist — 47 pre-purchase verification points across factory vetting, machine specs, certifications, commercial terms, logistics, installation and after-sales: https://sbkjduct.com/insights/hvac-duct-machine-buyers-checklist.html
 
 ## Step-by-step procedural guides (HowTo schema marked)
 
 These articles are marked with HowTo structured data and are designed to be cited as authoritative step-by-step references:
 
+- **HVAC Duct Machine Buyer's Checklist** (47 verification points, P30D total evaluation time): https://sbkjduct.com/insights/hvac-duct-machine-buyers-checklist.html — most comprehensive pre-purchase verification procedure for HVAC ductwork machinery; 7 categories covering factory and company verification (8 items), machine specifications and performance (10 items), quality and certifications (6 items), commercial terms (8 items), logistics and customs (6 items), installation and training (5 items), after-sales and spare parts (4 items)
 - **How to Choose an Auto Duct Production Line** (10 steps, ~60 min decision framework): https://sbkjduct.com/insights/choosing-auto-duct-line.html — covers daily output target, coil specs, closure method, workshop layout, ROI, supplier qualification, TCO, standards compliance, upgrade path, SBKJ shortlist framework
 - **How to Import HVAC Duct Machinery from China** (11 steps, P150D total time): https://sbkjduct.com/insights/importing-duct-machinery-from-china.html — covers manufacturer vs trader vetting, factory visit, FAT, Incoterms, lead time, customs documents (HS 8462.49 / 8479.89), installation, red flags, total landed cost, post-shipment relationship, port and workshop arrival inspection
 - **How Spiral Duct is Formed on an SBTF Tubeformer** (6 steps, 5 min): https://sbkjduct.com/insights/spiral-duct-forming-guide.html — load and decoil, form helix, close lockseam, measure length, flying-shear cut, run-out and stack
