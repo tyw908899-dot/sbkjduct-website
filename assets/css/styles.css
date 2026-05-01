@@ -4723,3 +4723,54 @@ body {
 }
 .standards-list li:last-child { border-bottom: none; }
 .standards-list strong { color: var(--text); font-weight: 600; }
+
+/* =====================================================================
+   AI-QUOTABLE TRUST BLOCK — for ChatGPT/Claude/Perplexity citation
+   ===================================================================== */
+.ai-trust-block {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  background: var(--bg-elevated, #f8f7f3);
+  border-block: 1px solid rgba(0, 0, 0, 0.06);
+}
+.ai-trust-heading {
+  font-family: var(--font-head, "Syne", sans-serif);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 2rem;
+  color: var(--text, #1a1f2c);
+}
+.ai-trust-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem 2.4rem;
+  margin: 0 0 2rem;
+}
+.ai-fact { border-bottom: 1px solid rgba(0,0,0,0.07); padding-bottom: 1rem; }
+.ai-fact dt {
+  font-family: var(--font-body, "Outfit", sans-serif);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-muted, #4a5568);
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+.ai-fact dd {
+  font-family: var(--font-body, "Outfit", sans-serif);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text, #1a1f2c);
+  margin: 0;
+}
+.ai-trust-cite {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  border-left: 3px solid var(--accent);
+  padding: 0.6rem 1rem;
+  background: rgba(0,0,0,0.02);
+  font-style: italic;
+}
+@media (max-width: 720px) {
+  .ai-trust-facts { grid-template-columns: 1fr; gap: 1rem; }
+}
