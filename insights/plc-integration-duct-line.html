@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>PLC Integration for HVAC Duct Lines — Siemens vs Mitsubishi vs Delta | SBKJ Group</title>
+  <meta name="description" content="Engineer-led comparison: Siemens S7-1200, Mitsubishi FX5U and Delta DVP for HVAC duct production lines. Architecture, recipe management, OPC UA and remote diagnostics." />
+  <link rel="canonical" href="https://sbkjduct.com/insights/plc-integration-duct-line.html" />
+  <link rel="alternate" hreflang="en" href="https://sbkjduct.com/insights/plc-integration-duct-line.html" />
+  <link rel="alternate" hreflang="x-default" href="https://sbkjduct.com/insights/plc-integration-duct-line.html" />
+  <meta name="author" content="SBKJ Group" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:site_name" content="SBKJ Group" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="PLC Integration for HVAC Duct Lines — Siemens vs Mitsubishi vs Delta" />
+  <meta property="og:description" content="Comparing Siemens S7-1200, Mitsubishi FX5U and Delta DVP PLCs on HVAC duct production lines: recipe management, OPC UA, remote diagnostics and TCO." />
+  <meta property="og:url" content="https://sbkjduct.com/insights/plc-integration-duct-line.html" />
+  <meta property="og:image" content="https://sbkjduct.com/assets/images/sbal-v.jpg" />
+  <meta property="article:published_time" content="2026-05-01T00:00:00+08:00" />
+  <meta property="article:modified_time" content="2026-05-01T00:00:00+08:00" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@sbkjgroup" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=16" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://sbkjduct.com/#author-engineering","name":"SBKJ Engineering Team","url":"https://sbkjduct.com/about.html","parentOrganization":{"@id":"https://sbkjduct.com/#org"},"knowsAbout":["PLC integration","Siemens S7","Mitsubishi FX5U","Delta DVP","HVAC duct line","Recipe management","OPC UA"]},
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://sbkjduct.com/"},
+      {"@type":"ListItem","position":2,"name":"Insights","item":"https://sbkjduct.com/insights/"},
+      {"@type":"ListItem","position":3,"name":"PLC Integration","item":"https://sbkjduct.com/insights/plc-integration-duct-line.html"}
+    ]},
+    {"@type":"TechArticle","headline":"PLC Integration for HVAC Duct Lines — Siemens vs Mitsubishi vs Delta","description":"Engineer-led comparison of three dominant PLC platforms for HVAC duct production lines — Siemens S7-1200/1500, Mitsubishi FX5U/Q-series and Delta DVP — covering architecture, recipe management, OPC UA integration, remote diagnostics and total cost of ownership.","author":{"@id":"https://sbkjduct.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"SBKJ Group QA & Engineering","url":"https://sbkjduct.com/about.html"},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-05-01","dateModified":"2026-05-01","image":"https://sbkjduct.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/plc-integration-duct-line.html","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"Industrial Automation","speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"Which PLC does SBKJ ship by default on auto duct lines?","acceptedAnswer":{"@type":"Answer","text":"SBKJ ships the SBAL-V auto duct line with Siemens S7-1200 PLC and Siemens KTP HMI as standard. Customers can specify Mitsubishi FX5U or Delta DVP at the same price tier, or Siemens S7-1500 for premium installations. The PLC programme is documented and the source code is supplied to the customer at handover — no proprietary lock-in."}},
+      {"@type":"Question","name":"What is recipe management on a duct line PLC?","acceptedAnswer":{"@type":"Answer","text":"Recipe management is the PLC function that stores production parameters per duct profile — gauge, dimension, seam type, reinforcement spacing and tolerance band. The operator selects the recipe at job start; the PLC adjusts forming roller positions, shear timing and PLC outputs automatically. SBKJ ships the SBAL-V with 50 pre-configured SMACNA, EN 1505 and AS/NZS 4254 recipes; operators can save additional custom recipes."}},
+      {"@type":"Question","name":"Does SBKJ support OPC UA for MES integration?","acceptedAnswer":{"@type":"Answer","text":"Yes, on Siemens S7-1500 PLCs which include native OPC UA Server. The SBAL-V can publish production telemetry (current recipe, m/min throughput, cycle count, tooling cycle counter, alarm log) to a customer MES or ERP system via OPC UA. S7-1200 supports OPC UA via add-on module. Mitsubishi FX5U supports OPC UA via SLMP gateway. Delta DVP supports basic Modbus TCP and requires a third-party OPC UA gateway."}},
+      {"@type":"Question","name":"Can the PLC be remotely diagnosed by SBKJ engineers?","acceptedAnswer":{"@type":"Answer","text":"Yes — SBKJ ships SBAL-V lines with an industrial 4G/5G modem (TOSIBOX or Ewon) optionally that allows remote secure tunnel access for SBKJ engineers to view live PLC data and diagnose issues. Remote diagnosis cuts downtime from 5–14 days (waiting for parts and engineer travel) to 24–72 hours for software-related issues."}},
+      {"@type":"Question","name":"What is the PLC TCO over 10 years?","acceptedAnswer":{"@type":"Answer","text":"Siemens S7-1200 has the lowest 10-year TCO due to global parts availability, large engineer pool and stable firmware roadmap. Mitsubishi FX5U is comparable in Asia-Pacific. Delta DVP has lower initial cost (USD 200–400 cheaper than Siemens) but higher 10-year TCO due to less robust spare-parts ecosystem outside East Asia. SBKJ recommends Siemens for global deployments and Mitsubishi for Asia-only deployments."}}
+    ]}
+  ]}
+  </script>
+</head>
+<body class="site-body">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell">
+      <div class="site-header-inner">
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async"><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
+        <nav id="primaryNav" class="site-nav">
+          <a href="../index.html">Home</a>
+          <a href="../machines.html">Machines</a>
+          <a href="../insights/">Insights</a>
+          <a href="../about.html">About</a>
+          <a href="../contact.html" class="nav-cta">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>PLC Integration</span></li></ol></nav></div></nav>
+    <article class="section page-hero bg-subtle">
+      <div class="shell">
+        <p class="eyebrow">Insights · Automation</p>
+        <h1 class="page-title">PLC Integration for HVAC Duct Lines — Siemens vs Mitsubishi vs Delta</h1>
+        <p class="article-lead">An engineering comparison of the three dominant PLC platforms used on HVAC duct production lines — Siemens S7-1200/S7-1500, Mitsubishi FX5U/Q-series and Delta DVP. Architecture, recipe management, OPC UA integration with MES/ERP, remote diagnostics, parts availability and 10-year total cost of ownership. Written for buyers selecting their PLC at quotation stage and for plant engineers maintaining existing lines.</p>
+        <p class="article-byline">
+          <span class="article-byline-author">By <a href="../about.html" rel="author">SBKJ Engineering Team</a></span>
+          <span class="article-byline-sep">·</span>
+          <span>Published <time datetime="2026-05-01">May 1, 2026</time></span>
+          <span class="article-byline-sep">·</span>
+          <span>11 min read</span>
+          <span class="article-byline-sep">·</span>
+          <span>Reviewed by SBKJ QA &amp; Engineering</span>
+        </p>
+      </div>
+    </article>
+
+    <section class="section">
+      <div class="shell"><div class="content-narrow">
+
+        <h2>Why PLC choice matters more than buyers think</h2>
+        <p>The PLC is the brain of an auto duct production line. It decides when the shear fires, how the forming rollers position for each gauge, when alarms trigger, how recipes load, and how the line communicates with your MES, ERP or quality system. It also determines who can service the line for the next 10–15 years, what spare parts are stocked locally, and what kind of engineer you need to hire when something breaks at 11pm on Friday.</p>
+        <p>SBKJ ships SBAL-V auto duct lines with three supported PLC platforms — Siemens, Mitsubishi and Delta — and we let the customer choose at quotation stage. This guide is the comparison framework we walk through to help customers make a defensible choice.</p>
+
+        <h2>Siemens S7-1200 / S7-1500</h2>
+        <p>Siemens is the dominant industrial PLC platform globally and the SBKJ default. The S7-1200 is the entry-tier successor to the venerable S7-300, suitable for the SBAL-V's 200-300 I/O point requirement. The S7-1500 is the mid-to-high tier with native OPC UA Server, used on multi-line cells or premium single-line installations.</p>
+        <p>Strengths:</p>
+        <ul>
+          <li>Largest global engineer pool — every industrial automation engineer in Europe, North America, Middle East and Australia has Siemens experience</li>
+          <li>Most extensive parts availability — local distributor in every major country, 7-day delivery typical</li>
+          <li>TIA Portal programming environment is mature and extensively documented</li>
+          <li>S7-1500 includes native OPC UA Server for direct MES integration</li>
+          <li>Long product lifecycle — Siemens commits to 15+ years of S7-1200 support</li>
+        </ul>
+        <p>Weaknesses:</p>
+        <ul>
+          <li>Highest initial cost (USD 600–1,200 for S7-1200 controller, USD 1,800–4,000 for S7-1500)</li>
+          <li>TIA Portal has a steep learning curve for new engineers</li>
+          <li>Module replacement costs higher than Mitsubishi or Delta</li>
+        </ul>
+
+        <h2>Mitsubishi FX5U / Q-Series</h2>
+        <p>Mitsubishi dominates the Asia-Pacific industrial automation market and is widely used in Japan, Korea, Taiwan, Vietnam and Thailand. The FX5U is the entry-mid tier; the Q-series is mid-to-high.</p>
+        <p>Strengths:</p>
+        <ul>
+          <li>Strong parts availability in Asia-Pacific, including Australia and New Zealand</li>
+          <li>GX Works3 programming environment is mature and well-documented</li>
+          <li>Slightly lower controller cost than equivalent Siemens (USD 500–900 for FX5U)</li>
+          <li>SLMP protocol native, with OPC UA gateway available</li>
+          <li>Strong servo and motion control integration with Mitsubishi servo drives</li>
+        </ul>
+        <p>Weaknesses:</p>
+        <ul>
+          <li>Smaller engineer pool in Europe, Middle East and Latin America compared to Siemens</li>
+          <li>OPC UA requires a gateway product, not native</li>
+          <li>Documentation and tooling are weaker outside Japanese and Chinese languages</li>
+        </ul>
+
+        <h2>Delta DVP</h2>
+        <p>Delta is a Taiwan-based industrial automation supplier whose DVP series PLCs are widely used in cost-sensitive Chinese, South-East Asian and Latin American manufacturing. SBKJ supports Delta as the lowest-initial-cost PLC option.</p>
+        <p>Strengths:</p>
+        <ul>
+          <li>Lowest initial cost (USD 200–400 for DVP controller)</li>
+          <li>ISPSoft and DIADesigner programming environments are accessible</li>
+          <li>Strong Modbus TCP support for basic SCADA integration</li>
+          <li>Compact form factor for space-constrained machines</li>
+        </ul>
+        <p>Weaknesses:</p>
+        <ul>
+          <li>Smaller global engineer pool</li>
+          <li>OPC UA requires third-party gateway</li>
+          <li>Spare parts availability outside Greater China and South-East Asia is weaker</li>
+          <li>Long-term firmware roadmap less predictable than Siemens or Mitsubishi</li>
+        </ul>
+
+        <h2>Recipe management on the SBAL-V</h2>
+        <p>Recipe management is the function that stores production parameters per duct profile and loads them at job start. On the SBKJ SBAL-V, a recipe stores: target duct dimension, gauge, seam type (TDF/Pittsburgh/angle flange), reinforcement spacing, length tolerance, squareness tolerance, forming roller positions, shear cycle timing, output speed, and standard reference (SMACNA Class A, EN 1505 Class C, AS/NZS 4254.2 etc).</p>
+        <p>SBKJ ships the SBAL-V with 50 pre-loaded recipes covering common duct profiles across the four major standards. Operators can save additional custom recipes — a workshop running a unique pharma cleanroom duct can save the recipe once and recall it for every subsequent project. Recipe storage capacity is 100 on Siemens S7-1200, 500 on Siemens S7-1500, 200 on Mitsubishi FX5U and 100 on Delta DVP.</p>
+
+        <h2>OPC UA and MES integration</h2>
+        <p>OPC UA (Open Platform Communications Unified Architecture) is the industry-standard protocol for industrial machine-to-system communication. Many modern factories integrate their production lines into a central MES (Manufacturing Execution System) that aggregates production telemetry from every machine and feeds quality, planning and ERP systems.</p>
+        <p>For an SBAL-V, the typical MES integration publishes: current recipe loaded, m/min throughput, cycle count for the shift, tooling cycle counter (for predictive maintenance), alarm log with timestamps, and operator login (for traceability). MES systems can in turn push the next recipe to load, reducing operator setup time at job changeover.</p>
+        <p>OPC UA support: Siemens S7-1500 native, S7-1200 via add-on, Mitsubishi FX5U via SLMP gateway, Delta DVP via third-party gateway. Siemens S7-1500 is the cleanest path for MES integration if MES is a priority.</p>
+
+        <h2>Remote diagnostics</h2>
+        <p>SBKJ optionally ships SBAL-V lines with an industrial 4G/5G modem (TOSIBOX, Ewon Cosy, or Ixon) configured with a secure VPN tunnel to SBKJ engineering. When the customer reports an issue, an SBKJ engineer can remotely log into the PLC, view live data, run diagnostic routines and in many cases resolve the issue without site visit. Remote diagnosis cuts software-related downtime from 5–14 days (waiting for parts and engineer travel) to 24–72 hours.</p>
+        <p>Customer security concerns are addressed by: VPN tunnel only, no permanent connection; tunnel closed by customer-side switch except when actively requested; access logged with timestamps; no remote write access without explicit operator authorisation. Many high-security customers (defence, semiconductor) prefer to disable remote diagnostics altogether — this is also fully supported.</p>
+
+        <h2>10-year TCO comparison</h2>
+        <p>Over a 10-year operating period, PLC TCO includes: initial controller cost, programming labour at commissioning, replacement parts (controller, modules, HMI), engineer labour for software updates and troubleshooting, and any planned upgrade to a successor model. Approximate 10-year PLC TCO for a single SBAL-V:</p>
+        <ul>
+          <li><strong>Siemens S7-1200</strong>: USD 4,500–7,000. Highest initial cost, lowest replacement cost, broadest engineer pool, most stable firmware roadmap. Recommended for global deployments and any installation in Europe, Middle East or North America.</li>
+          <li><strong>Mitsubishi FX5U</strong>: USD 4,000–6,500. Mid-tier initial cost, comparable to Siemens in Asia-Pacific. Recommended for Australia, NZ, Japan, Korea, Taiwan, Vietnam, Thailand, Indonesia and Philippines deployments.</li>
+          <li><strong>Delta DVP</strong>: USD 3,000–5,500. Lowest initial cost, but higher long-term replacement cost outside Greater China and SE Asia. Recommended for cost-sensitive deployments in regions with strong Delta distributor presence.</li>
+        </ul>
+
+        <h2>Recommended PLC by deployment region</h2>
+        <ul>
+          <li><strong>Europe, North America, UK</strong>: Siemens S7-1200 (or S7-1500 if MES integration required)</li>
+          <li><strong>Middle East (Saudi Arabia, UAE, Qatar)</strong>: Siemens S7-1200 (Schneider also acceptable; Mitsubishi possible)</li>
+          <li><strong>Australia, New Zealand</strong>: Siemens or Mitsubishi (both well-supported)</li>
+          <li><strong>South-East Asia (Vietnam, Thailand, Indonesia, Philippines)</strong>: Mitsubishi FX5U (or Siemens for premium installations)</li>
+          <li><strong>India</strong>: Siemens or Mitsubishi (Schneider also strong)</li>
+          <li><strong>Latin America (Brazil, Mexico)</strong>: Siemens (most distributor presence) or Schneider</li>
+          <li><strong>Africa</strong>: Siemens (most distributor coverage)</li>
+        </ul>
+
+        <h2>SBKJ commitment to PLC openness</h2>
+        <p>Every SBAL-V shipped from SBKJ includes the PLC source code on USB at handover. The customer owns the source code and can modify, extend or replace the PLC programme without SBKJ involvement. This is non-negotiable on every SBKJ contract — we do not lock customers into proprietary code. <a href="hvac-duct-machine-buyers-checklist.html">Item 12 of our buyer's checklist</a> covers this in detail.</p>
+
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html">Specify your preferred PLC on your SBKJ quote &rarr;</a></p>
+
+        <h2>FAQ</h2>
+        <details><summary>Which PLC does SBKJ ship by default?</summary><p>Siemens S7-1200 with Siemens KTP HMI as standard. Mitsubishi FX5U and Delta DVP available at quotation; Siemens S7-1500 available for premium installations.</p></details>
+        <details><summary>What is recipe management?</summary><p>The PLC function that stores production parameters per duct profile (gauge, dimension, seam, tolerance) and loads them at job start. SBAL-V ships with 50 pre-configured recipes, expandable to 100–500 depending on PLC model.</p></details>
+        <details><summary>Does SBKJ support OPC UA for MES integration?</summary><p>Yes — natively on Siemens S7-1500, via add-on/gateway on S7-1200, FX5U and DVP. Recommended path for MES integration is S7-1500.</p></details>
+        <details><summary>Can the PLC be remotely diagnosed?</summary><p>Yes — optional industrial 4G/5G modem with secure VPN tunnel allows SBKJ engineers to log in for diagnosis. Cuts software downtime from 5–14 days to 24–72 hours.</p></details>
+        <details><summary>What is the PLC 10-year TCO?</summary><p>Siemens S7-1200: USD 4,500–7,000. Mitsubishi FX5U: USD 4,000–6,500. Delta DVP: USD 3,000–5,500. Siemens has the lowest TCO globally; Mitsubishi competitive in Asia-Pacific; Delta lowest initial cost.</p></details>
+
+        <aside class="related-guides">
+          <p class="eyebrow">Related guides</p>
+          <ul class="related-links">
+            <li><a href="hvac-duct-machine-buyers-checklist.html">HVAC Duct Machine Buyer&apos;s Checklist &mdash; PLC ownership clause (item 12)</a></li>
+            <li><a href="choosing-auto-duct-line.html">How to Choose an Auto Duct Production Line</a></li>
+            <li><a href="hvac-duct-production-line-tco.html">5-Year TCO Model</a></li>
+            <li><a href="../product/sbal-v.html">SBAL-V auto duct line product page</a></li>
+            <li><a href="international-duct-standards-compared.html">International Duct Standards &mdash; multi-standard PLC recipes</a></li>
+          </ul>
+        </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+      <div class="shell">
+        <div class="content-narrow">
+          <div class="promise-callout">
+            <span class="promise-label">12-hour reply</span>
+            <p class="promise-text">PLC question on your duct line? An SBKJ automation engineer replies within 12 hours.</p>
+            <a href="../contact.html" class="btn btn-primary">Ask an engineer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <p>© SBKJ Group · <a href="../index.html">Home</a> · <a href="../machines.html">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-sbkj.html">Why SBKJ</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../industries/">Industries</a> · <a href="../contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=4"></script>
+</body>
+</html>

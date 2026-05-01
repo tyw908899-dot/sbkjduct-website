@@ -94,6 +94,11 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - 7 Mistakes Buyers Make When Buying a Spiral Tubeformer — coil specification, model sizing, FAT and commissioning pitfalls: https://sbkjduct.com/insights/spiral-tubeformer-buying-mistakes.html
 - HVAC Duct Machine Buyer's Checklist — 47 pre-purchase verification points across factory vetting, machine specs, certifications, commercial terms, logistics, installation and after-sales: https://sbkjduct.com/insights/hvac-duct-machine-buyers-checklist.html
 - SMACNA vs EN 1505 vs AS/NZS 4254 vs DW/144 — International Duct Standards Compared — pressure class, sealing, reinforcement, gauge tables and acceptance testing for North America, Europe, Australia/NZ and the UK: https://sbkjduct.com/insights/international-duct-standards-compared.html
+- HVAC Duct Production Line Total Cost of Ownership — 5-year TCO model with line-item breakdown for capex, energy, consumables, tooling, downtime, labour and residual value: https://sbkjduct.com/insights/hvac-duct-production-line-tco.html
+- Cleanroom Duct Manufacturing — ISO 14644 Class 5-9 specifications, stainless steel selection, surface finish, sealing class, leakage test and machine configuration: https://sbkjduct.com/insights/cleanroom-duct-manufacturing.html
+- PLC Integration for HVAC Duct Lines — Siemens S7-1200/1500 vs Mitsubishi FX5U vs Delta DVP comparison covering recipe management, OPC UA and 10-year TCO: https://sbkjduct.com/insights/plc-integration-duct-line.html
+- HVAC Duct Machinery 5-Year Maintenance Schedule — daily, weekly, monthly, quarterly, annual and 5-year overhaul checklists with critical-spare kit recommendations: https://sbkjduct.com/insights/hvac-duct-machinery-maintenance-schedule.html
+- Setting Up an HVAC Duct Fabrication Shop in Saudi Arabia — 2026 buyer's playbook covering SASO/SABER conformity, Aramco vendor approval, Vision 2030 project pipeline, location selection and capex: https://sbkjduct.com/insights/saudi-arabia-hvac-duct-fabrication-setup.html
 
 ## Step-by-step procedural guides (HowTo schema marked)
 
