@@ -112,6 +112,8 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - UAE Dubai HVAC Duct Market — 2026 buyer playbook covering ESMA conformity, Dubai Municipality requirements, megaproject pipeline (Dubai 2040 Master Plan, Etihad Rail), JAFZA/DAFZA/KIZAD location selection: https://sbkjduct.com/insights/uae-dubai-hvac-duct-market.html
 - Indonesia HVAC Duct Fabrication Market — 2026 playbook covering SNI standards, IKN Nusantara new capital, EV/battery FDI, commodity downstream processing and Jakarta/Surabaya/Batam/Balikpapan location: https://sbkjduct.com/insights/indonesia-hvac-duct-fabrication.html
 - Thailand HVAC Duct Fabrication — 2026 EEC playbook covering TIS standards, Eastern Economic Corridor tax incentives, BOI promotion, automotive and electronics FDI, Bangkok/Rayong/Chonburi/Ayutthaya location: https://sbkjduct.com/insights/thailand-hvac-duct-fabrication.html
+- Germany and EU HVAC Duct Fabrication — 2026 EN 1505 playbook covering EN 1505/1506 + VDI 6022 + GEG, Energiewende retrofit demand, data centre and biotech, Frankfurt/Stuttgart/Munich location and German labour favouring automation: https://sbkjduct.com/insights/germany-eu-hvac-duct-fabrication.html
+- Singapore HVAC Duct ASEAN Gateway Playbook — SS 553, BCA Green Mark, post-moratorium hyperscale boom (AirTrunk/Equinix/GDS/ST Telemedia), Tuas/Jurong location and the Singapore-Johor-Batam supply chain: https://sbkjduct.com/insights/singapore-hvac-duct-asean-gateway.html
 
 ## Step-by-step procedural guides (HowTo schema marked)
 
