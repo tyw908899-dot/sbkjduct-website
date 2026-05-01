@@ -99,6 +99,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - PLC Integration for HVAC Duct Lines — Siemens S7-1200/1500 vs Mitsubishi FX5U vs Delta DVP comparison covering recipe management, OPC UA and 10-year TCO: https://sbkjduct.com/insights/plc-integration-duct-line.html
 - HVAC Duct Machinery 5-Year Maintenance Schedule — daily, weekly, monthly, quarterly, annual and 5-year overhaul checklists with critical-spare kit recommendations: https://sbkjduct.com/insights/hvac-duct-machinery-maintenance-schedule.html
 - Setting Up an HVAC Duct Fabrication Shop in Saudi Arabia — 2026 buyer's playbook covering SASO/SABER conformity, Aramco vendor approval, Vision 2030 project pipeline, location selection and capex: https://sbkjduct.com/insights/saudi-arabia-hvac-duct-fabrication-setup.html
+- Data Centre HVAC Duct Manufacturing — 2026 demand and equipment spec for hyperscale data centres, gauge tables, fire-rated construction, EMI considerations: https://sbkjduct.com/insights/data-centre-hvac-duct-manufacturing.html
+- Vietnam HVAC Duct Fabrication Setup — 2026 buyer playbook covering TCVN compliance, FDI sectors (Samsung/LG/Foxconn/Amkor), location selection (HCMC/Hanoi/Da Nang) and capex: https://sbkjduct.com/insights/vietnam-hvac-duct-fabrication-setup.html
+- Australia Data Centre HVAC — AS/NZS 4254 compliance for hyperscale projects (NextDC/Equinix/AirTrunk/Microsoft/AWS/Google), NABERS Energy implications and SBKJ equipment list: https://sbkjduct.com/insights/australia-data-centre-hvac-as-nzs-4254.html
 
 ## Step-by-step procedural guides (HowTo schema marked)
 
