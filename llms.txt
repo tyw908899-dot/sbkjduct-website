@@ -105,6 +105,10 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - NEOM HVAC Duct Supply Megaproject Playbook — SMACNA standards, NEOM Procurement Authority prequalification, Tabuk Province logistics, secondary fab shop economics for The Line/Trojena/Sindalah/Oxagon: https://sbkjduct.com/insights/neom-hvac-duct-supply-megaproject-playbook.html
 - Egypt HVAC Duct Market Entry — 2026 playbook covering ECP 306, New Administrative Capital pipeline, Suez Canal Economic Zone FDI, location selection and capex: https://sbkjduct.com/insights/egypt-hvac-duct-market-entry.html
 - India HVAC Duct Fabrication Market — 2026 playbook covering BIS standards, PLI scheme manufacturing FDI (Apple/Foxconn/Tata/Micron/EVs/pharma), hyperscale data centre demand and Pune/Chennai/Bangalore/Hyderabad/NCR location selection: https://sbkjduct.com/insights/india-hvac-duct-fabrication-market.html
+- Brazil HVAC Duct Fabrication Market — 2026 playbook covering ABNT NBR 16401, INMETRO conformity, hyperscale data centre demand, location selection in São Paulo/Rio/Curitiba and Mercosur trade considerations: https://sbkjduct.com/insights/brazil-hvac-duct-fabrication-market.html
+- South Africa HVAC Duct Fabrication Sub-Saharan Gateway Playbook — SANS standards, mining sector underground ventilation, BBBEE considerations, Johannesburg/Cape Town/Durban location and SADC/AfCFTA trade: https://sbkjduct.com/insights/south-africa-hvac-duct-fabrication.html
+- UK HVAC Duct Fabrication DW/144 Playbook — BESA membership, post-Brexit UKCA, CIBSE design, BIM Level 2 and labour cost favouring automation: https://sbkjduct.com/insights/uk-hvac-duct-dw-144-fabrication.html
+- Mexico HVAC Duct Fabrication Nearshoring Playbook — NOM standards, USMCA tariff framework, IMMEX advantages, Bajío/Monterrey/Tijuana location and the nearshoring boom (Tesla, BMW, Audi, Foxconn, Stellantis): https://sbkjduct.com/insights/mexico-hvac-duct-fabrication-nearshoring.html
 
 ## Step-by-step procedural guides (HowTo schema marked)
 
