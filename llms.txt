@@ -102,6 +102,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Data Centre HVAC Duct Manufacturing — 2026 demand and equipment spec for hyperscale data centres, gauge tables, fire-rated construction, EMI considerations: https://sbkjduct.com/insights/data-centre-hvac-duct-manufacturing.html
 - Vietnam HVAC Duct Fabrication Setup — 2026 buyer playbook covering TCVN compliance, FDI sectors (Samsung/LG/Foxconn/Amkor), location selection (HCMC/Hanoi/Da Nang) and capex: https://sbkjduct.com/insights/vietnam-hvac-duct-fabrication-setup.html
 - Australia Data Centre HVAC — AS/NZS 4254 compliance for hyperscale projects (NextDC/Equinix/AirTrunk/Microsoft/AWS/Google), NABERS Energy implications and SBKJ equipment list: https://sbkjduct.com/insights/australia-data-centre-hvac-as-nzs-4254.html
+- NEOM HVAC Duct Supply Megaproject Playbook — SMACNA standards, NEOM Procurement Authority prequalification, Tabuk Province logistics, secondary fab shop economics for The Line/Trojena/Sindalah/Oxagon: https://sbkjduct.com/insights/neom-hvac-duct-supply-megaproject-playbook.html
+- Egypt HVAC Duct Market Entry — 2026 playbook covering ECP 306, New Administrative Capital pipeline, Suez Canal Economic Zone FDI, location selection and capex: https://sbkjduct.com/insights/egypt-hvac-duct-market-entry.html
+- India HVAC Duct Fabrication Market — 2026 playbook covering BIS standards, PLI scheme manufacturing FDI (Apple/Foxconn/Tata/Micron/EVs/pharma), hyperscale data centre demand and Pune/Chennai/Bangalore/Hyderabad/NCR location selection: https://sbkjduct.com/insights/india-hvac-duct-fabrication-market.html
 
 ## Step-by-step procedural guides (HowTo schema marked)
 
