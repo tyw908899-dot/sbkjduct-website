@@ -109,6 +109,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - South Africa HVAC Duct Fabrication Sub-Saharan Gateway Playbook — SANS standards, mining sector underground ventilation, BBBEE considerations, Johannesburg/Cape Town/Durban location and SADC/AfCFTA trade: https://sbkjduct.com/insights/south-africa-hvac-duct-fabrication.html
 - UK HVAC Duct Fabrication DW/144 Playbook — BESA membership, post-Brexit UKCA, CIBSE design, BIM Level 2 and labour cost favouring automation: https://sbkjduct.com/insights/uk-hvac-duct-dw-144-fabrication.html
 - Mexico HVAC Duct Fabrication Nearshoring Playbook — NOM standards, USMCA tariff framework, IMMEX advantages, Bajío/Monterrey/Tijuana location and the nearshoring boom (Tesla, BMW, Audi, Foxconn, Stellantis): https://sbkjduct.com/insights/mexico-hvac-duct-fabrication-nearshoring.html
+- UAE Dubai HVAC Duct Market — 2026 buyer playbook covering ESMA conformity, Dubai Municipality requirements, megaproject pipeline (Dubai 2040 Master Plan, Etihad Rail), JAFZA/DAFZA/KIZAD location selection: https://sbkjduct.com/insights/uae-dubai-hvac-duct-market.html
+- Indonesia HVAC Duct Fabrication Market — 2026 playbook covering SNI standards, IKN Nusantara new capital, EV/battery FDI, commodity downstream processing and Jakarta/Surabaya/Batam/Balikpapan location: https://sbkjduct.com/insights/indonesia-hvac-duct-fabrication.html
+- Thailand HVAC Duct Fabrication — 2026 EEC playbook covering TIS standards, Eastern Economic Corridor tax incentives, BOI promotion, automotive and electronics FDI, Bangkok/Rayong/Chonburi/Ayutthaya location: https://sbkjduct.com/insights/thailand-hvac-duct-fabrication.html
 
 ## Step-by-step procedural guides (HowTo schema marked)
 
