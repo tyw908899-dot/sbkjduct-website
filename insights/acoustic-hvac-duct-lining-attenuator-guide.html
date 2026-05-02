@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>Acoustic HVAC Duct Lining and Sound Attenuators — Engineering Reference | SBKJ Group</title>
+  <meta name="description" content="Engineer-led guide to acoustic HVAC duct lining and sound attenuators: material selection, NRC ratings, fibreglass vs foam vs mineral wool, IL/regenerated noise design." />
+  <link rel="canonical" href="https://sbkjduct.com/insights/acoustic-hvac-duct-lining-attenuator-guide.html" />
+  <link rel="alternate" hreflang="en" href="https://sbkjduct.com/insights/acoustic-hvac-duct-lining-attenuator-guide.html" />
+  <link rel="alternate" hreflang="x-default" href="https://sbkjduct.com/insights/acoustic-hvac-duct-lining-attenuator-guide.html" />
+  <meta name="author" content="SBKJ Group" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:site_name" content="SBKJ Group" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Acoustic HVAC Duct Lining and Sound Attenuators — Engineering Reference" />
+  <meta property="og:description" content="Material selection, NRC ratings, fibreglass vs foam vs mineral wool, insertion loss and regenerated noise design for HVAC acoustic duct." />
+  <meta property="og:url" content="https://sbkjduct.com/insights/acoustic-hvac-duct-lining-attenuator-guide.html" />
+  <meta property="og:image" content="https://sbkjduct.com/assets/images/sbal-v.jpg" />
+  <meta property="article:published_time" content="2026-05-01T00:00:00+08:00" />
+  <meta property="article:modified_time" content="2026-05-01T00:00:00+08:00" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@sbkjgroup" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=16" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://sbkjduct.com/#author-engineering","name":"SBKJ Engineering Team","url":"https://sbkjduct.com/about.html","parentOrganization":{"@id":"https://sbkjduct.com/#org"},"knowsAbout":["Acoustic HVAC duct","Sound attenuator","NRC rating","Insertion loss","Regenerated noise","Mineral wool","Melamine foam"]},
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://sbkjduct.com/"},
+      {"@type":"ListItem","position":2,"name":"Insights","item":"https://sbkjduct.com/insights/"},
+      {"@type":"ListItem","position":3,"name":"Acoustic HVAC Duct Lining","item":"https://sbkjduct.com/insights/acoustic-hvac-duct-lining-attenuator-guide.html"}
+    ]},
+    {"@type":"TechArticle","headline":"Acoustic HVAC Duct Lining and Sound Attenuators — Engineering Reference","description":"Engineer-led technical reference on HVAC acoustic duct lining and sound attenuator design — material selection (fibreglass, mineral wool, melamine foam), NRC ratings, ASTM E477 insertion loss test, regenerated noise vs flow velocity, and the SBKJ acoustic duct fabrication equipment.","author":{"@id":"https://sbkjduct.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"SBKJ Group QA & Engineering","url":"https://sbkjduct.com/about.html"},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-05-01","dateModified":"2026-05-01","image":"https://sbkjduct.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/acoustic-hvac-duct-lining-attenuator-guide.html","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"HVAC Acoustic Reference","speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What is HVAC duct acoustic lining?","acceptedAnswer":{"@type":"Answer","text":"Acoustic duct lining is a sound-absorbing internal liner installed inside HVAC supply and return duct to attenuate fan noise, equipment noise and breakout/breakin sound transmission. Common materials are 25-50 mm fibreglass duct liner with foil or mat facing, mineral wool with stainless mesh facing for high-temperature applications, or melamine acoustic foam for cleanroom and pharma. Selection depends on temperature, fire rating, hygiene requirements (VDI 6022 for German projects, GMP for pharma) and the target NRC (Noise Reduction Coefficient)."}},
+      {"@type":"Question","name":"What is the difference between duct lining and a sound attenuator?","acceptedAnswer":{"@type":"Answer","text":"Duct lining is a continuous internal liner that absorbs sound across the duct length, providing modest attenuation per metre but contributing across long runs. A sound attenuator (silencer) is a discrete duct section with optimised internal baffles, typically 0.6 to 2.4 m long, designed for high insertion loss at specific frequency bands. Attenuators provide 10-30 dB IL where they are installed; lining provides 1-5 dB per metre run. Most HVAC systems use both — attenuators near AHU/fan rooms, lining on critical sections."}},
+      {"@type":"Question","name":"What is NRC and how is it specified?","acceptedAnswer":{"@type":"Answer","text":"NRC (Noise Reduction Coefficient) is the average sound absorption coefficient at 250, 500, 1000 and 2000 Hz, expressed as a number between 0.00 and 1.00. NRC 0.85 means 85 percent of incident sound energy is absorbed at those frequencies. Standard 25 mm fibreglass duct liner with foil facing is approximately NRC 0.65; 50 mm fibreglass liner is approximately NRC 0.95. Project specifications typically require NRC ≥ 0.70 for general HVAC, ≥ 0.80 for hospitality, ≥ 0.90 for theatres, recording studios and broadcast. NRC values are measured per ASTM C423."}},
+      {"@type":"Question","name":"What is regenerated noise and why does it matter?","acceptedAnswer":{"@type":"Answer","text":"Regenerated noise is sound generated by air flowing through duct fittings, dampers, attenuators, branch takeoffs and bends. As you increase attenuator size or baffle density to improve insertion loss, you also increase regenerated noise as air velocity through the attenuator increases. Above approximately 8-10 m/s face velocity, regenerated noise can exceed the noise the attenuator was supposed to reduce. ASHRAE Handbook (Applications, Sound & Vibration chapter) provides regenerated noise tables. Specify attenuators with adequate cross-section so face velocity stays below 6 m/s for sensitive spaces, 8 m/s for general commercial."}},
+      {"@type":"Question","name":"Can SBKJ machines fabricate acoustic-lined duct?","acceptedAnswer":{"@type":"Answer","text":"Yes. The SBAL-V auto duct line is configurable for double-skin acoustic duct construction with internal liner inserted between the inner and outer skins during forming. SBKJ also supplies dedicated double-skin duct forming machines (SB-FS series) for high-volume acoustic duct production. For attenuator manufacturing, SBKJ supplies blank cutting and folding equipment plus assembly stations for baffle-type silencers. The acoustic material itself (fibreglass batt, mineral wool, melamine foam) is sourced separately by the customer."}}
+    ]}
+  ]}
+  </script>
+</head>
+<body class="site-body">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell">
+      <div class="site-header-inner">
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async"><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
+        <nav id="primaryNav" class="site-nav">
+          <a href="../index.html">Home</a>
+          <a href="../machines.html">Machines</a>
+          <a href="../insights/">Insights</a>
+          <a href="../about.html">About</a>
+          <a href="../contact.html" class="nav-cta">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>Acoustic HVAC Duct Lining</span></li></ol></nav></div></nav>
+    <article class="section page-hero bg-subtle">
+      <div class="shell">
+        <p class="eyebrow">Insights · Technical reference</p>
+        <h1 class="page-title">Acoustic HVAC Duct Lining and Sound Attenuators — Engineering Reference</h1>
+        <p class="article-lead">An engineer-led technical reference for HVAC acoustic duct design — internal lining material selection (fibreglass, mineral wool, melamine foam, perforated stainless), NRC and absorption coefficient specification, ASTM E477 insertion loss testing, regenerated noise versus flow velocity, sound attenuator types (rectangular splitter, tubular, plenum chamber, dissipative cylindrical), the SBKJ equipment for fabricating double-skin acoustic duct and attenuator housings, and the project specifications that distinguish hospitality, theatre, hospital, broadcast and pharma cleanroom acoustic requirements.</p>
+        <p class="article-byline">
+          <span class="article-byline-author">By <a href="../about.html" rel="author">SBKJ Engineering Team</a></span>
+          <span class="article-byline-sep">·</span>
+          <span>Published <time datetime="2026-05-01">May 1, 2026</time></span>
+          <span class="article-byline-sep">·</span>
+          <span>11 min read</span>
+          <span class="article-byline-sep">·</span>
+          <span>Reviewed by SBKJ QA &amp; Engineering</span>
+        </p>
+      </div>
+    </article>
+
+    <section class="section">
+      <div class="shell"><div class="content-narrow">
+
+        <h2>Why acoustic design matters in HVAC duct</h2>
+        <p>HVAC supply and return duct is the most common transmission path for fan noise, equipment noise and crosstalk between adjacent rooms in commercial and institutional buildings. A modest air handler running at 30 Hz fundamental fan blade frequency can create 75-85 dB(A) at the duct outlet — far above any reasonable occupied-space target. Without acoustic treatment that noise propagates through duct walls (breakout), through duct interiors to other rooms (crosstalk), and through diffusers into occupied space directly. Acoustic lining and sound attenuators are the engineering response.</p>
+
+        <h2>Acoustic duct lining materials</h2>
+        <ul>
+          <li><strong>Fibreglass duct liner with foil/mat facing</strong>: industry standard, 25 mm or 50 mm thickness, NRC 0.65-0.95 depending on thickness and air velocity. Common brands: Owens Corning QuietR, Knauf SoundShield, Johns Manville Permacote. Suitable for general commercial HVAC up to 100 m/s air velocity. Limitations: fibre erosion concerns at high velocity, mould risk at humid conditions, not suitable for cleanroom or pharma sterile.</li>
+          <li><strong>Mineral wool (rock wool, stone wool)</strong>: higher temperature rating (up to 750°C continuous vs 250°C for fibreglass), better fire performance (Euroclass A1 non-combustible), suitable for fire-rated duct sections and high-temperature exhaust. NRC 0.65-0.90 depending on density. Common brands: Rockwool Conlit, Knauf RockSorb. Slightly higher cost than fibreglass.</li>
+          <li><strong>Melamine acoustic foam</strong>: VDI 6022-compliant for hygiene, smooth wipeable surface, fibre-free (no airborne fibre release). NRC 0.80-0.95. Used in pharmaceutical, cleanroom, healthcare and hospitality where fibre release is unacceptable. Higher cost (3-5x fibreglass). Common brands: Basotect (BASF).</li>
+          <li><strong>Polyester acoustic batt</strong>: PET-based, recyclable, fibre-free at handling, increasingly specified for sustainable building projects (LEED, Green Star, BREEAM). NRC 0.70-0.85.</li>
+          <li><strong>Perforated stainless inner skin with mineral wool fill</strong>: hard interior surface for cleanroom-grade washdown applications, mineral wool fill for absorption. NRC 0.55-0.75 (less absorptive due to perforated facing) but durable.</li>
+        </ul>
+
+        <h2>NRC and frequency-specific absorption</h2>
+        <p>NRC is the four-frequency average. For specific projects (theatres, recording studios, broadcast facilities) absorption at individual octave bands matters more than the NRC average. Typical fibreglass 50 mm liner absorption coefficients:</p>
+        <ul>
+          <li>125 Hz: α = 0.20-0.40 (poor low-frequency absorption)</li>
+          <li>250 Hz: α = 0.50-0.75</li>
+          <li>500 Hz: α = 0.80-0.95</li>
+          <li>1000 Hz: α = 0.90-0.98</li>
+          <li>2000 Hz: α = 0.85-0.95</li>
+          <li>4000 Hz: α = 0.80-0.90</li>
+        </ul>
+        <p>Note the poor low-frequency absorption — 125 Hz is the band where most HVAC fan noise concentrates, and it is also the hardest band to absorb with thin liner. For low-frequency-dominated noise, increase liner thickness (100 mm liner doubles 125 Hz absorption), use mineral wool (better low-frequency than fibreglass), or design plenum chambers and resonant absorbers (Helmholtz resonators tuned to specific frequency bands).</p>
+
+        <h2>Sound attenuators (silencers)</h2>
+        <p>Where lining provides distributed absorption, attenuators provide concentrated insertion loss. Common attenuator types:</p>
+        <ul>
+          <li><strong>Rectangular splitter attenuator</strong>: most common in commercial HVAC. Internal baffles 100-300 mm thick separated by 100-300 mm air passages. Insertion loss 10-30 dB at 500-2000 Hz. Length 0.6 to 2.4 m. Standard sizes available off-the-shelf or fabricated to project dimensions.</li>
+          <li><strong>Tubular (cylindrical) attenuator</strong>: round duct version. Pod-style absorber along the duct centreline plus annular wall absorber. Used on round spiral duct systems. Insertion loss 10-25 dB.</li>
+          <li><strong>Plenum chamber</strong>: large box-shaped chamber with absorber lining. Lower insertion loss per unit length than splitter, but very effective for low-frequency absorption (125 Hz band). Used on critical projects where low-frequency control is essential.</li>
+          <li><strong>Active attenuator (electronic noise cancellation)</strong>: specialised, used in high-end applications where passive attenuators are too long or heavy. Active control via microphones and speakers in the duct. Effective at 30-300 Hz band. Expensive.</li>
+        </ul>
+
+        <h2>Insertion loss versus regenerated noise — the trade-off</h2>
+        <p>The fundamental design tension: increasing attenuator baffle area improves insertion loss but increases face velocity and therefore regenerated noise. ASHRAE Applications Handbook (Sound &amp; Vibration chapter) tables regenerated noise versus face velocity. Approximate values for a 1.2 m long splitter attenuator:</p>
+        <ul>
+          <li>4 m/s face velocity: ~25 dB(A) regenerated noise</li>
+          <li>6 m/s: ~33 dB(A)</li>
+          <li>8 m/s: ~42 dB(A)</li>
+          <li>10 m/s: ~50 dB(A)</li>
+          <li>12 m/s: ~58 dB(A)</li>
+        </ul>
+        <p>For a typical commercial office with NC 35 (35 dB) target, regenerated noise above 30-32 dB(A) compromises the entire silencer. Specify attenuator face area large enough to hold velocity below 6 m/s for NC 30-35 spaces, 8 m/s for NC 35-40 (general commercial), 10 m/s for NC 40+ (industrial, garage, plant rooms).</p>
+
+        <h2>Pressure drop</h2>
+        <p>Attenuators add pressure drop on top of regenerated noise. Typical pressure drop versus face velocity for a 1.2 m splitter:</p>
+        <ul>
+          <li>4 m/s: 25-40 Pa</li>
+          <li>6 m/s: 50-90 Pa</li>
+          <li>8 m/s: 90-160 Pa</li>
+          <li>10 m/s: 140-250 Pa</li>
+        </ul>
+        <p>This adds to fan static pressure requirement and therefore fan motor energy. On a 50 MW data centre with 3 m³/s of air per attenuator and 4 attenuators in series at 100 Pa each, total parasitic load is 1.2 kW per attenuator stack — multiply by hundreds of attenuators across the facility and the fan energy implication is significant. Attenuator selection is a TCO decision, not just a noise decision.</p>
+
+        <h2>Project specifications — what dictates acoustic spec</h2>
+        <ul>
+          <li><strong>Hospitality (5-star hotel)</strong>: typically NC 25-30 in guest rooms, NC 30-35 in lobby/restaurant. Demands liner + attenuators on supply and return. Often double-skin acoustic duct construction for breakout sound control.</li>
+          <li><strong>Theatres, broadcast, recording</strong>: NC 15-25 in main spaces. Requires extensive attenuator + lining + plenum chambers. Consider 50-100 mm thickness mineral wool. Often custom-engineered acoustics.</li>
+          <li><strong>Hospitals (operating theatres, ICU)</strong>: NC 30-35 plus VDI 6022/GMP hygiene requirements. Use melamine foam or perforated stainless with mineral wool fill. No fibreglass in patient-care spaces.</li>
+          <li><strong>Cleanrooms (semiconductor, pharma)</strong>: NC 40-50 (process equipment dominates so HVAC is rarely the limiting factor). Use perforated stainless interior or melamine foam. No fibre release.</li>
+          <li><strong>Office / commercial</strong>: NC 35-40 typical. Standard fibreglass liner + commercial splitter attenuators sufficient.</li>
+          <li><strong>Industrial / data centre / plant</strong>: NC 45-60 typical. Minimal acoustic treatment beyond breakout control on duct walls.</li>
+          <li><strong>Schools and hospitals public areas</strong>: ASHRAE 12.5 (Quiet Education spaces), Australian Standard AS/NZS 2107, US ANSI S12.60 specify NC and reverberation targets that drive HVAC acoustic spec.</li>
+        </ul>
+
+        <h2>Double-skin acoustic duct construction</h2>
+        <p>Double-skin acoustic duct has two galvanised skins with absorber sandwiched between. Construction:</p>
+        <ul>
+          <li>Outer skin: standard 22-20 ga galvanised, structural</li>
+          <li>Insulation: 25-50 mm fibreglass batt or mineral wool</li>
+          <li>Inner skin: 26-24 ga galvanised perforated sheet (typically 8-15% open area) facing the airstream</li>
+          <li>Spacers: hat channel or pressed dimples to maintain skin separation</li>
+          <li>Joint detail: outer skin TDF flange, inner skin overlap with sealed seam</li>
+        </ul>
+        <p>Double-skin construction provides 1-3 dB additional breakout reduction versus single-skin lined duct, plus mechanical protection of the absorber from airstream erosion. Standard for hospitality, healthcare and theatre applications.</p>
+
+        <h2>SBKJ equipment for acoustic duct fabrication</h2>
+        <ul>
+          <li><strong>SBAL-V auto duct line (acoustic config)</strong>: handles double-skin construction with absorber insertion at the rectangular forming station. Standard configuration for hospitality and high-end commercial fabricators.</li>
+          <li><strong>SB-FS series stainless duct line</strong>: dedicated stainless inner-skin perforated duct production for cleanroom and pharma acoustic duct.</li>
+          <li><strong>CNC plasma cutter</strong>: cuts perforation patterns on inner skin material if not pre-perforated coil.</li>
+          <li><strong>Slitting machine</strong>: prepares standard-width liner panels from absorber rolls.</li>
+          <li><strong>TDF flange and lockformer</strong>: standard joints; double-skin construction may need TDF gasket selection for full seal.</li>
+        </ul>
+
+        <h2>Common acoustic duct mistakes</h2>
+        <ol>
+          <li><strong>Lining too thin for low-frequency absorption</strong>: 25 mm liner has poor 125 Hz performance. Use 50 mm or thicker for fan-dominated systems.</li>
+          <li><strong>Attenuator face velocity too high</strong>: regenerated noise wipes out the insertion loss benefit. Always check both IL and NR generation.</li>
+          <li><strong>Forgetting pressure drop in fan selection</strong>: attenuator stacks add 200-500 Pa to required fan static. If not in fan curve, system is underdesigned.</li>
+          <li><strong>Wrong material for hygiene application</strong>: fibreglass in cleanroom or pharma sterile rooms is non-compliant. Use melamine foam or perforated stainless.</li>
+          <li><strong>Skipping breakout calculation</strong>: lining absorbs interior sound but does not stop breakout through duct walls. For low-NC spaces, add external mass (lagging) or use double-skin construction.</li>
+          <li><strong>Wrong attenuator location</strong>: putting the attenuator at the end of a long duct run lets noise propagate before treatment. Locate close to the fan, ideally between the AHU and the first branch.</li>
+        </ol>
+
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html">Get an SBKJ acoustic duct equipment quote &rarr;</a></p>
+
+        <h2>FAQ</h2>
+        <details><summary>What is HVAC duct acoustic lining?</summary><p>Sound-absorbing internal liner installed inside HVAC duct to attenuate fan noise and crosstalk. Common materials: fibreglass (general commercial), mineral wool (high temperature/fire-rated), melamine foam (cleanroom/pharma), polyester batt (sustainable), perforated stainless with mineral wool fill (cleanroom washdown).</p></details>
+        <details><summary>What is the difference between lining and attenuator?</summary><p>Lining = continuous absorption along duct length (1-5 dB/m). Attenuator = discrete duct section with optimised baffles giving 10-30 dB IL where installed. Most systems use both — attenuators near AHU/fan, lining on critical sections.</p></details>
+        <details><summary>What is NRC?</summary><p>Noise Reduction Coefficient — average sound absorption at 250/500/1000/2000 Hz. Standard 25 mm fibreglass liner ≈ NRC 0.65; 50 mm ≈ NRC 0.95. Specs usually require NRC ≥ 0.70 commercial, ≥ 0.80 hospitality, ≥ 0.90 theatres.</p></details>
+        <details><summary>What is regenerated noise?</summary><p>Sound generated by air flowing through attenuator baffles. Above 6-8 m/s face velocity it can exceed the noise the attenuator was meant to reduce. Always size attenuator for adequate face area to hold velocity within the design band.</p></details>
+        <details><summary>Can SBKJ machines fabricate acoustic duct?</summary><p>Yes — SBAL-V configurable for double-skin acoustic duct; SB-FS series for stainless cleanroom acoustic duct; plasma cutter for perforation; slitting machine for liner prep; TDF flange and lockformer for joints. Acoustic material itself is sourced separately by customer.</p></details>
+
+        <aside class="related-guides">
+          <p class="eyebrow">Related guides</p>
+          <ul class="related-links">
+            <li><a href="hvac-duct-fittings-fabrication-guide.html">HVAC Duct Fittings Fabrication Guide</a></li>
+            <li><a href="cleanroom-duct-manufacturing.html">Cleanroom Duct Manufacturing (no fibre lining)</a></li>
+            <li><a href="data-centre-hvac-duct-manufacturing.html">Data Centre HVAC Duct Manufacturing</a></li>
+            <li><a href="smacna-seal-classes-explained.html">SMACNA Seal Class A, B, C Explained</a></li>
+            <li><a href="hvac-duct-machinery-glossary.html">HVAC Duct Machinery Glossary</a></li>
+          </ul>
+        </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+      <div class="shell">
+        <div class="content-narrow">
+          <div class="promise-callout">
+            <span class="promise-label">12-hour reply</span>
+            <p class="promise-text">Acoustic-critical HVAC project? An SBKJ acoustic-experienced engineer replies within 12 hours.</p>
+            <a href="../contact.html" class="btn btn-primary">Ask an engineer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <p>© SBKJ Group · <a href="../index.html">Home</a> · <a href="../machines.html">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-sbkj.html">Why SBKJ</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../industries/">Industries</a> · <a href="../contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=4"></script>
+</body>
+</html>
