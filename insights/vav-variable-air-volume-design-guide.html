@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>VAV Variable Air Volume HVAC Design Guide — Box Selection, Diversity, Min Airflow | SBKJ Group</title>
+  <meta name="description" content="Engineer-led VAV system design guide: box selection, sizing, diversity factor, minimum airflow, ASHRAE 62.1 ventilation, terminal types, fabrication considerations." />
+  <link rel="canonical" href="https://sbkjduct.com/insights/vav-variable-air-volume-design-guide.html" />
+  <link rel="alternate" hreflang="en" href="https://sbkjduct.com/insights/vav-variable-air-volume-design-guide.html" />
+  <link rel="alternate" hreflang="x-default" href="https://sbkjduct.com/insights/vav-variable-air-volume-design-guide.html" />
+  <meta name="author" content="SBKJ Group" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:site_name" content="SBKJ Group" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="VAV Variable Air Volume HVAC Design Guide" />
+  <meta property="og:description" content="VAV box selection, sizing, diversity factor, min airflow, ventilation requirements and fabrication considerations." />
+  <meta property="og:url" content="https://sbkjduct.com/insights/vav-variable-air-volume-design-guide.html" />
+  <meta property="og:image" content="https://sbkjduct.com/assets/images/sbal-v.jpg" />
+  <meta property="article:published_time" content="2026-05-01T00:00:00+08:00" />
+  <meta property="article:modified_time" content="2026-05-01T00:00:00+08:00" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@sbkjgroup" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=16" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://sbkjduct.com/#author-engineering","name":"SBKJ Engineering Team","url":"https://sbkjduct.com/about.html","parentOrganization":{"@id":"https://sbkjduct.com/#org"},"knowsAbout":["VAV","Variable Air Volume","Diversity factor","Minimum airflow","ASHRAE 62.1","Terminal box","Pressure-independent VAV"]},
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://sbkjduct.com/"},
+      {"@type":"ListItem","position":2,"name":"Insights","item":"https://sbkjduct.com/insights/"},
+      {"@type":"ListItem","position":3,"name":"VAV Design Guide","item":"https://sbkjduct.com/insights/vav-variable-air-volume-design-guide.html"}
+    ]},
+    {"@type":"TechArticle","headline":"VAV Variable Air Volume HVAC Design Guide — Box Selection, Diversity, Min Airflow","description":"Engineer-led design guide for Variable Air Volume HVAC systems — VAV terminal box selection, sizing methodology, diversity factor for system-level fan sizing, minimum airflow per ASHRAE 62.1 ventilation requirements, terminal types (single-duct, fan-powered, dual-duct, induction), and the fabrication considerations for VAV-supply duct including pressure class and acoustic requirements.","author":{"@id":"https://sbkjduct.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"SBKJ Group QA & Engineering","url":"https://sbkjduct.com/about.html"},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-05-01","dateModified":"2026-05-01","image":"https://sbkjduct.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/vav-variable-air-volume-design-guide.html","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"HVAC Design Reference","speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What is a VAV system?","acceptedAnswer":{"@type":"Answer","text":"VAV stands for Variable Air Volume — an HVAC distribution strategy where the air supply temperature is constant (typically 13-14°C cold deck) and each zone's airflow is modulated by a VAV terminal box to match cooling load. Compared to constant air volume (CAV), VAV saves substantial fan energy at part-load (typical office building runs at 30-60% of design load most hours) by reducing airflow and fan speed when full cooling capacity is not needed. ASHRAE 90.1 requires VAV on most commercial buildings above 25,000 sqft."}},
+      {"@type":"Question","name":"How do I size a VAV terminal box?","acceptedAnswer":{"@type":"Answer","text":"VAV box sizing requires three flow rates per zone: maximum cooling airflow (sized to peak sensible cooling load with 13-14°C supply), minimum airflow (greater of ASHRAE 62.1 ventilation requirement or 30 percent of max for thermal control), and reheat-mode airflow (typically 50 percent of max for fan-powered or zoned reheat systems). VAV box catalogue selection then matches inlet diameter to required airflow at the desired pressure drop budget (typically 50-150 Pa). Round inlet diameters: Φ200 mm for ~400 L/s, Φ250 mm for ~700 L/s, Φ300 mm for ~1,100 L/s. Major VAV box manufacturers: Trox, Titus, Krueger, Price, Carnes, Tuttle &amp; Bailey."}},
+      {"@type":"Question","name":"What is diversity factor?","acceptedAnswer":{"@type":"Answer","text":"Diversity factor accounts for the fact that not all VAV zones reach peak cooling load simultaneously. Sum of all zone peak airflows is greater than the system peak airflow because zones peak at different times of day (perimeter east in morning, perimeter west in afternoon, interior all day). Typical diversity factor for commercial office: 0.7-0.85 (system peak is 70-85% of sum of zone peaks). Fan and AHU sizing uses the system peak airflow with diversity applied; supply duct main is sized for the same. Branch ducts to individual zones are sized for that zone's peak (no diversity at branch level)."}},
+      {"@type":"Question","name":"What is the minimum VAV airflow setting?","acceptedAnswer":{"@type":"Answer","text":"Minimum airflow is the greater of: (1) ASHRAE 62.1 ventilation requirement for the zone (typically 0.5 L/s per m² floor area + 5-10 L/s per occupant for office), (2) 30 percent of design maximum for thermal control stability, (3) any local code specific minimum (e.g. AS 1668 for Australia). At minimum airflow, the VAV box modulates from 30 percent to 100 percent over its operating range. Below 30 percent, mixing in the ceiling diffusers becomes inadequate, comfort complaints rise, and the system can become unstable. ASHRAE 90.1 limits reheat to 30 percent maximum to prevent simultaneous heating and cooling."}},
+      {"@type":"Question","name":"What pressure class does VAV duct require?","acceptedAnswer":{"@type":"Answer","text":"Supply duct upstream of VAV boxes is typically Medium Pressure (SMACNA Class +4 in.wg / EN 1505 Class C / AS-NZS Class C) because the VAV box requires 50-200 Pa minimum static pressure to operate properly across its flow range. Downstream of the VAV box (the box-to-diffuser run), Low Pressure (SMACNA Class +1 in.wg / EN Class A / AS-NZS Class A) is sufficient. Fabrication implication: supply mains and risers need higher gauge and tighter sealing than branch ducts. SBKJ SBAL-V recipes include both pressure classes; operator selects per duct section."}}
+    ]}
+  ]}
+  </script>
+</head>
+<body class="site-body">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell">
+      <div class="site-header-inner">
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async"><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
+        <nav id="primaryNav" class="site-nav">
+          <a href="../index.html">Home</a>
+          <a href="../machines.html">Machines</a>
+          <a href="../insights/">Insights</a>
+          <a href="../about.html">About</a>
+          <a href="../contact.html" class="nav-cta">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>VAV Design Guide</span></li></ol></nav></div></nav>
+    <article class="section page-hero bg-subtle">
+      <div class="shell">
+        <p class="eyebrow">Insights · HVAC design reference</p>
+        <h1 class="page-title">VAV Variable Air Volume HVAC Design Guide — Box Selection, Diversity, Min Airflow</h1>
+        <p class="article-lead">An engineer-led design guide for Variable Air Volume HVAC systems. Covers VAV terminal box types and selection, sizing methodology for cooling/ventilation/reheat modes, diversity factor at the system level, minimum airflow per ASHRAE 62.1 ventilation requirements, pressure class requirements upstream and downstream of VAV boxes, acoustic considerations on VAV-supply duct, and the fabrication implications for SBAL-V auto duct line operators producing VAV-system supply ducting.</p>
+        <p class="article-byline">
+          <span class="article-byline-author">By <a href="../about.html" rel="author">SBKJ Engineering Team</a></span>
+          <span class="article-byline-sep">·</span>
+          <span>Published <time datetime="2026-05-01">May 1, 2026</time></span>
+          <span class="article-byline-sep">·</span>
+          <span>10 min read</span>
+          <span class="article-byline-sep">·</span>
+          <span>Reviewed by SBKJ QA &amp; Engineering</span>
+        </p>
+      </div>
+    </article>
+
+    <section class="section">
+      <div class="shell"><div class="content-narrow">
+
+        <h2>Why VAV — and why now</h2>
+        <p>Variable Air Volume distribution is the dominant commercial HVAC strategy because it saves substantial fan energy at part-load. A typical commercial office runs at 30-60% of peak cooling load most operating hours. Constant Air Volume systems run the fan at 100% airflow regardless; VAV reduces airflow proportionally to load. Fan energy scales with the cube of airflow — so a 50% reduction in airflow saves roughly 87% of fan power at that operating point. ASHRAE 90.1 requires VAV on most commercial buildings above 25,000 sqft (2,300 m²) for this reason, and most green building rating systems (LEED, Green Star, BREEAM, DGNB) award energy credits to VAV systems.</p>
+
+        <h2>VAV terminal types</h2>
+
+        <h3>Single-duct VAV (most common)</h3>
+        <p>One supply duct delivers cold air at constant temperature (13-14°C). The VAV terminal box has a damper that modulates airflow to match zone cooling load. Returns to the AHU via the ceiling plenum or dedicated return duct. Most efficient and most common. Sub-types:</p>
+        <ul>
+          <li><strong>Cooling-only</strong>: simple damper, no heating capability. Used for interior zones where heating is not required.</li>
+          <li><strong>Reheat (HW or electric)</strong>: damper plus heating coil downstream. Reduces cooling airflow then activates reheat for low-load conditions or perimeter zones in winter.</li>
+          <li><strong>Pressure-independent</strong>: includes velocity sensor and feedback control to maintain commanded airflow regardless of duct static pressure variation. Standard for commercial.</li>
+        </ul>
+
+        <h3>Fan-powered VAV (FPB)</h3>
+        <p>VAV box with built-in fan that mixes plenum return air with primary supply air. Used to maintain minimum airflow at low-load conditions while extracting heat from lighting and equipment in the plenum. Sub-types:</p>
+        <ul>
+          <li><strong>Series (parallel-fan)</strong>: fan runs continuously at all loads, primary damper modulates. Higher continuous fan energy.</li>
+          <li><strong>Parallel</strong>: fan runs only at low primary airflow conditions. More efficient but more complex control.</li>
+        </ul>
+
+        <h3>Dual-duct VAV</h3>
+        <p>Two supply ducts: one cold (13-14°C) and one hot (35-40°C). VAV terminal mixes the two streams to deliver any temperature between. High control flexibility but high fan energy and twice the duct mass. Used in some legacy buildings; rarely specified for new construction.</p>
+
+        <h3>Induction VAV</h3>
+        <p>Primary supply discharges at high velocity through a nozzle, inducing secondary plenum air through the terminal. Self-powered (no fan). Limited capacity; used in some hospitality applications and legacy retrofits.</p>
+
+        <h2>VAV box sizing</h2>
+
+        <h3>Three flow rates per zone</h3>
+        <ol>
+          <li><strong>Maximum cooling airflow</strong>: sized to peak sensible cooling load with the design supply temperature (typically 13-14°C). Peak load includes solar gain, internal lighting/equipment/people loads, and envelope conduction at design conditions.</li>
+          <li><strong>Minimum airflow</strong>: the greater of ASHRAE 62.1 ventilation requirement, 30% of max for thermal control stability, or local code minimum.</li>
+          <li><strong>Reheat-mode airflow</strong>: at the minimum, with reheat coil active. Typically 50% of max for FPB systems with reheat, 30-40% for single-duct reheat.</li>
+        </ol>
+
+        <h3>Inlet diameter selection</h3>
+        <p>VAV boxes have round duct inlets in standard diameters. Approximate flow range per inlet at typical pressure drop budgets:</p>
+        <ul>
+          <li>Φ150 mm: 50-200 L/s</li>
+          <li>Φ200 mm: 100-400 L/s</li>
+          <li>Φ250 mm: 200-700 L/s</li>
+          <li>Φ300 mm: 350-1,100 L/s</li>
+          <li>Φ400 mm: 600-2,000 L/s</li>
+          <li>Φ500 mm: 1,000-3,500 L/s</li>
+        </ul>
+        <p>Major manufacturers (Trox, Titus, Krueger, Price, Carnes, Tuttle &amp; Bailey, Halton) publish detailed selection software that accounts for pressure drop, NC rating and damper authority.</p>
+
+        <h2>Diversity factor</h2>
+        <p>System-level fan and AHU sizing uses the system peak airflow which is less than the sum of all zone peak airflows. Reason: zones peak at different times. Eastern perimeter peaks at 9-11am (morning solar). Western perimeter peaks at 2-4pm. Interior peaks during peak occupancy. The fan never has to deliver every zone's peak simultaneously.</p>
+        <p>Typical diversity factors:</p>
+        <ul>
+          <li><strong>Commercial office</strong>: 0.70-0.85</li>
+          <li><strong>Mixed-use commercial</strong>: 0.75-0.85</li>
+          <li><strong>Hospital (acute care)</strong>: 0.85-0.95 (less diversity, more constant load)</li>
+          <li><strong>Hotel</strong>: 0.65-0.75 (high diversity, occupancy varies widely)</li>
+          <li><strong>Retail</strong>: 0.70-0.80</li>
+          <li><strong>Educational</strong>: 0.60-0.75 (occupancy seasonal, classrooms peak at different times)</li>
+        </ul>
+        <p>Detailed building energy modelling (eQUEST, EnergyPlus, IES VE, TAS) calculates project-specific diversity. Industry rules of thumb apply when energy model is not available.</p>
+
+        <h2>Minimum airflow per ASHRAE 62.1</h2>
+        <p>ASHRAE 62.1 specifies minimum outdoor air ventilation per zone based on floor area and occupancy. Typical office values:</p>
+        <ul>
+          <li><strong>Office space</strong>: 0.06 cfm/sqft floor + 5 cfm/person (≈ 0.30 L/s/m² + 2.5 L/s/person)</li>
+          <li><strong>Conference room</strong>: 0.06 cfm/sqft + 5 cfm/person (higher occupancy density drives this)</li>
+          <li><strong>Classroom</strong>: 0.12 cfm/sqft + 10 cfm/person</li>
+          <li><strong>Hospital patient room</strong>: 0.18 cfm/sqft + 25 cfm/person plus 6 ACH minimum</li>
+          <li><strong>Retail</strong>: 0.06 cfm/sqft + 7.5 cfm/person</li>
+        </ul>
+        <p>VAV minimum setting must equal or exceed the calculated ventilation requirement at all times. Multi-zone systems with shared AHU use ASHRAE 62.1 multi-zone calculation that adjusts outdoor air at the AHU based on zone-level occupancy diversity.</p>
+
+        <h2>Pressure class for VAV duct</h2>
+        <p>Supply duct upstream of VAV boxes operates at higher static pressure than downstream:</p>
+        <ul>
+          <li><strong>Upstream of VAV (between fan and box inlet)</strong>: SMACNA +3 to +4 in.wg / EN 1505 Class C-D / AS/NZS Class C-D. The fan delivers static pressure required to feed every VAV box plus duct losses.</li>
+          <li><strong>Downstream of VAV (between box outlet and diffuser)</strong>: SMACNA +1 in.wg / EN Class A / AS/NZS Class A. The VAV box drops the pressure to diffuser-feeding levels.</li>
+        </ul>
+        <p>Fabrication implication: supply mains need heavier gauge (typically 20-18 gauge for medium pressure) and tighter sealing than branch ducts (22-24 gauge for low pressure). The SBKJ SBAL-V auto duct line stores PLC recipes for both pressure classes; the operator selects per duct section. This avoids over-fabricating low-pressure branches as medium-pressure construction.</p>
+
+        <h2>Acoustic considerations</h2>
+        <p>VAV systems generate noise from three sources:</p>
+        <ul>
+          <li><strong>Fan and AHU</strong>: dominant low-frequency source, controlled with attenuators near AHU and lined plenum chamber</li>
+          <li><strong>VAV box itself</strong>: damper modulation creates regenerated noise, increasing as damper closes from full-open. Typical 25-40 dB(A) at maximum airflow, increasing as box throttles down.</li>
+          <li><strong>Air diffuser</strong>: terminal device noise, controlled by diffuser selection and face velocity</li>
+        </ul>
+        <p>VAV box noise typically dominates at the zone level. Selection must check NC rating at all operating points, not just at peak airflow. Many projects use acoustic-lined VAV inlet ducts (300-600 mm of internally lined duct upstream of box) to attenuate fan noise propagating through the box. See our <a href="acoustic-hvac-duct-lining-attenuator-guide.html">acoustic duct lining guide</a>.</p>
+
+        <h2>Common VAV design errors</h2>
+        <ol>
+          <li><strong>VAV minimum set below 30% of maximum</strong>: comfort complaints from poor diffuser mixing; instability in damper modulation. Always set min ≥ 30% or as required by ASHRAE 62.1 (whichever is greater).</li>
+          <li><strong>Reheat above 30% of design</strong>: ASHRAE 90.1 prohibits simultaneous heating-cooling above 30%. Watch the project specification for compliance audit.</li>
+          <li><strong>Insufficient inlet duct upstream of VAV</strong>: less than 3 duct diameters of straight inlet causes flow distortion and pressure-independent control failure. Always provide 3D minimum, 5D ideal.</li>
+          <li><strong>Wrong pressure class on downstream duct</strong>: fabricating low-pressure box-to-diffuser duct as medium-pressure wastes 30-40% on fabrication cost. Conversely, low-pressure construction upstream of VAV fails leakage class.</li>
+          <li><strong>Diversity factor not applied at system level</strong>: oversized fan and AHU. Wastes capex and runs at low efficiency at design point.</li>
+          <li><strong>Diversity applied at branch level</strong>: undersized branch ducts. Each branch must be sized for that zone's peak, not the system peak.</li>
+        </ol>
+
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html">Get an SBAL-V quote configured for VAV pressure classes &rarr;</a></p>
+
+        <h2>FAQ</h2>
+        <details><summary>What is a VAV system?</summary><p>Variable Air Volume — supply temperature constant (13-14°C), zone airflow modulated by VAV terminal box to match cooling load. Saves 30-60% fan energy vs CAV at part-load. Required by ASHRAE 90.1 on most commercial buildings &gt;25,000 sqft.</p></details>
+        <details><summary>How do I size a VAV box?</summary><p>Three flow rates per zone: max cooling, minimum (greater of ASHRAE 62.1 vent or 30% of max), reheat-mode. Catalogue selection by inlet diameter at desired pressure drop (typically 50-150 Pa).</p></details>
+        <details><summary>What is diversity factor?</summary><p>Adjustment for non-coincident zone peaks. System fan/AHU sized to system peak (70-85% of sum of zone peaks for office). Branch ducts sized for zone peak (no diversity).</p></details>
+        <details><summary>What is the minimum VAV airflow?</summary><p>Greater of ASHRAE 62.1 ventilation requirement, 30% of max for thermal stability, or local code minimum. Below 30% causes diffuser mixing issues and damper instability.</p></details>
+        <details><summary>What pressure class for VAV duct?</summary><p>Upstream (fan to VAV inlet): Medium Pressure SMACNA +3-4 in.wg / EN 1505 Class C-D. Downstream (VAV outlet to diffuser): Low Pressure SMACNA +1 in.wg / EN Class A.</p></details>
+
+        <aside class="related-guides">
+          <p class="eyebrow">Related guides</p>
+          <ul class="related-links">
+            <li><a href="rectangular-duct-sizing-chart.html">Rectangular Duct Sizing Chart</a></li>
+            <li><a href="spiral-duct-sizing-chart.html">Spiral Duct Sizing Chart</a></li>
+            <li><a href="acoustic-hvac-duct-lining-attenuator-guide.html">Acoustic HVAC Duct Lining</a></li>
+            <li><a href="hvac-commissioning-air-balancing-guide.html">HVAC Commissioning and Air Balancing</a></li>
+            <li><a href="hvac-duct-machinery-glossary.html">HVAC Duct Machinery Glossary</a></li>
+          </ul>
+        </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+      <div class="shell">
+        <div class="content-narrow">
+          <div class="promise-callout">
+            <span class="promise-label">12-hour reply</span>
+            <p class="promise-text">VAV system project? An SBKJ engineer with VAV experience replies within 12 hours.</p>
+            <a href="../contact.html" class="btn btn-primary">Ask an engineer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <p>© SBKJ Group · <a href="../index.html">Home</a> · <a href="../machines.html">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-sbkj.html">Why SBKJ</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../industries/">Industries</a> · <a href="../contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=4"></script>
+</body>
+</html>
