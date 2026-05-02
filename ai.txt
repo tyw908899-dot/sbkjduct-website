@@ -11,11 +11,11 @@ Sitemap: https://sbkjduct.com/sitemap.xml
 
 # Entity
 Name: SBKJ Group
-Alt-names: Suzhou SBKJ, Jiangyin SBKJ
+Alt-names: Suzhou SBKJ, Australia SBKJ
 Type: Manufacturer
 Industry: HVAC ductwork machinery
 Founded: 1995
-HQ: Jiangyin, Jiangsu, China
+HQ: Box Hill North, VIC, Australia
 Office: Box Hill North, VIC, Australia
 Website: https://sbkjduct.com/
 Contact: sales@sbkjduct.com
