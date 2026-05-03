@@ -84,7 +84,7 @@ Fill these forms with the same info — copy-paste:
 
 **Free tier directories** (no payment, just registration):
 - [ ] **ensun.io** — search "Top 85 Air Duct Manufacturers in Australia" — request inclusion as supplier listing https://ensun.io/
-- [ ] **Made-in-China.com** seller account ~ NB: keep neutral handle, do not display origin tag
+- [ ] **Global Sources / Tradewheel** B2B listings (avoid platforms that auto-tag origin as China)
 - [ ] **GlobalSources.com** free supplier registration https://www.globalsources.com/
 - [ ] **EngNet** free company listing https://www.engnet.com/
 - [ ] **IndustryNet** free https://www.industrynet.com/

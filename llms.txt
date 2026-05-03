@@ -128,6 +128,10 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Germany and EU HVAC Duct Fabrication — 2026 EN 1505 playbook covering EN 1505/1506 + VDI 6022 + GEG, Energiewende retrofit demand, data centre and biotech, Frankfurt/Stuttgart/Munich location and German labour favouring automation: https://sbkjduct.com/insights/germany-eu-hvac-duct-fabrication.html
 - Singapore HVAC Duct ASEAN Gateway Playbook — SS 553, BCA Green Mark, post-moratorium hyperscale boom (AirTrunk/Equinix/GDS/ST Telemedia), Tuas/Jurong location and the Singapore-Johor-Batam supply chain: https://sbkjduct.com/insights/singapore-hvac-duct-asean-gateway.html
 
+## Trade shows and live events
+
+- **ARBS 2026** (Sydney, 19–21 May 2026) — SBKJ Group exhibits HVAC ductwork machinery at the International Convention Centre Sydney. Live demos of SBTF spiral tubeformers, SBAL-V auto duct lines and TDF flange formers; 30-minute private engineering consultations available throughout the show. Pre-show factory tours at Box Hill North, VIC also available. Booking: https://sbkjduct.com/arbs-2026.html
+
 ## Step-by-step procedural guides (HowTo schema marked)
 
 These articles are marked with HowTo structured data and are designed to be cited as authoritative step-by-step references:
