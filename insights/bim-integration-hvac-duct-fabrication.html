@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>BIM Integration for HVAC Duct Fabrication — Revit to Auto Duct Line Workflow Guide | SBKJ Group</title>
+  <meta name="description" content="Definitive engineer guide to BIM-to-fabrication workflow for HVAC ductwork: Revit MEP, CAMduct, fab data export, PCF/MAJ/IFC formats, direct PLC integration with SBKJ auto duct lines." />
+  <link rel="canonical" href="https://sbkjduct.com/insights/bim-integration-hvac-duct-fabrication.html" />
+  <link rel="alternate" hreflang="en" href="https://sbkjduct.com/insights/bim-integration-hvac-duct-fabrication.html" />
+  <link rel="alternate" hreflang="x-default" href="https://sbkjduct.com/insights/bim-integration-hvac-duct-fabrication.html" />
+  <meta name="author" content="SBKJ Group" />
+  <meta name="geo.region" content="AU-VIC" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:site_name" content="SBKJ Group" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="BIM Integration for HVAC Duct Fabrication — Revit to Auto Duct Line Workflow Guide" />
+  <meta property="og:description" content="The definitive engineer reference for BIM-to-fabrication workflow in HVAC duct shops — Revit MEP through CAMduct to direct CNC integration with SBKJ auto duct lines." />
+  <meta property="og:url" content="https://sbkjduct.com/insights/bim-integration-hvac-duct-fabrication.html" />
+  <meta property="og:image" content="https://sbkjduct.com/assets/images/sbal-v.jpg" />
+  <meta property="article:published_time" content="2026-05-03T00:00:00+10:00" />
+  <meta property="article:modified_time" content="2026-05-03T00:00:00+10:00" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@sbkjgroup" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=16" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://sbkjduct.com/#author-engineering","name":"SBKJ Engineering Team","url":"https://sbkjduct.com/about.html","description":"SBKJ Group senior engineers and BIM coordinators with 30+ years of combined experience in HVAC ductwork machinery design, BIM-to-fabrication workflow development, and PLC integration across 80+ countries.","parentOrganization":{"@id":"https://sbkjduct.com/#org"},"knowsAbout":["Revit MEP","Autodesk CAMduct","Autodesk CADmep","BIM coordination","HVAC fabrication","ISO 19650","IFC","gbXML","PCF","MAJ","Auto duct production line","SMACNA","AS/NZS 4254","PLC integration"]},
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://sbkjduct.com/"},
+      {"@type":"ListItem","position":2,"name":"Insights","item":"https://sbkjduct.com/insights/"},
+      {"@type":"ListItem","position":3,"name":"BIM Integration for HVAC Duct Fabrication","item":"https://sbkjduct.com/insights/bim-integration-hvac-duct-fabrication.html"}
+    ]},
+    {"@type":"TechArticle","headline":"BIM Integration for HVAC Duct Fabrication — Revit to Auto Duct Line Workflow Guide","description":"A definitive engineer-led reference on Building Information Modelling integration with HVAC duct fabrication machinery — covering Revit MEP duct elements, CAMduct and CADmep, fab data export formats (PCF, MAJ, IFC, gbXML), spool drawings, direct CNC posting to plasma tables and auto duct line PLCs, LOD progression and digital twin feedback.","author":{"@id":"https://sbkjduct.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"SBKJ Group BIM & Engineering","url":"https://sbkjduct.com/about.html","description":"SBKJ Group BIM coordination and engineering team — every published guide is reviewed by senior engineers and BIM coordinators before publication and re-validated on each update."},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-05-03","dateModified":"2026-05-03","image":"https://sbkjduct.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/bim-integration-hvac-duct-fabrication.html","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"HVAC Manufacturing - BIM and Digital Workflow","about":[{"@type":"Thing","name":"Building Information Modelling"},{"@type":"Thing","name":"Revit MEP HVAC fabrication"},{"@type":"Thing","name":"BIM-to-fab workflow"},{"@type":"Thing","name":"CAMduct CADmep"},{"@type":"Thing","name":"Auto duct line PLC integration"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What is BIM-to-fabrication for HVAC ductwork?","acceptedAnswer":{"@type":"Answer","text":"BIM-to-fabrication is the workflow that converts a coordinated 3D Revit MEP duct model into machine-ready cut lists, spool drawings and CNC files that drive plasma tables, coil lines and auto duct production lines on the shop floor. It replaces manual takeoff and re-drawing in CAMduct with a continuous data path from designer to machine, reducing rework and length variance from typical 8–12% down to under 2%."}},
+      {"@type":"Question","name":"What is the difference between Revit design parts and fabrication parts?","acceptedAnswer":{"@type":"Answer","text":"Revit design parts (the default duct elements in Revit MEP) are simplified placeholders sized for design intent, layout and clash detection. Fabrication parts (loaded from a CADmep or CAMduct configuration via the Fabrication Parts toolset) are real shop-floor components with seams, gauges, connector types, gasket grooves, insulation thicknesses and supplier-specific dimensions that can be posted directly to a CNC machine. A duct shop must convert design parts to fabrication parts before any cut list, spool drawing or PLC file can be produced."}},
+      {"@type":"Question","name":"Which file formats can SBKJ auto duct lines accept from BIM?","acceptedAnswer":{"@type":"Answer","text":"SBKJ auto duct lines including SBAL-V and SBAL-III accept four primary inputs from a BIM workflow: an XML cut list (compatible with the CAMduct ITM cut list export), DXF flat patterns for nested plasma cutting, a JSON job file for the SBKJ PLC scheduler, and a CSV bill of materials for procurement. The Siemens or Mitsubishi PLC on the SBAL-V parses any of these formats directly without intermediate post-processing."}},
+      {"@type":"Question","name":"How long does it take to set up a Revit-to-Auto-Duct-Line workflow?","acceptedAnswer":{"@type":"Answer","text":"For a duct shop with an existing Revit MEP licence and a trained CAMduct or CADmep operator, plan 4–8 weeks: 1 week to map your fabrication configuration to your machine tooling, 1–2 weeks to build a connector library and gauge mapping, 1 week to run a 50-piece pilot batch end-to-end, and 1–2 weeks of process tuning. Shops without prior Autodesk Fabrication experience should plan 12–16 weeks including operator training."}},
+      {"@type":"Question","name":"What is the ROI on BIM-to-fabrication integration?","acceptedAnswer":{"@type":"Answer","text":"For a duct shop producing more than 8,000 m² per month, typical payback on a BIM-to-fab workflow (software, hardware, training, configuration) is 9–14 months. Drivers are reduced length variance (from 8–12% to under 2%), elimination of manual takeoff hours (typically 0.6 hours per 100 m² of duct), reduced rework on fittings (from 4–6% to under 1%), and faster procurement turnaround on coil and accessories. SBKJ provides a sample BIM-to-fab ROI worksheet on request."}},
+      {"@type":"Question","name":"Can I run BIM-to-fab without Autodesk Fabrication CAMduct?","acceptedAnswer":{"@type":"Answer","text":"Yes. CAMduct is the most common path because it ships with Revit-compatible content, but third-party Revit add-ins such as MagiCAD for Revit, eVolve Mechanical for Revit and Victaulic Tools for Revit can also export fabrication-ready data. Some shops use the IFC4 export from Revit combined with a custom IFC parser to produce SBKJ XML cut lists directly. Native Revit detail components plus a Dynamo script can also produce a basic cut list, but loses spool drawing automation and direct CNC posting."}},
+      {"@type":"Question","name":"What LOD does fabrication require?","acceptedAnswer":{"@type":"Answer","text":"Fabrication requires LOD 400 — geometry that includes actual fabrication seams, connector dimensions, gauge mapping, hanger locations, and accessory positions accurate to within manufacturing tolerance. LOD 200 (design intent) and LOD 350 (coordinated for clash) are not fabrication-ready. Most projects upgrade from LOD 350 to LOD 400 at the start of the shop drawing phase, typically 6–10 weeks before the first duct piece is required on site."}},
+      {"@type":"Question","name":"Does SBKJ provide BIM consultation as part of an auto duct line purchase?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every SBKJ auto duct line including SBAL-V and SBAL-III ships with a BIM-to-fab integration package: an XML cut list schema document, sample CAMduct ITM templates mapped to SBKJ tooling, a connector library matching SBKJ flange and TDF dimensions, and 8 hours of remote BIM coordinator training during commissioning. SBKJ engineers also support shops migrating from manual takeoff to BIM during their first three production batches."}}
+    ]},
+    {"@type":"HowTo","name":"How to Set Up a Revit-to-Auto-Duct-Line Workflow","description":"A complete 20-step procedure for moving from a Revit MEP coordinated model through fabrication-ready content, CAMduct cut list generation, spool drawing automation, and direct CNC posting to an SBKJ auto duct production line.","totalTime":"P56D","image":"https://sbkjduct.com/assets/images/sbal-v.jpg","tool":[{"@type":"HowToTool","name":"Autodesk Revit MEP 2025 or 2026"},{"@type":"HowToTool","name":"Autodesk Fabrication CAMduct"},{"@type":"HowToTool","name":"Autodesk Fabrication CADmep"},{"@type":"HowToTool","name":"Autodesk Navisworks Manage"},{"@type":"HowToTool","name":"SBKJ XML cut list schema"},{"@type":"HowToTool","name":"Plasma table or auto duct line PLC interface"}],"step":[
+      {"@type":"HowToStep","position":1,"name":"Audit your current takeoff process","text":"Document the current manual takeoff process, time per 100 m² of duct, error rate at fittings, and rework percentage. This baseline drives the ROI calculation and reveals which workflow stages benefit most from BIM integration."},
+      {"@type":"HowToStep","position":2,"name":"Confirm Revit MEP version compatibility","text":"Verify the design team's Revit MEP version (2024, 2025 or 2026) and confirm your Autodesk Fabrication suite (CAMduct, CADmep) matches. Mixing 2024 fabrication content with 2026 Revit causes silent data loss on round-trip."},
+      {"@type":"HowToStep","position":3,"name":"Map your machine tooling to a fabrication configuration","text":"Create or load a CAMduct ITM database that mirrors your shop's exact tooling — coil widths supported, seam types (Pittsburgh, snaplock, button-punch), connector types (TDF, slip-on flange, S-and-drive), insulation pre-application capability."},
+      {"@type":"HowToStep","position":4,"name":"Build a connector library matching your hardware","text":"Match every CAMduct connector ITM to the actual hardware on your shelf — TDF male/female cleat dimensions, slip-on flange profiles, transverse joint corners. Wrong connector dimensions in the ITM cause every downstream cut length to be off by 6–25 mm."},
+      {"@type":"HowToStep","position":5,"name":"Map gauge tables to your coil inventory","text":"Build a CAMduct gauge table that matches your coil inventory — for SMACNA and AS/NZS 4254 you need entries for at least 0.6, 0.8, 1.0, 1.2 and 1.5 mm in galvanised steel, plus stainless and aluminium if used. Map every gauge to coil width availability."},
+      {"@type":"HowToStep","position":6,"name":"Convert Revit design parts to fabrication parts","text":"Use the Revit Fabrication Parts toolset to convert design ducts to fabrication parts using the Design to Fabrication command. Verify every conversion — orphaned fittings will be reported in the Fabrication Browser as unconverted segments."},
+      {"@type":"HowToStep","position":7,"name":"Run clash detection in Navisworks Manage","text":"Export the fabrication-converted Revit model to NWC, append architectural and structural NWCs in Navisworks Manage, and run a hard clash test using the Clash Detective tool. Resolve all hard clashes before exporting any fabrication data."},
+      {"@type":"HowToStep","position":8,"name":"Validate LOD 400 fabrication readiness","text":"Confirm the model is at LOD 400 — every duct segment has a real seam, every fitting has actual connector geometry, every accessory has shop-floor dimensions. LOD 350 models will produce cut lists with 8–15% rework on the floor."},
+      {"@type":"HowToStep","position":9,"name":"Group duct into spools using levels and systems","text":"In CAMduct or CADmep, group fabrication parts into spools — typically by floor level, system tag (SA, RA, EA, OA) and a maximum 6 m or 12 m bundle length suitable for transport and rigging."},
+      {"@type":"HowToStep","position":10,"name":"Generate spool drawings","text":"Run the Spool Drawing tool in CAMduct or CADmep to auto-generate isometric shop drawings with piece marks, dimensions, gauge call-outs, connector schedule and a per-spool BOM. Verify three random spools manually before batch-generating the full project."},
+      {"@type":"HowToStep","position":11,"name":"Run coil nesting","text":"Use the CAMduct Coil Nesting module to produce nested cut patterns optimised for material yield — typically 88–94% yield on rectangular runs, 78–86% on dense fitting batches. Set seam allowance, scrap allowance and a kerf compensation matching your plasma table cut width."},
+      {"@type":"HowToStep","position":12,"name":"Export the cut list","text":"Export the project cut list as XML using the CAMduct Cut List Export to XML command. The XML structure must contain part ID, system tag, gauge, blank length and width, fitting type, seam type and connector references."},
+      {"@type":"HowToStep","position":13,"name":"Map XML cut list to the SBKJ auto duct line schema","text":"Run the XML through the SBKJ-supplied transform (provided as an XSLT or a Python script during commissioning) that maps CAMduct XML to the SBKJ PLC job format. The SBAL-V and SBAL-III SBKJ PLCs expect a specific element ordering and unit declaration."},
+      {"@type":"HowToStep","position":14,"name":"Generate DXF flat patterns","text":"Export DXF flat patterns from CAMduct for any non-standard fitting that requires plasma cutting outside the auto duct line — transitions, offsets and oval-to-round transitions are typically routed to a CNC plasma table while straight runs and standard fittings stay on the SBAL-V."},
+      {"@type":"HowToStep","position":15,"name":"Produce a procurement BOM","text":"Run the CAMduct Quantity Takeoff to CSV to produce a procurement BOM — coil per gauge per width, connector hardware count, gasket length, hanger count. Hand off to procurement at least 4 weeks before fabrication kicks off."},
+      {"@type":"HowToStep","position":16,"name":"Run a 50-piece pilot batch","text":"Send a representative 50-piece subset to the auto duct line — including straight runs, two transition types, two offset types and one terminal connector. Measure the cut length variance, fitting accuracy and connector seating against the model."},
+      {"@type":"HowToStep","position":17,"name":"Tune fabrication configuration based on pilot data","text":"If pilot variance is over 2%, adjust the CAMduct fabrication configuration — typically connector allowance, seam allowance or gauge mapping. Re-run the pilot until variance is under 2% before scaling to full project volume."},
+      {"@type":"HowToStep","position":18,"name":"Schedule production directly from BIM","text":"Use the SBKJ PLC scheduler to receive a daily JSON job package from the BIM team — the scheduler reads spool sequence, dispatches the SBAL-V job queue, and reports completion back to the BIM model in real time via OPC UA."},
+      {"@type":"HowToStep","position":19,"name":"Capture as-built data and feed it back to the model","text":"Use a tablet on the shop floor to scan piece marks at fabrication completion, recording actual cut length, gauge and any field deviation. Push the data back to Revit using a Dynamo script or BIM 360 / Autodesk Construction Cloud Issue, closing the digital twin loop."},
+      {"@type":"HowToStep","position":20,"name":"Review and standardise","text":"After the first three projects, review variance reports and standardise the fabrication configuration — lock the CAMduct ITM database, version-control the connector library, and publish an internal BIM-to-fab playbook for new operators."}
+    ]}
+  ]}
+  </script>
+</head>
+<body class="site-body">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell">
+      <div class="site-header-inner">
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async"><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
+        <nav id="primaryNav" class="site-nav" aria-label="Primary">
+          <a href="../index.html" data-i18n="nav.home">Home</a>
+          <a href="../machines.html" data-i18n="nav.machines">Machines</a>
+          <a href="../insights/" data-i18n="nav.insights">Insights</a>
+          <a href="../about.html" data-i18n="nav.about">About</a>
+          <a href="../contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>BIM Integration for HVAC Duct Fabrication</span></li></ol></nav></div></nav>
+    <article class="section page-hero bg-subtle">
+      <div class="shell">
+        <p class="eyebrow">Insights · BIM &amp; Digital Workflow</p>
+        <h1 class="page-title">BIM Integration for HVAC Duct Fabrication — Revit to Auto Duct Line Workflow Guide</h1>
+        <p class="article-lead">The definitive engineer reference for connecting a Revit MEP coordinated duct model to your shop floor — covering the data model, fabrication parts, file formats, spool drawing automation, direct CNC posting to plasma tables and auto duct lines, LOD progression, digital twin feedback and the failure modes that catch out most BIM-to-fab teams. Written by SBKJ engineers and BIM coordinators who have wired Revit MEP into SBAL-V and SBAL-III auto duct lines on five continents.</p>
+        <p class="article-byline">
+          <span class="article-byline-author">By <a href="../about.html" rel="author">SBKJ Engineering Team</a></span>
+          <span class="article-byline-sep">·</span>
+          <span>Published <time datetime="2026-05-03">May 3, 2026</time></span>
+          <span class="article-byline-sep">·</span>
+          <span>28 min read</span>
+          <span class="article-byline-sep">·</span>
+          <span>Reviewed by SBKJ BIM &amp; Engineering</span>
+        </p>
+      </div>
+    </article>
+
+    <section class="section">
+      <div class="shell"><div class="content-narrow">
+
+        <h2>1. The workflow gap from Revit MEP to factory floor</h2>
+        <p>Almost every duct shop running serious volume in 2026 lives with a structural gap. On one side of the gap, the design team builds a coordinated 3D Revit MEP model at LOD 350, runs Navisworks Manage clash detection, and signs off a beautiful purple-blue duct route through a hospital plant room. On the other side of the gap, a takeoff estimator opens that model in CAMduct, manually re-creates the run as a fabrication model, redraws every transition and offset, generates a cut list by hand, and emails a PDF spool drawing to a fabricator who keys the dimensions into the auto duct line HMI one piece at a time. Two engineering teams. Two separate models. One project worth of avoidable rework.</p>
+        <p>The cost of that gap is well documented in the industry. A typical mid-size mechanical contractor running 12,000–20,000 m² of duct per month sees 6–12% of installed length reworked because the as-built deviates from the model. Fittings carry the worst variance — at hospital plant rooms with dense duct routing we measure 11–18% of transitions and offsets fabricated to dimensions that do not match the field condition. Most of that variance is not a fabrication defect. It is a translation defect: the design model is interpreted twice and lost in translation each time.</p>
+        <p>Building Information Modelling integration with HVAC duct fabrication machinery is the bridge that closes the gap. Done well, it transports a single source of geometric truth from the BIM coordinator through CAMduct through the auto duct line PLC and back to the model as as-built data — no manual re-drawing, no PDF spool drawings keyed by hand, no two-engineer interpretation of the same fitting. We have wired this workflow into SBAL-V and SBAL-III auto duct lines for shops in Melbourne, Toronto, Riyadh, Hamburg and Santiago. The pattern is the same everywhere: a 4–8 week setup, a 50-piece pilot batch, a 9–14 month payback, and a permanent reduction in length variance from 8–12% down to under 2%.</p>
+        <p>This article is the definitive English-language reference on how to set the workflow up. It is written for two readers: the BIM coordinator who needs to understand what the shop floor expects from their model, and the duct shop owner who needs to understand what the BIM team is actually shipping to them. We assume you are familiar with Revit MEP basics and have at least seen a CAMduct interface — if you are starting from zero, the SBKJ engineering team can run a 4-hour orientation session. Everything below is concrete: software versions, command names, file extensions, schema fragments and the specific failure modes you will hit on the way.</p>
+
+        <h2>2. Revit MEP duct elements — the data model behind every duct piece</h2>
+        <p>Before you touch any export workflow, understand what a Revit duct element actually contains. A modern Revit MEP duct (in 2024, 2025 and 2026 versions) is not a 3D shape — it is a parametric instance with a defined data model. When you place a duct in Revit MEP, you are creating an object with the following properties on the Properties palette:</p>
+        <ul>
+          <li><strong>Size</strong> — width and height for rectangular, diameter for round. Stored in millimetres internally regardless of project units.</li>
+          <li><strong>System Type</strong> — Supply Air, Return Air, Exhaust Air, Outside Air, or any custom system. Drives system colouring and Navisworks filtering.</li>
+          <li><strong>System Classification</strong> — broader category (Supply, Return, Exhaust). Distinct from System Type and used by analysis tools.</li>
+          <li><strong>Insulation Type and Thickness</strong> — separate object linked to the duct. Carries a thermal conductivity for energy analysis but no shop-floor seam information by default.</li>
+          <li><strong>Lining Type and Thickness</strong> — internal acoustic lining, again with no fabrication detail by default.</li>
+          <li><strong>Reference Level and Offset</strong> — the elevation and level binding that drives clash detection.</li>
+          <li><strong>Flow</strong> — air flow rate (l/s or m³/h), used by the system analysis but not directly by fabrication.</li>
+          <li><strong>Connector Geometry</strong> — endpoint connectors that determine fitting selection.</li>
+        </ul>
+        <p>A Revit duct fitting (transition, elbow, tee, offset, takeoff) is a separate Family instance — typically a Family loaded from the standard MEP content library. Each fitting Family carries its own size, angle, throat radius and connector definitions. Critically, the default Revit fittings are <em>design parts</em> — they have geometric dimensions but no fabrication detail (no seam allowance, no connector flange, no gauge specification, no material type beyond a generic system colour).</p>
+        <p>This data model is sufficient for design coordination, basic energy analysis and clash detection. It is not sufficient to drive a CNC machine. The reason is simple: a duct shop floor cares about properties that the design data model does not store — seam type, connector type, gauge, gasket groove, fabrication tolerance, run-out length, hanger position. To get those properties into the model you need to convert design parts to fabrication parts, which is the topic of section 5.</p>
+
+        <h3>2.1 Duct Family types and where they live</h3>
+        <p>The standard Revit MEP install ships with three categories of duct content: Ducts (the linear segments), Duct Fittings (elbows, tees, transitions, offsets) and Duct Accessories (dampers, silencers, smoke detectors). The default content lives at <code>C:\ProgramData\Autodesk\RVT 2026\Libraries\English\Mechanical\MEP</code> on Windows and is loaded as <code>.rfa</code> Family files. Most projects load a small subset and rely on their MEP template to standardise what is available. A quick audit of the loaded duct content is the first thing you do when you take over a project from another BIM coordinator — open the Project Browser, expand <em>Families &gt; Duct Fittings</em>, and confirm you have the elbows, tees and transitions you actually need before you start modelling.</p>
+
+        <h2>3. Revit add-ins and exporters — the tooling landscape</h2>
+        <p>The Revit ecosystem in 2026 supports four primary paths from a coordinated MEP model to fabrication-ready data. Each has a different sweet spot and different licensing footprint. Choose deliberately.</p>
+
+        <h3>3.1 Autodesk Fabrication CAMduct and CADmep</h3>
+        <p>The native Autodesk path. CAMduct is the shop-floor application — coil nesting, cut list generation, machine output, plasma table NC posting, spool drawing automation. CADmep is the AutoCAD-based companion that BIM coordinators use to layout fabrication-converted runs in 2D. The Revit Fabrication Parts toolset (built into Revit MEP since 2018) loads the CAMduct ITM database directly and gives you a Fabrication Browser palette inside Revit that shows every fabrication part available in your configuration.</p>
+        <p>This is the path most shops choose because the round-trip between Revit, CADmep and CAMduct uses a shared content database — a change to a connector dimension in CAMduct propagates to Revit on the next reload. Licensing is via the Autodesk AEC Collection or the standalone Fabrication suite. Plan for one CAMduct seat per shop-floor scheduler and one CADmep seat per BIM coordinator who will be doing fabrication editing.</p>
+
+        <h3>3.2 MagiCAD for Revit</h3>
+        <p>The dominant European MEP add-in for Revit, with strong content libraries from European duct manufacturers and certified product data on a per-region basis. MagiCAD for Revit ships its own duct sizing engine, balancing engine and a Bills of Quantities (BoQ) export that produces fabrication-grade output. It is particularly strong in markets where the duct content is tied to a national standard catalogue (DIN, EN, BS).</p>
+
+        <h3>3.3 eVolve Mechanical for Revit</h3>
+        <p>A Revit add-in focused on the fabrication-detailing workflow itself. eVolve Mechanical extends the native Revit fabrication parts with hanger automation, layout point export to Trimble or Topcon total stations, weld-mark numbering, and a more shop-floor-centric spool drawing engine. Many North American mechanical contractors run eVolve alongside CAMduct rather than instead of it — eVolve handles the field-coordination side and CAMduct handles the cut list and machine output.</p>
+
+        <h3>3.4 Victaulic Tools for Revit</h3>
+        <p>Although Victaulic is best known for grooved pipe couplings, Victaulic Tools for Revit is a credible Revit add-in for both pipe and duct shops. It is free to use, has a strong spool drawing engine and outputs a clean cut list. Smaller duct shops that cannot justify the full Autodesk Fabrication licence often start with Victaulic Tools and upgrade to CAMduct once volume justifies the cost.</p>
+
+        <h3>3.5 Native Revit plus Dynamo</h3>
+        <p>For shops that do not have any of the above, the lowest-cost path is native Revit MEP design parts plus a Dynamo script (Dynamo is free, ships with Revit) that walks every duct element, reads dimensions and writes a CSV cut list. This produces a usable basic cut list but loses the spool drawing automation, the connector library mapping and the direct CNC posting. SBKJ supports this path as an entry point for shops in markets where Autodesk Fabrication content is hard to source — the SBKJ team can supply a starter Dynamo script that produces an SBAL-V compatible XML directly from Revit MEP design parts.</p>
+
+        <h2>4. Common file formats for fabrication transfer</h2>
+        <p>Once you have decided which add-in is producing the fabrication data, the next decision is the transfer format. Each format carries a different set of properties and a different level of fidelity. Get this decision wrong and you spend the project re-creating data that was already in the model.</p>
+
+        <h3>4.1 PCF — Piping Component File</h3>
+        <p>Originally a piping format, PCF (.pcf, plain text) is widely supported across mechanical fabrication tooling. It carries component types, dimensions, materials and connection data in a flat human-readable schema. For ductwork PCF is rarely used directly — it has been adapted in a few workflows but its native vocabulary is pipe-shaped. Mention it for completeness; in a duct shop the more relevant formats are MAJ and the CAMduct XML.</p>
+
+        <h3>4.2 MAJ — CAMduct project file</h3>
+        <p>The CAMduct internal project file format (.maj). Contains every fabrication part in the project, the coil nesting state, the cut list, the spool definitions, the gauge mapping and the connector assignments. MAJ files are not directly readable by an auto duct line PLC — they are the staging file from which you export the cut list, spool drawings and machine NC files. Treat the MAJ as the project master and the XML/DXF/JSON exports as the dispatched outputs.</p>
+
+        <h3>4.3 .fab files (Autodesk Fabrication content)</h3>
+        <p>The Fabrication content database files (with extensions including .fab, .ITM, .MAT, .MAJ, .CAM and .ESQ) live together inside an Autodesk Fabrication configuration folder. The .ITM file is the pattern itself — the parametric definition of a fitting. The .MAT file holds material specifications. When you change a connector dimension in CAMduct, you are editing the .ITM file. Version-control these files in your shop's Git repository or an equivalent version control system; otherwise an undocumented edit to a connector ITM will silently break every project that uses it.</p>
+
+        <h3>4.4 IFC — Industry Foundation Classes</h3>
+        <p>IFC (.ifc, plain text under ISO 16739) is the open BIM exchange format. IFC4 and IFC4.3 carry duct geometry under <code>IfcDuctSegment</code>, <code>IfcDuctFitting</code> and <code>IfcFlowController</code> entities. For ductwork the IFC export from Revit (using the IFC4 Reference View MVD) is sufficient for clash coordination and high-level QTO but loses fabrication detail — seam type and connector type are not standard IFC attributes and require a property set extension. Some shops use IFC as the input to a custom IFC parser that produces an SBAL-V XML directly; this is a sensible path for projects where the design team will not move to Revit fabrication parts.</p>
+
+        <h3>4.5 gbXML — Green Building XML</h3>
+        <p>gbXML (.xml) is the energy analysis exchange format used by IES VE, EnergyPlus and other simulation tools. Mention it because it appears in BIM workflows, but it is not used for duct fabrication — it carries airflow and thermal data, not seam and connector information.</p>
+
+        <h3>4.6 IDS — Information Delivery Specification</h3>
+        <p>IDS (.ids, an XML schema under buildingSMART) is a relatively new format that lets a project specify which IFC properties must be present on which entities. For BIM-to-fab work an IDS file lets the duct shop demand that any IFC handed over must have, for example, <code>IfcDuctSegment.Material</code>, <code>IfcDuctSegment.WallThickness</code> and a <code>Pset_DuctFabrication</code> property set with seam type and connector type. Where the design team produces an IDS-compliant IFC, the shop floor saves weeks of data cleaning.</p>
+
+        <h3>4.7 CAMduct XML cut list</h3>
+        <p>The format that matters most for direct CNC integration. CAMduct exports a project cut list as XML with a stable schema documented in the Autodesk Fabrication SDK. The XML contains, per part, an item ID, system tag, gauge, blank length and width, fitting type, seam type, connector references and any per-part metadata. SBKJ provides an XSLT transform that maps this XML to the SBAL-V and SBAL-III PLC job format directly — no intermediate post-processing required. The CAMduct XML is the most common production-grade transfer format for shops running a full Autodesk Fabrication workflow.</p>
+
+        <h3>4.8 DXF flat patterns</h3>
+        <p>For any fitting that requires plasma cutting outside the auto duct line — non-standard transitions, oval-to-round transitions, custom plenum panels — CAMduct exports a DXF flat pattern (.dxf, AutoCAD ASCII format) ready for nesting on a CNC plasma table. DXF is universal and accepted by every plasma table CNC controller currently sold. SBKJ plasma tables accept DXF directly through their controller. <a href="../categories/auto-duct-lines.html">See SBKJ auto duct line specifications</a>.</p>
+
+        <h3>4.9 JSON job package</h3>
+        <p>For shops running a more modern API-driven scheduling workflow, SBKJ auto duct lines including the SBAL-V also accept a JSON job package containing job ID, priority, due date, part list (with reference to the XML cut list rows) and a per-part scheduling attribute. The PLC scheduler on the SBAL-V parses the JSON directly and dispatches jobs to the line in the order specified. JSON is the format we recommend for shops integrating BIM with a Manufacturing Execution System (MES).</p>
+
+        <h2>5. Fab parts vs design parts — the critical distinction for duct shops</h2>
+        <p>The single most common failure in BIM-to-fab projects is sending a Revit model full of design parts down the fabrication path. Design parts are the default Revit MEP duct elements — they look like ducts, they clash like ducts, but they have no fabrication detail. Fabrication parts are real shop-floor components with seam type, gauge, connector geometry, gasket groove and supplier-specific dimensions, loaded from a CAMduct or CADmep ITM database.</p>
+
+        <h3>5.1 What design parts contain</h3>
+        <p>A Revit MEP design duct stores nominal width, height and length, system tag, insulation reference, level reference and a generic connector at each end. It does <em>not</em> store seam type, gauge, exact connector flange dimension, gasket groove, fabrication tolerance or shop-floor part number. The fitting Families ship with default geometric dimensions but those dimensions are not pegged to a specific manufacturer's hardware.</p>
+
+        <h3>5.2 What fabrication parts contain</h3>
+        <p>A Revit fabrication part is loaded from a CAMduct ITM and stores every property a shop floor cares about — seam type (Pittsburgh, snaplock, button-punch), gauge (mapped to a coil thickness in the gauge table), exact connector flange profile (TDF, slip-on, S-and-drive), gasket groove, gasket type, hanger anchor location, accessory mounting bosses. Every dimension is keyed to your actual hardware library. When the BIM coordinator places a fabrication transition in Revit, the model knows exactly what blanks the auto duct line must cut to make that transition.</p>
+
+        <h3>5.3 The Design to Fabrication conversion</h3>
+        <p>Revit MEP includes a Design to Fabrication command (Systems tab → Fabrication panel → <em>Design to Fabrication</em>). It reads design ducts and fittings from the active view, looks up the closest match in the loaded CAMduct ITM database, and replaces them with fabrication parts. The conversion is not perfect — orphaned fittings, mismatched connectors and out-of-range sizes all get flagged in the Fabrication Browser palette as unconverted segments. A typical conversion of a hospital plant room takes 10–30 minutes of automated work plus 4–10 hours of manual cleanup of orphans.</p>
+        <p>The cleanup is non-negotiable. If you export a cut list from a partially converted model, the orphaned segments either get skipped (the shop runs short of duct on site) or get exported as design parts (the shop fabricates from invalid dimensions and reworks 12% of pieces). Either way the project pays the cost. Build the cleanup into your BIM-to-fab playbook as a mandatory checkpoint.</p>
+
+        <h2>6. Spool drawings and shop drawing automation</h2>
+        <p>Once you have a clean fabrication-converted model, the next question is how the shop floor knows what to fabricate, in what order, in what bundle. The answer is spool drawings — isometric shop drawings of grouped duct segments labelled with piece marks, dimensions, gauge call-outs, connector schedule and a per-spool BOM.</p>
+
+        <h3>6.1 What a spool actually is</h3>
+        <p>A spool is a transport-and-rigging unit — typically 3 m, 6 m or 12 m of duct that ships from the shop to site as a single bundle. A spool may contain a straight run plus its connecting elbows and a transition, or it may be one large transition with connectors on both ends. Spools are defined by:</p>
+        <ul>
+          <li><strong>System and level</strong> — every spool belongs to one system tag (SA, RA, EA) on one floor level.</li>
+          <li><strong>Transport length</strong> — capped at 6 m or 12 m depending on what fits in your truck and through the building's loading dock.</li>
+          <li><strong>Rigging mass</strong> — capped at the lift capacity of the site crane, typically 200–800 kg per spool.</li>
+          <li><strong>Sequence</strong> — installed in a defined order that drives the fabrication priority queue.</li>
+        </ul>
+
+        <h3>6.2 Generating spool drawings in CAMduct</h3>
+        <p>In CAMduct the Spool Drawing tool (under <em>Output &gt; Spool Drawings</em>) generates an isometric drawing per spool, optionally with a key plan and a BOM. The output is typically a multi-page PDF or a per-spool DWG file. A typical mid-rise commercial project produces 200–600 spool drawings; at large hospital and industrial projects we have generated 2,500+ spool drawings from a single CAMduct project file. Auto-generating that volume without scripting would not be feasible.</p>
+
+        <h3>6.3 Piece marks and bar codes</h3>
+        <p>Every fabrication part in a spool gets a unique piece mark — a short alphanumeric tag printed on the duct in the shop and used by the field crew to install the right piece in the right place. Modern spool drawings include a Code-128 or QR code per piece mark so the field crew can scan the duct against the model on a tablet. SBKJ auto duct lines including the SBAL-V print the piece mark and bar code directly on the duct using an inline industrial inkjet printer integrated with the PLC, removing the manual labelling step entirely.</p>
+
+        <h2>7. CAMduct and CADmep coil nesting and cut list generation</h2>
+        <p>The cut list is where BIM-to-fab earns its money. A modern duct shop generates 60,000–200,000 individual cut blanks per month, each one consuming coil per a calculated nesting pattern. Manual nesting on a typical project costs an estimator 6–12 hours and yields 78–88% material utilisation. CAMduct coil nesting brings that utilisation up to 88–94% and reduces estimator time to 30–45 minutes.</p>
+
+        <h3>7.1 Coil nesting basics</h3>
+        <p>Coil nesting is the optimisation problem of arranging duct blanks across a coil width such that material yield is maximised and the cut sequence is feasible. CAMduct's coil nesting module supports rectangular, transition and offset blanks with configurable seam allowance, scrap allowance and kerf compensation. Set the kerf to match your plasma table or shear cut width — typically 0.8–1.5 mm for plasma — otherwise downstream cut lengths drift.</p>
+
+        <h3>7.2 Cut list generation</h3>
+        <p>Once nesting is complete the cut list is exported as XML, CSV or directly to the auto duct line PLC. The XML is the production-grade format because it carries all per-part properties and binds back to the CAMduct project (and therefore the Revit model) via the part ID. The cut list is the file that drives the SBAL-V PLC scheduler — every job on the auto duct line traces back to a row in the cut list, which traces back to a fabrication part in CAMduct, which traces back to a fabrication part in Revit, which traces back to a design intent at LOD 350.</p>
+
+        <h3>7.3 Sample CAMduct XML cut list fragment</h3>
+        <p>For reference, a typical CAMduct XML cut list fragment for a single straight duct piece looks like (schema-illustrative, not a literal field-by-field copy of the SDK):</p>
+        <pre><code>&lt;CutList project="HospitalPlantRoomL3"&gt;
+  &lt;Item id="SA-L3-0142"&gt;
+    &lt;System&gt;Supply Air&lt;/System&gt;
+    &lt;Gauge&gt;1.0&lt;/Gauge&gt;
+    &lt;BlankLength&gt;1985&lt;/BlankLength&gt;
+    &lt;BlankWidth&gt;1230&lt;/BlankWidth&gt;
+    &lt;Seam&gt;Pittsburgh&lt;/Seam&gt;
+    &lt;ConnectorA&gt;TDF-25&lt;/ConnectorA&gt;
+    &lt;ConnectorB&gt;TDF-25&lt;/ConnectorB&gt;
+    &lt;Spool&gt;SP-L3-014&lt;/Spool&gt;
+  &lt;/Item&gt;
+&lt;/CutList&gt;</code></pre>
+        <p>Each item carries enough data to produce a finished duct without any further translation. The SBAL-V and SBAL-III PLCs parse this format directly through the SBKJ-supplied XSLT transform.</p>
+
+        <h2>8. Direct CNC integration — posting from BIM to plasma table and auto duct line PLCs</h2>
+        <p>Direct CNC integration is the moment the BIM data physically meets the steel. The data has travelled from Revit MEP through CAMduct to a cut list; now the cut list has to drive a machine.</p>
+
+        <h3>8.1 The two CNC paths</h3>
+        <p>A modern duct shop runs two CNC paths in parallel. The auto duct line (SBAL-V or SBAL-III) handles straight runs and standard fittings — it accepts a coil and produces finished duct sections with seams, beads and connectors automatically. A CNC plasma table handles non-standard transitions, oval-to-round transitions, custom plenum panels and any flat-pattern blank that does not fit the auto duct line geometry envelope. Both paths read from the same CAMduct cut list — the SBAL-V reads the XML directly, the plasma table reads DXF flat patterns.</p>
+
+        <h3>8.2 Posting to the SBKJ SBAL-V auto duct line</h3>
+        <p>The SBAL-V PLC (Siemens S7-1500 standard, Mitsubishi FX5U on request) accepts the CAMduct XML cut list either via a network file drop, a USB import or an OPC UA connection. The SBKJ scheduler on the PLC reads the XML, dispatches jobs in the order specified by the JSON priority package, and reports completion back to the BIM model in real time via OPC UA tags. <a href="plc-integration-duct-line.html">See our PLC integration guide</a> for the wiring detail.</p>
+
+        <h3>8.3 Posting to a CNC plasma table</h3>
+        <p>A CNC plasma table accepts a DXF flat pattern via the controller — Hypertherm EDGE Connect, Burny 10, SBKJ-built controllers all accept ASCII DXF directly. The flat pattern is nested on the plasma table (either by the CAMduct nesting or by the plasma controller's nesting module), and the controller drives the torch through the cut path. Most shops route any non-standard transition or oval blank to the plasma table; SBKJ plasma tables are designed to feed an auto duct line for downstream forming.</p>
+
+        <h3>8.4 OPC UA — the bridge protocol</h3>
+        <p>OPC UA (IEC 62541) is the protocol that ties the auto duct line PLC to the higher-level BIM and MES systems. Every modern industrial PLC supports OPC UA either natively or through a gateway. SBKJ standardises on OPC UA for SBAL-V and SBAL-III auto duct lines because it gives the BIM team a clean, vendor-neutral interface — they read job status, throughput and as-built data through the same protocol regardless of which PLC brand is on the line.</p>
+
+        <h2>9. SBAL-V and SBAL-III auto duct line file format support</h2>
+        <p>SBKJ auto duct lines are designed from the start to consume BIM-generated data directly. The SBAL-V and SBAL-III lines accept four primary input formats and produce two output formats.</p>
+
+        <h3>9.1 Supported input formats</h3>
+        <ul>
+          <li><strong>XML cut list</strong> — direct CAMduct XML through the SBKJ XSLT transform. Used in 75% of installations.</li>
+          <li><strong>DXF flat patterns</strong> — for non-standard blanks routed via the integrated plasma table.</li>
+          <li><strong>JSON job package</strong> — for shops running an MES and scheduling priority through an API.</li>
+          <li><strong>CSV cut list</strong> — entry-level format for shops without CAMduct, typically generated from a Revit Dynamo script.</li>
+        </ul>
+
+        <h3>9.2 Output and feedback formats</h3>
+        <ul>
+          <li><strong>OPC UA tags</strong> — real-time job status, throughput, scrap rate, line state.</li>
+          <li><strong>Completion JSON</strong> — per-job completion package with actual cut length, gauge, scrap, time taken, exported back to the BIM model for as-built reconciliation.</li>
+        </ul>
+
+        <h3>9.3 Tooling envelope and what fits the auto duct line</h3>
+        <p>The SBAL-V handles rectangular ducts from 200×100 mm up to 2,000×1,500 mm in galvanised, stainless and aluminised coil from 0.5 mm to 1.5 mm thickness. The SBAL-III is the higher-throughput sibling, with a 14-station forming layout and inline connector assembly. Anything outside the envelope (round, oval, very large rectangular over 2,000×1,500) routes to the plasma table. <a href="../categories/auto-duct-lines.html">SBKJ auto duct lines specification page</a> has the full envelope. For sizing rectangular runs against the SBAL-V envelope, the <a href="rectangular-duct-sizing-chart.html">SBKJ rectangular duct sizing chart</a> is the quick reference.</p>
+
+        <h2>10. Coordination with structural BIM — clash detection in Navisworks</h2>
+        <p>BIM-to-fab does not exist in isolation. The duct model only matters because it has been coordinated against the architectural and structural models in the same BIM environment. Most projects do this in Autodesk Navisworks Manage, the BIM clash-detection and 4D coordination tool.</p>
+
+        <h3>10.1 Standard Navisworks clash workflow</h3>
+        <p>The MEP coordinator exports a Revit model to NWC (Navisworks Cache) format, the architect and structural engineer export their models to NWC, and the clash detection coordinator appends all NWCs in a single NWF (Navisworks File) container. The Clash Detective tool runs hard, soft and clearance clashes per system pairing — duct vs structural beam, duct vs cable tray, duct vs hydronic pipe.</p>
+
+        <h3>10.2 Why clash detection matters for fabrication</h3>
+        <p>The cost of a clash discovered on site is roughly 20–80x the cost of the same clash discovered in BIM. A duct that hits a structural beam in the model costs 30 minutes of re-routing in Revit. The same duct fabricated, shipped, hung and then discovered to clash on site costs the rework labour, the new piece, the shipping, and the site delay. Run the clash detection before exporting any fabrication data — every project skipping this step pays the cost on the floor.</p>
+
+        <h3>10.3 Federated model handover to fabrication</h3>
+        <p>Once clashes are resolved, the federated Navisworks model becomes the basis of the fabrication handover. The MEP fabrication-converted Revit model is the source of cut lists and spool drawings, but the federated NWF is the basis for hanger location coordination, ceiling void verification and access route planning. Some shops route hanger anchor points directly from Navisworks to a Trimble or Topcon total station for site setting-out.</p>
+
+        <h2>11. LOD progression — from design intent to fabrication-ready</h2>
+        <p>Level of Development (LOD) is the BIM standard for describing how complete a model is. The terminology is defined by the AIA LOD Specification and the BIMForum LOD Specification, and the same vocabulary is used in ISO 19650 information delivery contexts. For HVAC duct fabrication, three LOD levels matter.</p>
+
+        <h3>11.1 LOD 200 — design intent</h3>
+        <p>Generic system geometry approximating size, location and orientation. A duct at LOD 200 may be a single line with a nominal width tag — usable for system layout and concept clash but not for procurement or fabrication. Any contractor exporting fabrication data from a LOD 200 model is gambling.</p>
+
+        <h3>11.2 LOD 350 — coordinated design</h3>
+        <p>Specific system geometry coordinated against architecture and structure, with size, location, orientation and interface to other systems. The model is at LOD 350 by the end of the design coordination phase. Critically, LOD 350 still uses design parts, not fabrication parts. The model is good for clash and tender takeoff but not for direct fabrication.</p>
+
+        <h3>11.3 LOD 400 — fabrication-ready</h3>
+        <p>Fabrication-ready geometry with seams, connectors, hangers, accessory mountings and supplier-specific dimensions. LOD 400 is the threshold for direct CNC posting. Any shop running BIM-to-fab is producing or receiving a LOD 400 model. The transition from LOD 350 to LOD 400 typically happens 6–10 weeks before the first duct piece is required on site, often via a contractor-led fabrication conversion of the design team's LOD 350 model.</p>
+
+        <h3>11.4 LOD 500 — as-built</h3>
+        <p>As-installed geometry verified against the field condition. LOD 500 is the asset handover model used by facilities management for the building's operational life. The digital twin feedback loop described in section 16 is what produces LOD 500.</p>
+
+        <h2>12. Quantity takeoff and procurement integration</h2>
+        <p>The same fabrication-converted Revit model that drives the cut list also drives procurement. Quantity Takeoff (QTO) reads the model and produces a coil-per-gauge-per-width purchase list, a connector hardware count, a gasket length, a hanger count, an accessory schedule and a labour estimate.</p>
+
+        <h3>12.1 Running QTO from CAMduct</h3>
+        <p>CAMduct's Quantity Takeoff to CSV produces a procurement BOM in 2–5 minutes for a typical mid-size project. The CSV columns are coil specification (material, gauge, width), total length required, total area, scrap allowance, connector count per type, gasket length, hanger count by type. Hand off to procurement at least 4 weeks before fabrication starts to allow coil mill lead time — coil at 1.0 mm in 1,250 mm width is typically 2–4 week lead time; coil at 1.5 mm or in stainless can be 6–10 weeks.</p>
+
+        <h3>12.2 Linking to ERP</h3>
+        <p>Larger shops link the QTO output directly to their ERP (SAP Business One, Microsoft Dynamics 365, NetSuite). The CSV becomes a purchase requisition, the ERP creates the PO, and the goods-received entry on the coil delivery closes the loop back to the BIM model. The practical pattern is to schedule a weekly QTO export from the active CAMduct project into a shared folder watched by an ERP ingest script. Setup takes 1–3 days; ongoing maintenance is essentially zero.</p>
+
+        <h2>13. ISO 19650, NBS and AS/NZS BIM standards reference</h2>
+        <p>BIM-to-fab in 2026 happens inside a regulated framework. The relevant standards depend on the market.</p>
+
+        <h3>13.1 ISO 19650</h3>
+        <p>ISO 19650-1, -2, -3 and -5 are the international BIM information management standards. Most public-sector and large private-sector BIM projects globally are now contracted under ISO 19650 — the standard defines the Common Data Environment (CDE), the Information Delivery Plan (IDP), the BIM Execution Plan (BEP) and the Asset Information Model (AIM). For BIM-to-fab work, ISO 19650 mostly affects how fabrication data is exchanged between the BIM coordinator and the duct shop — it specifies status codes (S0, S1, S2, S3, S4, S5) for information state and a Common Data Environment for hosting the exchange.</p>
+
+        <h3>13.2 NBS BIM Toolkit</h3>
+        <p>The NBS BIM Toolkit is the British BIM specification framework, widely used in UK and Commonwealth markets. It maps Uniclass classification codes to model elements and links to NBS Source for product data. UK and Australian projects often require NBS-compliant deliverables.</p>
+
+        <h3>13.3 AS/NZS BIM standards</h3>
+        <p>Australia and New Zealand follow ISO 19650 with adaptations published by Standards Australia under the NATSPEC National BIM Guide. Projects in Victoria, New South Wales and across the Tasman typically reference NATSPEC and Australian Government BIM Strategy documents in their BEP. SBKJ's Australian operations align fabrication deliverables to NATSPEC by default, including NATSPEC-compliant drawing title blocks and model element naming.</p>
+
+        <h3>13.4 SMACNA HVAC BIM Guidelines</h3>
+        <p>SMACNA — the Sheet Metal and Air Conditioning Contractors' National Association — publishes specific guidance on HVAC BIM workflows including a Fabrication LOD specification for ducts, fittings and accessories. Projects in North America typically reference SMACNA HVAC BIM as the LOD baseline. For gauge selection inside the BIM model, the <a href="smacna-gauge-chart.html">SMACNA gauge chart</a> remains the reference for rectangular duct construction.</p>
+
+        <h2>14. Common failure modes — and how to prevent them</h2>
+        <p>BIM-to-fab fails in predictable ways. The eight failures below cover most of what we see in the field.</p>
+
+        <h3>14.1 Rounding errors at fittings</h3>
+        <p>Revit stores dimensions internally in millimetres but displays in project units. Fittings authored in imperial then placed in a metric project sometimes display 600 mm but store as 599.998 mm. Multiply across 200 fittings in a spool and the error propagates to a 5–8 mm assembly mismatch. Fix: lock the project unit precision to 1 mm and use the Family Editor to round any internal dimension to the nearest millimetre.</p>
+
+        <h3>14.2 Missing transitions</h3>
+        <p>The Design to Fabrication conversion sometimes orphans transitions where the size step is not standard in the loaded ITM (e.g. 750→625 mm where the ITM has 750→600 and 750→650 but no 625). Fix: extend the ITM transition library to cover every size step in your design palette before running the conversion.</p>
+
+        <h3>14.3 Wrong gauge mapping</h3>
+        <p>The CAMduct gauge table has a default gauge schedule — typically conservative SMACNA defaults. If your project specification calls for a different gauge (for example AS/NZS 4254 medium-pressure), the default table produces over-gauge duct that wastes coil and over-loads the line. Fix: edit the CAMduct gauge table to match the project specification before exporting any cut list.</p>
+
+        <h3>14.4 Connector dimensional mismatch</h3>
+        <p>The CAMduct connector ITM stores cleat dimensions, gasket groove, fastener pattern. If those dimensions do not match the actual hardware on your shelf, every connector seats incorrectly. Fix: physically measure your connector hardware and update the ITM to match — yes, including a calliper measurement of the actual cleat profile.</p>
+
+        <h3>14.5 Insulation interference</h3>
+        <p>Revit's insulation is a separate object that wraps the duct. If the insulation thickness in the model does not match the actual insulation pre-applied at the line, fittings interfere on assembly. Fix: align the modelled insulation thickness with the line's pre-applied insulation capability, typically 25 mm or 50 mm for SBAL-V.</p>
+
+        <h3>14.6 Hanger location drift</h3>
+        <p>Hangers placed in Revit at design-intent levels sometimes drift to non-standard structural positions during coordination. The fabrication-converted model needs hangers at fabrication-grade locations, not design-intent locations. Fix: re-host every hanger on the structural elements in the federated Navisworks model before exporting.</p>
+
+        <h3>14.7 Spool length exceeds transport</h3>
+        <p>CAMduct spool generation sometimes produces spools longer than 6 m or 12 m if the spool boundary rule is not configured. Fix: set explicit transport-length and rigging-mass caps in the CAMduct spool configuration and re-run the spool generator.</p>
+
+        <h3>14.8 Cut list units mismatch</h3>
+        <p>The CAMduct XML carries units in millimetres by default, but some legacy plasma controllers expect inches. Fix: set the controller unit explicitly in the SBKJ XSLT transform and run a 5-piece pilot before scaling.</p>
+
+        <h2>15. Setting up a BIM-to-fab workflow — week-by-week plan</h2>
+        <p>For a duct shop with an existing Revit MEP licence and a trained CAMduct or CADmep operator, the practical setup runs over 4–8 weeks. For shops without prior Autodesk Fabrication experience, plan 12–16 weeks. Below is the SBKJ-recommended timeline.</p>
+
+        <h3>15.1 Week 1 — audit and scope</h3>
+        <p>Document the current takeoff process, time per 100 m² and rework rate. Confirm Revit MEP and Autodesk Fabrication versions match. Identify the first pilot project — ideally a mid-rise commercial floor, not a hospital plant room, because the scope is constrained.</p>
+
+        <h3>15.2 Weeks 2–3 — configuration build</h3>
+        <p>Map your shop's tooling to a CAMduct ITM database. Build the connector library matching your hardware. Map gauge tables to your coil inventory. Set up the SBKJ XSLT transform for the SBAL-V PLC.</p>
+
+        <h3>15.3 Week 4 — Revit conversion</h3>
+        <p>Convert the pilot project's design parts to fabrication parts. Run Navisworks clash detection on the federated model. Validate LOD 400 readiness on the converted model.</p>
+
+        <h3>15.4 Week 5 — pilot fabrication</h3>
+        <p>Generate the pilot cut list, spool drawings and procurement BOM. Run a 50-piece pilot batch through the SBAL-V. Measure cut length variance, fitting accuracy and connector seating.</p>
+
+        <h3>15.5 Week 6 — tuning</h3>
+        <p>If pilot variance exceeds 2%, tune the CAMduct configuration — typically connector allowance, seam allowance or gauge mapping. Re-run a 25-piece confirmation batch.</p>
+
+        <h3>15.6 Weeks 7–8 — scale and standardise</h3>
+        <p>Scale to the full pilot project volume. Lock the CAMduct ITM database. Version-control the connector library. Publish an internal BIM-to-fab playbook for new operators.</p>
+
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html">Get an SBKJ BIM-to-fab integration quote &rarr;</a></p>
+
+        <h2>16. Digital twin and feedback loop</h2>
+        <p>The forward direction — Revit to auto duct line — gets most of the attention in BIM literature. The reverse direction — auto duct line back to Revit — is what turns the workflow into a true digital twin.</p>
+
+        <h3>16.1 What a digital twin actually is</h3>
+        <p>A digital twin in HVAC fabrication is a model that reflects the as-fabricated and as-installed state of every duct piece, not just the as-designed state. It carries actual cut lengths (which are not always identical to designed lengths), actual gauge (which sometimes substitutes due to coil availability), actual connector type (which sometimes substitutes due to procurement) and actual install location (which sometimes drifts in coordination).</p>
+
+        <h3>16.2 The feedback loop</h3>
+        <p>SBKJ auto duct lines instrument the feedback loop with three data sources — the PLC's actual-cut-length reading, the operator's piece-mark scan at line exit, and the field crew's install-confirmation scan. Each piece of data flows back to the BIM model via OPC UA tags and a small Dynamo script that stamps the as-built attributes onto the original fabrication part. The model self-updates from LOD 400 to LOD 500 as the project progresses.</p>
+
+        <h3>16.3 Variance tracking</h3>
+        <p>The most useful single metric from the feedback loop is length variance per piece — actual cut length minus designed length. We aggregate this metric per gauge, per fitting type and per shift on the line, and use the trend to spot tooling drift before it becomes a quality problem. A typical SBAL-V running stable holds a length variance under ±1.0 mm. When variance creeps above ±1.5 mm we know the line is due for tooling regrind or roller alignment.</p>
+
+        <h2>17. The future — AI-powered BIM optimisation for duct routing</h2>
+        <p>The frontier of BIM in 2026 is AI-powered routing optimisation. Several Revit add-ins now ship with an AI-routing capability that, given a start point, an end point and a set of structural and architectural constraints, proposes a duct route optimised for length, fitting count, pressure drop and cost. The output is a Revit-native fabrication-converted run that integrates directly with the CAMduct cut list workflow.</p>
+        <p>The reality in 2026 is that AI routing is a useful first-pass tool, not a replacement for a senior MEP coordinator. It produces a clean route in 60–90% of plant rooms but tends to produce sub-optimal routes in dense ceiling voids where access, hanger constraints and trade sequencing dominate. The realistic role of AI today is as a productivity multiplier — the AI proposes a route, the MEP coordinator audits and adjusts, the fabrication conversion runs as normal.</p>
+        <p>The more interesting AI development for duct shops is anomaly detection on the as-built feedback data. Feeding the line's actual-cut-length data into a simple regression model spots tooling drift, gauge mis-mapping and connector fatigue weeks before they would surface as quality complaints. SBKJ's R&amp;D team is currently piloting this with three customers and intends to release a productised anomaly-detection module on the SBAL-V PLC within 12 months.</p>
+
+        <h2>18. Choosing the right SBKJ machine for your BIM-to-fab workflow</h2>
+        <p>If you are reading this article because you are about to specify a new auto duct line and you want it to integrate cleanly with your BIM environment, here is the short version of how SBKJ machines map to BIM workflows.</p>
+        <ul>
+          <li><strong>SBAL-V auto duct line</strong> — five-station rectangular duct line with Siemens or Mitsubishi PLC, OPC UA standard, XML/DXF/JSON/CSV input formats, inline piece-mark inkjet printer. Sized for shops producing 8,000–25,000 m² per month.</li>
+          <li><strong>SBAL-III auto duct line</strong> — fourteen-station line with inline connector assembly and higher throughput. Sized for shops producing 25,000+ m² per month.</li>
+          <li><strong>Plasma table integration</strong> — SBKJ plasma tables accept DXF directly and feed the auto duct line for downstream forming. Used for non-standard transitions and oval blanks.</li>
+          <li><strong>Spiral tubeformer</strong> — for round duct, separately specified. The <a href="spiral-duct-sizing-chart.html">spiral duct sizing chart</a> is the quick reference for sizing round runs against the SBKJ tubeformer envelope.</li>
+        </ul>
+        <p>For decision support on which configuration fits your throughput and BIM environment, see <a href="choosing-auto-duct-line.html">how to choose an auto duct production line</a>. For end-to-end fittings fabrication including the connectors and accessories that travel with the auto duct line output, see the <a href="hvac-duct-fittings-fabrication-guide.html">HVAC duct fittings fabrication guide</a>.</p>
+
+        <h2>FAQ</h2>
+        <details><summary>What is BIM-to-fabrication for HVAC ductwork?</summary><p>The workflow that converts a coordinated Revit MEP duct model into machine-ready cut lists, spool drawings and CNC files driving plasma tables, coil lines and auto duct production lines on the shop floor. It replaces manual takeoff and re-drawing in CAMduct with a continuous data path from designer to machine, reducing rework and length variance from typical 8–12% down to under 2%.</p></details>
+        <details><summary>What is the difference between Revit design parts and fabrication parts?</summary><p>Design parts are the default Revit MEP duct elements — simplified placeholders sized for design intent and clash detection. Fabrication parts are real shop-floor components loaded from a CAMduct or CADmep ITM with seams, gauges, connector types, gasket grooves and supplier-specific dimensions that can be posted directly to a CNC machine. A duct shop must convert design parts to fabrication parts before any cut list, spool drawing or PLC file can be produced.</p></details>
+        <details><summary>Which file formats can SBKJ auto duct lines accept from BIM?</summary><p>XML cut list (compatible with the CAMduct cut list export), DXF flat patterns for nested plasma cutting, JSON job package for the SBKJ PLC scheduler, and CSV BOM for procurement. The Siemens or Mitsubishi PLC on the SBAL-V parses any of these formats directly without intermediate post-processing.</p></details>
+        <details><summary>How long does it take to set up a Revit-to-Auto-Duct-Line workflow?</summary><p>For a shop with an existing Revit MEP licence and a trained CAMduct or CADmep operator, plan 4–8 weeks: 1 week mapping fabrication configuration to machine tooling, 1–2 weeks building a connector library and gauge mapping, 1 week running a 50-piece pilot batch end-to-end, and 1–2 weeks of process tuning. Shops without prior Autodesk Fabrication experience plan 12–16 weeks.</p></details>
+        <details><summary>What is the ROI on BIM-to-fabrication integration?</summary><p>For a shop producing more than 8,000 m² per month, typical payback on a BIM-to-fab workflow is 9–14 months. Drivers are reduced length variance (from 8–12% to under 2%), elimination of manual takeoff hours (typically 0.6 hours per 100 m² of duct), reduced rework on fittings (from 4–6% to under 1%), and faster procurement turnaround.</p></details>
+        <details><summary>Can I run BIM-to-fab without Autodesk Fabrication CAMduct?</summary><p>Yes. CAMduct is the most common path because it ships with Revit-compatible content, but third-party Revit add-ins such as MagiCAD, eVolve Mechanical and Victaulic Tools for Revit can also export fabrication-ready data. Some shops use IFC4 export from Revit combined with a custom IFC parser to produce SBKJ XML cut lists directly. Native Revit detail components plus a Dynamo script can also produce a basic cut list, but loses spool drawing automation and direct CNC posting.</p></details>
+        <details><summary>What LOD does fabrication require?</summary><p>LOD 400 — geometry that includes actual fabrication seams, connector dimensions, gauge mapping, hanger locations, and accessory positions accurate to within manufacturing tolerance. LOD 200 (design intent) and LOD 350 (coordinated for clash) are not fabrication-ready. Most projects upgrade from LOD 350 to LOD 400 at the start of the shop drawing phase, typically 6–10 weeks before the first duct piece is required on site.</p></details>
+        <details><summary>Does SBKJ provide BIM consultation as part of an auto duct line purchase?</summary><p>Yes. Every SBKJ auto duct line including SBAL-V and SBAL-III ships with a BIM-to-fab integration package: an XML cut list schema document, sample CAMduct ITM templates mapped to SBKJ tooling, a connector library matching SBKJ flange and TDF dimensions, and 8 hours of remote BIM coordinator training during commissioning. SBKJ engineers also support shops migrating from manual takeoff to BIM during their first three production batches.</p></details>
+
+        <aside class="related-guides">
+          <p class="eyebrow">Related guides</p>
+          <ul class="related-links">
+            <li><a href="choosing-auto-duct-line.html">How to Choose an Auto Duct Production Line</a></li>
+            <li><a href="plc-integration-duct-line.html">PLC Integration for Auto Duct Production Lines &mdash; Siemens, Mitsubishi, OPC UA</a></li>
+            <li><a href="hvac-duct-fittings-fabrication-guide.html">HVAC Duct Fittings Fabrication Guide</a></li>
+            <li><a href="rectangular-duct-sizing-chart.html">Rectangular Duct Sizing Chart &mdash; SMACNA &amp; AS/NZS 4254 Reference</a></li>
+            <li><a href="spiral-duct-sizing-chart.html">Spiral Duct Sizing Chart &mdash; Round Duct Reference</a></li>
+            <li><a href="smacna-gauge-chart.html">SMACNA Gauge Chart &mdash; Rectangular Duct Construction</a></li>
+            <li><a href="hvac-duct-machine-buyers-checklist.html">HVAC Duct Machine Buyer's Checklist &mdash; 47 Pre-Purchase Verification Points</a></li>
+          </ul>
+        </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+      <div class="shell">
+        <div class="content-narrow">
+          <div class="promise-callout">
+            <span class="promise-label">12-hour reply</span>
+            <p class="promise-text">Building a Revit-to-fab workflow? An SBKJ BIM coordinator replies within 12 hours &mdash; not a salesperson.</p>
+            <a href="../contact.html" class="btn btn-primary">Ask a BIM coordinator</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <p>© SBKJ Group · <a href="../index.html">Home</a> · <a href="../machines.html">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-sbkj.html">Why SBKJ</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../industries/">Industries</a> · <a href="../contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=4"></script>
+</body>
+</html>
