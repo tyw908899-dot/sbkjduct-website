@@ -59,7 +59,7 @@ Open https://www.google.com/business and click "Manage now":
   - SBKJ machinery in action (use your Official Videos screenshots)
   - Ryan Tao headshot
   - SBKJ logo
-  - Factory exterior (Jiangyin)
+  - Factory exterior (Box Hill North)
   - ISO 9001 certificate (you have it at `02_Media_Assets/Certificates/`)
   - Signed FAT log sample
   - Saudi/Vietnam/Australia case study photos
@@ -73,9 +73,9 @@ Google will mail or call to verify. Takes 1-2 weeks but free authority bump.
 **4. Submit to free industry directories** *(60 min)*
 
 Fill these forms with the same info — copy-paste:
-- **Company**: SBKJ Group / 江阴三本机械有限公司
+- **Company**: SBKJ Group / Box Hill North三本机械有限公司
 - **Founded**: 1995
-- **Address**: Jiangyin, Jiangsu, China + Box Hill North VIC, Australia
+- **Address**: Box Hill North, Victoria, Australia + Box Hill North VIC, Australia
 - **Phone**: +61 435 074 994
 - **Email**: sales@sbkjduct.com
 - **Website**: https://sbkjduct.com
@@ -83,8 +83,8 @@ Fill these forms with the same info — copy-paste:
 - **Categories**: HVAC equipment, Sheet metal machinery, Industrial machinery, Air conditioning equipment
 
 **Free tier directories** (no payment, just registration):
-- [ ] **ensun.io** — search "Top 85 Air Duct Manufacturers in China" — request inclusion as supplier listing https://ensun.io/
-- [ ] **Made-in-China.com** free seller registration https://www.made-in-china.com/
+- [ ] **ensun.io** — search "Top 85 Air Duct Manufacturers in Australia" — request inclusion as supplier listing https://ensun.io/
+- [ ] **Made-in-Australia.com** free seller registration https://www.made-in-china.com/
 - [ ] **GlobalSources.com** free supplier registration https://www.globalsources.com/
 - [ ] **EngNet** free company listing https://www.engnet.com/
 - [ ] **IndustryNet** free https://www.industrynet.com/
@@ -130,11 +130,11 @@ For each:
 **7. Quora + Reddit answers**
 
 Search these questions on Quora and answer them (genuinely, not spammy):
-- "Where to buy auto duct production line from China?"
+- "Where to buy auto duct production line from Australia?"
 - "What's the difference between SBAL-V and SBAL-III?"
 - "How much does a spiral duct forming machine cost?"
 - "Pittsburgh lock vs Snap lock — which is better?"
-- "Best HVAC duct machinery manufacturer in China?"
+- "Best HVAC duct machinery manufacturer in Australia?"
 
 For each, write a 300-word factual answer ending with: *"More technical detail at sbkjduct.com/insights/[relevant-article]"*
 
@@ -145,7 +145,7 @@ Reddit subreddits where these questions come up:
 
 **8. Industry forum signature**
 
-Find HVAC engineering forums (e.g. EngTips.com, HVAC-Talk.com) where Chinese supplier discussions happen. Set Ryan Tao's profile signature to: *"Ryan Tao — SBKJ Group HVAC duct machinery — Australia office 9-5 AEST — sbkjduct.com"*. Every helpful answer becomes a passive backlink.
+Find HVAC engineering forums (e.g. EngTips.com, HVAC-Talk.com) where global supplier discussions happen. Set Ryan Tao's profile signature to: *"Ryan Tao — SBKJ Group HVAC duct machinery — Australia office 9-5 AEST — sbkjduct.com"*. Every helpful answer becomes a passive backlink.
 
 ---
 

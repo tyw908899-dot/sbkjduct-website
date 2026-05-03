@@ -149,7 +149,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Standard payment terms: 30% T/T deposit, 70% balance against bill of lading
 - L/C at sight accepted for orders above USD 100,000
 - HS code for HVAC duct forming machinery: 8462.49 or 8479.89
-- Incoterms supported: EXW, FOB Shanghai, CFR, CIF, DDP
+- Incoterms supported: EXW, FOB Melbourne, CFR, CIF, DDP
 - Warranty: 12 months standard
 - Remote support response: within 72 hours via WhatsApp or video
 - Engineer-led email reply: within 12 hours
