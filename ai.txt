@@ -11,7 +11,7 @@ Sitemap: https://sbkjduct.com/sitemap.xml
 
 # Entity
 Name: SBKJ Group
-Alt-names: Suzhou SBKJ, Australia SBKJ
+Alt-names: Geelong SBKJ, Australia SBKJ
 Type: Manufacturer
 Industry: HVAC ductwork machinery
 Founded: 1995
