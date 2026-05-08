@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>Battery Gigafactory HVAC Duct Guide — Dry Rooms, NMP Recovery, Thermal Runaway and Cell Assembly Specification | SBKJ Group</title>
+  <meta name="description" content="Engineer's guide to HVAC ductwork for battery gigafactories — dry room dewpoint, NMP solvent recovery, thermal runaway control, materials, ACH and pressure cascade." />
+  <link rel="canonical" href="https://sbkjduct.com/insights/battery-gigafactory-hvac-duct-guide.html" />
+  <link rel="alternate" hreflang="en" href="https://sbkjduct.com/insights/battery-gigafactory-hvac-duct-guide.html" />
+  <link rel="alternate" hreflang="x-default" href="https://sbkjduct.com/insights/battery-gigafactory-hvac-duct-guide.html" />
+  <meta name="author" content="SBKJ Group" />
+  <meta name="geo.region" content="AU-VIC" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:site_name" content="SBKJ Group" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Battery Gigafactory HVAC Duct Guide — Dry Rooms, NMP Recovery, Thermal Runaway and Cell Assembly Specification" />
+  <meta property="og:description" content="Engineer's reference for HVAC ductwork in lithium-ion battery gigafactories — dry room dewpoint -40 to -60 C, NMP exhaust, thermal runaway control, ACH and materials." />
+  <meta property="og:url" content="https://sbkjduct.com/insights/battery-gigafactory-hvac-duct-guide.html" />
+  <meta property="og:image" content="https://sbkjduct.com/assets/images/sbal-v.jpg" />
+  <meta property="article:published_time" content="2026-05-04T00:00:00+10:00" />
+  <meta property="article:modified_time" content="2026-05-04T00:00:00+10:00" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@sbkjgroup" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=16" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://sbkjduct.com/#author-engineering","name":"SBKJ Engineering Team","url":"https://sbkjduct.com/about.html","description":"SBKJ Group senior engineers with combined experience in HVAC ductwork machinery design, commissioning and field service across 80+ countries — including stainless variants for cleanroom and lithium-ion battery dry room applications.","parentOrganization":{"@id":"https://sbkjduct.com/#org"},"knowsAbout":["HVAC duct machinery","Battery gigafactory dry rooms","NMP solvent recovery","Lithium-ion cell assembly HVAC","ISO 14644-1","SMACNA seal class","EN 1507","ASHRAE 170","ASTM A240 stainless steel"]},
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://sbkjduct.com/"},
+      {"@type":"ListItem","position":2,"name":"Insights","item":"https://sbkjduct.com/insights/"},
+      {"@type":"ListItem","position":3,"name":"Battery Gigafactory HVAC Duct Guide","item":"https://sbkjduct.com/insights/battery-gigafactory-hvac-duct-guide.html"}
+    ]},
+    {"@type":"TechArticle","headline":"Battery Gigafactory HVAC Duct Guide — Dry Rooms, NMP Recovery, Thermal Runaway and Cell Assembly Specification","description":"Engineer-led reference for HVAC ductwork specification, materials and machinery in lithium-ion battery gigafactory projects — covering dry rooms, electrode coating, NMP solvent recovery, formation, pack assembly, thermal runaway management and validation.","author":{"@id":"https://sbkjduct.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"SBKJ Group QA & Engineering","url":"https://sbkjduct.com/about.html","description":"SBKJ Group quality assurance and engineering team — every published guide is reviewed by senior engineers before publication and re-validated on each update."},"publisher":{"@id":"https://sbkjduct.com/#org"},"datePublished":"2026-05-04","dateModified":"2026-05-04","image":"https://sbkjduct.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://sbkjduct.com/insights/battery-gigafactory-hvac-duct-guide.html","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"HVAC Manufacturing - Battery Gigafactory","about":[{"@type":"Thing","name":"Battery gigafactory HVAC ductwork"},{"@type":"Thing","name":"Lithium-ion dry room"},{"@type":"Thing","name":"NMP solvent recovery"},{"@type":"Thing","name":"Thermal runaway exhaust"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What dewpoint is required in a lithium-ion battery dry room?","acceptedAnswer":{"@type":"Answer","text":"Lithium-ion battery dry rooms require dewpoints between -40 C and -60 C, with most cell assembly lines specifying -50 C or lower. The exact target depends on the cell chemistry: NMC and NCA cells with high-nickel cathodes are most sensitive and typically run at -55 C to -60 C, while LFP cells can tolerate -40 C to -45 C. Dewpoint must be held within plus or minus 2 C across the entire room volume, which is why air change rates of 30 to 60 ACH and dedicated outdoor air systems are standard."}},
+      {"@type":"Question","name":"How is NMP solvent recovered from electrode coating exhaust?","acceptedAnswer":{"@type":"Answer","text":"N-methyl-2-pyrrolidinone is recovered from electrode coating ovens by routing the hot exhaust at 100 to 200 C through a condenser coil where NMP vapour condenses to liquid for distillation reuse. Recovery efficiencies above 95 percent are now standard in modern gigafactories. The exhaust ductwork from the oven to the condenser must be polyethylene-lined or ASTM A240 304L stainless steel because NMP condensate is mildly corrosive to galvanized steel and degrades aluminium. Insulation is required to prevent premature condensation in the duct, which would create pooling and corrosion."}},
+      {"@type":"Question","name":"What are the air change rates for the different rooms in a battery gigafactory?","acceptedAnswer":{"@type":"Answer","text":"Typical ACH ranges by process area: dry rooms for electrode coating and cell assembly run at 30 to 60 ACH to hold dewpoint and ISO 14644-1 ISO 7 to ISO 8 cleanliness; formation and aging halls run at 15 to 25 ACH primarily to manage cell off-gas and heat load; pack assembly at 10 to 15 ACH; warehouse and material storage at 4 to 8 ACH. The dry room ACH is the dominant energy load and drives 30 to 40 percent of total facility energy consumption."}},
+      {"@type":"Question","name":"What materials are specified for battery gigafactory ductwork?","acceptedAnswer":{"@type":"Answer","text":"Dry room supply ducts are typically ASTM A240 Type 304L stainless steel for corrosion resistance to electrolyte traces and to maintain cleanability. General manufacturing areas use galvanized G90 (Z275) carbon steel per ASTM A653. NMP exhaust ducts use polyethylene-lined or 304L stainless because galvanized degrades under solvent condensate. Formation off-gas exhaust uses 304L because vinyl carbonate and other volatile carbonates form acidic condensate. Some specifications allow Type 316L for the highest-corrosion-risk runs near electrolyte filling."}},
+      {"@type":"Question","name":"What is the pressure cascade in a battery gigafactory dry room?","acceptedAnswer":{"@type":"Answer","text":"Dry rooms are held at positive pressure of 12.5 to 25 Pa relative to adjacent general manufacturing areas to prevent moisture ingress on door openings. Solvent handling areas including coating, drying ovens and electrolyte filling are held at negative pressure of 12.5 to 25 Pa relative to dry rooms to contain solvent vapour. Formation rooms are typically at neutral or slightly negative pressure relative to corridors. The cascade is verified during commissioning by pressure mapping at every airlock with all doors closed and in worst-case door-open scenarios."}},
+      {"@type":"Question","name":"How is thermal runaway managed in battery gigafactory HVAC?","acceptedAnswer":{"@type":"Answer","text":"Thermal runaway risk is mitigated by zoning the HVAC system so each formation rack or aging cabinet is on a separately isolatable exhaust branch with a fire damper rated to UL 555 or EN 1366-2 at the wall penetration. Smoke detection is mounted in return ductwork upstream of fan inlets, and a thermal runaway event triggers automatic damper closure to isolate the affected zone, exhaust purge of the surrounding hall, and supply air shutdown to prevent oxygen feed. Off-gas detection sensors specifically tuned to dimethyl carbonate, hydrogen and carbon monoxide are installed in formation and aging halls and integrated with the building management system."}},
+      {"@type":"Question","name":"What seal class is required for dry room supply ductwork?","acceptedAnswer":{"@type":"Answer","text":"Dry room supply ducts must be sealed to SMACNA Class A or EN 1507 Class D, which is the tightest standard class. SMACNA Class A allows leakage of 0.5 cfm per 100 square feet at 1 inch water gauge static pressure, equivalent to EN 1507 Class D at approximately 0.005 L per second per square metre at 200 Pa. This is required because every cubic metre of leakage from a dry room supply is a cubic metre of dehumidified air at -50 C dewpoint that must be re-conditioned, and the dehumidification energy alone makes leakage economically untenable. Welded seams are standard for stainless dry room ducts."}},
+      {"@type":"Question","name":"What is the typical HVAC duct cost as a percentage of total gigafactory build?","acceptedAnswer":{"@type":"Answer","text":"HVAC ductwork including supply, return, exhaust and solvent recovery typically represents 4 to 7 percent of total gigafactory capital cost, with the dry room subsystem alone accounting for 2 to 3 percent. For a 40 GWh facility with capital cost in the USD 2 to 3 billion range, this implies USD 80 to 200 million in ductwork material, fabrication and installation. Material upgrade from galvanized to 304L stainless adds 60 to 90 percent to material cost on the affected runs, but is unavoidable in dry room supply, electrolyte filling exhaust and NMP recovery loops."}}
+    ]},
+    {"@type":"HowTo","name":"How to Specify HVAC Ductwork for a Battery Gigafactory","description":"A 20-step engineering procedure for specifying HVAC ductwork in a lithium-ion battery gigafactory — covering dry room dewpoint, materials, seal class, NMP recovery, thermal runaway zoning, validation and machinery selection.","totalTime":"P180D","image":"https://sbkjduct.com/assets/images/sbal-v.jpg","tool":[{"@type":"HowToTool","name":"Process zoning matrix"},{"@type":"HowToTool","name":"Pressure cascade map"},{"@type":"HowToTool","name":"ACH calculation worksheet"},{"@type":"HowToTool","name":"Psychrometric commissioning kit"}],"step":[
+      {"@type":"HowToStep","position":1,"name":"Define cell chemistry and dewpoint target","text":"Confirm the cell chemistry first — NMC and NCA require -55 C to -60 C dewpoint, LFP can run at -40 C to -45 C. The chemistry decision sets every downstream specification."},
+      {"@type":"HowToStep","position":2,"name":"Map process areas to cleanliness class","text":"Assign ISO 14644-1 cleanliness class to every process area — typically ISO 7 to ISO 8 for dry rooms, ISO 8 to ISO 9 for pack assembly, controlled non-classified for warehouse."},
+      {"@type":"HowToStep","position":3,"name":"Calculate ACH per process area","text":"Dry rooms 30-60 ACH, formation 15-25 ACH, pack assembly 10-15 ACH, warehouse 4-8 ACH. ACH is calculated against worst-case heat load and contaminant generation."},
+      {"@type":"HowToStep","position":4,"name":"Specify pressure cascade","text":"Set positive pressure 12.5-25 Pa in dry rooms, negative pressure 12.5-25 Pa in solvent handling areas relative to dry rooms, neutral or slightly negative in formation."},
+      {"@type":"HowToStep","position":5,"name":"Select supply duct material","text":"Specify ASTM A240 Type 304L stainless steel for dry room supply, galvanized G90 per ASTM A653 for general manufacturing, Type 316L for electrolyte filling exhaust runs."},
+      {"@type":"HowToStep","position":6,"name":"Specify seal class","text":"Dry room supply: SMACNA Class A or EN 1507 Class D. General supply: SMACNA Class B. Solvent and formation exhaust: SMACNA Class A with welded seams."},
+      {"@type":"HowToStep","position":7,"name":"Design NMP recovery exhaust","text":"Polyethylene-lined or 304L stainless ductwork from coating ovens through condenser coils, insulated to prevent premature condensation, sloped 1:200 minimum to condensate drain."},
+      {"@type":"HowToStep","position":8,"name":"Zone formation exhaust for thermal runaway isolation","text":"Each formation rack or aging cabinet on a separately isolatable exhaust branch with motorised fire damper at wall penetration rated to UL 555 or EN 1366-2."},
+      {"@type":"HowToStep","position":9,"name":"Specify smoke and off-gas detection","text":"Smoke detectors in return duct upstream of fan inlets. Off-gas sensors tuned to dimethyl carbonate, hydrogen and carbon monoxide in formation and aging halls."},
+      {"@type":"HowToStep","position":10,"name":"Size dedicated outdoor air system (DOAS)","text":"Dry room DOAS sized for full design ACH plus exhaust make-up plus pressurisation losses, with dehumidification capacity to maintain dewpoint setpoint at worst-case ambient."},
+      {"@type":"HowToStep","position":11,"name":"Plan heat recovery from formation exhaust","text":"Glycol run-around coil or heat wheel on formation hall exhaust at 30-50 C to preheat winter outdoor air and offset 20-30 percent of dry room dehumidification energy."},
+      {"@type":"HowToStep","position":12,"name":"Design HEPA filtration tier","text":"H13 HEPA at terminal filter housings for dry rooms, F9 prefilter at AHU, with magnehelic gauges at every filter bank for in-service differential pressure monitoring."},
+      {"@type":"HowToStep","position":13,"name":"Select duct fabrication standard","text":"Standardise to TDF flanged rectangular for sub-2000 mm ducts, spiral welded for round runs, plasma cutting for stainless penetrations, all to AS 4254 or SMACNA HVAC Duct Construction."},
+      {"@type":"HowToStep","position":14,"name":"Plan ductwork installation sequence","text":"Schedule for shell complete then vapour barrier then HVAC fitout then dry room equipment. Dry room ducts are installed last in the room build sequence to protect interior cleanliness."},
+      {"@type":"HowToStep","position":15,"name":"Specify electrolyte filling exhaust","text":"Local exhaust at filling stations at 0.5 m/s capture velocity minimum, 316L stainless ductwork, dedicated scrubber for dimethyl carbonate vapour before atmospheric discharge."},
+      {"@type":"HowToStep","position":16,"name":"Plan dry room construction sequence","text":"Shell complete then vapour barrier then dry room MEP then dry room equipment then ramp-up. Total dry room build window 6-9 months for a 40 GWh facility."},
+      {"@type":"HowToStep","position":17,"name":"Specify FAT and SAT for HVAC","text":"Factory Acceptance Test on AHU and dehumidification skids before shipment. Site Acceptance Test on full system including ACH verification, dewpoint mapping, pressure cascade and HEPA challenge."},
+      {"@type":"HowToStep","position":18,"name":"Validate dry room dewpoint","text":"Dewpoint mapping at minimum 9 grid points across each dry room, held within plus or minus 2 C of setpoint over 4-hour rolling average, recorded in commissioning report."},
+      {"@type":"HowToStep","position":19,"name":"Verify pressure cascade","text":"Pressure differential across every airlock with all doors closed and worst-case door-open scenario, recorded with calibrated micromanometer to 0.1 Pa resolution."},
+      {"@type":"HowToStep","position":20,"name":"Sign off and handover to operations","text":"Final commissioning report includes psychrometric data, ACH for every room, pressure cascade map, HEPA challenge results, off-gas sensor calibration, fire damper drop tests."}
+    ]}
+  ]}
+  </script>
+</head>
+<body class="site-body">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell">
+      <div class="site-header-inner">
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="SBKJ Group" class="logo-img" width="120" height="48" decoding="async"><span class="logo-text"><span class="logo-title">SBKJ</span><span class="logo-subtitle">Group</span></span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
+        <nav id="primaryNav" class="site-nav" aria-label="Primary">
+          <a href="../index.html" data-i18n="nav.home">Home</a>
+          <a href="../machines.html" data-i18n="nav.machines">Machines</a>
+          <a href="../insights/" data-i18n="nav.insights">Insights</a>
+          <a href="../about.html" data-i18n="nav.about">About</a>
+          <a href="../contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>Battery Gigafactory HVAC Duct Guide</span></li></ol></nav></div></nav>
+    <article class="section page-hero bg-subtle">
+      <div class="shell">
+        <p class="eyebrow">Insights · Battery Gigafactory HVAC</p>
+        <h1 class="page-title">Battery Gigafactory HVAC Duct Guide — Dry Rooms, NMP Recovery, Thermal Runaway and Cell Assembly Specification</h1>
+        <p class="article-lead">A complete engineer's reference for HVAC ductwork in lithium-ion battery gigafactories — covering dry room dewpoint targets from -40 C to -60 C, NMP solvent recovery exhaust, thermal runaway zoning, materials selection by ASTM grade, ACH ranges by process area, pressure cascade design, and the duct-forming machinery used by tier-one battery manufacturers from Sweden to South Carolina.</p>
+        <p class="article-byline">
+          <span class="article-byline-author">By <a href="../about.html" rel="author">SBKJ Engineering Team</a></span>
+          <span class="article-byline-sep">·</span>
+          <span>Published <time datetime="2026-05-04">May 4, 2026</time></span>
+          <span class="article-byline-sep">·</span>
+          <span>32 min read</span>
+          <span class="article-byline-sep">·</span>
+          <span>Reviewed by SBKJ QA &amp; Engineering</span>
+        </p>
+      </div>
+    </article>
+
+    <section class="section">
+      <div class="shell"><div class="content-narrow">
+
+        <h2>Why battery gigafactory HVAC is unlike any other industrial HVAC</h2>
+        <p>A lithium-ion battery gigafactory is the most demanding HVAC environment in mainstream manufacturing. Pharmaceutical sterile fill rooms approach the cleanliness, semiconductor fabs approach the air change rate, refrigerant cold stores approach the latent load, and solvent paint booths approach the exhaust handling — but only a battery cell plant combines all four into a single building, at scale, around a process that catches fire if the dewpoint drifts. A typical 40 GWh facility consumes around 200 to 300 megawatts of total electrical load, and 30 to 40 percent of that is HVAC. The ductwork moving that air is not a building service — it is a primary process system, on the same critical path as the coater and the calender.</p>
+        <p>Three properties make the ductwork problem fundamentally different from any other industrial application. First, the dryness. Cell assembly demands dewpoints between -40 C and -60 C — drier than the Antarctic plateau in midwinter — held within plus or minus 2 C across rooms the size of football fields. Second, the chemistry. The process generates and handles N-methyl-2-pyrrolidinone (NMP) solvent vapour from electrode coating, dimethyl carbonate (DMC) and ethylene carbonate (EC) electrolyte vapour from cell filling, and hydrogen, carbon monoxide and various organic carbonates from formation off-gas. Each is corrosive, flammable or both. Third, the failure mode. A thermal runaway event in a single 21700 cell can propagate through a formation rack and into the building if HVAC isolation, off-gas detection and exhaust purge are not engineered correctly from the duct geometry up.</p>
+        <p>This guide is the working reference our engineers use when scoping ductwork machinery for battery cell plant projects — from operators in the European Battery Alliance through North American JVs to the early Australian projects coming online in Tomago and Geelong. It is written for the consulting engineer specifying the system, the project manager scheduling the fitout, the MEP contractor pricing the install, and the gigafactory owner trying to read both their drawings and their tender returns. It is not a marketing piece. Where SBKJ machinery is the right tool, we say so. Where the project needs something else, we say so as well.</p>
+
+        <h2>Dry rooms — the central problem of cell assembly HVAC</h2>
+        <p>The dry room is where the lithium-ion battery factory diverges from any other manufacturing facility on earth. Lithium reacts with atmospheric moisture, and the reaction products contaminate the cell, degrade capacity, accelerate self-discharge and in extreme cases initiate thermal runaway. Every operation downstream of cathode mixing — electrode coating, calendering, slitting, notching, stacking, can welding, electrolyte filling and final cell sealing — must take place in air with dewpoints far below ambient. The exact target depends on chemistry and process step:</p>
+        <ul>
+          <li><strong>NMC and NCA cathodes (high nickel):</strong> -55 C to -60 C dewpoint at electrolyte filling and cell sealing. The high-nickel layered oxides are the most moisture-sensitive cathode chemistries in mainstream production.</li>
+          <li><strong>LFP cathodes:</strong> -40 C to -45 C dewpoint is typical, though many LFP plants run -50 C as a margin against process upset.</li>
+          <li><strong>LMFP and silicon-anode chemistries:</strong> generally -55 C to -60 C, matching the most stringent NMC cells.</li>
+          <li><strong>Solid-state pilot lines:</strong> below -60 C, sometimes approaching -70 C, with some lines transitioning to argon-blanketed glove box assembly rather than dry room HVAC for the most sensitive operations.</li>
+        </ul>
+        <p>To put -60 C dewpoint in context: the saturation moisture content at -60 C is 6.7 milligrams per kilogram of dry air, or roughly 0.001 percent relative humidity at 22 C dry-bulb. Air this dry is achieved only by deep dehumidification — typically two-stage: a chilled-water cooling coil to 4 C followed by a desiccant rotor (silica gel or molecular sieve) regenerated at 120 to 140 C using gas, electric heat or recovered process heat. The dehumidified supply air enters the dry room at very low absolute humidity, picks up moisture from people, doors, materials and minor leaks, and is returned to the AHU for re-conditioning. The cycle works only if the duct system itself is leak-tight to the level that any Class 100,000 cleanroom would consider extreme.</p>
+        <p>The cleanliness specification is layered on top of the dryness. Most modern dry rooms run ISO 14644-1 ISO 7 (Class 10,000) for general operations and ISO 8 (Class 100,000) for less critical zones such as electrode storage. The ISO classes set the maximum particle count and force HEPA filtration at terminal supply diffusers. H13 HEPA at the room ceiling and F9 prefilters at the AHU is the typical configuration. Particle counts are verified at 0.5 micron and 5.0 micron channels during commissioning and again at quarterly intervals through the operational life of the facility.</p>
+
+        <h2>Air change rates by process area</h2>
+        <p>The ACH range is not a cleanroom-style cleanliness calculation alone. It is dominated by the dehumidification capacity required to hold dewpoint against process moisture sources, plus dilution of any solvent or off-gas vapours within tolerance. Typical ranges from gigafactory project specifications worldwide:</p>
+        <ul>
+          <li><strong>Dry rooms (cell assembly, electrolyte filling, sealing):</strong> 30 to 60 ACH. Higher end for high-nickel chemistries with -60 C dewpoint targets and significant operator presence; lower end for LFP plants with automated handling.</li>
+          <li><strong>Electrode coating and drying:</strong> 20 to 40 ACH room air, plus dedicated NMP exhaust at the oven hoods sized for the solvent load (typically 4,000 to 12,000 cubic metres per hour per coating line).</li>
+          <li><strong>Calendering, slitting, notching:</strong> 15 to 30 ACH. These are dry but generate significant particulate from electrode handling.</li>
+          <li><strong>Stacking and can welding:</strong> 30 to 60 ACH, matching the cell assembly dry room they typically share.</li>
+          <li><strong>Formation and aging halls:</strong> 15 to 25 ACH. Driven primarily by heat dissipation from cell charging and aging racks, plus dilution of off-gas. Not classified for cleanliness in most plants.</li>
+          <li><strong>Pack assembly:</strong> 10 to 15 ACH. ISO 8 to ISO 9 cleanliness or controlled non-classified, with significant heat load from cell pre-conditioning and welding.</li>
+          <li><strong>Warehouse and material storage:</strong> 4 to 8 ACH, with humidity control to prevent moisture pickup on dry materials.</li>
+          <li><strong>Solvent storage and chemical bunding:</strong> 12 to 30 ACH with dedicated solvent-rated exhaust and explosion-proof construction.</li>
+        </ul>
+        <p>The dry room ACH dominates the energy bill. At 50 ACH in a 40 GWh facility with roughly 60,000 to 90,000 square metres of dry room footprint and 6 to 8 metre ceiling heights, the supply air volume is in the range of 4 to 7 million cubic metres per hour. Dehumidifying that volume from ambient summer conditions in central Texas, southern Hungary, central Sweden or the Pilbara to -50 C dewpoint demands cooling capacity in the 60 to 120 megawatt thermal range and desiccant regeneration heat in the 20 to 50 megawatt range. The duct geometry that delivers it — supply, return, exhaust, and recovery — is a major capital line item and a continuous operating cost driver for the life of the plant.</p>
+
+        <h2>Pressure cascade — the rule that holds the dry room together</h2>
+        <p>A dry room is only dry while it is positively pressurised relative to its surroundings. Any negative event — a door held open, a dehumidifier rotor failure, an exhaust fan tripping — pulls humid air into the room. Within seconds the dewpoint drifts and within minutes the cell line is contaminated. The pressure cascade rules typically applied are:</p>
+        <ul>
+          <li><strong>Dry rooms positive at 12.5 to 25 Pa</strong> relative to adjacent corridors, airlocks and general manufacturing. The higher figure (25 Pa) is preferred for high-nickel chemistries; 12.5 Pa is the absolute minimum to keep door swings predictable.</li>
+          <li><strong>Solvent areas (coating, NMP recovery, electrolyte storage) negative at 12.5 to 25 Pa</strong> relative to dry rooms and adjacent process areas. Negative pressure contains solvent vapour migration into the dry room or into operator zones.</li>
+          <li><strong>Formation and aging halls neutral to slightly negative</strong> relative to corridors. Off-gas containment is the priority, so a small negative bias prevents gas migration upward into office or QC areas above.</li>
+          <li><strong>Pack assembly neutral to slightly positive</strong> relative to warehousing.</li>
+          <li><strong>Airlocks between zones</strong> are bubble or sink configuration depending on direction. A dry room airlock from a corridor is typically a bubble (positive on both sides relative to dry room and corridor) so that any door cycle re-pressurises rather than pulls.</li>
+        </ul>
+        <p>The cascade is enforced by VAV box modulation on supply and return, with offset air determined by the differential pressure controllers on each room. Pressure mapping during commissioning verifies the cascade with all doors closed and again under worst-case door-open scenarios — typically a forklift through a personnel door at the same time as a material airlock cycle. Cascades that meet specification at static conditions but collapse at dynamic conditions are common findings during commissioning, and the duct system geometry, fan curve and damper authority all influence whether the cascade holds under transient load.</p>
+
+        <h2>NMP solvent recovery — the chemistry that separates battery HVAC from cleanroom HVAC</h2>
+        <p>Cathode coating is the largest single solvent operation in the gigafactory. The cathode slurry is a paste of active material (NMC, NCA, LFP), conductive carbon, polyvinylidene fluoride (PVDF) binder and N-methyl-2-pyrrolidinone solvent, mixed to roughly 70 percent solids, then coated onto aluminium foil at thicknesses of 50 to 200 micrometres. The coated foil passes through a hot-air drying oven at 100 to 200 C where the NMP evaporates, leaving the solid cathode layer bonded to the foil. The exhaust from the oven contains NMP vapour at concentrations of 1,000 to 5,000 parts per million by volume, and at gigafactory scale the NMP throughput is significant — for a 40 GWh facility, NMP consumption can run 8,000 to 15,000 tonnes per year, depending on coating thickness and solids content.</p>
+        <p>NMP is expensive, regulated and recoverable. Gigafactory economics depend on recovering more than 95 percent of the NMP from the oven exhaust by routing the hot exhaust through a condenser train where the NMP condenses to liquid for distillation purification and reuse. The condenser geometry is typically a refrigerated coil at 5 to 15 C downstream of a heat recovery coil that captures the sensible heat for plant pre-heat duty. Some plants add a chilled brine final stage at -20 C to push recovery above 99 percent.</p>
+        <p>The ductwork from the coating oven to the condenser train is a process duct, not a building service duct. Specifications typical of battery plant projects:</p>
+        <ul>
+          <li><strong>Material:</strong> ASTM A240 Type 304L stainless steel for the hot section (oven outlet to first condenser), polyethylene-lined carbon steel or Type 304L for the warm section (post first condenser), and Type 304L or 316L for any liquid handling and drainage. NMP condensate is not aggressively corrosive but it is mildly attacking on galvanized zinc coatings and gradually degrades aluminium.</li>
+          <li><strong>Insulation:</strong> mineral wool or aerogel sheath at 50 to 100 millimetre thickness, vapour-tight outer jacket, sized to keep the duct internal surface above the NMP dewpoint until the engineered condensation point. Premature condensation in the duct creates pooling, drainage problems and corrosion.</li>
+          <li><strong>Slope:</strong> 1:200 minimum toward engineered drains. NMP condensate must drain forward to the condenser sump and not pool in the duct.</li>
+          <li><strong>Sealing:</strong> SMACNA Class A with welded longitudinal and transverse seams. Bolted flanges with PTFE gaskets are used at the few points where future maintenance access is needed.</li>
+          <li><strong>Fire detection and suppression:</strong> NMP has an autoignition temperature of 245 C, well above the typical oven exhaust temperature, but the duct path runs at 100 to 200 C and a fire scenario in the coater itself can backflow into the duct. Linear heat detection cable along the duct exterior and CO2 or inert gas discharge nozzles at strategic points are typical.</li>
+          <li><strong>Pressure rating:</strong> minus 1500 to plus 500 Pa, since the system can swing under fan trip or downstream blockage.</li>
+        </ul>
+        <p>The NMP recovery loop is one of the highest-return engineering investments in the plant, and the duct geometry feeding it directly affects the recovery rate. Bypass flows from poorly sealed isolation dampers or short-circuit paths through cross-connections cost real money in lost solvent and discharge permit margin.</p>
+
+        <h2>Materials selection by ASTM grade and process zone</h2>
+        <p>Material selection in a battery gigafactory ductwork system is more nuanced than in standard HVAC, and getting it wrong is expensive — both as a direct cost and through accelerated failure of mis-specified runs.</p>
+        <ul>
+          <li><strong>Dry room supply ductwork:</strong> ASTM A240 Type 304L stainless steel is the default. The 0.03 percent maximum carbon spec prevents sensitisation during welding and gives clean weld zones. Surface finish is typically 2B mill finish or No. 4 brushed for visual inspection. Some specifications allow 304 (non-L) on smaller diameter mechanically-formed ducts where welding is minimal, but 304L is safer at scale. The corrosion driver is not air — it is electrolyte trace residue carried back to the AHU on return air during cell line operation.</li>
+          <li><strong>Dry room return and exhaust:</strong> 304L stainless steel matching the supply, especially in rooms where electrolyte handling occurs.</li>
+          <li><strong>General manufacturing supply (offices, warehouse, pack assembly):</strong> Galvanized carbon steel per ASTM A653 with G90 (Z275) coating weight. Standard SMACNA Class B fabrication is sufficient.</li>
+          <li><strong>Coating oven exhaust (NMP-laden):</strong> ASTM A240 Type 304L stainless or polyethylene-lined carbon steel. Galvanized is unsuitable because hot NMP condensate aggressively attacks zinc.</li>
+          <li><strong>Electrolyte filling exhaust:</strong> ASTM A240 Type 316L stainless preferred. The electrolyte contains lithium hexafluorophosphate (LiPF6) which on contact with moisture can release hydrogen fluoride. HF eats through 304L and demands the higher molybdenum content of 316L for service life.</li>
+          <li><strong>Formation and aging exhaust:</strong> ASTM A240 Type 304L stainless. Off-gas includes vinyl carbonate, dimethyl carbonate, ethylene carbonate vapour, hydrogen and carbon monoxide. The vapour mixture can form acidic condensate on cool surfaces; galvanized rusts within months in this service.</li>
+          <li><strong>Solvent storage and chemical area exhaust:</strong> Type 304L or PVC-lined depending on chemistry. Explosion-proof fan motors per IEC 60079 Zone 1 or 2 classification.</li>
+          <li><strong>Pack assembly and warehouse:</strong> Standard galvanized G90.</li>
+          <li><strong>Outdoor air intake plenums:</strong> Aluminium or galvanized with corrosion-resistant coating. Sea-coast plants (Nordic, Mediterranean, Australian east coast) need 316L on intake louvre frames and bird screens.</li>
+        </ul>
+        <p>The cost differential is significant. ASTM A240 Type 304L plate runs roughly 3 to 4 times the price of galvanized A653 G90 in 2026 markets, and 316L is roughly 1.4 to 1.6 times 304L. The fabricated cost differential is smaller (perhaps 60 to 90 percent uplift on the run length) because tooling, freight, insulation and installation labour are similar. For a 40 GWh facility we typically see 15 to 25 percent of total ductwork tonnage in stainless and the balance in galvanized — a project where 50 percent or more is stainless suggests over-specification or unusual chemistry.</p>
+        <p>For a deeper comparison of the material trade-offs and where each grade is appropriate, see our reference on <a href="galvanized-vs-stainless-steel-duct.html">galvanized vs stainless steel duct selection</a>.</p>
+
+        <h2>Seal class — why dry rooms demand SMACNA Class A or EN 1507 Class D</h2>
+        <p>Standard commercial HVAC ductwork is sealed to SMACNA Class C, which permits leakage of around 24 cubic feet per minute per 100 square feet of duct surface at 1 inch water gauge static pressure. That is roughly 122 litres per second per 100 square metres at 250 Pa. Acceptable for an office tower. Catastrophic for a battery dry room.</p>
+        <p>Dry room supply ductwork is universally specified to SMACNA Class A or EN 1507 Class D — the tightest standard classes. The numerical leakage allowances:</p>
+        <ul>
+          <li><strong>SMACNA Class A:</strong> 0.5 cfm per 100 square feet at 1 inch w.g., approximately 2.5 L/s per 100 m² at 250 Pa.</li>
+          <li><strong>EN 1507 Class D:</strong> approximately 0.005 L/s per square metre at 200 Pa, equivalent to roughly 0.5 L/s per 100 m².</li>
+        </ul>
+        <p>Why the obsession with leakage? Every cubic metre that escapes a dry room supply duct is a cubic metre of air at -50 C dewpoint that has been dehumidified at considerable energy cost. A 1 percent leakage rate on a 5 million cubic metre per hour supply system is 50,000 cubic metres per hour of conditioned air dumped into the ceiling void, where it picks up ambient humidity and re-enters the dry room as a contaminant rather than a useful supply. The dehumidification energy alone makes leakage economically untenable, and the moisture ingress from the leak path into the dry room can collapse the dewpoint specification.</p>
+        <p>Achieving Class A in practice requires:</p>
+        <ul>
+          <li><strong>Welded longitudinal and transverse seams</strong> on stainless dry room supply, MIG or TIG depending on thickness and accessibility.</li>
+          <li><strong>TDF or TDC flanges with continuous gasket</strong> at every joint where bolting is preferred to welding, gasket material EPDM or silicone rated for the temperature and chemistry.</li>
+          <li><strong>Penetration sealing</strong> at every wall, floor and ceiling crossing, typically intumescent caulk or fire-rated mastic.</li>
+          <li><strong>Pressure decay testing</strong> on completed sections before insulation, tested at 1.5 times design static pressure for 15 minutes minimum.</li>
+        </ul>
+        <p>For round duct, a high-quality spiral seam fabricated on a precision <a href="../categories/spiral-tubeformer.html">spiral tubeformer</a> with profiled lockseam and proper sealant application can meet Class A on its own. For rectangular duct, the TDF/TDC flange and welded seam combination is the proven path. Both fabrication routes must be validated by pressure test before commissioning.</p>
+
+        <h2>Process areas in detail — coating, calendering, slitting, notching, stacking, welding, filling</h2>
+        <p>Each process area in a cell plant has a distinct combination of cleanliness, dryness, exhaust and pressure requirements that drives different ductwork solutions.</p>
+
+        <h3>Cathode and anode coating</h3>
+        <p>The coating line takes mixed slurry, applies it to foil substrate via slot-die or comma coater, and dries it through a multi-zone hot air oven. The coater room itself runs at 20 to 30 ACH with -40 C dewpoint and ISO 8 cleanliness. The oven is a process exhaust system on its own, with NMP-laden hot air recovered through condenser trains as described above. Anode coating uses water-based binders (carboxymethyl cellulose / styrene-butadiene rubber) rather than NMP, so anode oven exhaust is much simpler — high-temperature water vapour, recovered as latent heat to plant preheat duty rather than solvent recovery.</p>
+        <p>Duct geometry typically includes a low-velocity supply plenum across the coater length to provide laminar downflow, perimeter return at low level, and high-capacity oven hood exhaust at each oven module. Stainless 304L throughout is standard. Velocities below 7 m/s in supply ducts to limit noise, exhaust velocities 12 to 18 m/s to keep NMP vapour above its dewpoint in the duct.</p>
+
+        <h3>Calendering, slitting and notching</h3>
+        <p>Calendering compresses the coated electrode to target density. Slitting and notching cut the electrode to width and create the tab geometry. These operations generate fine particulate from the electrode coating which must be controlled at source. ACH 15 to 30, ISO 8 cleanliness, dewpoint matching the dry room target. Local exhaust hoods at slitting knives and notching presses, with HEPA filtration on the exhaust before discharge or recirculation.</p>
+        <p>The duct geometry in this section is straightforward galvanized supply on the plant air side, but stainless is preferred where the supply duct passes through the dry room envelope. Local exhaust ducts collecting electrode dust must be straight runs with cleanout doors at every elbow because electrode powder is conductive and accumulates as a fire risk.</p>
+
+        <h3>Cell stacking and assembly</h3>
+        <p>The deepest dry room. -50 C to -60 C dewpoint, 30 to 60 ACH, ISO 7 to ISO 8. Personnel are gowned, materials enter through air locks, and every door cycle is a known dewpoint disturbance. Supply ductwork is universally 304L stainless, sealed to SMACNA Class A, with welded seams on every run above DN 250. Terminal HEPA at the ceiling diffuser, F9 prefilter at the AHU. The cell stacking dry room is the highest-value HVAC zone in the plant and the place where ductwork specification mistakes are most expensive.</p>
+
+        <h3>Can welding</h3>
+        <p>Laser or ultrasonic welding of the cell can. Generates fume and particulate that must be captured at source. Typically a small dedicated extraction at each welding station tied into a HEPA-filtered exhaust manifold. The room itself is a dry room at the cell assembly specification.</p>
+
+        <h3>Electrolyte filling</h3>
+        <p>The single highest-risk operation in the cell plant. Liquid electrolyte (LiPF6 dissolved in DMC, EC and other carbonates) is dosed into the cell, then the cell is sealed under vacuum or inert atmosphere. Vapour escapes during dosing; LiPF6 in contact with atmospheric moisture can release HF. The room is at the deepest dewpoint (-55 C to -60 C) and additionally has explosion-proof electrical classification, dedicated solvent exhaust and dimethyl carbonate vapour scrubbing before atmospheric discharge.</p>
+        <p>Ductwork is 316L stainless on exhaust runs, with capture velocity at filling stations of 0.5 m/s minimum. Local exhaust manifolds connect to a dedicated fan and scrubber train, separate from the room supply and return. The electrolyte exhaust and the room return must not cross-connect — even a small back-flow path can carry HF into the dry room AHU coils.</p>
+
+        <h3>Formation and aging</h3>
+        <p>After cell assembly and electrolyte filling, every cell is electrically formed (initial charge cycle to grow the solid-electrolyte interphase) and then aged for days to weeks to verify stability. The formation and aging halls contain rack on rack of cells under charge, dissipating tens of megawatts of heat. These rooms are not dry rooms — typical conditions are 20 to 25 C dry-bulb, 30 to 50 percent relative humidity, ACH 15 to 25.</p>
+        <p>The HVAC challenge is heat removal and off-gas dilution. Lithium-ion cells under formation off-gas a small but real quantity of dimethyl carbonate, ethylene carbonate vapour, hydrogen, carbon monoxide, and trace organic compounds. In normal operation the off-gas is well below explosive limit, but a defective cell can release a much larger volume locally. Formation hall ductwork must therefore be:</p>
+        <ul>
+          <li><strong>Zoned for thermal runaway isolation,</strong> with each formation rack or aging cabinet on a separately isolatable exhaust branch. A motorised fire damper rated to UL 555 or EN 1366-2 at the wall penetration can be commanded shut to isolate a runaway zone from the rest of the building.</li>
+          <li><strong>Equipped with smoke detection</strong> in the return duct upstream of the fan inlet, so a fire signature in the return air triggers fan shutdown and damper closure before the building loop is contaminated.</li>
+          <li><strong>Monitored for off-gas</strong> by sensors specifically tuned to dimethyl carbonate, hydrogen and carbon monoxide, integrated with the building management system. A pre-runaway off-gas signature provides 5 to 30 minutes of warning before visible smoke or thermal runaway propagation in many cell types.</li>
+          <li><strong>Built from 304L stainless</strong> on the exhaust side because the off-gas mixture is mildly acidic on condensation.</li>
+        </ul>
+        <p>Heat recovery on the formation exhaust is the single largest energy efficiency opportunity in the plant. The exhaust air is at 30 to 50 C and represents significant sensible heat that can be recovered through a glycol run-around coil or heat wheel to preheat outdoor air entering the dry room AHUs. Recovery offsetting 20 to 30 percent of dry room dehumidification energy is achievable in northern hemisphere climates.</p>
+
+        <h3>Pack assembly</h3>
+        <p>Cells are integrated into modules and packs in a separate hall, generally ISO 8 to ISO 9 or controlled non-classified. ACH 10 to 15, dewpoint not critical (cells are sealed at this point), but heat load remains significant from cell pre-conditioning, welding and battery management system testing. Standard galvanized supply and return is acceptable here.</p>
+
+        <h2>Thermal runaway management — the duct is part of the safety system</h2>
+        <p>Thermal runaway is the failure mode that defines the safety design of the plant. A single cell that loses control thermally propagates within seconds to adjacent cells, releases flammable electrolyte vapour, and within minutes can ignite. The propagation signature includes off-gas release before visible flame, a temperature spike at the cell vent, and (in pouch cells) physical swelling. The HVAC system has three jobs in this scenario: detect, isolate, and exhaust.</p>
+        <p><strong>Detection</strong> happens via three sensor types working together. Off-gas sensors in the formation and aging halls detect dimethyl carbonate, hydrogen, and carbon monoxide concentrations rising above baseline. Smoke detectors in the return duct upstream of the fan provide a secondary confirmation. Thermal cameras or infrared point sensors at the cell rack provide spatial localisation. A confirmed event from any two of the three triggers the runaway response.</p>
+        <p><strong>Isolation</strong> is achieved by motorised fire dampers at every wall penetration, sized and rated to UL 555 or EN 1366-2. The control logic on a confirmed event commands the affected zone's exhaust damper closed (preventing fire spread along the duct), the supply damper closed (cutting off oxygen feed), and the adjacent zones' dampers held in normal position. The damper actuators must fail closed on power loss; a runaway event coinciding with a power glitch must not leave the damper open.</p>
+        <p><strong>Exhaust</strong> in the affected zone shifts to a high-rate purge mode. A dedicated emergency exhaust fan, typically 3 to 5 times the normal exhaust rate, draws air from the affected zone through a dedicated path that bypasses the recirculation loop. Discharge is to atmosphere, well above roof level, often through a dedicated stack with a downstream scrubber to remove acidic and toxic combustion products.</p>
+        <p>The duct geometry is an explicit part of this safety system. Fire dampers must be installed with the actuator accessible for testing without entering the affected zone. Linear heat detection cable along the duct exterior provides early warning of fire migration along the duct itself. Stainless steel construction in the formation exhaust survives the temperature and corrosive products of an event in a way that galvanized duct will not. Cleanout doors at every elbow and equipment access points enable post-event inspection and decontamination.</p>
+
+        <h2>Energy efficiency — where the 30 to 40 percent comes from and how to reduce it</h2>
+        <p>HVAC consumes 30 to 40 percent of total facility energy in a typical battery gigafactory. The components, in approximate order of magnitude:</p>
+        <ul>
+          <li><strong>Dehumidification (cooling and desiccant regeneration):</strong> 12 to 18 percent of facility energy. Driven by the ACH and dewpoint specification of dry rooms.</li>
+          <li><strong>Air movement (supply, return, exhaust fans):</strong> 6 to 10 percent. Fan static pressure is set by ductwork pressure drop, filter loading, and control valves.</li>
+          <li><strong>Cooling for formation and aging heat rejection:</strong> 4 to 8 percent. Direct heat removal from charging racks.</li>
+          <li><strong>Heat for desiccant regeneration and oven duty:</strong> 4 to 6 percent.</li>
+          <li><strong>Solvent recovery refrigeration:</strong> 1 to 3 percent.</li>
+          <li><strong>Outdoor air pre-conditioning (winter heat, summer cool):</strong> 2 to 4 percent.</li>
+        </ul>
+        <p>The leverage points for energy efficiency are well understood and consistently applied in modern plants:</p>
+        <ul>
+          <li><strong>Heat recovery from formation exhaust:</strong> glycol run-around or heat wheel between formation hall exhaust (30 to 50 C) and dry room AHU outdoor air intake. 20 to 30 percent reduction in dehumidification energy in cold-climate plants.</li>
+          <li><strong>Heat recovery from desiccant regeneration:</strong> the desiccant regeneration exhaust is at 80 to 120 C. Recovered into plant preheat duty or domestic hot water.</li>
+          <li><strong>Refrigerant selection:</strong> ASHRAE designation R-1234ze or R-513A for chillers, replacing legacy R-134a. Slightly lower COP but compliance with F-gas regulations and lower global warming potential. R-744 (CO2) cascade systems are increasingly considered for the lowest-temperature service.</li>
+          <li><strong>Variable speed drives</strong> on every fan and pump — the energy saving versus inlet vane control is substantial at part-load operation.</li>
+          <li><strong>Tight ductwork (Class A seal):</strong> cuts re-conditioning load proportionally to the leakage rate avoided.</li>
+          <li><strong>Demand-controlled ventilation</strong> in pack assembly and warehouse, modulating ACH against actual occupancy and process activity.</li>
+          <li><strong>Free cooling</strong> in winter for formation hall heat rejection — many gigafactories in cold climates can run formation cooling on outside air alone for 6 months of the year.</li>
+        </ul>
+        <p>The integrated effect of these measures in modern designs is to push HVAC energy intensity down to roughly 25 percent of total facility energy from a 2018-vintage baseline of 35 to 40 percent. The reduction is one of the few capex-funded improvements that delivers payback within 3 to 5 years even at industrial electricity prices.</p>
+
+        <h2>Major battery gigafactory projects worldwide</h2>
+        <p>The battery gigafactory landscape outside Asia has expanded enormously since 2020, with project announcements aggregating to several terawatt-hours of nameplate capacity by 2030. The following are the major projects whose HVAC ductwork engineering offers reference points for new specifiers. Names refer to the operator or joint venture, with cell chemistry indicated where publicly disclosed.</p>
+
+        <h3>Europe</h3>
+        <ul>
+          <li><strong>LG Energy Solution Wroclaw, Poland</strong> — one of the largest cell plants in Europe, NMC chemistry, supplying European OEMs. Multiple expansions since initial commissioning.</li>
+          <li><strong>Samsung SDI Goed, Hungary</strong> — NMC pouch cells for European EV programmes. Sister facility to the South Carolina USA plant.</li>
+          <li><strong>SK On Komarom, Hungary</strong> — NMC cells for Ford, Volkswagen and Hyundai European programmes.</li>
+          <li><strong>Northvolt Skelleftea, Sweden</strong> — first European-owned major gigafactory. NMC chemistry, vertically integrated upstream cathode active material production. Heide Germany site under development.</li>
+          <li><strong>ACC (Stellantis / Mercedes-Benz / TotalEnergies JV)</strong> — Douvrin France in operation, Kaiserslautern Germany and Termoli Italy in development. NMC pouch cells for the parent OEMs.</li>
+          <li><strong>Verkor Dunkerque, France</strong> — first French-owned gigafactory, NMC chemistry, supplying Renault and other European programmes.</li>
+          <li><strong>Britishvolt successor projects, UK</strong> — Northumberland and Coventry sites under various restructurings.</li>
+          <li><strong>Tesla Berlin-Brandenburg, Germany</strong> — integrated vehicle and cell production, 4680 cylindrical cells.</li>
+          <li><strong>European gigafactories at Erfurt and Debrecen</strong> operated by leading global battery manufacturers, supplying European OEM programmes.</li>
+        </ul>
+
+        <h3>North America</h3>
+        <ul>
+          <li><strong>LG Energy Solution Holland, Michigan</strong> — long-established cell plant, multiple expansions, NMC pouch cells.</li>
+          <li><strong>Samsung SDI Indiana</strong> (with Stellantis) and South Carolina (independent) — NMC cells for Stellantis and other US OEMs.</li>
+          <li><strong>SK On Commerce, Georgia</strong> — multiple lines, NMC cells for Ford and Volkswagen.</li>
+          <li><strong>Panasonic Reno, Nevada</strong> (Gigafactory 1 with Tesla) and De Soto, Kansas — 2170 and 4680 cylindrical cells.</li>
+          <li><strong>Tesla Austin, Texas</strong> — integrated vehicle and 4680 cell production.</li>
+          <li><strong>Stellantis-LG Energy Solution NextStar, Windsor, Ontario, Canada</strong> — NMC cells for North American Stellantis programmes.</li>
+        </ul>
+
+        <h3>Asia-Pacific</h3>
+        <ul>
+          <li><strong>VinFast Haiphong, Vietnam</strong> — vertically integrated EV and cell production.</li>
+          <li><strong>LG Energy Solution Ochang, South Korea</strong> — historical home plant, multiple lines.</li>
+          <li><strong>Samsung SDI Cheonan and Ulsan, South Korea</strong> — NMC cells for global supply.</li>
+          <li><strong>Panasonic Suminoe, Japan</strong> — long-established cell production.</li>
+        </ul>
+
+        <h3>Australia and New Zealand</h3>
+        <ul>
+          <li><strong>Energy Renaissance, Tomago, NSW</strong> — Australia's first commercial-scale lithium-ion cell plant, LFP chemistry, supplying stationary storage and defence applications.</li>
+          <li><strong>Recharge Industries, Geelong, Victoria</strong> — proposed gigafactory at the former Ford Geelong site, LFP chemistry.</li>
+          <li><strong>Multiple Western Australian lithium processing plants</strong> — Tianqi/IGO Greenbushes hydroxide, Albemarle Kemerton hydroxide, Pilbara Minerals Pilgangoora — feeding the upstream cathode active material supply chain.</li>
+        </ul>
+
+        <h2>Australian context — AUKUS, critical minerals, and a domestic battery industry</h2>
+        <p>Australia's position in the global battery supply chain has shifted dramatically over the past five years. Western Australia mines and processes the majority of the world's hard-rock spodumene lithium, with hydroxide refineries at Greenbushes (Tianqi/IGO joint venture), Kemerton (Albemarle) and the Pilbara producing battery-grade lithium hydroxide for export. Nickel and cobalt processing in Western Australia feeds high-nickel cathode active material supply for Korean and European cell makers.</p>
+        <p>The downstream cell manufacturing build is at an earlier stage but accelerating. Energy Renaissance in Tomago, NSW, opened Australia's first commercial-scale lithium-ion cell plant for stationary storage and defence applications, using LFP chemistry. Recharge Industries proposed a gigafactory at the former Ford Geelong site in Victoria. Several other proposals at various stages of feasibility are under public discussion across Queensland, NSW and Victoria.</p>
+        <p>The AUKUS critical minerals strategy and the federal Future Made in Australia programme have shifted policy and capital toward domestic value-added battery manufacturing. The implication for HVAC ductwork specifiers and contractors is that Australian industrial supply chains for stainless steel duct, dehumidification skids and cleanroom HVAC fitout are growing from a base of pharmaceutical and food-grade work into a much larger industrial scale. SBKJ Group is positioned in Box Hill North, Victoria, to support this transition with the duct-forming machinery the local fitout contractors need.</p>
+
+        <h2>Dry room construction sequence — getting from shell to ramp-up</h2>
+        <p>The construction sequence for a battery gigafactory dry room follows a defined order that the project schedule and the trade contractors must respect. The typical sequence:</p>
+        <ol>
+          <li><strong>Shell complete:</strong> structural steel, roof, exterior cladding, slab, primary M&E rough-in. Building is weather-tight and able to be heated to 18 C minimum.</li>
+          <li><strong>Vapour barrier:</strong> the dry room envelope is sealed with a continuous vapour barrier on the warm side of the insulation. Joints are taped, penetrations sealed. The vapour barrier integrity is verified by smoke pencil and pressure decay test before the next step.</li>
+          <li><strong>Dry room MEP:</strong> HVAC ductwork, electrical, sprinkler, gas and water services are installed inside the vapour barrier. This is the largest single trade package in the dry room build. SBKJ ductwork machinery typically supplies the on-site fabrication of stainless duct sections at this stage.</li>
+          <li><strong>Dry room interior fit-out:</strong> insulated wall panels (typically polyurethane core with stainless or coated skin), floor coatings, ceiling grid, light fittings, observation windows. Pressure-tight doors and airlocks installed.</li>
+          <li><strong>HVAC commissioning:</strong> AHUs and dehumidifiers commissioned, ductwork pressure-tested to seal class, dewpoint pulled down progressively over 2 to 4 weeks. ACH and pressure cascade verified.</li>
+          <li><strong>Dry room equipment installation:</strong> coaters, calenders, slitters, stackers, formation racks installed. Each piece of equipment is brought in through the airlock under controlled conditions to maintain dewpoint.</li>
+          <li><strong>Equipment commissioning:</strong> mechanical and electrical commissioning of process equipment, integration with plant utilities.</li>
+          <li><strong>Cell production ramp-up:</strong> first article cells, qualification builds, ramp to nameplate capacity. Typical ramp duration 6 to 18 months from first cell to full capacity.</li>
+        </ol>
+        <p>The total dry room build window from shell complete to first cell is typically 6 to 9 months for a 40 GWh facility, with parallel construction on multiple modules to keep the total project schedule within 24 to 36 months from groundbreaking to ramp-up start.</p>
+
+        <h2>SBKJ machinery for battery gigafactory ductwork</h2>
+        <p>The duct-forming machinery used on a battery gigafactory project is, with minor variations, the same machinery used on any high-spec industrial cleanroom project — but with a few specific configuration requirements. The most common SBKJ machines deployed on cell plant fitouts:</p>
+        <ul>
+          <li><strong>SBAL-V auto duct production line, stainless variant:</strong> the standard rectangular duct line, configured with 304L stainless steel feed coil, plasma cutter for clean stainless edges, stainless-compatible roller tooling, and optional welding station for longitudinal seam closure on Class A specification ducts. Typical output 25 to 35 metres per shift on stainless. See the <a href="../categories/auto-duct-lines.html">auto duct line catalogue</a> for full specifications.</li>
+          <li><strong>SBTF spiral tubeformer, stainless variant:</strong> for round duct on dry room supply, formation exhaust and NMP recovery duty. Stainless 304L lockseam profile, with appropriate sealant injection, achieves Class A on round duct without secondary welding. Diameters 100 to 1500 millimetre standard, larger diameters by special order. See the <a href="../categories/spiral-tubeformer.html">spiral tubeformer catalogue</a>.</li>
+          <li><strong>TDF flange line:</strong> tight-tolerance flange roll-forming for SMACNA Class A pressure rating on rectangular duct. EPDM or silicone gasket compatible.</li>
+          <li><strong>Plasma and laser cutting tables:</strong> for stainless penetrations, branch fittings and custom fabrications. Reduces hand-fabrication time and improves edge consistency on stainless.</li>
+        </ul>
+        <p>SBKJ engineers have configured these machines for cleanroom duct fabrication in pharmaceutical, semiconductor and now battery cell projects across multiple regions. The configuration choices that matter for battery gigafactory work specifically:</p>
+        <ul>
+          <li><strong>304L feed coil compatibility:</strong> rollers and forming dies must be specified for stainless service to prevent galvanized cross-contamination on the duct surface.</li>
+          <li><strong>Welding station integration:</strong> longitudinal seam welding on Class A ducts — TIG for thinner gauges, MIG for heavier sections. SBKJ supplies the station integrated with the duct line for in-line operation.</li>
+          <li><strong>Surface protection:</strong> protective film on the inside surface during forming, removed at install. Prevents handling marks that compromise cleanability.</li>
+          <li><strong>Tight tolerance corner geometry:</strong> the L-shape and S-shape corners on rectangular dry room ducts must match the gasket geometry for Class A sealing. SBAL-V tooling is set to tolerance bands consistent with this requirement.</li>
+        </ul>
+        <p>Battery gigafactory projects typically award the duct fabrication package to the local MEP contractor, who buys or rents the duct-forming machinery to set up an on-site or near-site fabrication shop for the project duration. This avoids the freight cost of moving fabricated duct (which is volumetric) over long distances, and gives the project schedule control over the fabrication queue. SBKJ supports this model with leasing options, on-site commissioning, and operator training in either English or the local fitout contractor's preferred language.</p>
+
+        <h2>Procurement and lead time challenges</h2>
+        <p>Battery gigafactory projects run on 24 to 36 month schedules from groundbreaking to ramp-up start, and the HVAC fitout is the longest single trade package on the critical path. The procurement and scheduling implications:</p>
+        <ul>
+          <li><strong>Stainless steel coil lead time:</strong> 304L coil at battery gigafactory volumes (hundreds to thousands of tonnes) typically commands 12 to 16 week lead times in 2026 European and North American markets, longer for special widths or surface finishes. The mill order needs to be placed at the same time as the structural steel order.</li>
+          <li><strong>Duct-forming machinery lead time:</strong> SBKJ auto duct lines run 16 to 22 week lead time from order to delivery for a stainless-configured SBAL-V, plus 4 to 6 weeks for ocean freight to Europe or North America and 2 to 3 weeks for installation and commissioning. The fitout contractor needs the machinery on site no later than 3 months before duct fabrication starts, which usually means ordering 9 to 12 months before the dry room MEP package starts.</li>
+          <li><strong>Dehumidification skids:</strong> the largest desiccant rotor skids run 30 to 40 week lead times. These are critical-path items.</li>
+          <li><strong>Filtration:</strong> H13 HEPA filter housings at gigafactory scale are typically 16 to 20 week lead time.</li>
+          <li><strong>Fire dampers and motorised dampers:</strong> 8 to 12 week lead time for UL 555 or EN 1366-2 listed product.</li>
+          <li><strong>Trades availability:</strong> in concentrated build regions (Hungarian battery valley, Georgia and Tennessee in the USA, the French/Belgian battery corridor), MEP labour shortages have driven schedule risk and cost overruns. Self-performing fabrication on-site with rented duct lines is one mitigation strategy.</li>
+        </ul>
+        <p>Project managers running parallel HVAC fitout on multiple cell modules need to plan the coil orders, machinery deliveries and fabrication shops well in advance. The cost of having the duct line idle for a month is small; the cost of the MEP critical path slipping by a month is enormous.</p>
+
+        <h2>Validation and commissioning — psychrometric, ACH, HEPA, dewpoint mapping</h2>
+        <p>HVAC commissioning on a battery gigafactory is more rigorous than any other industrial sector except perhaps semiconductor fabs. The validation suite typically includes:</p>
+        <ul>
+          <li><strong>Pressure decay testing</strong> on completed duct sections before insulation and concealment. SMACNA Class A or EN 1507 Class D verification at 1.5 times design static pressure. Sections that fail are repaired and re-tested before sign-off.</li>
+          <li><strong>ACH verification</strong> by tracer gas decay (typically SF6 or CO2) or anemometric supply measurement. Verified to plus or minus 10 percent of design.</li>
+          <li><strong>Pressure cascade verification</strong> at every airlock with all doors closed and worst-case door-open scenarios. Recorded with calibrated micromanometer at 0.1 Pa resolution.</li>
+          <li><strong>Dewpoint mapping</strong> at minimum 9 grid points across each dry room, held within plus or minus 2 C of setpoint over 4-hour rolling average. Mapped at multiple operational scenarios — empty, populated, with door cycles.</li>
+          <li><strong>HEPA challenge testing</strong> per IEST-RP-CC034 with DOP or PAO aerosol, 99.99 percent retention verified at every terminal filter housing.</li>
+          <li><strong>Particle counting</strong> per ISO 14644-3, verifying ISO class at every grid point.</li>
+          <li><strong>Off-gas sensor calibration</strong> with reference gases at multiple concentrations.</li>
+          <li><strong>Fire damper drop tests</strong> on every fire damper with command from BMS, verifying actuator response time within 2 seconds.</li>
+          <li><strong>Smoke detection sensitivity</strong> verification with smoke generator in the return duct.</li>
+          <li><strong>Pressure cascade hold</strong> under simulated door-open scenarios, with door-open duration matched to the plant operations procedure.</li>
+        </ul>
+        <p>The full commissioning report is a deliverable to the cell plant operator and is required documentation for the operations and maintenance handover. Typical commissioning duration is 3 to 6 months for a 40 GWh facility, running in parallel with equipment installation in late stages.</p>
+
+        <h2>How HVAC ductwork sits in the broader cleanroom industry</h2>
+        <p>Battery gigafactory HVAC shares conceptual similarity with several other regulated cleanroom industries, but with distinct quantitative differences worth noting for specifiers cross-referencing experience:</p>
+        <ul>
+          <li><strong>Pharmaceutical sterile fill</strong> requires comparable cleanliness (ISO 5 to ISO 7) and pressure cascade discipline, but lower ACH (typically 20 to 40) and only modest dewpoint targets. See our <a href="pharma-biotech-cleanroom-hvac-duct-guide.html">pharma and biotech cleanroom HVAC duct guide</a> for the comparison.</li>
+          <li><strong>Semiconductor fabs</strong> require lower particle counts (ISO 3 to ISO 5) and higher ACH (60 to 200 in Class 100), but moderate dewpoint targets and no equivalent solvent recovery problem. See <a href="semiconductor-fab-hvac-duct-guide.html">semiconductor fab HVAC duct guide</a>.</li>
+          <li><strong>Cold storage and cold chain</strong> involves comparable refrigeration capacity and vapour barrier discipline, but no cleanroom requirement and very different duct geometry. See <a href="cold-storage-cold-chain-hvac-duct-guide.html">cold storage and cold chain HVAC duct guide</a>.</li>
+          <li><strong>General cleanroom industries</strong> — see our <a href="../industries/cleanroom.html">cleanroom industries overview</a> for the cross-cutting common requirements.</li>
+        </ul>
+        <p>An MEP contractor or HVAC specifier coming from any of these adjacent fields can apply most of their experience to battery gigafactory work, but must specifically learn the dewpoint discipline (deeper than pharma), the solvent recovery problem (similar to fine chemical but at higher scale), and the thermal runaway zoning requirement (without parallel in any other industry).</p>
+
+        <h2>Cost benchmarks and budget guidance</h2>
+        <p>HVAC ductwork including supply, return, exhaust and solvent recovery systems typically represents 4 to 7 percent of total gigafactory capital cost. For a 40 GWh facility with capital cost in the USD 2 to 3 billion range, this implies USD 80 to 200 million in ductwork material, fabrication and installation. Within this:</p>
+        <ul>
+          <li><strong>Dry room ductwork (304L stainless, Class A seal):</strong> 35 to 50 percent of total ductwork spend.</li>
+          <li><strong>NMP recovery and solvent exhaust ductwork:</strong> 10 to 15 percent.</li>
+          <li><strong>Formation and aging exhaust:</strong> 8 to 12 percent.</li>
+          <li><strong>General supply and return (galvanized):</strong> 20 to 30 percent.</li>
+          <li><strong>Pack assembly and warehouse:</strong> 5 to 10 percent.</li>
+          <li><strong>Insulation and protection:</strong> 8 to 12 percent of installed ductwork cost.</li>
+        </ul>
+        <p>The material cost component of stainless ductwork is around 40 percent of installed price. Fabrication labour is around 25 percent, installation labour around 20 percent, insulation and accessories around 15 percent. The fabrication labour share is what local on-site fabrication with rented duct-forming machinery directly attacks — moving from imported fabricated duct to on-site fabrication can reduce installed cost by 15 to 25 percent on stainless work, accounting for machinery rental and operator training.</p>
+        <p>SBKJ machine economics on a battery gigafactory project: an SBAL-V auto duct line in stainless configuration produces 25 to 35 metres of finished rectangular duct per shift. At a project rectangular duct quantity of 80,000 to 150,000 metres typical for a 40 GWh facility, two SBAL-V lines running double shift cover the project schedule with margin for rework and special fabrications. Spiral round duct quantity at 30,000 to 60,000 metres is covered by one SBTF tubeformer running double shift. Total machinery cost is a small percentage of total fabrication labour saved.</p>
+
+        <h2>How SBKJ scores against battery gigafactory requirements</h2>
+        <p>The SBKJ engineering and supply offer for battery gigafactory ductwork projects:</p>
+        <ul>
+          <li><strong>Machinery range:</strong> SBAL-V (rectangular auto duct), SBTF (spiral round), TDF flange line — all configurable for 304L and 316L stainless service. See the <a href="../machines.html">full machine catalogue</a>.</li>
+          <li><strong>Cleanroom track record:</strong> SBKJ machines installed at pharmaceutical, semiconductor and cleanroom fabricators across <a href="../regions/europe.html">Europe</a> and <a href="../regions/north-america.html">North America</a>, with certifications and references available on request.</li>
+          <li><strong>Stainless configuration expertise:</strong> SBKJ engineers configure roller tooling, plasma cutters, welding stations and surface protection for stainless service as standard, not as an exception.</li>
+          <li><strong>Australian base:</strong> Box Hill North, Victoria headquarters provides English-language engineering, after-sales support and machinery procurement for Australian and Pacific projects without time-zone friction.</li>
+          <li><strong>Project schedule support:</strong> machinery delivery 16 to 22 week lead time is competitive with European-built alternatives, with full operator training and commissioning by SBKJ engineers on site.</li>
+          <li><strong>Spare parts continuity:</strong> 10-year minimum parts support commitment in writing, in line with the typical 15-year battery gigafactory operational horizon.</li>
+        </ul>
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html">Discuss your battery gigafactory ductwork project with SBKJ &rarr;</a></p>
+
+        <h2>FAQ</h2>
+        <details><summary>What dewpoint is required in a lithium-ion battery dry room?</summary><p>Between -40 C and -60 C depending on chemistry. NMC and NCA cells require -55 C to -60 C; LFP can run at -40 C to -45 C; solid-state pilots may push to -65 C or below. Dewpoint must be held within plus or minus 2 C across the room volume, verified by 9-point grid mapping during commissioning and ongoing monitoring.</p></details>
+        <details><summary>How is NMP solvent recovered from electrode coating exhaust?</summary><p>Hot oven exhaust at 100 to 200 C is routed through a refrigerated condenser train where NMP condenses to liquid for distillation purification and reuse. Recovery efficiencies above 95 percent are now standard, with high-end plants exceeding 99 percent. The exhaust ductwork is 304L stainless or polyethylene-lined to resist NMP condensate corrosion, insulated to control condensation point, and sloped 1:200 to engineered drains.</p></details>
+        <details><summary>What ACH range is typical for each room in a battery gigafactory?</summary><p>Dry rooms 30 to 60 ACH, electrode coating 20 to 40 ACH plus dedicated NMP exhaust, formation and aging 15 to 25 ACH, pack assembly 10 to 15 ACH, warehouse 4 to 8 ACH, solvent storage 12 to 30 ACH. The dry room ACH dominates total facility energy because each air change in a deep dewpoint room carries significant dehumidification load.</p></details>
+        <details><summary>What materials are specified for dry room supply ductwork?</summary><p>ASTM A240 Type 304L stainless steel is the default, sealed to SMACNA Class A or EN 1507 Class D with welded seams on runs above DN 250. The corrosion driver is electrolyte trace residue carried back on return air. ASTM A240 Type 316L is preferred for electrolyte filling exhaust because LiPF6 contact with moisture can release HF, which attacks 304L.</p></details>
+        <details><summary>How is thermal runaway managed by the HVAC system?</summary><p>Three layers: detection by off-gas sensors (DMC, hydrogen, CO) plus smoke detectors plus thermal cameras; isolation by motorised fire dampers rated to UL 555 or EN 1366-2 at every wall penetration, fail-closed on power loss; exhaust by dedicated emergency purge fans 3 to 5 times normal exhaust rate, discharging to atmosphere through a scrubber. Ductwork zoning ensures each formation rack or aging cabinet can be isolated independently.</p></details>
+        <details><summary>What seal class is required and why?</summary><p>SMACNA Class A or EN 1507 Class D for dry room supply, equivalent to roughly 0.5 cfm leakage per 100 ft² at 1 inch w.g. or 0.005 L/s per m² at 200 Pa. Every cubic metre of leakage is a cubic metre of conditioned -50 C dewpoint air dumped into the ceiling void, where dehumidification energy is lost and the leak path can carry humid air back into the dry room. Welded seams on stainless ducts are standard, with TDF/TDC flanges at maintenance access points.</p></details>
+        <details><summary>What is the pressure cascade in a battery gigafactory?</summary><p>Dry rooms at positive pressure 12.5 to 25 Pa relative to corridors and general manufacturing. Solvent areas (coating, electrolyte filling, NMP recovery) at negative pressure 12.5 to 25 Pa relative to dry rooms. Formation and aging at neutral or slightly negative. Pack assembly neutral to slightly positive. Cascade verified during commissioning at static and dynamic (door-open) conditions.</p></details>
+        <details><summary>What is HVAC ductwork as a percentage of gigafactory build cost?</summary><p>4 to 7 percent of total facility capital cost. For a 40 GWh facility at USD 2 to 3 billion, that is USD 80 to 200 million. Dry room ductwork (304L stainless, Class A seal) accounts for 35 to 50 percent of the ductwork budget; NMP recovery 10 to 15 percent; formation exhaust 8 to 12 percent; general supply and return 20 to 30 percent; pack assembly and warehouse 5 to 10 percent.</p></details>
+
+        <aside class="related-guides">
+          <p class="eyebrow">Related guides</p>
+          <ul class="related-links">
+            <li><a href="pharma-biotech-cleanroom-hvac-duct-guide.html">Pharma and Biotech Cleanroom HVAC Duct Guide</a></li>
+            <li><a href="semiconductor-fab-hvac-duct-guide.html">Semiconductor Fab HVAC Duct Guide</a></li>
+            <li><a href="cold-storage-cold-chain-hvac-duct-guide.html">Cold Storage and Cold Chain HVAC Duct Guide</a></li>
+            <li><a href="galvanized-vs-stainless-steel-duct.html">Galvanized vs Stainless Steel Duct &mdash; Selection Guide</a></li>
+            <li><a href="../industries/cleanroom.html">Cleanroom Industries &mdash; HVAC Duct Solutions</a></li>
+            <li><a href="../categories/auto-duct-lines.html">Auto Duct Production Lines &mdash; SBAL-V Range</a></li>
+            <li><a href="../categories/spiral-tubeformer.html">Spiral Tubeformer &mdash; SBTF Range</a></li>
+          </ul>
+        </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+      <div class="shell">
+        <div class="content-narrow">
+          <div class="promise-callout">
+            <span class="promise-label">12-hour reply</span>
+            <p class="promise-text">Got a battery gigafactory ductwork specification question? An SBKJ mechanical engineer with cleanroom experience replies within 12 hours &mdash; not a salesperson.</p>
+            <a href="../contact.html" class="btn btn-primary">Ask an engineer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <p>© SBKJ Group · <a href="../index.html">Home</a> · <a href="../machines.html">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-sbkj.html">Why SBKJ</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../industries/">Industries</a> · <a href="../contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=4"></script>
+</body>
+</html>

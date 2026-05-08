@@ -137,6 +137,23 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Mining Ventilation HVAC Duct Guide — Australian mining context (Pilbara, Olympic Dam, Cobar, Kalgoorlie, NSW/Qld coal), AS/NZS 1668.4, ISO 19433, ATEX/IECEx via AS/NZS 60079, methane management, MSHA Part 70 DPM 160 µg/m³, heat stress 28°C wet bulb, refuge bay positive pressure 50-200 Pa, lay-flat/helical-spring auxiliary ducting, VOD energy savings 25-50%, surface processing (mill, smelter, ROM), materials (G275 / hot-dip / 304/316/2205): https://sbkjduct.com/insights/mining-ventilation-hvac-duct-guide.html
 - Cold Storage and Cold Chain HVAC Duct Guide — Pharma cold chain (2-8°C, -20°C, -80°C ULT), vaccine cold chain WHO PQS, food (chilled 0-4°C, frozen -18 to -25°C, blast freeze -30 to -40°C), industrial (LNG, chemical), ASHRAE 90.1 + IIAR-2/-6 + USP <659> + WHO TRS 961 + EU GDP + FSMA 21 CFR 117, refrigerant systems (R-717 NH3, R-744 CO2, R-410A, R-454B), vapor barriers, defrost systems (hot gas, electric, glycol), Australian projects (CSL Behring vaccines, Karratha LNG, Fonterra dairy): https://sbkjduct.com/insights/cold-storage-cold-chain-hvac-duct-guide.html
 - Auto Duct Production Line ROI and Cost Analysis — Worked CFO/plant manager analysis: SBAL-V landed cost USD 380-680K replaces 8-12 manual operators (USD 600-900K/yr loaded), 6-9 month payback in tier-1 markets. Three worked examples: US 30K m²/yr 13-month payback NPV USD 1.6M, Australia 50K m²/yr 11-month payback, Saudi Vision 2030 80K m²/yr 16-month payback. Energy 22-30 kW operating, consumables USD 1.5-3K/yr, tooling regrind cycles 100-300K m, downtime 95-98% uptime, rework 4-8% manual to 0.5-1.5% auto: https://sbkjduct.com/insights/auto-duct-line-roi-cost-analysis.html
+- Battery Gigafactory HVAC Duct Guide — Dry rooms (-40 to -60°C dewpoint, ISO 7-8 cleanliness), NMP solvent recovery (100-200°C exhaust), cell assembly clean dry rooms, formation/aging thermal management, lithium thermal runaway management, materials (304L SS for dry room supply, G90 galvanized general, PE-lined NMP exhaust), pressure cascade, ACH ranges. Major projects: LGES Wroclaw/Holland, Samsung SDI Goed/SC, SK On Georgia, Northvolt Skelleftea, ACC France, Tesla Austin/Berlin/Reno, Stellantis-LGES Windsor, Australian Energy Renaissance Tomago/Recharge Geelong: https://sbkjduct.com/insights/battery-gigafactory-hvac-duct-guide.html
+- Hydrogen Production Facility HVAC Duct Guide — H2 LFL 4% explosion risk, ATEX/IECEx zone classification (AS/NZS 60079, EN 60079, NEC Article 500), electrolyser building ventilation (alkaline/PEM/SOEC/AEM), compressor and gas conditioning, LH2 cryogenic facility (-253°C), green ammonia synthesis. Australian H2 megaprojects: Asian Renewable Energy Hub Pilbara 26 GW, Western Green Energy Hub 50 GW, Murchison, Stanwell CQ-H2, Origin Hunter Valley, Hydrogen Headstart USD 2B funding. Global: Iberdrola Spain, NEOM Helios, Eneos Yokohama: https://sbkjduct.com/insights/hydrogen-production-hvac-duct-guide.html
+- Vertical Farming and CEA HVAC Duct Guide — VPD (Vapour Pressure Deficit) management 0.4-1.6 kPa, LED heat load 250-450 W/m² leaf canopy, leaf-level airflow 0.3-0.5 m/s, CO2 enrichment 800-1200 ppm, dehumidification 0.5-1.5 kg/h per m². CEA segments: vertical farms (leafy greens, microgreens), greenhouse, cannabis cultivation, tissue culture. Operators: AeroFarms, Plenty, Bowery, Infarm, Crop One, Bustanica UAE, Stacked Farm Australia, Cann Group/Little Green Pharma cannabis. SBKJ machinery for grow room rectangular supply: https://sbkjduct.com/insights/vertical-farming-cea-hvac-duct-guide.html
+
+## Industry hubs
+
+- Data Centers: https://sbkjduct.com/industries/data-center.html
+- Semiconductor Fabs: https://sbkjduct.com/industries/semiconductor.html
+- Cleanrooms (general): https://sbkjduct.com/industries/cleanroom.html
+- Hospitals: https://sbkjduct.com/industries/hospital.html
+- Mining Ventilation: https://sbkjduct.com/industries/mining.html
+- Cold Storage and Cold Chain: https://sbkjduct.com/industries/cold-chain.html
+- Food Processing: https://sbkjduct.com/industries/food-processing.html
+
+## Additional trade shows
+
+- **Big 5 Construct Saudi 2026** (Riyadh, 23-26 November 2026) — SBKJ Group exhibits at the largest construction trade show in the Kingdom of Saudi Arabia, focused on Vision 2030 megaproject procurement (NEOM, Qiddiya, Diriyah Gate, Red Sea, AMAALA, ROSHN, Riyadh Metro, Saudi Aramco). SASO/SABER conformity, GCC 5% MFN duty + 15% VAT. English/Arabic engineering consultations: https://sbkjduct.com/big-5-construct-saudi-2026.html
 
 ## Region hubs
 
