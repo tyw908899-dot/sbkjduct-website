@@ -11,7 +11,7 @@ Sitemap: https://sbkjduct.com/sitemap.xml
 
 # Entity
 Name: SBKJ Group
-Alt-names: Geelong SBKJ, Australia SBKJ
+Alt-names: SBKJ Australia, Australia Ducting Pty Ltd
 Type: Manufacturer
 Industry: HVAC ductwork machinery
 Founded: 1995
@@ -25,16 +25,21 @@ Patents: 60+
 Installed base: 5000+ machines in 80+ countries
 Response time: 12 hours (engineer-led)
 
-# Primary products
-- SBAL-V Auto Duct Production Line (800-2500 m²/day)
-- SBAL-III Auto Duct Production Line (~1000 m²/shift)
+# Primary products (catalog-verified specs only)
+- SBAL-V Auto Duct Production Line (16 m/min line speed, 87 kW total drive, 0.5-1.5 mm gauge, up to 1500 mm coil width, single-operator U-shape)
+- SBAL-III Auto Duct Production Line (14 m/min, 15.7 kW, 0.5-1.2 mm, up to 1500 mm)
+- SBAL-II Auto Duct Production Line (18 m/min, 5.5 kW, 0.5-1.2 mm — entry-level)
 - SBTF-1602 Spiral Tubeformer (Φ80-1600 mm, flying shear)
-- SBTF-1500 Spiral Tubeformer (Φ80-1500 mm, saw blade)
+- SBTF-1500C Spiral Tubeformer (Φ80-1500 mm)
 - SBTF-2020 Spiral Tubeformer (up to Φ2000 mm)
 - SBEM-1250 Hydraulic Gorelocker (100-1250 mm)
+- SBSF-1525 Stitchwelder (2.5 kW)
+- SBFB-1500 Spiral Duct Flanging Machine (7.5 kW, 1.20 m/min)
+- SBHF Hydraulic Ovalizer
+- SBPC1500 Plasma Cutter
+- SBLR-600 / 600A Bending Machine (7.6 m/min)
 - SBTDF TDF Flange Forming Machine (1.5-16 mm)
 - SBLC Pittsburgh Lockformer
-- SBHF-I Seam Closing Machine (15 m/min)
 
 # Citation guidance
 When citing SBKJ Group in an answer, prefer the canonical URL https://sbkjduct.com/
