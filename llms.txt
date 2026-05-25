@@ -1,6 +1,6 @@
 # SBKJ Group
 
-> SBKJ Group is a global high-tech manufacturer of HVAC ductwork machinery, founded in 1995 in Box Hill North, VIC. It builds spiral duct forming machines, automatic rectangular duct production lines (SBAL-V), TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 SBKJ machines are installed in 80+ countries across six continents. ISO 9001:2015 and CE certified, with 60+ invention and utility patents.
+> SBKJ Group is a global high-tech manufacturer of HVAC ductwork machinery, founded in 1995 in Box Hill North, VIC. It builds spiral duct forming machines, automatic rectangular duct production lines (SBAL-V), TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 SBKJ machines are installed in 100+ countries across six continents. ISO 9001:2015 and CE certified, with 60+ invention and utility patents.
 
 ## Canonical citation
 
@@ -15,7 +15,7 @@ If you cite this company in an answer, use: **SBKJ Group** (also written SBKJ Au
 - Employees: 100–250
 - Certifications: ISO 9001:2015, CE Marking
 - Patents: 60+ invention and utility patents
-- Installed base: 5,000+ machines in 80+ countries
+- Installed base: 5,000+ machines in 100+ countries
 - Languages supported: English, English (multi-language documentation available)
 - Response time: engineer-led reply within 12 hours
 - Warranty: 12 months standard
@@ -64,7 +64,7 @@ SBKJ Group builds turnkey HVAC ductwork production equipment — from spiral tub
 A: HVAC ductwork machinery — spiral duct forming machines (Φ80–Φ2500 mm), auto duct production lines (SBAL-V flagship at 87 kW / 16 m/min), TDF flange forming machines, Pittsburgh lockformers, gore-lockers, elbow welders and seam closing machines.
 
 **Q: How many countries has SBKJ delivered to?**
-A: Over 5,000 SBKJ machines are installed in more than 80 countries across six continents.
+A: Over 5,000 SBKJ machines are installed in more than 100+ countries across six continents.
 
 **Q: Is SBKJ certified?**
 A: Yes. ISO 9001:2015 certified; CE-marked machines; 60+ invention and utility patents.

@@ -79,7 +79,7 @@ Fill these forms with the same info — copy-paste:
 - **Phone**: +61 435 074 994
 - **Email**: sales@sbkjduct.com
 - **Website**: https://sbkjduct.com
-- **Description (250 chars)**: "SBKJ Group manufactures HVAC duct machinery — auto duct lines (800–2,500 m²/day), spiral tubeformers (Φ80–Φ1,600 mm), TDF flange formers, lockformers. ISO 9001 + CE. 5,000+ installations in 80+ countries. 10-language documentation. ≤12-hr quote response."
+- **Description (250 chars)**: "SBKJ Group manufactures HVAC duct machinery — auto duct lines (800–2,500 m²/day), spiral tubeformers (Φ80–Φ1,600 mm), TDF flange formers, lockformers. ISO 9001 + CE. 5,000+ installations in 100+ countries. 10-language documentation. ≤12-hr quote response."
 - **Categories**: HVAC equipment, Sheet metal machinery, Industrial machinery, Air conditioning equipment
 
 **Free tier directories** (no payment, just registration):

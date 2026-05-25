@@ -24,7 +24,7 @@ This folder is your source of truth for anything SBKJ-branded. Use it instead of
 - **Voice:** direct, spec-accurate, outcome-first. Write to the buyer.
 - **Numbers:** unit-attached, en-dash for ranges (`0.5–1.5 mm`, `800–2,500 m²/day`), `×` for dimensions, `Φ` for duct diameters.
 - **CTAs, always dual:** primary = "Request a Quote →" / "Request Formal Quotation →"; secondary = "WhatsApp Ryan" / "WhatsApp an Engineer".
-- **Proof refrain:** `30+ years · 80+ countries · 5,000+ machines · ISO 9001 · CE`. Appears in hero, stats band, CTA, footer tagline.
+- **Proof refrain:** `30+ years · 100+ countries · 5,000+ machines · ISO 9001 · CE`. Appears in hero, stats band, CTA, footer tagline.
 - **Certs literal:** "ISO 9001:2015 Quality Management", "CE Certified Machinery". No vague "certified" claims.
 - **No emoji in brand surfaces.** Flag emoji (🇻🇳 🇸🇦) on case-study region markers only.
 
