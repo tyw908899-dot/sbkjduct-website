@@ -371,6 +371,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Paint, Coatings, Printing Ink, Resin, Adhesive & Sealant Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/paint-coatings-ink-resin-adhesive-sealant-manufacturing-hvac-duct-guide.html
 - Plasterboard, Gypsum, Fibre Cement & Building-Board Panel Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/plasterboard-gypsum-fibre-cement-building-board-panel-manufacturing-hvac-duct-guide.html
 
+- Cable, Wire, Electrical Conductor & Fibre-Optic Manufacturing HVAC Duct Guide — XLPE, PVC, Wire Drawing, Annealing & Draw Tower: https://sbkjduct.com/insights/cable-wire-electrical-conductor-fibre-optic-manufacturing-hvac-duct-guide.html
+- Soap, Detergent, Surfactant, Household-Cleaning & Personal-Care Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/soap-detergent-surfactant-household-personal-care-cleaning-products-manufacturing-hvac-duct-guide.html
+
 ## Conversion / engagement pages
 
 - **Schedule a Factory Tour** — Private 3-hour visit at SBKJ Box Hill North, Victoria. Production floor walkthrough + live machine operation against your nominated coil + private engineering consultation. Free for qualified buyers. Tuesdays and Thursdays year-round. Service + HowTo + FAQPage schema: https://sbkjduct.com/factory-tour.html
