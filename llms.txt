@@ -368,6 +368,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Telecom Tower, 5G Base Station, Outdoor Shelter, NBN POI & Edge DC HVAC Duct Guide — Australia: https://sbkjduct.com/insights/telecom-tower-mobile-base-station-outdoor-equipment-shelter-5g-nbn-edge-hvac-duct-guide.html
 - Theme Park, Aquarium, Zoo, Wildlife Park, Aquatic Centre, Snow Dome and Ride HVAC Duct Guide: https://sbkjduct.com/insights/theme-park-aquarium-zoo-wildlife-park-aquatic-snow-dome-ride-hvac-duct-guide.html
 
+- Paint, Coatings, Printing Ink, Resin, Adhesive & Sealant Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/paint-coatings-ink-resin-adhesive-sealant-manufacturing-hvac-duct-guide.html
+- Plasterboard, Gypsum, Fibre Cement & Building-Board Panel Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/plasterboard-gypsum-fibre-cement-building-board-panel-manufacturing-hvac-duct-guide.html
+
 ## Conversion / engagement pages
 
 - **Schedule a Factory Tour** — Private 3-hour visit at SBKJ Box Hill North, Victoria. Production floor walkthrough + live machine operation against your nominated coil + private engineering consultation. Free for qualified buyers. Tuesdays and Thursdays year-round. Service + HowTo + FAQPage schema: https://sbkjduct.com/factory-tour.html
