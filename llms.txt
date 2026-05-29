@@ -377,6 +377,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Rail Rollingstock, Locomotive, Railcar & Train Manufacturing & Assembly Plant HVAC Duct Guide: https://sbkjduct.com/insights/rail-rollingstock-locomotive-railcar-train-manufacturing-assembly-hvac-duct-guide.html
 - Pump, Valve, Compressor & Fluid-Handling Equipment Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/pump-valve-compressor-fluid-handling-equipment-manufacturing-hvac-duct-guide.html
 
+- Switchgear, Transformer, Electrical Equipment, Motor & Generator Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/switchgear-transformer-electrical-equipment-motor-generator-manufacturing-hvac-duct-guide.html
+- Fertilizer, Superphosphate, NPK, Urea, Sulphuric Acid & Agricultural Chemical Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/fertilizer-superphosphate-npk-urea-agricultural-chemical-manufacturing-hvac-duct-guide.html
+
 ## Conversion / engagement pages
 
 - **Schedule a Factory Tour** — Private 3-hour visit at SBKJ Box Hill North, Victoria. Production floor walkthrough + live machine operation against your nominated coil + private engineering consultation. Free for qualified buyers. Tuesdays and Thursdays year-round. Service + HowTo + FAQPage schema: https://sbkjduct.com/factory-tour.html
