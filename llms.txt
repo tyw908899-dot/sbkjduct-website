@@ -386,6 +386,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Agricultural Machinery, Tractor, Harvester, Seeder, Sprayer & Farm-Implement Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/agricultural-machinery-tractor-harvester-implement-farm-equipment-manufacturing-hvac-duct-guide.html
 - Refractory, Firebrick, Kiln Furniture, Ceramic Fibre & Monolithic Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/refractory-firebrick-kiln-furniture-ceramic-fibre-monolithic-manufacturing-hvac-duct-guide.html
 
+- Mining Equipment, Earthmoving, Crusher, Wear-Parts & Ground-Engaging-Tools Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/mining-equipment-earthmoving-crusher-wear-parts-ground-engaging-tools-manufacturing-hvac-duct-guide.html
+- Fastener, Bolt, Screw, Nut, Nail, Rivet, Spring & Wireform Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/fastener-bolt-screw-nail-rivet-spring-wireform-manufacturing-hvac-duct-guide.html
+
 ## Conversion / engagement pages
 
 - **Schedule a Factory Tour** — Private 3-hour visit at SBKJ Box Hill North, Victoria. Production floor walkthrough + live machine operation against your nominated coil + private engineering consultation. Free for qualified buyers. Tuesdays and Thursdays year-round. Service + HowTo + FAQPage schema: https://sbkjduct.com/factory-tour.html
