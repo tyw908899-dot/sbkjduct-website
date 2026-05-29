@@ -389,6 +389,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Mining Equipment, Earthmoving, Crusher, Wear-Parts & Ground-Engaging-Tools Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/mining-equipment-earthmoving-crusher-wear-parts-ground-engaging-tools-manufacturing-hvac-duct-guide.html
 - Fastener, Bolt, Screw, Nut, Nail, Rivet, Spring & Wireform Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/fastener-bolt-screw-nail-rivet-spring-wireform-manufacturing-hvac-duct-guide.html
 
+- HVAC Equipment, Air Conditioner, Chiller, AHU, Fan-Coil, Fan, Cooling Tower & Evaporative Cooler Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/hvac-equipment-air-conditioner-chiller-ahu-fan-evaporative-cooler-manufacturing-hvac-duct-guide.html
+- Abrasives, Grinding Wheel, Cutting Disc & Coated Abrasive Manufacturing HVAC Duct Guide — RCS Silica, Phenolic Resin Cure & Firing Kiln LEV: https://sbkjduct.com/insights/abrasives-grinding-wheel-coated-abrasive-cutting-disc-manufacturing-hvac-duct-guide.html
+
 ## Conversion / engagement pages
 
 - **Schedule a Factory Tour** — Private 3-hour visit at SBKJ Box Hill North, Victoria. Production floor walkthrough + live machine operation against your nominated coil + private engineering consultation. Free for qualified buyers. Tuesdays and Thursdays year-round. Service + HowTo + FAQPage schema: https://sbkjduct.com/factory-tour.html
