@@ -383,6 +383,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Elevator, Lift, Escalator & Travelator Manufacturing & Assembly HVAC Duct Guide — Weld-Fume LEV, Powder-Coat & AS 1735: https://sbkjduct.com/insights/elevator-lift-escalator-travelator-manufacturing-assembly-hvac-duct-guide.html
 - Industrial Gas, Air Separation Unit, Oxygen, Nitrogen, Argon, Acetylene, CO2, Hydrogen & Medical Gas Production HVAC Duct Guide: https://sbkjduct.com/insights/industrial-gas-air-separation-oxygen-nitrogen-argon-acetylene-co2-medical-gas-production-hvac-duct-guide.html
 
+- Agricultural Machinery, Tractor, Harvester, Seeder, Sprayer & Farm-Implement Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/agricultural-machinery-tractor-harvester-implement-farm-equipment-manufacturing-hvac-duct-guide.html
+- Refractory, Firebrick, Kiln Furniture, Ceramic Fibre & Monolithic Manufacturing HVAC Duct Guide: https://sbkjduct.com/insights/refractory-firebrick-kiln-furniture-ceramic-fibre-monolithic-manufacturing-hvac-duct-guide.html
+
 ## Conversion / engagement pages
 
 - **Schedule a Factory Tour** — Private 3-hour visit at SBKJ Box Hill North, Victoria. Production floor walkthrough + live machine operation against your nominated coil + private engineering consultation. Free for qualified buyers. Tuesdays and Thursdays year-round. Service + HowTo + FAQPage schema: https://sbkjduct.com/factory-tour.html
