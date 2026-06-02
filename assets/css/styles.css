@@ -3181,9 +3181,10 @@ a:hover { opacity: 0.85; }
 }
 .line-card:hover { opacity: 0.85; }
 .line-visual {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: var(--bg-elevated);
+  background: #f4f5f7;
+  border-radius: 14px;
   position: relative;
 }
 .line-visual::after {
@@ -3215,7 +3216,9 @@ a:hover { opacity: 0.85; }
 }
 .line-visual img {
   width: 100%; height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 18px;
+  box-sizing: border-box;
   transition: transform .6s ease;
 }
 .line-card:hover .line-visual img {
