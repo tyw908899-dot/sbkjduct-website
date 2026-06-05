@@ -690,7 +690,7 @@ img {
 .page-hero,
 .machines-hero,
 .product-hero {
-  padding-block: clamp(140px, 16vw, 220px) clamp(60px, 8vw, 120px);
+  padding-block: clamp(100px, 12vw, 150px) clamp(48px, 6vw, 84px);
   text-align: left;
   background: var(--bg);
   position: relative;
@@ -2847,7 +2847,7 @@ body.has-hero-dark .site-header:not(.header-scrolled) .eyebrow {
 }
 
 /* ---------- SECTIONS ---------- */
-section.section { padding-block: clamp(90px, 11vw, 180px); }
+section.section { padding-block: clamp(52px, 7vw, 104px); }
 .section-header {
   text-align: left;
   max-width: none;
