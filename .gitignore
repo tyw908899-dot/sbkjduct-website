@@ -3,3 +3,8 @@ node_modules/
 _scripts/
 .claude/
 .indexnow-key
+
+# analysis helper scripts (not served)
+_*.py
+_*.json
+_*.txt
