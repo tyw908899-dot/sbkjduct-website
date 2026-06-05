@@ -107,7 +107,7 @@
     { keys:["all","everything","catalog","所有","全部","目录"], response:"all" },
     { keys:["hello","hi","hey","你好","您好","help","帮"], response:"greeting" },
     { keys:["price","cost","quote","价格","多少钱","报价"], response:"price" },
-    { keys:["contact","phone","email","whatsapp","联系","电话","微信"], response:"contact" },
+    { keys:["contact","phone","email","whatsapp","联系","电话"], response:"contact" },
   ];
 
   const RESPONSES = {
