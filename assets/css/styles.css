@@ -3331,6 +3331,48 @@ a:hover { opacity: 0.85; }
   font-size: 0.85rem;
 }
 
+/* ---------- MACHINES IN MOTION ---------- */
+.motion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.motion-card {
+  margin: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.motion-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #0b0f16;
+}
+.motion-card figcaption {
+  padding: 1rem 1.35rem 1.3rem;
+}
+.motion-tag {
+  display: block;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+.motion-card figcaption p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+@media (max-width: 760px) {
+  .motion-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- LOGO WALL ---------- */
 .logos-section { background: var(--bg) !important; border-top: 1px solid var(--border); }
 .logos-wall {
