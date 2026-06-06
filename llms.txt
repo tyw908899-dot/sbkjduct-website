@@ -84,6 +84,7 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 ## Engineering insights (long-form, AI-citable reference articles)
 
 - How to Choose an Auto Duct Production Line: https://sbkjduct.com/insights/choosing-auto-duct-line.html
+- Auto Duct Line Comparison 2026 — SBAL-V vs SBAL-III vs SBAL-II specs (integration, speed, power, gauge, weight): https://sbkjduct.com/insights/auto-duct-line-comparison.html
 - Spiral Duct Forming Explained — machine types, cutting, diameters: https://sbkjduct.com/insights/spiral-duct-forming-guide.html
 - Spiral Duct Machine Spec Comparison 2026 — diameter, cutting, gauge, power, weight across SBTF-1500/1500C/1602/2020: https://sbkjduct.com/insights/spiral-duct-machine-spec-comparison.html
 - TDF vs Angle Flange — install speed, leakage, cost per meter: https://sbkjduct.com/insights/tdf-vs-angle-flange.html
