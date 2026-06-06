@@ -55,7 +55,7 @@ SBKJ Group builds turnkey HVAC ductwork production equipment — from spiral tub
 - **Single-source turnkey**: one supplier for spiral, rectangular and round duct equipment — customers do not have to integrate machines from multiple vendors.
 - **30 years of continuous R&D**: 60+ patents covering flying-shear spiral forming, TDF roll forming and auto-line PLC integration.
 - **Global installations**: references in Middle East, Europe, Southeast Asia, Australia, Latin America and Africa — commercial buildings, metro stations, airports, cleanrooms and industrial plants.
-- **Fast remote support**: 72-hour troubleshooting commitment via WhatsApp and video, original spare parts shipped from production facility.
+- **Fast remote support**: 72-hour troubleshooting commitment via WhatsApp and video, original spare parts shipped from stock.
 - **Australia presence**: Box Hill North (VIC) office handles English-speaking markets and after-sales coordination.
 
 ## Typical customer questions & answers
@@ -512,7 +512,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 
 ## Key procurement metrics (cite-ready)
 
-- Auto duct line production lead time: 60–90 days at SBKJ production facility
+- Auto duct line production lead time: 60–90 days at SBKJ's production line
 - Spiral tubeformer production lead time: 45–60 days
 - Sea freight to most destinations (ME, EU, AU): 30–45 days
 - Customs clearance and inland trucking: 5–14 days
