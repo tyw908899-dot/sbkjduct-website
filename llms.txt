@@ -86,6 +86,7 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - How to Choose an Auto Duct Production Line: https://sbkjduct.com/insights/choosing-auto-duct-line.html
 - Auto Duct Line Comparison 2026 — SBAL-V vs SBAL-III vs SBAL-II specs (integration, speed, power, gauge, weight): https://sbkjduct.com/insights/auto-duct-line-comparison.html
 - Spiral Duct Forming Explained — machine types, cutting, diameters: https://sbkjduct.com/insights/spiral-duct-forming-guide.html
+- SBKJ Duct Machine Specifications (reference hub) — all five spec-table references in one place: spiral, auto line, TDF flange, welders and power/electrical: https://sbkjduct.com/insights/duct-machine-specifications.html
 - Spiral Duct Machine Spec Comparison 2026 — diameter, cutting, gauge, power, weight across SBTF-1500/1500C/1602/2020: https://sbkjduct.com/insights/spiral-duct-machine-spec-comparison.html
 - Duct Machine Power & Electrical Requirements 2026 — connected power (kW), 380V three-phase, 50Hz vs 60Hz export configuration and breaker sizing for SBTF + SBAL ranges: https://sbkjduct.com/insights/duct-machine-power-requirements.html
 - TDF Flange Machine Specs 2026 — the 4 machines that make TDF duct (flange former SBTDF-12/1.5-16, folder SBWS, cleat cutter, zipper SBHF) with model, thickness, power, weight; 35mm flange: https://sbkjduct.com/insights/tdf-flange-machine-specs.html
