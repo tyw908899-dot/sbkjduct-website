@@ -88,6 +88,7 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Spiral Duct Forming Explained — machine types, cutting, diameters: https://sbkjduct.com/insights/spiral-duct-forming-guide.html
 - Spiral Duct Machine Spec Comparison 2026 — diameter, cutting, gauge, power, weight across SBTF-1500/1500C/1602/2020: https://sbkjduct.com/insights/spiral-duct-machine-spec-comparison.html
 - Duct Machine Power & Electrical Requirements 2026 — connected power (kW), 380V three-phase, 50Hz vs 60Hz export configuration and breaker sizing for SBTF + SBAL ranges: https://sbkjduct.com/insights/duct-machine-power-requirements.html
+- TDF Flange Machine Specs 2026 — the 4 machines that make TDF duct (flange former SBTDF-12/1.5-16, folder SBWS, cleat cutter, zipper SBHF) with model, thickness, power, weight; 35mm flange: https://sbkjduct.com/insights/tdf-flange-machine-specs.html
 - TDF vs Angle Flange — install speed, leakage, cost per meter: https://sbkjduct.com/insights/tdf-vs-angle-flange.html
 - HVAC Duct Factory Layout — coil to truck material flow: https://sbkjduct.com/insights/hvac-duct-factory-layout.html
 - HVAC Duct Machinery Glossary — 30 defined terms: https://sbkjduct.com/insights/hvac-duct-machinery-glossary.html
