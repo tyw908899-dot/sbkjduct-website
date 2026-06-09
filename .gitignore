@@ -8,3 +8,7 @@ _scripts/
 _*.py
 _*.json
 _*.txt
+
+# temp images created for external directory uploads (not site content)
+sbkj_listing_400.jpg
+sbkj_logo_400.png
