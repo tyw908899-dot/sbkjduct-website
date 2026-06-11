@@ -13,7 +13,7 @@
 <meta content="website" property="og:type"/>
 <meta content="https://sbkjduct.com/assets/images/sbtf-1602.jpg" property="og:image"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="/assets/css/styles.css?v=29" rel="stylesheet"/>
+<link href="/assets/css/styles.css?v=30" rel="stylesheet"/>
 <meta content="SBKJ Group" property="og:site_name"/>
 <meta content="hi_IN" property="og:locale"/>
 <meta content="@sbkjgroup" name="twitter:site"/>
@@ -210,6 +210,10 @@
 <div class="shell">
 <h2 class="machines-section-title" data-i18n="mach.all.title">श्रेणी के अनुसार सभी उत्पाद</h2>
 <p class="machines-section-lead" data-i18n="mach.all.lead">इमेज, वीडियो, परिचय और पैरामीटर के साथ डिटेल पेज देखने के लिए किसी भी मशीन पर क्लिक करें।</p>
+<div class="insights-toolbar" style="max-width:28rem;margin:0 0 1.75rem;">
+<input aria-label="Filter machines" autocomplete="off" class="insights-filter" data-i18n-placeholder="mach.filter.ph" id="machinesFilter" placeholder='मशीनें फ़िल्टर करें… जैसे "स्पाइरल", "TDF", "प्लाज़्मा"' type="search"/>
+<p class="insights-count" id="machinesCount"></p>
+</div>
 <div class="machines-catalog-grid">
 <div class="machines-category">
 <h3 data-i18n="mach.cat.spiral">स्पाइरल ट्यूबफॉर्मर</h3>
@@ -324,6 +328,31 @@
 </div>
 </div>
 <p class="machines-catalog-note" data-i18n="mach.note">फोटो और विस्तृत विनिर्देशों के लिए हमसे संपर्क करें।</p>
+<script>
+        (function () {
+          var inp = document.getElementById('machinesFilter');
+          if (!inp) return;
+          var cats = [].slice.call(document.querySelectorAll('.machines-catalog-grid .machines-category'));
+          var items = [].slice.call(document.querySelectorAll('.machines-catalog-grid .machines-category li'));
+          var count = document.getElementById('machinesCount');
+          var total = items.length;
+          inp.addEventListener('input', function () {
+            var q = inp.value.trim().toLowerCase();
+            var shown = 0;
+            items.forEach(function (li) {
+              var v = !q || li.textContent.toLowerCase().indexOf(q) > -1;
+              li.style.display = v ? '' : 'none';
+              if (v) shown++;
+            });
+            cats.forEach(function (c) {
+              var any = false;
+              [].slice.call(c.querySelectorAll('li')).forEach(function (li) { if (li.style.display !== 'none') any = true; });
+              c.style.display = any ? '' : 'none';
+            });
+            count.textContent = q ? (shown + ' / ' + total) : '';
+          });
+        })();
+        </script>
 </div>
 </section>
 <section class="section" id="buyers-guide">
