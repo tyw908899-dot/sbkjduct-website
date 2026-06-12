@@ -156,5 +156,92 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // Site search — button injected into the header; index lazy-loaded from
+  // /search-index.json on first open (regen via _scripts/gen_search_index.py)
+  (() => {
+    const headerInner = document.querySelector(".site-header-inner");
+    if (!headerInner || document.getElementById("sbSearchBtn")) return;
+    const btn = document.createElement("button");
+    btn.id = "sbSearchBtn";
+    btn.className = "site-search-btn";
+    btn.setAttribute("aria-label", "Search the site");
+    btn.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
+    headerInner.insertBefore(btn, headerInner.querySelector(".nav-toggle"));
+
+    let overlay = null, input = null, list = null, idx = null, isOpen = false;
+    const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+    const build = () => {
+      overlay = document.createElement("div");
+      overlay.className = "search-overlay";
+      overlay.hidden = true;
+      overlay.innerHTML =
+        '<div class="search-panel" role="dialog" aria-modal="true" aria-label="Site search">' +
+        '<input type="search" class="search-input" placeholder="Search machines, guides, shows&hellip;" autocomplete="off" aria-label="Search query">' +
+        '<div class="search-results" role="listbox"></div>' +
+        '<p class="search-hint"><kbd>Esc</kbd> to close &middot; <kbd>Enter</kbd> opens the first result</p></div>';
+      document.body.appendChild(overlay);
+      input = overlay.querySelector(".search-input");
+      list = overlay.querySelector(".search-results");
+      overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
+      input.addEventListener("input", () => render(input.value));
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") { const a = list.querySelector("a"); if (a) location.href = a.href; }
+      });
+    };
+
+    const load = () => idx ? Promise.resolve(idx)
+      : fetch("/search-index.json").then((r) => r.json()).then((d) => (idx = d)).catch(() => (idx = []));
+
+    const scoreItem = (it, toks) => {
+      let s = 0;
+      const t = it.t.toLowerCase(), d = (it.d || "").toLowerCase();
+      for (const q of toks) {
+        const ti = t.indexOf(q);
+        if (ti === 0) s += 5;
+        else if (ti > -1) s += 3;
+        else if (d.indexOf(q) > -1) s += 1;
+        else return 0;
+      }
+      return s;
+    };
+
+    const render = (q) => {
+      const toks = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      if (!toks.length) { list.innerHTML = ""; return; }
+      if (!idx) { list.innerHTML = '<p class="search-empty">Loading&hellip;</p>'; return; }
+      const hits = idx.map((it) => [scoreItem(it, toks), it]).filter((x) => x[0] > 0)
+        .sort((a, b) => (b[0] - a[0]) || (a[1].t.length - b[1].t.length)).slice(0, 10);
+      list.innerHTML = hits.length
+        ? hits.map(([, it]) =>
+            '<a class="search-result" href="' + it.u + '"><span class="search-result-title">' + esc(it.t) +
+            '</span><span class="search-result-meta">' + esc(it.k) + "</span></a>").join("")
+        : '<p class="search-empty">No results &mdash; try "spiral", "TDF", "SMACNA", "Brisbane"&hellip;</p>';
+    };
+
+    const open = () => {
+      if (!overlay) build();
+      overlay.hidden = false;
+      isOpen = true;
+      document.body.style.overflow = "hidden";
+      load().then(() => render(input.value));
+      setTimeout(() => input.focus(), 30);
+    };
+    const close = () => {
+      overlay.hidden = true;
+      isOpen = false;
+      document.body.style.overflow = "";
+      btn.focus();
+    };
+
+    btn.addEventListener("click", open);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && isOpen) close();
+      else if (e.key === "/" && !isOpen && !/^(input|textarea|select)$/i.test((document.activeElement || {}).tagName || "")) {
+        e.preventDefault(); open();
+      }
+    });
+  })();
 });
 

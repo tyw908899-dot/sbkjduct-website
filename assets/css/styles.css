@@ -4862,3 +4862,19 @@ body {
 .insights-list h3 { font-size: clamp(1.15rem, 1.6vw, 1.4rem) !important; font-weight: 500 !important; letter-spacing: -0.01em !important; line-height: 1.25; margin: 0 0 0.5rem; }
 .insights-list h3 a { color: var(--text); text-decoration: none; border-bottom: none !important; }
 .insights-list h3 a:hover { color: var(--accent); }
+
+/* site search */
+.site-search-btn { background: none; border: 1px solid var(--border); border-radius: 999px; color: var(--text-muted); width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; margin-left: 0.75rem; flex: none; transition: var(--transition); }
+.site-search-btn:hover { color: var(--accent); border-color: var(--border-focus); }
+.search-overlay { position: fixed; inset: 0; background: rgba(10, 14, 20, 0.55); backdrop-filter: blur(4px); z-index: 1000; display: flex; align-items: flex-start; justify-content: center; padding: 12vh 1rem 0; }
+.search-panel { width: 100%; max-width: 34rem; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1rem; }
+.search-input { width: 100%; padding: 0.85rem 1rem; font-size: 1.05rem; font-family: var(--font-body); border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-elevated); color: var(--text); }
+.search-input:focus { outline: none; border-color: var(--border-focus); }
+.search-results { max-height: 50vh; overflow-y: auto; margin-top: 0.5rem; }
+.search-result { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; padding: 0.65rem 0.75rem; border-radius: 8px; text-decoration: none; }
+.search-result:hover { background: var(--accent-dim); }
+.search-result-title { color: var(--text); font-size: 0.95rem; }
+.search-result-meta { color: var(--text-dim); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
+.search-empty, .search-hint { color: var(--text-muted); font-size: 0.85rem; padding: 0.5rem 0.75rem; margin: 0; }
+.search-hint kbd { border: 1px solid var(--border); border-radius: 4px; padding: 0 4px; font-size: 0.75rem; font-family: var(--font-body); }
+@media (max-width: 640px) { .search-overlay { padding-top: 6vh; } .site-search-btn { width: 34px; height: 34px; margin-left: 0.5rem; } }
