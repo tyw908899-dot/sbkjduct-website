@@ -242,6 +242,11 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault(); open();
       }
     });
+
+    // honour the WebSite SearchAction URL template (?s=) and plain ?q=
+    const params = new URLSearchParams(location.search);
+    const preQ = params.get("s") || params.get("q");
+    if (preQ) { open(); input.value = preQ; }
   })();
 });
 
