@@ -3831,8 +3831,9 @@ p a:hover { border-bottom-color: var(--accent); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-video { display: none; }
-  .hero { background: #000 url('../images/sbal-v.jpg') center/cover no-repeat !important; }
+  /* hero video stays visible and playing (owner decision 2026-06-12 — many
+     Windows machines report reduce because OS animations are off, not by
+     user a11y choice; the muted conveyor footage is low-motion content) */
   *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
 }
 

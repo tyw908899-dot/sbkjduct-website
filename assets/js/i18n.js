@@ -114,7 +114,7 @@
     if (!LANGS[lang]) return;
     localStorage.setItem("sbkj-lang", lang);
     var u = staticLangUrl(lang);
-    if (u) { try { sessionStorage.setItem("sbkj-noredir", "1"); } catch (e) {} window.location.href = u; return; }
+    if (u) { window.location.href = u; return; }
     currentLang = lang;
     loadLang(lang, applyTranslations);
   }
@@ -138,14 +138,12 @@
   }
 
   function init() {
+    // Pages with a static /<lang>/ version always load as authored English;
+    // language changes only on an explicit switcher click (owner decision
+    // 2026-06-12: the EN URL must never auto-switch).
+    if (GEN_PAGES[normPath()]) { currentLang = "en"; createSwitcher(); return; }
     createSwitcher();
-    if (currentLang !== "en") {
-      var u = staticLangUrl(currentLang);
-      var guard = null;
-      try { guard = sessionStorage.getItem("sbkj-noredir"); } catch (e) {}
-      if (u && !guard) { try { sessionStorage.setItem("sbkj-noredir", "1"); } catch (e) {} window.location.replace(u); return; }
-      loadLang(currentLang, applyTranslations);
-    }
+    if (currentLang !== "en") loadLang(currentLang, applyTranslations);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
   window.SBKJ_i18n = { t: t, setLang: setLang, currentLang: function () { return currentLang; } };
