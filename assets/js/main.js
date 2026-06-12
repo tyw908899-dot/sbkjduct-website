@@ -58,6 +58,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Hero video: some environments (OS reduced-motion, battery/energy saver)
+  // suppress autoplay even for muted video. A scripted muted play() is
+  // allowed, so nudge it after load and once more on first interaction.
+  const heroVideo = document.querySelector(".hero-video");
+  if (heroVideo) {
+    const nudge = () => { if (heroVideo.paused) heroVideo.play().catch(() => {}); };
+    nudge();
+    setTimeout(nudge, 1500);
+    document.addEventListener("pointerdown", nudge, { once: true });
+  }
+
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (e) => {
