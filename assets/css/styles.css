@@ -4918,3 +4918,39 @@ body {
 .gauge-conv select:focus, .gauge-conv input:focus { outline: none; border-color: var(--border-focus); }
 .gauge-conv-out { font-size: 1.15rem; color: var(--text); margin: 0.5rem 0 0; padding: 0.85rem 1rem; background: var(--bg); border-radius: var(--radius); font-variant-numeric: tabular-nums; }
 @media (max-width: 600px) { .gauge-conv-cols { grid-template-columns: 1fr; } }
+
+/* print stylesheet */
+@media print {
+  /* chrome/widgets/animation that don't belong on paper */
+  .site-header, .nav-toggle, .lang-switcher, .site-search-btn, .skip-link,
+  .hero-video, #cursorGlow, .fab-whatsapp, #sbChatWidget, .event-bar-wrapper,
+  .scroll-indicator, .search-overlay, .page-review-section, .footer-social,
+  .footer-langs, video, .breadcrumbs-wrap { display: none !important; }
+
+  /* reveal-on-scroll content starts at opacity:0 — force it visible for print */
+  .reveal, .reveal-stagger, .reveal > *, .reveal-stagger > * {
+    opacity: 1 !important; transform: none !important; }
+
+  /* paper basics: white ground, black ink, sane margins */
+  html, body { background: #fff !important; color: #111 !important; }
+  body { font-size: 11.5pt; line-height: 1.45; }
+  @page { margin: 16mm 14mm; }
+
+  /* neutralise dark/gradient/accent section backgrounds so text prints legibly */
+  .hero, .cta-final, .bg-subtle, .stats-band, [class*="bg-dark"],
+  section, .section, .selector, .roi-calc, .gauge-conv {
+    background: #fff !important; color: #111 !important; box-shadow: none !important; }
+  .hero { min-height: auto !important; padding: 0 0 1rem !important; }
+  .hero h1, .page-title, h1, h2, h3 { color: #111 !important; }
+  a { color: #111 !important; text-decoration: underline; }
+
+  /* keep tables and headings intact across page breaks */
+  table, .table-wrap, .spec-table { break-inside: auto; }
+  tr, .sel-machine, .roi-stat, .solution-block { break-inside: avoid; }
+  thead { display: table-header-group; }
+  h1, h2, h3 { break-after: avoid; }
+  img { max-width: 100% !important; }
+
+  /* footer: keep the contact essentials, drop the rest of the grid noise */
+  .site-footer { border-top: 1px solid #ccc; padding-top: 0.5rem; }
+}
