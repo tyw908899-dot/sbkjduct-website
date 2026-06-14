@@ -69,7 +69,7 @@
     document.documentElement.lang = currentLang;
     document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
     var sel = document.getElementById("sbLangCurrent");
-    if (sel) sel.textContent = LANGS[currentLang].flag + " " + LANGS[currentLang].label;
+    if (sel) sel.innerHTML = LANGS[currentLang].flag + ' <span class="lang-label">' + LANGS[currentLang].label + "</span>";
     var chatInput = document.getElementById("sbChatInput");
     if (chatInput && currentLang !== "en") { var ph = t("chat.placeholder"); if (ph != null) { stash(chatInput, "placeholder"); chatInput.placeholder = ph; } }
     else if (chatInput && chatInput.dataset._i18nOrig != null) { chatInput.placeholder = chatInput.dataset._i18nOrig; }
@@ -126,7 +126,7 @@
     wrap.className = "lang-switcher";
     var optionsHtml = "";
     for (var code in LANGS) optionsHtml += '<button class="lang-option" data-lang="' + code + '">' + LANGS[code].flag + " " + LANGS[code].label + "</button>";
-    wrap.innerHTML = '<button class="lang-toggle" id="sbLangToggle" aria-expanded="false"><span id="sbLangCurrent">' + LANGS[currentLang].flag + " " + LANGS[currentLang].label + '</span><svg viewBox="0 0 12 12" width="10" height="10"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button><div class="lang-dropdown" id="sbLangDropdown">' + optionsHtml + '</div>';
+    wrap.innerHTML = '<button class="lang-toggle" id="sbLangToggle" aria-expanded="false" aria-label="Change language"><span id="sbLangCurrent">' + LANGS[currentLang].flag + ' <span class="lang-label">' + LANGS[currentLang].label + '</span></span><svg viewBox="0 0 12 12" width="10" height="10"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></button><div class="lang-dropdown" id="sbLangDropdown">' + optionsHtml + '</div>';
     nav.parentElement.insertBefore(wrap, nav.nextSibling);
     var toggle = document.getElementById("sbLangToggle");
     var dropdown = document.getElementById("sbLangDropdown");

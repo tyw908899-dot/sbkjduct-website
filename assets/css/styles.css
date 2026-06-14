@@ -2096,8 +2096,10 @@ img {
 [dir="rtl"] .lang-option { text-align: right; }
 
 @media (max-width: 768px) {
-  .lang-switcher { margin-left: 0; margin-top: 12px; }
-  .lang-dropdown { right: auto; left: 0; }
+  .lang-switcher { margin-left: 4px; }
+  .lang-dropdown { right: 0; left: auto; }
+  .lang-toggle { padding: 6px 8px; }
+  .lang-label { display: none; }   /* flag-only toggle on mobile to fit the header row */
 }
 
 /* ========================================
