@@ -4881,3 +4881,17 @@ body {
 .search-empty, .search-hint { color: var(--text-muted); font-size: 0.85rem; padding: 0.5rem 0.75rem; margin: 0; }
 .search-hint kbd { border: 1px solid var(--border); border-radius: 4px; padding: 0 4px; font-size: 0.75rem; font-family: var(--font-body); }
 @media (max-width: 640px) { .search-overlay { padding-top: 6vh; } .site-search-btn { width: 34px; height: 34px; margin-left: 0.5rem; } }
+
+/* machine selector wizard */
+.selector { border: 1px solid var(--border-focus); border-radius: var(--radius-lg); padding: 2rem; margin: 0 auto 3rem; max-width: 52rem; background: var(--bg-elevated); }
+.selector-q { margin: 1.1rem 0; }
+.selector-q label { display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.95rem; }
+.selector select { width: 100%; padding: 0.8rem 1rem; font-size: 1rem; font-family: var(--font-body); border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); }
+.selector select:focus { outline: none; border-color: var(--border-focus); }
+.selector-result { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.sel-result-head { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 0.75rem; }
+.sel-machine { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.85rem 1rem; margin-bottom: 0.6rem; border: 1px solid var(--border); border-radius: var(--radius); text-decoration: none; transition: var(--transition); }
+.sel-machine:hover { border-color: var(--border-focus); background: var(--accent-dim); }
+.sel-machine-name { color: var(--text); font-weight: 600; }
+.sel-machine-note { color: var(--text-muted); font-size: 0.85rem; }
+.sel-result-note { color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem; }

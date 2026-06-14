@@ -22,7 +22,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@sbkjgroup" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=33" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=34" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"Organization","@id":"https://sbkjduct.com/#org","name":"SBKJ Group","alternateName":"SBKJ Australia","url":"https://sbkjduct.com/","logo":"https://sbkjduct.com/assets/images/logo.png","description":"Australia-based manufacturer of HVAC ductwork machinery — spiral tubeformers, auto duct production lines, TDF flange formers and lockformers. 5,000+ machines installed in 100+ countries.","address":{"@type":"PostalAddress","streetAddress":"5 Twyford Street","addressLocality":"Box Hill North","addressRegion":"VIC","postalCode":"3129","addressCountry":"AU"}},
@@ -81,6 +81,47 @@
 
     <section class="section">
       <div class="shell"><div class="content-narrow">
+        <div class="selector" id="machineSelector">
+          <p class="eyebrow">Interactive</p>
+          <h2 style="margin-top:0.25rem;">Which SBKJ machine do you need?</h2>
+          <p>Answer three questions. The recommendation routes to the exact SBKJ models for your duct — every figure is from the SBKJ Product Catalog 2026, and you go straight to the product page or a quote.</p>
+          <div class="selector-q">
+            <label for="selShape">1. What duct do you fabricate?</label>
+            <select id="selShape">
+              <option value="">Select…</option>
+              <option value="round">Round (spiral) duct</option>
+              <option value="rect">Rectangular duct</option>
+              <option value="both">Both round and rectangular</option>
+            </select>
+          </div>
+          <div class="selector-q" id="qDia" hidden>
+            <label for="selDia">2. Largest round diameter?</label>
+            <select id="selDia">
+              <option value="">Select…</option>
+              <option value="1500">Up to Φ1500 mm</option>
+              <option value="1600">Up to Φ1600 mm</option>
+              <option value="2500">Up to Φ2000–2500 mm</option>
+            </select>
+          </div>
+          <div class="selector-q" id="qVol" hidden>
+            <label for="selVol">2. Rectangular duct output?</label>
+            <select id="selVol">
+              <option value="">Select…</option>
+              <option value="entry">Starting out / lower volume</option>
+              <option value="high">High volume, single-operator line</option>
+            </select>
+          </div>
+          <div class="selector-q">
+            <label for="selMat">3. Heaviest material?</label>
+            <select id="selMat">
+              <option value="">Select…</option>
+              <option value="galv">Galvanised steel</option>
+              <option value="ss">Stainless steel</option>
+              <option value="al">Aluminium</option>
+            </select>
+          </div>
+          <div class="selector-result" id="selResult" hidden></div>
+        </div>
 
         <h2>Quick decision matrix</h2>
         <p>Match your project profile to the right SBKJ machine combination:</p>
@@ -224,6 +265,54 @@
       </div></div>
     </aside>
 
+    <script>
+    (function () {
+      var shape = document.getElementById("selShape"), dia = document.getElementById("selDia"),
+          vol = document.getElementById("selVol"), mat = document.getElementById("selMat"),
+          qDia = document.getElementById("qDia"), qVol = document.getElementById("qVol"),
+          out = document.getElementById("selResult");
+      if (!shape) return;
+      var P = "product/";
+      function card(title, href, note) {
+        return '<a class="sel-machine" href="' + P + href + '"><span class="sel-machine-name">' + title +
+               '</span><span class="sel-machine-note">' + note + '</span></a>';
+      }
+      function spiral() {
+        var d = dia.value, m = mat.value;
+        if (m === "al" || d === "2500") {
+          return d === "2500"
+            ? card("Spiral Tubeformer SBTF-2020", "sbtf-2020.html", "Φ80–2500 mm · galv/stainless/aluminium to 3.0 mm · flying slitter")
+            : card("Spiral Tubeformer SBTF-1602", "sbtf-1602.html", "Φ80–1600 mm · galv to 2.0 mm, aluminium to 3.0 mm · flying slitter");
+        }
+        if (d === "1600") return card("Spiral Tubeformer SBTF-1602", "sbtf-1602.html", "Φ80–1600 mm · plasma + flying slitter · galv/stainless");
+        if (m === "ss") return card("Spiral Tubeformer SBTF-1500C", "sbtf-1500c.html", "Φ100–1500 mm · plasma + saw · galv + stainless to 1.2 mm");
+        if (d === "1500") return card("Spiral Tubeformer SBTF-1500", "sbtf-1500.html", "Φ80–1500 mm · saw-blade cutting · the entry workhorse");
+        return "";
+      }
+      function rect() {
+        if (vol.value === "high") return card("Auto Duct Line SBAL-V", "sbal-v.html", "16 m/min · single operator · ≤1500 mm · galv + stainless");
+        if (vol.value === "entry") return card("Auto Duct Line SBAL-III", "sbal-iii.html", "≤1500 mm · 0.5–1.2 mm · hydraulic notch + shear");
+        return "";
+      }
+      function render() {
+        var sh = shape.value;
+        qDia.hidden = !(sh === "round" || sh === "both");
+        qVol.hidden = !(sh === "rect" || sh === "both");
+        var parts = [];
+        if (sh === "round" || sh === "both") { var s = spiral(); if (s) parts.push(s); }
+        if (sh === "rect" || sh === "both") { var r = rect(); if (r) parts.push(r); }
+        if (!parts.length) { out.hidden = true; return; }
+        // closure machines always apply
+        parts.push(card("TDF Flange Former", "tdf-flange.html", "Integral 35 mm transverse flange — low-leak rectangular joints"));
+        parts.push(card("Pittsburgh Lockformer", "lockformer.html", "Longitudinal lock seam — every rectangular section"));
+        out.innerHTML = '<p class="sel-result-head">Recommended SBKJ setup</p>' + parts.join("") +
+          '<p class="sel-result-note">Indicative configuration from the catalog — your duct schedule, throughput target and site supply refine it. ' +
+          '<a class="btn btn-primary" href="contact.html?source=selector" style="margin-top:0.75rem;">Get a sized quote on this setup</a></p>';
+        out.hidden = false;
+      }
+      [shape, dia, vol, mat].forEach(function (el) { el.addEventListener("change", render); });
+    })();
+    </script>
   </main>
 
   <footer class="site-footer">
