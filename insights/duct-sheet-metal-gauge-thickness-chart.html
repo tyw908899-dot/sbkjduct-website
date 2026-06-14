@@ -26,7 +26,7 @@
   <link rel="icon" href="/favicon.ico" sizes="32x32" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="../assets/css/styles.css?v=33" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=34" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"Organization","@id":"https://sbkjduct.com/#org","name":"SBKJ Group","url":"https://sbkjduct.com/","description":"Australian supplier of HVAC ductwork machinery — spiral duct machines, auto duct production lines, TDF flange formers, lockformers, duct welders and cutting machines."},
@@ -116,6 +116,28 @@
         </div>
         <p style="font-size:0.85rem;color:var(--text-muted)">Gauge values follow the Galvanized Steel Sheet Gauge standard and are nominal coated thicknesses — confirm against your material certificate. Stainless steel and aluminium use different gauge-to-thickness scales; when in doubt, specify in millimetres.</p>
 
+        <div class="gauge-conv" id="gaugeConv">
+          <p class="eyebrow">Quick convert</p>
+          <h3 style="margin-top:0.25rem;">Gauge &harr; millimetre converter</h3>
+          <div class="gauge-conv-cols">
+            <label>Galvanised steel gauge (GSG)
+              <select id="gcGauge">
+                <option value="">Select gauge…</option>
+                <option value="30">30 ga</option><option value="28">28 ga</option>
+                <option value="26">26 ga</option><option value="24">24 ga</option>
+                <option value="22">22 ga</option><option value="20">20 ga</option>
+                <option value="18">18 ga</option><option value="16">16 ga</option>
+                <option value="14">14 ga</option><option value="12">12 ga</option>
+              </select>
+            </label>
+            <label>…or enter thickness in mm
+              <input type="number" id="gcMm" min="0" step="0.01" placeholder="e.g. 0.8" inputmode="decimal">
+            </label>
+          </div>
+          <p class="gauge-conv-out" id="gcOut" aria-live="polite">Pick a gauge or type a thickness.</p>
+          <p class="roi-foot" style="margin-top:0.5rem;">Nominal galvanised coated thicknesses (GSG standard). Stainless and aluminium use different scales — specify in mm.</p>
+        </div>
+
         <h2>Which SBKJ machine forms which gauge</h2>
         <p>The next table is the other half of the answer: the thickness range each SBKJ duct-forming machine actually handles, in galvanised, stainless and aluminium, taken verbatim from the Product Catalog 2026. Read it against the chart above to match a gauge to a machine.</p>
 
@@ -198,6 +220,34 @@
         <p>The duct fabrication workflows above run on standard SBKJ equipment: <a href="../categories/spiral-duct-machinery.html">spiral tubeformers</a> for round duct, <a href="../categories/auto-duct-lines.html">auto duct production lines</a> for rectangular duct, and <a href="../categories/tdf-and-lockformer.html">TDF flange and lockformer machines</a> for closure &mdash; or browse the <a href="../machines.html">full machine catalog</a>.</p>
       </div></div>
     </section>
+    <script>
+    (function () {
+      // Galvanized Steel Sheet Gauge — the same nominal constants as the table above.
+      var G = {30:[0.40,0.0157],28:[0.48,0.0187],26:[0.55,0.0217],24:[0.70,0.0276],
+               22:[0.85,0.0336],20:[1.01,0.0396],18:[1.31,0.0516],16:[1.61,0.0635],
+               14:[1.99,0.0785],12:[2.75,0.1084]};
+      var gSel = document.getElementById("gcGauge"), mm = document.getElementById("gcMm"), out = document.getElementById("gcOut");
+      if (!gSel) return;
+      function fromGauge() {
+        mm.value = "";
+        var g = gSel.value;
+        if (!g) { out.textContent = "Pick a gauge or type a thickness."; return; }
+        out.innerHTML = "<strong>" + g + " ga</strong> = <strong>" + G[g][0].toFixed(2) + " mm</strong> (" + G[g][1].toFixed(4) + " in nominal)";
+      }
+      function fromMm() {
+        gSel.value = "";
+        var v = parseFloat(mm.value);
+        if (isNaN(v) || v <= 0) { out.textContent = "Pick a gauge or type a thickness."; return; }
+        var best = null, bestd = 1e9;
+        for (var g in G) { var d = Math.abs(G[g][0] - v); if (d < bestd) { bestd = d; best = g; } }
+        var exact = bestd < 0.005;
+        out.innerHTML = v.toFixed(2) + " mm ≈ <strong>" + best + " ga</strong>" +
+          (exact ? " (exact)" : " (nearest; " + best + " ga = " + G[best][0].toFixed(2) + " mm)");
+      }
+      gSel.addEventListener("change", fromGauge);
+      mm.addEventListener("input", fromMm);
+    })();
+    </script>
   </main>
   <footer class="site-footer">
     <div class="shell">

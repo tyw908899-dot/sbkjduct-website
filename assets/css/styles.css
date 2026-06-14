@@ -4909,3 +4909,12 @@ body {
 .roi-stat-val { font-size: 1.35rem; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
 .roi-foot { font-size: 0.82rem; color: var(--text-muted); margin: 0; }
 @media (max-width: 600px) { .roi-cols { grid-template-columns: 1fr; } .roi-out { grid-template-columns: 1fr 1fr; } }
+
+/* gauge converter */
+.gauge-conv { border: 1px solid var(--border-focus); border-radius: var(--radius-lg); padding: 1.75rem; margin: 1.5rem 0; background: var(--bg-elevated); }
+.gauge-conv-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1rem 0; }
+.gauge-conv label { display: block; font-size: 0.9rem; color: var(--text-muted); font-weight: 600; }
+.gauge-conv select, .gauge-conv input { width: 100%; margin-top: 0.4rem; padding: 0.7rem 0.9rem; font-size: 1rem; font-family: var(--font-body); border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); }
+.gauge-conv select:focus, .gauge-conv input:focus { outline: none; border-color: var(--border-focus); }
+.gauge-conv-out { font-size: 1.15rem; color: var(--text); margin: 0.5rem 0 0; padding: 0.85rem 1rem; background: var(--bg); border-radius: var(--radius); font-variant-numeric: tabular-nums; }
+@media (max-width: 600px) { .gauge-conv-cols { grid-template-columns: 1fr; } }
