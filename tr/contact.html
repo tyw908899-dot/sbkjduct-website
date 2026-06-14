@@ -69,7 +69,7 @@
 <header class="site-header">
 <div class="shell">
 <div class="site-header-inner">
-<a class="logo" href="/tr/">
+<a class="logo" href="/">
 <img alt="SBKJ Group" class="logo-img" decoding="async" height="48" src="/assets/images/logo.png?v=2" width="129"/>
 <span class="logo-text">
 <span class="logo-title">SBKJ</span>
@@ -80,17 +80,17 @@
 <span></span><span></span><span></span>
 </button>
 <nav aria-label="Primary" class="site-nav" id="primaryNav">
-<a data-i18n="nav.home" href="/tr/">Ana Sayfa</a>
-<a data-i18n="nav.machines" href="/tr/machines.html">Makineler</a>
+<a data-i18n="nav.home" href="/">Ana Sayfa</a>
+<a data-i18n="nav.machines" href="/machines.html">Makineler</a>
 <a data-i18n="nav.insights" href="/insights">İçgörüler</a>
-<a data-i18n="nav.about" href="/tr/about.html">Hakkımızda</a>
+<a data-i18n="nav.about" href="/about.html">Hakkımızda</a>
 <a class="nav-cta nav-current" data-i18n="nav.contact" href="/tr/contact.html">İletişim</a>
 </nav>
 </div>
 </div>
 </header>
 <main id="main">
-<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Breadcrumb" class="breadcrumbs"><ol><li><a data-i18n="nav.home" href="/tr/">Ana Sayfa</a></li><li aria-current="page"><span data-i18n="nav.contact">İletişim</span></li></ol></nav></div></nav>
+<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Breadcrumb" class="breadcrumbs"><ol><li><a data-i18n="nav.home" href="/">Ana Sayfa</a></li><li aria-current="page"><span data-i18n="nav.contact">İletişim</span></li></ol></nav></div></nav>
 <section class="section page-hero bg-subtle">
 <div class="shell">
 <p class="eyebrow" data-i18n="contact.eyebrow">İletişime Geçin</p>
@@ -109,6 +109,15 @@
           if (location.search.indexOf('sent=1') !== -1) {
             var b = document.getElementById('quoteSent'); if (b) b.hidden = false;
           }
+          // Capture lead attribution into the form so the quote email shows it.
+          // Runs on DOMContentLoaded — the hidden field is further down the page.
+          document.addEventListener('DOMContentLoaded', function () {
+            var ls = document.getElementById('leadSource'); if (!ls) return;
+            var src = new URLSearchParams(location.search).get('source') || '';
+            var ref = "";
+            try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
+            ls.value = (src ? "campaign:" + src : "direct") + (ref ? " · ref:" + ref : "");
+          });
         </script>
 </div>
 </section>
@@ -138,6 +147,7 @@
 <input name="_template" type="hidden" value="table"/>
 <input name="_captcha" type="hidden" value="false"/>
 <input name="_next" type="hidden" value="https://sbkjduct.com/tr/contact.html?sent=1"/>
+<input id="leadSource" name="Lead source" type="hidden" value=""/>
 <input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
 <div class="form-row">
 <div class="form-field">
@@ -257,7 +267,7 @@
 </section>
 <section class="section page-review-section">
 <div class="shell">
-<p class="page-reviewed" data-i18n-html="contact.reviewed"><span aria-hidden="true" class="product-reviewed-mark">✓</span>Sayfa <a href="/tr/about.html" rel="author">SBKJ Mühendislik ve QA</a> tarafından incelendi <span class="product-reviewed-sep">·</span> Son doğrulama <time datetime="2026-04-09">9 Nisan 2026</time></p>
+<p class="page-reviewed" data-i18n-html="contact.reviewed"><span aria-hidden="true" class="product-reviewed-mark">✓</span>Sayfa <a href="/about.html" rel="author">SBKJ Mühendislik ve QA</a> tarafından incelendi <span class="product-reviewed-sep">·</span> Son doğrulama <time datetime="2026-04-09">9 Nisan 2026</time></p>
 </div>
 </section>
 </main>
@@ -280,10 +290,10 @@
 <div>
 <h3 data-i18n="footer.navigate">Gezinti</h3>
 <ul>
-<li><a data-i18n="nav.home" href="/tr/">Ana Sayfa</a></li>
-<li><a data-i18n="nav.machines" href="/tr/machines.html">Makineler</a></li>
+<li><a data-i18n="nav.home" href="/">Ana Sayfa</a></li>
+<li><a data-i18n="nav.machines" href="/machines.html">Makineler</a></li>
 <li><a data-i18n="nav.insights" href="/insights">İçgörüler</a></li>
-<li><a data-i18n="nav.about" href="/tr/about.html">Hakkımızda</a></li>
+<li><a data-i18n="nav.about" href="/about.html">Hakkımızda</a></li>
 <li><a data-i18n="nav.why" href="/why-choose-sbkj.html">Neden SBKJ</a></li>
 <li><a data-i18n="nav.pricing" href="/pricing-and-lead-time.html">Fiyat ve teslim süresi</a></li>
 <li><a data-i18n="nav.industries" href="/industries">Sektörler</a></li>
