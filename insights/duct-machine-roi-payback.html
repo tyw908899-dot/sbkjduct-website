@@ -26,7 +26,7 @@
   <link rel="icon" href="/favicon.ico" sizes="32x32" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="../assets/css/styles.css?v=33" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=34" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"Organization","@id":"https://sbkjduct.com/#org","name":"SBKJ Group","url":"https://sbkjduct.com/","description":"Australian supplier of HVAC ductwork machinery — spiral duct machines, auto duct production lines, TDF flange formers and lockformers."},
@@ -144,6 +144,36 @@
         <p><strong>2. Compare to the alternative.</strong> The real question is not "is the payback good" in the abstract, but "is it better than continuing to fabricate manually or to outsource". Put the status-quo annual cost beside the machine case.</p>
         <p><strong>3. Compare to your hurdle.</strong> Measure the payback period or ROI against the return your business expects from any capital it ties up.</p>
 
+        <div class="roi-calc" id="roiCalc">
+          <p class="eyebrow">Run your own numbers</p>
+          <h3 style="margin-top:0.25rem;">Payback &amp; ROI calculator</h3>
+          <p style="color:var(--text-muted);font-size:0.92rem;">Enter <em>your</em> figures — nothing is pre-filled or assumed. The calculator only applies the two formulas above to the numbers you type. Currency-agnostic: use whatever unit you quote in.</p>
+          <div class="roi-cols">
+            <div class="roi-col">
+              <p class="roi-col-head">Investment (I)</p>
+              <label>Machine / line price<input type="number" min="0" data-i inputmode="numeric" placeholder="0"></label>
+              <label>Freight<input type="number" min="0" data-i placeholder="0"></label>
+              <label>Duties &amp; taxes<input type="number" min="0" data-i placeholder="0"></label>
+              <label>Installation &amp; commissioning<input type="number" min="0" data-i placeholder="0"></label>
+              <label>Operator training<input type="number" min="0" data-i placeholder="0"></label>
+            </div>
+            <div class="roi-col">
+              <p class="roi-col-head">Annual net benefit (B)</p>
+              <label>Labour saved per year<input type="number" min="0" data-b placeholder="0"></label>
+              <label>Value of extra throughput / outsourcing avoided<input type="number" min="0" data-b placeholder="0"></label>
+              <label>Reduced waste &amp; rework per year<input type="number" min="0" data-b placeholder="0"></label>
+              <label>&minus; Annual running cost (power, consumables, maintenance)<input type="number" min="0" data-bneg placeholder="0"></label>
+            </div>
+          </div>
+          <div class="roi-out" id="roiOut" aria-live="polite">
+            <div class="roi-stat"><span class="roi-stat-label">Total investment (I)</span><span class="roi-stat-val" id="roiI">—</span></div>
+            <div class="roi-stat"><span class="roi-stat-label">Annual net benefit (B)</span><span class="roi-stat-val" id="roiB">—</span></div>
+            <div class="roi-stat"><span class="roi-stat-label">Payback period</span><span class="roi-stat-val" id="roiPay">—</span></div>
+            <div class="roi-stat"><span class="roi-stat-label">Annual ROI</span><span class="roi-stat-val" id="roiPct">—</span></div>
+          </div>
+          <p class="roi-foot">Payback = I &divide; B · ROI = (B &divide; I) &times; 100. Indicative only — an <a href="../contact.html?source=roi-calc">SBKJ engineer</a> can sanity-check your inputs against real installs.</p>
+        </div>
+
         <h2>What this method deliberately leaves out</h2>
         <p>This is a cash-payback model, kept simple on purpose. For a formal investment case your accountant may also fold in depreciation and tax treatment, the time value of money (discounting future benefits to a net present value), and financing cost if the machine is funded. Those refine the answer but do not change the inputs above — they still start from your <strong>I</strong> and <strong>B</strong>. The figures throughout are yours to supply; SBKJ does not publish a single "typical payback", because it depends entirely on your labour rates, volumes and what you currently outsource.</p>
 
@@ -186,6 +216,33 @@
         <p>The duct fabrication workflows above run on standard SBKJ equipment: <a href="../categories/spiral-duct-machinery.html">spiral tubeformers</a> for round duct, <a href="../categories/auto-duct-lines.html">auto duct production lines</a> for rectangular duct, and <a href="../categories/tdf-and-lockformer.html">TDF flange and lockformer machines</a> for closure &mdash; or browse the <a href="../machines.html">full machine catalog</a>.</p>
       </div></div>
     </section>
+    <script>
+    (function () {
+      var box = document.getElementById("roiCalc");
+      if (!box) return;
+      var inv = box.querySelectorAll("[data-i]"), ben = box.querySelectorAll("[data-b]"), neg = box.querySelectorAll("[data-bneg]");
+      var elI = document.getElementById("roiI"), elB = document.getElementById("roiB"),
+          elPay = document.getElementById("roiPay"), elPct = document.getElementById("roiPct");
+      function sum(list) { var t = 0; list.forEach(function (e) { var v = parseFloat(e.value); if (!isNaN(v) && v > 0) t += v; }); return t; }
+      function fmt(n) { return n.toLocaleString(undefined, { maximumFractionDigits: 0 }); }
+      function run() {
+        var I = sum(inv), B = sum(ben) - sum(neg);
+        var any = I > 0 || sum(ben) > 0 || sum(neg) > 0;
+        elI.textContent = I > 0 ? fmt(I) : "—";
+        elB.textContent = any ? fmt(B) : "—";
+        if (I > 0 && B > 0) {
+          var yrs = I / B, mo = Math.round(yrs * 12);
+          elPay.textContent = yrs >= 1 ? yrs.toFixed(1) + " yr (" + mo + " mo)" : mo + " mo";
+          elPct.textContent = ((B / I) * 100).toFixed(0) + "% / yr";
+        } else if (any && B <= 0) {
+          elPay.textContent = "no payback"; elPct.textContent = "B ≤ 0";
+        } else {
+          elPay.textContent = "—"; elPct.textContent = "—";
+        }
+      }
+      box.querySelectorAll("input").forEach(function (e) { e.addEventListener("input", run); });
+    })();
+    </script>
   </main>
   <footer class="site-footer">
     <div class="shell">

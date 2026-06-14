@@ -4895,3 +4895,17 @@ body {
 .sel-machine-name { color: var(--text); font-weight: 600; }
 .sel-machine-note { color: var(--text-muted); font-size: 0.85rem; }
 .sel-result-note { color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem; }
+
+/* ROI calculator */
+.roi-calc { border: 1px solid var(--border-focus); border-radius: var(--radius-lg); padding: 2rem; margin: 2rem 0; background: var(--bg-elevated); }
+.roi-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.25rem 0; }
+.roi-col-head { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 0.75rem; }
+.roi-calc label { display: block; font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0.7rem; }
+.roi-calc input { display: block; width: 100%; margin-top: 0.25rem; padding: 0.6rem 0.75rem; font-size: 1rem; font-family: var(--font-body); border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); }
+.roi-calc input:focus { outline: none; border-color: var(--border-focus); }
+.roi-out { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding: 1.25rem 0; border-top: 1px solid var(--border); }
+.roi-stat { display: flex; flex-direction: column; gap: 0.3rem; }
+.roi-stat-label { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); }
+.roi-stat-val { font-size: 1.35rem; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+.roi-foot { font-size: 0.82rem; color: var(--text-muted); margin: 0; }
+@media (max-width: 600px) { .roi-cols { grid-template-columns: 1fr; } .roi-out { grid-template-columns: 1fr 1fr; } }
