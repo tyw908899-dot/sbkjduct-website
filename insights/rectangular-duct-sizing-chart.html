@@ -204,7 +204,37 @@
         <h2 data-i18n="insights.rectangularductsizingchart.h2_8">Matching duct sizing to machinery on the floor</h2>
         <p data-i18n-html="insights.rectangularductsizingchart.p_8">Once sizes are locked, the question is which machine on the fabricator's floor will roll each section. SBKJ's <a href="../product/sbal-v.html">SBAL-V fully automatic duct line</a> handles sheet widths from 800 to 1,500 mm, which covers the vast majority of commercial HVAC duct (rectangular duct up to roughly 1,250 × 1,250 mm). For larger industrial sections, the line is reconfigurable with wider tooling. The <a href="../product/sbal-iii.html">SBAL-III semi-automatic line</a> covers the same range at lower throughput — typical for fabricators doing less than 1,000 m per day. Specifications with aspect ratios above 2:1 are best handled by the auto duct line because it tracks the cut length and seam position automatically; manually folded duct above 2:1 tends to develop twist and out-of-square corners.</p>
 
-        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html">Talk to an SBKJ engineer →</a></p>
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html?source=sizing-chart">Talk to an SBKJ engineer →</a></p>
+
+        <h2>Duct sheet-metal weight estimator</h2>
+        <p>Estimate the bare sheet-metal weight and surface area of a straight duct run — useful for material costing and freight planning. Pure geometry: surface area × thickness × material density. Add your own allowance for seams, laps and fittings (commonly +10–20%).</p>
+        <div class="roi-calc" id="ductWeight">
+          <div class="roi-cols">
+            <div class="roi-col">
+              <p class="roi-col-head">Duct</p>
+              <label>Shape
+                <select id="dwShape"><option value="rect">Rectangular</option><option value="round">Round</option></select>
+              </label>
+              <label id="dwWrap">Width × Height (mm)
+                <span style="display:flex;gap:0.5rem;"><input type="number" id="dwW" min="0" placeholder="W"><input type="number" id="dwH" min="0" placeholder="H"></span>
+              </label>
+              <label id="dwDiaWrap" hidden>Diameter Φ (mm)<input type="number" id="dwD" min="0" placeholder="Ø"></label>
+              <label>Total run length (m)<input type="number" id="dwL" min="0" placeholder="0"></label>
+            </div>
+            <div class="roi-col">
+              <p class="roi-col-head">Material</p>
+              <label>Thickness (mm)<input type="number" id="dwT" min="0" step="0.1" placeholder="e.g. 0.8"></label>
+              <label>Material
+                <select id="dwMat"><option value="7.85">Galvanised / mild steel (7.85)</option><option value="8.0">Stainless steel (8.0)</option><option value="2.70">Aluminium (2.70)</option></select>
+              </label>
+            </div>
+          </div>
+          <div class="roi-out">
+            <div class="roi-stat"><span class="roi-stat-label">Surface area</span><span class="roi-stat-val" id="dwArea">—</span></div>
+            <div class="roi-stat"><span class="roi-stat-label">Bare sheet weight</span><span class="roi-stat-val" id="dwWeight">—</span></div>
+          </div>
+          <p class="roi-foot">Bare sheet only — excludes flanges, stiffeners, insulation and waste. For a sized quote with your full schedule, <a href="../contact.html?source=weight-calc">ask an SBKJ engineer</a>.</p>
+        </div>
 
         <h2 data-i18n="insights.rectangularductsizingchart.h2_9">FAQ</h2>
         <details><summary data-i18n="insights.rectangularductsizingchart.summary_1">What is the equal friction method for duct sizing?</summary><p data-i18n="insights.rectangularductsizingchart.p_9">The equal friction method sizes every section of a duct system so that friction loss per unit length is constant — typically 0.08 to 0.12 inches of water gauge per 100 feet of duct. It is the default method for low and medium pressure HVAC duct because it is quick, produces balanced systems that do not require heavy field damper adjustment, and matches how fans are curved.</p></details>
@@ -239,6 +269,30 @@
       </div>
     </section>
 
+    <script>
+    (function () {
+      var box = document.getElementById("ductWeight"); if (!box) return;
+      var shape = document.getElementById("dwShape"), W = document.getElementById("dwW"),
+          H = document.getElementById("dwH"), D = document.getElementById("dwD"),
+          L = document.getElementById("dwL"), T = document.getElementById("dwT"), M = document.getElementById("dwMat"),
+          wrap = document.getElementById("dwWrap"), diaWrap = document.getElementById("dwDiaWrap"),
+          areaEl = document.getElementById("dwArea"), wEl = document.getElementById("dwWeight");
+      function num(e) { var v = parseFloat(e.value); return (!isNaN(v) && v > 0) ? v : 0; }
+      function run() {
+        var round = shape.value === "round";
+        wrap.hidden = round; diaWrap.hidden = !round;
+        var len = num(L), t = num(T), dens = parseFloat(M.value);
+        var perim_mm = round ? Math.PI * num(D) : 2 * (num(W) + num(H)); // developed sheet width
+        var area = (perim_mm / 1000) * len;          // m² (perimeter m × length m)
+        if (area > 0) {
+          areaEl.textContent = area.toFixed(1) + " m²";
+          if (t > 0) { var kg = area * t * dens; wEl.textContent = (kg >= 1000 ? (kg/1000).toFixed(2) + " t" : Math.round(kg) + " kg"); }
+          else wEl.textContent = "—";
+        } else { areaEl.textContent = "—"; wEl.textContent = "—"; }
+      }
+      box.querySelectorAll("input,select").forEach(function (e) { e.addEventListener("input", run); e.addEventListener("change", run); });
+    })();
+    </script>
   </main>
 
   <footer class="site-footer">
