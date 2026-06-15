@@ -4953,4 +4953,16 @@ body {
 
   /* footer: keep the contact essentials, drop the rest of the grid noise */
   .site-footer { border-top: 1px solid #ccc; padding-top: 0.5rem; }
+  .support-timeline li { break-inside: avoid; }
 }
+
+/* support after-sales timeline */
+.support-timeline { list-style: none; counter-reset: step; margin: 1.5rem 0 2.5rem; padding: 0; }
+.support-timeline li { counter-increment: step; position: relative; padding: 0 0 1.4rem 3.4rem; }
+.support-timeline li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 2.2rem; height: 2.2rem; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.95rem; color: var(--bg); background: var(--accent); border-radius: var(--radius); font-variant-numeric: tabular-nums; }
+.support-timeline li::after { content: ""; position: absolute; left: 1.05rem; top: 2.4rem; bottom: 0; width: 2px; background: var(--border); }
+.support-timeline li:last-child { padding-bottom: 0; }
+.support-timeline li:last-child::after { display: none; }
+.support-timeline li strong { display: block; color: var(--text); font-size: 1.02rem; margin-bottom: 0.2rem; }
+.support-timeline li span { display: block; color: var(--text-muted); font-size: 0.93rem; line-height: 1.55; }
+@media (max-width: 600px) { .support-timeline li { padding-left: 3rem; } }
