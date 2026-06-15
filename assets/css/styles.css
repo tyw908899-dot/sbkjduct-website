@@ -2507,6 +2507,15 @@ img {
    Token system + layout rules derived from a reference industrial site.
    Wins by source order. All values are original; nothing copied.
    ======================================================================== */
+
+/* ── Inter (self-hosted, latin subset) — premium type upgrade 2026-06-15 ──
+   font-display:swap (no blocking); unicode-range = latin only, so Arabic /
+   Devanagari / CJK fall through to the system fallback automatically. */
+@font-face { font-family:"Inter"; font-style:normal; font-weight:400; font-display:swap; src:url("/assets/fonts/inter-latin-400.woff2") format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:"Inter"; font-style:normal; font-weight:500; font-display:swap; src:url("/assets/fonts/inter-latin-500.woff2") format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:"Inter"; font-style:normal; font-weight:600; font-display:swap; src:url("/assets/fonts/inter-latin-600.woff2") format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:"Inter"; font-style:normal; font-weight:700; font-display:swap; src:url("/assets/fonts/inter-latin-700.woff2") format("woff2"); unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
 :root {
   /* Color tokens — mebsa white + charcoal */
   --bg: #ffffff;
@@ -2525,9 +2534,9 @@ img {
   --border-strong: rgba(0, 0, 0, 0.28);
   --border-on-dark: rgba(255, 255, 255, 0.18);
 
-  /* Type — system stack like mebsa */
-  --font-head: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Type — Inter (self-hosted, premium) with system fallback for non-latin + load */
+  --font-head: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* Layout */
   --container: 1170px;
@@ -4979,3 +4988,22 @@ body {
 }
 /* Insight / guide list links: animated underline instead of a flat opacity fade */
 .related-links a, .insights-grid a h3, .footer-links a { transition: color 0.2s ease; }
+
+/* ════════ Bolder / premium pass 2026-06-15 (Ryan: 更大胆、更高级感) ════════
+   Restrained depth + motion in the Stripe/Linear vein. Cards stay flat at REST
+   (keeps the editorial calm) and lift with a soft shadow on hover; primary CTAs
+   get a subtle tactile elevation. Nothing heavy — premium, not gaudy. */
+@media (hover: hover) {
+  .machines-card { transition: transform 0.45s cubic-bezier(0.16,1,0.3,1) !important; }
+  .machines-card:hover { transform: translateY(-6px) !important; }
+  .machines-card-img { transition: box-shadow 0.45s cubic-bezier(0.16,1,0.3,1), transform 0.45s cubic-bezier(0.16,1,0.3,1) !important; }
+  .machines-card:hover .machines-card-img { box-shadow: 0 20px 42px -16px rgba(0,0,0,0.26) !important; }
+}
+/* Primary CTA: subtle elevation so the key action reads tactile + premium */
+.btn-primary { box-shadow: 0 2px 10px rgba(0,0,0,0.10); }
+.btn-primary:hover { box-shadow: 0 10px 24px -6px rgba(0,0,0,0.18); transform: translateY(-2px); }
+.hero .btn-primary, .cta-final .btn-primary { box-shadow: 0 6px 20px -4px rgba(0,0,0,0.30); }
+.hero .btn-primary:hover, .cta-final .btn-primary:hover { box-shadow: 0 12px 30px -6px rgba(0,0,0,0.38); }
+/* Sticky header: gains a hairline shadow once the page is scrolled (depth cue) */
+.site-header { transition: box-shadow 0.3s ease, background 0.3s ease; }
+.site-header.header-scrolled { box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 8px 24px -16px rgba(0,0,0,0.18); }
