@@ -69,7 +69,7 @@
 <header class="site-header">
 <div class="shell">
 <div class="site-header-inner">
-<a class="logo" href="/fr/">
+<a class="logo" href="/">
 <img alt="SBKJ Group" class="logo-img" decoding="async" height="48" src="/assets/images/logo.png?v=2" width="129"/>
 <span class="logo-text">
 <span class="logo-title">SBKJ</span>
@@ -80,17 +80,17 @@
 <span></span><span></span><span></span>
 </button>
 <nav aria-label="Primary" class="site-nav" id="primaryNav">
-<a data-i18n="nav.home" href="/fr/">Accueil</a>
-<a data-i18n="nav.machines" href="/fr/machines.html">Machines</a>
+<a data-i18n="nav.home" href="/">Accueil</a>
+<a data-i18n="nav.machines" href="/machines.html">Machines</a>
 <a data-i18n="nav.insights" href="/insights">Articles</a>
-<a data-i18n="nav.about" href="/fr/about.html">À propos</a>
+<a data-i18n="nav.about" href="/about.html">À propos</a>
 <a class="nav-cta nav-current" data-i18n="nav.contact" href="/fr/contact.html">Contact</a>
 </nav>
 </div>
 </div>
 </header>
 <main id="main">
-<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Breadcrumb" class="breadcrumbs"><ol><li><a data-i18n="nav.home" href="/fr/">Accueil</a></li><li aria-current="page"><span data-i18n="nav.contact">Contact</span></li></ol></nav></div></nav>
+<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Breadcrumb" class="breadcrumbs"><ol><li><a data-i18n="nav.home" href="/">Accueil</a></li><li aria-current="page"><span data-i18n="nav.contact">Contact</span></li></ol></nav></div></nav>
 <section class="section page-hero bg-subtle">
 <div class="shell">
 <p class="eyebrow" data-i18n="contact.eyebrow">Contactez-nous</p>
@@ -117,6 +117,17 @@
             var ref = "";
             try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
             ls.value = (src ? "campaign:" + src : "direct") + (ref ? " · ref:" + ref : "");
+            // Pre-select the interest dropdown from the source so the buyer skips a step.
+            var sel = document.getElementById('interest');
+            if (sel && !sel.value && src) {
+              var map = [
+                [/sbtf|spiral/i, 'spiral'],
+                [/sbal|rectangular-duct-line|auto-duct|rectangular/i, 'rectangular-line'],
+                [/sbem|sbwt|fitting-shaper|tdf|lockformer|elbow|flange|gore/i, 'elbow'],
+                [/factory|complete/i, 'complete-factory']
+              ];
+              for (var i = 0; i < map.length; i++) { if (map[i][0].test(src)) { sel.value = map[i][1]; break; } }
+            }
           });
         </script>
 </div>
@@ -267,7 +278,7 @@
 </section>
 <section class="section page-review-section">
 <div class="shell">
-<p class="page-reviewed" data-i18n-html="contact.reviewed"><span aria-hidden="true" class="product-reviewed-mark">✓</span>Page vérifiée par <a href="/fr/about.html" rel="author">SBKJ Ingénierie et QA</a> <span class="product-reviewed-sep">·</span> Dernière vérification <time datetime="2026-04-09">9 avril 2026</time></p>
+<p class="page-reviewed" data-i18n-html="contact.reviewed"><span aria-hidden="true" class="product-reviewed-mark">✓</span>Page vérifiée par <a href="/about.html" rel="author">SBKJ Ingénierie et QA</a> <span class="product-reviewed-sep">·</span> Dernière vérification <time datetime="2026-04-09">9 avril 2026</time></p>
 </div>
 </section>
 </main>
@@ -290,10 +301,10 @@
 <div>
 <h3 data-i18n="footer.navigate">Navigation</h3>
 <ul>
-<li><a data-i18n="nav.home" href="/fr/">Accueil</a></li>
-<li><a data-i18n="nav.machines" href="/fr/machines.html">Machines</a></li>
+<li><a data-i18n="nav.home" href="/">Accueil</a></li>
+<li><a data-i18n="nav.machines" href="/machines.html">Machines</a></li>
 <li><a data-i18n="nav.insights" href="/insights">Articles</a></li>
-<li><a data-i18n="nav.about" href="/fr/about.html">À propos</a></li>
+<li><a data-i18n="nav.about" href="/about.html">À propos</a></li>
 <li><a data-i18n="nav.why" href="/why-choose-sbkj.html">Pourquoi SBKJ</a></li>
 <li><a data-i18n="nav.pricing" href="/pricing-and-lead-time.html">Prix et délais</a></li>
 <li><a data-i18n="nav.industries" href="/industries">Industries</a></li>

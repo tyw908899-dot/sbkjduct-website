@@ -120,6 +120,17 @@
             var ref = "";
             try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
             ls.value = (src ? "campaign:" + src : "direct") + (ref ? " · ref:" + ref : "");
+            // Pre-select the interest dropdown from the source so the buyer skips a step.
+            var sel = document.getElementById('interest');
+            if (sel && !sel.value && src) {
+              var map = [
+                [/sbtf|spiral/i, 'spiral'],
+                [/sbal|rectangular-duct-line|auto-duct|rectangular/i, 'rectangular-line'],
+                [/sbem|sbwt|fitting-shaper|tdf|lockformer|elbow|flange|gore/i, 'elbow'],
+                [/factory|complete/i, 'complete-factory']
+              ];
+              for (var i = 0; i < map.length; i++) { if (map[i][0].test(src)) { sel.value = map[i][1]; break; } }
+            }
           });
         </script>
       </div>
