@@ -4966,3 +4966,16 @@ body {
 .support-timeline li strong { display: block; color: var(--text); font-size: 1.02rem; margin-bottom: 0.2rem; }
 .support-timeline li span { display: block; color: var(--text-muted); font-size: 0.93rem; line-height: 1.55; }
 @media (max-width: 600px) { .support-timeline li { padding-left: 3rem; } }
+
+/* ── Tasteful interactivity: clickable cards respond on hover (modern feel) ── */
+/* Machine/category/related cards link to product pages but were fully static.
+   A subtle image zoom inside the rounded frame signals interactivity without
+   adding shadows or breaking the flat mebsa aesthetic. */
+.machines-card-img { overflow: hidden !important; }
+.machines-card-img img { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important; will-change: transform; }
+@media (hover: hover) {
+  .machines-card:hover .machines-card-img img,
+  a.machines-card:hover .machines-card-img img { transform: scale(1.045) !important; }
+}
+/* Insight / guide list links: animated underline instead of a flat opacity fade */
+.related-links a, .insights-grid a h3, .footer-links a { transition: color 0.2s ease; }
