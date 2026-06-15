@@ -476,6 +476,7 @@ SBKJ also supplies and supports fabricators in regional NSW, VIC, QLD, WA, SA, T
 
 - **HVAC duct machine selector** — answer three questions (duct shape, diameter or output volume, material) and get the exact SBKJ models for your shop, with links to each machine. Covers spiral tubeformers (SBTF-1500/1500C/1602/2020 by diameter), auto duct lines (SBAL-III/V by volume) and closure machines (TDF former + Pittsburgh lockformer). https://sbkjduct.com/compare-machines.html#machineSelector
 - **Duct machine payback & ROI calculator** — enter your own investment and annual-benefit figures; computes payback period (years/months) and annual ROI from the standard formulas (payback = I÷B, ROI = B÷I×100). No assumed numbers, buyer inputs only. https://sbkjduct.com/insights/duct-machine-roi-payback.html#roiCalc
+- **Duct sheet-metal weight estimator** — enter duct shape, dimensions, run length, thickness and material; returns bare sheet surface area (m²) and weight (kg/t) for material costing and freight planning. Pure geometry with standard densities (steel 7.85, stainless 8.0, aluminium 2.70). https://sbkjduct.com/insights/rectangular-duct-sizing-chart.html#ductWeight
 - **Sheet metal gauge to millimetre converter** — convert galvanised steel gauge to mm/inch and back (30 ga = 0.40 mm to 12 ga = 2.75 mm, Galvanized Steel Sheet Gauge standard) and see which SBKJ machine forms each gauge. https://sbkjduct.com/insights/duct-sheet-metal-gauge-thickness-chart.html#gaugeConv
 
 ## Conversion / engagement pages
