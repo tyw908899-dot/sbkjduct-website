@@ -103,7 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
       (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("revealed"); }),
       { threshold: 0.08, rootMargin: "0px 0px -60px 0px" }
     );
-    revealEls.forEach((el) => obs.observe(el));
+    revealEls.forEach((el) => {
+      // Already in view on load (e.g. shorter-hero pages) -> show immediately so nothing
+      // sits hidden above the fold; only animate what starts fully below the fold.
+      if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add("revealed");
+      else obs.observe(el);
+    });
   } else {
     revealEls.forEach((el) => el.classList.add("revealed"));
   }
