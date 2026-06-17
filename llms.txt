@@ -99,6 +99,12 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - HVAC Duct Seams & Joints Compared — Pittsburgh, snap-lock, standing seam, spiral lockseam, welded + the machines: https://sbkjduct.com/insights/duct-seam-joint-types-compared.html
 - Insulated, Double-Wall & Acoustic Duct — construction methods & fabrication machinery: https://sbkjduct.com/insights/insulated-double-wall-acoustic-duct-fabrication.html
 - HVAC Duct Dimensional Tolerances & Quality — SMACNA/EN tolerances, what good duct looks like, FAT: https://sbkjduct.com/insights/hvac-duct-tolerances-quality-inspection.html
+- Used vs New HVAC Duct Machinery — total cost, risk, parts & warranty: https://sbkjduct.com/insights/used-vs-new-hvac-duct-machinery.html
+- HVAC Duct Production Automation, PLC & Industry 4.0 — single-operator U-cell, recipe control, remote diagnostics: https://sbkjduct.com/insights/duct-production-automation-plc-industry-4.html
+- Grease, Kitchen-Exhaust & Fire-Rated Duct Fabrication — welded liquid-tight construction, NFPA 96, machinery: https://sbkjduct.com/insights/grease-kitchen-exhaust-fire-rated-duct-fabrication.html
+- Spiral Lockseam vs Welded Round Duct — which to make, pressure class, and the machines: https://sbkjduct.com/insights/spiral-vs-welded-round-duct.html
+- HVAC Duct Shop Labour & Throughput Economics — operators, m2/hour, how automation cuts labour: https://sbkjduct.com/insights/duct-shop-labour-throughput-economics.html
+- Flat-Oval Duct Fabrication — where it's used, made from spiral round, and the machinery: https://sbkjduct.com/insights/flat-oval-duct-fabrication-guide.html
 - Spiral Duct Machine Spec Comparison 2026 — diameter, cutting, gauge, power, weight across SBTF-1500/1500C/1602/2020: https://sbkjduct.com/insights/spiral-duct-machine-spec-comparison.html
 - Duct Machine Power & Electrical Requirements 2026 — connected power (kW), 380V three-phase, 50Hz vs 60Hz export configuration and breaker sizing for SBTF + SBAL ranges: https://sbkjduct.com/insights/duct-machine-power-requirements.html
 - TDF Flange Machine Specs 2026 — the 4 machines that make TDF duct (flange former SBTDF-12/1.5-16, folder SBWS, cleat cutter, zipper SBHF) with model, thickness, power, weight; 35mm flange: https://sbkjduct.com/insights/tdf-flange-machine-specs.html
