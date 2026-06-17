@@ -309,7 +309,7 @@
         </svg>
         <span class="sb-chat-fab-pulse"></span>
       </button>
-      <div class="sb-chat-window" id="sbChatWindow">
+      <div class="sb-chat-window" id="sbChatWindow" role="dialog" aria-label="SBKJ product assistant chat">
         <div class="sb-chat-header">
           <div class="sb-chat-header-info">
             <div class="sb-chat-avatar">
@@ -332,7 +332,7 @@
         <div class="sb-chat-body" id="sbChatBody"></div>
         <div class="sb-chat-suggestions" id="sbChatSuggestions"></div>
         <div class="sb-chat-input-wrap">
-          <input type="text" id="sbChatInput" placeholder="Ask about machines, ducts, welding..." autocomplete="off" />
+          <input type="text" id="sbChatInput" aria-label="Ask the SBKJ product assistant" placeholder="Ask about machines, ducts, welding..." autocomplete="off" />
           <button id="sbChatSend" aria-label="Send">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9z"/></svg>
           </button>

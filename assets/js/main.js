@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
       const open = nav.classList.toggle("nav-open");
-      toggle.setAttribute("aria-expanded", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
       toggle.classList.toggle("is-active");
     });
     nav.querySelectorAll("a").forEach((a) => {
@@ -182,7 +182,9 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.id = "sbSearchBtn";
     btn.className = "site-search-btn";
     btn.setAttribute("aria-label", "Search the site");
-    btn.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
+    btn.setAttribute("aria-haspopup", "dialog");
+    btn.setAttribute("aria-expanded", "false");
+    btn.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
     headerInner.insertBefore(btn, headerInner.querySelector(".nav-toggle"));
 
     let overlay = null, input = null, list = null, idx = null, isOpen = false;
@@ -195,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
       overlay.innerHTML =
         '<div class="search-panel" role="dialog" aria-modal="true" aria-label="Site search">' +
         '<input type="search" class="search-input" placeholder="Search machines, guides, shows&hellip;" autocomplete="off" aria-label="Search query">' +
-        '<div class="search-results" role="listbox"></div>' +
+        '<div class="search-results"></div>' +
         '<p class="search-hint"><kbd>Esc</kbd> to close &middot; <kbd>Enter</kbd> opens the first result</p></div>';
       document.body.appendChild(overlay);
       input = overlay.querySelector(".search-input");
@@ -204,6 +206,16 @@ document.addEventListener("DOMContentLoaded", () => {
       input.addEventListener("input", () => render(input.value));
       input.addEventListener("keydown", (e) => {
         if (e.key === "Enter") { const a = list.querySelector("a"); if (a) location.href = a.href; }
+      });
+      // Focus trap: aria-modal="true" needs real containment so Tab can't reach the page behind.
+      overlay.addEventListener("keydown", (e) => {
+        if (e.key !== "Tab") return;
+        const f = [...overlay.querySelectorAll('a[href],button,input,[tabindex]:not([tabindex="-1"])')]
+          .filter((el) => el.offsetParent !== null);
+        if (!f.length) return;
+        const first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
       });
     };
 
@@ -240,6 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!overlay) build();
       overlay.hidden = false;
       isOpen = true;
+      btn.setAttribute("aria-expanded", "true");
       document.body.style.overflow = "hidden";
       load().then(() => render(input.value));
       setTimeout(() => input.focus(), 30);
@@ -248,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
       overlay.hidden = true;
       isOpen = false;
       document.body.style.overflow = "";
+      btn.setAttribute("aria-expanded", "false");
       btn.focus();
     };
 
