@@ -30,6 +30,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 92px; /* clear the 80px sticky header so anchor jumps (#videos etc.) don't hide the target heading */
   scrollbar-color: rgba(50, 55, 60, 0.25) var(--bg);
   scrollbar-width: thin;
 }
