@@ -2554,8 +2554,9 @@ section.section {
   border-top: 1px solid var(--border);
 }
 
-/* Defensive: never let scroll-reveal hide content. Show always. */
-.reveal, .reveal-stagger, .reveal > *, .reveal-stagger > * {
+/* Show content when JS is off / not-yet-ready (html.js is set early in <head>);
+   with JS on, scroll-reveal animates in on view. Print rule below also forces visible. */
+html:not(.js) .reveal, html:not(.js) .reveal-stagger, html:not(.js) .reveal > *, html:not(.js) .reveal-stagger > * {
   opacity: 1 !important;
   transform: none !important;
   visibility: visible !important;
