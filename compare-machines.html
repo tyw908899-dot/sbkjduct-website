@@ -112,7 +112,7 @@
               <option value="high">High volume, single-operator line</option>
             </select>
           </div>
-          <div class="selector-q">
+          <div class="selector-q" id="qMat" hidden>
             <label for="selMat">3. Heaviest material?</label>
             <select id="selMat">
               <option value="">Select…</option>
@@ -273,6 +273,7 @@
       var shape = document.getElementById("selShape"), dia = document.getElementById("selDia"),
           vol = document.getElementById("selVol"), mat = document.getElementById("selMat"),
           qDia = document.getElementById("qDia"), qVol = document.getElementById("qVol"),
+          qMat = document.getElementById("qMat"),
           out = document.getElementById("selResult");
       if (!shape) return;
       var P = "product/";
@@ -301,6 +302,7 @@
         var sh = shape.value;
         qDia.hidden = !(sh === "round" || sh === "both");
         qVol.hidden = !(sh === "rect" || sh === "both");
+        qMat.hidden = !sh; /* reveal material question only after a shape is chosen — no "1 … 3" gap */
         var parts = [];
         if (sh === "round" || sh === "both") { var s = spiral(); if (s) parts.push(s); }
         if (sh === "rect" || sh === "both") { var r = rect(); if (r) parts.push(r); }
