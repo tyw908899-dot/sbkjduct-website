@@ -145,6 +145,8 @@
   <url><loc>https://sbkjduct.com/videos.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><image:image><image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc><image:caption>SBKJ machine demo videos — auto duct, spiral, TDF, lockformer</image:caption></image:image></url>
   <url><loc>https://sbkjduct.com/contact.html</loc><lastmod>2026-06-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><image:image><image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc><image:caption>Request a quotation from SBKJ Group</image:caption></image:image></url>
   <url><loc>https://sbkjduct.com/faq.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><image:image><image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc><image:caption>HVAC duct machinery FAQ from SBKJ Group engineers</image:caption></image:image></url>
+  <url><loc>https://sbkjduct.com/privacy.html</loc><lastmod>2026-06-17</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://sbkjduct.com/terms.html</loc><lastmod>2026-06-17</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://sbkjduct.com/case-studies/</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority><image:image><image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc><image:caption>SBKJ Case Studies — Real HVAC duct machine installations worldwide</image:caption></image:image></url>
   <url><loc>https://sbkjduct.com/case-studies/vietnam-sbal-v-auto-duct-line.html</loc><lastmod>2026-06-19</lastmod><changefreq>yearly</changefreq><priority>0.7</priority><image:image><image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc><image:caption>Vietnam SBAL-V case study — Ho Chi Minh City HVAC workshop</image:caption></image:image></url>
   <url><loc>https://sbkjduct.com/case-studies/saudi-sbtf-1602-spiral-duct.html</loc><lastmod>2026-04-09</lastmod><changefreq>yearly</changefreq><priority>0.7</priority><image:image><image:loc>https://sbkjduct.com/assets/images/sbtf-1602.jpg</image:loc><image:caption>Saudi Arabia SBTF-1602 case study — Riyadh HVAC contractor spiral duct in-house</image:caption></image:image></url>
@@ -528,56 +530,6 @@
     <image:image>
       <image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc>
       <image:caption>SBKJ SBAL-V auto duct production line</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://sbkjduct.com/insights/index.html</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc>
-      <image:caption>SBKJ SBAL-V auto duct production line</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://sbkjduct.com/regions/index.html</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc>
-      <image:caption>SBKJ regional sales coverage: Australia, North America, Latin America, Middle East, Southeast Asia. Direct export to 100</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://sbkjduct.com/case-studies/index.html</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc>
-      <image:caption>Real SBKJ installations: auto duct line, spiral tubeformer and TDF flange case studies from Vietnam, Saudi Arabia, Austr</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://sbkjduct.com/industries/index.html</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc>
-      <image:caption>HVAC duct machinery by industry: data centers, cleanrooms, hospitals, food processing, commercial. SMACNA, EN 1507, ASHR</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://sbkjduct.com/categories/index.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://sbkjduct.com/assets/images/sbal-v.jpg</image:loc>
-      <image:caption>Browse SBKJ HVAC duct machinery by category: auto duct lines, spiral tubeformers, TDF &amp; lockformer, cutting, flexible du</image:caption>
     </image:image>
   </url>
   <url><loc>https://sbkjduct.com/insights/spiral-duct-machine-spec-comparison.html</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority><image:image><image:loc>https://sbkjduct.com/assets/images/sbtf-1602.jpg</image:loc></image:image></url>
