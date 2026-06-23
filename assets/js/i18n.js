@@ -7,7 +7,7 @@
   var SELF = ""; try { SELF = (document.currentScript && document.currentScript.src) || ""; } catch (e) {}
   if (!SELF) { var ss = document.getElementsByTagName("script"); for (var z = 0; z < ss.length; z++) { if (/i18n\.js/.test(ss[z].src)) { SELF = ss[z].src; break; } } }
   var DATA_BASE = SELF.replace(/[^\/]*$/, "") + "i18n-data/";
-  var DATA_VER = "10";
+  var DATA_VER = "11";
   var LANGS = {
     en: { label: "English", flag: "\uD83C\uDDEC\uD83C\uDDE7" }, zh: { label: "\u4E2D\u6587", flag: "\uD83C\uDDF8\uD83C\uDDEC" },
     es: { label: "Espa\u00F1ol", flag: "\uD83C\uDDEA\uD83C\uDDF8" }, ru: { label: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439", flag: "\uD83C\uDDF7\uD83C\uDDFA" },
@@ -27,7 +27,8 @@
     "/product/tdf-flange.html": 1,
     "/product/lockformer.html": 1,
     "/product/stitch-welder.html": 1,
-    "/product/sbal-iii.html": 1
+    "/product/sbal-iii.html": 1,
+    "/product/metal-bending-tdf.html": 1
   };
 
   function normPath() {
