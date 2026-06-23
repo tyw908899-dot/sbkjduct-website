@@ -7,7 +7,7 @@
   var SELF = ""; try { SELF = (document.currentScript && document.currentScript.src) || ""; } catch (e) {}
   if (!SELF) { var ss = document.getElementsByTagName("script"); for (var z = 0; z < ss.length; z++) { if (/i18n\.js/.test(ss[z].src)) { SELF = ss[z].src; break; } } }
   var DATA_BASE = SELF.replace(/[^\/]*$/, "") + "i18n-data/";
-  var DATA_VER = "6";
+  var DATA_VER = "7";
   var LANGS = {
     en: { label: "English", flag: "\uD83C\uDDEC\uD83C\uDDE7" }, zh: { label: "\u4E2D\u6587", flag: "\uD83C\uDDF8\uD83C\uDDEC" },
     es: { label: "Espa\u00F1ol", flag: "\uD83C\uDDEA\uD83C\uDDF8" }, ru: { label: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439", flag: "\uD83C\uDDF7\uD83C\uDDFA" },
@@ -23,7 +23,8 @@
     "/categories/duct-welding-machines.html": 1, "/categories/cutting-and-forming.html": 1,
     "/categories/flexible-duct-machinery.html": 1,
     "/product/sbtf-1602.html": 1,
-    "/product/sbal-v.html": 1
+    "/product/sbal-v.html": 1,
+    "/product/tdf-flange.html": 1
   };
 
   function normPath() {
