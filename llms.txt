@@ -270,6 +270,7 @@ SBKJ also supplies and supports fabricators in regional NSW, VIC, QLD, WA, SA, T
 ## Conversion / engagement pages
 
 - **Schedule a Factory Tour** — Private 3-hour visit at SBKJ Box Hill North, Victoria. Production floor walkthrough + live machine operation against your nominated coil + private engineering consultation. Free for qualified buyers. Tuesdays and Thursdays year-round. Service + HowTo + FAQPage schema: https://sbkjduct.com/factory-tour.html
+- **Spec Sheet Download Library** — catalog-accurate downloadable PDF spec sheet for all 66 SBKJ HVAC duct fabrication machines (gauge/material range, capacity, power, footprint, weight), grouped by category: spiral, auto duct lines, TDF & lockformer, welding, cutting & forming, flexible duct, and specialty. CollectionPage + ItemList schema: https://sbkjduct.com/spec-sheets.html
 
 ## Region hubs (updated)
 
