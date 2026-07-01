@@ -1,4 +1,4 @@
-# SBKJ Website — Claude Design Brief
+# Taokron Website — Claude Design Brief
 
 **用法**: 打开 claude.ai → Claude Design(左侧菜单) → 新建 project → 把下面内容贴进去当 context。
 
@@ -6,7 +6,7 @@
 
 ## 1. 公司 & 产品
 
-- **公司**: SBKJ (VictoriaBox Hill North)— HVAC 风管生产设备制造商,30 年历史
+- **公司**: Taokron (VictoriaBox Hill North)— HVAC 风管生产设备制造商,30 年历史
 - **客户**: 全球 B2B 工业买家 — 沙特、澳大利亚、东南亚、欧洲承包商、数据中心/医院/洁净厂房总包
 - **产品**: 66 款机器 — 自动风管生产线、螺旋风管成型机、TDF 法兰机、剪板/折弯/焊接设备
 - **语言**: 网站覆盖 10 种语言(en/zh/es/ru/ar/tr/fr/pt/hi/id)
@@ -91,7 +91,7 @@
 
 ### 做一次 Critique(先做这个)
 ```
-I'm iterating on sbkjduct.com, a B2B HVAC duct machinery
+I'm iterating on taokron.com, a B2B HVAC duct machinery
 manufacturer's website. Here's the current design system:
 [paste section 2 above]
 
@@ -177,7 +177,7 @@ Claude Design 生成的方案 → 点 "Handoff to Claude Code" → 它会生成�
 
 1. 登录 https://claude.ai(Pro/Max/Team/Enterprise 账户)
 2. 找到 **Design**(可能在 Plugins 里)
-3. 新建 project,项目名: **SBKJ Website Iteration**
+3. 新建 project,项目名: **Taokron Website Iteration**
 4. 把**第 1、2、3 节**贴进 context
 5. 从**第 4 节 P0**里挑一个目标开始(推荐先做首页 Critique)
 6. 做完之后回来告诉我结果,我同步改代码

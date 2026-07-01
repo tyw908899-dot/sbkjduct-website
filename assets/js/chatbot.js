@@ -1,5 +1,5 @@
 /* ================================================================
-   SBKJ AI Product Assistant
+   Taokron AI Product Assistant
    Smart recommendation chatbot for HVAC duct machinery
    ================================================================ */
 (function () {
@@ -112,7 +112,7 @@
 
   const RESPONSES = {
     greeting: {
-      text: "Hello! I'm the SBKJ Product Assistant. I can help you find the right HVAC duct machinery. What type of duct or process are you interested in?",
+      text: "Hello! I'm the Taokron Product Assistant. I can help you find the right HVAC duct machinery. What type of duct or process are you interested in?",
       suggestions: ["Round / Spiral Duct","Rectangular Duct","Flexible Duct","Elbow Making","Welding","Cutting","Show All Categories"]
     },
     rectangular: {
@@ -282,7 +282,7 @@
       const base = getBasePath();
       html += `<div class="sb-chat-contact">
         <a href="https://wa.me/61435074994" target="_blank" rel="noopener">WhatsApp: +61 435 074 994</a>
-        <a href="mailto:sales@sbkjduct.com">Email: sales@sbkjduct.com</a>
+        <a href="mailto:sales@taokron.com">Email: sales@taokron.com</a>
         <a href="${base}contact.html">Visit Contact Page</a>
       </div>`;
     }
@@ -309,7 +309,7 @@
         </svg>
         <span class="sb-chat-fab-pulse"></span>
       </button>
-      <div class="sb-chat-window" id="sbChatWindow" role="dialog" aria-label="SBKJ product assistant chat">
+      <div class="sb-chat-window" id="sbChatWindow" role="dialog" aria-label="Taokron product assistant chat">
         <div class="sb-chat-header">
           <div class="sb-chat-header-info">
             <div class="sb-chat-avatar">
@@ -321,7 +321,7 @@
               </svg>
             </div>
             <div>
-              <strong>SBKJ Assistant</strong>
+              <strong>Taokron Assistant</strong>
               <span>AI Product Advisor</span>
             </div>
           </div>
@@ -332,7 +332,7 @@
         <div class="sb-chat-body" id="sbChatBody"></div>
         <div class="sb-chat-suggestions" id="sbChatSuggestions"></div>
         <div class="sb-chat-input-wrap">
-          <input type="text" id="sbChatInput" aria-label="Ask the SBKJ product assistant" placeholder="Ask about machines, ducts, welding..." autocomplete="off" />
+          <input type="text" id="sbChatInput" aria-label="Ask the Taokron product assistant" placeholder="Ask about machines, ducts, welding..." autocomplete="off" />
           <button id="sbChatSend" aria-label="Send">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9z"/></svg>
           </button>

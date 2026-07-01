@@ -280,13 +280,13 @@ document.addEventListener("DOMContentLoaded", () => {
   })();
 
   // WhatsApp click-to-chat: prefill a page-aware message so the first message
-  // tells SBKJ which page/machine the enquiry is about (lead context, like the
+  // tells Taokron which page/machine the enquiry is about (lead context, like the
   // form's Lead-source field). Skips if a ?text= is already set.
   (() => {
     const wa = document.querySelector("a.fab-whatsapp[href*='wa.me']");
     if (!wa || /[?&]text=/.test(wa.getAttribute("href"))) return;
-    let t = (document.title || "").replace(/\s*[|—-]\s*SBKJ.*$/i, "").trim();
-    const msg = "Hi SBKJ, I'd like to ask about " + (t || "your HVAC duct machinery") + " — " + location.href;
+    let t = (document.title || "").replace(/\s*[|—-]\s*Taokron.*$/i, "").trim();
+    const msg = "Hi Taokron, I'd like to ask about " + (t || "your HVAC duct machinery") + " — " + location.href;
     const base = wa.getAttribute("href").split("?")[0];
     wa.setAttribute("href", base + "?text=" + encodeURIComponent(msg));
   })();

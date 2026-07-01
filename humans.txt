@@ -1,9 +1,9 @@
 /* TEAM */
 
-  Company: SBKJ Group
+  Company: Taokron
   Founded: 1995
-  Site: https://sbkjduct.com/
-  Contact: sales@sbkjduct.com
+  Site: https://taokron.com/
+  Contact: sales@taokron.com
 
 /* SITE */
 

@@ -1,8 +1,8 @@
 # 机器参数审计报告 — 2026-05-09
-# Machine Spec Audit — Website vs SBKJ Product Catalog 2026
+# Machine Spec Audit — Website vs Taokron Product Catalog 2026
 
-审计范围：把 sbkjduct.com 上每台机器的参数对照 `SBKJ Product Catalog 2026.pdf` 的官方参数核实。
-Source of truth: `C:\Users\samta\Desktop\SBKJ\01_Document_Production\Catalog_Builds\SBKJ Product Catalog 2026.pdf`
+审计范围：把 taokron.com 上每台机器的参数对照 `Taokron Product Catalog 2026.pdf` 的官方参数核实。
+Source of truth: `C:\Users\samta\Desktop\Taokron\01_Document_Production\Catalog_Builds\Taokron Product Catalog 2026.pdf`
 
 ## 严重错误（客户收到机器会不一样）
 

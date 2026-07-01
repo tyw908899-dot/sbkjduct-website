@@ -1,4 +1,4 @@
-/* SBKJ i18n loader v33 — lean build.
+/* Taokron i18n loader v33 — lean build.
    EN pages are authored in English (no inline EN dict).
    Switching language navigates to the static /<lang>/ page when one exists;
    otherwise the dict is lazy-loaded and applied in place. */
@@ -158,7 +158,7 @@
     var s = document.createElement("script");
     s.src = DATA_BASE + lang + ".js?v=" + DATA_VER;
     s.async = true;
-    s.onload = function () { var d = window.__SBKJ_I18N_DATA__; if (d) { cache[lang] = d; langData = d; } cb(); };
+    s.onload = function () { var d = window.__Taokron_I18N_DATA__; if (d) { cache[lang] = d; langData = d; } cb(); };
     s.onerror = function () { cb(); };
     document.head.appendChild(s);
   }
@@ -199,5 +199,5 @@
     if (currentLang !== "en") loadLang(currentLang, applyTranslations);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
-  window.SBKJ_i18n = { t: t, setLang: setLang, currentLang: function () { return currentLang; } };
+  window.Taokron_i18n = { t: t, setLang: setLang, currentLang: function () { return currentLang; } };
 })();

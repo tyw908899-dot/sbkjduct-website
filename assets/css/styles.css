@@ -1,5 +1,5 @@
 /* ========================================
-   SBKJ Design System – Avant-garde B2B
+   Taokron Design System – Avant-garde B2B
    ======================================== */
 :root {
   --bg: #030408;
@@ -318,7 +318,7 @@ img {
   filter: drop-shadow(0 0 10px rgba(50, 55, 60, 0.6));
 }
 
-/* Real SBKJ brand mark (metal duct with embossed SBKJ) */
+/* Real Taokron brand mark (metal duct with embossed Taokron) */
 .logo-img {
   height: 48px;
   width: auto;
@@ -495,7 +495,7 @@ img {
 
 /* .btn / .btn-primary / .btn-ghost — canonical v3 definitions below (~line 3007) */
 
-/* Why SBKJ section */
+/* Why Taokron section */
 .why-section {
   padding-block: 5rem;
 }
@@ -5009,3 +5009,9 @@ body {
 /* Sticky header: gains a hairline shadow once the page is scrolled (depth cue) */
 .site-header { transition: box-shadow 0.3s ease, background 0.3s ease; }
 .site-header.header-scrolled { box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 8px 24px -16px rgba(0,0,0,0.18); }
+
+/* --- Taokron wordmark logo (rebrand) --- */
+.logo-text { display: none; }
+.logo-img, .footer-logo-img { height: 34px; mix-blend-mode: normal; }
+.footer-logo .logo-title { display: none; }
+body.has-hero-dark .site-header:not(.header-scrolled) .logo-img { filter: brightness(0) invert(1); }

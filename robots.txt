@@ -1,5 +1,5 @@
-# SBKJ Group — robots.txt
-# https://sbkjduct.com/
+# Taokron — robots.txt
+# https://taokron.com/
 
 User-agent: *
 Allow: /
@@ -80,5 +80,5 @@ Allow: /
 User-agent: MistralAI-User
 Allow: /
 
-Host: sbkjduct.com
-Sitemap: https://sbkjduct.com/sitemap.xml
+Host: taokron.com
+Sitemap: https://taokron.com/sitemap.xml
