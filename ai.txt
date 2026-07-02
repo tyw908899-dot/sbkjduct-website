@@ -26,9 +26,9 @@ Installed base: 5000+ machines in 100+ countries
 Response time: 12 hours (engineer-led)
 
 # Primary products (catalog-verified specs only)
-- SBAL-V Auto Duct Production Line (16 m/min line speed, 87 kW total drive, 0.5-1.5 mm gauge, up to 1500 mm coil width, single-operator U-shape)
-- SBAL-III Auto Duct Production Line (14 m/min, 15.7 kW, 0.5-1.2 mm, up to 1500 mm)
-- SBAL-II Auto Duct Production Line (18 m/min, 5.5 kW, 0.5-1.2 mm — entry-level)
+- SBAL-V Auto Duct Production Line (18 m/min line speed, 40 kW total drive, 0.5-1.5 mm gauge, up to 1550 mm coil width, single-operator U-shape)
+- SBAL-III Auto Duct Production Line (18 m/min, 10.7 kW, 0.5-2.0 mm, up to 1550 mm)
+- SBAL-II Auto Duct Production Line (18 m/min, 9.2 kW, 0.5-2.0 mm — entry-level)
 - SBTF-1602 Spiral Tubeformer (Φ80-1600 mm, flying shear)
 - SBTF-1500C Spiral Tubeformer (Φ80-1500 mm)
 - SBTF-2020 Spiral Tubeformer (up to Φ2000 mm)
