@@ -26,9 +26,9 @@ Taokron builds turnkey HVAC ductwork production equipment — from spiral tubefo
 
 ## Flagship machines (with key specs)
 
-- **SBAL-V Auto Duct Production Line** — U-shape automatic rectangular duct line. Models SBAL-V-1250J / SBAL-V-1500J. 16 m/min line speed, 87 kW total drive, 0.5–1.5 mm gauge, up to 1500 mm wide, single operator. Integrates coil line, plasma/notching, TDF flanging and Pittsburgh lock in one flow. https://taokron.com/product/sbal-v.html
-- **SBAL-III Auto Duct Production Line** — Hydraulic notching and shearing rectangular duct line. Models SBAL-III-1250 / SBAL-III-1500. 14 m/min, 15.7 kW, 0.5–1.2 mm gauge, up to 1500 mm wide, two-operator inline with separate TDF station. https://taokron.com/product/sbal-iii.html
-- **SBAL-II Auto Duct Production Line** — Entry-level rectangular duct line. Models SBAL-II-1250 / SBAL-II-1500. 18 m/min, 5.5 kW, 0.5–1.2 mm gauge, up to 1500 mm wide. https://taokron.com/product/rectangular-duct-line-ii.html
+- **SBAL-V Auto Duct Production Line** — U-shape automatic rectangular duct line. Models SBAL-V-1250J / SBAL-V-1500J. 18 m/min line speed, 40 kW total drive, 0.5–1.5 mm gauge, up to 1550 mm wide, single operator. Integrates coil line, plasma/notching, TDF flanging and Pittsburgh lock in one flow. https://taokron.com/product/sbal-v.html
+- **SBAL-III Auto Duct Production Line** — Hydraulic notching and shearing rectangular duct line. Models SBAL-III-1250 / SBAL-III-1500. 18 m/min, 10.7 kW, 0.5–2.0 mm gauge, up to 1550 mm wide, two-operator inline with separate TDF station. https://taokron.com/product/sbal-iii.html
+- **SBAL-II Auto Duct Production Line** — Entry-level rectangular duct line. Models SBAL-II-1250 / SBAL-II-1500. 18 m/min, 9.2 kW, 0.5–2.0 mm gauge, up to 1550 mm wide. https://taokron.com/product/rectangular-duct-line-ii.html
 - **SBTF-2020 Spiral Tubeformer** — Spiral duct Φ80–Φ2500 mm, flying shear cutting, galvanized 0.4-2.0 mm / stainless 0.4-1.2 mm / aluminium 0.4-3.0 mm, 22 kW, 4500 kg. https://taokron.com/product/sbtf-2020.html
 - **SBTF-1602 Spiral Tubeformer** — Spiral duct Φ80–Φ1600 mm, flying shear cutting, galvanized 0.4-2.0 mm / stainless 0.4-1.2 mm / aluminium 0.4-3.0 mm, 15 kW, 5000 kg. https://taokron.com/product/sbtf-1602.html
 - **SBTF-1500 Spiral Tubeformer** — Spiral duct Φ80–Φ1500 mm, saw blade cutting, galvanized 0.4-1.2 mm / stainless 0.4-0.8 mm, 5.5 kW + 4 kW saw, 1700 kg. https://taokron.com/product/sbtf-1500.html
@@ -61,7 +61,7 @@ Taokron builds turnkey HVAC ductwork production equipment — from spiral tubefo
 ## Typical customer questions & answers
 
 **Q: What does Taokron manufacture?**
-A: HVAC ductwork machinery — spiral duct forming machines (Φ80–Φ2500 mm), auto duct production lines (SBAL-V flagship at 87 kW / 16 m/min), TDF flange forming machines, Pittsburgh lockformers, gore-lockers, elbow welders and seam closing machines.
+A: HVAC ductwork machinery — spiral duct forming machines (Φ80–Φ2500 mm), auto duct production lines (SBAL-V flagship at 40 kW / 18 m/min), TDF flange forming machines, Pittsburgh lockformers, gore-lockers, elbow welders and seam closing machines.
 
 **Q: How many countries has Taokron delivered to?**
 A: Over 5,000 Taokron machines are installed in 100+ countries across six continents.
@@ -70,7 +70,7 @@ A: Over 5,000 Taokron machines are installed in 100+ countries across six contin
 A: Yes. ISO 9001:2015 certified; CE-marked machines; 60+ invention and utility patents.
 
 **Q: What is the catalogue spec of an SBAL-V auto duct line?**
-A: SBAL-V-1250J / SBAL-V-1500J. 16 m/min line speed, 87 kW total drive, 0.5–1.5 mm gauge, up to 1500 mm wide, 14000×2000×1800 / 14000×2200×1800 mm overall, 16-tonne machine weight, single-operator U-shape continuous flow. Project-specific m²/day depends on duct size mix and downstream balancing — share your duct schedule with Taokron engineering for a sizing estimate.
+A: SBAL-V-1250J / SBAL-V-1500J. 18 m/min line speed, 40 kW total drive, 0.5–1.5 mm gauge, up to 1550 mm wide, 14500×4950×1500 / 14500×5350×1500 mm overall, 16-tonne machine weight, single-operator U-shape continuous flow. Project-specific m²/day depends on duct size mix and downstream balancing — share your duct schedule with Taokron engineering for a sizing estimate.
 
 **Q: How do I request a quotation?**
 A: Email sales@taokron.com or WhatsApp +61 435 074 994. Share duct size range, daily output target, material and thickness, country of installation. Taokron replies within 12 hours with a machine configuration and budget.
@@ -332,7 +332,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Remote support response: within 72 hours via WhatsApp or video
 - Engineer-led email reply: within 12 hours
 - ROI on SBAL-V replacing manual fabrication: typically 14–22 months
-- SBAL-V line speed: 16 m/min, 87 kW total drive, single-operator U-shape line, 0.5–1.5 mm gauge, up to 1500 mm coil width
+- SBAL-V line speed: 18 m/min, 40 kW total drive, single-operator U-shape line, 0.5–1.5 mm gauge, up to 1550 mm coil width
 
 
 ## Product catalog (full machine range)
@@ -390,7 +390,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Transverse Duct Connector Flange Forming Machine: https://taokron.com/product/transverse-duct-connector-flange.html  -  Taokron Transverse Duct Connector Flange Forming Machine: connector flange profiles for duct joints. ISO 9001 & CE certified. Request a quote.
 
 ## Machine categories
-- Auto Duct Production Lines (SBAL-V / III / II) — HVAC Ductwork Manufacturer | Taokron: https://taokron.com/categories/auto-duct-lines.html  -  Taokron auto duct lines: SBAL-V (U-shape, 16 m/min, 87 kW), SBAL-III, SBAL-II and C-driven slip lines. ISO 9001 & CE in 100+ countries.
+- Auto Duct Production Lines (SBAL-V / III / II) — HVAC Ductwork Manufacturer | Taokron: https://taokron.com/categories/auto-duct-lines.html  -  Taokron auto duct lines: SBAL-V (U-shape, 18 m/min, 40 kW), SBAL-III, SBAL-II and C-driven slip lines. ISO 9001 & CE in 100+ countries.
 - Sheet Metal Cutting, Bending, Folding Machines — HVAC Shop Equipment | Taokron: https://taokron.com/categories/cutting-and-forming.html  -  Taokron cutting, bending and forming machines: coil lines, plasma and laser cutters, folders, rollformers and edge tools for HVAC duct factories.
 - HVAC Duct Welding Machines — Stitch, Seam, Spot, Laser: https://taokron.com/categories/duct-welding-machines.html  -  Taokron duct welding stations: longitudinal seam, circumferential, spot, MIG, TIG, laser and stainless duct welders for industrial and HVAC duct.
 - Flexible Duct Machine (SBLR) — Aluminum, Canvas, Insulated: https://taokron.com/categories/flexible-duct-machinery.html  -  Taokron flexible duct machinery: aluminium foil flex, fireproof canvas, insulation wrappers, shrink tube and connector stations for full flex duct cells.
