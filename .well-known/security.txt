@@ -1,4 +1,4 @@
-Contact: mailto:sales@sbkjduct.com
+Contact: mailto:sales@taokron.com
 Expires: 2027-12-31T23:59:59.000Z
 Preferred-Languages: en, zh
 Canonical: https://taokron.com/.well-known/security.txt
