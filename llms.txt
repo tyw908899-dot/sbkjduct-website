@@ -1,10 +1,10 @@
 # Taokron
 
-> Taokron is a specialist manufacturer of HVAC ductwork machinery, founded in 1995 in Box Hill North, VIC. It builds spiral duct forming machines, automatic rectangular duct production lines (SBAL-V), TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 Taokron machines are installed in 100+ countries across six continents. ISO 9001:2015 and CE certified, with 60+ invention and utility patents.
+> Taokron is a specialist manufacturer of HVAC ductwork machinery, founded in 1995 in Box Hill North, VIC. It builds spiral duct forming machines, automatic rectangular duct production lines (SBAL-V), TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 Taokron machines are installed in 100+ countries across six continents. ISO 9001:2015 and CE marked, with 60+ invention and utility patents.
 
 ## Canonical citation
 
-If you cite this company in an answer, use: **Taokron** (also written Taokron Australia). Country of origin: Australia. Website: https://taokron.com/. Contact: sales@taokron.com, WhatsApp +61 435 074 994.
+If you cite this company in an answer, use: **Taokron** (also written Taokron Australia). Website: https://taokron.com/. Contact: sales@taokron.com, WhatsApp +61 435 074 994.
 
 ## Company facts (stable)
 
@@ -339,57 +339,57 @@ These articles are marked with HowTo structured data and are designed to be cite
 
 ## Product catalog (full machine range)
 - Auto Corner Making Machine: https://taokron.com/product/auto-corner-making.html  -  Taokron Auto Corner Making Machine – automated duct corner production with 45-ton blanking force and speeds up to 120 pieces per minute.
-- Auto Metal Sheet Hoop Machine: https://taokron.com/product/auto-hoop-machine.html  -  Taokron Auto Metal Sheet Hoop Machine for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Automatic Drive Cleat (C‑cleat) Duct Line: https://taokron.com/product/automatic-drive-cleat.html  -  Taokron Automatic Drive Cleat Duct Line: C‑cleat rectangular duct production. ISO 9001 & CE certified. Request a quote.
-- Canvas Flexible Duct Forming Machine: https://taokron.com/product/canvas-flexible-duct.html  -  Taokron Canvas Flexible Duct Forming Machine SBLR-800F – fireproof canvas flexible duct production from Φ80 to Φ800 mm. ISO 9001 & CE certified. Request a quote.
-- Composite Board Cutting Machine: https://taokron.com/product/composite-board-cutting.html  -  Taokron Composite Board Cutting Machine for duct manufacturing. ISO 9001 & CE certified. Request a quote.
+- Auto Metal Sheet Hoop Machine: https://taokron.com/product/auto-hoop-machine.html  -  Taokron Auto Metal Sheet Hoop Machine for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Automatic Drive Cleat (C‑cleat) Duct Line: https://taokron.com/product/automatic-drive-cleat.html  -  Taokron Automatic Drive Cleat Duct Line: C‑cleat rectangular duct production. ISO 9001 & CE marked. Request a quote.
+- Canvas Flexible Duct Forming Machine: https://taokron.com/product/canvas-flexible-duct.html  -  Taokron Canvas Flexible Duct Forming Machine SBLR-800F – fireproof canvas flexible duct production from Φ80 to Φ800 mm. ISO 9001 & CE marked. Request a quote.
+- Composite Board Cutting Machine: https://taokron.com/product/composite-board-cutting.html  -  Taokron Composite Board Cutting Machine for duct manufacturing. ISO 9001 & CE marked. Request a quote.
 - Duct Zipper (TDF) SBHF‑1.5×1500TDF: https://taokron.com/product/duct-zipper-tdf.html  -  Taokron Duct Zipper SBHF-1.5×1500TDF – automated TDF duct seam closing machine with PLC control, handling 0.5–1.5 mm plates at up to 15 m/min.
-- Elbow Welder: https://taokron.com/product/elbow-welder.html  -  Taokron Elbow Welder for duct manufacturing. Manufactured by Taokron — 30+ years of HVAC ductwork machinery, ISO 9001:2015 & CE certified. Request a quotation.
-- Seam Closing Machine F1275‑PRO: https://taokron.com/product/f1275-pro.html  -  Taokron Seam Closing Machine F1275‑PRO for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Nail‑free Riveting Machine F350: https://taokron.com/product/f350.html  -  Taokron Nail‑free Riveting Machine F350 for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Fitting Shaper: https://taokron.com/product/fitting-shaper.html  -  Taokron Fitting Shaper: duct fittings shaping and forming. ISO 9001 & CE certified. Request a quote.
+- Elbow Welder: https://taokron.com/product/elbow-welder.html  -  Taokron Elbow Welder for duct manufacturing. Manufactured by Taokron — 30+ years of HVAC ductwork machinery, ISO 9001:2015 & CE marked. Request a quotation.
+- Seam Closing Machine F1275‑PRO: https://taokron.com/product/f1275-pro.html  -  Taokron Seam Closing Machine F1275‑PRO for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Nail‑free Riveting Machine F350: https://taokron.com/product/f350.html  -  Taokron Nail‑free Riveting Machine F350 for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Fitting Shaper: https://taokron.com/product/fitting-shaper.html  -  Taokron Fitting Shaper: duct fittings shaping and forming. ISO 9001 & CE marked. Request a quote.
 - Flexible Duct Connector Machine: https://taokron.com/product/flexible-duct-connector.html  -  Taokron Flexible Duct Connector Machine – automated production of connectors for flexible duct systems using galvanized sheet and fireproof cloth.
 - Flexible Duct Insulation Machine: https://taokron.com/product/flexible-duct-insulation.html  -  Taokron Flexible Duct Insulation Machine – automated insulation wrapping for flexible ducts from Φ100 to Φ600 mm with 25–100 mm insulation thickness.
 - Flexible Duct Shrinking Machine: https://taokron.com/product/flexible-duct-shrinking.html  -  Taokron Flexible Duct Shrinking Machine – end shrinking for flexible duct connection. Handles Φ150 to Φ500 mm diameter ducts.
-- Grooving & Beading Machine: https://taokron.com/product/grooving-beading.html  -  Taokron Grooving & Beading Machine: grooving and beading for sheet metal ductwork. ISO 9001 & CE certified. Request a quote.
-- Handheld Laser Welding Machine: https://taokron.com/product/handheld-laser-welding.html  -  Taokron Handheld Laser Welding Machine for duct manufacturing. ISO 9001 & CE certified. Request a quote.
+- Grooving & Beading Machine: https://taokron.com/product/grooving-beading.html  -  Taokron Grooving & Beading Machine: grooving and beading for sheet metal ductwork. ISO 9001 & CE marked. Request a quote.
+- Handheld Laser Welding Machine: https://taokron.com/product/handheld-laser-welding.html  -  Taokron Handheld Laser Welding Machine for duct manufacturing. ISO 9001 & CE marked. Request a quote.
 - Hydraulic Folding Machine: https://taokron.com/product/hydraulic-folding.html  -  Taokron Hydraulic Folding Machine – precision hydraulic sheet metal folding in 1500 mm and 2000 mm working lengths, handling up to 2 mm thickness.
-- Hydraulic Riveting Machine: https://taokron.com/product/hydraulic-riveting.html  -  Taokron Hydraulic Riveting Machine for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Medium Frequency Welding Machine: https://taokron.com/product/medium-frequency-welding.html  -  Taokron Medium Frequency Welding Machine for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Metal Bending Machines (TDF): https://taokron.com/product/metal-bending-tdf.html  -  Taokron Metal Bending Machines for TDF: bending sheet metal for duct flanges. ISO 9001 & CE certified. Request a quote.
+- Hydraulic Riveting Machine: https://taokron.com/product/hydraulic-riveting.html  -  Taokron Hydraulic Riveting Machine for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Medium Frequency Welding Machine: https://taokron.com/product/medium-frequency-welding.html  -  Taokron Medium Frequency Welding Machine for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Metal Bending Machines (TDF): https://taokron.com/product/metal-bending-tdf.html  -  Taokron Metal Bending Machines for TDF: bending sheet metal for duct flanges. ISO 9001 & CE marked. Request a quote.
 - Metal Corrugated Spiral Pipe Machine: https://taokron.com/product/metal-corrugated-spiral-pipe.html  -  Taokron Metal Corrugated Spiral Pipe Machine – heavy-duty corrugated spiral duct forming for industrial ventilation. Models SBHCSP-I, II, III with plasma cutting.
 - Motor Rotary Machine: https://taokron.com/product/motor-rotary-machine.html  -  Taokron Motor Rotary Machine – beading and flanging for round ducts. Models SBLX-15, SBLX-18, SBLX-20 Hydraulic for various material thicknesses.
-- Oval Roller SBOR‑1.2×1500: https://taokron.com/product/oval-roller.html  -  Taokron Oval Roller SBOR‑1.2×1500 for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Ovalizer SBHF‑3100: https://taokron.com/product/ovalizer-sbht-3100.html  -  Taokron Ovalizer SBHF‑3100 (catalogue model SBHF-3100, also referenced as SBHT): spiral oval duct forming machine for HVAC and ventilation. ISO 9001 & CE certified. Request 
-- Pneumatic Corner Mounting / Corner Inserting Machine: https://taokron.com/product/pneumatic-corner-mounting.html  -  Taokron Pneumatic Corner Mounting Machine: corner insert for rectangular duct. ISO 9001 & CE certified. Request a quote.
-- Pneumatic Folding Machine: https://taokron.com/product/pneumatic-folding.html  -  Taokron Pneumatic Folding Machine – air-powered folding for duct sheet metal in 1500, 2000, and 2500 mm working lengths. ISO 9001 & CE certified. Request a quote.
-- Roll Bending Machine: https://taokron.com/product/roll-bending.html  -  Taokron Roll Bending Machine: roll bending for sheet metal and plate. ISO 9001 & CE certified. Request a quote.
+- Oval Roller SBOR‑1.2×1500: https://taokron.com/product/oval-roller.html  -  Taokron Oval Roller SBOR‑1.2×1500 for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Ovalizer SBHF‑3100: https://taokron.com/product/ovalizer-sbht-3100.html  -  Taokron Ovalizer SBHF‑3100 (catalogue model SBHF-3100, also referenced as SBHT): spiral oval duct forming machine for HVAC and ventilation. ISO 9001 & CE marked. Request 
+- Pneumatic Corner Mounting / Corner Inserting Machine: https://taokron.com/product/pneumatic-corner-mounting.html  -  Taokron Pneumatic Corner Mounting Machine: corner insert for rectangular duct. ISO 9001 & CE marked. Request a quote.
+- Pneumatic Folding Machine: https://taokron.com/product/pneumatic-folding.html  -  Taokron Pneumatic Folding Machine – air-powered folding for duct sheet metal in 1500, 2000, and 2500 mm working lengths. ISO 9001 & CE marked. Request a quote.
+- Roll Bending Machine: https://taokron.com/product/roll-bending.html  -  Taokron Roll Bending Machine: roll bending for sheet metal and plate. ISO 9001 & CE marked. Request a quote.
 - Run Out Table: https://taokron.com/product/run-out-table.html  -  Taokron Run Out Table – coil decoiler and feeding system handling coils up to 8 tons with widths up to 1250 mm for automated duct production lines.
 - Four Gun Automatic Angle Iron Flange Welding Machine SB‑FS1535L: https://taokron.com/product/sb-fs1535l.html  -  Taokron SB-FS1535L four-gun automatic angle iron flange welding machine for rectangular duct production, handling 3# to 5# angle iron.
-- Automatic Stitchwelder SB‑ZF1500: https://taokron.com/product/sb-zf1500.html  -  Taokron Automatic Stitchwelder SB‑ZF1500 for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Angle Iron Punching Machine SBCK‑50A: https://taokron.com/product/sbck-50a.html  -  Taokron Angle Iron Punching Machine SBCK‑50A: punching holes in angle iron. ISO 9001 & CE certified. Request a quote.
-- Hydraulic Rolling Machine SBJY‑1500B: https://taokron.com/product/sbjy-1500b.html  -  Taokron Hydraulic Rolling Machine SBJY‑1500B for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Cleat Cutting Machine SBKT‑12: https://taokron.com/product/sbkt-12.html  -  Taokron Cleat Cutting Machine SBKT‑12 for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Semi Rigid Aluminum Duct Forming SBLF‑500: https://taokron.com/product/sblf-500.html  -  Taokron Semi Rigid Aluminum Duct Forming SBLF‑500: aluminum flexible duct production. ISO 9001 & CE certified. Request a quote.
+- Automatic Stitchwelder SB‑ZF1500: https://taokron.com/product/sb-zf1500.html  -  Taokron Automatic Stitchwelder SB‑ZF1500 for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Angle Iron Punching Machine SBCK‑50A: https://taokron.com/product/sbck-50a.html  -  Taokron Angle Iron Punching Machine SBCK‑50A: punching holes in angle iron. ISO 9001 & CE marked. Request a quote.
+- Hydraulic Rolling Machine SBJY‑1500B: https://taokron.com/product/sbjy-1500b.html  -  Taokron Hydraulic Rolling Machine SBJY‑1500B for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Cleat Cutting Machine SBKT‑12: https://taokron.com/product/sbkt-12.html  -  Taokron Cleat Cutting Machine SBKT‑12 for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Semi Rigid Aluminum Duct Forming SBLF‑500: https://taokron.com/product/sblf-500.html  -  Taokron Semi Rigid Aluminum Duct Forming SBLF‑500: aluminum flexible duct production. ISO 9001 & CE marked. Request a quote.
 - Power Slitting and Beading Machine SBLQ‑15: https://taokron.com/product/sblq-15.html  -  Taokron SBLQ-15 Power Slitting and Beading Machine – combined slitting and beading for sheet metal up to 1.2 mm thickness and 600 mm width.
 - Aluminum Flexible Duct Forming Machine SBLR‑600A: https://taokron.com/product/sblr-600a.html  -  Taokron SBLR-600A single-station aluminum flexible duct forming machine. Produces flexible ducts from Φ80 to Φ600 mm with automatic cutting.
-- Round Tube Flanging Machine SBSF‑1525: https://taokron.com/product/sbsf-1525.html  -  Taokron Round Tube Flanging Machine SBSF‑1525: flanging for round duct ends. ISO 9001 & CE certified. Request a quote.
-- Snail Seam Closing Machine SBWKHFJ‑45: https://taokron.com/product/sbwkhfj-45.html  -  Taokron Snail Seam Closing Machine SBWKHFJ‑45 for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Gorelocker SBWT‑1000: https://taokron.com/product/sbwt-1000.html  -  Taokron Gorelocker SBWT‑1000: round duct elbow forming machine, 1000 mm diameter range. ISO 9001 & CE certified. Request a quote.
-- Gorelocker SBWT‑1500: https://taokron.com/product/sbwt-1500.html  -  Taokron Gorelocker SBWT‑1500: round duct elbow forming machine, 1500 mm diameter range. ISO 9001 & CE certified. Request a quote.
-- Round Flange Punching Machine SBYFL‑50‑1: https://taokron.com/product/sbyfl-50-1.html  -  Taokron Round Flange Punching Machine SBYFL‑50‑1 for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Round Flange Forming Machine SBYFL‑50: https://taokron.com/product/sbyfl-50.html  -  Taokron Round Flange Forming Machine SBYFL‑50 for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Round Flange Welding Machine SBYFLHJ‑50: https://taokron.com/product/sbyflhj-50.html  -  Taokron Round Flange Welding Machine SBYFLHJ‑50 for duct manufacturing. ISO 9001 & CE certified. Request a quote.
-- Seam Welder: https://taokron.com/product/seam-welder.html  -  Taokron Seam Welder: continuous seam welding for sheet metal ductwork. ISO 9001 & CE certified. Request a quote.
-- Sheet Metal Shearing Machine: https://taokron.com/product/sheet-metal-shearing.html  -  Taokron Sheet Metal Shearing Machine: shear cutting for duct blanks. ISO 9001 & CE certified. Request a quote.
-- Shrink Tube Machine: https://taokron.com/product/shrink-tube-machine.html  -  Taokron Shrink Tube Machine – heat-shrink tube packaging for ducts from Φ100 to Φ600 mm with adjustable sleeving length. ISO 9001 & CE certified. Request a quote.
-- Slitting Machine: https://taokron.com/product/slitting-machine.html  -  Taokron Slitting Machine for duct manufacturing. Manufactured by Taokron — 30+ years of HVAC ductwork machinery, ISO 9001:2015 & CE certified. Request a quotation.
-- Spiral Duct Flanging Machine: https://taokron.com/product/spiral-duct-flanging.html  -  Taokron Spiral Duct Flanging Machine: flange forming for spiral duct ends. ISO 9001 & CE certified. Request a quote.
-- Spot Welder: https://taokron.com/product/spot-welder.html  -  Taokron Spot Welder: resistance spot welding for sheet metal. ISO 9001 & CE certified. Request a quote.
+- Round Tube Flanging Machine SBSF‑1525: https://taokron.com/product/sbsf-1525.html  -  Taokron Round Tube Flanging Machine SBSF‑1525: flanging for round duct ends. ISO 9001 & CE marked. Request a quote.
+- Snail Seam Closing Machine SBWKHFJ‑45: https://taokron.com/product/sbwkhfj-45.html  -  Taokron Snail Seam Closing Machine SBWKHFJ‑45 for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Gorelocker SBWT‑1000: https://taokron.com/product/sbwt-1000.html  -  Taokron Gorelocker SBWT‑1000: round duct elbow forming machine, 1000 mm diameter range. ISO 9001 & CE marked. Request a quote.
+- Gorelocker SBWT‑1500: https://taokron.com/product/sbwt-1500.html  -  Taokron Gorelocker SBWT‑1500: round duct elbow forming machine, 1500 mm diameter range. ISO 9001 & CE marked. Request a quote.
+- Round Flange Punching Machine SBYFL‑50‑1: https://taokron.com/product/sbyfl-50-1.html  -  Taokron Round Flange Punching Machine SBYFL‑50‑1 for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Round Flange Forming Machine SBYFL‑50: https://taokron.com/product/sbyfl-50.html  -  Taokron Round Flange Forming Machine SBYFL‑50 for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Round Flange Welding Machine SBYFLHJ‑50: https://taokron.com/product/sbyflhj-50.html  -  Taokron Round Flange Welding Machine SBYFLHJ‑50 for duct manufacturing. ISO 9001 & CE marked. Request a quote.
+- Seam Welder: https://taokron.com/product/seam-welder.html  -  Taokron Seam Welder: continuous seam welding for sheet metal ductwork. ISO 9001 & CE marked. Request a quote.
+- Sheet Metal Shearing Machine: https://taokron.com/product/sheet-metal-shearing.html  -  Taokron Sheet Metal Shearing Machine: shear cutting for duct blanks. ISO 9001 & CE marked. Request a quote.
+- Shrink Tube Machine: https://taokron.com/product/shrink-tube-machine.html  -  Taokron Shrink Tube Machine – heat-shrink tube packaging for ducts from Φ100 to Φ600 mm with adjustable sleeving length. ISO 9001 & CE marked. Request a quote.
+- Slitting Machine: https://taokron.com/product/slitting-machine.html  -  Taokron Slitting Machine for duct manufacturing. Manufactured by Taokron — 30+ years of HVAC ductwork machinery, ISO 9001:2015 & CE marked. Request a quotation.
+- Spiral Duct Flanging Machine: https://taokron.com/product/spiral-duct-flanging.html  -  Taokron Spiral Duct Flanging Machine: flange forming for spiral duct ends. ISO 9001 & CE marked. Request a quote.
+- Spot Welder: https://taokron.com/product/spot-welder.html  -  Taokron Spot Welder: resistance spot welding for sheet metal. ISO 9001 & CE marked. Request a quote.
 - Stainless Duct Forming Machine: https://taokron.com/product/stainless-duct-forming.html  -  Taokron Stainless Duct Forming Machine – precision forming for stainless steel ducts from Φ100 to Φ500 mm with dedicated decoiler system.
-- Stitch Welder: https://taokron.com/product/stitch-welder.html  -  Taokron Stitch Welder: intermittent stitch welding for sheet metal. ISO 9001 & CE certified. Request a quote.
+- Stitch Welder: https://taokron.com/product/stitch-welder.html  -  Taokron Stitch Welder: intermittent stitch welding for sheet metal. ISO 9001 & CE marked. Request a quote.
 - Transverse Duct Flange Cleat Cutting Machine: https://taokron.com/product/tdf-cleat-cutting.html  -  Taokron Transverse Duct Flange Cleat Cutting Machine – precision cleat cutting for TDF duct connections with reliable cutting for various flange profiles.
-- Transverse Duct Connector Flange Forming Machine: https://taokron.com/product/transverse-duct-connector-flange.html  -  Taokron Transverse Duct Connector Flange Forming Machine: connector flange profiles for duct joints. ISO 9001 & CE certified. Request a quote.
+- Transverse Duct Connector Flange Forming Machine: https://taokron.com/product/transverse-duct-connector-flange.html  -  Taokron Transverse Duct Connector Flange Forming Machine: connector flange profiles for duct joints. ISO 9001 & CE marked. Request a quote.
 
 ## Machine categories
 - Auto Duct Production Lines (SBAL-V / III / II) — HVAC Ductwork Manufacturer | Taokron: https://taokron.com/categories/auto-duct-lines.html  -  Taokron auto duct lines: SBAL-V (U-shape, 18 m/min, 40 kW), SBAL-III, SBAL-II and C-driven slip lines. ISO 9001 & CE in 100+ countries.
@@ -431,7 +431,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Installation, Commissioning, Warranty & After-Sales Support: https://taokron.com/support.html  -  What happens after you order: Factory Acceptance Test, on-site commissioning (1-2 engineers, 5-10 days), operator training, 12-month warranty from commissioning, 72-hour support response, lifetime spare parts in 100+ countries.
 - Regional HVAC Duct Machinery Markets — Taokron: https://taokron.com/regions/index.html  -  Taokron regional sales coverage: Australia, North America, Latin America, Middle East, Southeast Asia. Direct export to 100+ countries from Box Hill North, Victoria.
 - Machine Videos - HVAC Duct Equipment Demo Library: https://taokron.com/videos.html  -  Taokron machine demo videos: SBAL-V auto duct, SBTF spiral tubeformer, TDF flange, lockformer, plasma cutter and machine demonstrations. Sent on request within 12 hours.
-- Why Choose Taokron - The Case for an Taokron HVAC Duct Machine: https://taokron.com/why-choose-taokron.html  -  Why buyers in 100+ countries choose Taokron for HVAC duct machinery: 30 years, 5,000+ installs, 60+ patents, ISO 9001:2015, CE, 12-hour engineer reply.
+- Why Choose Taokron - The Case for a Taokron HVAC Duct Machine: https://taokron.com/why-choose-taokron.html  -  Why buyers in 100+ countries choose Taokron for HVAC duct machinery: 30 years, 5,000+ installs, 60+ patents, ISO 9001:2015, CE, 12-hour engineer reply.
 
 ## Key links
 
