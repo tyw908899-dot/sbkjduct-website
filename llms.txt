@@ -173,9 +173,9 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Singapore HVAC Duct ASEAN Gateway Playbook — SS 553, BCA Green Mark, post-moratorium hyperscale boom (AirTrunk/Equinix/GDS/ST Telemedia), Tuas/Jurong location and the Singapore-Johor-Batam supply chain: https://taokron.com/insights/singapore-hvac-duct-asean-gateway.html
 - USA HVAC Duct Fabrication Market — Engineer-led setup guide for North American shops covering SMACNA 4th Edition pressure classes, IMC, NFPA 90A, ASHRAE 90.1-2022, IECC, UL 181, California Title 24, Florida HVHZ, 480V/60Hz machinery, NEMA enclosures, UL 508A panels, US labour cost USD 65-110/hr, automation ROI and Texas data centre worked example: https://taokron.com/insights/usa-hvac-duct-fabrication-market.html
 - BIM Integration for HVAC Duct Fabrication — Revit MEP to auto duct line workflow covering eVolve Mechanical, MagiCAD, CAMduct/CADmep file transfer (PCF/MAJ/IFC4/gbXML/IDS), LOD 200 to LOD 400 progression, ISO 19650 standards, Hypertherm EDGE Connect plasma post, Siemens S7-1500 PLC integration: https://taokron.com/insights/bim-integration-hvac-duct-fabrication.html
-- North America Region Hub — HVAC duct machinery for US/Canada/Mexico with SMACNA-compliant tolerances, 480V/60Hz electrical, NEMA enclosures, UL panel marking, AUSFTA preferential origin treatment, Section 301 tariff exemption (Australian origin), B-1 visa installation supervision and US port logistics: https://taokron.com/regions/north-america.html
+- North America Region Hub — HVAC duct machinery for US/Canada/Mexico with SMACNA-compliant tolerances, 480V/60Hz electrical, NEMA enclosures, UL panel marking, B-1 visa installation supervision and US port logistics: https://taokron.com/regions/north-america.html
 - Canada HVAC Duct Fabrication Market — NBC 2025, NECB 2020 climate zones 4-8, CSA standards, provincial code variations (Ontario OBC, Quebec CCB, BC BCBC, Alberta ABC), Quebec Bill 96 French documentation, 600V/480V/240V industrial power, CSA C22.2 No. 14 panel marking, Vancouver/Toronto/Calgary/Montreal markets, mining/oil-gas/pharma/cannabis vertical demand: https://taokron.com/insights/canada-hvac-duct-fabrication-market.html
-- Auto Duct Production Line ROI and Cost Analysis — Worked CFO/plant manager analysis: SBAL-V landed cost USD 380-680K replaces 8-12 manual operators (USD 600-900K/yr loaded), 6-9 month payback in tier-1 markets. Three worked examples: US 30K m²/yr 13-month payback NPV USD 1.6M, Australia 50K m²/yr 11-month payback, Saudi Vision 2030 80K m²/yr 16-month payback. Energy 22-30 kW operating, consumables USD 1.5-3K/yr, tooling regrind cycles 100-300K m, downtime 95-98% uptime, rework 4-8% manual to 0.5-1.5% auto: https://taokron.com/insights/auto-duct-line-roi-cost-analysis.html
+- Auto Duct Production Line ROI and Cost Analysis — Worked CFO/plant manager analysis: an SBAL-V replaces 8-12 manual operators, 6-9 month payback in tier-1 markets. Three worked examples: US 30K m²/yr 13-month payback, Australia 50K m²/yr 11-month payback, Saudi Vision 2030 80K m²/yr 16-month payback. Energy 22-30 kW operating, tooling regrind cycles 100-300K m, downtime 95-98% uptime, rework 4-8% manual to 0.5-1.5% auto: https://taokron.com/insights/auto-duct-line-roi-cost-analysis.html
 - AS 1668.2 Australian Mechanical Ventilation Code Reference — outdoor air rates by space type, exhaust requirements (bathroom, kitchen, fume cupboard, car park, photocopier), pressurisation control, AS 1668.1 smoke management interaction, AS 4254 ductwork construction cross-reference, NCC Section J energy efficiency interaction. 2024 revision changes covered: https://taokron.com/insights/as-1668-2-australian-ventilation-code-reference.html
 - AS 4254 Australian Ductwork Construction Code Reference — Pressure Classes 1-4 (500-2500 Pa), Leakage Classes A-E (0.4-4.0 L/s/m²) with SMACNA equivalents, sheet gauge by dimension and pressure class, longitudinal seam types (Pittsburgh, button-punch, grooved, welded), TDF transverse joints, reinforcement intervals, fabrication tolerances: https://taokron.com/insights/as-4254-australian-ductwork-construction-reference.html
 - Australia HVAC Duct Fabrication Setup 2026 Buyer's Playbook — Brisbane 2032 Olympic infrastructure, AUKUS Henderson WA submarine precinct, Sydney West Metro, Snowy 2.0, NextDC/AirTrunk data centres, AIRAH/AMCA Australia certifications, AUD currency hedging, BlueScope/Korvest coil supply, ARBS 2026 trade show, NABERS/Climate Active sustainability: https://taokron.com/insights/australia-hvac-duct-fabrication-setup-2026.html
@@ -275,8 +275,8 @@ Taokron also supplies and supports fabricators in regional NSW, VIC, QLD, WA, SA
 
 ## Region hubs (updated)
 
-- India Hub — BIS standards, Australia-India ECTA preferential customs, PLI scheme manufacturing FDI (Apple/Foxconn/Tata/Micron/Wistron), hyperscale data centre boom, pharma cluster Hyderabad: https://taokron.com/regions/india.html
-- Japan and South Korea Hub — JIS/SHASE/KS standards, JEPA + KAFTA preferential customs, semiconductor cleanroom (Samsung Pyeongtaek/SK hynix/TSMC Kumamoto/Rapidus), K-Battery Belt (LGES/Samsung SDI/SK On), Panasonic battery: https://taokron.com/regions/japan-korea.html
+- India Hub — BIS standards, PLI scheme manufacturing FDI (Apple/Foxconn/Tata/Micron/Wistron), hyperscale data centre boom, pharma cluster Hyderabad: https://taokron.com/regions/india.html
+- Japan and South Korea Hub — JIS/SHASE/KS standards, semiconductor cleanroom (Samsung Pyeongtaek/SK hynix/TSMC Kumamoto/Rapidus), K-Battery Belt (LGES/Samsung SDI/SK On), Panasonic battery: https://taokron.com/regions/japan-korea.html
 
 ## Industry hubs
 
@@ -299,12 +299,12 @@ Taokron also supplies and supports fabricators in regional NSW, VIC, QLD, WA, SA
 - Africa Hub (South Africa, Egypt, Nigeria, Morocco, Kenya, mining ventilation): https://taokron.com/regions/africa.html
 - Middle East Hub (Saudi Arabia, UAE, Qatar, Kuwait, Oman): https://taokron.com/regions/middle-east.html
 - Southeast Asia Hub (Singapore, Indonesia, Malaysia, Thailand, Vietnam, Philippines): https://taokron.com/regions/southeast-asia.html
-- Australia Hub (local office Box Hill North VIC, ChAFTA, AS/NZS 4254): https://taokron.com/regions/australia.html
+- Australia Hub (local office Box Hill North VIC, AS/NZS 4254): https://taokron.com/regions/australia.html
 
 ## Trade shows and live events
 
 - **ARBS 2026** (Sydney, 5–7 May 2026, Stand 149 — show concluded) — Taokron exhibited HVAC ductwork machinery at the International Convention Centre Sydney. Post-show recap and machine enquiries: https://taokron.com/arbs-2026.html
-- **AHR Expo 2027** (Chicago, McCormick Place, 25–27 January 2027) — Taokron exhibits at North America's largest HVAC trade show. US-spec machines (480V/60Hz, NEMA 12, UL-marked panels) on the stand. 30-minute private consultations with USD landed-cost worksheets. AUSFTA preferential treatment, Australian origin. Booking: https://taokron.com/ahr-expo-2027.html
+- **AHR Expo 2027** (Chicago, McCormick Place, 25–27 January 2027) — Taokron exhibits at North America's largest HVAC trade show. US-spec machines (480V/60Hz, NEMA 12, UL-marked panels) on the stand. 30-minute private consultations. Booking: https://taokron.com/ahr-expo-2027.html
 - **Latin America Region Hub** — HVAC duct machinery for Brazil, Mexico, Chile, Colombia, Argentina, Peru, Ecuador, Costa Rica, Panama. ABNT NBR 16401 (Brazil), NOM/NICO (Mexico), NCh (Chile), RETIE (Colombia) compliance, Spanish/Portuguese documentation, 220V/380V/60Hz/50Hz electrical configurations: https://taokron.com/regions/latin-america.html
 
 ## Step-by-step procedural guides (HowTo schema marked)
@@ -327,7 +327,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Customs clearance and inland trucking: 5–14 days
 - Total door-to-door (auto duct line): 4–5 months from contract signing
 - Standard payment terms: 30% T/T deposit, 70% balance against bill of lading
-- L/C at sight accepted for orders above USD 100,000
+- L/C at sight accepted for larger orders
 - HS code for HVAC duct forming machinery: 8462.49 or 8479.89
 - Incoterms supported: EXW, FOB Melbourne, CFR, CIF, DDP
 - Warranty: 12 months standard
@@ -416,7 +416,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Vietnam SBAL-V Auto Duct Line Case Study - Ho Chi Minh City: https://taokron.com/case-studies/vietnam-sbal-v-auto-duct-line.html  -  Taokron SBAL-V-1250J replaces a 10-operator manual HVAC duct workshop in Ho Chi Minh City. Before/after numbers, 58-day lead time, 5-day commissioning, first-year results.
 
 ## Region pages (more)
-- HVAC Duct Machinery in New Zealand — Auckland, Christchurch Rebuild: https://taokron.com/regions/new-zealand.html  -  Taokron in New Zealand: HVAC duct machinery for Kiwi fabricators. AS/NZS 4254 compliance, ANZCERTA preferential customs, Auckland infrastructure boom, Christchurch rebuild l
+- HVAC Duct Machinery in New Zealand — Auckland, Christchurch Rebuild: https://taokron.com/regions/new-zealand.html  -  Taokron in New Zealand: HVAC duct machinery for Kiwi fabricators. AS/NZS 4254 compliance, Auckland infrastructure boom, Christchurch rebuild l
 - HVAC Duct Machinery in United Kingdom — DW/144, BESA, UKCA Marking: https://taokron.com/regions/united-kingdom.html  -  Taokron in the UK: HVAC duct machinery for British fabricators. DW/144 BESA specification, UKCA marking post-Brexit, CIBSE design, BIM Level 2, London / Manchester / Birming
 
 ## Core company, hub & buyer pages
@@ -426,7 +426,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Taokron Production & Quality - HVAC Duct Machinery: https://taokron.com/factory.html  -  How Taokron builds HVAC duct machinery: production stages, machine assembly, FAT testing and export packing. Shipped to 100+ countries since 1995.
 - HVAC Duct Machinery by Industry — Data Centers, Cleanrooms, Hospitals: https://taokron.com/industries/index.html  -  HVAC duct machinery by industry: data centers, cleanrooms, hospitals, food processing, commercial. SMACNA, EN 1507, ASHRAE 170, ISO 14644 aligned Taokron.
 - Insights — HVAC Duct Machinery Engineering Guides: https://taokron.com/insights/index.html  -  Engineer-led guides on HVAC ductwork machinery: auto duct lines, spiral tubeformers, TDF flange, factory layout and production planning from Taokron.
-- HVAC Duct Machine Prices & Lead Times - 2026 Buyer Budget Guide: https://taokron.com/pricing-and-lead-time.html  -  2026 HVAC duct machine price ranges & lead times: auto duct lines $80K-$420K, spiral tubeformers $35K-$180K, TDF flange $18K-$52K. Taokron.
+- HVAC Duct Machine Prices & Lead Times - 2026 Buyer Budget Guide: https://taokron.com/pricing-and-lead-time.html  -  2026 HVAC duct machine budget bands & lead times for auto duct lines, spiral tubeformers and TDF flange formers. Request a quote. Taokron.
 - Quality Control - ISO 9001:2015 & CE: https://taokron.com/quality.html  -  Taokron quality control: ISO 9001:2015 procurement, in-process inspection, FAT testing and pre-shipment QA across every machine before it ships.
 - Installation, Commissioning, Warranty & After-Sales Support: https://taokron.com/support.html  -  What happens after you order: Factory Acceptance Test, on-site commissioning (1-2 engineers, 5-10 days), operator training, 12-month warranty from commissioning, 72-hour support response, lifetime spare parts in 100+ countries.
 - Regional HVAC Duct Machinery Markets — Taokron: https://taokron.com/regions/index.html  -  Taokron regional sales coverage: Australia, North America, Latin America, Middle East, Southeast Asia. Direct export to 100+ countries from Box Hill North, Victoria.
