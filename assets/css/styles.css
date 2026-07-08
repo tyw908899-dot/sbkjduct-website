@@ -5015,3 +5015,31 @@ body {
 .logo-img, .footer-logo-img { height: 34px; mix-blend-mode: normal; }
 .footer-logo .logo-title { display: none; }
 body.has-hero-dark .site-header:not(.header-scrolled) .logo-img { filter: brightness(0) invert(1); }
+
+/* Press / featured-in credibility strip (ACHR News) */
+.press-band {
+  padding-block: 1.4rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+.press-band-inner {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.85rem;
+  text-align: center;
+}
+.press-band-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+.press-band-link { color: var(--text); text-decoration: none; }
+.press-band-link strong { border-bottom: 1px solid var(--accent); padding-bottom: 1px; }
+.press-band-link:hover strong { color: var(--accent); }
+.press-band-title { color: var(--text-dim); font-weight: 400; font-style: italic; }
+@media (max-width: 640px) { .press-band-title { flex-basis: 100%; font-size: 0.82rem; } }
