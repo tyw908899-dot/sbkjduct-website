@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>HVAC Duct Air Leakage Classes and Testing Explained | Taokron</title>
+  <meta name="description" content="HVAC duct air leakage explained: the SMACNA leakage class (CL) and F = CL x P^0.65 formula, how seal class sets it, EN and DW/144 classes, and leak testing." />
+  <link rel="canonical" href="https://taokron.com/insights/duct-air-leakage-classes-explained.html" />
+  <link rel="alternate" hreflang="en" href="https://taokron.com/insights/duct-air-leakage-classes-explained.html" />
+  <link rel="alternate" hreflang="x-default" href="https://taokron.com/insights/duct-air-leakage-classes-explained.html" />
+  <meta name="author" content="Taokron" />
+  <meta name="geo.region" content="AU-VIC" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:site_name" content="Taokron" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="HVAC Duct Air Leakage Classes and Testing Explained | Taokron" />
+  <meta property="og:description" content="HVAC duct air leakage explained: the SMACNA leakage class (CL) and F = CL x P^0.65 formula, how seal class sets it, EN and DW/144 classes, and leak testing." />
+  <meta property="og:url" content="https://taokron.com/insights/duct-air-leakage-classes-explained.html" />
+  <meta property="og:image" content="https://taokron.com/assets/images/sbal-v.jpg" />
+  <meta property="article:published_time" content="2026-07-08T00:00:00+10:00" />
+  <meta property="article:modified_time" content="2026-07-08T00:00:00+10:00" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@taokron" />
+  <meta name="twitter:description" content="HVAC duct air leakage explained: the SMACNA leakage class (CL) and F = CL x P^0.65 formula, how seal class sets it, EN and DW/144 classes, and leak testing." />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=42" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://taokron.com/#author-engineering","name":"Taokron Engineering Team","url":"https://taokron.com/about.html","description":"Taokron senior engineers with 30+ years of combined experience in HVAC ductwork machinery design, commissioning and field service across 100+ countries.","parentOrganization":{"@id":"https://taokron.com/#org"},"knowsAbout":["HVAC duct machinery","Spiral tubeformer","TDF flange","Auto duct production line","SMACNA","EN 1507","EN 12237","Duct air leakage class"]},
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://taokron.com/"},
+      {"@type":"ListItem","position":2,"name":"Insights","item":"https://taokron.com/insights/"},
+      {"@type":"ListItem","position":3,"name":"HVAC Duct Air Leakage Classes and Testing Explained","item":"https://taokron.com/insights/duct-air-leakage-classes-explained.html"}
+    ]},
+    {"@type":"TechArticle","headline":"HVAC Duct Air Leakage Classes and Testing Explained","description":"Engineer-level explainer on HVAC duct air leakage: the SMACNA leakage class and the F = CL x P^0.65 formula, how seal class sets the expected leakage class, the EN 1507 and DW/144 air-tightness classes, and how duct is leak tested.","author":{"@id":"https://taokron.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"Taokron QA & Engineering","url":"https://taokron.com/about.html","description":"Taokron quality assurance and engineering team reviews every published guide before publication and re-validates it on each update."},"publisher":{"@id":"https://taokron.com/#org"},"datePublished":"2026-07-08T00:00:00+10:00","dateModified":"2026-07-08T00:00:00+10:00","image":"https://taokron.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://taokron.com/insights/duct-air-leakage-classes-explained.html","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"HVAC Standards","about":[{"@type":"Thing","name":"HVAC duct air leakage"},{"@type":"Thing","name":"SMACNA leakage class"},{"@type":"Thing","name":"Duct air tightness"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What is a duct leakage class?","acceptedAnswer":{"@type":"Answer","text":"A duct leakage class, written CL, is the allowable leakage rate in cubic feet per minute per 100 square feet of duct surface at a reference static pressure of 1 in. w.g. A lower CL number is a tighter duct. SMACNA lists common classes of CL 3, 6, 12, 24 and 48. Leakage at any other pressure is found from F = CL x P raised to the 0.65 power."}},
+      {"@type":"Question","name":"What is the duct leakage formula?","acceptedAnswer":{"@type":"Answer","text":"SMACNA relates leakage to pressure with F = CL x P^0.65, where F is the leakage in cfm per 100 sq ft of duct surface, CL is the leakage class, and P is the static pressure in inches of water gauge. The 0.65 exponent is the value SMACNA uses for classification; the real exponent for a given leakage path can range from about 0.5 to 0.9."}},
+      {"@type":"Question","name":"How does seal class affect leakage class?","acceptedAnswer":{"@type":"Answer","text":"Tighter sealing gives a lower expected leakage class. For rectangular metal duct SMACNA correlates Seal Class C to about CL 24, Seal Class B to CL 12 and Seal Class A to CL 6. Round and flat-oval duct sits roughly one class tighter at the same seal class, near CL 12, 6 and 3. Unsealed rectangular duct is around CL 48."}},
+      {"@type":"Question","name":"How is duct leakage tested?","acceptedAnswer":{"@type":"Answer","text":"A section of duct is isolated and blanked off, a blower pressurises it to the test pressure, and the make-up airflow needed to hold that pressure is measured through a calibrated orifice. That make-up flow equals the leakage out of the section. The measured leakage is compared against the specified leakage class or a percentage-of-airflow limit."}},
+      {"@type":"Question","name":"What is an acceptable duct leakage percentage?","acceptedAnswer":{"@type":"Answer","text":"The ASHRAE Handbook gives a maximum system air leakage of roughly 1 to 5 percent of total system design airflow at operating pressure, with tighter systems at the lower end. Project specifications often cap allowable leakage at a few percent of design airflow, tested at the duct's design pressure. The exact figure is set by the designer of record."}},
+      {"@type":"Question","name":"What are the EN and DW/144 duct air-tightness classes?","acceptedAnswer":{"@type":"Answer","text":"EN 1507 (rectangular) and EN 12237 (circular) define air-tightness classes A, B, C and D, with Class A the leakiest and Class D the tightest. The maximum leakage factor is f_max = C x p^0.65, with the constant stepping 0.027, 0.009, 0.003 and 0.001 for A, B, C and D, so each class is three times tighter than the one before. The UK DW/144 uses the same four limits."}}
+    ]},
+    {"@type":"HowTo","name":"How to establish the leakage class for a duct specification","description":"Method for reading the required duct air leakage class or leakage limit from a project specification and turning it into shop-floor requirements.","totalTime":"PT15M","tool":[{"@type":"HowToTool","name":"Mechanical specification and duct schedule"},{"@type":"HowToTool","name":"Duct pressure class and seal class"},{"@type":"HowToTool","name":"SMACNA or EN leakage tables"}],"step":[
+      {"@type":"HowToStep","name":"Read the pressure class and seal class","text":"Find the construction pressure class and the specified seal class for the section. Higher pressure classes are normally sealed to Seal Class A, which drives the tightest expected leakage class."},
+      {"@type":"HowToStep","name":"Convert seal class to expected leakage class","text":"Use the SMACNA correlation: rectangular metal duct at Seal C, B, A maps to about CL 24, 12, 6; round and flat-oval to about CL 12, 6, 3. If the spec names an EN or DW/144 class instead, read the A to D letter directly."},
+      {"@type":"HowToStep","name":"Check any percentage-of-airflow limit","text":"Many specifications also cap total leakage at a few percent of design airflow. AS 4254.2 in Australia, for example, uses a 5 percent of design air quantity limit rather than a surface-area class. Note whichever limit the spec applies."},
+      {"@type":"HowToStep","name":"Set the sealing and joint method","text":"Translate the target class into construction: which joints, seams and penetrations must be sealed, whether TDF flanges carry a factory gasket, and whether round or spiral duct is a better fit because it leaks less at the same seal class."},
+      {"@type":"HowToStep","name":"Plan the leak test","text":"Confirm the test pressure, the sample fraction of the system to be tested and the pass criterion before fabrication, so the shop builds and seals to a target it can actually pass on site."}
+    ]}
+  ]}
+  </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "x4n6j0p80n");
+  </script>
+</head>
+<body class="site-body">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell">
+      <div class="site-header-inner">
+        <a href="../index.html" class="logo"><img src="../assets/images/logo.svg" alt="Taokron" class="logo-img" width="129" height="48" decoding="async"><span class="logo-text"><span class="logo-title">Taokron</span><span class="logo-subtitle">Group</span></span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
+        <nav id="primaryNav" class="site-nav" aria-label="Primary">
+          <a href="../index.html" data-i18n="nav.home">Home</a>
+          <a href="../machines.html" data-i18n="nav.machines">Machines</a>
+          <a href="../insights/" data-i18n="nav.insights">Insights</a>
+          <a href="../about.html" data-i18n="nav.about">About</a>
+          <a href="../contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html" data-i18n="nav.home">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>HVAC Duct Air Leakage Classes and Testing Explained</span></li></ol></nav></div></nav>
+    <article class="section page-hero bg-subtle">
+      <div class="shell">
+        <p class="eyebrow">Insights · Standards</p>
+        <h1 class="page-title">HVAC Duct Air Leakage Classes and Testing Explained</h1>
+        <p class="article-lead">Every duct system leaks. The question a specification answers is how much is allowed, and the answer is written as a leakage class. This is a practical guide to the SMACNA leakage class and the F = CL x P<sup>0.65</sup> formula behind it, how the seal class you build to sets the leakage class you can expect, the EN 1507 and DW/144 air-tightness classes used elsewhere, and how duct is leak tested on site.</p>
+        <p class="article-byline">
+          <span class="article-byline-author"><span data-i18n="article.by">By</span> <a href="../about.html" rel="author" data-i18n="article.engteam">Taokron Engineering Team</a></span>
+          <span class="article-byline-sep">·</span>
+          <span><span data-i18n="article.published">Published</span> <time datetime="2026-07-08">July 8, 2026</time></span>
+          <span class="article-byline-sep">·</span>
+          <span>7 min read</span>
+          <span class="article-byline-sep">·</span>
+          <span data-i18n="article.reviewedby">Reviewed by Taokron QA &amp; Engineering</span>
+        </p>
+      </div>
+    </article>
+    <section class="section">
+      <div class="shell"><div class="content-narrow">
+        <h2>What duct air leakage costs</h2>
+        <p>Air leakage is the air that escapes through the joints, seams and penetrations of a duct instead of reaching the terminal it was sized for. It is never zero. A leaky supply system makes the fan move more air than the design called for, which shows up as higher fan energy every hour the system runs, rooms that never reach setpoint at the end of long runs, and balancing reports that will not close. On a negative-pressure return or a fume system, leakage pulls unconditioned or contaminated air in rather than pushing it out, which is a safety question rather than an energy one.</p>
+        <p>Leakage is set at the shop, not on site. Once the duct is hung, sealing a joint you can no longer reach is slow and unreliable. That is why a specification fixes an allowable leakage before fabrication, and why the number it uses, the leakage class, is worth understanding before you cut steel.</p>
+
+        <h2>The SMACNA leakage class</h2>
+        <p>SMACNA, the Sheet Metal and Air Conditioning Contractors' National Association, expresses allowable leakage as a leakage class, written CL. The class is the leakage rate in cubic feet per minute per 100 square feet of duct surface area, measured at a reference static pressure of 1 in. w.g. A lower CL number is a tighter duct.</p>
+        <p>Because duct rarely runs at exactly 1 in. w.g., the class is scaled to the real pressure with a power law:</p>
+        <p class="cta-inline" style="font-size:1.15rem;"><strong>F = CL &times; P<sup>0.65</sup></strong></p>
+        <p>Here F is the leakage in cfm per 100 sq ft of duct surface, CL is the leakage class, and P is the static pressure in inches of water gauge. The 0.65 exponent is the value SMACNA uses to classify duct. The real exponent for a specific leakage path can sit anywhere between about 0.5 and 0.9, but 0.65 is the number the class system is built on. The classes you will see quoted are a discrete set:</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Leakage class (CL)</th>
+              <th>Relative tightness</th>
+              <th>Where it typically applies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>CL 3</td><td>Tightest commonly published</td><td>Sealed round and flat-oval duct at high pressure, Seal Class A</td></tr>
+            <tr><td>CL 6</td><td>Tight</td><td>Sealed rectangular duct at high pressure, Seal Class A</td></tr>
+            <tr><td>CL 12</td><td>Moderate</td><td>Sealed round duct at low pressure, or rectangular at Seal Class B</td></tr>
+            <tr><td>CL 24</td><td>Loose</td><td>Sealed rectangular duct at low pressure, Seal Class C</td></tr>
+            <tr><td>CL 48</td><td>Loosest</td><td>Unsealed rectangular metal duct</td></tr>
+          </tbody>
+        </table>
+        <p>The single most common mistake is to quote one leakage class for a duct type without naming the pressure and seal class it belongs to. Sealed rectangular duct is not one number. It is CL 24, 12 or 6 depending on how tightly it is sealed, which is the subject of the next section.</p>
+
+        <h2>Seal class drives leakage class</h2>
+        <p>The leakage class is an outcome. The thing the shop actually controls is the <a href="smacna-seal-classes-explained.html">seal class</a>, which says which parts of the duct get sealed: Seal Class C seals the transverse joints, Seal Class B adds the longitudinal seams, and Seal Class A adds every duct-wall penetration as well. Tighter sealing gives a lower expected leakage class. SMACNA correlates the two like this:</p>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Construction</th>
+              <th>Seal Class C</th>
+              <th>Seal Class B</th>
+              <th>Seal Class A</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Rectangular metal duct</td><td>CL 24</td><td>CL 12</td><td>CL 6</td></tr>
+            <tr><td>Round and flat-oval metal duct</td><td>CL 12</td><td>CL 6</td><td>CL 3</td></tr>
+          </tbody>
+        </table>
+        <p>Two things fall out of that table. First, round and flat-oval duct sits about one leakage class tighter than rectangular at the same seal class, because a roll-formed spiral lockseam has far less joint length to leak through than a four-corner rectangular section. Second, the seal class is itself tied to the <a href="duct-pressure-classes-explained.html">pressure class</a>. The 2005 SMACNA HVAC Duct Construction Standards assign Seal Class C to 1/2, 1 and 2 in. w.g., Seal Class B to 3 in. w.g., and Seal Class A to 4, 6 and 10 in. w.g., though the 2 in. w.g. boundary sits at Seal Class B in some presentations, and ASHRAE 90.1 now asks for Seal Class A regardless of pressure class. Either way, a high-pressure spec pulls you down to the tightest leakage class through the seal class, without it ever being written explicitly.</p>
+        <p>One note on editions. The values above are the long-standing SMACNA figures carried in the HVAC Duct Construction Standards. A later revision of the SMACNA leakage test manual tightened the expected classes, so if your specification cites a specific manual edition, read the class table in that edition rather than assuming these numbers.</p>
+
+        <h2>How duct leakage is tested</h2>
+        <p>A leakage test is simple in principle. A section of the finished system is isolated and blanked off at both ends. A blower pressurises it to the test pressure, and the airflow the blower has to keep supplying to hold that pressure is measured through a calibrated orifice. That make-up flow is the leakage out of the section. Divide it by the surface area tested and you have the leakage in the same cfm-per-100-sq-ft units as the class.</p>
+        <p>Specifications rarely ask for the whole system to be tested. They name a representative fraction, a test pressure equal to the section's design pressure, and a pass criterion. That criterion is often written two ways at once: a leakage class the section must beat, and a cap on total leakage as a percentage of system airflow. The ASHRAE Handbook puts acceptable whole-system leakage in the range of roughly 1 to 5 percent of design airflow at operating pressure, and project specs commonly land within that band. The designer of record sets the exact figure.</p>
+
+        <h2>What it drives on the shop floor</h2>
+        <p>A tight leakage class is won or lost at three points in fabrication. The transverse joint is the biggest single leakage path, so a TDF flange rolled square on the duct end, closed with a factory-applied gasket and clipped tight, is doing most of the work on a Seal Class A rectangular job. The longitudinal seam is the second: a Pittsburgh lock has to be fully rolled and, above the lower seal classes, sealed along its length. The third is simply squareness. A duct end that is out of square will not pull a gasketed flange up evenly no matter how much sealant goes on, so a line that holds length and width to tight tolerances is quietly buying leakage performance.</p>
+        <p>This is also where duct shape earns its place in the decision. Because round and spiral duct leaks about half of what rectangular does at the same seal class, moving a high-leakage-sensitivity run to spiral can hit a tight class with less sealing labour than forcing rectangular duct down to the same number. Matching the machinery to the classes you build, rectangular flange-and-seam work, spiral lockseam, or both, is a spec-time decision worth making deliberately rather than discovering on the test day.</p>
+
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html?source=guide-duct-air-leakage-classes-explained">Ask Taokron which line suits your leakage classes &rarr;</a></p>
+
+        <h2>EN, DW/144 and AS 4254.2 equivalents</h2>
+        <p>Outside North America the same physics appears under different labels.</p>
+        <ul>
+          <li><strong>EN 1507</strong> (rectangular) and <strong>EN 12237</strong> (circular) define air-tightness classes A, B, C and D, with Class A the leakiest and Class D the tightest. The maximum leakage factor is f<sub>max</sub> = C &times; p<sup>0.65</sup>, and the constant steps 0.027, 0.009, 0.003 and 0.001 for A, B, C and D. Each class is exactly three times tighter than the one before it.</li>
+          <li><strong>DW/144</strong>, the UK BESA sheet-metal ductwork specification, uses the same four leakage limits as EN, tied to low, medium and high pressure classes, and makes leakage testing mandatory only for the high-pressure classes C and D.</li>
+          <li><strong>AS 4254.2</strong> in Australia does not use a surface-area class at all. It caps leakage at 5 percent of the design air quantity, requires systems of 3000 L/s and above to be tested at no less than 1.25 times operating pressure, asks for at least 10 percent of the system to be tested, and points to the UK test method for the procedure.</li>
+          <li><strong>GCC and Middle East</strong> mechanical specifications generally call SMACNA leakage classes or DW/144 directly rather than the EN class letters.</li>
+        </ul>
+        <p>For a fuller side-by-side of the construction standards these leakage classes live inside, see <a href="international-duct-standards-compared.html">International duct standards compared</a>.</p>
+
+        <h2>Specification language you will see</h2>
+        <p>A mechanical specification will usually pin down leakage in one of two styles. A SMACNA-based spec reads like: <em>"Supply ductwork shall be sealed to Seal Class A and shall not exceed Leakage Class 6. A minimum of 25 percent of the system shall be leak tested at 2 in. w.g."</em> A European or Australian spec instead reads in percentages: <em>"Ductwork shall achieve air-tightness Class C to EN 1507,"</em> or <em>"leakage shall not exceed 5 percent of design air quantity when tested to AS 4254.2."</em> Both are saying the same thing in different units: how tight, at what pressure, proven by what test.</p>
+
+        <h2>FAQ</h2>
+        <details><summary>What is a duct leakage class?</summary><p>A duct leakage class, CL, is the allowable leakage in cfm per 100 sq ft of duct surface at a reference pressure of 1 in. w.g. A lower CL is tighter. Common classes are CL 3, 6, 12, 24 and 48, and leakage at other pressures follows F = CL x P to the 0.65 power.</p></details>
+        <details><summary>What is the duct leakage formula?</summary><p>F = CL x P<sup>0.65</sup>, where F is leakage in cfm per 100 sq ft of duct surface, CL is the leakage class, and P is static pressure in inches w.g. SMACNA uses the 0.65 exponent for classification; real leakage paths can range from about 0.5 to 0.9.</p></details>
+        <details><summary>How does seal class affect leakage class?</summary><p>Tighter sealing gives a lower leakage class. For rectangular metal duct, Seal Class C, B and A correlate to about CL 24, 12 and 6. Round and flat-oval duct is roughly one class tighter, near CL 12, 6 and 3. Unsealed rectangular duct is about CL 48.</p></details>
+        <details><summary>How is duct leakage tested?</summary><p>A duct section is isolated and blanked, a blower pressurises it to the test pressure, and the make-up airflow needed to hold that pressure is measured through a calibrated orifice. That flow is the leakage, which is then compared to the specified class or percentage limit.</p></details>
+        <details><summary>What are the EN and DW/144 air-tightness classes?</summary><p>EN 1507 and EN 12237 define classes A to D, Class A leakiest and Class D tightest, with f_max = C x p^0.65 and the constant stepping 0.027, 0.009, 0.003 and 0.001. Each class is three times tighter than the last. DW/144 uses the same four limits.</p></details>
+
+        <aside class="related-guides">
+          <p class="eyebrow">Related guides</p>
+          <ul class="related-links">
+            <li><a href="duct-pressure-classes-explained.html">HVAC Duct Pressure Classes Explained</a></li>
+            <li><a href="smacna-seal-classes-explained.html">SMACNA Seal Class A, B, C Explained</a></li>
+            <li><a href="hvac-commissioning-air-balancing-guide.html">HVAC Commissioning and Air Balancing Guide</a></li>
+            <li><a href="tdf-vs-angle-flange.html">TDF vs Angle Flange</a></li>
+            <li><a href="international-duct-standards-compared.html">International Duct Standards Compared</a></li>
+          </ul>
+        </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+      <div class="shell">
+        <div class="content-narrow">
+          <div class="promise-callout">
+            <span class="promise-label">12-hour reply</span>
+            <p class="promise-text">Got a spec question on this guide? A Taokron mechanical engineer replies within 12 hours, not a salesperson.</p>
+            <a href="../contact.html?source=guide-duct-air-leakage-classes-explained" class="btn btn-primary">Ask an engineer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <p>© Taokron · <a href="../index.html" data-i18n="nav.home">Home</a> · <a href="../machines.html" data-i18n="nav.machines">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-taokron.html" data-i18n="nav.why">Why Taokron</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../support.html" data-i18n="nav.support">Support</a> · <a href="../industries/" data-i18n="nav.industries">Industries</a> · <a href="../contact.html" data-i18n="nav.contact">Contact</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js?v=10"></script>
+  <a href="https://wa.me/61435074994" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</body>
+</html>

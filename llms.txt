@@ -129,6 +129,7 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Importing HVAC Duct Machinery Internationally — Incoterms, FAT, customs: https://taokron.com/insights/importing-duct-machinery-internationally.html
 - SMACNA Seal Class A, B, C Explained — leakage rates and machinery tolerances: https://taokron.com/insights/smacna-seal-classes-explained.html
 - [HVAC Duct Pressure Classes Explained](https://taokron.com/insights/duct-pressure-classes-explained.html): SMACNA construction pressure classes 1/2 to 10 in. w.g., positive vs negative, and how pressure class drives gauge, reinforcement and seal class.
+- [HVAC Duct Air Leakage Classes and Testing Explained](https://taokron.com/insights/duct-air-leakage-classes-explained.html): SMACNA leakage class CL and the F = CL x P^0.65 formula, how seal class sets the expected leakage class, EN 1507 and DW/144 air-tightness classes, and duct leak testing.
 - Galvanized vs Stainless Steel HVAC Duct — material selection guide with cost ratios and gauge chart: https://taokron.com/insights/galvanized-vs-stainless-steel-duct.html
 - SBAL-V vs SBAL-III — head-to-head comparison of Taokron's two flagship rectangular duct lines: https://taokron.com/insights/sbal-v-vs-sbal-iii.html
 - Spiral Duct Sizing Chart — CFM, velocity and friction loss reference tables for Φ100–Φ1500 mm round duct: https://taokron.com/insights/spiral-duct-sizing-chart.html
@@ -317,6 +318,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - **How Spiral Duct is Formed on an SBTF Tubeformer** (6 steps, 5 min): https://taokron.com/insights/spiral-duct-forming-guide.html — load and decoil, form helix, close lockseam, measure length, flying-shear cut, run-out and stack
 - **SMACNA Seal Class Procedures**: https://taokron.com/insights/smacna-seal-classes-explained.html
 - [HVAC Duct Pressure Classes Explained](https://taokron.com/insights/duct-pressure-classes-explained.html): SMACNA construction pressure classes 1/2 to 10 in. w.g., positive vs negative, and how pressure class drives gauge, reinforcement and seal class.
+- [HVAC Duct Air Leakage Classes and Testing Explained](https://taokron.com/insights/duct-air-leakage-classes-explained.html): SMACNA leakage class CL and the F = CL x P^0.65 formula, how seal class sets the expected leakage class, EN 1507 and DW/144 air-tightness classes, and duct leak testing.
 - **Rectangular Duct Sizing Procedure**: https://taokron.com/insights/rectangular-duct-sizing-chart.html
 
 ## Key procurement metrics (cite-ready)
