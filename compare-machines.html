@@ -132,7 +132,7 @@
         <h3>Tier-1 commercial / data centre / pharma cleanroom</h3>
         <ul>
           <li><strong>Auto duct line:</strong> SBAL-V (galvanised + stainless option, 18 m/min, 40 kW, up to 1550 mm wide)</li>
-          <li><strong>Spiral tubeformer:</strong> SBTF-1602 (Φ80-1600 mm, 0.4–2.0 mm galvanized, 0.4–1.2 mm stainless)</li>
+          <li><strong>Spiral tubeformer:</strong> SBTF-1602 (Φ80-1600 mm, 0.4–1.3 mm galvanized, 0.4–0.8 mm stainless)</li>
           <li><strong>Flange former:</strong> TDF flange former</li>
           <li><strong>Lockformer:</strong> Pittsburgh lockformer (backup for legacy work)</li>
           <li><strong>Indicative package tier:</strong> Turnkey &mdash; request a quote</li>
@@ -285,8 +285,8 @@
         var d = dia.value, m = mat.value;
         if (m === "al" || d === "2500") {
           return d === "2500"
-            ? card("Spiral Tubeformer SBTF-2020", "sbtf-2020.html", "Φ80–2500 mm · galv/stainless/aluminium to 3.0 mm · flying slitter")
-            : card("Spiral Tubeformer SBTF-1602", "sbtf-1602.html", "Φ80–1600 mm · galv to 2.0 mm, aluminium to 3.0 mm · flying slitter");
+            ? card("Spiral Tubeformer SBTF-2020", "sbtf-2020.html", "Φ80–2500 mm · galv/aluminium to 2.0 mm, stainless to 1.2 mm · flying slitter")
+            : card("Spiral Tubeformer SBTF-1602", "sbtf-1602.html", "Φ80–1600 mm · galv/aluminium to 1.3 mm, stainless to 0.8 mm · flying slitter");
         }
         if (d === "1600") return card("Spiral Tubeformer SBTF-1602", "sbtf-1602.html", "Φ80–1600 mm · plasma + flying slitter · galv/stainless");
         if (m === "ss") return card("Spiral Tubeformer SBTF-1500C", "sbtf-1500c.html", "Φ100–1500 mm · plasma + saw · galv + stainless to 1.2 mm");
