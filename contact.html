@@ -120,7 +120,19 @@
             var src = new URLSearchParams(location.search).get('source') || '';
             var ref = "";
             try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
-            ls.value = (src ? "campaign:" + src : "direct") + (ref ? " · ref:" + ref : "");
+            // Prefer first-touch (captured site-wide by main.js): a viewer who typed
+            // the CTA URL lands on "/" with no referrer, then clicks through to here.
+            // Last-touch alone would report that as "direct" and erase the funnel.
+            var first = null;
+            try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+            var campaign = src || (first && first.q) || '';
+            var origin = ref || (first && first.ref) || '';
+            var parts = [];
+            parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+            if (origin) parts.push('ref:' + origin);
+            if (first && first.lp) parts.push('landed:' + first.lp);
+            parts.push('form:' + location.pathname);
+            ls.value = parts.join(' · ');
             // Pre-select the interest dropdown from the source so the buyer skips a step.
             var sel = document.getElementById('interest');
             if (sel && !sel.value && src) {
@@ -131,6 +143,21 @@
                 [/factory|complete/i, 'complete-factory']
               ];
               for (var i = 0; i < map.length; i++) { if (map[i][0].test(src)) { sel.value = map[i][1]; break; } }
+            }
+            // Submit feedback + double-submit guard. This is a full-page POST to a
+            // third-party host: on mobile the round-trip can run for seconds with no
+            // visual change, so buyers re-tap and file the same lead twice (or leave).
+            var form = document.getElementById('quoteForm');
+            var btn = form && form.querySelector('button[type="submit"]');
+            if (form && btn) {
+              form.addEventListener('submit', function () {
+                // Deferred so the native submission starts before the button disables.
+                setTimeout(function () {
+                  var lbl = document.getElementById('sendingLabel');
+                  btn.disabled = true;
+                  btn.textContent = (lbl && lbl.textContent) || 'Sending…';
+                }, 0);
+              });
             }
           });
         </script>
@@ -190,6 +217,10 @@
             </div>
           </div>
           <div class="form-field">
+            <label for="country" data-i18n="form.country">Country of installation</label>
+            <input id="country" name="country" type="text" autocomplete="country-name" required />
+          </div>
+          <div class="form-field">
             <label for="interest" data-i18n="form.interest">Interested in</label>
             <select id="interest" name="interest">
               <option value="" data-i18n="form.select">Select...</option>
@@ -205,6 +236,7 @@
             <textarea id="message" name="message" rows="4" data-i18n-placeholder="form.placeholder" placeholder="Material type, thickness, required capacity, available workshop size..."></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full-width" data-i18n="form.submit">Send inquiry</button>
+          <span id="sendingLabel" hidden data-i18n="form.sending">Sending…</span>
         </form>
       </div>
     </section>

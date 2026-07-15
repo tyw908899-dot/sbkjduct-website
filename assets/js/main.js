@@ -1,3 +1,20 @@
+// First-touch capture. Runs on every page, before any navigation, so the quote
+// form can report where the session actually started. Social traffic arrives by
+// typing the burned-in CTA URL: no referrer, no campaign param, landing on "/".
+// Reading attribution at contact.html alone would log every such lead "direct".
+(() => {
+  try {
+    if (sessionStorage.getItem("tk_first")) return;
+    let ref = "";
+    if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer;
+    sessionStorage.setItem("tk_first", JSON.stringify({
+      lp: location.pathname + location.search,
+      ref: ref,
+      q: new URLSearchParams(location.search).get("source") || ""
+    }));
+  } catch (e) {}
+})();
+
 document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear().toString();

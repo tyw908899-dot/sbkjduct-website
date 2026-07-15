@@ -20,7 +20,7 @@
 <meta content="@taokron" name="twitter:creator"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
-<link href="https://taokron.com/zh/contact.html" rel="canonical"/><link href="https://taokron.com/contact.html" hreflang="en" rel="alternate"/><link href="https://taokron.com/es/contact.html" hreflang="es" rel="alternate"/><link href="https://taokron.com/pt/contact.html" hreflang="pt" rel="alternate"/><link href="https://taokron.com/fr/contact.html" hreflang="fr" rel="alternate"/><link href="https://taokron.com/ru/contact.html" hreflang="ru" rel="alternate"/><link href="https://taokron.com/ar/contact.html" hreflang="ar" rel="alternate"/><link href="https://taokron.com/hi/contact.html" hreflang="hi" rel="alternate"/><link href="https://taokron.com/tr/contact.html" hreflang="tr" rel="alternate"/><link href="https://taokron.com/id/contact.html" hreflang="id" rel="alternate"/><link href="https://taokron.com/zh/contact.html" hreflang="zh" rel="alternate"/><link href="https://taokron.com/contact.html" hreflang="x-default" rel="alternate"/>
+<link href="https://sbkjduct.com/zh/contact.html" rel="canonical"/><link href="https://sbkjduct.com/contact.html" hreflang="en" rel="alternate"/><link href="https://sbkjduct.com/es/contact.html" hreflang="es" rel="alternate"/><link href="https://sbkjduct.com/pt/contact.html" hreflang="pt" rel="alternate"/><link href="https://sbkjduct.com/fr/contact.html" hreflang="fr" rel="alternate"/><link href="https://sbkjduct.com/ru/contact.html" hreflang="ru" rel="alternate"/><link href="https://sbkjduct.com/ar/contact.html" hreflang="ar" rel="alternate"/><link href="https://sbkjduct.com/hi/contact.html" hreflang="hi" rel="alternate"/><link href="https://sbkjduct.com/tr/contact.html" hreflang="tr" rel="alternate"/><link href="https://sbkjduct.com/id/contact.html" hreflang="id" rel="alternate"/><link href="https://sbkjduct.com/zh/contact.html" hreflang="zh" rel="alternate"/><link href="https://sbkjduct.com/contact.html" hreflang="x-default" rel="alternate"/>
 
 
 
@@ -70,7 +70,7 @@
 <header class="site-header">
 <div class="shell">
 <div class="site-header-inner">
-<a class="logo" href="/zh/">
+<a class="logo" href="/">
 <img alt="Taokron" class="logo-img" decoding="async" height="48" src="/assets/images/logo.svg" width="129"/>
 <span class="logo-text">
 <span class="logo-title">Taokron</span>
@@ -81,17 +81,17 @@
 <span></span><span></span><span></span>
 </button>
 <nav aria-label="Primary" class="site-nav" id="primaryNav">
-<a data-i18n="nav.home" href="/zh/">首页</a>
-<a data-i18n="nav.machines" href="/zh/machines.html">产品中心</a>
+<a data-i18n="nav.home" href="/">首页</a>
+<a data-i18n="nav.machines" href="/machines.html">产品中心</a>
 <a data-i18n="nav.insights" href="/insights">技术文章</a>
-<a data-i18n="nav.about" href="/zh/about.html">关于我们</a>
+<a data-i18n="nav.about" href="/about.html">关于我们</a>
 <a class="nav-cta nav-current" data-i18n="nav.contact" href="/zh/contact.html">联系我们</a>
 </nav>
 </div>
 </div>
 </header>
 <main id="main">
-<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Breadcrumb" class="breadcrumbs"><ol><li><a data-i18n="nav.home" href="/zh/">首页</a></li><li aria-current="page"><span data-i18n="nav.contact">联系我们</span></li></ol></nav></div></nav>
+<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Breadcrumb" class="breadcrumbs"><ol><li><a data-i18n="nav.home" href="/">首页</a></li><li aria-current="page"><span data-i18n="nav.contact">联系我们</span></li></ol></nav></div></nav>
 <section class="section page-hero bg-subtle">
 <div class="shell">
 <p class="eyebrow" data-i18n="contact.eyebrow">联系我们</p>
@@ -117,7 +117,19 @@
             var src = new URLSearchParams(location.search).get('source') || '';
             var ref = "";
             try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
-            ls.value = (src ? "campaign:" + src : "direct") + (ref ? " · ref:" + ref : "");
+            // Prefer first-touch (captured site-wide by main.js): a viewer who typed
+            // the CTA URL lands on "/" with no referrer, then clicks through to here.
+            // Last-touch alone would report that as "direct" and erase the funnel.
+            var first = null;
+            try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+            var campaign = src || (first && first.q) || '';
+            var origin = ref || (first && first.ref) || '';
+            var parts = [];
+            parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+            if (origin) parts.push('ref:' + origin);
+            if (first && first.lp) parts.push('landed:' + first.lp);
+            parts.push('form:' + location.pathname);
+            ls.value = parts.join(' · ');
             // Pre-select the interest dropdown from the source so the buyer skips a step.
             var sel = document.getElementById('interest');
             if (sel && !sel.value && src) {
@@ -128,6 +140,21 @@
                 [/factory|complete/i, 'complete-factory']
               ];
               for (var i = 0; i < map.length; i++) { if (map[i][0].test(src)) { sel.value = map[i][1]; break; } }
+            }
+            // Submit feedback + double-submit guard. This is a full-page POST to a
+            // third-party host: on mobile the round-trip can run for seconds with no
+            // visual change, so buyers re-tap and file the same lead twice (or leave).
+            var form = document.getElementById('quoteForm');
+            var btn = form && form.querySelector('button[type="submit"]');
+            if (form && btn) {
+              form.addEventListener('submit', function () {
+                // Deferred so the native submission starts before the button disables.
+                setTimeout(function () {
+                  var lbl = document.getElementById('sendingLabel');
+                  btn.disabled = true;
+                  btn.textContent = (lbl && lbl.textContent) || 'Sending…';
+                }, 0);
+              });
             }
           });
         </script>
@@ -158,7 +185,7 @@
 <input name="_subject" type="hidden" value="New Taokron quotation request"/>
 <input name="_template" type="hidden" value="table"/>
 <input name="_captcha" type="hidden" value="false"/>
-<input name="_next" type="hidden" value="https://taokron.com/zh/contact.html?sent=1"/>
+<input name="_next" type="hidden" value="https://taokron.com/contact.html?sent=1"/>
 <input id="leadSource" name="Lead source" type="hidden" value=""/>
 <input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
 <div class="form-row">
@@ -182,6 +209,10 @@
 </div>
 </div>
 <div class="form-field">
+<label data-i18n="form.country" for="country">安装国家</label>
+<input autocomplete="country-name" id="country" name="country" required="" type="text"/>
+</div>
+<div class="form-field">
 <label data-i18n="form.interest" for="interest">感兴趣的产品</label>
 <select id="interest" name="interest">
 <option data-i18n="form.select" value="">请选择...</option>
@@ -197,6 +228,7 @@
 <textarea data-i18n-placeholder="form.placeholder" id="message" name="message" placeholder="材料类型、厚度、所需产能、车间面积..." rows="4"></textarea>
 </div>
 <button class="btn btn-primary btn-full-width" data-i18n="form.submit" type="submit">发送询价</button>
+<span data-i18n="form.sending" hidden="" id="sendingLabel">发送中…</span>
 </form>
 </div>
 </section>
@@ -279,7 +311,7 @@
 </section>
 <section class="section page-review-section">
 <div class="shell">
-<p class="page-reviewed" data-i18n-html="contact.reviewed"><span aria-hidden="true" class="product-reviewed-mark">✓</span>页面由 <a href="/zh/about.html" rel="author">Taokron工程与质量部</a> 审核 <span class="product-reviewed-sep">·</span> 最后验证 <time datetime="2026-04-09">2026年4月9日</time></p>
+<p class="page-reviewed" data-i18n-html="contact.reviewed"><span aria-hidden="true" class="product-reviewed-mark">✓</span>页面由 <a href="/about.html" rel="author">Taokron工程与质量部</a> 审核 <span class="product-reviewed-sep">·</span> 最后验证 <time datetime="2026-04-09">2026年4月9日</time></p>
 </div>
 </section>
 </main>
@@ -302,10 +334,10 @@
 <div>
 <h3 data-i18n="footer.navigate">导航</h3>
 <ul>
-<li><a data-i18n="nav.home" href="/zh/">首页</a></li>
-<li><a data-i18n="nav.machines" href="/zh/machines.html">产品中心</a></li>
+<li><a data-i18n="nav.home" href="/">首页</a></li>
+<li><a data-i18n="nav.machines" href="/machines.html">产品中心</a></li>
 <li><a data-i18n="nav.insights" href="/insights">技术文章</a></li>
-<li><a data-i18n="nav.about" href="/zh/about.html">关于我们</a></li>
+<li><a data-i18n="nav.about" href="/about.html">关于我们</a></li>
 <li><a data-i18n="nav.why" href="/why-choose-taokron.html">为什么选我们</a></li>
 <li><a data-i18n="nav.pricing" href="/pricing-and-lead-time.html">价格与交期</a></li>
 <li><a data-i18n="nav.support" href="/support.html">支持</a></li>
