@@ -1,0 +1,25 @@
+# Binary assets must NEVER get line-ending conversion.
+# core.autocrlf=true was CRLF-mangling ReportLab PDFs: a PDF's startxref is a byte
+# offset, so adding \r per line shifts every offset and breaks the xref table
+# (strict readers refuse to open the file). This pins them as binary.
+
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.mp4   binary
+*.mov   binary
+*.webm  binary
+*.mp3   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.eot   binary
+*.zip   binary
+*.docx  binary
+*.xlsx  binary
+*.pptx  binary
