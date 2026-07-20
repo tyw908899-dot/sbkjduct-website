@@ -309,3 +309,29 @@ document.addEventListener("DOMContentLoaded", () => {
   })();
 });
 
+/* Lazy-load below-fold motion videos.
+   They carry poster images, so nothing is visibly missing until they load. We only
+   fetch and play once the card nears the viewport, which keeps initial page weight
+   down for visitors who never scroll that far. Hero video is not affected. */
+document.addEventListener("DOMContentLoaded", () => {
+  const lazyVideos = document.querySelectorAll("video.motion-video");
+  if (!lazyVideos.length) return;
+  const start = (v) => {
+    v.preload = "auto";
+    v.load();
+    const p = v.play();
+    if (p && p.catch) p.catch(() => {});
+  };
+  if (!("IntersectionObserver" in window)) {
+    lazyVideos.forEach(start);
+    return;
+  }
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      obs.unobserve(entry.target);
+      start(entry.target);
+    });
+  }, { rootMargin: "300px 0px" });
+  lazyVideos.forEach((v) => io.observe(v));
+});
