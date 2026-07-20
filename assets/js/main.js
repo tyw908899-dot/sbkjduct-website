@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
    fetch and play once the card nears the viewport, which keeps initial page weight
    down for visitors who never scroll that far. Hero video is not affected. */
 document.addEventListener("DOMContentLoaded", () => {
-  const lazyVideos = document.querySelectorAll("video.motion-video");
+  const lazyVideos = document.querySelectorAll("video:not(.hero-video)");
   if (!lazyVideos.length) return;
   const start = (v) => {
     // play() can reject on iOS Safari when it lands before metadata is ready, so
