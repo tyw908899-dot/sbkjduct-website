@@ -1,0 +1,14 @@
+# Retired paths.
+#
+# assets/catalog held a marketing PDF whose XMP metadata carried the Chinese
+# entity name, and media/social held ~420MB of social clips nothing on the site
+# linked to. Both were removed from the web root on 2026-07-20.
+#
+# Deleting the files was not enough on its own: Cloudflare's edge kept answering
+# the old URLs 200 from cache (cf-cache-status: REVALIDATED) even though the
+# origin returned 404. Serving a redirect changes the response the edge stores,
+# which retires the cached copy, and permanently claims the paths so a stray file
+# dropped there later cannot go quietly public again.
+/assets/catalog/*  /  301
+/media/social/*    /  301
+/media/*           /  301
