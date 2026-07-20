@@ -317,10 +317,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const lazyVideos = document.querySelectorAll("video.motion-video");
   if (!lazyVideos.length) return;
   const start = (v) => {
+    // play() can reject on iOS Safari when it lands before metadata is ready, so
+    // try again once the element says it can play. Failing both just leaves the
+    // poster, which is the same thing the user already sees.
+    const tryPlay = () => {
+      const p = v.play();
+      if (p && p.catch) p.catch(() => {});
+    };
     v.preload = "auto";
+    v.addEventListener("canplay", tryPlay, { once: true });
     v.load();
-    const p = v.play();
-    if (p && p.catch) p.catch(() => {});
+    tryPlay();
   };
   if (!("IntersectionObserver" in window)) {
     lazyVideos.forEach(start);
