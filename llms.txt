@@ -124,6 +124,7 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Duct Elbow Machine Specs 2026 — how round elbows are made from gores + the machines that close them (Gorelocker SBEM-1250 hydraulic Φ100-Φ1250, SBWT-1000/1500 electric A/D variants Φ120-Φ1500, Fitting Shaper SBJQJ-500 Φ80-Φ400) with diameter, thickness, speed, power, weight: https://taokron.com/insights/duct-elbow-machine-specs.html
 - HVAC Duct Welder Comparison 2026 — seam (SBFN-35/55/75/100), stitch (SBSW-30-2Z), spot (SBDN-40), elbow, medium-frequency and handheld laser welders: type, thickness, KVA/kW capacity, weight: https://taokron.com/insights/duct-welder-comparison.html
 - TDF vs Angle Flange — install speed, leakage, cost per meter: https://taokron.com/insights/tdf-vs-angle-flange.html
+- TDF vs TDC Duct Flange — both are parent-metal flanges rolled from the duct wall; the real difference is hem direction (TDC outward/raw edge, TDF inward), SMACNA T-25a vs T-25b, 12 vs 16 forming stations: https://taokron.com/insights/tdf-vs-tdc-duct-flange.html
 - HVAC Duct Factory Layout — coil to truck material flow: https://taokron.com/insights/hvac-duct-factory-layout.html
 - HVAC Duct Machinery Glossary — 30 defined terms: https://taokron.com/insights/hvac-duct-machinery-glossary.html
 - Importing HVAC Duct Machinery Internationally — Incoterms, FAT, customs: https://taokron.com/insights/importing-duct-machinery-internationally.html
