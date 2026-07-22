@@ -2529,7 +2529,7 @@ img {
   --bg-dark: #32373c;
   --text: #000000;
   --text-muted: rgba(0,0,0,0.68);
-  --text-dim: rgba(0,0,0,0.46);
+  --text-dim: rgba(0,0,0,0.56);
   --text-on-dark: #ffffff;
   --accent: #32373c;
   --accent-hover: #000000;
@@ -4100,6 +4100,12 @@ body.has-hero-dark .site-header:not(.header-scrolled) button:focus-visible {
 }
 
 /* ---------- Data tables used in insight articles ---------- */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
 .data-table-wrap {
   overflow-x: auto;
   margin: 1.75rem 0;
