@@ -2439,6 +2439,8 @@ img {
     max-height: 70vh;
   }
   .sb-chat-fab { bottom: 80px; right: 16px; width: 52px; height: 52px; }
+  /* stack the WhatsApp button below the chat button, aligned, with a gap */
+  .fab-whatsapp { bottom: 16px; right: 16px; width: 52px; height: 52px; }
   .sb-chat-fab svg { width: 24px; height: 24px; }
 }
 
@@ -3758,6 +3760,15 @@ p a:hover { border-bottom-color: var(--accent); }
   color: var(--text-dim);
   font-weight: 600;
 }
+/* Visible required-field marker. The `required` attribute already exposes the
+   state to assistive tech; this is the sighted affordance. :has() applies it to
+   every locale with no per-field markup. */
+.form-field:has(:required) label::after {
+  content: " *";
+  color: var(--accent-warm);
+  font-weight: 600;
+}
+
 .form-field input,
 .form-field select,
 .form-field textarea {
@@ -3852,6 +3863,7 @@ p a:hover { border-bottom-color: var(--accent); }
      Windows machines report reduce because OS animations are off, not by
      user a11y choice; the muted conveyor footage is low-motion content) */
   *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  html { scroll-behavior: auto; }
 }
 
 /* ==========================================================================
