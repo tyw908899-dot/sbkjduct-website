@@ -250,7 +250,7 @@
 
   function buildProductCard(p) {
     const base = getBasePath();
-    return `<a href="${base}product/${p.id}.html" class="sb-chat-product" target="_blank">
+    return `<a href="${base}product/${p.id}" class="sb-chat-product" target="_blank">
       <img src="${base}assets/images/${p.id}.jpg" alt="${p.name}" onerror="this.src='${base}assets/images/placeholder.svg'" />
       <div><strong>${p.name}</strong><span>${p.desc}</span></div>
     </a>`;
@@ -283,7 +283,7 @@
       html += `<div class="sb-chat-contact">
         <a href="https://wa.me/61435074994" target="_blank" rel="noopener">WhatsApp: +61 435 074 994</a>
         <a href="mailto:sales@taokron.com">Email: sales@taokron.com</a>
-        <a href="${base}contact.html">Visit Contact Page</a>
+        <a href="${base}contact">Visit Contact Page</a>
       </div>`;
     }
     if (r.followUp) html += `<p class="sb-chat-dim">${r.followUp}</p>`;

@@ -7,7 +7,7 @@
   var SELF = ""; try { SELF = (document.currentScript && document.currentScript.src) || ""; } catch (e) {}
   if (!SELF) { var ss = document.getElementsByTagName("script"); for (var z = 0; z < ss.length; z++) { if (/i18n\.js/.test(ss[z].src)) { SELF = ss[z].src; break; } } }
   var DATA_BASE = SELF.replace(/[^\/]*$/, "") + "i18n-data/";
-  var DATA_VER = "67";
+  var DATA_VER = "68";
   var LANGS = {
     en: { label: "English", flag: "\uD83C\uDDEC\uD83C\uDDE7" }, zh: { label: "\u4E2D\u6587", flag: "\uD83C\uDDF8\uD83C\uDDEC" },
     es: { label: "Espa\u00F1ol", flag: "\uD83C\uDDEA\uD83C\uDDF8" }, ru: { label: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439", flag: "\uD83C\uDDF7\uD83C\uDDFA" },
@@ -78,16 +78,22 @@
   };
 
   function normPath() {
+    // Cloudflare Pages serves /machines and answers /machines.html with a
+    // 308, but GEN_PAGES is keyed on the authored .html form. Normalise
+    // whatever the address bar actually holds back to that key.
     var p = location.pathname;
     if (p === "/" || p === "") return "/index.html";
-    if (p === "/categories/") return "/categories/index.html";
+    if (p.charAt(p.length - 1) === "/") return p + "index.html";
+    if (!/\.[a-z0-9]+$/i.test(p)) return p + ".html";
     return p;
   }
   function staticLangUrl(lang) {
     if (!STATIC_LANGS[lang]) return null;
     var p = normPath();
     if (!GEN_PAGES[p]) return null;
-    return "/" + lang + (p === "/index.html" ? "/" : p);
+    if (p === "/index.html") return "/" + lang + "/";
+    if (p.slice(-11) === "/index.html") return "/" + lang + p.slice(0, -10);
+    return "/" + lang + p.slice(0, -5);
   }
 
   var currentLang = localStorage.getItem("sbkj-lang") || "en";
@@ -102,7 +108,7 @@
     if (currentLang === "en" || !langData) return text;
     return langData.spec && langData.spec[text] != null ? langData.spec[text] : text;
   }
-  function getProductSlug() { var m = window.location.pathname.match(/\/product\/([^\/]+)\.html/); return m ? m[1] : null; }
+  function getProductSlug() { var m = window.location.pathname.match(/\/product\/([^\/]+?)(?:\.html)?$/); return m ? m[1] : null; }
   function stash(el, prop) { if (el.dataset._i18nOrig == null) el.dataset._i18nOrig = el[prop]; }
 
   function applyTranslations() {
