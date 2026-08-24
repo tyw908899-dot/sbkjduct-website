@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#000000" />
   <title>VAV Variable Air Volume HVAC Design Guide — Box Selection, Diversity, Min Airflow | Taokron</title>
   <meta name="description" content="Engineer-led VAV system design guide: box selection, sizing, diversity factor, minimum airflow, ASHRAE 62.1 ventilation, terminal types, fabrication considerations." />
-  <link rel="canonical" href="https://taokron.com/insights/vav-variable-air-volume-design-guide.html" />
-  <link rel="alternate" hreflang="en" href="https://taokron.com/insights/vav-variable-air-volume-design-guide.html" />
-  <link rel="alternate" hreflang="x-default" href="https://taokron.com/insights/vav-variable-air-volume-design-guide.html" />
+  <link rel="canonical" href="https://taokron.com/insights/vav-variable-air-volume-design-guide" />
+  <link rel="alternate" hreflang="en" href="https://taokron.com/insights/vav-variable-air-volume-design-guide" />
+  <link rel="alternate" hreflang="x-default" href="https://taokron.com/insights/vav-variable-air-volume-design-guide" />
   <meta name="author" content="Taokron" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta property="og:site_name" content="Taokron" />
@@ -16,7 +16,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="VAV Variable Air Volume HVAC Design Guide" />
   <meta property="og:description" content="VAV box selection, sizing, diversity factor, min airflow, ventilation requirements and fabrication considerations." />
-  <meta property="og:url" content="https://taokron.com/insights/vav-variable-air-volume-design-guide.html" />
+  <meta property="og:url" content="https://taokron.com/insights/vav-variable-air-volume-design-guide" />
   <meta property="og:image" content="https://taokron.com/assets/images/sbal-v.jpg" />
   <meta property="article:published_time" content="2026-05-01T00:00:00+10:00" />
   <meta property="article:modified_time" content="2026-05-01T00:00:00+10:00" />
@@ -27,13 +27,13 @@
   <link rel="stylesheet" href="../assets/css/styles.css?v=48" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"Organization","@id":"https://taokron.com/#author-engineering","name":"Taokron Engineering Team","url":"https://taokron.com/about.html","parentOrganization":{"@id":"https://taokron.com/#org"},"knowsAbout":["VAV","Variable Air Volume","Diversity factor","Minimum airflow","ASHRAE 62.1","Terminal box","Pressure-independent VAV"]},
+    {"@type":"Organization","@id":"https://taokron.com/#author-engineering","name":"Taokron Engineering Team","url":"https://taokron.com/about","parentOrganization":{"@id":"https://taokron.com/#org"},"knowsAbout":["VAV","Variable Air Volume","Diversity factor","Minimum airflow","ASHRAE 62.1","Terminal box","Pressure-independent VAV"]},
     {"@type":"BreadcrumbList","itemListElement":[
       {"@type":"ListItem","position":1,"name":"Home","item":"https://taokron.com/"},
       {"@type":"ListItem","position":2,"name":"Insights","item":"https://taokron.com/insights/"},
-      {"@type":"ListItem","position":3,"name":"VAV Design Guide","item":"https://taokron.com/insights/vav-variable-air-volume-design-guide.html"}
+      {"@type":"ListItem","position":3,"name":"VAV Design Guide","item":"https://taokron.com/insights/vav-variable-air-volume-design-guide"}
     ]},
-    {"@type":"TechArticle","headline":"VAV Variable Air Volume HVAC Design Guide — Box Selection, Diversity, Min Airflow","description":"Engineer-led design guide for Variable Air Volume HVAC systems — VAV terminal box selection, sizing methodology, diversity factor for system-level fan sizing, minimum airflow per ASHRAE 62.1 ventilation requirements, terminal types (single-duct, fan-powered, dual-duct, induction), and the fabrication considerations for VAV-supply duct including pressure class and acoustic requirements.","author":{"@id":"https://taokron.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"Taokron QA & Engineering","url":"https://taokron.com/about.html"},"publisher":{"@id":"https://taokron.com/#org"},"datePublished":"2026-05-01T00:00:00+10:00","dateModified":"2026-05-01T00:00:00+10:00","image":"https://taokron.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://taokron.com/insights/vav-variable-air-volume-design-guide.html","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"HVAC Design Reference","speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
+    {"@type":"TechArticle","headline":"VAV Variable Air Volume HVAC Design Guide — Box Selection, Diversity, Min Airflow","description":"Engineer-led design guide for Variable Air Volume HVAC systems — VAV terminal box selection, sizing methodology, diversity factor for system-level fan sizing, minimum airflow per ASHRAE 62.1 ventilation requirements, terminal types (single-duct, fan-powered, dual-duct, induction), and the fabrication considerations for VAV-supply duct including pressure class and acoustic requirements.","author":{"@id":"https://taokron.com/#author-engineering"},"reviewedBy":{"@type":"Organization","name":"Taokron QA & Engineering","url":"https://taokron.com/about"},"publisher":{"@id":"https://taokron.com/#org"},"datePublished":"2026-05-01T00:00:00+10:00","dateModified":"2026-05-01T00:00:00+10:00","image":"https://taokron.com/assets/images/sbal-v.jpg","mainEntityOfPage":"https://taokron.com/insights/vav-variable-air-volume-design-guide","inLanguage":"en","proficiencyLevel":"Expert","articleSection":"HVAC Design Reference","speakable":{"@type":"SpeakableSpecification","cssSelector":[".article-lead","h2"]}},
     {"@type":"FAQPage","mainEntity":[
       {"@type":"Question","name":"What is a VAV system?","acceptedAnswer":{"@type":"Answer","text":"VAV stands for Variable Air Volume — an HVAC distribution strategy where the air supply temperature is constant (typically 13-14°C cold deck) and each zone's airflow is modulated by a VAV terminal box to match cooling load. Compared to constant air volume (CAV), VAV saves substantial fan energy at part-load (typical office building runs at 30-60% of design load most hours) by reducing airflow and fan speed when full cooling capacity is not needed. ASHRAE 90.1 requires VAV on most commercial buildings above 25,000 sqft."}},
       {"@type":"Question","name":"How do I size a VAV terminal box?","acceptedAnswer":{"@type":"Answer","text":"VAV box sizing requires three flow rates per zone: maximum cooling airflow (sized to peak sensible cooling load with 13-14°C supply), minimum airflow (greater of ASHRAE 62.1 ventilation requirement or 30 percent of max for thermal control), and reheat-mode airflow (typically 50 percent of max for fan-powered or zoned reheat systems). VAV box catalogue selection then matches inlet diameter to required airflow at the desired pressure drop budget (typically 50-150 Pa). Round inlet diameters: Φ200 mm for ~400 L/s, Φ250 mm for ~700 L/s, Φ300 mm for ~1,100 L/s. Major VAV box manufacturers: Trox, Titus, Krueger, Price, Carnes, Tuttle &amp; Bailey."}},
@@ -54,27 +54,27 @@
   <header class="site-header">
     <div class="shell">
       <div class="site-header-inner">
-        <a href="../index.html" class="logo"><img src="../assets/images/logo.svg" alt="Taokron" class="logo-img" width="129" height="48" decoding="async"><span class="logo-text"><span class="logo-title">Taokron</span><span class="logo-subtitle">Group</span></span></a>
+        <a href="../" class="logo"><img src="../assets/images/logo.svg" alt="Taokron" class="logo-img" width="129" height="48" decoding="async"><span class="logo-text"><span class="logo-title">Taokron</span><span class="logo-subtitle">Group</span></span></a>
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span></button>
         <nav id="primaryNav" class="site-nav">
-          <a href="../index.html">Home</a>
-          <a href="../machines.html">Machines</a>
+          <a href="../">Home</a>
+          <a href="../machines">Machines</a>
           <a href="../insights/">Insights</a>
-          <a href="../about.html">About</a>
-          <a href="../contact.html" class="nav-cta">Contact</a>
+          <a href="../about">About</a>
+          <a href="../contact" class="nav-cta">Contact</a>
         </nav>
       </div>
     </div>
   </header>
   <main id="main">
-    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../index.html">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>VAV Design Guide</span></li></ol></nav></div></nav>
+    <nav class="breadcrumbs-wrap"><div class="shell"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="../insights/">Insights</a></li><li aria-current="page"><span>VAV Design Guide</span></li></ol></nav></div></nav>
     <article class="section page-hero bg-subtle">
       <div class="shell">
         <p class="eyebrow">Insights · HVAC design reference</p>
         <h1 class="page-title">VAV Variable Air Volume HVAC Design Guide — Box Selection, Diversity, Min Airflow</h1>
         <p class="article-lead">An engineer-led design guide for Variable Air Volume HVAC systems. Covers VAV terminal box types and selection, sizing methodology for cooling/ventilation/reheat modes, diversity factor at the system level, minimum airflow per ASHRAE 62.1 ventilation requirements, pressure class requirements upstream and downstream of VAV boxes, acoustic considerations on VAV-supply duct, and the fabrication implications for SBAL-V auto duct line operators producing VAV-system supply ducting.</p>
         <p class="article-byline">
-          <span class="article-byline-author">By <a href="../about.html" rel="author">Taokron Engineering Team</a></span>
+          <span class="article-byline-author">By <a href="../about" rel="author">Taokron Engineering Team</a></span>
           <span class="article-byline-sep">·</span>
           <span>Published <time datetime="2026-05-01">May 1, 2026</time></span>
           <span class="article-byline-sep">·</span>
@@ -174,7 +174,7 @@
           <li><strong>VAV box itself</strong>: damper modulation creates regenerated noise, increasing as damper closes from full-open. Typical 25-40 dB(A) at maximum airflow, increasing as box throttles down.</li>
           <li><strong>Air diffuser</strong>: terminal device noise, controlled by diffuser selection and face velocity</li>
         </ul>
-        <p>VAV box noise typically dominates at the zone level. Selection must check NC rating at all operating points, not just at peak airflow. Many projects use acoustic-lined VAV inlet ducts (300-600 mm of internally lined duct upstream of box) to attenuate fan noise propagating through the box. See our <a href="acoustic-hvac-duct-lining-attenuator-guide.html">acoustic duct lining guide</a>.</p>
+        <p>VAV box noise typically dominates at the zone level. Selection must check NC rating at all operating points, not just at peak airflow. Many projects use acoustic-lined VAV inlet ducts (300-600 mm of internally lined duct upstream of box) to attenuate fan noise propagating through the box. See our <a href="acoustic-hvac-duct-lining-attenuator-guide">acoustic duct lining guide</a>.</p>
 
         <h2>Common VAV design errors</h2>
         <ol>
@@ -186,7 +186,7 @@
           <li><strong>Diversity applied at branch level</strong>: undersized branch ducts. Each branch must be sized for that zone's peak, not the system peak.</li>
         </ol>
 
-        <p class="cta-inline"><a class="btn btn-primary" href="../contact.html?source=guide-vav-variable-air-volume-design-guide">Get an SBAL-V quote configured for VAV pressure classes &rarr;</a></p>
+        <p class="cta-inline"><a class="btn btn-primary" href="../contact?source=guide-vav-variable-air-volume-design-guide">Get an SBAL-V quote configured for VAV pressure classes &rarr;</a></p>
 
         <h2>FAQ</h2>
         <details><summary>What is a VAV system?</summary><p>Variable Air Volume — supply temperature constant (13-14°C), zone airflow modulated by VAV terminal box to match cooling load. Saves 30-60% fan energy vs CAV at part-load. Required by ASHRAE 90.1 on most commercial buildings &gt;25,000 sqft.</p></details>
@@ -198,12 +198,12 @@
         <aside class="related-guides">
           <p class="eyebrow">Related guides</p>
           <ul class="related-links">
-            <li><a href="duct-machine-specifications.html">All Taokron duct machine specifications &rarr;</a></li>
-            <li><a href="rectangular-duct-sizing-chart.html">Rectangular Duct Sizing Chart</a></li>
-            <li><a href="spiral-duct-sizing-chart.html">Spiral Duct Sizing Chart</a></li>
-            <li><a href="acoustic-hvac-duct-lining-attenuator-guide.html">Acoustic HVAC Duct Lining</a></li>
-            <li><a href="hvac-commissioning-air-balancing-guide.html">HVAC Commissioning and Air Balancing</a></li>
-            <li><a href="hvac-duct-machinery-glossary.html">HVAC Duct Machinery Glossary</a></li>
+            <li><a href="duct-machine-specifications">All Taokron duct machine specifications &rarr;</a></li>
+            <li><a href="rectangular-duct-sizing-chart">Rectangular Duct Sizing Chart</a></li>
+            <li><a href="spiral-duct-sizing-chart">Spiral Duct Sizing Chart</a></li>
+            <li><a href="acoustic-hvac-duct-lining-attenuator-guide">Acoustic HVAC Duct Lining</a></li>
+            <li><a href="hvac-commissioning-air-balancing-guide">HVAC Commissioning and Air Balancing</a></li>
+            <li><a href="hvac-duct-machinery-glossary">HVAC Duct Machinery Glossary</a></li>
           </ul>
         </aside>
 
@@ -217,7 +217,7 @@
           <div class="promise-callout">
             <span class="promise-label">12-hour reply</span>
             <p class="promise-text">VAV system project? A Taokron engineer with VAV experience replies within 12 hours.</p>
-            <a href="../contact.html?source=guide-vav-variable-air-volume-design-guide" class="btn btn-primary">Ask an engineer</a>
+            <a href="../contact?source=guide-vav-variable-air-volume-design-guide" class="btn btn-primary">Ask an engineer</a>
           </div>
         </div>
       </div>
@@ -226,13 +226,13 @@
       <section class="section">
       <div class="shell"><div class="content-narrow">
         <h2>Machinery for this application</h2>
-        <p>The duct fabrication workflows above run on standard Taokron equipment: <a href="../categories/spiral-duct-machinery.html">spiral tubeformers</a> for round duct, <a href="../categories/auto-duct-lines.html">auto duct production lines</a> for rectangular duct, and <a href="../categories/tdf-and-lockformer.html">TDF flange and lockformer machines</a> for closure &mdash; or browse the <a href="../machines.html">full machine catalog</a>.</p>
+        <p>The duct fabrication workflows above run on standard Taokron equipment: <a href="../categories/spiral-duct-machinery">spiral tubeformers</a> for round duct, <a href="../categories/auto-duct-lines">auto duct production lines</a> for rectangular duct, and <a href="../categories/tdf-and-lockformer">TDF flange and lockformer machines</a> for closure &mdash; or browse the <a href="../machines">full machine catalog</a>.</p>
       </div></div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="shell">
-      <p>© Taokron · <a href="../index.html">Home</a> · <a href="../machines.html">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-taokron.html">Why Taokron</a> · <a href="../pricing-and-lead-time.html">Pricing</a> · <a href="../support.html" data-i18n="nav.support">Support</a> · <a href="../industries/">Industries</a> · <a href="../contact.html">Contact</a></p>
+      <p>© Taokron · <a href="../">Home</a> · <a href="../machines">Machines</a> · <a href="../case-studies/">Case studies</a> · <a href="../why-choose-taokron">Why Taokron</a> · <a href="../pricing-and-lead-time">Pricing</a> · <a href="../support" data-i18n="nav.support">Support</a> · <a href="../industries/">Industries</a> · <a href="../contact">Contact</a></p>
     </div>
   </footer>
   <script src="../assets/js/main.js?v=13"></script>
