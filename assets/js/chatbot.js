@@ -27,7 +27,7 @@
     { id:"tdf-flange", name:"TDF Flange Forming Machine", cat:"flange", tags:["tdf","flange","forming","transverse"], desc:"TDF (Transverse Duct Flange) forming machine." },
     { id:"transverse-duct-connector-flange", name:"TDC Flange Machine", cat:"flange", tags:["tdc","flange","connector","transverse"], desc:"TDC (Transverse Duct Connector) flange forming machine." },
     { id:"tdf-cleat-cutting", name:"TDF Cleat Cutting Machine", cat:"flange", tags:["tdf","cleat","cutting","flange"], desc:"Cleat cutting machine for TDF flange systems." },
-    { id:"sbck-50a", name:"Angle Steel Punching SBCK-50A", cat:"flange", tags:["angle","steel","iron","punching","hole","flange","punch"], desc:"Angle steel/iron punching machine for flange fabrication." },
+    { id:"sbck-50a", name:"Angle Steel Punching SBCK-50W", cat:"flange", tags:["angle","steel","iron","punching","hole","flange","punch"], desc:"Angle steel/iron punching machine for flange fabrication." },
     { id:"sbyfl-50", name:"Round Flange Forming SBYFL-50", cat:"flange", tags:["round","flange","forming","circular","ring"], desc:"Round flange forming machine." },
     { id:"sbyfl-50-1", name:"Round Flange Punching SBYFL-50-1", cat:"flange", tags:["round","flange","punching","hole","circular"], desc:"Round flange punching machine." },
     { id:"sbyflhj-50", name:"Round Flange Welding SBYFLHJ-50", cat:"flange", tags:["round","flange","welding","butt","circular"], desc:"Round flange butt welding machine." },

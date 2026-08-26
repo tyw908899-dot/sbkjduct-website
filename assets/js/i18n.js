@@ -7,7 +7,7 @@
   var SELF = ""; try { SELF = (document.currentScript && document.currentScript.src) || ""; } catch (e) {}
   if (!SELF) { var ss = document.getElementsByTagName("script"); for (var z = 0; z < ss.length; z++) { if (/i18n\.js/.test(ss[z].src)) { SELF = ss[z].src; break; } } }
   var DATA_BASE = SELF.replace(/[^\/]*$/, "") + "i18n-data/";
-  var DATA_VER = "68";
+  var DATA_VER = "69";
   var LANGS = {
     en: { label: "English", flag: "\uD83C\uDDEC\uD83C\uDDE7" }, zh: { label: "\u4E2D\u6587", flag: "\uD83C\uDDF8\uD83C\uDDEC" },
     es: { label: "Espa\u00F1ol", flag: "\uD83C\uDDEA\uD83C\uDDF8" }, ru: { label: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439", flag: "\uD83C\uDDF7\uD83C\uDDFA" },
@@ -74,7 +74,20 @@
     "/product/f350.html": 1,
     "/product/oval-roller.html": 1,
     "/product/metal-corrugated-spiral-pipe.html": 1,
-    "/product/ovalizer-sbht-3100.html": 1
+    "/product/ovalizer-sbht-3100.html": 1,
+    "/product/sb-fs1535l.html": 1,
+    "/product/sb-zf1500.html": 1,
+    "/product/sbck-50a.html": 1,
+    "/product/sbem-1250.html": 1,
+    "/product/sbhf-i.html": 1,
+    "/product/sbjy-1500b.html": 1,
+    "/product/sbkt-12.html": 1,
+    "/product/sblf-500.html": 1,
+    "/product/sblq-15.html": 1,
+    "/product/sbwkhfj-45.html": 1,
+    "/product/sbyfl-50.html": 1,
+    "/product/sbyfl-50-1.html": 1,
+    "/product/sbyflhj-50.html": 1
   };
 
   function normPath() {
@@ -134,8 +147,12 @@
     else if (chatInput && chatInput.dataset._i18nOrig != null) { chatInput.placeholder = chatInput.dataset._i18nOrig; }
     document.querySelectorAll(".spec-table tbody tr").forEach(function (row) {
       var firstTd = row.querySelector("td:first-child");
-      if (firstTd && !firstTd.dataset._orig) firstTd.dataset._orig = firstTd.textContent;
-      if (firstTd) firstTd.textContent = translateSpecLabel(firstTd.dataset._orig);
+      // Cells carrying data-i18n are owned by the data-i18n pass above;
+      // stashing them here after that pass has run would capture the
+      // translated text and stick it on switch-back to English.
+      if (!firstTd || firstTd.hasAttribute("data-i18n")) return;
+      if (!firstTd.dataset._orig) firstTd.dataset._orig = firstTd.textContent;
+      firstTd.textContent = translateSpecLabel(firstTd.dataset._orig);
     });
     var slug = getProductSlug();
     var pd = (currentLang !== "en" && langData && langData.prod) ? langData.prod[slug] : null;
