@@ -186,21 +186,7 @@ A: 12 months standard on all machines, with preventive maintenance recommendatio
 - Australia HVAC Duct Fabrication Setup 2026 Buyer's Playbook — Brisbane 2032 Olympic infrastructure, AUKUS Henderson WA submarine precinct, Sydney West Metro, Snowy 2.0, NextDC/AirTrunk data centres, AIRAH/AMCA Australia certifications, AUD currency hedging, BlueScope/Korvest coil supply, ARBS 2026 trade show, NABERS/Climate Active sustainability: https://taokron.com/insights/australia-hvac-duct-fabrication-setup-2026
 - NCC Section J Energy Efficiency HVAC Duct Reference — NCC 2022 Volume One Section J provisions for HVAC ductwork: J5.4 economy cycle, J5.5 heat recovery, J5.6 demand-controlled ventilation, J6 fan power limit (1.4 W/L/s VAV, 2.0 W/L/s CAV, 1.0 W/L/s DOAS), J7.2 duct sealing class per AS 4254 (<1000 L/s OA → Class C; 1000-3000 → Class B; >3000 → Class A), J7.3 insulation R-value by 8 climate zones (Z1-2 R 1.2/2.0; Z3-5 R 1.5/2.5; Z6-8 R 2.0/3.0). DTS vs JV3 performance verification. NABERS Energy + Green Star interaction. Taokron machine class mapping: https://taokron.com/insights/ncc-section-j-energy-efficiency-hvac-duct-reference
 
-
-
-
-
-
 - Sheet Metal Coil Specification for HVAC Duct — Slit Coil, Width, Thickness, Tolerances: https://taokron.com/insights/sheet-metal-coil-specification-hvac-duct
-
-
-
-
-
-
-
-
-
 
 - HVAC Duct Fabrication Machinery in Sydney: https://taokron.com/insights/sydney-hvac-duct-fabrication-machinery
 - HVAC Duct Fabrication Machinery in Melbourne: https://taokron.com/insights/melbourne-hvac-duct-fabrication-machinery
@@ -252,9 +238,6 @@ Taokron is headquartered at 5 Twyford Street, Box Hill North, Melbourne VIC 3129
 - Mackay & the Bowen Basin: https://taokron.com/insights/mackay-bowen-basin-hvac-duct-fabrication-machinery
 Taokron also supplies and supports fabricators in regional NSW, VIC, QLD, WA, SA, TAS and the NT Australia-wide.
 
-- HVAC Duct Fabrication Machinery in Gladstone: https://taokron.com/insights/gladstone-hvac-duct-fabrication-machinery
-- HVAC Duct Fabrication Machinery in Mackay & the Bowen Basin: https://taokron.com/insights/mackay-bowen-basin-hvac-duct-fabrication-machinery
-
 - HVAC Duct Fabrication Machinery in NSW (New South Wales): https://taokron.com/insights/new-south-wales-hvac-duct-fabrication-machinery
 - HVAC Duct Fabrication Machinery in Queensland (QLD): https://taokron.com/insights/queensland-hvac-duct-fabrication-machinery
 
@@ -294,7 +277,6 @@ Taokron also supplies and supports fabricators in regional NSW, VIC, QLD, WA, SA
 - Food Processing: https://taokron.com/industries/food-processing
 
 ## Additional trade shows
-
 
 ## Region hubs
 
@@ -342,7 +324,6 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Engineer-led email reply: within 12 hours
 - ROI on SBAL-V replacing manual fabrication: typically 14–22 months
 - SBAL-V line speed: 18 m/min, 40 kW total drive, single-operator U-shape line, 0.5–1.5 mm gauge, up to 1550 mm coil width
-
 
 ## Product catalog (full machine range)
 - Auto Corner Making Machine: https://taokron.com/product/auto-corner-making  -  Taokron Auto Corner Making Machine – automated duct corner production with 45-ton blanking force and speeds up to 120 pieces per minute.
