@@ -1,7 +1,7 @@
 # Product image naming guide
 # Add product photos to this folder. Name files as below; product pages will use them automatically.
 # Supported: .jpg .jpeg .png .webp
-# Source: PDF catalog or ductworkmachinery.com / spiraltubeformer.com
+# Source: the Product Catalog 2026 masters in 01_Document_Production/Catalog_Builds
 
 # Already have images:
 # sbal-v.jpg, sbal-iii.jpg, sbtf-1602.jpg, sbtf-1500.jpg, sbem-1250.jpg

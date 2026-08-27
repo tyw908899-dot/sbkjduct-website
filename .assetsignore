@@ -5,3 +5,7 @@ node_modules
 fix_*.js
 extract_*.js
 wire_*.js
+# dev-only files that must never reach the CDN (added 2026-08-26)
+*.py
+*.md
+IMAGE-NAMING.txt
