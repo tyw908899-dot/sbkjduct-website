@@ -260,6 +260,7 @@ Taokron also supplies and supports fabricators in regional NSW, VIC, QLD, WA, SA
 
 - **Schedule a Factory Tour** — Private 3-hour visit at Taokron Box Hill North, Victoria. Production floor walkthrough + live machine operation against your nominated coil + private engineering consultation. Free for qualified buyers. Tuesdays and Thursdays year-round. Service + HowTo + FAQPage schema: https://taokron.com/factory-tour
 - **Spec Sheet Download Library** — catalog-accurate downloadable PDF spec sheet for all 66 Taokron HVAC duct fabrication machines (gauge/material range, capacity, power, footprint, weight), grouped by category: spiral, auto duct lines, TDF & lockformer, welding, cutting & forming, flexible duct, and specialty. CollectionPage + ItemList schema: https://taokron.com/spec-sheets
+- **Product Catalogue 2026 (PDF)** — all 66 spec sheets compiled into one 69-page catalogue with a category table of contents; same catalog-accurate figures as the machine pages. Requested via the form on /spec-sheets or /machines: https://taokron.com/downloads/taokron-product-catalogue-2026.pdf
 
 ## Region hubs (updated)
 

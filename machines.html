@@ -17,7 +17,7 @@
   <meta name="twitter:image" content="https://taokron.com/assets/images/og-card.jpg?v=1" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=48" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=49" />
   <meta property="og:site_name" content="Taokron" />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:site" content="@taokron" />
@@ -580,6 +580,79 @@ Contact us for photos and detailed specifications.
         <a href="spec-sheets" class="btn btn-ghost" style="margin-left:10px" data-i18n="mach.cta.specsheets">Download spec sheets (PDF)</a>
       </div>
     </section>
+    <section class="section catalogue-capture" id="catalogue">
+      <div class="shell">
+        <div class="catalogue-box">
+          <div class="catalogue-copy">
+            <p class="eyebrow" data-i18n="cat.eyebrow">Full catalogue</p>
+            <h2 data-i18n="cat.title">Get the 2026 product catalogue: 66 machines, one page each</h2>
+            <p data-i18n="cat.lead">The same figures we quote from, in one PDF you can forward to your engineer. Leave your work email and the download link arrives within a minute.</p>
+            <p class="catalogue-note" data-i18n="cat.note">Prefer a single machine? Every spec sheet is also downloadable on its own, no form needed.</p>
+          </div>
+          <form class="catalogue-form" id="catalogueForm" action="https://formsubmit.co/sales@sbkjduct.com" method="POST">
+            <input type="hidden" name="_subject" value="Catalogue request (taokron.com)" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://taokron.com/spec-sheets?catalogue=1" />
+            <input type="hidden" name="_autoresponse" value="Hi, here is the Taokron Product Catalogue 2026 (PDF, 66 machines, one page each): https://taokron.com/downloads/taokron-product-catalogue-2026.pdf  Single machine spec sheets: https://taokron.com/spec-sheets  If one of the machines is close to what you need, reply to this email with your material, gauge and duct sizes and an engineer will come back within 12 hours. Ryan Tao, Taokron, +61 435 074 994" />
+            <input type="hidden" name="Lead source" id="catalogueLeadSource" value="" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <div class="form-field">
+              <label for="cat-name" data-i18n="cat.name">Name</label>
+              <input id="cat-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="cat-company" data-i18n="cat.company">Company</label>
+              <input id="cat-company" name="company" type="text" autocomplete="organization" required />
+            </div>
+            <div class="form-field">
+              <label for="cat-email" data-i18n="cat.email">Work email</label>
+              <input id="cat-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="cat.button">Email me the catalogue</button>
+            <span id="catalogueSending" hidden data-i18n="form.sending">Sending…</span>
+          </form>
+        </div>
+        <div id="catalogueSent" class="quote-sent-banner catalogue-sent" hidden>
+          <span data-i18n="cat.sent">&#10003; Sent. The download link is on its way to your inbox, or open it now:</span>
+          <a href="downloads/taokron-product-catalogue-2026.pdf" data-i18n="cat.open">Open the catalogue (PDF)</a>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Catalogue capture: thank-you state + the same first-touch attribution the quote form writes.
+      (function () {
+        if (location.search.indexOf('catalogue=1') !== -1) {
+          var b = document.getElementById('catalogueSent'); if (b) { b.hidden = false; try { b.scrollIntoView({ block: 'center' }); } catch (e) {} }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          var ls = document.getElementById('catalogueLeadSource'); if (!ls) return;
+          var src = new URLSearchParams(location.search).get('source') || '';
+          var ref = '';
+          try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
+          var first = null;
+          try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+          var campaign = src || (first && first.q) || '';
+          var origin = ref || (first && first.ref) || '';
+          var parts = [];
+          parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+          if (origin) parts.push('ref:' + origin);
+          if (first && first.lp) parts.push('landed:' + first.lp);
+          parts.push('form:catalogue@' + location.pathname);
+          ls.value = parts.join(' \u00b7 ');
+          var form = document.getElementById('catalogueForm');
+          var btn = form && form.querySelector('button[type="submit"]');
+          if (form && btn) {
+            form.addEventListener('submit', function () {
+              setTimeout(function () {
+                var lbl = document.getElementById('catalogueSending');
+                btn.disabled = true; btn.textContent = (lbl && lbl.textContent) || 'Sending\u2026';
+              }, 0);
+            });
+          }
+        });
+      })();
+    </script>
     <section class="section page-review-section">
       <div class="shell">
         <p class="page-reviewed" data-i18n-html="home.pagereviewed"><span class="product-reviewed-mark" aria-hidden="true">&#10003;</span>Page reviewed by <a href="about" rel="author">Taokron Engineering &amp; QA</a> <span class="product-reviewed-sep">&middot;</span> Last verified <time datetime="2026-04-09">April 9, 2026</time></p>
@@ -642,7 +715,7 @@ Contact us for photos and detailed specifications.
   </a>
 
   <script src="assets/js/main.js?v=13"></script>
-  <script src="assets/js/i18n.js?v=99"></script>
+  <script src="assets/js/i18n.js?v=100"></script>
   <script src="assets/js/chatbot.js"></script>
 </body>
 </html>

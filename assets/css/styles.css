@@ -5065,3 +5065,46 @@ body.has-hero-dark .site-header:not(.header-scrolled) .logo-img { filter: bright
 .press-band-link:hover strong { color: var(--accent); }
 .press-band-title { color: var(--text-dim); font-weight: 400; font-style: italic; }
 @media (max-width: 640px) { .press-band-title { flex-basis: 100%; font-size: 0.82rem; } }
+
+/* ---- Catalogue capture block (spec-sheets, machines) 2026-09-02 ---- */
+.catalogue-capture { padding-block: 2.5rem; }
+.catalogue-box {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2.2rem;
+  align-items: center;
+  padding: 2rem 2.2rem;
+  border: 1px solid var(--border, #e3e6ec);
+  border-radius: 14px;
+  background: var(--bg-subtle, #f6f7f9);
+}
+.catalogue-copy h2 {
+  margin: 0.2rem 0 0.6rem;
+  font-family: var(--font-head);
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+.catalogue-copy p { margin: 0 0 0.6rem; color: var(--text-muted); }
+.catalogue-copy .catalogue-note { font-size: 0.85rem; color: var(--text-dim); margin-bottom: 0; }
+.catalogue-form { display: grid; gap: 0.6rem; }
+.catalogue-form .form-field { margin-bottom: 0; }
+.catalogue-form input[type="text"],
+.catalogue-form input[type="email"] {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border-strong, #cfd4dd);
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+  color: inherit;
+}
+.catalogue-form input:focus { outline: 2px solid var(--border-focus, #1452cc); outline-offset: 1px; }
+.catalogue-form .btn { justify-self: start; margin-top: 0.3rem; }
+.catalogue-sent { margin-top: 1rem; }
+.catalogue-sent a { margin-left: 0.5rem; font-weight: 600; text-decoration: underline; }
+@media (max-width: 800px) {
+  .catalogue-box { grid-template-columns: 1fr; padding: 1.4rem; gap: 1.4rem; }
+  .catalogue-form .btn { justify-self: stretch; }
+}
