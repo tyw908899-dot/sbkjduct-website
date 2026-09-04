@@ -388,3 +388,24 @@ document.addEventListener("DOMContentLoaded", () => {
     check();
   }
 });
+
+/* Clarity conversion events. All on-page forms post to FormSubmit; tag the
+   submit (with the email subject as a custom tag, so conversions split by form
+   type / machine) and the thank-you view. window.clarity is a queue stub from
+   the snippet, so this is safe even before the tag has loaded. */
+document.addEventListener("DOMContentLoaded", () => {
+  const track = (name, tags) => {
+    try {
+      if (typeof window.clarity !== "function") return;
+      Object.keys(tags || {}).forEach((k) => window.clarity("set", k, tags[k]));
+      window.clarity("event", name);
+    } catch (e) {}
+  };
+  document.querySelectorAll('form[action*="formsubmit.co"]').forEach((form) => {
+    form.addEventListener("submit", () => {
+      const subj = form.querySelector('input[name="_subject"]');
+      track("form_submit", { form_subject: (subj && subj.value) || "unknown", form_page: location.pathname });
+    });
+  });
+  if (/[?&](sent|catalogue)=1(&|$)/.test(location.search)) track("form_sent", { form_page: location.pathname });
+});
