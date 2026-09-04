@@ -380,7 +380,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const onScreen = r.top < window.innerHeight - 80 && r.bottom > 80;
       bar.classList.toggle("is-hidden", onScreen);
     };
-    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(check); } };
+    // setTimeout, not requestAnimationFrame: rAF is paused in background tabs and
+    // under some webviews, and a 60 ms throttle is plenty for a show/hide.
+    const onScroll = () => { if (!ticking) { ticking = true; setTimeout(check, 60); } };
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
     check();
