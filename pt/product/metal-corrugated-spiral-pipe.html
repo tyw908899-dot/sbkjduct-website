@@ -9,12 +9,12 @@
 <meta content="Máquina de tubo espiral metálico corrugado. A Máquina de tubo espiral metálico corrugado da Taokron produz tubos espirais corrugados para ventilação de…" name="description"/>
 <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="/site.webmanifest" rel="manifest"/>
-<link href="/assets/css/styles.css?v=49" rel="stylesheet"/>
+<link href="/assets/css/styles.css?v=50" rel="stylesheet"/>
 <meta content="Taokron" property="og:site_name"/>
 <meta content="pt_BR" property="og:locale"/>
 <meta content="@taokron" name="twitter:site"/>
 <meta content="@taokron" name="twitter:creator"/>
-<link as="image" fetchpriority="high" href="/assets/images/metal-corrugated-spiral-pipe.jpg" rel="preload"/>
+<link as="image" fetchpriority="high" href="/assets/images/metal-corrugated-spiral-pipe.avif" rel="preload" type="image/avif"/>
 <meta content="Máquina de tubo espiral metálico corrugado | Taokron" property="og:title"/>
 <meta content="Máquina de tubo espiral metálico corrugado. A Máquina de tubo espiral metálico corrugado da Taokron produz tubos espirais corrugados para ventilação de…" property="og:description"/>
 <meta content="product" property="og:type"/>
@@ -115,7 +115,7 @@
 </table>
 <p class="spec-download" style="margin-top:14px"><a class="btn btn-ghost" data-i18n="product.specsheet" download="" href="/downloads/metal-corrugated-spiral-pipe-spec-sheet.pdf">Baixar ficha técnica (PDF)</a></p>
 </div>
-<a class="btn btn-primary btn-full-width" data-i18n="product.quote" href="/pt/contact?source=product-metal-corrugated-spiral-pipe">Solicitar cotação</a>
+<a class="btn btn-primary btn-full-width" data-i18n="product.quote" href="#quote">Solicitar cotação</a>
 </aside>
 </div>
 </section>
@@ -144,6 +144,95 @@
 </div>
 </div>
 </section>
+<section class="section product-quote" id="quote">
+<div class="shell">
+<div class="catalogue-box product-quote-box">
+<div class="catalogue-copy">
+<p class="eyebrow" data-i18n="pq.eyebrow">Pedido de preço</p>
+<h2 data-i18n="pq.title">Solicite uma cotação desta máquina</h2>
+<p data-i18n="pq.lead">Diga-nos onde ela vai operar e o que você fabrica. Um engenheiro da Taokron responde em 12 horas com preço, prazo de entrega e desenho de layout.</p>
+<p class="product-quote-for"><span data-i18n="pq.for">Cotação para</span>: <strong data-i18n="prod.shared.d7e8f235fd">Máquina de tubo espiral metálico corrugado</strong></p>
+<p class="catalogue-note"><span data-i18n="pq.note">Várias máquinas ou uma linha completa de dutos?</span> <a data-i18n="pq.notelink" href="/pt/contact?source=product-metal-corrugated-spiral-pipe">Use o formulário completo de consulta</a></p>
+</div>
+<form action="https://formsubmit.co/sales@sbkjduct.com" class="catalogue-form product-quote-form" id="productQuoteForm" method="POST">
+<input name="_subject" type="hidden" value="Price request: Metal Corrugated Spiral Pipe Machine (taokron.com)"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input id="productQuoteNext" name="_next" type="hidden" value="https://taokron.com/pt/product/metal-corrugated-spiral-pipe?sent=1"/>
+<input name="_autoresponse" type="hidden" value="Hi, thank you for your price request for the Metal Corrugated Spiral Pipe Machine. A Taokron engineer will reply within 12 hours with price, lead time and a layout drawing. The spec sheet is here in the meantime: https://taokron.com/downloads/metal-corrugated-spiral-pipe-spec-sheet.pdf . Questions before then: sales@taokron.com or WhatsApp +61 435 074 994. Ryan Tao, Taokron"/>
+<input name="Machine" type="hidden" value="Metal Corrugated Spiral Pipe Machine"/>
+<input id="productQuoteLeadSource" name="Lead source" type="hidden" value=""/>
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.name" for="pq-name">Nome</label>
+<input autocomplete="name" id="pq-name" name="name" required="" type="text"/>
+</div>
+<div class="form-field">
+<label data-i18n="cat.company" for="pq-company">Empresa</label>
+<input autocomplete="organization" id="pq-company" name="company" required="" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.email" for="pq-email">E-mail corporativo</label>
+<input autocomplete="email" id="pq-email" name="email" required="" type="email"/>
+</div>
+<div class="form-field">
+<label data-i18n="form.country" for="pq-country">País de instalação</label>
+<input autocomplete="country-name" id="pq-country" name="country" required="" type="text"/>
+</div>
+</div>
+<div class="form-field">
+<label data-i18n="form.details" for="pq-message">Detalhes do projeto</label>
+<textarea data-i18n-placeholder="form.placeholder" id="pq-message" name="message" placeholder="Tipo de material, espessura, capacidade necessária, tamanho da oficina..." rows="3"></textarea>
+</div>
+<button class="btn btn-primary" data-i18n="pq.button" type="submit">Solicitar cotação</button>
+<span data-i18n="form.sending" hidden="" id="productQuoteSending">Enviando…</span>
+</form>
+</div>
+<div class="quote-sent-banner catalogue-sent" hidden="" id="productQuoteSent">
+<span data-i18n="pq.sent">✓ Enviado. Um engenheiro da Taokron responderá em 12 horas com preço e prazo de entrega.</span>
+</div>
+</div>
+</section>
+<script>
+      // Product quote form: thank-you state, same-language return URL, and the
+      // same first-touch attribution the contact form writes.
+      (function () {
+        if (location.search.indexOf('sent=1') !== -1) {
+          var b = document.getElementById('productQuoteSent'); if (b) { b.hidden = false; try { b.scrollIntoView({ block: 'center' }); } catch (e) {} }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          var nx = document.getElementById('productQuoteNext');
+          if (nx && /^https?:$/.test(location.protocol)) { nx.value = location.origin + location.pathname + '?sent=1'; }
+          var ls = document.getElementById('productQuoteLeadSource'); if (!ls) return;
+          var src = new URLSearchParams(location.search).get('source') || '';
+          var ref = '';
+          try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
+          var first = null;
+          try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+          var campaign = src || (first && first.q) || '';
+          var origin = ref || (first && first.ref) || '';
+          var parts = [];
+          parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+          if (origin) parts.push('ref:' + origin);
+          if (first && first.lp) parts.push('landed:' + first.lp);
+          parts.push('form:quote@' + location.pathname);
+          ls.value = parts.join(' \u00b7 ');
+          var form = document.getElementById('productQuoteForm');
+          var btn = form && form.querySelector('button[type="submit"]');
+          if (form && btn) {
+            form.addEventListener('submit', function () {
+              setTimeout(function () {
+                var lbl = document.getElementById('productQuoteSending');
+                btn.disabled = true; btn.textContent = (lbl && lbl.textContent) || 'Sending\u2026';
+              }, 0);
+            });
+          }
+        });
+      })();
+    </script>
 <section class="section product-trust">
 <div class="shell">
 <header class="section-header">
@@ -158,7 +247,7 @@
 </ul>
 <p class="product-trust-intro" data-i18n-html="prod.shared.653fd7d9a3">Fundada em 1995 em Box Hill North, VIC, a Taokron é uma fabricante especializada de maquinário para condutos HVAC. Nossos produtos têm <strong>certificação de qualidade ISO 9001:2015, marcação CE e a proteção de mais de 60 patentes de invenção e de modelo de utilidade</strong>. De máquinas formadoras individuais a fábricas de condutos chave na mão, projetamos toda a cadeia da bobina ao conduto acabado, com instalação no local, treinamento de operadores e peças vitalícias. <a href="/support">Veja o processo completo de instalação, comissionamento e pós-venda →</a></p>
 <p class="product-reviewed" data-i18n-html="prod.shared.94530bcdf5"><span aria-hidden="true" class="product-reviewed-mark">✓</span>Especificações revisadas por <a href="/pt/about" rel="author">Engenharia e Qualidade da Taokron</a> <span class="product-reviewed-sep">·</span> Última verificação: <time datetime="2026-04-09">9 de abril de 2026</time></p>
-<p class="cta-inline"><a class="btn btn-primary" data-i18n="common.requestquote12" href="/pt/contact?source=product-metal-corrugated-spiral-pipe">Cotação em 12 horas</a></p>
+<p class="cta-inline"><a class="btn btn-primary" data-i18n="common.requestquote12" href="#quote">Cotação em 12 horas</a></p>
 </div>
 </section>
 <section class="section product-faq bg-subtle">
@@ -188,7 +277,7 @@
 <section class="section related-machines">
 <div class="shell">
 <header class="section-header">
-<p class="eyebrow" data-i18n="product.common.relatedeyebrow">Explore o catálogo</p>
+<p class="eyebrow" data-i18n="product.common.relatedeyebrow">Explorar o catálogo</p>
 <h2 class="section-title" data-i18n="product.common.relatedtitle">Máquinas de dutos HVAC relacionadas</h2>
 </header>
 <div class="related-grid">
@@ -218,6 +307,8 @@
 <ul class="related-links">
 <li><a data-i18n="footer.ins.choosing" href="/insights/choosing-auto-duct-line">Escolher uma linha automática</a></li>
 <li><a data-i18n="footer.ins.spiral" href="/insights/spiral-duct-forming-guide">Formação espiral explicada</a></li>
+<li><a href="/insights/best-spiral-duct-machine-manufacturers">Best spiral duct machine manufacturers →</a></li>
+<li><a href="/insights/spiral-duct-machine-maintenance-troubleshooting">Spiral machine maintenance &amp; troubleshooting →</a></li>
 </ul>
 </div>
 </div>
