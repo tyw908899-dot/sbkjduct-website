@@ -342,3 +342,47 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { rootMargin: "300px 0px" });
   lazyVideos.forEach((v) => io.observe(v));
 });
+
+/* Mobile sticky CTA bar. Every page already has a WhatsApp FAB; on phones the
+   quote path was a scroll back to a button. This keeps "Request a quote" one tap
+   away: to the on-page form (#quote) when there is one, else to the contact page
+   in the page's language. It hides while the on-page form is in view and never
+   renders on the contact page. Labels are inline because the language mirrors
+   ship without i18n.js. */
+document.addEventListener("DOMContentLoaded", () => {
+  if (!window.matchMedia || !window.matchMedia("(max-width: 768px)").matches) return;
+  if (document.getElementById("quoteForm") || document.querySelector(".mobile-cta-bar")) return;
+  const lang = (document.documentElement.lang || "en").slice(0, 2).toLowerCase();
+  const L = {
+    en: "Request a quote", es: "Solicitar cotización", pt: "Solicitar cotação", fr: "Demander un devis",
+    ru: "Запросить цену", tr: "Teklif iste", ar: "اطلب عرض سعر", hi: "कोटेशन माँगें", id: "Minta penawaran", zh: "索取报价"
+  };
+  const target = document.getElementById("quote");
+  const href = target ? "#quote" : (lang === "en" ? "/contact" : "/" + lang + "/contact");
+  const bar = document.createElement("div");
+  bar.className = "mobile-cta-bar";
+  bar.innerHTML =
+    '<a class="btn btn-primary" href="' + href + '">' + (L[lang] || L.en) + "</a>" +
+    '<a class="btn btn-ghost" href="https://wa.me/61435074994" target="_blank" rel="noopener">WhatsApp</a>';
+  document.body.appendChild(bar);
+  document.body.classList.add("has-cta-bar");
+  const wa = bar.querySelector("a[href*='wa.me']");
+  const fab = document.querySelector("a.fab-whatsapp[href*='wa.me']");
+  if (wa && fab && /[?&]text=/.test(fab.getAttribute("href"))) wa.setAttribute("href", fab.getAttribute("href"));
+  if (target) {
+    // Hide the bar while the on-page form is on screen, so it never covers the
+    // form's own submit button. Plain scroll math: IntersectionObserver was
+    // unreliable under viewport emulation and adds nothing here.
+    let ticking = false;
+    const check = () => {
+      ticking = false;
+      const r = target.getBoundingClientRect();
+      const onScreen = r.top < window.innerHeight - 80 && r.bottom > 80;
+      bar.classList.toggle("is-hidden", onScreen);
+    };
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(check); } };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    check();
+  }
+});

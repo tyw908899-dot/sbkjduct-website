@@ -5137,3 +5137,33 @@ body.has-hero-dark .site-header:not(.header-scrolled) .logo-img { filter: bright
 section.page-quote { padding-block: 2.5rem; }
 .page-quote-narrow { grid-template-columns: 1fr; margin: 0 0 3rem; }
 .page-quote-narrow .catalogue-copy h2 { font-size: clamp(1.3rem, 2vw, 1.6rem); }
+
+/* ---- Homepage quotation card inside the dark closing section 2026-09-04 ---- */
+.cta-final .home-quote-box { margin-top: 2.5rem; text-align: start; grid-template-columns: 1fr 1.3fr; }
+.cta-final .home-quote-box h2 { color: var(--text); -webkit-text-fill-color: var(--text); font-size: clamp(1.4rem, 2.2vw, 1.9rem); line-height: 1.15; letter-spacing: -0.01em; margin: 0.2rem 0 0.6rem; }
+.cta-final .home-quote-box p { color: var(--text-muted); font-size: 1rem; max-width: none; margin-inline: 0; }
+.cta-final .home-quote-box .eyebrow { justify-content: flex-start; }
+.cta-final .home-quote-box .catalogue-note a { color: var(--text); font-weight: 600; text-decoration: underline; }
+.home-quote-promise { list-style: none; padding: 0; margin: 0.4rem 0 0.8rem; display: grid; gap: 0.3rem; font-size: 0.9rem; color: var(--text-muted); }
+.cta-final .home-quote-box label { color: var(--text-dim); }
+.cta-final .home-quote-sent { text-align: start; color: #fff; border-color: rgba(255,255,255,0.6); }
+@media (max-width: 800px) { .cta-final .home-quote-box { grid-template-columns: 1fr; } }
+
+/* ---- Mobile sticky CTA bar (built by main.js on <= 768px) 2026-09-04 ---- */
+.mobile-cta-bar { display: none; }
+@media (max-width: 768px) {
+  .mobile-cta-bar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;
+    padding: 0.55rem 0.75rem calc(0.55rem + env(safe-area-inset-bottom));
+    background: rgba(255,255,255,0.96); backdrop-filter: blur(8px);
+    border-top: 1px solid var(--border, #e3e6ec);
+    transition: transform .25s ease;
+  }
+  .mobile-cta-bar.is-hidden { transform: translateY(110%); }
+  .mobile-cta-bar .btn { justify-content: center; width: 100%; padding: 0.75rem 0.5rem; font-size: 0.78rem; letter-spacing: 0.08em; white-space: nowrap; }
+  body.has-cta-bar { padding-bottom: 72px; }
+  body.has-cta-bar .fab-whatsapp { display: none; }
+  body.has-cta-bar .sb-chat-fab { bottom: 88px; }
+}
+@media print { .mobile-cta-bar { display: none !important; } }
