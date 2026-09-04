@@ -25,7 +25,7 @@
   <meta name="twitter:site" content="@taokron" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="../assets/css/styles.css?v=50" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=51" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"Organization","@id":"https://taokron.com/#author-engineering","name":"Taokron Engineering Team","url":"https://taokron.com/about","description":"Taokron senior engineers with 30+ years of combined experience in HVAC ductwork machinery design, commissioning and field service across 100+ countries.","parentOrganization":{"@id":"https://taokron.com/#org"},"knowsAbout":["HVAC duct machinery","Spiral tubeformer","TDF flange","Auto duct production line","SMACNA","AS/NZS 4254","EN 1507","Duct pressure class"]},
@@ -199,12 +199,96 @@
           <div class="promise-callout">
             <span class="promise-label">12-hour reply</span>
             <p class="promise-text">Got a spec question on this guide? A Taokron mechanical engineer replies within 12 hours &mdash; not a salesperson.</p>
-            <a href="../contact?source=guide-duct-pressure-classes-explained" class="btn btn-primary">Ask an engineer</a>
+            <a href="#quote" class="btn btn-primary">Ask an engineer</a>
+          </div>
+          <div class="catalogue-box product-quote-box page-quote page-quote-narrow" id="quote">
+            <div class="catalogue-copy">
+              <p class="eyebrow" data-i18n="pq3.eyebrow">Engineer reply</p>
+              <h2 data-i18n="pq3.title">Ask an engineer about this guide</h2>
+              <p data-i18n="pq3.lead">Describe your job and what you are trying to make. A Taokron mechanical engineer replies within 12 hours, not a salesperson.</p>
+              <p class="product-quote-for"><span data-i18n="pq3.for">Guide</span>: <strong>HVAC Duct Pressure Classes Explained</strong></p>
+            </div>
+          <form class="catalogue-form product-quote-form" id="productQuoteForm" action="https://formsubmit.co/sales@sbkjduct.com" method="POST">
+            <input type="hidden" name="_subject" value="Question from guide: HVAC Duct Pressure Classes Explained (taokron.com)" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" id="productQuoteNext" value="https://taokron.com/insights/duct-pressure-classes-explained?sent=1" />
+            <input type="hidden" name="_autoresponse" value="Hi, thank you for your message to Taokron. A Taokron engineer will reply within 12 hours. Questions before then: sales@taokron.com or WhatsApp +61 435 074 994. Ryan Tao, Taokron" />
+            <input type="hidden" name="Page" value="HVAC Duct Pressure Classes Explained" />
+            <input type="hidden" name="Lead source" id="productQuoteLeadSource" value="" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <div class="form-row">
+              <div class="form-field">
+                <label for="pq-name" data-i18n="cat.name">Name</label>
+                <input id="pq-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="pq-company" data-i18n="cat.company">Company</label>
+                <input id="pq-company" name="company" type="text" autocomplete="organization" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="pq-email" data-i18n="cat.email">Work email</label>
+                <input id="pq-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-field">
+                <label for="pq-country" data-i18n="form.country">Country of installation</label>
+                <input id="pq-country" name="country" type="text" autocomplete="country-name" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="pq-message" data-i18n="pq3.question">Your question</label>
+              <textarea id="pq-message" name="message" rows="3" data-i18n-placeholder="form.placeholder" placeholder="Material type, thickness, required capacity, available workshop size..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="pq3.button">Send my question</button>
+            <span id="productQuoteSending" hidden data-i18n="form.sending">Sending…</span>
+          </form>
+          </div>
+          <div id="productQuoteSent" class="quote-sent-banner catalogue-sent" hidden>
+            <span data-i18n="pq3.sent">&#10003; Sent. A Taokron engineer will reply within 12 hours.</span>
           </div>
         </div>
       </div>
     </section>
 
+    <script>
+      // Page quote form: thank-you state, same-language return URL, and the
+      // same first-touch attribution the contact form writes.
+      (function () {
+        if (location.search.indexOf('sent=1') !== -1) {
+          var b = document.getElementById('productQuoteSent'); if (b) { b.hidden = false; try { b.scrollIntoView({ block: 'center' }); } catch (e) {} }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          var nx = document.getElementById('productQuoteNext');
+          if (nx && /^https?:$/.test(location.protocol)) { nx.value = location.origin + location.pathname + '?sent=1'; }
+          var ls = document.getElementById('productQuoteLeadSource'); if (!ls) return;
+          var src = new URLSearchParams(location.search).get('source') || '';
+          var ref = '';
+          try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
+          var first = null;
+          try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+          var campaign = src || (first && first.q) || '';
+          var origin = ref || (first && first.ref) || '';
+          var parts = [];
+          parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+          if (origin) parts.push('ref:' + origin);
+          if (first && first.lp) parts.push('landed:' + first.lp);
+          parts.push('form:quote@' + location.pathname);
+          ls.value = parts.join(' \u00b7 ');
+          var form = document.getElementById('productQuoteForm');
+          var btn = form && form.querySelector('button[type="submit"]');
+          if (form && btn) {
+            form.addEventListener('submit', function () {
+              setTimeout(function () {
+                var lbl = document.getElementById('productQuoteSending');
+                btn.disabled = true; btn.textContent = (lbl && lbl.textContent) || 'Sending\u2026';
+              }, 0);
+            });
+          }
+        });
+      })();
+    </script>
   </main>
   <footer class="site-footer">
     <div class="shell">

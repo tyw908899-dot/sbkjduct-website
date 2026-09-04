@@ -5131,3 +5131,9 @@ body.has-hero-dark .site-header:not(.header-scrolled) .logo-img { filter: bright
   .product-quote-box { grid-template-columns: 1fr; }
   .product-quote-form .form-row { grid-template-columns: 1fr; }
 }
+
+/* ---- Page-level quote form (category / region / industry / guides) 2026-09-04 ---- */
+.page-quote { scroll-margin-top: 88px; }
+section.page-quote { padding-block: 2.5rem; }
+.page-quote-narrow { grid-template-columns: 1fr; margin: 0 0 3rem; }
+.page-quote-narrow .catalogue-copy h2 { font-size: clamp(1.3rem, 2vw, 1.6rem); }

@@ -27,7 +27,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="../assets/css/styles.css?v=50" />
+  <link rel="stylesheet" href="../assets/css/styles.css?v=51" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
     {"@type":"Organization","@id":"https://taokron.com/#org","sameAs":["https://www.linkedin.com/company/taokron/","https://www.youtube.com/@taokron","https://www.instagram.com/taokron/","https://www.facebook.com/profile.php?id=61587888804663","https://www.tiktok.com/@taokron", "https://www.crunchbase.com/organization/sbkj-group"],"name":"Taokron","url":"https://taokron.com/","description":"Australian supplier of HVAC ductwork machinery — spiral duct machines, auto duct production lines, TDF flange formers, lockformers and duct welding machines."},
@@ -185,7 +185,54 @@
           <div class="promise-callout">
             <span class="promise-label">12-hour reply</span>
             <p class="promise-text">Comparing duct welding machine suppliers? Tell us the weld type, material and gauge you run and the brands you are weighing &mdash; a Taokron mechanical engineer replies within 12 hours with an honest read across the whole welder family.</p>
-            <a href="../contact?source=guide-best-duct-welding-machine-manufacturers" class="btn btn-primary">Ask an engineer</a>
+            <a href="#quote" class="btn btn-primary">Ask an engineer</a>
+          </div>
+          <div class="catalogue-box product-quote-box page-quote page-quote-narrow" id="quote">
+            <div class="catalogue-copy">
+              <p class="eyebrow" data-i18n="pq3.eyebrow">Engineer reply</p>
+              <h2 data-i18n="pq3.title">Ask an engineer about this guide</h2>
+              <p data-i18n="pq3.lead">Describe your job and what you are trying to make. A Taokron mechanical engineer replies within 12 hours, not a salesperson.</p>
+              <p class="product-quote-for"><span data-i18n="pq3.for">Guide</span>: <strong>Best Duct Welding Machine Manufacturers — 2026 Buyer&#x27;s Guide</strong></p>
+            </div>
+          <form class="catalogue-form product-quote-form" id="productQuoteForm" action="https://formsubmit.co/sales@sbkjduct.com" method="POST">
+            <input type="hidden" name="_subject" value="Question from guide: Best Duct Welding Machine Manufacturers — 2026 Buyer&#x27;s Guide (taokron.com)" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" id="productQuoteNext" value="https://taokron.com/insights/best-duct-welding-machine-manufacturers?sent=1" />
+            <input type="hidden" name="_autoresponse" value="Hi, thank you for your message to Taokron. A Taokron engineer will reply within 12 hours. Questions before then: sales@taokron.com or WhatsApp +61 435 074 994. Ryan Tao, Taokron" />
+            <input type="hidden" name="Page" value="Best Duct Welding Machine Manufacturers — 2026 Buyer&#x27;s Guide" />
+            <input type="hidden" name="Lead source" id="productQuoteLeadSource" value="" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <div class="form-row">
+              <div class="form-field">
+                <label for="pq-name" data-i18n="cat.name">Name</label>
+                <input id="pq-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="pq-company" data-i18n="cat.company">Company</label>
+                <input id="pq-company" name="company" type="text" autocomplete="organization" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="pq-email" data-i18n="cat.email">Work email</label>
+                <input id="pq-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-field">
+                <label for="pq-country" data-i18n="form.country">Country of installation</label>
+                <input id="pq-country" name="country" type="text" autocomplete="country-name" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="pq-message" data-i18n="pq3.question">Your question</label>
+              <textarea id="pq-message" name="message" rows="3" data-i18n-placeholder="form.placeholder" placeholder="Material type, thickness, required capacity, available workshop size..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="pq3.button">Send my question</button>
+            <span id="productQuoteSending" hidden data-i18n="form.sending">Sending…</span>
+          </form>
+          </div>
+          <div id="productQuoteSent" class="quote-sent-banner catalogue-sent" hidden>
+            <span data-i18n="pq3.sent">&#10003; Sent. A Taokron engineer will reply within 12 hours.</span>
           </div>
         </div>
       </div>
@@ -197,6 +244,43 @@
         <p>Taokron supplies the full welder family within the duct shop: <a href="../categories/duct-welding-machines">duct welding machines</a> — stitch, seam, spot, elbow, medium-frequency and handheld laser — alongside the <a href="../categories/spiral-duct-machinery">spiral</a> and <a href="../categories/auto-duct-lines">rectangular</a> duct equipment they finish &mdash; or browse the <a href="../machines">full machine catalog</a>.</p>
       </div></div>
     </section>
+    <script>
+      // Page quote form: thank-you state, same-language return URL, and the
+      // same first-touch attribution the contact form writes.
+      (function () {
+        if (location.search.indexOf('sent=1') !== -1) {
+          var b = document.getElementById('productQuoteSent'); if (b) { b.hidden = false; try { b.scrollIntoView({ block: 'center' }); } catch (e) {} }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          var nx = document.getElementById('productQuoteNext');
+          if (nx && /^https?:$/.test(location.protocol)) { nx.value = location.origin + location.pathname + '?sent=1'; }
+          var ls = document.getElementById('productQuoteLeadSource'); if (!ls) return;
+          var src = new URLSearchParams(location.search).get('source') || '';
+          var ref = '';
+          try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
+          var first = null;
+          try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+          var campaign = src || (first && first.q) || '';
+          var origin = ref || (first && first.ref) || '';
+          var parts = [];
+          parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+          if (origin) parts.push('ref:' + origin);
+          if (first && first.lp) parts.push('landed:' + first.lp);
+          parts.push('form:quote@' + location.pathname);
+          ls.value = parts.join(' \u00b7 ');
+          var form = document.getElementById('productQuoteForm');
+          var btn = form && form.querySelector('button[type="submit"]');
+          if (form && btn) {
+            form.addEventListener('submit', function () {
+              setTimeout(function () {
+                var lbl = document.getElementById('productQuoteSending');
+                btn.disabled = true; btn.textContent = (lbl && lbl.textContent) || 'Sending\u2026';
+              }, 0);
+            });
+          }
+        });
+      })();
+    </script>
   </main>
   <footer class="site-footer">
     <div class="shell">
@@ -204,7 +288,7 @@
     </div>
   </footer>
   <script src="../assets/js/main.js?v=13"></script>
-  <script src="../assets/js/i18n.js?v=101"></script>
+  <script src="../assets/js/i18n.js?v=102"></script>
   <a href="https://wa.me/61435074994" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
