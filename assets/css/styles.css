@@ -5169,3 +5169,7 @@ section.page-quote { padding-block: 2.5rem; }
 @media print { .mobile-cta-bar { display: none !important; } }
 .spec-all-link, .spec-all-line a { margin-left: 0.6rem; font-size: 0.85rem; text-decoration: underline; color: var(--text-muted); }
 .spec-all-line { margin-top: 1rem; }
+/* ---- Wide comparison tables (6+ columns) scroll sideways inside .table-wrap instead of squeezing and breaking words 2026-09-05 ---- */
+.table-wrap .spec-table.wide { min-width: 1100px; }
+.spec-table.wide td, .spec-table.wide th { overflow-wrap: normal; word-break: normal; hyphens: manual; }
+.table-wrap { -webkit-overflow-scrolling: touch; }
