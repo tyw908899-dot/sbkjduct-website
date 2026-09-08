@@ -385,6 +385,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const onScroll = () => { if (!ticking) { ticking = true; setTimeout(check, 60); } };
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
+    // Anchor landings do not always emit a scroll event: arriving on a shared
+    // /product/x#quote URL the browser jumps to the anchor around load time, so a
+    // check() that ran at DOMContentLoaded has already measured the wrong geometry.
+    // Re-check on hashchange and once after load so the bar is never left sitting
+    // on top of the form's submit button.
+    window.addEventListener("hashchange", check);
+    window.addEventListener("load", () => setTimeout(check, 120));
     check();
   }
 });
