@@ -416,3 +416,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   if (/[?&](sent|catalogue)=1(&|$)/.test(location.search)) track("form_sent", { form_page: location.pathname });
 });
+
+/* Wide comparison tables scroll sideways inside .table-wrap. On a phone only the first
+   few columns are visible and the Taokron column is last, so without a cue the reader
+   never sees it. Add a right-edge fade and a one-line hint to any wrapper that actually
+   overflows; both fade out on first scroll. Labels are inline because the language
+   mirrors ship without i18n.js. */
+document.addEventListener("DOMContentLoaded", () => {
+  const lang = (document.documentElement.lang || "en").slice(0, 2).toLowerCase();
+  const L = {
+    en: "Swipe for all columns", es: "Desliza para ver todas las columnas",
+    pt: "Deslize para ver todas as colunas", fr: "Faites glisser pour voir toutes les colonnes",
+    ru: "Прокрутите, чтобы увидеть все столбцы", tr: "Tüm sütunlar için kaydırın",
+    ar: "اسحب لعرض كل الأعمدة", hi: "सभी कॉलम देखने के लिए स्वाइप करें",
+    id: "Geser untuk melihat semua kolom", zh: "左右滑动查看全部列"
+  };
+  document.querySelectorAll(".table-wrap").forEach((wrap) => {
+    if (wrap.parentElement && wrap.parentElement.classList.contains("table-scroll-shell")) return;
+    if (wrap.scrollWidth <= wrap.clientWidth + 1) return;
+    const shell = document.createElement("div");
+    shell.className = "table-scroll-shell";
+    wrap.parentNode.insertBefore(shell, wrap);
+    shell.appendChild(wrap);
+    const hint = document.createElement("span");
+    hint.className = "table-scroll-hint";
+    hint.textContent = (L[lang] || L.en) + " →";
+    shell.appendChild(hint);
+    wrap.addEventListener("scroll", () => shell.classList.add("has-scrolled"), { passive: true, once: true });
+  });
+});

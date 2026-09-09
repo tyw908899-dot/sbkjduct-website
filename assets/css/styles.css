@@ -5173,3 +5173,20 @@ section.page-quote { padding-block: 2.5rem; }
 .table-wrap .spec-table.wide { min-width: 1100px; }
 .spec-table.wide td, .spec-table.wide th { overflow-wrap: normal; word-break: normal; hyphens: manual; }
 .table-wrap { -webkit-overflow-scrolling: touch; }
+
+/* ---- Wide-table scroll affordance 2026-09-09 ----
+   Built by main.js only around tables that actually overflow, so a table that fits
+   gets no fade and no label. */
+.table-scroll-shell { position: relative; }
+.table-scroll-shell::after {
+  content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 44px;
+  pointer-events: none; opacity: 1; transition: opacity .2s ease;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.92));
+}
+.table-scroll-shell.has-scrolled::after { opacity: 0; }
+.table-scroll-hint {
+  display: block; margin: 0.35rem 0 0; font-size: 0.78rem; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--text-muted, #667085); transition: opacity .2s ease;
+}
+.table-scroll-shell.has-scrolled .table-scroll-hint { opacity: 0; }
+@media print { .table-scroll-shell::after, .table-scroll-hint { display: none; } }
