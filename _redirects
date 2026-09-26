@@ -8,10 +8,7 @@
 # the old URLs 200 from cache (cf-cache-status: REVALIDATED) even though the
 # origin returned 404. Serving a redirect changes the response the edge stores,
 # which retires the cached copy, and permanently claims the paths so a stray file
-# dropped there later cannot go quietly public again.
-/assets/catalog/*  /  301
-/media/social/*    /  301
-/media/*           /  301
+# dropped there later cannot go quietly public again. (Those rules are at the bottom.)
 
 # Old SBKJ-brand page renamed at the Taokron rebrand.
 /why-choose-sbkj.html  /why-choose-taokron  301
@@ -490,3 +487,10 @@
 /insights/window-door-aluminium-joinery-manufacturing-hvac-duct-guide  /industries/heavy-industrial  301
 /insights/wine-cellar-spirits-storage-hvac-duct-guide.html  /industries/food-processing  301
 /insights/wine-cellar-spirits-storage-hvac-duct-guide  /industries/food-processing  301
+
+# Wildcard (dynamic) rules MUST stay at the bottom: Cloudflare Pages treats every rule
+# after the first wildcard as dynamic too, and caps dynamic rules at 100, silently
+# skipping the rest (found 2026-09-26 when only the first ~100 of 470 rules worked).
+/assets/catalog/*  /  301
+/media/social/*    /  301
+/media/*           /  301
