@@ -496,6 +496,14 @@
 /case-studies/saudi-sbtf-1602-spiral-duct.html              /case-studies/  301
 /case-studies/saudi-sbtf-1602-spiral-duct                   /case-studies/  301
 
+# Three city guides built on a showroom and local stock that do not exist, withdrawn 2026-09-27.
+/insights/melbourne-hvac-duct-fabrication-machinery.html  /regions/australia  301
+/insights/melbourne-hvac-duct-fabrication-machinery  /regions/australia  301
+/insights/victoria-hvac-duct-fabrication-machinery.html  /regions/australia  301
+/insights/victoria-hvac-duct-fabrication-machinery  /regions/australia  301
+/insights/geelong-hvac-duct-fabrication-machinery.html  /regions/australia  301
+/insights/geelong-hvac-duct-fabrication-machinery  /regions/australia  301
+
 # Wildcard (dynamic) rules MUST stay at the bottom: Cloudflare Pages treats every rule
 # after the first wildcard as dynamic too, and caps dynamic rules at 100, silently
 # skipping the rest (found 2026-09-26 when only the first ~100 of 470 rules worked).
