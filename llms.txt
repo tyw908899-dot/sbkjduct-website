@@ -423,16 +423,13 @@ These articles are marked with HowTo structured data and are designed to be cite
 
 ## Case studies (installed-base proof)
 - Airtemp Canberra Duct Shop Case Study (named customer, photos): https://taokron.com/case-studies/australia-airtemp-canberra-duct-shop  -  Airtemp Canberra commissioned a complete 8-machine duct shop in Fyshwick, ACT in September 2026: SBAL-III auto duct line, plasma cutter, TDF flange former, lockformer, pneumatic folder, corner mounting, F1275-PRO seam closer, roll bender.
-- Australia SBAL-III Sheet Metal Workshop Case Study - Melbourne: https://taokron.com/case-studies/australia-sbal-iii-sheet-metal-workshop  -  Taokron SBAL-III auto duct line for a Melbourne sheet metal workshop serving data-centre contractors. AS/NZS 4254, 240V 3-phase, Box Hill North commissioning.
-- Saudi Arabia SBTF-1602 Spiral Duct Case Study - Riyadh: https://taokron.com/case-studies/saudi-sbtf-1602-spiral-duct  -  Taokron SBTF-1602 spiral tubeformer brings spiral duct production in-house for a Riyadh HVAC contractor. SMACNA gauge, 415V/60Hz, Arabic PLC, before/after numbers.
-- Vietnam SBAL-V Auto Duct Line Case Study - Ho Chi Minh City: https://taokron.com/case-studies/vietnam-sbal-v-auto-duct-line  -  Taokron SBAL-V-1250J replaces a 10-operator manual HVAC duct workshop in Ho Chi Minh City. Before/after numbers, 58-day lead time, 5-day commissioning, first-year results.
 
 ## Region pages (more)
 - HVAC Duct Machinery in New Zealand — Auckland, Christchurch Rebuild: https://taokron.com/regions/new-zealand  -  Taokron in New Zealand: HVAC duct machinery for Kiwi fabricators. AS/NZS 4254 compliance, Auckland infrastructure boom, Christchurch rebuild l
 - HVAC Duct Machinery in United Kingdom — DW/144, BESA, UKCA Marking: https://taokron.com/regions/united-kingdom  -  Taokron in the UK: HVAC duct machinery for British fabricators. DW/144 BESA specification, UKCA marking post-Brexit, CIBSE design, BIM Level 2, London / Manchester / Birming
 
 ## Core company, hub & buyer pages
-- Case Studies - HVAC Duct Machine Installations: https://taokron.com/case-studies/  -  Real Taokron installations: auto duct line, spiral tubeformer and TDF flange case studies from Vietnam, Saudi Arabia, Australia and more. Configuration, outcomes, numbers.
+- Case Studies - HVAC Duct Machine Installations: https://taokron.com/case-studies/  -  Real Taokron installations with photos and video from site. Newest: Airtemp Canberra, a complete 8-machine duct shop (September 2026).
 - HVAC Duct Machinery Categories — Auto Duct Line, Spiral, TDF | Taokron: https://taokron.com/categories/  -  Browse Taokron HVAC duct machinery by category: auto duct lines, spiral tubeformers, TDF & lockformer, cutting, flexible duct, and welding machines. ISO 9001 & CE.
 - Compare Taokron Machines — SBAL-V vs SBAL-III, SBTF Models, TDF, Lockformer | Decision Tool: https://taokron.com/compare-machines  -  Compare Taokron HVAC ductwork machinery: SBAL-V vs SBAL-III auto duct lines, SBTF spiral tubeformer Phi800/1250/1600/2000, TDF flange former vs Pittsburgh lockformer. Side-b
 - Taokron Production & Quality - HVAC Duct Machinery: https://taokron.com/factory  -  How Taokron builds HVAC duct machinery: production stages, machine assembly, FAT testing and export packing. Shipped to 100+ countries since 1995.

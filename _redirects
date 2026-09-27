@@ -488,6 +488,14 @@
 /insights/wine-cellar-spirits-storage-hvac-duct-guide.html  /industries/food-processing  301
 /insights/wine-cellar-spirits-storage-hvac-duct-guide  /industries/food-processing  301
 
+# Three case studies that could not be verified were withdrawn on 2026-09-27.
+/case-studies/australia-sbal-iii-sheet-metal-workshop.html  /case-studies/australia-airtemp-canberra-duct-shop  301
+/case-studies/australia-sbal-iii-sheet-metal-workshop       /case-studies/australia-airtemp-canberra-duct-shop  301
+/case-studies/vietnam-sbal-v-auto-duct-line.html            /case-studies/  301
+/case-studies/vietnam-sbal-v-auto-duct-line                 /case-studies/  301
+/case-studies/saudi-sbtf-1602-spiral-duct.html              /case-studies/  301
+/case-studies/saudi-sbtf-1602-spiral-duct                   /case-studies/  301
+
 # Wildcard (dynamic) rules MUST stay at the bottom: Cloudflare Pages treats every rule
 # after the first wildcard as dynamic too, and caps dynamic rules at 100, silently
 # skipping the rest (found 2026-09-26 when only the first ~100 of 470 rules worked).
