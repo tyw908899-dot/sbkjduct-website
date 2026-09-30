@@ -281,9 +281,9 @@
     if (r.contact) {
       const base = getBasePath();
       html += `<div class="sb-chat-contact">
-        <a href="https://wa.me/61435074994" target="_blank" rel="noopener">WhatsApp: +61 435 074 994</a>
+        <a href="https://wa.me/61435074994?text=${encodeURIComponent("Hi, I'm on taokron.com (" + location.pathname + ") and would like a price.")}" target="_blank" rel="noopener">WhatsApp: +61 435 074 994</a>
         <a href="mailto:sales@taokron.com">Email: sales@taokron.com</a>
-        <a href="${base}contact">Visit Contact Page</a>
+        <a href="${base}contact?source=chatbot">Send a quotation request</a>
       </div>`;
     }
     if (r.followUp) html += `<p class="sb-chat-dim">${r.followUp}</p>`;
