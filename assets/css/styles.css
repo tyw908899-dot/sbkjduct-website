@@ -5199,3 +5199,16 @@ section.page-quote { padding-block: 2.5rem; }
   .event-bar-wrapper > a { margin: 0 .55rem !important; flex: none; }
   .event-bar-wrapper > span { flex: none; margin: 0 .2rem !important; }
 }
+
+/* Inner pages: the header is position:absolute (transparent over the hero), so the
+   breadcrumb bar that opens <main> sat underneath it: links unclickable, text under the
+   logo, and on product pages the h1 itself was clipped (found 2026-10-02). Push the
+   breadcrumb bar below the header and trim the hero's own top padding, which was the
+   only thing keeping the h1 clear before. */
+main > .breadcrumbs-wrap:first-child { padding-top: calc(100px + 0.6rem); }
+main > .breadcrumbs-wrap:first-child + .page-hero,
+main > .breadcrumbs-wrap:first-child + .machines-hero,
+main > .breadcrumbs-wrap:first-child + .product-hero { padding-top: clamp(28px, 4vw, 56px) !important; }
+@media (max-width: 991px) {
+  main > .breadcrumbs-wrap:first-child { padding-top: calc(80px + 0.6rem); }
+}
