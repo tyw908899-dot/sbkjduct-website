@@ -510,3 +510,19 @@ document.addEventListener("DOMContentLoaded", () => {
   addEventListener("scroll", onScroll, { passive: true });
   setTimeout(show, 40000);
 });
+
+/* The homepage event bar sits in normal flow at the top of the page, but the header is
+   absolutely positioned at top:0 over the hero, so it covered the bar (found 2026-10-02:
+   the show links were hidden behind the logo/nav at every width). Push the header down
+   by the bar's height. */
+(() => {
+  const fit = () => {
+    const bar = document.querySelector(".event-bar-wrapper");
+    const head = document.querySelector(".site-header");
+    if (!bar || !head || getComputedStyle(head).position !== "absolute") return;
+    head.style.top = bar.offsetHeight + "px";
+  };
+  document.addEventListener("DOMContentLoaded", fit);
+  addEventListener("load", fit);
+  addEventListener("resize", fit, { passive: true });
+})();

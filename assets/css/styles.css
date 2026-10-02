@@ -5190,3 +5190,12 @@ section.page-quote { padding-block: 2.5rem; }
 }
 .table-scroll-shell.has-scrolled .table-scroll-hint { opacity: 0; }
 @media print { .table-scroll-shell::after, .table-scroll-hint { display: none; } }
+
+/* Event bar: on phones the stacked show links pushed the hero CTA below the fold (4 rows, ~280px). One swipeable line instead. */
+@media (max-width: 767px) {
+  .event-bar-wrapper { display: flex !important; flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; padding: .45rem .5rem !important; font-size: .8rem !important; text-align: left !important; }
+  .event-bar-wrapper::-webkit-scrollbar { display: none; }
+  .event-bar-wrapper > a { margin: 0 .55rem !important; flex: none; }
+  .event-bar-wrapper > span { flex: none; margin: 0 .2rem !important; }
+}
