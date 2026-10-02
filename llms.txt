@@ -275,6 +275,7 @@ Taokron also supplies and supports fabricators in regional NSW, VIC, QLD, WA, SA
 
 ## Conversion / engagement pages
 
+- **ARBS QLD 2027 (Brisbane, 2-3 June 2027)**: Taokron exhibits at Halls 3, Stand 122, Brisbane Convention and Exhibition Centre; stand meeting booking: https://taokron.com/arbs-qld-2027
 - **Meet Taokron in Australia (Engineering Consultation)**: book a consultation with the Australian team at the Box Hill North, Victoria office or by live video: project brief, machine model match, video demonstration of running machines and next steps: https://taokron.com/factory-tour
 - **Spec Sheet Download Library** — catalog-accurate downloadable PDF spec sheet for all 66 Taokron HVAC duct fabrication machines (gauge/material range, capacity, power, footprint, weight), grouped by category: spiral, auto duct lines, TDF & lockformer, welding, cutting & forming, flexible duct, and specialty. CollectionPage + ItemList schema: https://taokron.com/spec-sheets
 - **Product Catalogue 2026 (PDF)** — all 66 spec sheets compiled into one 69-page catalogue with a category table of contents; same catalog-accurate figures as the machine pages. Requested via the form on /spec-sheets or /machines: https://taokron.com/downloads/taokron-product-catalogue-2026.pdf
