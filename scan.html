@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#16202B" />
+  <title>Taokron catalogue | Taokron</title>
+  <meta name="robots" content="noindex,follow" />
+  <link rel="canonical" href="https://taokron.com/spec-sheets" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <style>
+    :root { --ink:#16202B; --line:#d6dbe1; --bg:#f5f7f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:var(--bg); }
+    header { background:var(--ink); color:#fff; padding:14px 16px; }
+    header strong { letter-spacing:.06em; }
+    main { max-width:560px; margin:0 auto; padding:18px 16px 40px; }
+    h1 { font-size:1.45rem; margin:.2rem 0 .4rem; }
+    p.lead { margin:0 0 14px; }
+    label { display:block; font-size:.85rem; font-weight:600; margin:12px 0 4px; }
+    input, textarea { width:100%; font-size:17px; padding:12px; border:1px solid var(--line); border-radius:8px; background:#fff; color:var(--ink); }
+    button { width:100%; margin-top:18px; font-size:18px; font-weight:700; padding:15px; border:0; border-radius:10px; background:var(--ink); color:#fff; }
+    .ok { display:none; background:#e3f4ea; border:1px solid #b7e0c6; color:#1d7a46; border-radius:8px; padding:12px; font-weight:600; margin-bottom:14px; }
+    .links { margin-top:22px; font-size:.95rem; }
+    .links a { color:var(--ink); }
+  </style>
+</head>
+<body>
+  <header><strong>TAOKRON</strong></header>
+  <main>
+    <div class="ok" id="ok">Sent. Check your inbox for the catalogue (and your spam folder, just in case).</div>
+    <h1>Get the Taokron catalogue</h1>
+    <p class="lead">66 HVAC duct machines, one page each: spiral tubeformers, auto duct lines, TDF flange formers, lockformers, cutting, welding and flexible duct. We email it to you straight away.</p>
+    <form id="f" action="https://formsubmit.co/sales@sbkjduct.com" method="POST">
+      <input type="hidden" name="_subject" id="subj" value="Catalogue request via QR (taokron.com/scan)" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://taokron.com/scan?sent=1" />
+      <input type="hidden" name="Lead source" id="src" value="QR scan" />
+      <input type="hidden" name="_autoresponse" value="Hi, thank you for your interest in Taokron. Here is our Product Catalogue 2026 (PDF, 66 machines, one page each): https://taokron.com/downloads/taokron-product-catalogue-2026.pdf  Real installs with photos and video: https://taokron.com/case-studies/  Reply to this email with your material, gauge and duct sizes and we will come back with a machine list and a quotation within 12 hours. Ryan Tao, Taokron, +61 435 074 994 (WhatsApp)" />
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+      <label for="em">Email</label>
+      <input id="em" name="email" type="email" inputmode="email" autocomplete="email" required />
+      <label for="nm">Name</label>
+      <input id="nm" name="name" type="text" autocomplete="name" />
+      <label for="co">Company</label>
+      <input id="co" name="company" type="text" autocomplete="organization" />
+      <label for="msg">What do you make or plan to make? (optional)</label>
+      <textarea id="msg" name="message" rows="3" placeholder="e.g. spiral duct 100 to 1000 mm, 0.6 mm galvanised"></textarea>
+      <button type="submit" id="b">Email me the catalogue</button>
+    </form>
+    <div class="links">
+      <p>Or browse now: <a href="/machines">all machines</a> &middot; <a href="/case-studies/">real installs</a> &middot; <a href="https://wa.me/61435074994">WhatsApp us</a></p>
+    </div>
+  </main>
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search), s = q.get('s');
+      if (s) { s = s.replace(/[^\w\- ]/g, '').slice(0, 40); document.getElementById('src').value = 'QR scan: ' + s; document.getElementById('subj').value = 'Catalogue request via QR: ' + s; }
+      if (q.get('sent')) document.getElementById('ok').style.display = 'block';
+      document.getElementById('f').addEventListener('submit', function () { setTimeout(function () { var b = document.getElementById('b'); b.disabled = true; b.textContent = 'Sending…'; }, 0); });
+    })();
+  </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "x4n6j0p80n");
+  </script>
+</body>
+</html>
