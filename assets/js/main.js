@@ -445,3 +445,68 @@ document.addEventListener("DOMContentLoaded", () => {
     wrap.addEventListener("scroll", () => shell.classList.add("has-scrolled"), { passive: true, once: true });
   });
 });
+
+/* Catalogue slide-in (added 2026-10-02). Most visitors read ~1.4 pages and leave
+   without a form; offer the PDF catalogue once, after half a page of scroll or 40 s,
+   bottom-left so it never covers the chat / WhatsApp floats on the right. Dismissal
+   is remembered for 30 days. Skipped on pages that already are a form. */
+document.addEventListener("DOMContentLoaded", () => {
+  const path = location.pathname;
+  if (/\/(contact|scan|stand|404)(\.html)?$/.test(path) || /[?&](sent|catalogue|saved)=1/.test(location.search)) return;
+  try { const t = +localStorage.getItem("catPopDone"); if (t && Date.now() - t < 30 * 864e5) return; } catch (e) {}
+  const lang = (document.documentElement.lang || "en").slice(0, 2).toLowerCase();
+  const T = {
+    en: ["Get the 2026 catalogue", "66 duct machines, one page each. We email the PDF to you now.", "Your email", "Send"],
+    es: ["Catálogo 2026", "66 máquinas para conductos, una página cada una. Le enviamos el PDF ahora.", "Su email", "Enviar"],
+    pt: ["Catálogo 2026", "66 máquinas para dutos, uma página cada. Enviamos o PDF agora.", "Seu e-mail", "Enviar"],
+    fr: ["Catalogue 2026", "66 machines pour conduits, une page chacune. Nous vous envoyons le PDF.", "Votre e-mail", "Envoyer"],
+    ru: ["Каталог 2026", "66 машин для воздуховодов, по странице на каждую. Отправим PDF сразу.", "Ваш e-mail", "Отправить"],
+    tr: ["2026 kataloğu", "66 kanal makinesi, her biri bir sayfa. PDF'i hemen e-postanıza gönderelim.", "E-posta adresiniz", "Gönder"],
+    ar: ["كتالوج 2026", "66 آلة لمجاري الهواء، صفحة لكل آلة. نرسل لك ملف PDF الآن.", "بريدك الإلكتروني", "إرسال"],
+    hi: ["2026 कैटलॉग", "66 डक्ट मशीनें, हर मशीन एक पेज पर। PDF अभी ईमेल करते हैं।", "आपका ईमेल", "भेजें"],
+    id: ["Katalog 2026", "66 mesin ducting, satu halaman per mesin. PDF kami kirim sekarang.", "Email Anda", "Kirim"],
+    zh: ["获取 2026 产品目录", "66 款风管设备，每款一页。PDF 立即发到您的邮箱。", "您的邮箱", "发送"]
+  }[lang] || null;
+  const L = T || ["Get the 2026 catalogue", "66 duct machines, one page each. We email the PDF to you now.", "Your email", "Send"];
+  let shown = false;
+  const done = () => { try { localStorage.setItem("catPopDone", String(Date.now())); } catch (e) {} };
+  const show = () => {
+    if (shown) return; shown = true;
+    const box = document.createElement("div");
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-label", L[0]);
+    box.style.cssText = "position:fixed;left:12px;bottom:" + (innerWidth < 768 ? 92 : 16) + "px;z-index:9990;max-width:330px;width:calc(100% - 104px);" +
+      "background:#fff;color:#16202B;border:1px solid #d6dbe1;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.18);" +
+      "padding:14px 14px 12px;font:14px/1.4 system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;direction:" + (lang === "ar" ? "rtl" : "ltr");
+    const next = "https://taokron.com/spec-sheets?catalogue=1";
+    box.innerHTML =
+      '<button type="button" aria-label="Close" style="position:absolute;top:4px;' + (lang === "ar" ? "left" : "right") + ':6px;border:0;background:none;font-size:20px;line-height:1;cursor:pointer;color:#555;padding:4px 6px">&times;</button>' +
+      '<strong style="display:block;font-size:15px;margin:0 22px 4px 0"></strong><span class="cp-b" style="display:block;margin-bottom:8px;opacity:.85"></span>' +
+      '<form action="https://formsubmit.co/sales@sbkjduct.com" method="POST" style="display:flex;gap:6px">' +
+      '<input type="hidden" name="_subject" value="Catalogue request (slide-in, taokron.com)">' +
+      '<input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">' +
+      '<input type="hidden" name="_next" value="' + next + '">' +
+      '<input type="hidden" name="Lead source" value="catalogue slide-in ' + path.replace(/[^\w\/\-.]/g, "") + '">' +
+      '<input type="hidden" name="_autoresponse" value="Hi, here is the Taokron Product Catalogue 2026 (PDF, 66 machines, one page each): https://taokron.com/downloads/taokron-product-catalogue-2026.pdf  Real installs with photos and video: https://taokron.com/case-studies/  Reply with your material, gauge and duct sizes and an engineer will come back within 12 hours. Ryan Tao, Taokron, +61 435 074 994 (WhatsApp)">' +
+      '<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">' +
+      '<input type="email" name="email" required autocomplete="email" style="flex:1;min-width:0;padding:9px 10px;border:1px solid #c9d0d8;border-radius:8px;font-size:15px">' +
+      '<button type="submit" style="border:0;border-radius:8px;background:#16202B;color:#fff;font-weight:700;padding:9px 12px;cursor:pointer"></button></form>';
+    box.querySelector("strong").textContent = L[0];
+    box.querySelector(".cp-b").textContent = L[1];
+    box.querySelector('input[type="email"]').placeholder = L[2];
+    box.querySelector('button[type="submit"]').textContent = L[3];
+    box.querySelector('button[aria-label="Close"]').addEventListener("click", () => { box.remove(); done(); });
+    box.querySelector("form").addEventListener("submit", () => {
+      done();
+      try { if (typeof window.clarity === "function") { window.clarity("set", "form_subject", "catalogue slide-in"); window.clarity("event", "form_submit"); } } catch (e) {}
+    });
+    document.body.appendChild(box);
+    try { if (typeof window.clarity === "function") window.clarity("event", "catalogue_popup_shown"); } catch (e) {}
+  };
+  const onScroll = () => {
+    const h = document.documentElement.scrollHeight - innerHeight;
+    if (h > 0 && scrollY / h > 0.5) { removeEventListener("scroll", onScroll); show(); }
+  };
+  addEventListener("scroll", onScroll, { passive: true });
+  setTimeout(show, 40000);
+});
