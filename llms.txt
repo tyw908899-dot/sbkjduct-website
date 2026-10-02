@@ -418,6 +418,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - HVAC Duct Machinery for Tunnel and Infrastructure Projects: https://taokron.com/industries/tunnel-infrastructure  -  HVAC duct machinery for tunnel ventilation: road tunnels, rail/metro, hydropower, mining declines. AS 4825, NFPA 502, NFPA 130 compliance. Snowy 2.0, Sydney Metro, Melbou
 
 ## Case studies (installed-base proof)
+- Spiral Tubeformer Forming Heads (extra, replacement and odd/inch diameters such as 762 mm, made to order; fit checked for other makers' machines before quoting): https://taokron.com/spiral-tubeformer-forming-heads
 - Kavanagh Industries Sydney Spiral Duct Case Study (named customer, photos, video): https://taokron.com/case-studies/australia-kavanagh-sydney-spiral-duct  -  Kavanagh Industries, a commercial ductwork manufacturer in Smithfield NSW, added a Taokron SBTF-1602 spiral tubeformer (Φ80-Φ1600 mm round spiral duct), delivered DDU door to door, installed and commissioned by Taokron in October 2026.
 - Airtemp Canberra Duct Shop Case Study (named customer, photos): https://taokron.com/case-studies/australia-airtemp-canberra-duct-shop  -  Airtemp Canberra commissioned a complete 8-machine duct shop in Fyshwick, ACT in September 2026: SBAL-III auto duct line, plasma cutter, TDF flange former, lockformer, pneumatic folder, corner mounting, F1275-PRO seam closer, roll bender.
 
