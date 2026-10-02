@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="theme-color" content="#16202B" />
+  <title>Stand visitor log | Taokron</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <style>
+    :root { --ink:#16202B; --line:#d6dbe1; --bg:#f5f7f9; --ok:#1d7a46; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:var(--bg); }
+    header { background:var(--ink); color:#fff; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; gap:8px; }
+    header strong { font-size:1.05rem; letter-spacing:.04em; }
+    header span { font-size:.85rem; opacity:.8; }
+    main { max-width:640px; margin:0 auto; padding:14px 16px 40px; }
+    .saved { display:none; background:#e3f4ea; color:var(--ok); border:1px solid #b7e0c6; border-radius:8px; padding:10px 12px; margin-bottom:12px; font-weight:600; }
+    label { display:block; font-size:.85rem; font-weight:600; margin:12px 0 4px; }
+    input[type=text], input[type=email], input[type=tel], select, textarea {
+      width:100%; font-size:17px; padding:11px 12px; border:1px solid var(--line); border-radius:8px; background:#fff; color:var(--ink); }
+    textarea { min-height:90px; }
+    .row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+    .chips label { margin:0; font-weight:500; font-size:.95rem; background:#fff; border:1px solid var(--line); border-radius:20px; padding:8px 12px; display:flex; gap:6px; align-items:center; }
+    .chips input { width:18px; height:18px; }
+    .send { display:flex; gap:10px; align-items:flex-start; margin-top:14px; background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+    .send input { width:22px; height:22px; margin-top:1px; flex:none; }
+    .send label { margin:0; font-weight:500; font-size:.95rem; }
+    button { width:100%; margin-top:18px; font-size:18px; font-weight:700; padding:15px; border:0; border-radius:10px; background:var(--ink); color:#fff; }
+    button:disabled { opacity:.6; }
+    .note { font-size:.8rem; opacity:.7; margin-top:14px; }
+    @media (max-width:420px) { .row { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header><strong>TAOKRON</strong><span id="showLabel">Stand visitor log</span></header>
+  <main>
+    <div class="saved" id="saved">Saved. Next visitor.</div>
+    <form id="standForm" action="https://formsubmit.co/sales@sbkjduct.com" method="POST" autocomplete="off">
+      <input type="hidden" name="_subject" id="subj" value="Stand visitor (taokron.com/stand)" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://taokron.com/stand?saved=1" />
+      <input type="hidden" name="Lead source" value="stand visitor log" />
+      <input type="hidden" name="_autoresponse" id="autoresp" disabled
+        value="Thank you for visiting the Taokron stand. Here is our Product Catalogue 2026 (PDF, 66 machines, one page each): https://taokron.com/downloads/taokron-product-catalogue-2026.pdf  Real installs with photos and video: https://taokron.com/case-studies/  Reply to this email with your material, gauge and duct sizes and we will come back with a machine list and a quotation within 12 hours. Ryan Tao, Taokron, +61 435 074 994 (WhatsApp)" />
+      <input type="text" name="_honey" style="display:none" tabindex="-1" />
+
+      <label for="show">Show</label>
+      <select id="show" name="Show" required>
+        <option>Chillventa 2026, Nuremberg</option>
+        <option>EuroBLECH 2026, Hanover</option>
+        <option>ISK-SODEX Saudi 2026, Riyadh</option>
+        <option>Mega Clima 2026, Algiers</option>
+        <option>ARBS QLD 2027, Brisbane</option>
+        <option>AHR Expo 2027, Chicago</option>
+        <option>Other / site visit</option>
+      </select>
+
+      <div class="row">
+        <div><label for="n">Name</label><input id="n" name="Name" type="text" required /></div>
+        <div><label for="c">Company</label><input id="c" name="Company" type="text" /></div>
+      </div>
+      <div class="row">
+        <div><label for="e">Email</label><input id="e" name="Visitor email" type="email" inputmode="email" /></div>
+        <div><label for="p">Phone / WhatsApp</label><input id="p" name="Phone" type="tel" inputmode="tel" /></div>
+      </div>
+      <div class="row">
+        <div><label for="co">Country</label><input id="co" name="Country" type="text" /></div>
+        <div><label for="r">Role</label>
+          <select id="r" name="Role"><option value="">-</option><option>Owner / director</option><option>Production / workshop manager</option><option>Engineer</option><option>Purchasing</option><option>Distributor / agent</option><option>Other</option></select></div>
+      </div>
+
+      <label>Interested in</label>
+      <div class="chips">
+        <label><input type="checkbox" name="Interest" value="Spiral tubeformer" />Spiral</label>
+        <label><input type="checkbox" name="Interest" value="Auto duct line" />Auto duct line</label>
+        <label><input type="checkbox" name="Interest" value="TDF / flange" />TDF / flange</label>
+        <label><input type="checkbox" name="Interest" value="Lockformer / seam" />Lockformer</label>
+        <label><input type="checkbox" name="Interest" value="Plasma / laser" />Plasma / laser</label>
+        <label><input type="checkbox" name="Interest" value="Elbow / fittings" />Elbow / fittings</label>
+        <label><input type="checkbox" name="Interest" value="Welding" />Welding</label>
+        <label><input type="checkbox" name="Interest" value="Flexible duct" />Flexible duct</label>
+        <label><input type="checkbox" name="Interest" value="Duct products (buy duct)" />Buy duct / fittings</label>
+        <label><input type="checkbox" name="Interest" value="New factory / full line" />New factory</label>
+      </div>
+
+      <label for="t">Lead temperature</label>
+      <select id="t" name="Temperature"><option>Warm</option><option>Hot (project this year)</option><option>Cold / info only</option></select>
+
+      <label for="m">Notes (duct sizes, gauge, timing, what we promised)</label>
+      <textarea id="m" name="Notes"></textarea>
+
+      <div class="send">
+        <input type="checkbox" id="sendCat" checked />
+        <label for="sendCat">Email the catalogue to the visitor now (needs their email)</label>
+      </div>
+
+      <button type="submit" id="btn">Save visitor</button>
+      <p class="note">Each save emails the details to sales@sbkjduct.com. The show you pick stays selected for the next visitor.</p>
+    </form>
+  </main>
+  <script>
+    (function () {
+      var sel = document.getElementById('show');
+      try { var v = localStorage.getItem('standShow'); if (v) sel.value = v; } catch (e) {}
+      function lbl() { document.getElementById('showLabel').textContent = sel.value; document.getElementById('subj').value = 'Stand visitor: ' + sel.value; }
+      sel.addEventListener('change', function () { try { localStorage.setItem('standShow', sel.value); } catch (e) {} lbl(); });
+      lbl();
+      if (/[?&]saved=1/.test(location.search)) { document.getElementById('saved').style.display = 'block'; }
+      document.getElementById('standForm').addEventListener('submit', function () {
+        var em = document.getElementById('e'), send = document.getElementById('sendCat').checked && em.value;
+        // FormSubmit sends its autoresponse to the field named "email", so only expose it when we want the catalogue sent.
+        if (send) { em.name = 'email'; document.getElementById('autoresp').disabled = false; }
+        var n = document.getElementById('n').value, c = document.getElementById('c').value;
+        document.getElementById('subj').value = 'Stand visitor: ' + sel.value + ' | ' + n + (c ? ' (' + c + ')' : '');
+        setTimeout(function () { var b = document.getElementById('btn'); b.disabled = true; b.textContent = 'Saving…'; }, 0);
+      });
+    })();
+  </script>
+</body>
+</html>
