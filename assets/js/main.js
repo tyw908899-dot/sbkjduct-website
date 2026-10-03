@@ -526,3 +526,10 @@ document.addEventListener("DOMContentLoaded", () => {
   addEventListener("load", fit);
   addEventListener("resize", fit, { passive: true });
 })();
+
+/* Send visitors on the raw pages.dev host to the real domain */
+(function () {
+  if (location.hostname === "taokron.pages.dev") {
+    location.replace("https://taokron.com" + location.pathname + location.search + location.hash);
+  }
+})();
