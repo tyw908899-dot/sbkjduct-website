@@ -100,7 +100,15 @@
     if (!/\.[a-z0-9]+$/i.test(p)) return p + ".html";
     return p;
   }
+  function altLangUrl(lang) {
+    // Pages that exist only in some languages declare them as hreflang alternates.
+    var l = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');
+    if (!l) return null;
+    try { var u = new URL(l.href, location.href); return u.pathname === location.pathname ? null : u.pathname; } catch (e) { return null; }
+  }
   function staticLangUrl(lang) {
+    var alt = altLangUrl(lang);
+    if (alt) return alt;
     if (!STATIC_LANGS[lang]) return null;
     var p = normPath();
     if (!GEN_PAGES[p]) return null;

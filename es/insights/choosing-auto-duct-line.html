@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#000000" name="theme-color"/>
+<title>Cómo elegir una línea de producción automática de conductos (SBAL-V frente a SBAL-III)</title>
+<meta content="Cómo elegir una línea de producción automática de conductos: rendimiento por turno, integración TDF, número de operarios, superficie ocupada y costo total de propiedad." name="description"/>
+<link href="https://taokron.com/es/insights/choosing-auto-duct-line" rel="canonical"/>
+  <link rel="alternate" hreflang="en" href="/es/insights/choosing-auto-duct-line" />
+  <link rel="alternate" hreflang="ar" href="https://taokron.com/ar/insights/choosing-auto-duct-line" />
+  <link rel="alternate" hreflang="es" href="https://taokron.com/es/insights/choosing-auto-duct-line" />
+  <link rel="alternate" hreflang="fr" href="https://taokron.com/fr/insights/choosing-auto-duct-line" />
+  <link rel="alternate" hreflang="pt" href="https://taokron.com/pt/insights/choosing-auto-duct-line" />
+  <link rel="alternate" hreflang="ru" href="https://taokron.com/ru/insights/choosing-auto-duct-line" />
+  <link rel="alternate" hreflang="x-default" href="/es/insights/choosing-auto-duct-line" />
+<meta content="Taokron" name="author"/>
+<meta content="AU-VIC" name="geo.region"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="Taokron" property="og:site_name"/>
+<meta content="es_ES" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Cómo elegir una línea de producción automática de conductos | Taokron" property="og:title"/>
+<meta content="Compare SBAL-V y SBAL-III, distribución del taller, integración TDF y retorno de la inversión. Guía elaborada por ingenieros." property="og:description"/>
+<meta content="https://taokron.com/es/insights/choosing-auto-duct-line" property="og:url"/>
+<meta content="https://taokron.com/assets/images/og/choosing-auto-duct-line.jpg" property="og:image"/>
+<meta content="2026-04-08T00:00:00+10:00" property="article:published_time"/>
+<meta content="2026-04-08T00:00:00+10:00" property="article:modified_time"/>
+<meta content="Taokron" property="article:author"/>
+<meta content="https://taokron.com/assets/images/og/choosing-auto-duct-line.jpg" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@taokron" name="twitter:site"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="/assets/css/styles.css?v=55" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://taokron.com/#author-engineering", "name": "Taokron Engineering Team", "url": "https://taokron.com/about", "description": "The Taokron engineering team: HVAC ductwork machinery design, commissioning and technical support for customers in 100+ countries.", "parentOrganization": {"@id": "https://taokron.com/#org"}, "knowsAbout": ["HVAC duct machinery", "Spiral tubeformer", "TDF flange", "Auto duct production line", "SMACNA", "AS/NZS 4254", "EN 1505", "EN 1506"]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://taokron.com/"}, {"@type": "ListItem", "position": 2, "name": "Artículos técnicos", "item": "https://taokron.com/insights/"}, {"@type": "ListItem", "position": 3, "name": "Elegir una línea automática de conductos", "item": "https://taokron.com/es/insights/choosing-auto-duct-line"}]}, {"@type": "TechArticle", "headline": "Cómo elegir una línea de producción automática de conductos (SBAL-V frente a SBAL-III)", "description": "Guía elaborada por ingenieros para seleccionar una línea de producción automática de conductos de HVAC.", "author": {"@id": "https://taokron.com/#author-engineering"}, "reviewedBy": {"@type": "Organization", "name": "Taokron QA & Engineering", "url": "https://taokron.com/about", "description": "Taokron quality assurance and engineering team — every published guide is reviewed by senior engineers before publication and re-validated on each update."}, "publisher": {"@id": "https://taokron.com/#org"}, "datePublished": "2026-04-08T00:00:00+10:00", "dateModified": "2026-06-19T00:00:00+10:00", "image": "https://taokron.com/assets/images/sbal-v.jpg", "mainEntityOfPage": "https://taokron.com/es/insights/choosing-auto-duct-line", "inLanguage": "es", "proficiencyLevel": "Expert", "dependencies": "HVAC duct factory planning", "articleSection": "HVAC Machinery", "about": [{"@type": "Thing", "name": "Línea de producción automática de conductos"}, {"@type": "Thing", "name": "Fabricación de conductos rectangulares de HVAC"}, {"@type": "Thing", "name": "Conformado de brida TDF"}], "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".article-lead", "h2"]}}, {"@type": "HowTo", "name": "Cómo elegir una línea de producción automática de conductos de HVAC", "description": "Marco de diez pasos, elaborado por ingenieros, para seleccionar la línea de producción automática de conductos rectangulares de HVAC adecuada: desde fijar los objetivos de producción diaria, pasando por la especificación de la bobina, el método de cierre, la distribución del taller, el análisis del retorno de la inversión y la calificación de proveedores, hasta el cumplimiento de normas.", "totalTime": "PT60M", "image": "https://taokron.com/assets/images/sbal-v.jpg", "tool": [{"@type": "HowToTool", "name": "Hoja de cálculo de demanda de producción (objetivo en m²/día)"}, {"@type": "HowToTool", "name": "Plano de planta del taller"}, {"@type": "HowToTool", "name": "Ficha de especificación de la bobina"}], "step": [{"@type": "HowToStep", "position": 1, "name": "Empiece por los objetivos de producción", "text": "Defina con precisión su producción objetivo de conducto rectangular antes de comparar modelos. La SBAL-V trabaja a una velocidad de línea de 18 m/min con 40 kW de accionamiento total (línea en U para un solo operario). La SBAL-III trabaja a 18 m/min con 10.7 kW (muescado hidráulico con menor inversión inicial). La SBAL-II trabaja a 18 m/min con 9.2 kW (línea rectangular de entrada).", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-1"}, {"@type": "HowToStep", "position": 2, "name": "Confirme las especificaciones de la bobina", "text": "La bobina determina toda la línea. Confirme el material (galvanizado, acero inoxidable o aluminio), el espesor (la SBAL-V maneja 0.5–1.5 mm; la SBAL-III y la SBAL-II manejan 0.5–2.0 mm), el ancho (1250 mm o 1550 mm) y el diámetro interior/exterior para dimensionar la desbobinadora.", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-2"}, {"@type": "HowToStep", "position": 3, "name": "Elija el método de cierre", "text": "El método de cierre lo compromete con el herramental posterior durante la próxima década. Opciones: brida TDF (el estándar global dominante), brida angular o cierre Pittsburgh con drive cleat. La máquina formadora de brida TDF de Taokron forma una brida de 35 mm.", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-3"}, {"@type": "HowToStep", "position": 4, "name": "Planifique la distribución de la producción", "text": "Una línea SBAL-V necesita aproximadamente 30 × 8 m de superficie libre, además de mesas de salida y almacenamiento de bobinas. Los ingenieros de Taokron entregan con cada cotización un plano 2D de distribución del taller, con servicios, zonas de mantenimiento y flujo de material.", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-4"}, {"@type": "HowToStep", "position": 5, "name": "Calcule un retorno de la inversión realista", "text": "La recuperación de la inversión depende del costo de mano de obra local, de la mezcla de trabajos y de qué tan cargada esté la línea. Se debe sobre todo a la reducción de mano de obra, porque una línea integrada necesita muchas menos manos que un taller manual, y a la reducción de desperdicio gracias al nesting CNC. Hágalo con sus propias cifras.", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-5"}, {"@type": "HowToStep", "position": 6, "name": "Califique a los proveedores con ocho preguntas clave", "text": "Pregunte a cada proveedor: producción en un solo turno con las especificaciones de su bobina, apertura del PLC y titularidad del código fuente, plazo de entrega de repuestos, verificación del certificado CE/ISO vigente, idioma de la supervisión de instalación, procedimiento de FAT, cobertura de la garantía y MTBF en máquinas de más de cinco años.", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-6"}, {"@type": "HowToStep", "position": 7, "name": "Compare por costo total de propiedad, no por precio de lista", "text": "Elabore un modelo de TCO a cinco años que incluya costo de capital, vida útil del herramental, paradas por mantenimiento, repuestos, energía, consumibles y reposición de herramental. La línea de conductos automática más barata del mercado suele costar más a cinco años que una línea correctamente diseñada.", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-7"}, {"@type": "HowToStep", "position": 8, "name": "Especifique desde el inicio la norma de cumplimiento", "text": "Indique al proveedor con qué norma debe cumplir el conducto: SMACNA (EE. UU., Medio Oriente, aeropuertos internacionales), EN 1505/1506 (Europa), AS/NZS 4254 (Australia/Nueva Zelanda) o DW/144 (Reino Unido). Cada norma exige requisitos distintos de refuerzo, tolerancia y costura, que deben configurarse en las recetas del PLC desde el primer día.", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-8"}, {"@type": "HowToStep", "position": 9, "name": "Planifique la ruta de ampliación", "text": "Un enfoque habitual es comprar la línea adecuada para hoy y ampliar por etapas, por ejemplo añadiendo una cortadora de plasma, luego una máquina de brida TDF y más adelante una segunda línea. Planifique la distribución de la producción para que las máquinas futuras encajen sin mover la línea existente.", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-9"}, {"@type": "HowToStep", "position": 10, "name": "Aplique el marco de preselección de Taokron", "text": "Relacione el tipo de cierre y el calibre con el modelo: 0.5–2.0 mm con solo Pittsburgh y automatización de entrada → SBAL-II; 0.5–2.0 mm con muescado y cizallado hidráulicos para volumen medio → SBAL-III; 0.5–1.5 mm con capacidad para acero inoxidable y TDF en línea para alto volumen → SBAL-V; celda de volumen muy alto → varias líneas SBAL-V con zona de bobinas y zona de embalaje compartidas.", "url": "https://taokron.com/es/insights/choosing-auto-duct-line#step-10"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuál es la diferencia entre la SBAL-V y la SBAL-III?", "acceptedAnswer": {"@type": "Answer", "text": "La SBAL-V es una línea de conductos rectangulares totalmente automática en forma de U: velocidad de línea de 18 m/min, accionamiento total de 40 kW, calibre de 0.5–1.5 mm, hasta 1550 mm de ancho, operación con un solo operario. La SBAL-III es una línea semiautomática con muescado y cizallado hidráulicos: 18 m/min, 10.7 kW, calibre de 0.5–2.0 mm, hasta 1550 mm de ancho, con menor costo de capital."}}, {"@type": "Question", "name": "¿Cuánto espacio en planta necesita una SBAL-V?", "acceptedAnswer": {"@type": "Answer", "text": "Aproximadamente 30 × 8 m de superficie libre, más espacio adicional para el almacenamiento de bobinas y las mesas de salida. Taokron entrega con cada cotización un plano 2D de distribución del taller."}}, {"@type": "Question", "name": "¿Cuál es un plazo realista de retorno de la inversión para una SBAL-V?", "acceptedAnswer": {"@type": "Answer", "text": "La recuperación de la inversión depende del costo de mano de obra local, de la mezcla de trabajos y de qué tan cargada esté la línea. Se debe sobre todo a la reducción de mano de obra y a menos desperdicio gracias al nesting CNC, así que calcúlela con sus propias cifras."}}]}</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "x4n6j0p80n");
+  </script>
+</head>
+<body class="site-body"><script>try{localStorage.setItem("sbkj-lang","es")}catch(e){}</script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="shell">
+<div class="site-header-inner">
+<a class="logo" href="/es/">
+<img alt="Taokron" class="logo-img" decoding="async" height="48" src="/assets/images/logo.svg" width="129"/>
+<span class="logo-text">
+<span class="logo-title">Taokron</span>
+<span class="logo-subtitle">Group</span>
+</span>
+</a>
+<button aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle menu" class="nav-toggle">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Primary" class="site-nav" id="primaryNav">
+<a data-i18n="nav.home" href="/es/">Inicio</a>
+<a data-i18n="nav.machines" href="/es/machines">Máquinas</a>
+<a data-i18n="nav.insights" href="/insights/">Artículos</a>
+<a data-i18n="nav.about" href="/es/about">Nosotros</a>
+<a class="nav-cta" data-i18n="nav.contact" href="/es/contact">Contacto</a>
+</nav>
+</div>
+</div>
+</header>
+<main id="main">
+<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Ruta de navegación" class="breadcrumbs"><ol><li><a data-i18n="nav.home" href="//">Inicio</a></li><li data-i18n-html="insights.choosingautoductline.li_1"><a href="/insights/">Artículos técnicos</a></li><li aria-current="page" data-i18n-html="insights.choosingautoductline.li_2"><span>Elegir una línea automática de conductos</span></li></ol></nav></div></nav>
+<article class="section page-hero bg-subtle">
+<div class="shell">
+<p class="eyebrow" data-i18n="insights.choosingautoductline.eyebrow">Artículos técnicos · Guía de ingeniería</p>
+<h1 class="page-title" data-i18n="insights.choosingautoductline.title">Cómo elegir una línea de producción automática de conductos</h1>
+<p class="article-lead" data-i18n="insights.choosingautoductline.lead">Una guía de 10 minutos, elaborada por ingenieros, para elegir la línea de conductos rectangulares de HVAC adecuada para su taller: SBAL-V frente a SBAL-III, especificaciones de la bobina, integración TDF, distribución en planta y un retorno de la inversión realista.</p>
+<p class="article-byline"><span class="article-byline-author"><span data-i18n="article.by">Por</span> <a data-i18n="article.engteam" href="/es/about" rel="author">Equipo de Ingeniería de Taokron</a></span>
+<span class="article-byline-sep">·</span>
+<span><span data-i18n="article.published">Publicado</span> <time datetime="2026-04-08">8 de abril de 2026</time></span>
+<span class="article-byline-sep">·</span>
+<span>2 min de lectura</span>
+<span class="article-byline-sep">·</span>
+<span data-i18n="article.reviewedby">Revisado por Control de Calidad e Ingeniería de Taokron</span></p>
+</div>
+</article>
+<section class="section">
+<div class="shell"><div class="content-narrow">
+<h2 data-i18n="insights.choosingautoductline.h2_1">1. Empiece por la producción diaria, no por la marca</h2>
+<p data-i18n-html="insights.choosingautoductline.p_1">Antes de comparar modelos, defina su <strong>producción objetivo, calibre y método de cierre</strong>. La <a href="/es/product/sbal-v">SBAL-V</a> de Taokron es el modelo insignia: línea en U totalmente automática, 18 m/min, 40 kW, calibre de 0.5–1.5 mm, hasta 1550 mm de ancho, operación con un solo operario. La <a href="/es/product/sbal-iii">SBAL-III</a> trabaja a 18 m/min con 10.7 kW y muescado/cizallado hidráulico, y encaja mejor cuando importa más la inversión inicial que la velocidad de línea y no se requiere capacidad para acero inoxidable. La <a href="/es/product/rectangular-duct-line-ii">SBAL-II</a> es la línea rectangular de entrada a 18 m/min y 9.2 kW, para talleres que dejan la fabricación manual.</p>
+<div class="table-wrap">
+<table class="spec-table">
+<thead>
+<tr><th>Factor de decisión</th><th>SBAL-II (entrada)</th><th>SBAL-III</th><th>SBAL-V (insignia)</th></tr>
+</thead>
+<tbody>
+<tr><td>Ideal para</td><td>Talleres que dejan la fabricación manual</td><td>Volumen comercial, con control de inversión</td><td>Alto volumen, operación continua con un solo operario</td></tr>
+<tr><td>Velocidad de línea</td><td>18 m/min</td><td>18 m/min</td><td>18 m/min</td></tr>
+<tr><td>Potencia de accionamiento</td><td>9.2 kW</td><td>10.7 kW</td><td>40 kW</td></tr>
+<tr><td>Rango de calibres</td><td>0.5–2.0 mm</td><td>0.5–2.0 mm</td><td>0.5–1.5 mm</td></tr>
+<tr><td>Ancho máximo del conducto</td><td>1550 mm</td><td>1550 mm</td><td>1550 mm</td></tr>
+<tr><td>Material principal</td><td>Galvanizado</td><td>Galvanizado</td><td>Galvanizado + acero inoxidable</td></tr>
+<tr><td>Automatización</td><td>Línea rectangular de entrada</td><td>Muescado + cizalla hidráulicos</td><td>Totalmente automática en U, un solo operario</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:0.85rem;color:var(--text-muted)">Mayor velocidad de línea no significa mayor producción terminada: la SBAL-V completa el conducto en una sola pasada integrada. Consulte la <a href="/es/insights/auto-duct-line-comparison">comparación de líneas automáticas de conductos</a> y los <a href="/insights/duct-machine-power-requirements">requisitos eléctricos y de potencia</a> para más detalle. Especificaciones según el Catálogo de Productos Taokron 2026.</p>
+<h2 data-i18n="insights.choosingautoductline.h2_2">2. Las especificaciones de la bobina definen la línea</h2>
+<p data-i18n-html="insights.choosingautoductline.p_2">La bobina determina toda la línea. Confirme estos cuatro datos antes que nada:</p>
+<ul>
+<li data-i18n-html="insights.choosingautoductline.li_3"><strong>Material</strong>: galvanizado, acero inoxidable o aluminio</li>
+<li data-i18n-html="insights.choosingautoductline.li_4"><strong>Espesor</strong>: rango típico de 0.5–1.5 mm para conducto rectangular</li>
+<li data-i18n-html="insights.choosingautoductline.li_5"><strong>Ancho</strong>: 1,250 mm y 1,550 mm son las bobinas más comunes en la SBAL-V</li>
+<li data-i18n-html="insights.choosingautoductline.li_6"><strong>Diámetro interior/exterior</strong>: determina la selección de la desbobinadora</li>
+</ul>
+<aside class="machine-callout" style="margin:1.5rem 0;padding:1rem 1.1rem;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--radius)"><p style="margin:0 0 .4rem"><strong>¿Está evaluando una línea automática de conductos?</strong> <a href="/es/product/sbal-iii">Línea automática de conductos SBAL-III</a> · <a href="/es/product/sbal-v">Línea automática de conductos SBAL-V</a></p><p style="margin:0 0 .4rem;font-size:.92rem">Instalación real con fotos: <a href="/case-studies/australia-airtemp-canberra-duct-shop">Airtemp Canberra</a> (taller de conductos rectangulares con 8 máquinas, septiembre de 2026).</p><p style="margin:0"><a href="#quote">Envíe las medidas de sus conductos y reciba un precio en 12 horas →</a></p></aside>
+<h2 data-i18n="insights.choosingautoductline.h2_3">3. Elija el método de cierre</h2>
+<p data-i18n-html="insights.choosingautoductline.p_3">Su método de cierre lo compromete con el herramental posterior durante la próxima década. En una SBAL-V puede configurar <strong>brida TDF</strong> (el estándar global dominante), <strong>brida angular</strong> o <strong>cierre Pittsburgh con drive cleat</strong>. La <a href="/es/product/tdf-flange">máquina formadora de brida TDF</a> de Taokron forma una brida de 35 mm; el <a href="/es/product/lockformer">lockformer SBLC</a> se encarga de las costuras Pittsburgh.</p>
+<h2 data-i18n="insights.choosingautoductline.h2_4">4. Planifique primero la distribución de la producción</h2>
+<p data-i18n-html="insights.choosingautoductline.p_4">Una línea SBAL-V necesita aproximadamente <strong>30 × 8 m de superficie libre</strong>, además de mesas de salida y almacenamiento de bobinas. Los ingenieros de Taokron entregan con cada cotización un plano 2D de distribución del taller, que incluye los servicios necesarios (aire, electricidad, puesta a tierra), zonas de mantenimiento y flujo de material.</p>
+<h2 data-i18n="insights.choosingautoductline.h2_5">5. Plazo realista de retorno de la inversión</h2>
+<p data-i18n-html="insights.choosingautoductline.p_5">La recuperación de la inversión depende del costo de mano de obra local, de la mezcla de trabajos y de qué tan cargada esté la línea. Se debe principalmente a la reducción de mano de obra, porque una línea integrada necesita muchas menos manos que un taller manual, y a la reducción de desperdicio gracias al nesting CNC. Hágalo con sus propias tarifas de mano de obra, producción y tamaño medio de trabajo.</p>
+<h2 data-i18n="insights.choosingautoductline.h2_6">6. Preguntas que debe hacer a cualquier proveedor</h2>
+<ol>
+<li data-i18n="insights.choosingautoductline.li_7">¿Cuál es la producción en un solo turno con las especificaciones de mi bobina, no la cifra del folleto?</li>
+<li data-i18n="insights.choosingautoductline.li_8">¿El PLC es abierto o propietario? ¿Quién tiene el código fuente?</li>
+<li data-i18n="insights.choosingautoductline.li_9">¿Cuál es el plazo de entrega de repuestos a mi país?</li>
+<li data-i18n="insights.choosingautoductline.li_10">¿Los certificados CE e ISO están vigentes y son verificables?</li>
+<li data-i18n="insights.choosingautoductline.li_11">¿Quién supervisa la instalación y en qué idioma?</li>
+<li data-i18n="insights.choosingautoductline.li_12">¿Cuál es el procedimiento de FAT (prueba de aceptación en fábrica) y puedo asistir?</li>
+<li data-i18n="insights.choosingautoductline.li_13">¿Cuál es el período de garantía y qué cubre?</li>
+<li data-i18n="insights.choosingautoductline.li_14">¿Cuál es el MTBF (tiempo medio entre fallas) en máquinas de más de 5 años?</li>
+</ol>
+<h2 data-i18n="insights.choosingautoductline.h2_7">7. Costo total de propiedad, no precio de lista</h2>
+<p data-i18n-html="insights.choosingautoductline.p_6">Comparar folletos solo por el costo de capital es el error más común de quienes compran por primera vez. La línea automática de conductos más barata del mercado suele costar más a cinco años que una línea correctamente diseñada, una vez que se considera la vida útil del herramental, las paradas por mantenimiento, el precio de los repuestos y el costo de una sola falla en campo. Elabore un modelo de TCO a cinco años para poder comparar en igualdad de condiciones, con estimaciones aproximadas de energía, consumibles, mantenimiento programado y reposición de herramental. Pida lo mismo a cualquier proveedor: si no puede dárselo, eso ya es una señal útil.</p>
+<h2 data-i18n="insights.choosingautoductline.h2_8">8. Especifique la norma que debe cumplir</h2>
+<p data-i18n-html="insights.choosingautoductline.p_7">SMACNA, EN 1505, AS/NZS 4254 y DW/144 exigen requisitos distintos de refuerzo, tolerancia y costura. SMACNA domina en EE. UU., Medio Oriente y la mayoría de los proyectos de aeropuertos internacionales. EN 1505/1506 se usa en toda Europa. AS/NZS 4254 cubre Australia y Nueva Zelanda. DW/144 es la especificación de fabricación del Reino Unido. Indique la norma a Taokron en su consulta: configuramos el herramental, las recetas del PLC y los tipos de costura para que el primer conducto de muestra pase la inspección desde el primer día. Adaptar el cumplimiento de la norma después de instalada la línea es mucho más caro que especificarlo correctamente desde el inicio.</p>
+<h2 data-i18n="insights.choosingautoductline.h2_9">9. Planifique la ruta de ampliación antes de comprar</h2>
+<p data-i18n-html="insights.choosingautoductline.p_8">Un enfoque habitual es comprar la línea adecuada para la cartera de pedidos de hoy y ampliar por etapas a medida que crece la demanda, por ejemplo añadiendo una cortadora de plasma, luego una máquina de brida TDF y más adelante una segunda línea. Planifique la distribución de la producción para que las máquinas futuras encajen sin mover la línea existente, y pida a Taokron que cotice los módulos de ampliación junto con la línea inicial para conocer el marco de presupuesto. Para consultar rangos de presupuesto transparentes de 2026 en los tres niveles SBAL antes de enviar su consulta, vea la <a href="/pricing-and-lead-time">guía del comprador de Taokron sobre precios y plazos de entrega</a>.</p>
+<h2 data-i18n="insights.choosingautoductline.h2_10">10. El marco de preselección de Taokron</h2>
+<p data-i18n-html="insights.choosingautoductline.p_9">Para ahorrarle tiempo, este es el marco que usan los ingenieros de Taokron para recomendar un modelo de partida en el primer contacto. Envíenos sus tres datos (rango de calibres, ancho de bobina y norma del proyecto) y le responderemos en 12 horas con el modelo que corresponde y un esquema técnico de una página.</p>
+<ul>
+<li data-i18n-html="insights.choosingautoductline.li_15"><strong>0.5–2.0 mm Pittsburgh, automatización de entrada</strong>: SBAL‑II (9.2 kW, 18 m/min) más una máquina de brida TDF manual</li>
+<li data-i18n-html="insights.choosingautoductline.li_16"><strong>0.5–2.0 mm con muescado hidráulico</strong>: SBAL‑III (10.7 kW, 18 m/min) con cortadora de plasma en línea y conformado de brida TDF en línea</li>
+<li data-i18n-html="insights.choosingautoductline.li_17"><strong>0.5–1.5 mm incluido acero inoxidable</strong>: una SBAL‑V (40 kW, 18 m/min) con TDF en línea</li>
+<li data-i18n-html="insights.choosingautoductline.li_18"><strong>Volumen muy alto</strong>: celda de varias líneas SBAL‑V con zona de bobinas y zona de embalaje compartidas</li>
+</ul>
+<p class="cta-inline"><a class="btn btn-primary" href="/es/contact?source=guide-choosing-auto-duct-line">Solicitar una cotización →</a></p>
+<h2 data-i18n="insights.choosingautoductline.h2_11">Preguntas frecuentes</h2>
+<details><summary data-i18n="insights.choosingautoductline.faq_1_q">¿Cuál es la diferencia entre la SBAL-V y la SBAL-III?</summary><p data-i18n="insights.choosingautoductline.faq_1_a">La SBAL-V es una línea de conductos rectangulares totalmente automática en forma de U: velocidad de línea de 18 m/min, accionamiento total de 40 kW, calibre de 0.5–1.5 mm, hasta 1550 mm de ancho, operación con un solo operario, modelos SBAL-V-1250U / SBAL-V-1550U. La SBAL-III es una línea semiautomática con muescado y cizallado hidráulicos a 18 m/min, 10.7 kW, calibre de 0.5–2.0 mm, con menor costo de capital.</p></details>
+<details><summary data-i18n="insights.choosingautoductline.faq_2_q">¿Cuánto espacio en planta necesita una SBAL-V?</summary><p data-i18n="insights.choosingautoductline.faq_2_a">Aproximadamente 30 × 8 m de superficie libre, más espacio adicional para el almacenamiento de bobinas y las mesas de salida. Taokron entrega con cada cotización un plano 2D de distribución del taller.</p></details>
+<details><summary data-i18n="insights.choosingautoductline.faq_3_q">¿Cuál es un plazo realista de retorno de la inversión para una SBAL-V?</summary><p data-i18n="insights.choosingautoductline.faq_3_a">La recuperación de la inversión depende del costo de mano de obra local, de la mezcla de trabajos y de qué tan cargada esté la línea. Se debe sobre todo a la reducción de mano de obra y a menos desperdicio gracias al nesting CNC, así que calcúlela con sus propias cifras.</p></details>
+<aside class="related-guides">
+<p class="eyebrow">Guías relacionadas</p>
+<ul class="related-links">
+<li><a href="/insights/adding-spiral-round-duct-to-a-rectangular-duct-shop">Cómo añadir conducto redondo espiral a un taller de conducto rectangular →</a></li>
+<li><a href="/insights/coil-line-comparison-iowa-precision-engel-vicon-firmac-taokron">Comparación de líneas de bobina para conductos 2026: Iowa Precision, Engel, Vicon, Firmac, Taokron →</a></li>
+<li><a href="/insights/alternatives-to-engel">Alternativas a las líneas de bobina Engel →</a></li>
+<li><a href="/es/insights/how-to-set-up-a-duct-fabrication-shop">Cómo montar un taller de fabricación de conductos de HVAC →</a></li>
+<li><a href="/insights/best-auto-duct-line-manufacturers">Mejores fabricantes de líneas automáticas de conductos: guía del comprador 2026 →</a></li>
+<li><a href="/insights/best-spiral-duct-machine-manufacturers">Mejores fabricantes de máquinas de conducto espiral: guía del comprador 2026 →</a></li>
+<li><a href="/insights/duct-machine-specifications">Todas las especificaciones de las máquinas para conductos Taokron →</a></li>
+<li><a href="/insights/how-hvac-duct-is-made">Cómo se fabrica el conducto de HVAC (resumen del proceso)</a></li>
+<li><a href="/insights/duct-machine-roi-payback">Retorno de la inversión y recuperación de una máquina para conductos: cómo calcularlos</a></li>
+<li><a href="/es/insights/auto-duct-line-comparison">Comparación de líneas automáticas de conductos: SBAL-V frente a III y II</a></li>
+<li data-i18n-html="insights.choosingautoductline.li_19"><a href="/es/insights/spiral-duct-forming-guide">Formación de conducto espiral explicada</a></li>
+<li data-i18n-html="insights.choosingautoductline.li_20"><a href="/insights/tdf-vs-angle-flange">TDF frente a brida angular</a></li>
+</ul>
+</aside>
+</div>
+</div>
+</section>
+<section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+<div class="shell">
+<div class="content-narrow">
+<div class="promise-callout">
+<span class="promise-label">Respuesta en 12 horas</span>
+<p class="promise-text">¿Tiene una duda técnica sobre esta guía? Un ingeniero mecánico de Taokron responde en 12 horas, no un vendedor.</p>
+<a class="btn btn-primary" href="#quote">Consulte a un ingeniero</a>
+</div>
+<div class="catalogue-box product-quote-box page-quote page-quote-narrow" id="quote">
+<div class="catalogue-copy">
+<p class="eyebrow" data-i18n="pq3.eyebrow">Respuesta de un ingeniero</p>
+<h2 data-i18n="pq3.title">Pregunte a un ingeniero sobre esta guía</h2>
+<p data-i18n="pq3.lead">Describa su trabajo y lo que desea fabricar. Un ingeniero mecánico de Taokron responde en 12 horas, no un vendedor.</p>
+<p class="product-quote-for"><span data-i18n="pq3.for">Guía</span>: <strong>Cómo elegir una línea de producción automática de conductos</strong></p>
+</div>
+<form action="https://formsubmit.co/sales@sbkjduct.com" class="catalogue-form product-quote-form" id="productQuoteForm" method="POST">
+<input name="_subject" type="hidden" value="Question from guide: How to Choose an Auto Duct Production Line (taokron.com)"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input id="productQuoteNext" name="_next" type="hidden" value="https://taokron.com/es/insights/choosing-auto-duct-line?sent=1"/>
+<input name="_autoresponse" type="hidden" value="Hi, thank you for your message to Taokron. A Taokron engineer will reply within 12 hours. Questions before then: sales@taokron.com or WhatsApp +61 435 074 994. Ryan Tao, Taokron"/>
+<input name="Page" type="hidden" value="How to Choose an Auto Duct Production Line"/>
+<input id="productQuoteLeadSource" name="Lead source" type="hidden" value=""/>
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.name" for="pq-name">Nombre</label>
+<input autocomplete="name" id="pq-name" name="name" required="" type="text"/>
+</div>
+<div class="form-field">
+<label data-i18n="cat.company" for="pq-company">Empresa</label>
+<input autocomplete="organization" id="pq-company" name="company" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.email" for="pq-email">Correo electrónico</label>
+<input autocomplete="email" id="pq-email" name="email" required="" type="email"/>
+</div>
+<div class="form-field">
+<label data-i18n="form.country" for="pq-country">País de instalación</label>
+<input autocomplete="country-name" id="pq-country" name="country" required="" type="text"/>
+</div>
+</div>
+<div class="form-field">
+<label data-i18n="form.phone" for="pq-phone">Teléfono / WhatsApp</label>
+<input autocomplete="tel" id="pq-phone" name="phone" type="tel"/>
+</div>
+<div class="form-field">
+<label data-i18n="pq3.question" for="pq-message">Su pregunta</label>
+<textarea data-i18n-placeholder="form.placeholder" id="pq-message" name="message" placeholder="Tipo de material, espesor, capacidad requerida, tamaño disponible del taller..." required="" rows="3"></textarea>
+</div>
+<button class="btn btn-primary" data-i18n="pq3.button" type="submit">Enviar mi pregunta</button>
+<span data-i18n="form.sending" hidden="" id="productQuoteSending">Enviando…</span>
+</form>
+<div class="catalogue-inline" style="margin-top:1.25rem;padding:1rem 1.1rem;border:1px solid var(--border);border-radius:var(--radius)"><p style="margin:0 0 .6rem"><strong data-i18n="catinline.title">¿Aún no está listo para una cotización?</strong> <span data-i18n="catinline.text">Reciba por correo el catálogo 2026: 66 máquinas, una página por cada una.</span></p><form action="https://formsubmit.co/sales@sbkjduct.com" class="newsletter-form catalogue-inline-form" method="POST"><input name="_subject" type="hidden" value="Catalogue request (taokron.com)"/><input name="_template" type="hidden" value="table"/><input name="_captcha" type="hidden" value="false"/><input name="_next" type="hidden" value="https://taokron.com/spec-sheets?catalogue=1"/><input name="_autoresponse" type="hidden" value="Hi, here is the Taokron Product Catalogue 2026 (PDF, 66 machines, one page each): https://taokron.com/downloads/taokron-product-catalogue-2026.pdf  Single machine spec sheets: https://taokron.com/spec-sheets  If one of the machines is close to what you need, reply to this email with your material, gauge and duct sizes and an engineer will come back within 12 hours. Ryan Tao, Taokron, +61 435 074 994"/><input name="Lead source" type="hidden" value="catalogue-inline · /insights/choosing-auto-duct-line"/><input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/><input aria-label="Correo electrónico" autocomplete="email" data-i18n-placeholder="cat.email" name="email" placeholder="Correo electrónico" required="" style="flex:1 1 200px;min-width:0;padding:.6rem .75rem;font-size:1rem;font-family:var(--font-body);border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text)" type="email"/><button class="btn btn-ghost" data-i18n="cat.button" type="submit">Envíenme el catálogo por correo</button></form></div>
+</div>
+<div class="quote-sent-banner catalogue-sent" hidden="" id="productQuoteSent">
+<span data-i18n="pq3.sent">✓ Enviado. Un ingeniero de Taokron responderá en 12 horas.</span>
+</div>
+</div>
+</div>
+</section>
+<script>
+      // Page quote form: thank-you state, same-language return URL, and the
+      // same first-touch attribution the contact form writes.
+      (function () {
+        if (location.search.indexOf('sent=1') !== -1) {
+          var b = document.getElementById('productQuoteSent'); if (b) { b.hidden = false; try { b.scrollIntoView({ block: 'center' }); } catch (e) {} }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          var nx = document.getElementById('productQuoteNext');
+          if (nx && /^https?:$/.test(location.protocol)) { nx.value = location.origin + location.pathname + '?sent=1'; }
+          var ls = document.getElementById('productQuoteLeadSource'); if (!ls) return;
+          var src = new URLSearchParams(location.search).get('source') || '';
+          var ref = '';
+          try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
+          var first = null;
+          try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+          var campaign = src || (first && first.q) || '';
+          var origin = ref || (first && first.ref) || '';
+          var parts = [];
+          parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+          if (origin) parts.push('ref:' + origin);
+          if (first && first.lp) parts.push('landed:' + first.lp);
+          parts.push('form:quote@' + location.pathname);
+          ls.value = parts.join(' \u00b7 ');
+          var form = document.getElementById('productQuoteForm');
+          var btn = form && form.querySelector('button[type="submit"]');
+          if (form && btn) {
+            form.addEventListener('submit', function () {
+              setTimeout(function () {
+                var lbl = document.getElementById('productQuoteSending');
+                btn.disabled = true; btn.textContent = (lbl && lbl.textContent) || 'Sending\u2026';
+              }, 0);
+            });
+          }
+        });
+      })();
+    </script>
+</main>
+<footer class="site-footer">
+<div class="shell footer-grid">
+<div>
+<div class="footer-logo">
+<img alt="Taokron" class="logo-img" decoding="async" height="48" loading="lazy" src="/assets/images/logo.svg" width="129"/>
+<span class="logo-title">Taokron</span>
+</div>
+<p class="footer-text" data-i18n="footer.desc">Fabricante de maquinaria HVAC para conductos espirales, redondos y rectangulares.</p>
+<div class="footer-social">
+<a aria-label="LinkedIn" class="social-linkedin" href="https://www.linkedin.com/company/taokron/" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
+<a aria-label="YouTube" class="social-youtube" href="https://www.youtube.com/@taokron" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a>
+<a aria-label="Instagram" class="social-instagram" href="https://www.instagram.com/taokron/" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.88 0 1.441 1.441 0 012.88 0z"></path></svg></a>
+<a aria-label="Facebook" class="social-facebook" href="https://www.facebook.com/profile.php?id=61587888804663" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
+<a aria-label="TikTok" class="social-tiktok" href="https://www.tiktok.com/@taokron" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></svg></a>
+</div>
+</div>
+<div>
+<h3 data-i18n="footer.navigate">Navegación</h3>
+<ul>
+<li><a data-i18n="nav.home" href="/es/">Inicio</a></li>
+<li><a data-i18n="nav.machines" href="/es/machines">Máquinas</a></li>
+<li><a data-i18n="nav.insights" href="/insights/">Artículos</a></li>
+<li><a data-i18n="nav.about" href="/es/about">Nosotros</a></li>
+<li><a data-i18n="nav.why" href="/why-choose-taokron">Por qué Taokron</a></li>
+<li><a data-i18n="nav.pricing" href="/pricing-and-lead-time">Precios y plazos</a></li>
+<li><a data-i18n="nav.support" href="/support">Soporte</a></li>
+<li><a data-i18n="nav.industries" href="/industries/">Industrias</a></li>
+<li><a data-i18n="nav.factory" href="/factory">Fábrica</a></li>
+<li><a data-i18n="nav.quality" href="/quality">Calidad</a></li>
+<li><a data-i18n="nav.videos" href="/videos">Videos</a></li>
+<li><a data-i18n="nav.cases" href="/case-studies/">Casos de estudio</a></li>
+<li><a data-i18n="nav.contact" href="/es/contact">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h3 data-i18n="footer.touch">Contáctenos</h3>
+<ul>
+<li><a href="mailto:sales@taokron.com">sales@taokron.com</a></li>
+<li><a href="https://wa.me/61435074994" rel="noopener" target="_blank">+61 435 074 994</a></li>
+<li data-i18n="footer.loc.aus">Box Hill North, VIC, Australia</li>
+</ul>
+</div>
+</div>
+<div class="shell footer-bottom">
+<p class="footer-langs" style="margin-bottom:0.5rem;"><a href="/es/insights/choosing-auto-duct-line" hreflang="es" lang="es">Español</a> · <a href="/pt/insights/choosing-auto-duct-line" hreflang="pt" lang="pt">Português</a> · <a href="/fr/insights/choosing-auto-duct-line" hreflang="fr" lang="fr">Français</a> · <a href="/ru/insights/choosing-auto-duct-line" hreflang="ru" lang="ru">Русский</a> · <a href="/ar/insights/choosing-auto-duct-line" hreflang="ar" lang="ar">العربية</a> · <a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a> · <a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/zh/" hreflang="zh" lang="zh">中文</a></p>
+<p>© <span id="year"></span> <span data-i18n="footer.rights">Taokron. Todos los derechos reservados.</span> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
+</div>
+</footer>
+<a aria-label="Chat on WhatsApp" class="fab-whatsapp" href="https://wa.me/61435074994" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<script src="/assets/js/main.js?v=18"></script>
+
+<script src="/assets/js/chatbot.js"></script>
+</body>
+</html>
