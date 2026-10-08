@@ -82,3 +82,4 @@ Allow: /
 
 Host: taokron.com
 Sitemap: https://taokron.com/sitemap.xml
+Sitemap: https://taokron.com/sitemap-guides-i18n.xml
