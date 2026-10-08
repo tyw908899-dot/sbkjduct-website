@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#000000" name="theme-color"/>
+<title>Совокупная стоимость владения линией производства воздуховодов ОВК | Taokron</title>
+<meta content="Инженерная модель TCO на 5 лет для линий воздуховодов ОВК: капзатраты, энергия, расходники, оснастка, обслуживание, простои, труд и вывод из эксплуатации. Пример расчёта." name="description"/>
+<link href="https://taokron.com/ru/insights/hvac-duct-production-line-tco" rel="canonical"/>
+  <link rel="alternate" hreflang="en" href="https://taokron.com/insights/hvac-duct-production-line-tco" />
+  <link rel="alternate" hreflang="ru" href="https://taokron.com/ru/insights/hvac-duct-production-line-tco" />
+  <link rel="alternate" hreflang="x-default" href="https://taokron.com/insights/hvac-duct-production-line-tco" />
+<meta content="Taokron" name="author"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="Taokron" property="og:site_name"/>
+<meta content="ru_RU" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Совокупная стоимость владения линией производства воздуховодов ОВК: модель TCO на 5 лет | Taokron" property="og:title"/>
+<meta content="Пример пятилетней модели TCO для автоматической линии SBAL-V: капзатраты, энергия, расходники, оснастка, обслуживание, простои, труд и остаточная стоимость." property="og:description"/>
+<meta content="https://taokron.com/ru/insights/hvac-duct-production-line-tco" property="og:url"/>
+<meta content="https://taokron.com/assets/images/og/hvac-duct-production-line-tco.jpg" property="og:image"/>
+<meta content="2026-05-01T00:00:00+10:00" property="article:published_time"/>
+<meta content="2026-05-01T00:00:00+10:00" property="article:modified_time"/>
+<meta content="https://taokron.com/assets/images/og/hvac-duct-production-line-tco.jpg" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@taokron" name="twitter:site"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="/assets/css/styles.css?v=55" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://taokron.com/#author-engineering", "name": "Taokron Engineering Team", "url": "https://taokron.com/about", "description": "Taokron engineering team working on HVAC ductwork machinery design and commissioning.", "parentOrganization": {"@id": "https://taokron.com/#org"}, "knowsAbout": ["HVAC duct machinery", "TCO modelling", "Capital expenditure", "Operating cost", "Total cost of ownership"]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://taokron.com/"}, {"@type": "ListItem", "position": 2, "name": "Статьи", "item": "https://taokron.com/insights/"}, {"@type": "ListItem", "position": 3, "name": "TCO автоматической линии для воздуховодов", "item": "https://taokron.com/ru/insights/hvac-duct-production-line-tco"}]}, {"@type": "TechArticle", "headline": "Совокупная стоимость владения линией производства воздуховодов ОВК: модель TCO на 5 лет", "description": "Инженерная модель совокупной стоимости владения на пять лет для автоматических линий производства воздуховодов ОВК: капитальные затраты, потребление энергии, расходные материалы, оснастка, плановое и внеплановое обслуживание, стоимость простоев, труд операторов, финансирование и остаточная стоимость, с примером расчёта для линии SBAL-V.", "author": {"@id": "https://taokron.com/#author-engineering"}, "reviewedBy": {"@type": "Organization", "name": "Taokron QA & Engineering", "url": "https://taokron.com/about"}, "publisher": {"@id": "https://taokron.com/#org"}, "datePublished": "2026-05-01T00:00:00+10:00", "dateModified": "2026-05-01T00:00:00+10:00", "image": "https://taokron.com/assets/images/sbal-v.jpg", "mainEntityOfPage": "https://taokron.com/ru/insights/hvac-duct-production-line-tco", "inLanguage": "ru", "proficiencyLevel": "Expert", "articleSection": "HVAC Procurement", "about": [{"@type": "Thing", "name": "Совокупная стоимость владения"}, {"@type": "Thing", "name": "Капитальное оборудование ОВК"}, {"@type": "Thing", "name": "Автоматическая линия для производства воздуховодов"}], "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".article-lead", "h2"]}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Какую долю TCO на горизонте 5 лет составляют капзатраты?", "acceptedAnswer": {"@type": "Answer", "text": "В иллюстративной модели на этой странице капзатраты (станок + доставка + монтаж) составляют примерно 60-70% от TCO за 5 лет. Остальные 30-40% распределяются между энергией (8-12%), расходными материалами (3-5%), плановым обслуживанием (4-6%), внеплановыми простоями (5-8%), заменой оснастки (3-5%) и трудом операторов (5-8%). Точное распределение зависит от сменности, цены на энергию и зарплаты оператора в вашей стране."}}, {"@type": "Question", "name": "Как моделировать стоимость внеплановых простоев?", "acceptedAnswer": {"@type": "Answer", "text": "Стоимость внеплановых простоев = ожидаемое число часов простоя в год × потерянная маржа вклада в час. Для SBAL-V в одну смену при марже вклада AUD 1200/час 40 часов внепланового простоя в год равны AUD 48 000, что обычно больше самой стоимости запчастей. Самые дорогие отказы: проблемы с ПЛК (долгий срок поставки импортных плат) и отказы подшипников главной формующей головки."}}, {"@type": "Question", "name": "Брать финансирование или покупать сразу?", "acceptedAnswer": {"@type": "Answer", "text": "Финансирование оборудования в 2026 году обычно стоит 5-8% годовых для промышленных станков в Австралии, США и Европе; покупка сразу за счёт оборотного капитала самая дешёвая, если оборотный капитал это позволяет. Схемы лизинга с выкупом от местных поставщиков финансирования оборудования сохраняют денежные средства и в большинстве юрисдикций выгодны с точки зрения налогов. Для покупателей из Саудовской Аравии и Ближнего Востока широко доступны схемы Мурабаха (исламское финансирование)."}}, {"@type": "Question", "name": "Какова остаточная стоимость SBAL-V через 5 лет?", "acceptedAnswer": {"@type": "Answer", "text": "Остаточная стоимость зависит от состояния, наработки и местного спроса, поэтому моделируйте её консервативно. В примере расчёта принято 35-45% от первоначальной цены к пятому году, только для иллюстрации; Taokron не публикует данных об остаточной стоимости."}}, {"@type": "Question", "name": "Как Taokron выглядит по TCO в сравнении с европейскими аналогами?", "acceptedAnswer": {"@type": "Answer", "text": "Прогоните оба коммерческих предложения через одни и те же восемь статей и сравните на ваших собственных цифрах. Больше всего у поставщиков различаются капзатраты, а энергия, расходные материалы и труд схожи независимо от происхождения станка, поэтому разрыв сокращается за период эксплуатации. Taokron не публикует стандартную цифру экономии по TCO."}}]}]}</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "x4n6j0p80n");
+  </script>
+</head>
+<body class="site-body"><script>try{localStorage.setItem("sbkj-lang","ru")}catch(e){}</script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="shell">
+<div class="site-header-inner">
+<a class="logo" href="/ru/">
+<img alt="Taokron" class="logo-img" decoding="async" height="48" src="/assets/images/logo.svg" width="129"/>
+<span class="logo-text">
+<span class="logo-title">Taokron</span>
+<span class="logo-subtitle">Group</span>
+</span>
+</a>
+<button aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle menu" class="nav-toggle">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Primary" class="site-nav" id="primaryNav">
+<a data-i18n="nav.home" href="/ru/">Главная</a>
+<a data-i18n="nav.machines" href="/ru/machines">Оборудование</a>
+<a data-i18n="nav.insights" href="/ru/insights/">Статьи</a>
+<a data-i18n="nav.about" href="/ru/about">О нас</a>
+<a class="nav-cta" data-i18n="nav.contact" href="/ru/contact">Контакты</a>
+</nav>
+</div>
+</div>
+</header>
+<main id="main">
+<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Навигационная цепочка" class="breadcrumbs"><ol><li><a href="//">Главная</a></li><li><a href="/ru/insights/">Статьи</a></li><li aria-current="page"><span>TCO автоматической линии для воздуховодов</span></li></ol></nav></div></nav>
+<article class="section page-hero bg-subtle">
+<div class="shell">
+<p class="eyebrow">Статьи · Закупки</p>
+<h1 class="page-title">Совокупная стоимость владения линией производства воздуховодов ОВК: модель TCO на 5 лет</h1>
+<p class="article-lead">Пошаговая постатейная модель совокупной стоимости владения на пять лет для автоматической линии производства воздуховодов ОВК. Капитальные затраты, доставка, монтаж, энергия, расходные материалы, оснастка, плановое обслуживание, внеплановые простои, труд оператора, стоимость финансирования и остаточная стоимость в конце срока службы: каждая статья объяснена, с ориентировочными цифрами для типичного внедрения SBAL-V в Австралии, на Ближнем Востоке и в Европе. Цифры являются иллюстративными допущениями для модели, а не опубликованными данными Taokron; подставьте свои собственные.</p>
+<p class="article-byline"><span class="article-byline-author">Автор: <a href="/ru/about" rel="author">Инженерная команда Taokron</a></span>
+<span class="article-byline-sep">·</span>
+<span>Опубликовано <time datetime="2026-05-01">1 мая 2026</time></span>
+<span class="article-byline-sep">·</span>
+<span>13 мин чтения</span>
+<span class="article-byline-sep">·</span>
+<span>Проверено: отдел контроля качества и инженеры Taokron</span></p>
+</div>
+</article>
+<section class="section">
+<div class="shell"><div class="content-narrow">
+<h2>Почему TCO, а не цена по прайс-листу</h2>
+<p>Любое коммерческое предложение на станок за шестизначную сумму на первой странице выглядит похоже: модель станка, производительность, срок поставки, цена по прайс-листу. Различия между конкурирующими поставщиками становятся видны, только когда вы строите постатейную модель TCO на 5 лет, включающую потребление энергии, расходы на расходные материалы, срок службы оснастки, ожидаемые часы простоя, стоимость финансирования и остаточную стоимость в конце срока службы. Поставщик с самой низкой ценой по прайс-листу редко имеет самый низкий TCO за 5 лет; поставщик с самым низким TCO за 5 лет редко имеет самую низкую цену по прайс-листу. Это руководство представляет собой схему TCO для сравнения предложения на SBAL-V с европейским аналогом или с дешёвым глобальным трейдером.</p>
+<h2>8 статей в полной модели TCO</h2>
+<p>Обоснованная модель TCO для линии производства воздуховодов ОВК состоит из восьми статей. Поставщики иногда указывают только первые три; грамотные отделы закупок требуют все восемь до подписания. Приведённые ниже проценты являются иллюстративными допущениями для односменного внедрения SBAL-V в Австралии, а не измеренными данными; для многосменной работы, регионов с дорогой энергией или дорогим трудом цифры немного меняются.</p>
+<h3>Статья 1: капитальные затраты (60-70% от TCO за 5 лет)</h3>
+<p>Капзатраты это самая крупная статья и самая заметная в любом предложении. Они включают цену станка франко-завод, международную доставку, морское страхование, импортную пошлину, услуги таможенного брокера, внутренние перевозки, такелажные работы по прибытии и время шеф-монтажа инженера поставщика. Для SBAL-V, предложенного на условиях CIF до большинства основных портов назначения, станок составляет примерно 75% от полной стоимости с доставкой; остальные 25% приходятся на доставку, страхование, пошлину, брокера, перевозку и монтаж. Всегда запрашивайте постатейный расчёт полной стоимости с доставкой: см. <a href="/ru/insights/hvac-duct-machine-buyers-checklist">пункт 28 нашего чек-листа покупателя</a>.</p>
+<h3>Статья 2: потребление энергии (8-12% от TCO за 5 лет)</h3>
+<p>Автоматическая линия SBAL-V имеет установленную мощность 40 кВт и в среднем потребляет около 25 кВт при обычном производстве. При AUD 0,30/кВт·ч и 2000 рабочих часах в год (одна смена) годовая стоимость энергии составляет примерно 25 кВт × 2000 ч × AUD 0,30 = AUD 15 000. За 5 лет это AUD 75 000, сопоставимо с заменой одного крупного компонента. При многосменной работе эта статья утраивается. Покупателям в Саудовской Аравии (субсидируемая электроэнергия) и в большей части Европы (высокие промышленные тарифы) следует пересчитать базу по местным тарифам за кВт·ч.</p>
+<h3>Статья 3: расходные материалы (3-5%)</h3>
+<p>К расходным материалам относятся гидравлическое масло (полная замена каждые 4000 часов, ежемесячная доливка), пневматические фильтры и маслёнки, резервные батареи ПЛК, комплекты датчиков, клиновые ремни приводов двигателей и стандартные изнашиваемые элементы выходного стола. Годовые расходы на расходные материалы SBAL-V при обычной работе составляют примерно AUD 4000-6000. Тяжёлые профили воздуховодов (очень большая или очень малая толщина) могут поднять эту сумму до AUD 8000 и более.</p>
+<h3>Статья 4: плановое обслуживание (4-6%)</h3>
+<p>Плановое обслуживание это запланированные работы по календарю: осмотр подшипников, замена гидравлических уплотнений, интервалы перешлифовки оснастки, обновления прошивки ПЛК и калибровка. Отраслевой стандарт для автоматической линии воздуховодов: одно крупное обслуживание в год (обычно 16-24 часа работы квалифицированного механика плюс запчасти) и одно малое обслуживание в квартал (по 4-8 часов). Годовая стоимость планового обслуживания SBAL-V составляет примерно AUD 6000-10 000 с учётом труда и запчастей, ниже, если работы выполняет штатный механик.</p>
+<h3>Статья 5: внеплановые простои (5-8%)</h3>
+<p>Внеплановые простои это самая изменчивая и чаще всего недооцениваемая в моделях статья. Для SBAL-V при марже вклада AUD 1200/час (валовая маржа на машино-час) 40 часов внепланового простоя в год равны AUD 48 000. Сравните это со стоимостью самой запчасти, обычно AUD 200-2000: простой, как правило, на порядок больше. Два самых разрушительных вида отказа: отказ импортных плат ПЛК (срок доставки авиа 3-6 недель) и отказ подшипников главной формующей головки (требует частичной разборки линии). Покупатели могут снизить риск простоя, держа на складе критические запчасти: USB-резерв ПЛК, две запасные платы ПЛК и комплект подшипников, при незначительных затратах.</p>
+<h3>Статья 6: замена оснастки (3-5%)</h3>
+<p>Оснастка SBAL-V (формующие ролики) имеет срок службы, зависящий от толщины, материала и набора воздуховодов; в этой модели принято 100 000-250 000 м сформованного воздуховода до перешлифовки или замены. Для цеха, который выпускает 800 000 м в год, ожидайте перешлифовку оснастки каждые 3-4 месяца и замену оснастки каждые 18-24 месяца. Комплект сменной оснастки стоит примерно AUD 12 000-18 000 каждые 18-24 месяца.</p>
+<h3>Статья 7: труд операторов (5-8%)</h3>
+<p>SBAL-V работает с одним оператором; SBAL-III работает с одним оператором плюс помощник. Стоимость труда одного оператора в Австралии составляет примерно AUD 80 000 в год с учётом всех отчислений (зарплата + пенсионные отчисления (superannuation) + страхование от несчастных случаев на производстве + накладные расходы). В Саудовской Аравии или ОАЭ это AUD 30 000-50 000 в год для оператора-иностранца (TCN), во Вьетнаме примерно AUD 12 000-18 000 в год. Покупателям следует опираться на местную стоимость труда; разница в стоимости труда между регионами это самый сильный сигнал, стоит ли автоматизировать до SBAL-V или остаться на SBAL-III с ручным фланцем.</p>
+<h3>Статья 8: стоимость финансирования (переменная)</h3>
+<p>Если станок приобретается с финансированием, добавьте в TCO проценты за срок финансирования. Финансирование оборудования в 2026 году обычно стоит 5-8% годовых в Австралии, США и Европе; схемы лизинга с обратным выкупом по остаточной стоимости могут быть выгоднее по денежным потокам. Покупатели из Саудовской Аравии и с Ближнего Востока могут получить финансирование Мурабаха, соответствующее нормам шариата, под 4-6% годовых в местных исламских банках. Для SBAL-V с пятилетним финансированием под 7% годовых стоимость финансирования составляет примерно 18-22% от финансируемой суммы за срок.</p>
+<aside class="machine-callout" style="margin:1.5rem 0;padding:1rem 1.1rem;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--radius)"><p style="margin:0 0 .4rem"><strong>Рассматриваете автоматическую линию для воздуховодов?</strong> <a href="/ru/product/sbal-iii">Автоматическая линия SBAL-III</a> · <a href="/ru/product/sbal-v">Автоматическая линия SBAL-V</a></p><p style="margin:0 0 .4rem;font-size:.92rem">Реальный монтаж с фотографиями: <a href="/case-studies/australia-airtemp-canberra-duct-shop">Airtemp Canberra</a> (цех прямоугольных воздуховодов с 8 станками, сентябрь 2026).</p><p style="margin:0"><a href="#quote">Отправьте размеры воздуховодов и получите цену в течение 12 часов →</a></p></aside>
+<h2>Пример расчёта: гипотетическая линия SBAL-V в Мельбурне, Австралия</h2>
+<p>Для опоры модели приведём пример TCO за 5 лет для гипотетической автоматической линии SBAL-V в цехе по обработке листового металла в Мельбурне, Австралия: одна смена (2000 часов в год), промышленная электроэнергия AUD 0,30/кВт·ч, оператор AUD 80 000 в год с учётом всех отчислений. Цифры иллюстративны: точные значения зависят от характеристик рулонов, набора проектов и сменности. Taokron прилагает индивидуальную таблицу TCO к каждому коммерческому предложению.</p>
+<ul>
+<li><strong>Капзатраты в год 0</strong>: станок + доставка + страхование + пошлина + брокер + перевозка + такелаж + шеф-монтаж = примерно AUD 380 000</li>
+<li><strong>Энергия в год</strong>: AUD 21 000 × 5 = AUD 105 000</li>
+<li><strong>Расходные материалы в год</strong>: AUD 5000 × 5 = AUD 25 000</li>
+<li><strong>Плановое обслуживание</strong>: AUD 8000 × 5 = AUD 40 000</li>
+<li><strong>Внеплановые простои</strong>: 30 часов в год × AUD 1200 × 5 = AUD 180 000 (или AUD 60 000 при наличии на складе критических запчастей)</li>
+<li><strong>Замена оснастки</strong>: AUD 15 000 × 2 (шлифовки на 2-м и 4-м году и одна перешлифовка) = AUD 30 000</li>
+<li><strong>Труд операторов</strong>: AUD 80 000 × 5 = AUD 400 000</li>
+<li><strong>Итого TCO за 5 лет</strong>: примерно AUD 1 160 000 (или AUD 1 040 000 при наличии на складе критических запчастей)</li>
+<li><strong>Остаточная стоимость в 5-м году</strong>: примерно AUD 140 000 (35-45% от первоначальной цены по прайс-листу)</li>
+<li><strong>Чистая стоимость за 5 лет</strong>: примерно AUD 1 020 000 (с учётом запаса запчастей и возврата остаточной стоимости)</li>
+</ul>
+<h2>Как TCO меняется по регионам</h2>
+<p>Один и тот же SBAL-V в разных регионах даёт существенно разные результаты по TCO. Два самых больших фактора: энергия и труд:</p>
+<ul>
+<li><strong>Саудовская Аравия / ОАЭ</strong>: субсидируемая промышленная электроэнергия (~USD 0,05-0,10/кВт·ч) сокращает статью энергии на 50-60%. Труд оператора-иностранца (TCN) (USD 25 000-40 000 в год с учётом всех отчислений) сокращает статью труда на 50%. TCO за 5 лет примерно на 30-35% ниже, чем в Австралии.</li>
+<li><strong>Вьетнам / Индонезия</strong>: недорогая промышленная электроэнергия (~USD 0,08-0,12/кВт·ч), недорогой труд (USD 8000-18 000 в год). TCO за 5 лет примерно на 50-60% ниже, чем в Австралии, но импортная пошлина на расходные материалы и риск простоев (более длинные сроки поставки запчастей) частично это компенсируют.</li>
+<li><strong>Германия / Франция</strong>: дорогая промышленная электроэнергия (USD 0,20-0,35/кВт·ч после 2022 года), дорогой труд (USD 70 000-100 000 в год). TCO за 5 лет примерно на 5-15% выше, чем в Австралии. Многосменная работа здесь экономичнее, потому что стоимость труда распределяется на больший выпуск.</li>
+<li><strong>Бразилия / Мексика</strong>: средняя стоимость электроэнергии, средняя стоимость труда, но более высокая импортная пошлина на капитальное оборудование и более длинные сроки поставки запчастей повышают риск простоев. TCO за 5 лет примерно на 10-20% выше, чем в Австралии при одной смене, и сопоставим при многосменной работе.</li>
+</ul>
+<h2>SBAL-V и европейский аналог: как сравнивать TCO</h2>
+<p>Распространённое сравнение: SBAL-V и европейский аналог. Прогоните оба коммерческих предложения через одни и те же статьи за 5 лет и сравните на ваших собственных цифрах:</p>
+<ul>
+<li><strong>Капзатраты</strong>: сравнивайте стоимость с доставкой, монтажом и пусконаладкой, а не цену по прайс-листу</li>
+<li><strong>Энергия</strong>: схожа, потребляемая мощность обеих линий в кВт сопоставима</li>
+<li><strong>Расходные материалы</strong>: схожи, обе используют стандартное гидравлическое масло и компоненты ПЛК</li>
+<li><strong>Плановое обслуживание</strong>: схожий объём труда; сравните цены на запчасти из предложений</li>
+<li><strong>Внеплановые простои</strong>: зависят от срока поставки запчастей, поэтому запросите у каждого поставщика сроки в предложении. В обоих случаях риск управляем при наличии на складе критических запчастей.</li>
+<li><strong>Оснастка</strong>: сравните цены на оснастку и срок службы из предложений</li>
+<li><strong>Труд операторов</strong>: одинаков, обе линии работают с одним оператором</li>
+<li><strong>Итого TCO за 5 лет</strong>: сложите статьи. Более низкие капзатраты частично компенсируются схожими эксплуатационными расходами, поэтому разрыв сокращается за период эксплуатации.</li>
+</ul>
+<h2>Типичные ошибки при моделировании TCO</h2>
+<ol>
+<li><strong>Игнорирование стоимости простоев.</strong> Если считать простой лишь стоимостью запчастей, эта статья занижается в 10-20 раз. Всегда учитывайте потерянную часовую маржу вклада.</li>
+<li><strong>Использование паспортных цифр по энергии.</strong> Паспортные кВт это пик, а не среднее значение. Средняя нагрузка SBAL-V составляет 50-60% от пика. Для статьи энергии используйте среднюю.</li>
+<li><strong>Забытая замена оснастки.</strong> Оснастка не является расходным материалом: у неё цикл замены 18-24 месяца, и она должна быть отдельной статьёй.</li>
+<li><strong>Отсутствие моделирования остаточной стоимости.</strong> Остаточная стоимость зависит от состояния, наработки и местного спроса. Моделируйте её консервативно; 35-45% в примере расчёта это лишь иллюстративное допущение.</li>
+<li><strong>Неверное сравнение сделок с финансированием и за наличные.</strong> Всегда приводите к NPV: сделка с финансированием под 7% годовых имеет иной профиль стоимости денег во времени, чем сделка за наличные.</li>
+<li><strong>Забытый шеф-монтаж.</strong> Некоторые предложения исключают шеф-монтаж; если он не включён, считайте его отдельной статьёй AUD 8000-18 000.</li>
+</ol>
+<h2>Как запросить таблицу TCO у Taokron</h2>
+<p>Taokron прилагает индивидуальную таблицу TCO на 5 лет к каждому официальному коммерческому предложению, рассчитанную под вашу сменность, местные цены на энергию и труд и набор ваших проектов. Чтобы её запросить, сообщите три цифры: целевой суточный выпуск (м²/день), местный промышленный тариф на электроэнергию (USD/кВт·ч) и зарплату оператора с учётом всех отчислений (USD в год). Таблица возвращает TCO по статьям и чистую стоимость за 5 лет, чтобы вы могли сравнить с любым конкурирующим предложением на равных условиях. <a href="/ru/contact">Свяжитесь с Taokron</a>, указав эти три цифры, и запросите «таблицу TCO для SBAL-V».</p>
+<p class="cta-inline"><a class="btn btn-primary" href="/ru/contact?source=guide-hvac-duct-production-line-tco">Запросите индивидуальную таблицу TCO на 5 лет от Taokron →</a></p>
+<h2>Вопросы и ответы</h2>
+<details><summary>Какую долю TCO на горизонте 5 лет составляют капзатраты?</summary><p>В иллюстративной модели на этой странице капзатраты составляют примерно 60-70% от TCO за 5 лет. Остальные 30-40% распределяются между энергией (8-12%), расходными материалами (3-5%), плановым обслуживанием (4-6%), внеплановыми простоями (5-8%), заменой оснастки (3-5%) и трудом операторов (5-8%). Точное распределение зависит от сменности, местной цены на энергию и зарплаты оператора.</p></details>
+<details><summary>Как моделировать стоимость внеплановых простоев?</summary><p>Стоимость внеплановых простоев = ожидаемое число часов простоя в год × потерянная маржа вклада в час. Для SBAL-V при марже вклада AUD 1200/час 40 часов простоя в год равны AUD 48 000, что обычно в 10-20 раз больше стоимости самой запчасти.</p></details>
+<details><summary>Брать финансирование или покупать сразу?</summary><p>Финансирование оборудования в 2026 году обычно стоит 5-8% годовых; покупка сразу за счёт оборотного капитала самая дешёвая, если оборотный капитал это позволяет. Схемы лизинга с выкупом сохраняют денежные средства и выгодны с точки зрения налогов. Мурабаха (исламское финансирование) под 4-6% годовых широко доступна в странах GCC.</p></details>
+<details><summary>Какова остаточная стоимость SBAL-V через 5 лет?</summary><p>Она зависит от состояния, наработки и местного спроса. Моделируйте её консервативно. В примере расчёта выше принято 35-45% только для иллюстрации; Taokron не публикует данных об остаточной стоимости.</p></details>
+<details><summary>Как Taokron выглядит по TCO в сравнении с европейскими аналогами?</summary><p>Прогоните оба коммерческих предложения через одни и те же восемь статей и сравните на ваших собственных цифрах. Больше всего у поставщиков различаются капзатраты, а энергия, расходные материалы и труд схожи независимо от происхождения станка, поэтому разрыв сокращается за период эксплуатации. Taokron не публикует стандартную цифру экономии по TCO.</p></details>
+<aside class="related-guides">
+<p class="eyebrow">Похожие материалы</p>
+<ul class="related-links">
+<li><a href="/ru/insights/how-to-compare-duct-machine-quotations">Как построчно сравнивать коммерческие предложения на станки для воздуховодов →</a></li>
+<li><a href="/insights/duct-machine-spare-parts-and-wear-parts-to-stock">Запчасти и быстроизнашивающиеся детали станков для воздуховодов, которые стоит держать на складе →</a></li>
+<li><a href="/ru/insights/how-much-does-a-duct-machine-cost">Сколько стоит станок для воздуховодов? Руководство по ценам 2026 →</a></li>
+<li><a href="/ru/insights/best-auto-duct-line-manufacturers">Лучшие производители автоматических линий для воздуховодов: руководство покупателя 2026 →</a></li>
+<li><a href="/insights/duct-machine-specifications">Все характеристики станков Taokron для воздуховодов →</a></li>
+<li><a href="/pricing-and-lead-time">Руководство покупателя Taokron по ценам и срокам поставки: бюджетные диапазоны 2026 и условия оплаты</a></li>
+<li><a href="/ru/insights/hvac-duct-machine-buyers-checklist">Чек-лист покупателя станков для воздуховодов ОВК: 47 пунктов проверки</a></li>
+<li><a href="/ru/insights/choosing-auto-duct-line">Как выбрать автоматическую линию для производства воздуховодов</a></li>
+<li><a href="/ru/insights/importing-duct-machinery-internationally">Импорт станков для воздуховодов ОВК из-за рубежа</a></li>
+<li><a href="/why-choose-taokron">Почему Taokron: инженерная таблица TCO в каждом предложении</a></li>
+<li><a href="/insights/hvac-duct-machinery-maintenance-schedule">График обслуживания станков для воздуховодов ОВК на 5 лет</a></li></ul>
+</aside>
+</div>
+</div>
+</section>
+<section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+<div class="shell">
+<div class="content-narrow">
+<div class="promise-callout">
+<span class="promise-label">Ответ в течение 12 часов</span>
+<p class="promise-text">Нужна таблица TCO от Taokron под ваши местные цены на энергию и труд? Инженер Taokron ответит в течение 12 часов.</p>
+<a class="btn btn-primary" href="#quote">Запросить таблицу TCO</a>
+</div>
+<div class="catalogue-box product-quote-box page-quote page-quote-narrow" id="quote">
+<div class="catalogue-copy">
+<p class="eyebrow" data-i18n="pq3.eyebrow">Ответ инженера</p>
+<h2 data-i18n="pq3.title">Задайте вопрос инженеру по этому руководству</h2>
+<p data-i18n="pq3.lead">Опишите вашу задачу и что вы хотите производить. В течение 12 часов вам ответит инженер-механик Taokron, а не менеджер по продажам.</p>
+<p class="product-quote-for"><span data-i18n="pq3.for">Руководство</span>: <strong>Совокупная стоимость владения линией производства воздуховодов ОВК: модель TCO на 5 лет</strong></p>
+</div>
+<form action="https://formsubmit.co/sales@sbkjduct.com" class="catalogue-form product-quote-form" id="productQuoteForm" method="POST">
+<input name="_subject" type="hidden" value="Question from guide: HVAC Duct Production Line Total Cost of Ownership: 5-Year TCO Model (taokron.com)"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input id="productQuoteNext" name="_next" type="hidden" value="https://taokron.com/ru/insights/hvac-duct-production-line-tco?sent=1"/>
+<input name="_autoresponse" type="hidden" value="Hi, thank you for your message to Taokron. A Taokron engineer will reply within 12 hours. Questions before then: sales@taokron.com or WhatsApp +61 435 074 994. Ryan Tao, Taokron"/>
+<input name="Page" type="hidden" value="HVAC Duct Production Line Total Cost of Ownership — 5-Year TCO Model"/>
+<input id="productQuoteLeadSource" name="Lead source" type="hidden" value=""/>
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.name" for="pq-name">Имя</label>
+<input autocomplete="name" id="pq-name" name="name" required="" type="text"/>
+</div>
+<div class="form-field">
+<label data-i18n="cat.company" for="pq-company">Компания</label>
+<input autocomplete="organization" id="pq-company" name="company" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.email" for="pq-email">Эл. почта</label>
+<input autocomplete="email" id="pq-email" name="email" required="" type="email"/>
+</div>
+<div class="form-field">
+<label data-i18n="form.country" for="pq-country">Страна установки</label>
+<input autocomplete="country-name" id="pq-country" name="country" required="" type="text"/>
+</div>
+</div>
+<div class="form-field">
+<label data-i18n="form.phone" for="pq-phone">Телефон / WhatsApp</label>
+<input autocomplete="tel" id="pq-phone" name="phone" type="tel"/>
+</div>
+<div class="form-field">
+<label data-i18n="pq3.question" for="pq-message">Ваш вопрос</label>
+<textarea data-i18n-placeholder="form.placeholder" id="pq-message" name="message" placeholder="Тип материала, толщина, требуемая производительность, размер имеющейся мастерской..." required="" rows="3"></textarea>
+</div>
+<button class="btn btn-primary" data-i18n="pq3.button" type="submit">Отправить вопрос</button>
+<span data-i18n="form.sending" hidden="" id="productQuoteSending">Отправка…</span>
+</form>
+<div class="catalogue-inline" style="margin-top:1.25rem;padding:1rem 1.1rem;border:1px solid var(--border);border-radius:var(--radius)"><p style="margin:0 0 .6rem"><strong data-i18n="catinline.title">Ещё не готовы к запросу цены?</strong> <span data-i18n="catinline.text">Получите каталог 2026 по эл. почте: 66 станков, по одной странице на каждый.</span></p><form action="https://formsubmit.co/sales@sbkjduct.com" class="newsletter-form catalogue-inline-form" method="POST"><input name="_subject" type="hidden" value="Catalogue request (taokron.com)"/><input name="_template" type="hidden" value="table"/><input name="_captcha" type="hidden" value="false"/><input name="_next" type="hidden" value="https://taokron.com/spec-sheets?catalogue=1"/><input name="_autoresponse" type="hidden" value="Hi, here is the Taokron Product Catalogue 2026 (PDF, 66 machines, one page each): https://taokron.com/downloads/taokron-product-catalogue-2026.pdf  Single machine spec sheets: https://taokron.com/spec-sheets  If one of the machines is close to what you need, reply to this email with your material, gauge and duct sizes and an engineer will come back within 12 hours. Ryan Tao, Taokron, +61 435 074 994"/><input name="Lead source" type="hidden" value="catalogue-inline · /insights/hvac-duct-production-line-tco"/><input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/><input aria-label="Эл. почта" autocomplete="email" data-i18n-placeholder="cat.email" name="email" placeholder="Эл. почта" required="" style="flex:1 1 200px;min-width:0;padding:.6rem .75rem;font-size:1rem;font-family:var(--font-body);border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text)" type="email"/><button class="btn btn-ghost" data-i18n="cat.button" type="submit">Отправить мне каталог на почту</button></form></div>
+</div>
+<div class="quote-sent-banner catalogue-sent" hidden="" id="productQuoteSent">
+<span data-i18n="pq3.sent">✓ Отправлено. Инженер Taokron ответит в течение 12 часов.</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="shell"><div class="content-narrow">
+<h2>Оборудование для этой задачи</h2>
+<p>Описанные выше технологические процессы изготовления воздуховодов выполняются на стандартном оборудовании Taokron: <a href="/ru/categories/spiral-duct-machinery">спирально-навивные станки</a> для круглых воздуховодов, <a href="/ru/categories/auto-duct-lines">автоматические линии для производства воздуховодов</a> для прямоугольных, а также <a href="/ru/categories/tdf-and-lockformer">станки для фланцев TDF и замковые станки</a> для соединения. Или просмотрите <a href="/ru/machines">полный каталог станков</a>.</p>
+</div></div>
+</section>
+<script>
+      // Page quote form: thank-you state, same-language return URL, and the
+      // same first-touch attribution the contact form writes.
+      (function () {
+        if (location.search.indexOf('sent=1') !== -1) {
+          var b = document.getElementById('productQuoteSent'); if (b) { b.hidden = false; try { b.scrollIntoView({ block: 'center' }); } catch (e) {} }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          var nx = document.getElementById('productQuoteNext');
+          if (nx && /^https?:$/.test(location.protocol)) { nx.value = location.origin + location.pathname + '?sent=1'; }
+          var ls = document.getElementById('productQuoteLeadSource'); if (!ls) return;
+          var src = new URLSearchParams(location.search).get('source') || '';
+          var ref = '';
+          try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
+          var first = null;
+          try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+          var campaign = src || (first && first.q) || '';
+          var origin = ref || (first && first.ref) || '';
+          var parts = [];
+          parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+          if (origin) parts.push('ref:' + origin);
+          if (first && first.lp) parts.push('landed:' + first.lp);
+          parts.push('form:quote@' + location.pathname);
+          ls.value = parts.join(' \u00b7 ');
+          var form = document.getElementById('productQuoteForm');
+          var btn = form && form.querySelector('button[type="submit"]');
+          if (form && btn) {
+            form.addEventListener('submit', function () {
+              setTimeout(function () {
+                var lbl = document.getElementById('productQuoteSending');
+                btn.disabled = true; btn.textContent = (lbl && lbl.textContent) || 'Sending\u2026';
+              }, 0);
+            });
+          }
+        });
+      })();
+    </script>
+</main>
+<footer class="site-footer">
+<div class="shell footer-grid">
+<div>
+<div class="footer-logo">
+<img alt="Taokron" class="logo-img" decoding="async" height="48" loading="lazy" src="/assets/images/logo.svg" width="129"/>
+<span class="logo-title">Taokron</span>
+</div>
+<p class="footer-text" data-i18n="footer.desc">Производитель оборудования для спиральных, круглых и прямоугольных воздуховодов.</p>
+<div class="footer-social">
+<a aria-label="LinkedIn" class="social-linkedin" href="https://www.linkedin.com/company/taokron/" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
+<a aria-label="YouTube" class="social-youtube" href="https://www.youtube.com/@taokron" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a>
+<a aria-label="Instagram" class="social-instagram" href="https://www.instagram.com/taokron/" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.88 0 1.441 1.441 0 012.88 0z"></path></svg></a>
+<a aria-label="Facebook" class="social-facebook" href="https://www.facebook.com/profile.php?id=61587888804663" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
+<a aria-label="TikTok" class="social-tiktok" href="https://www.tiktok.com/@taokron" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></svg></a>
+</div>
+</div>
+<div>
+<h3 data-i18n="footer.navigate">Навигация</h3>
+<ul>
+<li><a data-i18n="nav.home" href="/ru/">Главная</a></li>
+<li><a data-i18n="nav.machines" href="/ru/machines">Оборудование</a></li>
+<li><a data-i18n="nav.insights" href="/ru/insights/">Статьи</a></li>
+<li><a data-i18n="nav.about" href="/ru/about">О нас</a></li>
+<li><a data-i18n="nav.why" href="/why-choose-taokron">Почему Taokron</a></li>
+<li><a data-i18n="nav.pricing" href="/pricing-and-lead-time">Цены и сроки</a></li>
+<li><a data-i18n="nav.support" href="/support">Поддержка</a></li>
+<li><a data-i18n="nav.industries" href="/industries/">Отрасли</a></li>
+<li><a data-i18n="nav.factory" href="/factory">Завод</a></li>
+<li><a data-i18n="nav.quality" href="/quality">Качество</a></li>
+<li><a data-i18n="nav.videos" href="/videos">Видео</a></li>
+<li><a data-i18n="nav.cases" href="/case-studies/">Кейсы</a></li>
+<li><a data-i18n="nav.contact" href="/ru/contact">Контакты</a></li>
+</ul>
+</div>
+<div>
+<h3 data-i18n="footer.touch">Свяжитесь с нами</h3>
+<ul>
+<li><a href="mailto:sales@taokron.com">sales@taokron.com</a></li>
+<li><a href="https://wa.me/61435074994?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20Ryan%21%20%D0%A1%D0%BC%D0%BE%D1%82%D1%80%D1%8E%20%C2%AB%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%20%D0%BF%D0%BE%20%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D0%BE%D0%B4%D0%BE%D0%B2%C2%BB%20%D0%BD%D0%B0%20taokron.com.%20%D0%9F%D1%80%D0%B8%D1%88%D0%BB%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D1%86%D0%B5%D0%BD%D1%83%20%D0%B8%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE." rel="noopener" target="_blank">+61 435 074 994</a></li>
+<li data-i18n="footer.loc.aus">Бокс Хилл Норт, Виктория, Австралия</li>
+</ul>
+</div>
+</div>
+<div class="shell footer-bottom">
+<p class="footer-langs" style="margin-bottom:0.5rem;"><a href="/es/" hreflang="es" lang="es">Español</a> · <a href="/pt/" hreflang="pt" lang="pt">Português</a> · <a href="/fr/" hreflang="fr" lang="fr">Français</a> · <a href="/ru/insights/hvac-duct-production-line-tco" hreflang="ru" lang="ru">Русский</a> · <a href="/ar/" hreflang="ar" lang="ar">العربية</a> · <a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a> · <a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/zh/" hreflang="zh" lang="zh">中文</a></p>
+<p>© <span id="year"></span> <span data-i18n="footer.rights">Taokron. Все права защищены.</span> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
+</div>
+</footer>
+<a aria-label="Chat on WhatsApp" class="fab-whatsapp" href="https://wa.me/61435074994?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20Ryan%21%20%D0%A1%D0%BC%D0%BE%D1%82%D1%80%D1%8E%20%C2%AB%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%20%D0%BF%D0%BE%20%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D0%BE%D0%B4%D0%BE%D0%B2%C2%BB%20%D0%BD%D0%B0%20taokron.com.%20%D0%9F%D1%80%D0%B8%D1%88%D0%BB%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D1%86%D0%B5%D0%BD%D1%83%20%D0%B8%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE." rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<script src="/assets/js/main.js?v=18"></script>
+
+<script src="/assets/js/chatbot.js"></script>
+</body>
+</html>
