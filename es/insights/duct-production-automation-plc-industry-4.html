@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#000000" name="theme-color"/>
+<title>Automatización, control PLC e Industria 4.0 en líneas de producción de conductos HVAC | Taokron</title>
+<meta content="Cómo automatizan las líneas automáticas de conductos: recetas en el PLC, posicionamiento servo, flujo con un solo operario y alimentación de bobina. Taokron SBAL-V frente a la semiautomática SBAL-III." name="description"/>
+<link href="https://taokron.com/es/insights/duct-production-automation-plc-industry-4" rel="canonical"/>
+  <link rel="alternate" hreflang="en" href="https://taokron.com/insights/duct-production-automation-plc-industry-4" />
+  <link rel="alternate" hreflang="ar" href="https://taokron.com/ar/insights/duct-production-automation-plc-industry-4" />
+  <link rel="alternate" hreflang="es" href="https://taokron.com/es/insights/duct-production-automation-plc-industry-4" />
+  <link rel="alternate" hreflang="fr" href="https://taokron.com/fr/insights/duct-production-automation-plc-industry-4" />
+  <link rel="alternate" hreflang="pt" href="https://taokron.com/pt/insights/duct-production-automation-plc-industry-4" />
+  <link rel="alternate" hreflang="ru" href="https://taokron.com/ru/insights/duct-production-automation-plc-industry-4" />
+  <link rel="alternate" hreflang="tr" href="https://taokron.com/tr/insights/duct-production-automation-plc-industry-4" />
+  <link rel="alternate" hreflang="x-default" href="https://taokron.com/insights/duct-production-automation-plc-industry-4" />
+<meta content="Taokron" name="author"/>
+<meta content="AU-VIC" name="geo.region"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="Taokron" property="og:site_name"/>
+<meta content="es_ES" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Automatización, control PLC e Industria 4.0 en líneas de producción de conductos HVAC | Taokron" property="og:title"/>
+<meta content="Cómo automatizan las líneas automáticas de conductos: recetas en el PLC, posicionamiento servo, flujo con un solo operario y alimentación de bobina. Taokron SBAL-V frente a la semiautomática SBAL-III." property="og:description"/>
+<meta content="https://taokron.com/es/insights/duct-production-automation-plc-industry-4" property="og:url"/>
+<meta content="https://taokron.com/assets/images/og/duct-production-automation-plc-industry-4.jpg" property="og:image"/>
+<meta content="2026-06-15T00:00:00+10:00" property="article:published_time"/>
+<meta content="2026-06-15T00:00:00+10:00" property="article:modified_time"/>
+<meta content="https://taokron.com/assets/images/og/duct-production-automation-plc-industry-4.jpg" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@taokron" name="twitter:site"/>
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="/assets/css/styles.css?v=55" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://taokron.com/#org", "sameAs": ["https://www.linkedin.com/company/taokron/", "https://www.youtube.com/@taokron", "https://www.instagram.com/taokron/", "https://www.facebook.com/profile.php?id=61587888804663", "https://www.tiktok.com/@taokron"], "name": "Taokron", "url": "https://taokron.com/", "description": "Australian supplier of HVAC ductwork machinery — spiral duct machines, auto duct production lines, TDF flange formers and lockformers."}, {"@type": "Organization", "@id": "https://taokron.com/#author-engineering", "name": "Taokron Engineering Team", "url": "https://taokron.com/about", "description": "Taokron engineering team writing about HVAC ductwork machinery design, commissioning and field service.", "parentOrganization": {"@id": "https://taokron.com/#org"}, "knowsAbout": ["Auto duct production line", "PLC control", "Industrial automation", "Servo positioning", "HVAC duct machinery", "Factory Acceptance Test", "Industry 4.0"]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://taokron.com/"}, {"@type": "ListItem", "position": 2, "name": "Artículos técnicos", "item": "https://taokron.com/insights/"}, {"@type": "ListItem", "position": 3, "name": "Automatización, control PLC e Industria 4.0 en líneas de producción de conductos HVAC", "item": "https://taokron.com/es/insights/duct-production-automation-plc-industry-4"}]}, {"@type": "Dataset", "@id": "https://taokron.com/es/insights/duct-production-automation-plc-industry-4#dataset", "name": "Comparación de niveles de automatización de las líneas automáticas de conductos Taokron 2026 (SBAL-V frente a SBAL-III)", "description": "Comparación de las características de automatización y control de dos líneas automáticas de producción de conductos rectangulares de Taokron: la SBAL-V, totalmente automática, en forma de U y con un solo operario, y la SBAL-III, hidráulica y semiautomática, en cuanto a tipo de control, velocidad de línea, potencia instalada, número de operarios, alimentación y corte de bobina e integración del conformado. Las cifras se toman textualmente del Catálogo de productos Taokron 2026 y de las páginas de producto correspondientes.", "creator": {"@id": "https://taokron.com/#org"}, "publisher": {"@id": "https://taokron.com/#org"}, "dateModified": "2026-06-19T00:00:00+10:00", "datePublished": "2026-06-15", "isAccessibleForFree": true, "license": "https://taokron.com/", "keywords": ["auto duct line automation", "PLC duct line control", "servo positioning duct", "single-operator duct line", "Industry 4.0 duct shop", "SBAL-V", "SBAL-III"], "variableMeasured": ["Control type", "Line speed (m/min)", "Installed power (kW)", "Operators required", "Coil feed and cut", "TDF and Pittsburgh integration", "Material thickness (mm)"], "measurementTechnique": "Manufacturer nameplate specification, Taokron Product Catalog 2026"}, {"@type": "TechArticle", "headline": "Automatización, control PLC e Industria 4.0 en líneas de producción de conductos HVAC", "description": "Una referencia de nivel de ingeniería sobre cómo automatizan las líneas automáticas de conductos modernas (recetas en la pantalla táctil del PLC, posicionamiento servo, flujo en celda en U con un solo operario, alimentación y corte automáticos de bobina, y detección de errores), además de lo que significan la Industria 4.0 y la fábrica inteligente para un taller de conductos HVAC, y cómo se compara la automatización total de la SBAL-V con la semiautomática SBAL-III.", "author": {"@id": "https://taokron.com/#author-engineering"}, "reviewedBy": {"@type": "Organization", "name": "Taokron QA & Engineering", "url": "https://taokron.com/about"}, "publisher": {"@id": "https://taokron.com/#org"}, "datePublished": "2026-06-15T00:00:00+10:00", "dateModified": "2026-06-19T00:00:00+10:00", "image": "https://taokron.com/assets/images/sbal-v.jpg", "mainEntityOfPage": "https://taokron.com/es/insights/duct-production-automation-plc-industry-4", "inLanguage": "es", "proficiencyLevel": "Expert", "articleSection": "Industrial Automation", "about": [{"@type": "Thing", "name": "Línea de producción automática de conductos"}, {"@type": "Thing", "name": "Control PLC"}, {"@type": "Thing", "name": "Industria 4.0"}, {"@type": "Thing", "name": "Fábrica inteligente"}], "citation": ["Taokron Product Catalog 2026", "SMACNA HVAC Duct Construction Standards", "EN 1505 rectangular sheet metal air ducts"], "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".article-lead", "h2"]}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué controla exactamente el PLC en una línea automática de conductos?", "acceptedAnswer": {"@type": "Answer", "text": "En una línea como la Taokron SBAL-V, el operario introduce las dimensiones del conducto en la pantalla táctil del PLC y el controlador secuencia automáticamente todo el ciclo de conformado: longitud de avance de la bobina, enderezado, posición del nervado y del muescado, tiempo de la cizalla, formación del cierre Pittsburgh y conformado de la brida TDF o de ángulo. El PLC coordina los ejes servo e hidráulicos de modo que un cambio de medida es una entrada en pantalla y no un reajuste manual. Taokron indica que el cambio habitual entre medidas lleva menos de un minuto."}}, {"@type": "Question", "name": "¿Cuál es la diferencia de automatización entre la SBAL-V y la SBAL-III?", "acceptedAnswer": {"@type": "Answer", "text": "La SBAL-V es totalmente automática: una línea en forma de U con un solo operario que integra el desbobinado, el enderezado, el nervado, el muescado, el cizallado, el cierre Pittsburgh, el conformado de la brida TDF o de ángulo y el plegado en un flujo continuo, con control automático de la alimentación y el corte de la bobina, a 18 m/min y 40 kW. La SBAL-III es una línea hidráulica semiautomática (dos bastidores de alimentación eléctricos, muescado y cizalla hidráulicos, control por computadora con servo de lazo cerrado para un corte preciso) que funciona hasta 18 m/min con 10.7 kW, con el conformado de brida TDF y de ángulo añadido como equipo posterior. Ambas cifras proceden del Catálogo de productos Taokron 2026."}}, {"@type": "Question", "name": "¿Cómo mejora el posicionamiento servo la precisión del conducto?", "acceptedAnswer": {"@type": "Answer", "text": "Un eje servo es de lazo cerrado: un encoder informa al controlador de la posición real, y este corrige de forma continua en lugar de ir en lazo abierto hasta un tope mecánico. En la SBAL-III, Taokron especifica control por computadora con servo de lazo cerrado para asegurar un corte preciso, con una tolerancia de longitud de ±0.5 mm y una tolerancia de diagonal de ±0.8 mm según la página de producto. Una longitud y una escuadra constantes son lo que permite que la costura y la brida cierren bien más adelante en la línea y mantiene el conducto dentro de las tolerancias de construcción de SMACNA, EN 1505 y AS/NZS 4254."}}, {"@type": "Question", "name": "¿Qué significa el flujo en celda en U con un solo operario?", "acceptedAnswer": {"@type": "Answer", "text": "Una línea en forma de U (celda en U) dobla el proceso sobre sí mismo para que la bobina entre y el conducto terminado salga cerca del mismo extremo de una sola nave. Un operario capacitado puede cargar la bobina, manejar el PLC y descargar el conducto terminado sin recorrer el largo de una máquina en línea. Taokron indica que la SBAL-V está diseñada para ser manejada por un solo operario capacitado y que la familia SBAL funciona con 2–3 personas, en sustitución de lo que antes eran 6–8 estaciones independientes y 8–12 operarios en un taller de conductos tradicional."}}, {"@type": "Question", "name": "¿Qué significa la Industria 4.0 para un taller de conductos HVAC?", "acceptedAnswer": {"@type": "Answer", "text": "Para un taller de conductos significa tres cosas prácticas: la línea registra sus propios datos de producción (receta cargada, rendimiento, conteo de ciclos, alarmas) en lugar de depender de una libreta; las averías se pueden diagnosticar a distancia, de modo que los problemas de software se resuelven en horas y no en días a la espera de una visita; y cada máquina se entrega con un registro serializado de la prueba de aceptación en fábrica (FAT), de modo que el comprador tiene una referencia documentada y trazable de cómo funcionó la línea antes del envío. Taokron realiza una FAT, normalmente de 1–2 días, con el cliente invitado a asistir, y ofrece respuesta en 12 horas."}}, {"@type": "Question", "name": "¿Tengo que comprar la línea totalmente automática para tener control PLC?", "acceptedAnswer": {"@type": "Answer", "text": "No. Las dos líneas automáticas de conductos de Taokron se controlan por PLC. La SBAL-V usa un PLC con pantalla táctil para una secuenciación completa basada en recetas; la SBAL-III usa control por computadora con servo de lazo cerrado para un corte preciso, con una secuenciación más manual de las estaciones hidráulicas. La elección depende de cuánto del ciclo funciona sin supervisión y de cuántos operarios se destinan, no de si hay o no un controlador; consulte la comparación SBAL-V frente a SBAL-III."}}]}</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "x4n6j0p80n");
+  </script>
+</head>
+<body class="site-body"><script>try{localStorage.setItem("sbkj-lang","es")}catch(e){}</script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="shell">
+<div class="site-header-inner">
+<a class="logo" href="/es/">
+<img alt="Taokron" class="logo-img" decoding="async" height="48" src="/assets/images/logo.svg" width="129"/>
+<span class="logo-text">
+<span class="logo-title">Taokron</span>
+<span class="logo-subtitle">Group</span>
+</span>
+</a>
+<button aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle menu" class="nav-toggle">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Primary" class="site-nav" id="primaryNav">
+<a data-i18n="nav.home" href="/es/">Inicio</a>
+<a data-i18n="nav.machines" href="/es/machines">Máquinas</a>
+<a data-i18n="nav.insights" href="/es/insights/">Artículos</a>
+<a data-i18n="nav.about" href="/es/about">Nosotros</a>
+<a class="nav-cta" data-i18n="nav.contact" href="/es/contact">Contacto</a>
+</nav>
+</div>
+</div>
+</header>
+<main id="main">
+<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Ruta de navegación" class="breadcrumbs"><ol><li><a data-i18n="nav.home" href="/">Inicio</a></li><li><a href="/es/insights/">Artículos técnicos</a></li><li aria-current="page"><span>Automatización, control PLC e Industria 4.0</span></li></ol></nav></div></nav>
+<article class="section page-hero bg-subtle">
+<div class="shell">
+<p class="eyebrow">Artículos técnicos · Automatización</p>
+<h1 class="page-title">Automatización, control PLC e Industria 4.0 en líneas de producción de conductos HVAC</h1>
+<p class="article-lead">Cómo automatiza realmente una línea automática de conductos moderna (recetas en la pantalla táctil del PLC, posicionamiento servo, flujo en celda en U con un solo operario, alimentación y corte automáticos de bobina, y detección de errores en línea) y lo que significan de verdad la «Industria 4.0» y la fábrica inteligente para un taller de conductos. Todas las cifras de máquinas que siguen se toman textualmente del Catálogo de productos Taokron 2026 y de las páginas de producto de la SBAL-V y la SBAL-III; nada de lo que se afirma aquí es inventado.</p>
+<p class="article-byline"><span class="article-byline-author"><span>Por</span> <a href="/es/about" rel="author">Equipo de Ingeniería de Taokron</a></span>
+<span class="article-byline-sep">·</span>
+<span><span>Publicado</span> <time datetime="2026-06-15">15 de junio de 2026</time></span>
+<span class="article-byline-sep">·</span>
+<span>8 min de lectura</span>
+<span class="article-byline-sep">·</span>
+<span>Mantenido por el Equipo de Ingeniería de Taokron</span></p>
+</div>
+</article>
+<section class="section">
+<div class="shell"><div class="content-narrow">
+<h2>Del trabajo manual a una celda de la bobina al conducto</h2>
+<p>Un taller tradicional de conductos rectangulares es una sucesión de máquinas independientes: una cizalla, una muescadora, un lockformer Pittsburgh, una plegadora y una estación de bridas aparte, con la chapa llevada a mano de una a otra. Cada traslado es una oportunidad de medir mal, de dejar fuera de escuadra o de alimentar mal, y cada estación necesita su propio operario. Una <a href="/es/categories/auto-duct-lines">línea automática de producción de conductos</a> reduce esa cadena a una sola celda controlada. Como indica Taokron en la <a href="/es/product/sbal-v">página de producto de la SBAL-V</a>, una sola línea que integra el desbobinado, el enderezado, el muescado, el nervado, el corte a medida, el marcado, el plegado, el cierre de costura y el embridado TDF sustituye lo que antes eran 6–8 estaciones independientes y 8–12 operarios en un taller de conductos tradicional, y funciona con 2–3 personas. El mecanismo que hace posible esa reducción es el sistema de control, así que conviene entender exactamente qué hace el PLC.</p>
+<h2>El PLC: entrada de recetas, no pulsar botones</h2>
+<p>En una línea totalmente automática el operario no maneja cada estación a mano. Introduce las dimensiones del conducto en la pantalla táctil del PLC y el controlador secuencia automáticamente todo el ciclo de conformado. Taokron describe con precisión el flujo de trabajo de la SBAL-V en la página de producto: la línea recibe la bobina por un extremo y entrega por el otro un tramo de conducto conformado y terminado con una intervención mínima del operario, realizando el desbobinado, el enderezado, el nervado y el muescado longitudinales, el cizallado a medida, el conformado del cierre Pittsburgh en la costura longitudinal y el conformado de la brida TDF o de ángulo en los extremos transversales. El operario introduce las dimensiones del conducto y la línea completa un ciclo de conformado entero de forma automática; y Taokron indica que el cambio habitual entre medidas lleva menos de un minuto.</p>
+<p>Esa es la clave del control basado en recetas. En lugar de que un operario ajuste manualmente un tope trasero, indexe un muesco y cronometre una cizalla en cada trabajo, la medida es un número en una pantalla y el controlador posiciona cada eje en consecuencia, con un cambio de medida casi instantáneo, una salida repetible sea cual sea el operario del turno y mucho menos desperdicio por un tope mal ajustado. Para los compradores que eligen la marca de controlador y la HMI que hay detrás de esa pantalla táctil, las ventajas e inconvenientes de cada plataforma se tratan en nuestra <a href="/es/insights/plc-integration-duct-line">guía de integración de PLC</a>.</p>
+<aside class="machine-callout" style="margin:1.5rem 0;padding:1rem 1.1rem;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--radius)"><p style="margin:0 0 .4rem"><strong>¿Va a montar o ampliar un taller de conductos?</strong> <a href="/es/product/sbal-iii">Línea automática de conductos SBAL-III</a> · <a href="/es/product/sbtf-1500">Formadora de tubo espiral SBTF-1500</a></p><p style="margin:0 0 .4rem;font-size:.92rem">Instalación real con fotos: <a href="/case-studies/australia-airtemp-canberra-duct-shop">Airtemp Canberra</a> (taller de conductos rectangulares con 8 máquinas, septiembre de 2026).</p><p style="margin:0"><a href="#quote">Envíenos las medidas de sus conductos y reciba un precio en 12 horas →</a></p></aside>
+<h2>Posicionamiento servo y por qué la precisión es de lazo cerrado</h2>
+<p>La diferencia entre un número en una pantalla y un conducto que realmente tiene la longitud correcta depende de cómo se mueven los ejes. Un eje de lazo abierto va hasta un tope mecánico y confía en que el tope esté en el lugar correcto. Un eje servo es de lazo cerrado: un encoder informa al controlador de la posición real muchas veces por segundo, y el controlador corrige de forma continua. Eso es lo que mantiene la tolerancia durante un turno largo, mientras las correas se calientan y las cargas cambian.</p>
+<p>Taokron lo especifica de forma explícita en la <a href="/es/product/sbal-iii">página de producto de la SBAL-III</a>: «el control por computadora con servo de lazo cerrado asegura un corte preciso», con una tolerancia de longitud de ±0.5 mm y una tolerancia de diagonal de ±0.8 mm. La escuadra importa tanto como la longitud, porque un tramo de conducto fuera de escuadra no dejará que su costura y su brida cierren bien más adelante en la línea. Por eso una longitud y una diagonal constantes no son una cifra de vanidad: son lo que mantiene el conducto terminado dentro de las tolerancias de construcción de conductos rectangulares de SMACNA, EN 1505 y AS/NZS 4254 sin retrabajo. En calibres más gruesos el mismo principio se aplica a la inversa: el material delgado funciona rápido, pero, como señala nuestra <a href="/es/insights/duct-machine-power-requirements">guía de potencia y requisitos eléctricos</a>, el calibre más grueso necesita par servo, y esa es una de las razones por las que la potencia instalada crece con la capacidad.</p>
+<h2>Flujo en celda en U con un solo operario</h2>
+<p>La automatización no depende solo del controlador; la distribución física decide cuántas personas necesita la línea. La SBAL-V está construida como una línea en forma de U (celda en U), en la que el proceso se dobla sobre sí mismo para que la bobina entre y el conducto terminado salga cerca del mismo extremo de una sola nave. Taokron indica que la SBAL-V está diseñada para ser manejada por un solo operario capacitado en condiciones normales, y en la página de comparación la describe como una línea en U de flujo continuo: la bobina entra por un extremo y el conducto terminado sale unos metros más allá, por el mismo extremo. Eso acorta el recorrido de la grúa y permite que una sola persona cargue la bobina, maneje el PLC y descargue el conducto sin recorrer el largo de una máquina en línea.</p>
+<p>Esta es la diferencia que no se ve en la velocidad bruta de la línea. La SBAL-V funciona a 18 m/min y la SBAL-III hasta 18 m/min: muy parecidas sobre el papel. Pero como el flujo en celda en U de la SBAL-V es de un solo operario y la SBAL-III es una distribución en línea de dos operarios con una estación de bridas aparte, la métrica real, los metros cuadrados de conducto terminado por hora de operario, las separa por un margen amplio, como se desarrolla en la <a href="/es/insights/sbal-v-vs-sbal-iii">comparación SBAL-V frente a SBAL-III</a>.</p>
+<h2>Alimentación y corte automáticos de bobina, y detección de errores</h2>
+<p>La parte delantera de la línea es donde la automatización elimina más manipulación manual. Taokron describe la SBAL-V con control automático de la alimentación y el corte de la bobina, integrando el desbobinado, el enderezado, el nervado, el muescado, el cizallado y el conformado de la brida TDF o de acero angular. El desbobinador desenrolla la bobina de forma controlada, los rodillos de enderezado quitan la curvatura del fleje, el servo de avance adelanta la longitud exacta para la medida de conducto programada y la cizalla corta cuando se le ordena, todo secuenciado por el PLC y no valorado a ojo. En la SBAL-III, Taokron especifica dos bastidores de alimentación eléctricos, un rodillo ranurador del enderezador, muescado y punzonado cuadrado hidráulicos, y una cizalla y una plegadora hidráulicas, con el servo de lazo cerrado gobernando la precisión del corte.</p>
+<p>La detección de errores es la mitad silenciosa de la automatización. Una línea controlada puede detectar situaciones que una línea manual no puede: una bobina que se acaba, una longitud de avance que no alcanza el objetivo, una protección abierta, un exceso de par en un rodillo de conformado. El controlador puede detener el ciclo y activar una alarma antes de que una avería se convierta en desperdicio o en daños. Ese mismo flujo de alarmas, cuando se registra con marcas de tiempo, es la materia prima de la capa de datos que convierte una línea automatizada en una línea conectada.</p>
+<h2>Comparación del nivel de automatización: SBAL-V frente a SBAL-III</h2>
+<p>La forma más clara de ver qué aporta «más automatización» es poner las dos líneas rectangulares de Taokron lado a lado. Todas las cifras de aquí proceden del Catálogo de productos Taokron 2026 y de las páginas de producto respectivas.</p>
+<div class="table-wrap">
+<table class="spec-table">
+<thead>
+<tr><th>Característica de automatización</th><th><a href="/es/product/sbal-v">SBAL-V (totalmente automática)</a></th><th><a href="/es/product/sbal-iii">SBAL-III (semiautomática)</a></th></tr>
+</thead>
+<tbody>
+<tr><td>Control</td><td>PLC con pantalla táctil, secuenciación basada en recetas</td><td>Control por computadora con servo de lazo cerrado</td></tr>
+<tr><td>Velocidad de línea / avance</td><td>18 m/min</td><td>18 m/min (alimentación máx.)</td></tr>
+<tr><td>Potencia instalada</td><td>40 kW</td><td>10.7 kW</td></tr>
+<tr><td>Operarios (según Taokron)</td><td>Un solo operario capacitado</td><td>Normalmente dos operarios</td></tr>
+<tr><td>Distribución de la línea</td><td>En U, flujo continuo</td><td>En línea + estación TDF aparte</td></tr>
+<tr><td>Alimentación y corte de bobina</td><td>Automáticos, secuenciados por el PLC</td><td>Dos bastidores de alimentación eléctricos, cizalla hidráulica</td></tr>
+<tr><td>Muescado / cizallado</td><td>Integrado, automático</td><td>Muescado hidráulico, punzonado cuadrado y cizalla</td></tr>
+<tr><td>Cierre Pittsburgh y brida TDF / de ángulo</td><td>Integrado en línea</td><td>Añadida como equipo posterior</td></tr>
+<tr><td>Espesor del material</td><td>0.5–1.5 mm</td><td>0.5–2.0 mm</td></tr>
+<tr><td>Ancho máximo</td><td>1250 / 1550 mm</td><td>1250 / 1550 mm</td></tr>
+<tr><td>Tensión</td><td>380V / 50Hz / 3PH</td><td>380V / 50Hz / 3PH</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:0.85rem;color:var(--text-muted)">Fuente: Catálogo de productos Taokron 2026 y páginas de producto de la SBAL-V / SBAL-III. Modelos SBAL-V: SBAL-V-1250U / SBAL-V-1550U; modelos SBAL-III: SBAL-III-1250 / SBAL-III-1550. Tolerancia de longitud de la SBAL-III de ±0.5 mm y de diagonal de ±0.8 mm según la página de producto. 60 Hz disponible bajo pedido.</p>
+<p>El patrón es coherente: la SBAL-V automatiza más del ciclo e integra más estaciones en línea, de modo que un solo operario y un PLC se encargan de todo el flujo; la SBAL-III automatiza las funciones críticas para la precisión (alimentación y corte, con servo de lazo cerrado) y deja más de la secuenciación y el paso de la brida a los operarios y a equipos posteriores. Ninguna es «manual»: ambas se controlan por PLC, pero se sitúan en puntos distintos de la curva de automatización. El punto adecuado depende de su objetivo de producción y del costo de la mano de obra, que es justo lo que ayuda a decidir la página de comparación.</p>
+<h2>Qué significa realmente la «Industria 4.0» para un taller de conductos</h2>
+<p>«Industria 4.0» y «fábrica inteligente» son términos cargados, y la mayor parte del marketing que los rodea no sobrevive al contacto con un taller real. Reducido a lo que es útil para un fabricante de conductos, se resume en tres cosas, ninguna de las cuales exige reconstruir su planta.</p>
+<p><strong>1. La línea registra sus propios datos.</strong> Una línea controlada ya conoce la receta cargada, el rendimiento en metros por minuto, el conteo de ciclos del turno y cada alarma con su marca de tiempo. Capturarlo, en lugar de reconstruirlo a partir de una libreta, da al taller cifras reales de producción por turno, de desgaste de utillaje (los contadores de ciclos impulsan el mantenimiento preventivo) y de en qué se va realmente el tiempo de parada. Esa es la base sobre la que se apoya todo lo demás.</p>
+<p><strong>2. Las averías se pueden diagnosticar a distancia.</strong> Cuando se puede acceder a una línea por una conexión segura, un problema de control puede diagnosticarse sin esperar a que un ingeniero viaje en avión. Taokron ofrece soporte remoto por WhatsApp y correo electrónico, con respuesta de un ingeniero en 12 horas y resolución técnica de problemas en 72 horas, que es la diferencia entre que una falla de software cueste horas o cueste días. Muchos compradores con requisitos de alta seguridad prefieren no tener ninguna conexión permanente, y eso es totalmente compatible; lo importante es que la opción existe, no que se imponga.</p>
+<p><strong>3. Cada máquina lleva un registro FAT serializado.</strong> Antes de que una línea salga, Taokron realiza una prueba de aceptación en fábrica (FAT) con el cliente invitado a asistir, normalmente de 1–2 días haciendo funcionar la máquina conforme a su especificación. El registro FAT serializado es el equivalente en un taller de conductos a un certificado de nacimiento: una referencia documentada y trazable de cómo funcionó esa línea concreta (velocidad, tolerancia, ciclos sin alarmas) antes del envío, con la que medir cualquier deriva posterior. En obra, un ingeniero de Taokron supervisa la instalación y la capacitación de los operarios, normalmente de 3–7 días, que abarca la alineación mecánica, la conexión eléctrica, la puesta a punto del PLC y la primera producción. La trazabilidad desde la FAT, pasando por la puesta en marcha, hasta el flujo de datos de producción es el núcleo práctico de una línea de conductos «inteligente».</p>
+<p>Para los talleres que avanzan hacia la digitalización aguas arriba (tomar las medidas de los conductos directamente de un modelo de coordinación 3D en lugar de volver a introducirlas) nuestra <a href="/insights/bim-integration-hvac-duct-fabrication">guía de integración BIM</a> explica cómo el modelo alimenta la lista de corte que, a su vez, alimenta el PLC.</p>
+<h2>Cómo plantearlo al comprar</h2>
+<p>La automatización es un espectro, no un interruptor. Decida primero cuánto del ciclo quiere que funcione sin supervisión y cuántos operarios puede destinar: eso fija la línea. Decida después qué datos y qué postura de soporte remoto necesita: eso fija cuán conectada está la línea. Ajuste el controlador, los ejes servo, la distribución en celda en U y el registro FAT a su objetivo de producción, al costo de su mano de obra y a su régimen de calidad, y no a una palabra de moda. Taokron entrega con cada cotización un plano 2D de distribución del taller para que la línea, el desbobinador y la mesa de salida se dimensionen según su nave antes de comprometerse.</p>
+<p class="cta-inline"><a class="btn btn-primary" href="/es/contact?source=guide-duct-production-automation-plc-industry-4">Reciba una recomendación de nivel de automatización en 12 horas →</a></p>
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Qué controla exactamente el PLC en una línea automática de conductos?</summary><p>En una línea como la SBAL-V, el operario introduce las dimensiones del conducto en la pantalla táctil del PLC y el controlador secuencia automáticamente todo el ciclo de conformado: longitud de avance de la bobina, enderezado, posición del nervado y del muescado, tiempo de la cizalla, formación del cierre Pittsburgh y conformado de la brida TDF o de ángulo. Un cambio de medida es una entrada en pantalla y no un reajuste manual; Taokron indica que el cambio habitual entre medidas lleva menos de un minuto.</p></details>
+<details><summary>¿Cuál es la diferencia de automatización entre la SBAL-V y la SBAL-III?</summary><p>La SBAL-V es totalmente automática: una línea en forma de U con un solo operario que integra el desbobinado, el enderezado, el nervado, el muescado, el cizallado, el cierre Pittsburgh y el conformado y plegado de la brida TDF / de ángulo en un solo flujo, con alimentación y corte automáticos de la bobina, a 18 m/min y 40 kW. La SBAL-III es hidráulica semiautomática (dos bastidores de alimentación eléctricos, muescado y cizalla hidráulicos, control por computadora con servo de lazo cerrado) a hasta 18 m/min con 10.7 kW, con el conformado de brida TDF y de ángulo añadido posteriormente. Cifras del Catálogo de productos Taokron 2026.</p></details>
+<details><summary>¿Cómo mejora el posicionamiento servo la precisión del conducto?</summary><p>Un eje servo es de lazo cerrado: un encoder informa al controlador de la posición real, y este corrige de forma continua en lugar de confiar en un tope mecánico. Taokron especifica control por computadora con servo de lazo cerrado en la SBAL-III para asegurar un corte preciso, con una tolerancia de longitud de ±0.5 mm y de diagonal de ±0.8 mm según la página de producto. Una longitud y una escuadra constantes son lo que permite que la costura y la brida cierren bien y mantiene el conducto dentro de las tolerancias de SMACNA, EN 1505 y AS/NZS 4254.</p></details>
+<details><summary>¿Qué significa el flujo en celda en U con un solo operario?</summary><p>Una línea en forma de U (celda en U) dobla el proceso sobre sí mismo para que la bobina entre y el conducto terminado salga cerca del mismo extremo de una sola nave. Taokron indica que la SBAL-V está diseñada para ser manejada por un solo operario capacitado y que la familia SBAL funciona con 2–3 personas, en sustitución de lo que antes eran 6–8 estaciones y 8–12 operarios en un taller tradicional.</p></details>
+<details><summary>¿Qué significa la Industria 4.0 para un taller de conductos HVAC?</summary><p>Tres cosas prácticas: la línea registra sus propios datos de producción (receta, rendimiento, conteo de ciclos, alarmas) en lugar de una libreta; las averías se pueden diagnosticar a distancia, de modo que los problemas de software llevan horas y no días; y cada línea se entrega con un registro serializado de la prueba de aceptación en fábrica (FAT) que da una referencia de rendimiento documentada y trazable. Taokron realiza una FAT, normalmente de 1–2 días, con el cliente invitado a asistir, y ofrece respuesta en 12 horas.</p></details>
+<details><summary>¿Tengo que comprar la línea totalmente automática para tener control PLC?</summary><p>No: las dos líneas automáticas de conductos de Taokron se controlan por PLC. La SBAL-V usa un PLC con pantalla táctil para una secuenciación completa basada en recetas; la SBAL-III usa control por computadora con servo de lazo cerrado para un corte preciso, con una secuenciación más manual de las estaciones hidráulicas. La elección depende de cuánto funciona sin supervisión y de cuántos operarios se destinan, no de si hay o no un controlador.</p></details>
+<aside class="related-guides">
+<p class="eyebrow">Guías relacionadas</p>
+<ul class="related-links">
+<li><a href="/es/insights/best-auto-duct-line-manufacturers">Mejores fabricantes de líneas automáticas de conductos: guía del comprador 2026 →</a></li>
+<li><a href="/es/insights/sbal-v-vs-sbal-iii">SBAL-V frente a SBAL-III: comparación del nivel de automatización →</a></li>
+<li><a href="/es/insights/plc-integration-duct-line">Integración de PLC: Siemens frente a Mitsubishi frente a Delta</a></li>
+<li><a href="/es/categories/auto-duct-lines">Líneas automáticas de producción de conductos (gama completa)</a></li>
+<li><a href="/es/product/sbal-v">Línea automática de conductos SBAL-V (página de producto)</a></li>
+<li><a href="/es/product/sbal-iii">Línea automática de conductos SBAL-III (página de producto)</a></li>
+<li><a href="/insights/bim-integration-hvac-duct-fabrication">Integración BIM para la fabricación de conductos</a></li>
+<li><a href="/es/insights/duct-machine-power-requirements">Requisitos eléctricos y de potencia de las máquinas para conductos</a></li>
+</ul>
+</aside>
+</div>
+</div>
+</section>
+<section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+<div class="shell">
+<div class="content-narrow">
+<div class="promise-callout">
+<span class="promise-label">Respuesta en 12 horas</span>
+<p class="promise-text">¿No está seguro de cuánta automatización necesita realmente su programa de conductos? Un ingeniero de Taokron responde en 12 horas, no un vendedor.</p>
+<a class="btn btn-primary" href="#quote">Consulte a un ingeniero</a>
+</div>
+<div class="catalogue-box product-quote-box page-quote page-quote-narrow" id="quote">
+<div class="catalogue-copy">
+<p class="eyebrow" data-i18n="pq3.eyebrow">Respuesta de un ingeniero</p>
+<h2 data-i18n="pq3.title">Pregunte a un ingeniero sobre esta guía</h2>
+<p data-i18n="pq3.lead">Describa su trabajo y lo que desea fabricar. Un ingeniero mecánico de Taokron responde en 12 horas, no un vendedor.</p>
+<p class="product-quote-for"><span data-i18n="pq3.for">Guía</span>: <strong>Automatización, control PLC e Industria 4.0 en líneas de producción de conductos HVAC</strong></p>
+</div>
+<form action="https://formsubmit.co/sales@sbkjduct.com" class="catalogue-form product-quote-form" id="productQuoteForm" method="POST">
+<input name="_subject" type="hidden" value="Question from guide: Automation, PLC Control &amp; Industry 4.0 for HVAC Duct Production Lines (taokron.com)"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input id="productQuoteNext" name="_next" type="hidden" value="https://taokron.com/es/insights/duct-production-automation-plc-industry-4?sent=1"/>
+<input name="_autoresponse" type="hidden" value="Hi, thank you for your message to Taokron. A Taokron engineer will reply within 12 hours. Questions before then: sales@taokron.com or WhatsApp +61 435 074 994. Ryan Tao, Taokron"/>
+<input name="Page" type="hidden" value="Automation, PLC Control &amp; Industry 4.0 for HVAC Duct Production Lines"/>
+<input id="productQuoteLeadSource" name="Lead source" type="hidden" value=""/>
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.name" for="pq-name">Nombre</label>
+<input autocomplete="name" id="pq-name" name="name" required="" type="text"/>
+</div>
+<div class="form-field">
+<label data-i18n="cat.company" for="pq-company">Empresa</label>
+<input autocomplete="organization" id="pq-company" name="company" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.email" for="pq-email">Correo electrónico</label>
+<input autocomplete="email" id="pq-email" name="email" required="" type="email"/>
+</div>
+<div class="form-field">
+<label data-i18n="form.country" for="pq-country">País de instalación</label>
+<input autocomplete="country-name" id="pq-country" name="country" required="" type="text"/>
+</div>
+</div>
+<div class="form-field">
+<label data-i18n="form.phone" for="pq-phone">Teléfono / WhatsApp</label>
+<input autocomplete="tel" id="pq-phone" name="phone" type="tel"/>
+</div>
+<div class="form-field">
+<label data-i18n="pq3.question" for="pq-message">Su pregunta</label>
+<textarea data-i18n-placeholder="form.placeholder" id="pq-message" name="message" placeholder="Tipo de material, espesor, capacidad requerida, tamaño disponible del taller..." required="" rows="3"></textarea>
+</div>
+<button class="btn btn-primary" data-i18n="pq3.button" type="submit">Enviar mi pregunta</button>
+<span data-i18n="form.sending" hidden="" id="productQuoteSending">Enviando…</span>
+</form>
+<div class="catalogue-inline" style="margin-top:1.25rem;padding:1rem 1.1rem;border:1px solid var(--border);border-radius:var(--radius)"><p style="margin:0 0 .6rem"><strong data-i18n="catinline.title">¿Aún no está listo para una cotización?</strong> <span data-i18n="catinline.text">Reciba por correo el catálogo 2026: 66 máquinas, una página por cada una.</span></p><form action="https://formsubmit.co/sales@sbkjduct.com" class="newsletter-form catalogue-inline-form" method="POST"><input name="_subject" type="hidden" value="Catalogue request (taokron.com)"/><input name="_template" type="hidden" value="table"/><input name="_captcha" type="hidden" value="false"/><input name="_next" type="hidden" value="https://taokron.com/spec-sheets?catalogue=1"/><input name="_autoresponse" type="hidden" value="Hi, here is the Taokron Product Catalogue 2026 (PDF, 66 machines, one page each): https://taokron.com/downloads/taokron-product-catalogue-2026.pdf  Single machine spec sheets: https://taokron.com/spec-sheets  If one of the machines is close to what you need, reply to this email with your material, gauge and duct sizes and an engineer will come back within 12 hours. Ryan Tao, Taokron, +61 435 074 994"/><input name="Lead source" type="hidden" value="catalogue-inline · /insights/duct-production-automation-plc-industry-4"/><input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/><input aria-label="Correo electrónico" autocomplete="email" data-i18n-placeholder="cat.email" name="email" placeholder="Correo electrónico" required="" style="flex:1 1 200px;min-width:0;padding:.6rem .75rem;font-size:1rem;font-family:var(--font-body);border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text)" type="email"/><button class="btn btn-ghost" data-i18n="cat.button" type="submit">Envíenme el catálogo por correo</button></form></div>
+</div>
+<div class="quote-sent-banner catalogue-sent" hidden="" id="productQuoteSent">
+<span data-i18n="pq3.sent">✓ Enviado. Un ingeniero de Taokron responderá en 12 horas.</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="shell"><div class="content-narrow">
+<h2>Maquinaria para esta aplicación</h2>
+<p>La automatización descrita arriba funciona con equipos estándar de Taokron: <a href="/es/categories/auto-duct-lines">líneas automáticas de producción de conductos</a> para conducto rectangular (la <a href="/es/product/sbal-v">SBAL-V</a>, totalmente automática, y la <a href="/es/product/sbal-iii">SBAL-III</a>, semiautomática), con <a href="/es/categories/tdf-and-lockformer">máquinas de brida TDF y lockformer</a> para el cierre; o bien explore el <a href="/es/machines">catálogo completo de máquinas</a>.</p>
+</div></div>
+</section>
+<script>
+      // Page quote form: thank-you state, same-language return URL, and the
+      // same first-touch attribution the contact form writes.
+      (function () {
+        if (location.search.indexOf('sent=1') !== -1) {
+          var b = document.getElementById('productQuoteSent'); if (b) { b.hidden = false; try { b.scrollIntoView({ block: 'center' }); } catch (e) {} }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          var nx = document.getElementById('productQuoteNext');
+          if (nx && /^https?:$/.test(location.protocol)) { nx.value = location.origin + location.pathname + '?sent=1'; }
+          var ls = document.getElementById('productQuoteLeadSource'); if (!ls) return;
+          var src = new URLSearchParams(location.search).get('source') || '';
+          var ref = '';
+          try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
+          var first = null;
+          try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+          var campaign = src || (first && first.q) || '';
+          var origin = ref || (first && first.ref) || '';
+          var parts = [];
+          parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+          if (origin) parts.push('ref:' + origin);
+          if (first && first.lp) parts.push('landed:' + first.lp);
+          parts.push('form:quote@' + location.pathname);
+          ls.value = parts.join(' \u00b7 ');
+          var form = document.getElementById('productQuoteForm');
+          var btn = form && form.querySelector('button[type="submit"]');
+          if (form && btn) {
+            form.addEventListener('submit', function () {
+              setTimeout(function () {
+                var lbl = document.getElementById('productQuoteSending');
+                btn.disabled = true; btn.textContent = (lbl && lbl.textContent) || 'Sending\u2026';
+              }, 0);
+            });
+          }
+        });
+      })();
+    </script>
+</main>
+<footer class="site-footer">
+<div class="shell footer-grid">
+<div>
+<div class="footer-logo">
+<img alt="Taokron" class="logo-img" decoding="async" height="48" loading="lazy" src="/assets/images/logo.svg" width="129"/>
+<span class="logo-title">Taokron</span>
+</div>
+<p class="footer-text" data-i18n="footer.desc">Fabricante de maquinaria HVAC para conductos espirales, redondos y rectangulares.</p>
+<div class="footer-social">
+<a aria-label="LinkedIn" class="social-linkedin" href="https://www.linkedin.com/company/taokron/" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
+<a aria-label="YouTube" class="social-youtube" href="https://www.youtube.com/@taokron" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a>
+<a aria-label="Instagram" class="social-instagram" href="https://www.instagram.com/taokron/" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.88 0 1.441 1.441 0 012.88 0z"></path></svg></a>
+<a aria-label="Facebook" class="social-facebook" href="https://www.facebook.com/profile.php?id=61587888804663" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
+<a aria-label="TikTok" class="social-tiktok" href="https://www.tiktok.com/@taokron" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></svg></a>
+</div>
+</div>
+<div>
+<h3 data-i18n="footer.navigate">Navegación</h3>
+<ul>
+<li><a data-i18n="nav.home" href="/es/">Inicio</a></li>
+<li><a data-i18n="nav.machines" href="/es/machines">Máquinas</a></li>
+<li><a data-i18n="nav.insights" href="/es/insights/">Artículos</a></li>
+<li><a data-i18n="nav.about" href="/es/about">Nosotros</a></li>
+<li><a data-i18n="nav.why" href="/why-choose-taokron">Por qué Taokron</a></li>
+<li><a data-i18n="nav.pricing" href="/pricing-and-lead-time">Precios y plazos</a></li>
+<li><a data-i18n="nav.support" href="/support">Soporte</a></li>
+<li><a data-i18n="nav.industries" href="/industries/">Industrias</a></li>
+<li><a data-i18n="nav.factory" href="/factory">Fábrica</a></li>
+<li><a data-i18n="nav.quality" href="/quality">Calidad</a></li>
+<li><a data-i18n="nav.videos" href="/videos">Videos</a></li>
+<li><a data-i18n="nav.cases" href="/case-studies/">Casos de estudio</a></li>
+<li><a data-i18n="nav.contact" href="/es/contact">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h3 data-i18n="footer.touch">Contáctenos</h3>
+<ul>
+<li><a href="mailto:sales@taokron.com">sales@taokron.com</a></li>
+<li><a href="https://wa.me/61435074994?text=Hola%20Ryan%2C%20estoy%20viendo%20%C2%ABAutomatizaci%C3%B3n%2C%20control%20PLC%20e%20Industria%204.0%20en%20l%C3%ADneas%20de%20producci%C3%B3n%20de%20conductos%20HVAC%C2%BB%20en%20taokron.com.%20%C2%BFMe%20puede%20enviar%20precio%20y%20un%20video%3F" rel="noopener" target="_blank">+61 435 074 994</a></li>
+<li data-i18n="footer.loc.aus">Box Hill North, VIC, Australia</li>
+</ul>
+</div>
+</div>
+<div class="shell footer-bottom">
+<p class="footer-langs" style="margin-bottom:0.5rem;"><a href="/es/insights/duct-production-automation-plc-industry-4" hreflang="es" lang="es">Español</a> · <a href="/pt/insights/duct-production-automation-plc-industry-4" hreflang="pt" lang="pt">Português</a> · <a href="/fr/insights/duct-production-automation-plc-industry-4" hreflang="fr" lang="fr">Français</a> · <a href="/ru/insights/duct-production-automation-plc-industry-4" hreflang="ru" lang="ru">Русский</a> · <a href="/ar/insights/duct-production-automation-plc-industry-4" hreflang="ar" lang="ar">العربية</a> · <a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/tr/insights/duct-production-automation-plc-industry-4" hreflang="tr" lang="tr">Türkçe</a> · <a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/zh/" hreflang="zh" lang="zh">中文</a></p>
+<p>© <span id="year"></span> <span data-i18n="footer.rights">Taokron. Todos los derechos reservados.</span> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
+</div>
+</footer>
+<a aria-label="Chat on WhatsApp" class="fab-whatsapp" href="https://wa.me/61435074994?text=Hola%20Ryan%2C%20estoy%20viendo%20%C2%ABAutomatizaci%C3%B3n%2C%20control%20PLC%20e%20Industria%204.0%20en%20l%C3%ADneas%20de%20producci%C3%B3n%20de%20conductos%20HVAC%C2%BB%20en%20taokron.com.%20%C2%BFMe%20puede%20enviar%20precio%20y%20un%20video%3F" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<script src="/assets/js/main.js?v=18"></script>
+
+<script src="/assets/js/chatbot.js"></script>
+</body>
+</html>
