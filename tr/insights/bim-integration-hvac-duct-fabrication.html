@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#000000" name="theme-color"/>
+<title>HVAC Kanal İmalatı için BIM Entegrasyonu | Taokron</title>
+<meta content="HVAC kanalları için BIM'den imalata iş akışı: Revit MEP, CAMduct, imalat verisi dışa aktarımı, PCF/MAJ/IFC formatları ve Taokron hatlarıyla PLC entegrasyonu." name="description"/>
+<link href="https://taokron.com/tr/insights/bim-integration-hvac-duct-fabrication" rel="canonical"/>
+  <link rel="alternate" hreflang="en" href="https://taokron.com/insights/bim-integration-hvac-duct-fabrication" />
+  <link rel="alternate" hreflang="ar" href="https://taokron.com/ar/insights/bim-integration-hvac-duct-fabrication" />
+  <link rel="alternate" hreflang="es" href="https://taokron.com/es/insights/bim-integration-hvac-duct-fabrication" />
+  <link rel="alternate" hreflang="fr" href="https://taokron.com/fr/insights/bim-integration-hvac-duct-fabrication" />
+  <link rel="alternate" hreflang="pt" href="https://taokron.com/pt/insights/bim-integration-hvac-duct-fabrication" />
+  <link rel="alternate" hreflang="ru" href="https://taokron.com/ru/insights/bim-integration-hvac-duct-fabrication" />
+  <link rel="alternate" hreflang="tr" href="https://taokron.com/tr/insights/bim-integration-hvac-duct-fabrication" />
+  <link rel="alternate" hreflang="x-default" href="https://taokron.com/insights/bim-integration-hvac-duct-fabrication" />
+<meta content="Taokron" name="author"/>
+<meta content="AU-VIC" name="geo.region"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="Taokron" property="og:site_name"/>
+<meta content="tr_TR" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="HVAC Kanal İmalatı için BIM Entegrasyonu: Revit'ten Otomatik Kanal Hattına İş Akışı Rehberi" property="og:title"/>
+<meta content="HVAC kanalları için BIM'den imalata iş akışı: Revit MEP, CAMduct, imalat verisi dışa aktarımı, PCF/MAJ/IFC formatları ve Taokron hatlarıyla PLC entegrasyonu." property="og:description"/>
+<meta content="https://taokron.com/tr/insights/bim-integration-hvac-duct-fabrication" property="og:url"/>
+<meta content="https://taokron.com/assets/images/og/bim-integration-hvac-duct-fabrication.jpg" property="og:image"/>
+<meta content="2026-05-03T00:00:00+10:00" property="article:published_time"/>
+<meta content="2026-10-21T00:00:00+11:00" property="article:modified_time"/>
+<meta content="https://taokron.com/assets/images/og/bim-integration-hvac-duct-fabrication.jpg" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@taokron" name="twitter:site"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="/assets/css/styles.css?v=55" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://taokron.com/#author-engineering", "name": "Taokron Engineering Team", "url": "https://taokron.com/about", "description": "Taokron engineering team working on HVAC ductwork machinery design, BIM-to-fabrication workflow and PLC integration.", "parentOrganization": {"@id": "https://taokron.com/#org"}, "knowsAbout": ["Revit MEP", "Autodesk CAMduct", "Autodesk CADmep", "BIM coordination", "HVAC fabrication", "ISO 19650", "IFC", "gbXML", "PCF", "MAJ", "Auto duct production line", "SMACNA", "AS/NZS 4254", "PLC integration"]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://taokron.com/"}, {"@type": "ListItem", "position": 2, "name": "Rehberler", "item": "https://taokron.com/insights/"}, {"@type": "ListItem", "position": 3, "name": "HVAC Kanal İmalatı için BIM Entegrasyonu", "item": "https://taokron.com/tr/insights/bim-integration-hvac-duct-fabrication"}]}, {"@type": "TechArticle", "headline": "HVAC Kanal İmalatı için BIM Entegrasyonu: Revit'ten Otomatik Kanal Hattına İş Akışı Rehberi", "description": "HVAC kanal imalat makineleriyle Yapı Bilgi Modellemesi (BIM) entegrasyonuna dair mühendis odaklı bir başvuru kaynağı: Revit MEP kanal elemanları, CAMduct ve CADmep, imalat verisi dışa aktarma formatları (PCF, MAJ, IFC, XML kesim listeleri, DXF), spool çizimleri, plazma masalarına ve otomatik kanal hatlarının PLC'lerine doğrudan CNC gönderimi, LOD ilerleyişi ve dijital ikiz geri bildirimi.", "author": {"@id": "https://taokron.com/#author-engineering"}, "reviewedBy": {"@type": "Organization", "name": "Taokron BIM & Engineering", "url": "https://taokron.com/about", "description": "Taokron BIM coordination and engineering team — every published guide is reviewed by senior engineers and BIM coordinators before publication and re-validated on each update."}, "publisher": {"@id": "https://taokron.com/#org"}, "datePublished": "2026-05-03T00:00:00+10:00", "dateModified": "2026-10-21T00:00:00+11:00", "image": "https://taokron.com/assets/images/sbal-v.jpg", "mainEntityOfPage": "https://taokron.com/tr/insights/bim-integration-hvac-duct-fabrication", "inLanguage": "tr", "proficiencyLevel": "Expert", "articleSection": "HVAC Manufacturing - BIM and Digital Workflow", "about": [{"@type": "Thing", "name": "Yapı Bilgi Modellemesi"}, {"@type": "Thing", "name": "Revit MEP HVAC imalatı"}, {"@type": "Thing", "name": "BIM'den imalata iş akışı"}, {"@type": "Thing", "name": "CAMduct CADmep"}, {"@type": "Thing", "name": "Otomatik kanal hattı PLC entegrasyonu"}], "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".article-lead", "h2"]}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "HVAC kanalları için BIM'den imalata iş akışı nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Koordine edilmiş bir Revit MEP kanal modelini, atölye zemininde plazma tezgâhlarını, bobin hatlarını ve otomatik kanal üretim hatlarını yöneten makineye hazır kesim listelerine, spool çizimlerine ve CNC dosyalarına dönüştüren iş akışı. Manuel metrajın ve CAMduct'ta yeniden çizimin yerine tasarımcıdan makineye kesintisiz bir veri yolu koyar; böylece yeniden işçilik ve boy sapması azalır."}}, {"@type": "Question", "name": "Revit tasarım parçaları ile imalat parçaları arasındaki fark nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Tasarım parçaları varsayılan Revit MEP kanal elemanlarıdır: tasarım niyeti ve çakışma tespiti için boyutlandırılmış basitleştirilmiş yer tutucular. İmalat parçaları ise bir CAMduct veya CADmep ITM'den yüklenen; dikişleri, gauge değerleri, bağlantı tipleri, conta kanalları ve tedarikçiye özgü ölçüleriyle doğrudan bir CNC makinesine aktarılabilen gerçek atölye bileşenleridir. Kanal atölyesi, herhangi bir kesim listesi, spool çizimi veya PLC dosyası üretilmeden önce tasarım parçalarını imalat parçalarına dönüştürmek zorundadır."}}, {"@type": "Question", "name": "Taokron otomatik kanal hatları BIM'den hangi dosya formatlarını kabul eder?", "acceptedAnswer": {"@type": "Answer", "text": "Bu, hatta ve denetleyicisine bağlıdır; bu yüzden hattınızdaki denetleyicinin hangi iş dosyası formatlarını kabul ettiğini Taokron'a sorun. BIM iş akışında olağan adaylar şunlardır: XML kesim listesi (CAMduct kesim listesi dışa aktarımı), iç içe yerleştirilmiş plazma kesimi için DXF düz açılımlar, JSON iş paketi ve CSV (temel bir kesim listesi veya tedarik malzeme listesi)."}}, {"@type": "Question", "name": "Revit'ten otomatik kanal hattına iş akışını kurmak ne kadar sürer?", "acceptedAnswer": {"@type": "Answer", "text": "Mevcut bir Revit MEP lisansı ve eğitimli bir CAMduct veya CADmep operatörü olan bir kanal atölyesi için 4–8 hafta planlayın: 1 hafta denetim ve imalat konfigürasyonunun makine takımlarınıza eşlenmesi, 1–2 hafta bağlantı kitaplığı ve sac kalınlığı eşlemesinin oluşturulması, 1–2 hafta pilot modelin dönüştürülmesi ve uçtan uca 50 parçalık bir pilot partinin çalıştırılması, 1–3 hafta da süreç ayarı ve ölçek büyütme. Daha önce Autodesk Fabrication deneyimi olmayan atölyeler, operatör eğitimi dahil 12–16 hafta planlamalıdır."}}, {"@type": "Question", "name": "BIM'den imalata entegrasyonun yatırım getirisi nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Geri dönüş süresi kanal hacminize, mevcut metraj emeğinize ve yeniden işçilik oranınıza bağlıdır; bu yüzden başlamadan önce ve pilottan sonra kendi referans değerinizi ölçün. Ana etkenler azalan boy sapması, daha az manuel metraj saati, fitinglerde daha az yeniden işçilik ve daha hızlı tedarik sürecidir."}}, {"@type": "Question", "name": "Autodesk Fabrication CAMduct olmadan BIM'den imalata iş akışını çalıştırabilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. CAMduct, Revit uyumlu içerikle geldiği için en yaygın yoldur; ancak MagiCAD for Revit ve eVolve Mechanical for Revit gibi üçüncü taraf Revit eklentileri de imalata hazır veri dışa aktarabilir. Bazı atölyeler, hat için genellikle CSV veya DXF olarak bir kesim listesi üretmek amacıyla Revit'ten IFC4 dışa aktarımını özel bir IFC ayrıştırıcıyla birlikte kullanır. Yerel Revit tasarım parçaları ile bir Dynamo betiği de temel bir kesim listesi üretebilir, ancak bu yolda spool çizim otomasyonu ve doğrudan CNC gönderimi kaybedilir."}}, {"@type": "Question", "name": "İmalat için hangi LOD gerekir?", "acceptedAnswer": {"@type": "Answer", "text": "İmalat LOD 400 gerektirir: gerçek imalat dikişlerini, bağlantı ölçülerini, gauge eşlemesini, askı konumlarını ve imalat toleransı içinde doğru aksesuar konumlarını içeren geometri. LOD 200 (tasarım niyeti) ve LOD 350 (çakışma için koordine edilmiş) imalata hazır değildir. Çoğu proje, ilk kanal parçasının şantiyede gerekmesinden tipik olarak 6-10 hafta önce, imalat resmi aşamasının başında LOD 350'den LOD 400'e geçer."}}, {"@type": "Question", "name": "Taokron, otomatik kanal hattı satın alımının bir parçası olarak BIM danışmanlığı sağlıyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Teklif istediğinizde bir Taokron mühendisi, BIM iş akışınızı ve belirli bir hattın kabul ettiği iş dosyası formatlarını sizinle konuşabilir. Operatör eğitimi, her ürün sayfasında belirtildiği gibi devreye alma ziyaretinin bir parçasıdır."}}]}, {"@type": "HowTo", "name": "Revit'ten Otomatik Kanal Hattına İş Akışı Nasıl Kurulur", "description": "Koordine edilmiş bir Revit MEP modelinden imalata hazır içeriğe, CAMduct kesim listesi üretimine, spool çizimi otomasyonuna ve bir otomatik kanal üretim hattına doğrudan CNC aktarımına geçişi anlatan 20 adımlık eksiksiz bir prosedür.", "totalTime": "P56D", "image": "https://taokron.com/assets/images/sbal-v.jpg", "tool": [{"@type": "HowToTool", "name": "Autodesk Revit MEP 2024, 2025 veya 2026"}, {"@type": "HowToTool", "name": "Autodesk Fabrication CAMduct"}, {"@type": "HowToTool", "name": "Autodesk Fabrication CADmep"}, {"@type": "HowToTool", "name": "Autodesk Navisworks Manage"}, {"@type": "HowToTool", "name": "Plazma tezgâhı veya otomatik kanal hattı PLC arayüzü"}], "step": [{"@type": "HowToStep", "position": 1, "name": "Mevcut metraj sürecinizi denetleyin", "text": "Mevcut manuel metraj sürecini, 100 m² kanal başına harcanan süreyi, fitinglerdeki hata oranını ve yeniden işçilik yüzdesini belgeleyin. Bu referans değer, yatırım getirisi hesabını belirler ve hangi iş akışı aşamalarının BIM entegrasyonundan en çok yararlandığını ortaya koyar."}, {"@type": "HowToStep", "position": 2, "name": "Revit MEP sürüm uyumluluğunu doğrulayın", "text": "Tasarım ekibinin Revit MEP sürümünü (2024, 2025 veya 2026) kontrol edin ve Autodesk Fabrication paketinizin (CAMduct, CADmep) ile eşleştiğini doğrulayın. 2024 imalat içeriğini 2026 Revit ile karıştırmak, gidiş-dönüşte sessiz veri kaybına yol açar."}, {"@type": "HowToStep", "position": 3, "name": "Makine takımlarınızı bir imalat yapılandırmasına eşleyin", "text": "Atölyenizin tam takım yapısını yansıtan bir CAMduct ITM veritabanı oluşturun veya yükleyin: desteklenen bobin genişlikleri, dikiş tipleri (Pittsburgh, snaplock, düğme zımbalı), bağlantı tipleri (TDF, geçmeli flanş, S-and-drive) ve yalıtımı önceden uygulama kabiliyeti."}, {"@type": "HowToStep", "position": 4, "name": "Donanımınıza uyan bir bağlantı kütüphanesi oluşturun", "text": "Her CAMduct bağlantı ITM'sini raftaki gerçek donanımla eşleştirin: TDF erkek/dişi cleat ölçüleri, geçmeli flanş profilleri, enine birleşim köşeleri. ITM'deki yanlış bağlantı ölçüleri, sonraki tüm kesim boylarının 6-25 mm sapmasına neden olur."}, {"@type": "HowToStep", "position": 5, "name": "Gauge tablolarını bobin stokunuza eşleyin", "text": "Sac stokunuza uyan bir CAMduct sac kalınlığı tablosu oluşturun: SMACNA ve AS/NZS 4254 için galvanizli çelikte en az 0,5, 0,6, 0,8, 1,0, 1,2 ve 1,5 mm girişleri gerekir; kullanılıyorsa paslanmaz çelik ve alüminyum için de girişler eklenmelidir. Her sac kalınlığını mevcut sac genişlikleriyle eşleyin."}, {"@type": "HowToStep", "position": 6, "name": "Revit tasarım parçalarını imalat parçalarına dönüştürün", "text": "Design to Fabrication komutuyla tasarım kanallarını imalat parçalarına dönüştürmek için Revit Fabrication Parts araç setini kullanın. Her dönüşümü doğrulayın: sahipsiz kalan fitingler, Fabrication Browser'da dönüştürülmemiş segmentler olarak raporlanır."}, {"@type": "HowToStep", "position": 7, "name": "Navisworks Manage'de çakışma tespiti yapın", "text": "İmalata dönüştürülmüş Revit modelini NWC olarak dışa aktarın, Navisworks Manage'de mimari ve statik NWC dosyalarını ekleyin ve Clash Detective aracıyla sert çakışma testi çalıştırın. Herhangi bir imalat verisini dışa aktarmadan önce tüm sert çakışmaları çözün."}, {"@type": "HowToStep", "position": 8, "name": "LOD 400 imalat hazırlığını doğrulayın", "text": "Modelin LOD 400'de olduğunu doğrulayın: her kanal segmentinin gerçek bir dikişi, her fitingin gerçek bağlantı geometrisi, her aksesuarın atölye zemini ölçüleri vardır. LOD 350 modeller, sahada yeniden işçilik gerektiren kesim listeleri üretme eğilimindedir."}, {"@type": "HowToStep", "position": 9, "name": "Kanalı kat ve sistemlere göre spool'lara gruplayın", "text": "CAMduct veya CADmep'te imalat parçalarını spool'lara gruplayın: genellikle kat seviyesine, sistem etiketine (SA, RA, EA, OA) ve taşıma ile montaj için uygun en fazla 6 m veya 12 m'lik demet uzunluğuna göre."}, {"@type": "HowToStep", "position": 10, "name": "Spool çizimlerini üretin", "text": "Parça işaretleri, ölçüler, gauge belirtmeleri, bağlantı çizelgesi ve spool başına malzeme listesi içeren izometrik imalat resimlerini otomatik üretmek için CAMduct veya CADmep'te Spool Drawing aracını çalıştırın. Tüm projeyi toplu üretmeden önce rastgele üç spool'u elle doğrulayın."}, {"@type": "HowToStep", "position": 11, "name": "Bobin yerleştirmeyi (nesting) çalıştırın", "text": "Malzeme verimi için optimize edilmiş iç içe yerleşim kesim desenleri üretmek amacıyla CAMduct Coil Nesting modülünü kullanın; verim genellikle yoğun fitting partilerine kıyasla düz dikdörtgen kanal hatlarında daha yüksektir. Dikiş payını, hurda payını ve plazma masanızın kesim genişliğine uyan bir kerf telafisini ayarlayın."}, {"@type": "HowToStep", "position": 12, "name": "Kesim listesini dışa aktarın", "text": "Proje kesim listesini, CAMduct Cut List Export to XML komutuyla XML olarak dışa aktarın. XML yapısı; parça kimliğini, sistem etiketini, gauge'i, blank uzunluk ve genişliğini, fiting tipini, dikiş tipini ve bağlantı referanslarını içermelidir."}, {"@type": "HowToStep", "position": 13, "name": "XML kesim listesini makine iş formatına eşleyin", "text": "Makine denetleyicisi CAMduct XML'ini doğrudan okumuyorsa, onu denetleyicinin iş formatına eşleyen bir dönüşümden geçirin ve eleman sıralamasını ile birim bildirimini makine tedarikçisiyle teyit edin."}, {"@type": "HowToStep", "position": 14, "name": "DXF açınımlarını üretin", "text": "Otomatik kanal hattının dışında plazma kesimi gerektiren standart dışı her fiting için CAMduct'tan DXF açınımlarını dışa aktarın. Geçişler, ofsetler ve oval-yuvarlak geçişler genellikle bir CNC plazma tezgâhına yönlendirilir; düz hatlar ve standart fitingler ise otomatik kanal hattında kalır."}, {"@type": "HowToStep", "position": 15, "name": "Satın alma malzeme listesini hazırlayın", "text": "Tedarik malzeme listesi (BOM) üretmek için CAMduct Quantity Takeoff çıktısını CSV olarak alın: kalınlık ve genişlik başına sac, bağlantı donanımı adedi, conta uzunluğu, askı adedi. Sac tedarikçinizle teyit ettiğiniz, işteki en uzun sac temin süresini karşılayacak kadar erken bir zamanda satın almaya devredin."}, {"@type": "HowToStep", "position": 16, "name": "50 parçalık pilot parti çalıştırın", "text": "Temsili 50 parçalık bir alt küme çalıştırın: otomatik kanal hattında düz kanallar, standart fittingler ve bir uç bağlantısı, ayrıca plazma masasında DXF düz açılım olarak iki geçiş tipi ve iki ofset tipi. Kesim uzunluğu sapmasını, fitting hassasiyetini ve bağlantı oturmasını modele göre ölçün."}, {"@type": "HowToStep", "position": 17, "name": "Pilot verilere göre imalat yapılandırmasını ayarlayın", "text": "Pilot sapma %2'nin üzerindeyse CAMduct imalat yapılandırmasını ayarlayın: tipik olarak bağlantı payı, dikiş payı veya gauge eşlemesi. Tam proje hacmine geçmeden önce sapma %2'nin altına inene kadar pilotu yeniden çalıştırın."}, {"@type": "HowToStep", "position": 18, "name": "Üretimi doğrudan BIM'den planlayın", "text": "Hattın denetleyicisi destekliyorsa, spool sırası iş kuyruğunu yönetecek şekilde BIM ekibinden günlük bir iş paketi alın ve tamamlanma bilgisini BIM modeline geri bildirin."}, {"@type": "HowToStep", "position": 19, "name": "As-built verisini toplayıp modele geri besleyin", "text": "İmalat tamamlandığında parça işaretlerini taramak için atölye zemininde bir tablet kullanın; gerçek kesim boyunu, gauge'i ve sahadaki sapmaları kaydedin. Veriyi bir Dynamo betiği veya BIM 360 / Autodesk Construction Cloud Issue ile Revit'e geri göndererek dijital ikiz döngüsünü kapatın."}, {"@type": "HowToStep", "position": 20, "name": "Gözden geçirin ve standartlaştırın", "text": "İlk üç projeden sonra sapma raporlarını gözden geçirin ve imalat yapılandırmasını standartlaştırın: CAMduct ITM veritabanını kilitleyin, bağlantı kütüphanesini sürüm kontrolüne alın ve yeni operatörler için dahili bir BIM'den imalata kılavuzu yayımlayın."}]}]}</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "x4n6j0p80n");
+  </script>
+</head>
+<body class="site-body"><script>try{localStorage.setItem("sbkj-lang","tr")}catch(e){}</script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="shell">
+<div class="site-header-inner">
+<a class="logo" href="/tr/">
+<img alt="Taokron" class="logo-img" decoding="async" height="48" src="/assets/images/logo.svg" width="129"/>
+<span class="logo-text">
+<span class="logo-title">Taokron</span>
+<span class="logo-subtitle">Group</span>
+</span>
+</a>
+<button aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle menu" class="nav-toggle">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Primary" class="site-nav" id="primaryNav">
+<a data-i18n="nav.home" href="/tr/">Ana Sayfa</a>
+<a data-i18n="nav.machines" href="/tr/machines">Makineler</a>
+<a data-i18n="nav.insights" href="/tr/insights/">İçgörüler</a>
+<a data-i18n="nav.about" href="/tr/about">Hakkımızda</a>
+<a class="nav-cta" data-i18n="nav.contact" href="/tr/contact">İletişim</a>
+</nav>
+</div>
+</div>
+</header>
+<main id="main">
+<nav class="breadcrumbs-wrap"><div class="shell"><nav aria-label="Gezinti yolu" class="breadcrumbs"><ol><li><a href="/">Ana Sayfa</a></li><li><a href="/tr/insights/">Rehberler</a></li><li aria-current="page"><span>HVAC Kanal İmalatı için BIM Entegrasyonu</span></li></ol></nav></div></nav>
+<article class="section page-hero bg-subtle">
+<div class="shell">
+<p class="eyebrow">Rehberler · BIM ve Dijital İş Akışı</p>
+<h1 class="page-title">HVAC Kanal İmalatı için BIM Entegrasyonu: Revit'ten Otomatik Kanal Hattına İş Akışı Rehberi</h1>
+<p class="article-lead">Koordine edilmiş bir Revit MEP kanal modelini atölye zeminine bağlamak için mühendislik başvuru kaynağı: veri modeli, imalat parçaları, dosya formatları, spool çizim otomasyonu, plazma masalarına ve otomatik kanal hatlarına doğrudan CNC gönderimi, LOD ilerleyişi, dijital ikiz geri bildirimi ve çoğu BIM'den imalata ekibini yanıltan hata modları. Taokron mühendislik ekibi tarafından, BIM'den imalata iş akışı planlayan atölyeler için genel bir başvuru kaynağı olarak yazılmıştır.</p>
+<p class="article-byline"><span class="article-byline-author">Yazan: <a href="/tr/about" rel="author">Taokron Mühendislik Ekibi</a></span>
+<span class="article-byline-sep">·</span>
+<span>Yayın tarihi: <time datetime="2026-05-03">3 Mayıs 2026</time></span>
+<span class="article-byline-sep">·</span>
+<span>28 dk okuma</span>
+<span class="article-byline-sep">·</span>
+<span>Taokron BIM ve Mühendislik tarafından gözden geçirilmiştir</span></p>
+</div>
+</article>
+<section class="section">
+<div class="shell"><div class="content-narrow">
+<h2>1. Revit MEP'ten atölye zeminine uzanan iş akışı boşluğu</h2>
+<p>2026'da ciddi hacimle çalışan hemen her kanal atölyesi yapısal bir boşlukla yaşar. Boşluğun bir yanında tasarım ekibi LOD 350'de koordine edilmiş 3D bir Revit MEP modeli kurar, Navisworks Manage ile çakışma tespiti çalıştırır ve bir hastane makine dairesinden geçen güzel bir mor-mavi kanal güzergâhını onaylar. Boşluğun öbür yanında bir metraj mühendisi bu modeli CAMduct'ta açar, hattı imalat modeli olarak elle yeniden oluşturur, her geçişi ve ofseti baştan çizer, kesim listesini elle çıkarır ve ölçüleri otomatik kanal hattının HMI'ına parça parça giren bir imalatçıya PDF spool çizimi e-postalar. İki mühendislik ekibi. İki ayrı model. Bir projelik önlenebilir yeniden işçilik.</p>
+<p>Bu boşluğun maliyeti sektörde iyi bilinir. Yüksek kanal hacimleriyle çalışan orta ölçekli bir mekanik müteahhit, as-built durum modelden saptığı için monte edilen uzunluğun anlamlı bir bölümünün yeniden işlendiğini görebilir. En kötü sapmayı fitingler taşır: yoğun kanal güzergâhlı hastane makine dairelerinde, geçişlerin ve ofsetlerin dikkate değer bir kısmı saha koşuluyla örtüşmeyen ölçülerde imal edilebilir. Bu sapmanın çoğu bir imalat hatası değildir. Bir çeviri hatasıdır: tasarım modeli iki kez yorumlanır ve her seferinde çeviride kaybolur.</p>
+<p>HVAC kanal imalat makineleriyle Yapı Bilgi Modellemesi entegrasyonu bu boşluğu kapatan köprüdür. İyi uygulandığında tek bir geometrik doğruluk kaynağını BIM koordinatöründen CAMduct'a, oradan otomatik kanal hattının PLC'sine taşır ve as-built verisi olarak modele geri döndürür: elle yeniden çizim yok, elle girilen PDF spool çizimleri yok, aynı fittingin iki mühendis tarafından farklı yorumlanması yok. Uygulamada bu, Autodesk Fabrication'ı zaten kullanan bir atölye için 4 ila 8 haftalık, yeni başlayan bir atölye için ise tam proje hacmine ölçeklenmeden önce küçük bir pilot parti dahil 12 ila 16 haftalık bir kurulum anlamına gelir.</p>
+<p>Bu makale iş akışının nasıl kurulacağını açıklar. İki okuyucu için yazılmıştır: modelinden atölye zemininin ne beklediğini anlaması gereken BIM koordinatörü ve BIM ekibinin kendisine fiilen ne teslim ettiğini anlaması gereken kanal atölyesi sahibi. Revit MEP temellerine hâkim olduğunuzu ve en azından bir kez CAMduct arayüzünü gördüğünüzü varsayıyoruz; sıfırdan başlıyorsanız önce 3. bölümdeki araçların üretici dokümantasyonunu okuyun. Aşağıdaki her şey somuttur: yazılım sürümleri, komut adları, dosya uzantıları, şema parçaları ve yolda karşılaşacağınız belirli hata modları.</p>
+<h2>2. Revit MEP kanal elemanları: her kanal parçasının ardındaki veri modeli</h2>
+<p>Herhangi bir dışa aktarım iş akışına dokunmadan önce, bir Revit kanal elemanının gerçekte neyi içerdiğini anlayın. Modern bir Revit MEP kanalı (2024, 2025 ve 2026 sürümlerinde) 3D bir şekil değildir; tanımlı bir veri modeline sahip parametrik bir örnektir. Revit MEP'te bir kanal yerleştirdiğinizde, Properties paletinde şu özelliklere sahip bir nesne oluşturmuş olursunuz:</p>
+<ul>
+<li><strong>Ölçü</strong>: dikdörtgen için genişlik ve yükseklik, yuvarlak için çap. Proje birimlerinden bağımsız olarak dahili olarak ondalık fit cinsinden saklanır ve görüntüleme için proje birimlerine dönüştürülür.</li>
+<li><strong>Sistem Tipi</strong>: Besleme Havası, Dönüş Havası, Egzoz Havası, Dış Hava veya herhangi bir özel sistem. Sistem renklendirmesini ve Navisworks filtrelemesini yönlendirir.</li>
+<li><strong>Sistem Sınıflandırması</strong>: daha geniş kategori (Besleme, Dönüş, Egzoz). Sistem Tipi'nden ayrıdır ve analiz araçları tarafından kullanılır.</li>
+<li><strong>Yalıtım Tipi ve Kalınlığı</strong>: kanala bağlı ayrı bir nesne. Enerji analizi için ısıl iletkenlik taşır, ancak varsayılan olarak atölye zemini dikiş bilgisi içermez.</li>
+<li><strong>İç Kaplama Tipi ve Kalınlığı</strong>: iç akustik kaplama; yine varsayılan olarak imalat ayrıntısı içermez.</li>
+<li><strong>Referans Kotu ve Ofset</strong>: çakışma tespitini yönlendiren kot ve kat bağı.</li>
+<li><strong>Debi</strong>: hava debisi (l/s veya m³/h); sistem analizinde kullanılır, ancak doğrudan imalatta kullanılmaz.</li>
+<li><strong>Bağlantı Geometrisi</strong>: fiting seçimini belirleyen uç bağlantıları.</li>
+</ul>
+<p>Bir Revit kanal fitingi (geçiş, dirsek, T, ofset, branşman) ayrı bir Family örneğidir; tipik olarak standart MEP içerik kütüphanesinden yüklenen bir Family'dir. Her fiting Family'si kendi boyutunu, açısını, boğaz yarıçapını ve bağlantı tanımlarını taşır. Kritik nokta şudur: varsayılan Revit fitingleri <em>tasarım parçalarıdır</em>; geometrik ölçüleri vardır, ancak imalat ayrıntısı yoktur (dikiş payı, bağlantı flanşı, gauge belirtimi yoktur; genel bir sistem renginin ötesinde malzeme tipi yoktur).</p>
+<p>Bu veri modeli, tasarım koordinasyonu, temel enerji analizi ve çakışma tespiti için yeterlidir. Bir CNC makinesini yönetmek için yeterli değildir. Sebep basittir: kanal atölyesi zemini, tasarım veri modelinin saklamadığı özelliklere önem verir: dikiş tipi, bağlantı tipi, gauge, conta kanalı, imalat toleransı, uç boyu, askı konumu. Bu özellikleri modele almak için tasarım parçalarını imalat parçalarına dönüştürmeniz gerekir; bu da 5. bölümün konusudur.</p>
+<h3>2.1 Kanal Family tipleri ve nerede durdukları</h3>
+<p>Standart Revit MEP kurulumu üç kategoride kanal içeriği ile gelir: Kanallar (doğrusal segmentler), Kanal Fitingleri (dirsekler, T'ler, geçişler, ofsetler) ve Kanal Aksesuarları (damperler, susturucular, duman dedektörleri). Varsayılan içerik Windows'ta <code>C:\ProgramData\Autodesk\RVT 2026\Libraries\English\Mechanical\MEP</code> konumunda bulunur ve <code>.rfa</code> Family dosyaları olarak yüklenir. Çoğu proje küçük bir alt kümeyi yükler ve nelerin kullanılabilir olduğunu standartlaştırmak için MEP şablonuna güvenir. Yüklü kanal içeriğinin hızlı denetimi, bir projeyi başka bir BIM koordinatöründen devraldığınızda yaptığınız ilk iştir: Project Browser'ı açın, <em>Families &gt; Duct Fittings</em> bölümünü genişletin ve modellemeye başlamadan önce gerçekten ihtiyaç duyduğunuz dirsekler, T'ler ve geçişlerin mevcut olduğunu doğrulayın.</p>
+<aside class="machine-callout" style="margin:1.5rem 0;padding:1rem 1.1rem;border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--radius)"><p style="margin:0 0 .4rem"><strong>Kanal atölyesi mi kuruyorsunuz veya yeniliyorsunuz?</strong> <a href="/tr/product/sbal-iii">Otomatik Kanal Hattı SBAL-III</a> · <a href="/tr/product/sbtf-1500">Spiral Tubeformer SBTF-1500</a></p><p style="margin:0 0 .4rem;font-size:.92rem">Fotoğraflı gerçek kurulum: <a href="/case-studies/australia-airtemp-canberra-duct-shop">Airtemp Canberra</a> (8 makineli dikdörtgen kanal atölyesi, Eylül 2026).</p><p style="margin:0"><a href="#quote">Kanal ölçülerinizi gönderin, 12 saat içinde fiyat alın →</a></p></aside>
+<h2>3. Revit eklentileri ve dışa aktarıcılar: araç ortamı</h2>
+<p>2026'da Revit ekosistemi, koordine edilmiş bir MEP modelinden imalata hazır veriye giden dört ana yolu destekler. Her birinin en iyi olduğu kullanım alanı ve lisans maliyeti farklıdır. Bilinçli seçin.</p>
+<h3>3.1 Autodesk Fabrication CAMduct ve CADmep</h3>
+<p>Autodesk'in yerel yolu. CAMduct atölye zemini uygulamasıdır: sac iç içe yerleşimi, kesim listesi üretimi, makine çıktısı, plazma masası NC gönderimi, spool çizim otomasyonu. CADmep, BIM koordinatörlerinin imalata dönüştürülmüş hatları 2B olarak yerleştirmek için kullandığı AutoCAD tabanlı eşlikçi uygulamadır. Revit Fabrication Parts araç seti (Revit 2016 R2'den beri Revit'e yerleşiktir) CAMduct ITM veritabanını doğrudan yükler ve Revit içinde, konfigürasyonunuzdaki tüm imalat parçalarını gösteren bir Fabrication Browser paleti sunar.</p>
+<p>Çoğu atölyenin bu yolu seçmesinin nedeni, Revit, CADmep ve CAMduct arasındaki gidiş-dönüşün ortak bir içerik veritabanı kullanmasıdır: CAMduct'ta bir bağlantı ölçüsünde yapılan değişiklik, bir sonraki yeniden yüklemede Revit'e yansır. Lisanslama Autodesk AEC Collection veya bağımsız Fabrication paketi üzerinden yapılır. Atölye zemini planlamacısı başına bir CAMduct lisansı ve imalat düzenlemesi yapacak BIM koordinatörü başına bir CADmep lisansı planlayın.</p>
+<h3>3.2 MagiCAD for Revit</h3>
+<p>Revit için baskın Avrupa MEP eklentisidir; Avrupalı kanal üreticilerinin güçlü içerik kütüphaneleri ve bölge bazında sertifikalı ürün verisi sunar. MagiCAD for Revit, kendi kanal boyutlandırma motoru, dengeleme motoru ve imalat düzeyinde çıktı üreten bir Metraj (BoQ) dışa aktarımı ile gelir. Kanal içeriğinin ulusal bir standart kataloğa (DIN, EN, BS) bağlı olduğu pazarlarda özellikle güçlüdür.</p>
+<h3>3.3 eVolve Mechanical for Revit</h3>
+<p>İmalat detaylandırma iş akışının kendisine odaklanan bir Revit eklentisidir. eVolve Mechanical, yerel Revit imalat parçalarını askı otomasyonu, Trimble veya Topcon total station cihazlarına yerleşim noktası dışa aktarımı, kaynak işareti numaralandırması ve daha atölye odaklı bir spool çizimi motoruyla genişletir. Pek çok Kuzey Amerikalı mekanik müteahhit, eVolve'u CAMduct'ın yerine değil yanında çalıştırır: eVolve saha koordinasyonu tarafını, CAMduct ise kesim listesini ve makine çıktısını üstlenir.</p>
+<h3>3.4 Yerel Revit artı Dynamo</h3>
+<p>Yukarıdakilerin hiçbirine sahip olmayan atölyeler için en düşük maliyetli yol, yerel Revit MEP tasarım parçaları ile her kanal elemanını dolaşan, ölçüleri okuyan ve bir CSV kesim listesi yazan bir Dynamo betiğidir (Dynamo ücretsizdir ve Revit ile birlikte gelir). Bu, kullanılabilir bir temel kesim listesi üretir, ancak spool çizimi otomasyonunu, bağlantı kütüphanesi eşlemesini ve doğrudan CNC aktarımını kaybeder. Autodesk Fabrication içeriğinin temininin zor olduğu pazarlardaki atölyeler için uygulanabilir bir başlangıç noktasıdır. Hattın denetleyicisinin hangi iş dosyası formatlarını kabul ettiğini makine tedarikçisiyle teyit edin.</p>
+<h2>4. İmalat aktarımı için yaygın dosya formatları</h2>
+<p>İmalat verisini hangi eklentinin ürettiğine karar verdikten sonra, sıradaki karar aktarım formatıdır. Her formatın taşıdığı özellikler kümesi ve doğruluk düzeyi farklıdır. Bu kararı yanlış verirseniz, projeyi modelde zaten bulunan veriyi yeniden oluşturarak geçirirsiniz.</p>
+<h3>4.1 PCF: Piping Component File</h3>
+<p>Aslen bir boru formatı olan PCF (.pcf, düz metin), mekanik imalat araçlarında yaygın olarak desteklenir. Bileşen tiplerini, ölçüleri, malzemeleri ve bağlantı verilerini düz, insan tarafından okunabilir bir şemada taşır. Kanal işlerinde PCF nadiren doğrudan kullanılır; birkaç iş akışında uyarlanmıştır, ancak yerel sözcük dağarcığı boru odaklıdır. Eksik kalmasın diye anıyoruz; bir kanal atölyesinde daha ilgili formatlar MAJ ve CAMduct XML'idir.</p>
+<h3>4.2 MAJ: Autodesk Fabrication iş dosyası</h3>
+<p>Autodesk Fabrication iş dosyası (.MAJ), CAMduct'ın yerel iş formatı ve CADmep'in CAM dışa aktarma formatıdır. Projedeki tüm imalat parçalarını, sac iç içe yerleşim durumunu, kesim listesini, spool tanımlarını, sac kalınlığı eşlemesini ve bağlantı atamalarını içerir. MAJ dosyaları otomatik kanal hattı PLC'si tarafından doğrudan okunamaz; kesim listesini, spool çizimlerini ve makine NC dosyalarını dışa aktardığınız hazırlık dosyasıdır. MAJ'ı proje ana dosyası, XML/DXF/JSON dışa aktarımlarını ise sevk edilen çıktılar olarak ele alın.</p>
+<h3>4.3 Autodesk Fabrication içerik ve veritabanı dosyaları (.ITM, .MAP)</h3>
+<p>Bir Autodesk Fabrication konfigürasyonu, paylaşılan içerikten oluşan bir klasördür: öğe dosyaları (.ITM) ve veritabanı dosyaları (.MAP); bunlara bir MAP.INI dosyası üzerinden ulaşılır. .ITM dosyası öğenin kendisidir, yani bir fittingin parametrik tanımıdır. Veritabanı dosyaları malzemeler, sac kalınlıkları, dikişler ve bağlantılar gibi paylaşılan tabloları tutar. İş dosyaları (.MAJ, bkz. 4.2) ayrıdır: her biri paylaşılan içeriği değil, tek bir projeyi tutar. CAMduct'ta bir bağlantı veya malzeme tanımını değiştirdiğinizde paylaşılan veritabanını düzenlemiş olursunuz; bu nedenle değişiklik o konfigürasyonu kullanan her işe yansır. Bu dosyaları atölyenizin Git deposunda veya eşdeğer bir sürüm kontrol sisteminde sürüm kontrolüne alın; aksi halde bir bağlantı ya da öğede belgelenmemiş bir düzenleme, onu kullanan her projeyi sessizce bozar.</p>
+<h3>4.4 IFC: Industry Foundation Classes</h3>
+<p>IFC (.ifc, ISO 16739 kapsamında düz metin) açık BIM değişim formatıdır. IFC4 ve IFC4.3, kanal geometrisini <code>IfcDuctSegment</code>, <code>IfcDuctFitting</code> ve <code>IfcFlowController</code> varlıkları altında taşır. Kanal işleri için Revit'ten IFC dışa aktarımı (IFC4 Reference View MVD ile) çakışma koordinasyonu ve üst düzey metraj için yeterlidir, ancak imalat ayrıntısını kaybeder: dikiş tipi ve bağlantı tipi standart IFC nitelikleri değildir ve bir özellik seti uzantısı gerektirir. Bazı atölyeler IFC'yi, hat için genellikle CSV veya DXF olarak dışa aktarılan bir kesim listesi üreten özel bir IFC ayrıştırıcının girdisi olarak kullanır (denetleyicinin içe aktarma formatlarını teklif aşamasında teyit edin); bu, tasarım ekibinin Revit imalat parçalarına geçmeyeceği projeler için makul bir yoldur.</p>
+<h3>4.5 gbXML: Green Building XML</h3>
+<p>gbXML (.xml), IES VE, EnergyPlus ve diğer simülasyon araçlarının kullandığı enerji analizi değişim formatıdır. BIM iş akışlarında karşınıza çıktığı için anıyoruz, ancak kanal imalatında kullanılmaz; dikiş ve bağlantı bilgisini değil, hava debisi ve ısıl veriyi taşır.</p>
+<h3>4.6 IDS: Information Delivery Specification</h3>
+<p>IDS (.ids, buildingSMART altında bir XML şeması) nispeten yeni bir formattır ve bir projenin hangi IFC özelliklerinin hangi varlıklarda bulunması gerektiğini belirtmesine olanak tanır. BIM'den imalata işlerinde bir IDS dosyası, kanal atölyesinin kendisine teslim edilen her IFC'de örneğin <code>IfcDuctSegment.Material</code>, <code>IfcDuctSegment.WallThickness</code> ve dikiş tipi ile bağlantı tipini içeren bir <code>Pset_DuctFabrication</code> özellik kümesinin bulunmasını talep etmesini sağlar. Tasarım ekibi IDS uyumlu bir IFC ürettiğinde, atölye zemini veri temizliğinde haftalarca zaman kazanır.</p>
+<h3>4.7 CAMduct XML kesim listesi</h3>
+<p>Doğrudan CNC entegrasyonu için en önemli format. CAMduct, proje kesim listesini Autodesk Fabrication SDK'sında belgelenmiş kararlı bir şemayla XML olarak dışa aktarır. XML, parça başına bir öğe kimliği, sistem etiketi, gauge, blank uzunluk ve genişliği, fiting tipi, dikiş tipi, bağlantı referansları ve parça bazlı her türlü meta veriyi içerir. Belirli bir makine denetleyicisinin bu XML'i doğrudan okuyup okuyamayacağı veya bir dönüştürme adımı gerektirip gerektirmediği makineye bağlıdır; bu yüzden kabul edilen iş dosyası formatlarını tedarikçiyle teyit edin. CAMduct XML'i, tam bir Autodesk Fabrication iş akışı yürüten atölyeler için en yaygın üretim düzeyi aktarım formatıdır.</p>
+<h3>4.8 DXF açınımları</h3>
+<p>Otomatik kanal hattı dışında plazma kesimi gerektiren her fitting için (standart olmayan geçişler, oval-yuvarlak geçişler, özel plenum panelleri), CAMduct bir CNC plazma masasında iç içe yerleşime hazır DXF düz açılım (.dxf, AutoCAD ASCII formatı) dışa aktarır. DXF, plazma masası iç içe yerleşimi ve CNC yazılımları için en yaygın desteklenen girdidir. <a href="/tr/categories/auto-duct-lines">Taokron otomatik kanal hattı özelliklerine bakın</a>.</p>
+<h3>4.9 JSON iş paketi</h3>
+<p>Daha modern, API tabanlı bir planlama iş akışı yürüten atölyeler için bir seçenek olan JSON iş paketi; iş kimliğini, önceliği, teslim tarihini, parça listesini (XML kesim listesi satırlarına referansla) ve parça bazlı bir planlama özniteliğini içerir. Hattın denetleyicisinin bunu içe aktarıp aktaramayacağını makine tedarikçisine sorun. JSON, BIM'i bir Üretim Yürütme Sistemi (MES) ile entegre eden atölyeler için makul bir formattır.</p>
+<h2>5. İmalat parçaları ve tasarım parçaları: kanal atölyeleri için kritik ayrım</h2>
+<p>BIM'den imalata projelerindeki en yaygın hata, tasarım parçalarıyla dolu bir Revit modelini imalat yoluna göndermektir. Tasarım parçaları varsayılan Revit MEP kanal elemanlarıdır: kanal gibi görünürler, kanal gibi çakışırlar, ama imalat ayrıntıları yoktur. İmalat parçaları ise bir CAMduct veya CADmep ITM veritabanından yüklenen; dikiş tipi, gauge, bağlantı geometrisi, conta kanalı ve tedarikçiye özgü ölçülere sahip gerçek atölye bileşenleridir.</p>
+<h3>5.1 Tasarım parçaları neleri içerir</h3>
+<p>Bir Revit MEP tasarım kanalı; nominal genişlik, yükseklik ve uzunluğu, sistem etiketini, yalıtım referansını, kat referansını ve her uçta genel bir bağlantıyı saklar. Dikiş tipini, gauge'i, tam bağlantı flanşı ölçüsünü, conta kanalını, imalat toleransını veya atölye parça numarasını <em>saklamaz</em>. Fiting Family'leri varsayılan geometrik ölçülerle gelir, ancak bu ölçüler belirli bir üreticinin donanımına bağlanmamıştır.</p>
+<h3>5.2 İmalat parçaları neleri içerir</h3>
+<p>Bir Revit imalat parçası bir CAMduct ITM'den yüklenir ve atölye zemininin önemsediği her özelliği saklar: dikiş tipi (Pittsburgh, snaplock, düğme zımbalı), gauge (gauge tablosunda bir bobin kalınlığına eşlenir), tam bağlantı flanşı profili (TDF, geçmeli, S-and-drive), conta kanalı, conta tipi, askı bağlantı konumu, aksesuar montaj yuvaları. Her ölçü, gerçek donanım kütüphanenize bağlıdır. BIM koordinatörü Revit'te bir imalat geçişi yerleştirdiğinde, model otomatik kanal hattının bu geçişi yapmak için hangi blank'ları kesmesi gerektiğini tam olarak bilir.</p>
+<h3>5.3 Design to Fabrication dönüşümü</h3>
+<p>Revit MEP, bir Design to Fabrication komutu içerir (Systems sekmesi → Fabrication paneli → <em>Design to Fabrication</em>). Aktif görünümdeki tasarım kanallarını ve fitingleri okur, yüklü CAMduct ITM veritabanında en yakın eşleşmeyi arar ve bunları imalat parçalarıyla değiştirir. Dönüşüm kusursuz değildir: sahipsiz kalan fitingler, uyuşmayan bağlantılar ve aralık dışı boyutlar Fabrication Browser paletinde dönüştürülmemiş segmentler olarak işaretlenir. Bir hastane makine dairesinin tipik dönüşümü 10-30 dakikalık otomatik iş artı sahipsiz parçaların 4-10 saatlik elle temizliğini alır.</p>
+<p>Temizlik pazarlık konusu değildir. Kısmen dönüştürülmüş bir modelden kesim listesi dışa aktarırsanız, yetim kalan segmentler ya atlanır (atölye sahada kanal açığı yaşar) ya da tasarım parçası olarak dışa aktarılır (atölye geçersiz ölçülerle üretir ve parçaları yeniden yapmak zorunda kalır). Her iki durumda da maliyeti proje öder. Temizliği BIM'den imalata oyun planınıza zorunlu bir kontrol noktası olarak ekleyin.</p>
+<h2>6. Spool çizimleri ve imalat resmi otomasyonu</h2>
+<p>Temiz bir imalata dönüştürülmüş modeliniz olduğunda, sıradaki soru atölye zemininin neyi, hangi sırayla, hangi demetle imal edeceğini nasıl bileceğidir. Cevap spool çizimleridir: gruplanmış kanal segmentlerinin parça işaretleri, ölçüler, gauge belirtmeleri, bağlantı çizelgesi ve spool başına malzeme listesi ile etiketlendiği izometrik imalat resimleri.</p>
+<h3>6.1 Spool aslında nedir</h3>
+<p>Spool, nakliye ve donatım birimidir: genellikle 6 m veya 12 m'ye kadar (nakliyeye bağlı olarak) kanal, atölyeden sahaya tek bir demet olarak gönderilir. Bir spool, düz bir hat ile ona bağlanan dirsekleri ve bir geçişi içerebilir veya iki ucunda bağlantılar bulunan tek bir büyük geçiş olabilir. Spoollar şunlarla tanımlanır:</p>
+<ul>
+<li><strong>Sistem ve kat</strong>: her spool, bir kat seviyesindeki tek bir sistem etiketine (SA, RA, EA) aittir.</li>
+<li><strong>Taşıma uzunluğu</strong>: kamyonunuza ve binanın yükleme rampasından geçişe bağlı olarak 6 m veya 12 m ile sınırlıdır.</li>
+<li><strong>Kaldırma kütlesi</strong>: saha vincinin kaldırma kapasitesiyle sınırlıdır; tipik olarak spool başına 200-800 kg.</li>
+<li><strong>Sıra</strong>: imalat öncelik kuyruğunu yönlendiren, tanımlı bir sırayla monte edilir.</li>
+</ul>
+<h3>6.2 CAMduct'ta spool çizimleri üretmek</h3>
+<p>CAMduct'ta Spool Drawing aracı (<em>Output &gt; Spool Drawings</em> altında), isteğe bağlı olarak bir kroki planı ve malzeme listesiyle her spool için bir izometrik çizim üretir. Çıktı tipik olarak çok sayfalı bir PDF veya spool başına bir DWG dosyasıdır. Tipik bir orta katlı ticari proje 200-600 spool çizimi üretir; büyük hastane ve endüstriyel projeler tek bir CAMduct proje dosyasından 2.500+ spool çizimi üretebilir. Bu hacmi betik kullanmadan otomatik üretmek mümkün olmazdı.</p>
+<h3>6.3 Parça işaretleri ve barkodlar</h3>
+<p>Bir spool'daki her imalat parçası benzersiz bir parça işareti alır: atölyede kanalın üzerine basılan ve saha ekibinin doğru parçayı doğru yere monte etmesi için kullandığı kısa alfanümerik bir etiket. Modern spool çizimleri, saha ekibinin kanalı bir tablette modelle karşılaştırarak tarayabilmesi için her parça işareti başına bir Code-128 veya QR kod içerir. Bazı otomatik kanal hatları, etiketi ve barkodu hat içi bir yazıcıyla doğrudan kanala basabilir; bu da elle etiketleme adımını ortadan kaldırır. Belirttiğiniz hatta bunun mevcut olup olmadığını tedarikçiye sorun.</p>
+<h2>7. CAMduct ve CADmep bobin yerleştirme (nesting) ve kesim listesi üretimi</h2>
+<p>BIM'den imalata geçişin kendini ödediği yer kesim listesidir. Yoğun bir kanal atölyesi her ay çok sayıda tekil sac kesiti keser ve her biri hesaplanmış bir iç içe yerleşim desenine göre sac tüketir. Tipik bir projede elle iç içe yerleşim bir metraj mühendisinin saatlerini alır ve sacta genellikle daha fazla hurda bırakır. CAMduct sac iç içe yerleşimi malzeme kullanımını genel olarak iyileştirir ve iç içe yerleşim süresini belirgin biçimde kısaltır.</p>
+<h3>7.1 Bobin yerleştirmenin (nesting) temelleri</h3>
+<p>Bobin yerleştirme, kanal blank'larını bir bobin genişliği boyunca malzeme verimi en yüksek olacak ve kesim sırası uygulanabilir kalacak şekilde düzenleme optimizasyon problemidir. CAMduct'ın bobin yerleştirme modülü; ayarlanabilir dikiş payı, fire payı ve kerf telafisiyle dikdörtgen, geçiş ve ofset blank'larını destekler. Kerf'i plazma tezgâhınızın veya giyotin makasınızın kesim genişliğine uyacak şekilde ayarlayın (plazmada tipik olarak 0,8-1,5 mm); aksi halde sonraki kesim boyları kayar.</p>
+<h3>7.2 Kesim listesi üretimi</h3>
+<p>İç içe yerleşim tamamlandığında kesim listesi XML, CSV olarak veya doğrudan otomatik kanal hattı PLC'sine dışa aktarılır. XML üretim sınıfı formattır, çünkü parça başına tüm özellikleri taşır ve parça kimliği (ID) üzerinden CAMduct projesine (dolayısıyla Revit modeline) bağlanır. Kesim listesi otomatik kanal hattını yöneten dosyadır: hattaki her iş kesim listesindeki bir satıra, o satır CAMduct'taki bir imalat parçasına, o da Revit'teki bir imalat parçasına dayanır; bu parça LOD 350 koordine tasarımdan dönüştürülmüş ve dışa aktarımdan önce LOD 400'e getirilmiştir.</p>
+<h3>7.3 Örnek CAMduct XML kesim listesi parçası</h3>
+<p>Başvuru için, tek bir düz kanal parçasına ait tipik bir CAMduct XML kesim listesi parçası şöyle görünür (şema örneklemek içindir, SDK'nın alan alan birebir kopyası değildir):</p>
+<pre><code>&lt;CutList project="HospitalPlantRoomL3"&gt;
+  &lt;Item id="SA-L3-0142"&gt;
+    &lt;System&gt;Supply Air&lt;/System&gt;
+    &lt;Gauge&gt;1.0&lt;/Gauge&gt;
+    &lt;BlankLength&gt;1985&lt;/BlankLength&gt;
+    &lt;BlankWidth&gt;1230&lt;/BlankWidth&gt;
+    &lt;Seam&gt;Pittsburgh&lt;/Seam&gt;
+    &lt;ConnectorA&gt;TDF-25&lt;/ConnectorA&gt;
+    &lt;ConnectorB&gt;TDF-25&lt;/ConnectorB&gt;
+    &lt;Spool&gt;SP-L3-014&lt;/Spool&gt;
+  &lt;/Item&gt;
+&lt;/CutList&gt;</code></pre>
+<p>Her öğe, bitmiş bir kanal parçasını tanımlamak için gereken veriyi taşır. Denetleyicinin listeyi kendi iş formatına dönüştürmesi yine de gerekebilir; Taokron hatları için kesim listeleri CSV veya DXF olarak dışa aktarılır, bu nedenle denetleyicinin içe aktarma formatlarını teklif aşamasında teyit edin.</p>
+<h2>8. Doğrudan CNC entegrasyonu: BIM'den plazma tezgâhına ve otomatik kanal hattı PLC'lerine aktarım</h2>
+<p>Doğrudan CNC entegrasyonu, BIM verisinin fiziksel olarak çelikle buluştuğu andır. Veri Revit MEP'ten CAMduct üzerinden bir kesim listesine kadar yol aldı; şimdi kesim listesinin bir makineyi yönetmesi gerekiyor.</p>
+<h3>8.1 İki CNC yolu</h3>
+<p>Modern bir kanal atölyesi paralel olarak iki CNC yolu çalıştırır. Otomatik kanal hattı (SBAL-V veya SBAL-III) düz hatları ve standart fitingleri işler: bir bobini alır ve dikişleri, bead'leri ve bağlantıları otomatik olarak yapılmış bitmiş kanal bölümleri üretir. Bir CNC plazma tezgâhı ise standart dışı geçişleri, oval-yuvarlak geçişleri, özel plenum panellerini ve otomatik kanal hattının geometri zarfına sığmayan her düz açınım blank'ını işler. Her iki yol da aynı CAMduct kesim listesinden beslenir: otomatik kanal hattı iş verisini kesim listesinden alır, plazma tezgâhı ise DXF açınımlarını okur.</p>
+<h3>8.2 Otomatik kanal hattına aktarım</h3>
+<p>Hattın hangi denetleyiciyi kullandığını ve iş dosyalarını nasıl aldığını makine tedarikçisine sorun: bir ağ klasörüne bırakma, USB ile içe aktarma veya OPC UA gibi bir endüstriyel protokol. Genel bilgi için <a href="/tr/insights/plc-integration-duct-line">PLC entegrasyonu rehberimize bakın</a>.</p>
+<h3>8.3 CNC plazma tezgâhına aktarım</h3>
+<p>Çoğu CNC plazma masası, denetleyicide ya da masanın iç içe yerleşim yazılımı üzerinden DXF düz açılımı kabul eder. Düz açılım plazma masasında (CAMduct iç içe yerleşimiyle veya plazma denetleyicisinin iç içe yerleşim modülüyle) yerleştirilir ve denetleyici torcu kesim yolu boyunca sürer. Çoğu atölye, standart olmayan her geçişi veya oval sac kesitini plazma masasına yönlendirir.</p>
+<h3>8.4 OPC UA: köprü protokol</h3>
+<p>OPC UA (IEC 62541), otomatik kanal hattı PLC'sini üst düzey BIM ve MES sistemlerine bağlayan protokoldür. Günümüzün birçok endüstriyel PLC'si OPC UA'yı yerel olarak destekler, diğerleri ise bir ağ geçidi üzerinden bağlanabilir. BIM ekibine temiz ve üreticiden bağımsız bir arayüz sunar: hatta hangi PLC markası olursa olsun, iş durumunu, üretim hızını ve as-built verisini aynı protokol üzerinden okurlar.</p>
+<h2>9. Dosya formatları ve makine tedarikçisine sorulacaklar</h2>
+<p>Otomatik kanal hatlarının denetleyicilerinin kabul ettiği iş dosyası formatları farklılık gösterir. Aşağıdakiler en sık kullanılan dört girdi formatı ve sormaya değer iki çıktı formatıdır. Belirttiğiniz hat için bunlardan hangilerinin geçerli olduğunu Taokron ile teyit edin.</p>
+<h3>9.1 Yaygın girdi formatları</h3>
+<ul>
+<li><strong>XML kesim listesi</strong>: CAMduct XML'i, doğrudan veya bir dönüştürme adımıyla.</li>
+<li><strong>DXF açınımları</strong>: bir plazma tezgâhına yönlendirilen standart dışı blank'lar için.</li>
+<li><strong>JSON iş paketi</strong>: MES çalıştıran ve önceliği bir API ile planlayan atölyeler için.</li>
+<li><strong>CSV</strong>: CAMduct olmayan atölyeler için giriş seviyesi bir kesim listesi (genellikle bir Revit Dynamo betiğinden üretilir) ve tedarik malzeme listesi için olağan formattır.</li>
+</ul>
+<h3>9.2 Olası çıktı ve geri besleme formatları</h3>
+<ul>
+<li><strong>OPC UA etiketleri</strong>: gerçek zamanlı iş durumu, üretim hızı, fire oranı, hat durumu.</li>
+<li><strong>Tamamlanma JSON'ı</strong>: gerçek kesim boyunu, gauge'i, fireyi ve harcanan süreyi içeren, as-built mutabakatı için BIM modeline geri aktarılan iş bazlı tamamlanma paketi.</li>
+</ul>
+<h3>9.3 Takım zarfı ve otomatik kanal hattına neyin sığdığı</h3>
+<p>Modelinizdeki kanal ölçülerini hattın yayımlanmış teknik özelliğiyle karşılaştırın. SBAL-V, en fazla 1250 veya 1550 mm genişlikte 0,5-1,5 mm malzemeyi, SBAL-III aynı genişliklerde 0,5-2,0 mm malzemeyi işler. Zarfın dışında kalan her şey (yuvarlak, oval, çok büyük dikdörtgen) bir plazma tezgâhına veya başka bir makineye yönlendirilir. Tam zarf için <a href="/tr/categories/auto-duct-lines">Taokron otomatik kanal hatları teknik özellik sayfasına</a> bakın. Dikdörtgen hatları SBAL-V zarfına göre boyutlandırmak için <a href="/tr/insights/rectangular-duct-sizing-chart">Taokron dikdörtgen kanal boyutlandırma tablosu</a> hızlı başvuru kaynağıdır.</p>
+<h2>10. Yapısal BIM ile koordinasyon: Navisworks'te çakışma tespiti</h2>
+<p>BIM'den imalata iş akışı tek başına var olmaz. Kanal modeli yalnızca aynı BIM ortamında mimari ve statik modellerle koordine edildiği için önemlidir. Çoğu proje bunu, BIM çakışma tespiti ve 4D koordinasyon aracı Autodesk Navisworks Manage'de yapar.</p>
+<h3>10.1 Standart Navisworks çakışma iş akışı</h3>
+<p>MEP koordinatörü bir Revit modelini NWC (Navisworks Cache) formatında dışa aktarır, mimar ve statik mühendisi kendi modellerini NWC olarak dışa aktarır ve çakışma tespiti koordinatörü tüm NWC dosyalarını tek bir NWF (Navisworks File) kapsayıcısında birleştirir. Clash Detective aracı, sistem çifti başına sert, yumuşak ve açıklık çakışmalarını çalıştırır: kanal-yapısal kiriş, kanal-kablo tavası, kanal-hidronik boru.</p>
+<h3>10.2 Çakışma tespiti imalat için neden önemlidir</h3>
+<p>Sahada ortaya çıkan bir çakışmanın giderilmesi, BIM'de ortaya çıkan aynı çakışmaya göre çok daha pahalıdır. Modelde yapısal bir kirişe çarpan bir kanalın Revit'te yeniden yönlendirilmesi 30 dakika sürer. Aynı kanal üretilip, sevk edilip, asıldıktan sonra sahada çakıştığı anlaşılırsa maliyet yeniden işçilik, yeni parça, nakliye ve saha gecikmesidir. Herhangi bir imalat verisini dışa aktarmadan önce çakışma tespitini çalıştırın; bu adımı atlayan her proje bedelini atölye zemininde öder.</p>
+<h3>10.3 Birleştirilmiş modelin imalata devri</h3>
+<p>Çakışmalar çözüldüğünde, birleştirilmiş (federated) Navisworks modeli imalat devrinin temeli olur. İmalata dönüştürülmüş MEP Revit modeli kesim listelerinin ve spool çizimlerinin kaynağıdır, ancak askı konumu koordinasyonu, tavan boşluğu doğrulaması ve erişim yolu planlaması için temel birleştirilmiş NWF'dir. Bazı atölyeler askı bağlantı noktalarını, saha aplikasyonu için doğrudan Navisworks'ten bir Trimble veya Topcon total station cihazına yönlendirir.</p>
+<h2>11. LOD aşamaları: tasarım niyetinden imalata hazır duruma</h2>
+<p>Geliştirme Seviyesi (LOD), bir modelin ne kadar tamamlanmış olduğunu tanımlayan BIM standardıdır. Terminoloji AIA LOD çerçevesinden ve BIMForum LOD Spesifikasyonu'ndan gelir. ISO 19650'nin kendisi LOD kullanmaz; birçok projenin BEP içinde LOD aşamalarına eşlediği bilgi ihtiyacı seviyesi kavramını kullanır. HVAC kanal imalatı için dört LOD seviyesi önemlidir.</p>
+<h3>11.1 LOD 200: tasarım niyeti</h3>
+<p>Boyut, konum ve yönelimi yaklaşık olarak veren genel sistem geometrisi. LOD 200'de bir kanal, nominal genişlik etiketli tek bir çizgi olabilir; sistem yerleşimi ve kavramsal çakışma için kullanılabilir, ancak satın alma veya imalat için kullanılamaz. LOD 200 bir modelden imalat verisi dışa aktaran her müteahhit kumar oynar.</p>
+<h3>11.2 LOD 350: koordine edilmiş tasarım</h3>
+<p>Mimari ve yapıyla koordine edilmiş; boyutu, konumu, yönelimi ve diğer sistemlerle arayüzü olan belirli sistem geometrisi. Model, tasarım koordinasyonu aşamasının sonunda LOD 350'dedir. Kritik nokta: LOD 350 hâlâ imalat parçalarını değil, tasarım parçalarını kullanır. Model çakışma ve ihale metrajı için iyidir, ancak doğrudan imalat için değildir.</p>
+<h3>11.3 LOD 400: imalata hazır</h3>
+<p>Dikişleri, bağlantıları, askıları, aksesuar montajlarını ve tedarikçiye özgü ölçüleri olan imalata hazır geometri. LOD 400, doğrudan CNC aktarımının eşiğidir. BIM'den imalata iş akışı yürüten her atölye bir LOD 400 model üretir veya alır. LOD 350'den LOD 400'e geçiş, tipik olarak ilk kanal parçasının şantiyede gerekmesinden 6-10 hafta önce, çoğunlukla tasarım ekibinin LOD 350 modelinin müteahhit liderliğinde imalata dönüştürülmesiyle gerçekleşir.</p>
+<h3>11.4 LOD 500: as-built</h3>
+<p>Saha koşuluna göre doğrulanmış, monte edilmiş geometri. LOD 500, tesis yönetiminin binanın işletme ömrü boyunca kullandığı varlık devir modelidir. 16. bölümde anlatılan dijital ikiz geri besleme döngüsü LOD 500'ü üretir.</p>
+<h2>12. Metraj ve satın alma entegrasyonu</h2>
+<p>Kesim listesini yöneten aynı imalata dönüştürülmüş Revit modeli, satın almayı da yönetir. Metraj (Quantity Takeoff, QTO) modeli okur ve gauge ve genişlik başına bir bobin satın alma listesi, bir bağlantı donanımı adedi, bir conta uzunluğu, bir askı adedi, bir aksesuar çizelgesi ve bir işçilik tahmini üretir.</p>
+<h3>12.1 CAMduct'tan QTO çalıştırmak</h3>
+<p>CAMduct'ın CSV'ye Quantity Takeoff çıktısı, tipik orta ölçekli bir proje için 2–5 dakikada bir tedarik malzeme listesi üretir. CSV sütunları şunlardır: sac özelliği (malzeme, kalınlık, genişlik), gereken toplam uzunluk, toplam alan, hurda payı, tip başına bağlantı adedi, conta uzunluğu, tip bazında askı adedi. İşteki en uzun sac temin süresini karşılayacak kadar erken bir zamanda satın almaya devredin. Yaygın genişliklerdeki standart galvanizli sac genellikle daha kalın kalınlıklardan veya çok daha uzun sürebilen paslanmaz çelikten daha erken gelir; bu nedenle temin sürelerini sac tedarikçinizle teyit edin ve imalattan en az o kadar önce devredin.</p>
+<h3>12.2 ERP'ye bağlamak</h3>
+<p>Daha büyük atölyeler QTO çıktısını doğrudan ERP'lerine (SAP Business One, Microsoft Dynamics 365, NetSuite) bağlar. CSV bir satın alma talebine dönüşür, ERP siparişi (PO) oluşturur ve sac teslimatındaki mal kabul kaydı döngüyü BIM modeline geri kapatır. Pratik yöntem, etkin CAMduct projesinden haftalık bir QTO dışa aktarımını, bir ERP içe aktarma betiğinin izlediği paylaşımlı bir klasöre planlamaktır. Kurulum genellikle kısa bir iştir; süregelen bakım hafiftir, ancak QTO dışa aktarımı veya ERP alanları değiştiğinde betiğin kontrol edilmesi gerekir.</p>
+<h2>13. ISO 19650, NBS ve Avustralya/Yeni Zelanda BIM rehberi başvuruları</h2>
+<p>2026'da BIM'den imalata iş akışı düzenlenmiş bir çerçevenin içinde gerçekleşir. İlgili standartlar pazara bağlıdır.</p>
+<h3>13.1 ISO 19650</h3>
+<p>ISO 19650 serisi, BIM kullanarak bilgi yönetimi için uluslararası standarttır. Dünya genelindeki kamu sektörü ve büyük özel sektör BIM projelerinin çoğu artık ISO 19650 kapsamında sözleşmelendirilmektedir; standart Ortak Veri Ortamını (CDE), Ana ve Görev Bilgi Teslim Planlarını (MIDP ve TIDP), BIM Uygulama Planını (BEP) ve Varlık Bilgi Modelini (AIM) tanımlar. BIM'den imalata çalışmalarında ISO 19650, çoğunlukla imalat verisinin BIM koordinatörü ile kanal atölyesi arasında nasıl değiş tokuş edildiğini etkiler: bilgi kapsayıcı durumlarını (devam eden, paylaşılan, yayımlanmış, arşivlenmiş) ve değişimi barındıracak bir Ortak Veri Ortamını tanımlar; S0–S5 durum kodları çekirdek standarttan değil, Birleşik Krallık Ulusal Eki'nden gelir.</p>
+<h3>13.2 NBS BIM Toolkit</h3>
+<p>NBS BIM Toolkit, ağırlıklı olarak Birleşik Krallık projelerinde kullanılan bir BIM spesifikasyon çerçevesidir. Uniclass sınıflandırma kodlarını model elemanlarına eşler ve ürün verisi için NBS Source'a bağlanır. Bazı Birleşik Krallık projeleri NBS ve Uniclass uyumlu teslimatlar şart koşar.</p>
+<h3>13.3 Avustralya ve Yeni Zelanda BIM rehberi</h3>
+<p>Avustralya'da proje BIM gereksinimleri yaygın olarak, kâr amacı gütmeyen bir kuruluş olan NATSPEC (Construction Information Systems Ltd) tarafından yayımlanan ücretsiz ulusal rehber NATSPEC National BIM Guide ile çerçevelenir. Bu bir rehberdir, AS/NZS standardı değildir ve ISO 19650 ile bir proje BIM brifi ile birlikte kullanılır. Avustralya projeleri genellikle BEP içinde NATSPEC belgelerine atıf yapar; Yeni Zelanda projeleri ise yaygın olarak New Zealand BIM Handbook'a atıf yapar. Çizim künyeleri ve model eleman adlandırması için hangi NATSPEC gereksinimlerinin geçerli olduğunu projenizin BEP'inden sorun.</p>
+<h3>13.4 SMACNA HVAC BIM Kılavuzları</h3>
+<p>SMACNA (Sheet Metal and Air Conditioning Contractors' National Association), kanallar, fitingler ve aksesuarlar için bir İmalat LOD şartnamesi dahil HVAC BIM iş akışlarına dair özel rehberlik yayımlar. Kuzey Amerika'daki projeler tipik olarak LOD referans seviyesi olarak SMACNA HVAC BIM'e atıf yapar. BIM modeli içinde gauge seçimi için <a href="/tr/insights/smacna-gauge-chart">SMACNA gauge tablosu</a>, dikdörtgen kanal yapımı için başvuru kaynağı olmaya devam eder.</p>
+<h2>14. Yaygın hata modları ve nasıl önlenecekleri</h2>
+<p>BIM'den imalata iş akışı öngörülebilir biçimlerde başarısız olur. Aşağıdaki sekiz hata, sahada gördüklerimizin çoğunu kapsar.</p>
+<h3>14.1 Fitinglerde yuvarlama hataları</h3>
+<p>Revit uzunlukları dahili olarak ondalık fit cinsinden saklar ve görüntüleme için proje birimlerine dönüştürür. İmperyal birimle hazırlanıp metrik bir projeye yerleştirilen fittingler dönüşüm artığı taşıyabilir; ekranda 600 mm görünen bir ölçü 599,998 mm olarak saklanabilir. Artık fitting başına çok küçüktür, ancak çizelgelerdeki, bağlantı eşleştirmedeki ve değerleri yuvarlamadan karşılaştıran dışa aktarımlardaki tam eşleşme kurallarını bozar. Çözüm: proje birim hassasiyetini 1 mm'ye kilitleyin ve herhangi bir dahili ölçüyü en yakın milimetreye yuvarlamak için Family Editor'ı kullanın.</p>
+<h3>14.2 Eksik geçişler</h3>
+<p>Design to Fabrication dönüşümü, yüklü ITM'de boyut adımının standart olmadığı durumlarda geçişleri bazen sahipsiz bırakır (örneğin ITM'de 750→600 ve 750→650 varken 625 yoksa 750→625 mm). Çözüm: dönüşümü çalıştırmadan önce ITM geçiş kütüphanesini tasarım paletinizdeki her boyut adımını kapsayacak şekilde genişletin.</p>
+<h3>14.3 Yanlış gauge eşlemesi</h3>
+<p>CAMduct gauge tablosunun varsayılan bir gauge çizelgesi vardır; tipik olarak muhafazakâr SMACNA varsayılanları. Projenizin şartnamesi farklı bir gauge gerektiriyorsa (örneğin AS/NZS 4254 orta basınç), varsayılan tablo fazla gauge'li kanal üretir; bu da bobin israf eder ve hattı aşırı yükler. Çözüm: herhangi bir kesim listesi dışa aktarmadan önce CAMduct gauge tablosunu proje şartnamesine uyacak şekilde düzenleyin.</p>
+<h3>14.4 Bağlantı ölçü uyumsuzluğu</h3>
+<p>CAMduct bağlantı ITM'si cleat ölçülerini, conta kanalını ve bağlantı elemanı desenini saklar. Bu ölçüler raftaki gerçek donanımla uyuşmazsa, her bağlantı yanlış oturur. Çözüm: bağlantı donanımınızı fiziksel olarak ölçün ve ITM'yi buna uyacak şekilde güncelleyin; evet, gerçek cleat profilinin kumpasla ölçümü dahil.</p>
+<h3>14.5 Yalıtım çakışması</h3>
+<p>Revit'in yalıtımı, kanalı saran ayrı bir nesnedir. Modeldeki yalıtım kalınlığı hatta önceden uygulanan gerçek yalıtımla uyuşmazsa, fitingler montajda çakışır. Çözüm: modellenen yalıtım kalınlığını, makine tedarikçisiyle teyit edilen hattın önceden uygulama kabiliyetiyle hizalayın.</p>
+<h3>14.6 Askı konumu kayması</h3>
+<p>Revit'te tasarım niyeti seviyelerinde yerleştirilen askılar, koordinasyon sırasında bazen standart dışı yapısal konumlara kayar. İmalata dönüştürülmüş model, tasarım niyeti konumlarında değil, imalat düzeyindeki konumlarda askılara ihtiyaç duyar. Çözüm: dışa aktarmadan önce her askıyı birleştirilmiş Navisworks modelindeki yapısal elemanlara yeniden bağlayın.</p>
+<h3>14.7 Spool uzunluğunun taşıma sınırını aşması</h3>
+<p>Spool sınırı kuralı yapılandırılmamışsa CAMduct spool üretimi bazen 6 m veya 12 m'den uzun spool'lar üretir. Çözüm: CAMduct spool yapılandırmasında açık taşıma uzunluğu ve kaldırma kütlesi sınırları belirleyin ve spool üreticiyi yeniden çalıştırın.</p>
+<h3>14.8 Kesim listesi birim uyumsuzluğu</h3>
+<p>CAMduct XML varsayılan olarak birimleri milimetre cinsinden taşır, ancak bazı eski plazma denetleyicileri inç bekler. Çözüm: denetleyici birimini dışa aktarım veya dönüştürme adımında açıkça ayarlayın ve ölçeklendirmeden önce 5 parçalık bir pilot çalıştırın.</p>
+<h2>15. BIM'den imalata iş akışı kurmak: hafta hafta plan</h2>
+<p>Mevcut bir Revit MEP lisansı ve eğitimli bir CAMduct veya CADmep operatörü olan bir kanal atölyesi için pratik kurulum 4–8 hafta sürer. Daha önce Autodesk Fabrication deneyimi olmayan atölyeler için 12–16 hafta planlayın. Aşağıda 8 haftalık tam senaryo için önerilen bir zaman çizelgesi bulunur; daha hızlı atölyeler konfigürasyon, ayar ve ölçek büyütme aşamalarını sıkıştırır.</p>
+<h3>15.1 1. Hafta: denetim ve kapsam</h3>
+<p>Mevcut metraj sürecini, 100 m² başına süreyi ve yeniden işçilik oranını belgeleyin. Revit MEP ve Autodesk Fabrication sürümlerinin eşleştiğini doğrulayın. İlk pilot projeyi belirleyin: kapsamı sınırlı olduğu için ideal olarak bir hastane makine dairesi değil, orta katlı bir ticari kat.</p>
+<h3>15.2 2-3. Haftalar: yapılandırma oluşturma</h3>
+<p>Atölyenizin takımlarını bir CAMduct ITM veritabanına eşleyin. Donanımınıza uyan bağlantı kütüphanesini oluşturun. Gauge tablolarını bobin stokunuza eşleyin. Makine denetleyicisi için kesim listesi dışa aktarımını kurun.</p>
+<h3>15.3 4. Hafta: Revit dönüşümü</h3>
+<p>Pilot projenin tasarım parçalarını imalat parçalarına dönüştürün. Birleştirilmiş modelde Navisworks çakışma tespitini çalıştırın. Dönüştürülmüş modelde LOD 400 hazırlığını doğrulayın.</p>
+<h3>15.4 5. Hafta: pilot imalat</h3>
+<p>Pilot kesim listesini, spool çizimlerini ve tedarik malzeme listesini üretin. Hattan 50 parçalık bir pilot parti geçirin; geçişler ve ofsetler plazma masasında kesilsin. Kesim uzunluğu sapmasını, fitting hassasiyetini ve bağlantı oturmasını ölçün.</p>
+<h3>15.5 6. Hafta: ayar</h3>
+<p>Pilot sapma %2'yi aşarsa CAMduct yapılandırmasını ayarlayın: tipik olarak bağlantı payı, dikiş payı veya gauge eşlemesi. 25 parçalık bir doğrulama partisini yeniden çalıştırın.</p>
+<h3>15.6 7-8. Haftalar: ölçekleme ve standartlaştırma</h3>
+<p>Tam pilot proje hacmine geçin. CAMduct ITM veritabanını kilitleyin. Bağlantı kütüphanesini sürüm kontrolüne alın. Yeni operatörler için dahili bir BIM'den imalata kılavuzu yayımlayın.</p>
+<p class="cta-inline"><a class="btn btn-primary" href="/tr/contact?source=guide-bim-integration-hvac-duct-fabrication">BIM iş akışınız hakkında bir Taokron mühendisine sorun →</a></p>
+<h2>16. Dijital ikiz ve geri besleme döngüsü</h2>
+<p>İleri yön, yani Revit'ten otomatik kanal hattına, BIM literatüründe çoğu ilgiyi çeker. Ters yön, yani otomatik kanal hattından Revit'e geri dönüş ise iş akışını gerçek bir dijital ikize dönüştüren yöndür.</p>
+<h3>16.1 Dijital ikiz aslında nedir</h3>
+<p>HVAC imalatında dijital ikiz, her kanal parçasının yalnızca tasarlandığı hâli değil, imal edilmiş ve monte edilmiş hâlini yansıtan bir modeldir. Gerçek kesim boylarını (her zaman tasarlanan boylarla aynı değildir), gerçek gauge'i (bobin bulunabilirliği nedeniyle bazen ikame edilir), gerçek bağlantı tipini (tedarik nedeniyle bazen ikame edilir) ve gerçek montaj konumunu (koordinasyonda bazen kayar) taşır.</p>
+<h3>16.2 Geri besleme döngüsü</h3>
+<p>Bir geri besleme döngüsü üç veri kaynağından yararlanabilir: makinenin gerçek kesim boyu okuması, operatörün hat çıkışındaki parça işareti taraması ve saha ekibinin montaj onayı taraması. Her veri parçası, OPC UA etiketleri ve as-built özniteliklerini orijinal imalat parçasına işleyen küçük bir Dynamo betiği aracılığıyla BIM modeline geri akar. Proje ilerledikçe model kendini LOD 400'den LOD 500'e günceller.</p>
+<h3>16.3 Sapma takibi</h3>
+<p>Geri besleme döngüsünden elde edilen en yararlı tek ölçüt, parça başına boy sapmasıdır: gerçek kesim boyu eksi tasarlanan boy. Bu ölçütü gauge başına, fiting tipi başına ve hattaki vardiya başına toplayın ve takım kaymasını kalite sorununa dönüşmeden yakalamak için eğilimi kullanın. Kararlı bir hat sapmasını makinenin anma toleransı içinde tutar; sapma tırmanmaya başladığında hattın takım bileme veya merdane hizalama zamanı gelmiştir.</p>
+<h2>17. Gelecek: kanal güzergâhı için yapay zekâ destekli BIM optimizasyonu</h2>
+<p>2026'da BIM'in öncü alanı, yapay zekâ destekli güzergâh optimizasyonudur. Birkaç Revit eklentisi artık bir başlangıç noktası, bir bitiş noktası ve bir dizi yapısal ve mimari kısıt verildiğinde uzunluk, fiting sayısı, basınç düşümü ve maliyet açısından optimize edilmiş bir kanal güzergâhı öneren bir YZ güzergâh özelliğiyle geliyor. Çıktı, CAMduct kesim listesi iş akışıyla doğrudan entegre olan, Revit'e yerel, imalata dönüştürülmüş bir hattır.</p>
+<p>2026'daki gerçek şudur: yapay zekâ ile yönlendirme yararlı bir ilk geçiş aracıdır, kıdemli bir MEP koordinatörünün yerini almaz. Daha basit makine dairelerinde temiz bir güzergâh üretebilir, ancak erişimin, askı kısıtlarının ve disiplinlerin sıralamasının belirleyici olduğu yoğun tavan boşluklarında yetersiz güzergâhlar üretme eğilimindedir. Bugün yapay zekânın gerçekçi rolü bir verimlilik çarpanı olmaktır: yapay zekâ bir güzergâh önerir, MEP koordinatörü denetler ve ayarlar, imalat dönüşümü normal şekilde çalışır.</p>
+<p>Kanal atölyeleri için daha ilginç YZ gelişmesi, as-built geri besleme verisinde anomali tespitidir. Hattın gerçek kesim boyu verisini basit bir regresyon modeline vermek; takım kaymasını, gauge yanlış eşlemesini ve bağlantı yorulmasını, kalite şikâyetleri olarak ortaya çıkmalarından haftalar önce fark eder.</p>
+<h2>18. BIM'den imalata iş akışınız için doğru Taokron makinesini seçmek</h2>
+<p>Bu makaleyi, yeni bir otomatik kanal hattı belirlemek üzere olduğunuz ve onun BIM ortamınızla sorunsuz entegre olmasını istediğiniz için okuyorsanız, Taokron makinelerinin BIM iş akışlarına nasıl karşılık geldiğinin kısa özeti şöyledir.</p>
+<ul>
+<li><strong>SBAL-V otomatik kanal hattı</strong>: 0,5-1,5 mm malzeme, en fazla 1250 veya 1550 mm genişlik, 18 m/dk, PLC dokunmatik ekranlı U şekilli otomatik dikdörtgen kanal hattı. Denetleyicinin hangi iş dosyası formatlarını kabul ettiğini sorun.</li>
+<li><strong>SBAL-III otomatik kanal hattı</strong>: hidrolik köşe kesme (notching) ve giyotin kesme yapan, 0,5-2,0 mm malzeme için otomatik kanal hattı, en fazla 1250 veya 1550 mm genişlik, 18 m/dk. Denetleyicinin hangi iş dosyası formatlarını kabul ettiğini sorun.</li>
+<li><strong>Plazma tezgâhı entegrasyonu</strong>: standart dışı geçişler ve oval blank'lar için kullanılır. Çoğu plazma denetleyicisi DXF kabul eder.</li>
+<li><strong>Spiral tubeformer</strong>: yuvarlak kanal için, ayrıca belirtilir. <a href="/tr/insights/spiral-duct-sizing-chart">Spiral kanal boyutlandırma tablosu</a>, yuvarlak hatları Taokron tubeformer zarfına göre boyutlandırmak için hızlı başvuru kaynağıdır.</li>
+</ul>
+<p>Hangi yapılandırmanın üretim hacminize ve BIM ortamınıza uyduğuna dair karar desteği için <a href="/tr/insights/choosing-auto-duct-line">otomatik kanal üretim hattı nasıl seçilir</a> rehberine bakın. Otomatik kanal hattı çıktısıyla birlikte giden bağlantılar ve aksesuarlar dahil uçtan uca fiting imalatı için <a href="/tr/insights/hvac-duct-fittings-fabrication-guide">HVAC kanal fitingleri imalat rehberine</a> bakın.</p>
+<h2>SSS</h2>
+<details><summary>HVAC kanalları için BIM'den imalata iş akışı nedir?</summary><p>Koordine edilmiş bir Revit MEP kanal modelini, atölye zemininde plazma tezgâhlarını, bobin hatlarını ve otomatik kanal üretim hatlarını yöneten makineye hazır kesim listelerine, spool çizimlerine ve CNC dosyalarına dönüştüren iş akışı. Manuel metrajın ve CAMduct'ta yeniden çizimin yerine tasarımcıdan makineye kesintisiz bir veri yolu koyar; böylece yeniden işçilik ve boy sapması azalır.</p></details>
+<details><summary>Revit tasarım parçaları ile imalat parçaları arasındaki fark nedir?</summary><p>Tasarım parçaları varsayılan Revit MEP kanal elemanlarıdır: tasarım niyeti ve çakışma tespiti için boyutlandırılmış basitleştirilmiş yer tutucular. İmalat parçaları ise bir CAMduct veya CADmep ITM'den yüklenen; dikişleri, gauge değerleri, bağlantı tipleri, conta kanalları ve tedarikçiye özgü ölçüleriyle doğrudan bir CNC makinesine aktarılabilen gerçek atölye bileşenleridir. Kanal atölyesi, herhangi bir kesim listesi, spool çizimi veya PLC dosyası üretilmeden önce tasarım parçalarını imalat parçalarına dönüştürmek zorundadır.</p></details>
+<details><summary>Taokron otomatik kanal hatları BIM'den hangi dosya formatlarını kabul eder?</summary><p>Bu, hatta ve denetleyicisine bağlıdır; bu yüzden hattınızdaki denetleyicinin hangi iş dosyası formatlarını kabul ettiğini Taokron'a sorun. BIM iş akışında olağan adaylar şunlardır: XML kesim listesi (CAMduct kesim listesi dışa aktarımı), iç içe yerleştirilmiş plazma kesimi için DXF düz açılımlar, JSON iş paketi ve CSV (temel bir kesim listesi veya tedarik malzeme listesi).</p></details>
+<details><summary>Revit'ten otomatik kanal hattına iş akışını kurmak ne kadar sürer?</summary><p>Mevcut bir Revit MEP lisansı ve eğitimli bir CAMduct veya CADmep operatörü olan bir kanal atölyesi için 4–8 hafta planlayın: 1 hafta denetim ve imalat konfigürasyonunun makine takımlarınıza eşlenmesi, 1–2 hafta bağlantı kitaplığı ve sac kalınlığı eşlemesinin oluşturulması, 1–2 hafta pilot modelin dönüştürülmesi ve uçtan uca 50 parçalık bir pilot partinin çalıştırılması, 1–3 hafta da süreç ayarı ve ölçek büyütme. Daha önce Autodesk Fabrication deneyimi olmayan atölyeler, operatör eğitimi dahil 12–16 hafta planlamalıdır.</p></details>
+<details><summary>BIM'den imalata entegrasyonun yatırım getirisi nedir?</summary><p>Geri dönüş süresi kanal hacminize, mevcut metraj emeğinize ve yeniden işçilik oranınıza bağlıdır; bu yüzden başlamadan önce ve pilottan sonra kendi referans değerinizi ölçün. Ana etkenler azalan boy sapması, daha az manuel metraj saati, fitinglerde daha az yeniden işçilik ve daha hızlı tedarik sürecidir.</p></details>
+<details><summary>Autodesk Fabrication CAMduct olmadan BIM'den imalata iş akışını çalıştırabilir miyim?</summary><p>Evet. CAMduct, Revit uyumlu içerikle geldiği için en yaygın yoldur; ancak MagiCAD for Revit ve eVolve Mechanical for Revit gibi üçüncü taraf Revit eklentileri de imalata hazır veri dışa aktarabilir. Bazı atölyeler, hat için genellikle CSV veya DXF olarak bir kesim listesi üretmek amacıyla Revit'ten IFC4 dışa aktarımını özel bir IFC ayrıştırıcıyla birlikte kullanır. Yerel Revit tasarım parçaları ile bir Dynamo betiği de temel bir kesim listesi üretebilir, ancak bu yolda spool çizim otomasyonu ve doğrudan CNC gönderimi kaybedilir.</p></details>
+<details><summary>İmalat için hangi LOD gerekir?</summary><p>İmalat LOD 400 gerektirir: gerçek imalat dikişlerini, bağlantı ölçülerini, sac kalınlığı eşlemesini, <a href="/tr/insights/hvac-duct-hangers-supports-guide">askı konumlarını</a> ve imalat toleransı içinde doğru aksesuar konumlarını içeren geometri. LOD 200 (tasarım niyeti) ve LOD 350 (çakışma için koordine edilmiş) imalata hazır değildir. Çoğu proje, ilk kanal parçasının sahada gerekmesinden genellikle 6–10 hafta önce, atölye çizimi aşamasının başında LOD 350'den LOD 400'e geçer.</p></details>
+<details><summary>Taokron, otomatik kanal hattı satın alımının bir parçası olarak BIM danışmanlığı sağlıyor mu?</summary><p>Teklif istediğinizde bir Taokron mühendisi, BIM iş akışınızı ve belirli bir hattın kabul ettiği iş dosyası formatlarını sizinle konuşabilir. Operatör eğitimi, her ürün sayfasında belirtildiği gibi devreye alma ziyaretinin bir parçasıdır.</p></details>
+<aside class="related-guides">
+<p class="eyebrow">İlgili rehberler</p>
+<ul class="related-links">
+<li><a href="/tr/insights/duct-machine-specifications">Tüm Taokron kanal makinesi teknik özellikleri →</a></li>
+<li><a href="/tr/insights/choosing-auto-duct-line">Otomatik Kanal Üretim Hattı Nasıl Seçilir</a></li>
+<li><a href="/tr/insights/plc-integration-duct-line">Otomatik Kanal Üretim Hatları için PLC Entegrasyonu: Siemens, Mitsubishi, OPC UA</a></li>
+<li><a href="/tr/insights/hvac-duct-fittings-fabrication-guide">HVAC Kanal Fitingleri İmalat Rehberi</a></li>
+<li><a href="/tr/insights/rectangular-duct-sizing-chart">Dikdörtgen Kanal Boyutlandırma Tablosu: SMACNA &amp; AS/NZS 4254 Referansı</a></li>
+<li><a href="/tr/insights/spiral-duct-sizing-chart">Spiral Kanal Boyutlandırma Tablosu: Yuvarlak Kanal Referansı</a></li>
+<li><a href="/tr/insights/smacna-gauge-chart">SMACNA Gauge Tablosu: Dikdörtgen Kanal Yapımı</a></li>
+<li><a href="/tr/insights/hvac-duct-machine-buyers-checklist">HVAC Kanal Makinesi Alıcı Kontrol Listesi: 47 Satın Alma Öncesi Doğrulama Maddesi</a></li>
+</ul>
+</aside>
+</div>
+</div>
+</section>
+<section class="section bg-subtle" style="padding-block:clamp(60px,8vw,120px) 0;">
+<div class="shell">
+<div class="content-narrow">
+<div class="promise-callout">
+<span class="promise-label">12 saatte yanıt</span>
+<p class="promise-text">Revit'ten imalata iş akışı mı kuruyorsunuz? Bir satış temsilcisi değil, bir Taokron mühendisi 12 saat içinde yanıt verir.</p>
+<a class="btn btn-primary" href="#quote">Bir mühendise sorun</a>
+</div>
+<div class="catalogue-box product-quote-box page-quote page-quote-narrow" id="quote">
+<div class="catalogue-copy">
+<p class="eyebrow" data-i18n="pq3.eyebrow">Mühendis yanıtı</p>
+<h2 data-i18n="pq3.title">Bu rehber hakkında bir mühendise sorun</h2>
+<p data-i18n="pq3.lead">İşinizi ve ne üretmek istediğinizi anlatın. Bir satış temsilcisi değil, bir Taokron makine mühendisi 12 saat içinde yanıt verir.</p>
+<p class="product-quote-for"><span data-i18n="pq3.for">Rehber</span>: <strong>HVAC Kanal İmalatı için BIM Entegrasyonu: Revit'ten Otomatik Kanal Hattına İş Akışı Rehberi</strong></p>
+</div>
+<form action="https://formsubmit.co/sales@sbkjduct.com" class="catalogue-form product-quote-form" id="productQuoteForm" method="POST">
+<input name="_subject" type="hidden" value="Question from guide: BIM Integration for HVAC Duct Fabrication: Revit to Auto Duct Line Workflow Guide (taokron.com)"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input id="productQuoteNext" name="_next" type="hidden" value="https://taokron.com/tr/insights/bim-integration-hvac-duct-fabrication?sent=1"/>
+<input name="_autoresponse" type="hidden" value="Hi, thank you for your message to Taokron. A Taokron engineer will reply within 12 hours. Questions before then: sales@taokron.com or WhatsApp +61 435 074 994. Ryan Tao, Taokron"/>
+<input name="Page" type="hidden" value="BIM Integration for HVAC Duct Fabrication — Revit to Auto Duct Line Workflow Guide"/>
+<input id="productQuoteLeadSource" name="Lead source" type="hidden" value=""/>
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.name" for="pq-name">Ad</label>
+<input autocomplete="name" id="pq-name" name="name" required="" type="text"/>
+</div>
+<div class="form-field">
+<label data-i18n="cat.company" for="pq-company">Firma</label>
+<input autocomplete="organization" id="pq-company" name="company" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<div class="form-field">
+<label data-i18n="cat.email" for="pq-email">E-posta</label>
+<input autocomplete="email" id="pq-email" name="email" required="" type="email"/>
+</div>
+<div class="form-field">
+<label data-i18n="form.country" for="pq-country">Kurulum yapılacak ülke</label>
+<input autocomplete="country-name" id="pq-country" name="country" required="" type="text"/>
+</div>
+</div>
+<div class="form-field">
+<label data-i18n="form.phone" for="pq-phone">Telefon / WhatsApp</label>
+<input autocomplete="tel" id="pq-phone" name="phone" type="tel"/>
+</div>
+<div class="form-field">
+<label data-i18n="pq3.question" for="pq-message">Sorunuz</label>
+<textarea data-i18n-placeholder="form.placeholder" id="pq-message" name="message" placeholder="Malzeme türü, kalınlık, gereken kapasite, mevcut atölye büyüklüğü..." required="" rows="3"></textarea>
+</div>
+<button class="btn btn-primary" data-i18n="pq3.button" type="submit">Sorumu gönder</button>
+<span data-i18n="form.sending" hidden="" id="productQuoteSending">Gönderiliyor…</span>
+</form>
+<div class="catalogue-inline" style="margin-top:1.25rem;padding:1rem 1.1rem;border:1px solid var(--border);border-radius:var(--radius)"><p style="margin:0 0 .6rem"><strong data-i18n="catinline.title">Teklife hazır değil misiniz?</strong> <span data-i18n="catinline.text">2026 kataloğunu e-posta ile alın: 66 makine, her biri için bir sayfa.</span></p><form action="https://formsubmit.co/sales@sbkjduct.com" class="newsletter-form catalogue-inline-form" method="POST"><input name="_subject" type="hidden" value="Catalogue request (taokron.com)"/><input name="_template" type="hidden" value="table"/><input name="_captcha" type="hidden" value="false"/><input name="_next" type="hidden" value="https://taokron.com/spec-sheets?catalogue=1"/><input name="_autoresponse" type="hidden" value="Hi, here is the Taokron Product Catalogue 2026 (PDF, 66 machines, one page each): https://taokron.com/downloads/taokron-product-catalogue-2026.pdf  Single machine spec sheets: https://taokron.com/spec-sheets  If one of the machines is close to what you need, reply to this email with your material, gauge and duct sizes and an engineer will come back within 12 hours. Ryan Tao, Taokron, +61 435 074 994"/><input name="Lead source" type="hidden" value="catalogue-inline · /insights/bim-integration-hvac-duct-fabrication"/><input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/><input aria-label="E-posta" autocomplete="email" data-i18n-placeholder="cat.email" name="email" placeholder="E-posta" required="" style="flex:1 1 200px;min-width:0;padding:.6rem .75rem;font-size:1rem;font-family:var(--font-body);border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text)" type="email"/><button class="btn btn-ghost" data-i18n="cat.button" type="submit">Kataloğu e-postama gönderin</button></form></div>
+</div>
+<div class="quote-sent-banner catalogue-sent" hidden="" id="productQuoteSent">
+<span data-i18n="pq3.sent">✓ Gönderildi. Bir Taokron mühendisi 12 saat içinde yanıt verecek.</span>
+</div>
+</div>
+</div>
+</section>
+<script>
+      // Page quote form: thank-you state, same-language return URL, and the
+      // same first-touch attribution the contact form writes.
+      (function () {
+        if (location.search.indexOf('sent=1') !== -1) {
+          var b = document.getElementById('productQuoteSent'); if (b) { b.hidden = false; try { b.scrollIntoView({ block: 'center' }); } catch (e) {} }
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+          var nx = document.getElementById('productQuoteNext');
+          if (nx && /^https?:$/.test(location.protocol)) { nx.value = location.origin + location.pathname + '?sent=1'; }
+          var ls = document.getElementById('productQuoteLeadSource'); if (!ls) return;
+          var src = new URLSearchParams(location.search).get('source') || '';
+          var ref = '';
+          try { if (document.referrer && document.referrer.indexOf(location.host) === -1) ref = document.referrer; } catch (e) {}
+          var first = null;
+          try { first = JSON.parse(sessionStorage.getItem('tk_first') || 'null'); } catch (e) {}
+          var campaign = src || (first && first.q) || '';
+          var origin = ref || (first && first.ref) || '';
+          var parts = [];
+          parts.push(campaign ? 'campaign:' + campaign : (origin ? 'referral' : 'direct/typed'));
+          if (origin) parts.push('ref:' + origin);
+          if (first && first.lp) parts.push('landed:' + first.lp);
+          parts.push('form:quote@' + location.pathname);
+          ls.value = parts.join(' \u00b7 ');
+          var form = document.getElementById('productQuoteForm');
+          var btn = form && form.querySelector('button[type="submit"]');
+          if (form && btn) {
+            form.addEventListener('submit', function () {
+              setTimeout(function () {
+                var lbl = document.getElementById('productQuoteSending');
+                btn.disabled = true; btn.textContent = (lbl && lbl.textContent) || 'Sending\u2026';
+              }, 0);
+            });
+          }
+        });
+      })();
+    </script>
+</main>
+<footer class="site-footer">
+<div class="shell footer-grid">
+<div>
+<div class="footer-logo">
+<img alt="Taokron" class="logo-img" decoding="async" height="48" loading="lazy" src="/assets/images/logo.svg" width="129"/>
+<span class="logo-title">Taokron</span>
+</div>
+<p class="footer-text" data-i18n="footer.desc">Spiral, yuvarlak ve dikdörtgen kanallar için HVAC kanal makineleri üreticisi.</p>
+<div class="footer-social">
+<a aria-label="LinkedIn" class="social-linkedin" href="https://www.linkedin.com/company/taokron/" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
+<a aria-label="YouTube" class="social-youtube" href="https://www.youtube.com/@taokron" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a>
+<a aria-label="Instagram" class="social-instagram" href="https://www.instagram.com/taokron/" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 11-2.88 0 1.441 1.441 0 012.88 0z"></path></svg></a>
+<a aria-label="Facebook" class="social-facebook" href="https://www.facebook.com/profile.php?id=61587888804663" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
+<a aria-label="TikTok" class="social-tiktok" href="https://www.tiktok.com/@taokron" rel="noopener" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path></svg></a>
+</div>
+</div>
+<div>
+<h3 data-i18n="footer.navigate">Gezinti</h3>
+<ul>
+<li><a data-i18n="nav.home" href="/tr/">Ana Sayfa</a></li>
+<li><a data-i18n="nav.machines" href="/tr/machines">Makineler</a></li>
+<li><a data-i18n="nav.insights" href="/tr/insights/">İçgörüler</a></li>
+<li><a data-i18n="nav.about" href="/tr/about">Hakkımızda</a></li>
+<li><a data-i18n="nav.why" href="/why-choose-taokron">Neden Taokron</a></li>
+<li><a data-i18n="nav.pricing" href="/pricing-and-lead-time">Fiyat ve teslim süresi</a></li>
+<li><a data-i18n="nav.support" href="/support">Destek</a></li>
+<li><a data-i18n="nav.industries" href="/industries/">Sektörler</a></li>
+<li><a data-i18n="nav.factory" href="/factory">Fabrika</a></li>
+<li><a data-i18n="nav.quality" href="/quality">Kalite</a></li>
+<li><a data-i18n="nav.videos" href="/videos">Videolar</a></li>
+<li><a data-i18n="nav.cases" href="/case-studies/">Vaka çalışmaları</a></li>
+<li><a data-i18n="nav.contact" href="/tr/contact">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h3 data-i18n="footer.touch">İletişime Geçin</h3>
+<ul>
+<li><a href="mailto:sales@taokron.com">sales@taokron.com</a></li>
+<li><a href="https://wa.me/61435074994?text=Merhaba%20Ryan%2C%20taokron.com%27da%20%C2%ABHVAC%20Kanal%20%C4%B0malat%C4%B1%20i%C3%A7in%20BIM%20Entegrasyonu%C2%BB%20sayfas%C4%B1na%20bak%C4%B1yorum.%20Fiyat%20ve%20video%20g%C3%B6nderebilir%20misiniz%3F" rel="noopener" target="_blank">+61 435 074 994</a></li>
+<li data-i18n="footer.loc.aus">Box Hill North, VIC, Avustralya</li>
+</ul>
+</div>
+</div>
+<div class="shell footer-bottom">
+<p class="footer-langs" style="margin-bottom:0.5rem;"><a href="/es/insights/bim-integration-hvac-duct-fabrication" hreflang="es" lang="es">Español</a> · <a href="/pt/insights/bim-integration-hvac-duct-fabrication" hreflang="pt" lang="pt">Português</a> · <a href="/fr/insights/bim-integration-hvac-duct-fabrication" hreflang="fr" lang="fr">Français</a> · <a href="/ru/insights/bim-integration-hvac-duct-fabrication" hreflang="ru" lang="ru">Русский</a> · <a href="/ar/insights/bim-integration-hvac-duct-fabrication" hreflang="ar" lang="ar">العربية</a> · <a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a> · <a href="/tr/insights/bim-integration-hvac-duct-fabrication" hreflang="tr" lang="tr">Türkçe</a> · <a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a> · <a href="/zh/" hreflang="zh" lang="zh">中文</a></p>
+<p>© <span id="year"></span> <span data-i18n="footer.rights">Taokron. Tüm hakları saklıdır.</span> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
+</div>
+</footer>
+<a aria-label="Chat on WhatsApp" class="fab-whatsapp" href="https://wa.me/61435074994?text=Merhaba%20Ryan%2C%20taokron.com%27da%20%C2%ABHVAC%20Kanal%20%C4%B0malat%C4%B1%20i%C3%A7in%20BIM%20Entegrasyonu%C2%BB%20sayfas%C4%B1na%20bak%C4%B1yorum.%20Fiyat%20ve%20video%20g%C3%B6nderebilir%20misiniz%3F" rel="noopener" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<script src="/assets/js/main.js?v=18"></script>
+
+<script src="/assets/js/chatbot.js"></script>
+</body>
+</html>
