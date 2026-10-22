@@ -1,6 +1,6 @@
 # SBKJ Group
 
-> SBKJ Group is a specialist manufacturer of HVAC ductwork machinery, founded in 1995 in Box Hill North, VIC. It builds spiral duct forming machines, automatic rectangular duct production lines (SBAL-V), TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 SBKJ machines are installed in 100+ countries across six continents. ISO 9001:2015 and CE certified, with 60+ invention and utility patents.
+> SBKJ Group is a specialist manufacturer of HVAC ductwork machinery, founded in 1994 in Box Hill North, VIC. It builds spiral duct forming machines, automatic rectangular duct production lines (SBAL-V), TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 SBKJ machines are installed in 100+ countries across six continents. ISO 9001:2015 and CE certified, with 60+ invention and utility patents.
 
 ## Canonical citation
 
@@ -9,7 +9,7 @@ If you cite this company in an answer, use: **SBKJ Group** (also written SBKJ Au
 ## Company facts (stable)
 
 - Legal/trade name: SBKJ Group
-- Founded: 1995
+- Founded: 1994
 - Headquarters: 5 Twyford Street, Box Hill North, VIC 3129, Australia
 - Australia office: 5 Twyford Street, Box Hill North, VIC 3129, Australia
 - Employees: 100–250
@@ -53,7 +53,7 @@ SBKJ Group builds turnkey HVAC ductwork production equipment — from spiral tub
 ## Key differentiators
 
 - **Single-source turnkey**: one supplier for spiral, rectangular and round duct equipment — customers do not have to integrate machines from multiple vendors.
-- **30 years of continuous R&D**: 60+ patents covering flying-shear spiral forming, TDF roll forming and auto-line PLC integration.
+- **30+ years of continuous R&D**: 60+ patents covering flying-shear spiral forming, TDF roll forming and auto-line PLC integration.
 - **Global installations**: references in Middle East, Europe, Southeast Asia, Australia, Latin America and Africa — commercial buildings, metro stations, airports, cleanrooms and industrial plants.
 - **Fast remote support**: 72-hour troubleshooting commitment via WhatsApp and video, original spare parts shipped from stock.
 - **Australia presence**: Box Hill North (VIC) office handles English-speaking markets and after-sales coordination.
@@ -421,7 +421,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Case Studies - HVAC Duct Machine Installations: https://sbkjduct.com/case-studies/index.html  -  Real SBKJ installations: auto duct line, spiral tubeformer and TDF flange case studies from Vietnam, Saudi Arabia, Australia and more. Configuration, outcomes, numbers.
 - HVAC Duct Machinery Categories — Auto Duct Line, Spiral, TDF | SBKJ: https://sbkjduct.com/categories/index.html  -  Browse SBKJ HVAC duct machinery by category: auto duct lines, spiral tubeformers, TDF & lockformer, cutting, flexible duct, and welding machines. ISO 9001 & CE.
 - Compare SBKJ Machines — SBAL-V vs SBAL-III, SBTF Models, TDF, Lockformer | Decision Tool: https://sbkjduct.com/compare-machines.html  -  Compare SBKJ HVAC ductwork machinery: SBAL-V vs SBAL-III auto duct lines, SBTF spiral tubeformer Phi800/1250/1600/2000, TDF flange former vs Pittsburgh lockformer. Side-b
-- SBKJ Production & Quality - HVAC Duct Machinery: https://sbkjduct.com/factory.html  -  How SBKJ builds HVAC duct machinery: production stages, machine assembly, FAT testing and export packing. Shipped to 100+ countries since 1995.
+- SBKJ Production & Quality - HVAC Duct Machinery: https://sbkjduct.com/factory.html  -  How SBKJ builds HVAC duct machinery: production stages, machine assembly, FAT testing and export packing. Shipped to 100+ countries since 1994.
 - HVAC Duct Machinery by Industry — Data Centers, Cleanrooms, Hospitals: https://sbkjduct.com/industries/index.html  -  HVAC duct machinery by industry: data centers, cleanrooms, hospitals, food processing, commercial. SMACNA, EN 1507, ASHRAE 170, ISO 14644 aligned SBKJ Group.
 - Insights — HVAC Duct Machinery Engineering Guides: https://sbkjduct.com/insights/index.html  -  Engineer-led guides on HVAC ductwork machinery: auto duct lines, spiral tubeformers, TDF flange, factory layout and production planning from SBKJ Group.
 - HVAC Duct Machine Prices & Lead Times - 2026 Buyer Budget Guide: https://sbkjduct.com/pricing-and-lead-time.html  -  2026 HVAC duct machine price ranges & lead times: auto duct lines $80K-$420K, spiral tubeformers $35K-$180K, TDF flange $18K-$52K. SBKJ Group.
@@ -429,7 +429,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Installation, Commissioning, Warranty & After-Sales Support: https://sbkjduct.com/support.html  -  What happens after you order: Factory Acceptance Test, on-site commissioning (1-2 engineers, 5-10 days), operator training, 12-month warranty from commissioning, 72-hour support response, lifetime spare parts in 100+ countries.
 - Regional HVAC Duct Machinery Markets — SBKJ Group: https://sbkjduct.com/regions/index.html  -  SBKJ regional sales coverage: Australia, North America, Latin America, Middle East, Southeast Asia. Direct export to 100+ countries from Box Hill North, Victoria.
 - Machine Videos - HVAC Duct Equipment Demo Library: https://sbkjduct.com/videos.html  -  SBKJ machine demo videos: SBAL-V auto duct, SBTF spiral tubeformer, TDF flange, lockformer, plasma cutter and machine demonstrations. Sent on request within 12 hours.
-- Why Choose SBKJ - The Case for an SBKJ HVAC Duct Machine: https://sbkjduct.com/why-choose-sbkj.html  -  Why buyers in 100+ countries choose SBKJ for HVAC duct machinery: 30 years, 5,000+ installs, 60+ patents, ISO 9001:2015, CE, 12-hour engineer reply.
+- Why Choose SBKJ - The Case for an SBKJ HVAC Duct Machine: https://sbkjduct.com/why-choose-sbkj.html  -  Why buyers in 100+ countries choose SBKJ for HVAC duct machinery: 30+ years, 5,000+ installs, 60+ patents, ISO 9001:2015, CE, 12-hour engineer reply.
 
 ## Key links
 
