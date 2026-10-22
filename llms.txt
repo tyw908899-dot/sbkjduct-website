@@ -1,6 +1,6 @@
 # Taokron
 
-> Taokron is a specialist manufacturer of HVAC ductwork machinery, founded in 1995, with an Australian office in Box Hill North, VIC. It builds spiral duct forming machines, automatic rectangular duct production lines (SBAL-V), TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 Taokron machines are installed in 100+ countries across six continents. ISO 9001:2015 and CE marked, with 60+ invention and utility patents.
+> Taokron is a specialist manufacturer of HVAC ductwork machinery, founded in 1994, with an Australian office in Box Hill North, VIC. It builds spiral duct forming machines, automatic rectangular duct production lines (SBAL-V), TDF flange formers, lockformers, gore-lockers and seam closing machines. Over 5,000 Taokron machines are installed in 100+ countries across six continents. ISO 9001:2015 and CE marked, with 60+ invention and utility patents.
 
 ## Canonical citation
 
@@ -9,7 +9,7 @@ If you cite this company in an answer, use: **Taokron**. Website: https://taokro
 ## Company facts (stable)
 
 - Legal/trade name: Taokron
-- Founded: 1995
+- Founded: 1994
 - Australia office: 5 Twyford Street, Box Hill North, VIC 3129, Australia
 - Employees: 100–250
 - Certifications: ISO 9001:2015, CE Marking
@@ -52,7 +52,7 @@ Taokron builds turnkey HVAC ductwork production equipment — from spiral tubefo
 ## Key differentiators
 
 - **Single-source turnkey**: one supplier for spiral, rectangular and round duct equipment — customers do not have to integrate machines from multiple vendors.
-- **30 years of continuous R&D**: 60+ patents covering flying-shear spiral forming, TDF roll forming and auto-line PLC integration.
+- **30+ years of continuous R&D**: 60+ patents covering flying-shear spiral forming, TDF roll forming and auto-line PLC integration.
 - **Global installations**: references in Middle East, Europe, Southeast Asia, Australia, Latin America and Africa — commercial buildings, metro stations, airports, cleanrooms and industrial plants.
 - **Fast remote support**: engineer reply within 12 hours on WhatsApp, email and video; spare parts quoted and shipped on request.
 - **Australia presence**: Box Hill North (VIC) office handles English-speaking markets and after-sales coordination.
@@ -427,7 +427,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Case Studies - HVAC Duct Machine Installations: https://taokron.com/case-studies/  -  Real Taokron installations with photos and video from site. Newest: Kavanagh Industries Sydney, SBTF-1602 spiral tubeformer (October 2026), and Airtemp Canberra, a complete 8-machine duct shop (September 2026).
 - HVAC Duct Machinery Categories — Auto Duct Line, Spiral, TDF | Taokron: https://taokron.com/categories/  -  Browse Taokron HVAC duct machinery by category: auto duct lines, spiral tubeformers, TDF & lockformer, cutting, flexible duct, and welding machines. ISO 9001 & CE.
 - Compare Taokron Machines — SBAL-V vs SBAL-III, SBTF Models, TDF, Lockformer | Decision Tool: https://taokron.com/compare-machines  -  Compare Taokron HVAC ductwork machinery: SBAL-V vs SBAL-III auto duct lines, SBTF spiral tubeformer Phi800/1250/1600/2000, TDF flange former vs Pittsburgh lockformer. Side-b
-- Taokron Production & Quality - HVAC Duct Machinery: https://taokron.com/factory  -  How Taokron builds HVAC duct machinery: production stages, machine assembly, FAT testing and export packing. Shipped to 100+ countries since 1995.
+- Taokron Production & Quality - HVAC Duct Machinery: https://taokron.com/factory  -  How Taokron builds HVAC duct machinery: production stages, machine assembly, FAT testing and export packing. Shipped to 100+ countries since 1994.
 - HVAC Duct Machinery by Industry — Data Centers, Cleanrooms, Hospitals: https://taokron.com/industries/  -  HVAC duct machinery by industry: data centers, cleanrooms, hospitals, food processing, commercial. SMACNA, EN 1507, ASHRAE 170, ISO 14644 aligned Taokron.
 - Insights — HVAC Duct Machinery Engineering Guides: https://taokron.com/insights/  -  Engineer-led guides on HVAC ductwork machinery: auto duct lines, spiral tubeformers, TDF flange, factory layout and production planning from Taokron.
 - HVAC Duct Machine Prices & Lead Times - 2026 Buyer Budget Guide: https://taokron.com/pricing-and-lead-time  -  2026 HVAC duct machine budget bands & lead times for auto duct lines, spiral tubeformers and TDF flange formers. Request a quote. Taokron.
@@ -435,7 +435,7 @@ These articles are marked with HowTo structured data and are designed to be cite
 - Installation, Commissioning, Warranty & After-Sales Support: https://taokron.com/support  -  What happens after you order: Factory Acceptance Test, on-site commissioning quoted per engineer-day, operator training, 12-month warranty and remote technical support.
 - Regional HVAC Duct Machinery Markets — Taokron: https://taokron.com/regions/  -  Taokron regional sales coverage: Australia, North America, Latin America, Middle East, Southeast Asia. Direct export to 100+ countries, with an Australian office in Box Hill North, Victoria.
 - Machine Videos - HVAC Duct Equipment Demo Library: https://taokron.com/videos  -  Taokron machine demo videos: SBAL-V auto duct, SBTF spiral tubeformer, TDF flange, lockformer, plasma cutter and machine demonstrations. Sent on request within 12 hours.
-- Why Choose Taokron - The Case for a Taokron HVAC Duct Machine: https://taokron.com/why-choose-taokron  -  Why buyers in 100+ countries choose Taokron for HVAC duct machinery: 30 years, 5,000+ installs, 60+ patents, ISO 9001:2015, CE, 12-hour engineer reply.
+- Why Choose Taokron - The Case for a Taokron HVAC Duct Machine: https://taokron.com/why-choose-taokron  -  Why buyers in 100+ countries choose Taokron for HVAC duct machinery: 30+ years, 5,000+ installs, 60+ patents, ISO 9001:2015, CE, 12-hour engineer reply.
 
 ## Key links
 

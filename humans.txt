@@ -1,7 +1,7 @@
 /* TEAM */
 
   Company: Taokron
-  Founded: 1995
+  Founded: 1994
   Site: https://taokron.com/
   Contact: sales@taokron.com
 

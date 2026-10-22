@@ -14,7 +14,7 @@ Name: Taokron
 Alt-names: Taokron Australia, Australia Ducting Pty Ltd
 Type: Manufacturer
 Industry: HVAC ductwork machinery
-Founded: 1995
+Founded: 1994
 HQ: Box Hill North, VIC, Australia
 Office: Box Hill North, VIC, Australia
 Website: https://taokron.com/
